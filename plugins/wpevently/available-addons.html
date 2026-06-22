@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Available Addons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link active">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="coupon-addon">
+        <h2>WooCommerce Event Coupon Code Addon</h2>
+        <p>Create and manage discount coupons for your events. Offer percentage-based or fixed-price discounts, set usage limits, and restrict coupons to specific events or ticket types.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Percentage and fixed amount discount types</li>
+              <li>Per-coupon usage limits (global and per-user)</li>
+              <li>Minimum spend and maximum spend restrictions</li>
+              <li>Event-specific coupon assignment</li>
+              <li>Expiry date and time for time-limited promotions</li>
+              <li>Exclude sale items and specific ticket types</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Configuration</h3>
+            <ul>
+              <li>Install the Coupon Code addon and activate your license</li>
+              <li>Go to WooCommerce &rarr; Coupons to create new coupons</li>
+              <li>Set discount type, amount, and usage restrictions</li>
+              <li>Assign the coupon to specific events in the coupon data meta box</li>
+              <li>Customers enter the coupon code at checkout to receive the discount</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="waitlist-addon">
+        <h2>WooCommerce Event Waitlist Addon</h2>
+        <p>Allow attendees to join a waitlist when an event sells out. Waitlisted users are automatically notified when tickets become available, ensuring no booking opportunity is missed.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Automatic waitlist display when tickets are sold out</li>
+              <li>Email notifications when tickets become available</li>
+              <li>First-come, first-served queue system</li>
+              <li>Configurable maximum waitlist size</li>
+              <li>Admin overview of waitlist status per event</li>
+              <li>Automatic expiration of stale waitlist entries</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Usage</h3>
+            <ul>
+              <li>Activate the addon and configure global settings</li>
+              <li>Enable or disable waitlist per individual event</li>
+              <li>Customers click "Join Waitlist" on the sold-out event page</li>
+              <li>When a ticket is freed (cancellation), the next person is notified</li>
+              <li>Track waitlist size and conversion rates in reports</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="min-max-addon">
+        <h2>Event Max-Min Quantity Limiting Addon</h2>
+        <p>Control the minimum and maximum number of tickets a customer can purchase in a single transaction. Useful for limiting group sizes or ensuring minimum order values.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Set minimum ticket quantity per order</li>
+              <li>Set maximum ticket quantity per order</li>
+              <li>Apply limits globally or per event</li>
+              <li>Apply limits per ticket type</li>
+              <li>User-friendly validation messages at checkout</li>
+              <li>Compatible with all ticket types including variable pricing</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Use Cases</h3>
+            <ul>
+              <li>Minimum 2 tickets per order for group events</li>
+              <li>Maximum 10 tickets per customer to prevent bulk buying</li>
+              <li>Limit VIP ticket purchases to 2 per person</li>
+              <li>Enforce minimum spend requirements for events</li>
+              <li>Prevent scalping with strict per-customer limits</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="membership-addon">
+        <h2>Membership Price Addon</h2>
+        <p>Offer discounted ticket prices to members of your site. Integrates with popular membership plugins to provide exclusive pricing for registered members.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Member-only ticket pricing and discounts</li>
+              <li>Integration with WooCommerce Memberships and other membership plugins</li>
+              <li>Percentage or fixed discount for members</li>
+              <li>Different pricing tiers for different membership levels</li>
+              <li>Member prices displayed prominently on event pages</li>
+              <li>Non-members see regular prices with upgrade prompts</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Setup</h3>
+            <ul>
+              <li>Install and activate the Membership Price addon</li>
+              <li>Configure member discount rules in addon settings</li>
+              <li>Set default member discount percentage</li>
+              <li>Override discount for individual events as needed</li>
+              <li>Test with different membership levels to verify pricing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="calendar-addon">
+        <h2>WooCommerce Event Calendar Addon</h2>
+        <p>An enhanced frontend calendar with additional views, filtering options, and styling controls. Provides a richer calendar experience than the built-in shortcode.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Month, week, and day view options</li>
+              <li>Category and tag filtering on the calendar</li>
+              <li>Event tooltips on hover with key details</li>
+              <li>Click-to-view event details in a modal or new page</li>
+              <li>AJAX navigation between months without page reload</li>
+              <li>Custom colour coding by event category</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Configuration</h3>
+            <ul>
+              <li>Activate the Calendar addon and configure display settings</li>
+              <li>Use shortcode <code>[mep_calendar_pro]</code> for the enhanced calendar</li>
+              <li>Set default view, first day of week, and time format</li>
+              <li>Enable or disable event tooltips and modal popups</li>
+              <li>Assign category colours in the addon settings panel</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="qr-code-addon">
+        <h2>WooCommerce Event QR Code Addon</h2>
+        <p>Generate unique QR codes on every ticket for secure attendee check-in. QR codes can be scanned from printed tickets or mobile devices for fast entry management.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Unique QR code per ticket</li>
+              <li>Customisable QR code size and position on PDF tickets</li>
+              <li>QR code on both PDF and email tickets</li>
+              <li>One-time scan validation prevents duplicate entry</li>
+              <li>Check-in status tracking in the attendee list</li>
+              <li>Configurable error correction level for reliable scanning</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Scanning Workflow</h3>
+            <ul>
+              <li>Attendee receives ticket with QR code via email</li>
+              <li>At the venue, staff scans the QR code using any scanner app</li>
+              <li>The scan validates the ticket against the database</li>
+              <li>Attendee is marked as checked in — status reflected in admin</li>
+              <li>Scanned tickets cannot be reused, preventing fraud</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="seat-plan-addon">
+        <h2>Seat Plan Addon for Event Manager</h2>
+        <p>Create interactive seating charts for events with assigned seating. Attendees can select their preferred seats from a visual map during checkout.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Visual, drag-and-drop seat map editor</li>
+              <li>Define sections, rows, and individual seats</li>
+              <li>Different pricing per section or seat</li>
+              <li>Real-time seat availability updates</li>
+              <li>Reserved and wheelchair-accessible seat markers</li>
+              <li>Mobile-responsive seat selection interface</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Setup</h3>
+            <ul>
+              <li>Activate the Seat Plan addon and create a venue layout</li>
+              <li>Add sections (e.g., VIP, General, Balcony) with seat counts</li>
+              <li>Assign pricing per section or individual seats</li>
+              <li>Attach the seat plan to an event in the event edit screen</li>
+              <li>Attendees select their seats from the interactive map at checkout</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="marketplace-addon">
+        <h2>Event Marketplace / Frontend Submit Addon</h2>
+        <p>Allow users to submit and manage their own events from the frontend of your site. Turn your site into a community-driven event marketplace.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Features</h3>
+            <ul>
+              <li>Frontend event submission form with custom fields</li>
+              <li>User dashboard to manage submitted events</li>
+              <li>Pending review workflow — admin approval required</li>
+              <li>Commission or flat-fee pricing for event submissions</li>
+              <li>User profile pages showing their events</li>
+              <li>Email notifications for submission status changes</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Configuration</h3>
+            <ul>
+              <li>Activate the Marketplace addon and configure submission settings</li>
+              <li>Create the frontend submission form with required fields</li>
+              <li>Set pricing for event submissions (free, paid, commission)</li>
+              <li>Configure moderation settings for new submissions</li>
+              <li>Use shortcode <code>[mep_event_submission]</code> on any page</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="addon-installation">
+        <h2>Installing Addons</h2>
+        <p>All WpEvently addons are installed via zip upload or automatic installation, just like the main plugin. Follow these steps for a smooth addon setup.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Installation Steps</h3>
+            <ul>
+              <li>Download the addon .zip file from your Magepeople account</li>
+              <li>Go to Plugins &rarr; Add New &rarr; Upload Plugin</li>
+              <li>Select the addon .zip file and click Install Now</li>
+              <li>Activate the addon after installation completes</li>
+              <li>Enter your license key if prompted for premium addons</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Compatibility</h3>
+            <ul>
+              <li>All addons require the base WpEvently plugin to be active</li>
+              <li>Most addons are compatible with both free and Pro versions</li>
+              <li>Check the addon documentation for specific version requirements</li>
+              <li>Test addons on a staging site before production deployment</li>
+              <li>Keep all addons updated to the latest versions</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Available Addons' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Action Hooks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link active">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="social-share-hooks">
+        <h2>Social Share Button Hooks</h2>
+        <p>WpEvently provides hooks around the social share buttons section, allowing you to inject additional share networks, custom content, or analytics tracking.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Available Hooks</h3>
+            <ul>
+              <li><code>mep_before_social_share</code> — Fires before the social share buttons</li>
+              <li><code>mep_after_social_share</code> — Fires after the social share buttons</li>
+              <li><code>mep_social_share_list</code> — Filter hook to modify the share networks array</li>
+              <li><code>mep_social_share_item</code> — Action hook for each individual share button</li>
+              <li>Use these to add custom share services or promotional banners</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Usage Example</h3>
+            <ul>
+              <li><code>add_action('mep_before_social_share', 'my_custom_share_header');</code></li>
+              <li>Define a function that echoes HTML before the share buttons</li>
+              <li>Add WhatsApp, Telegram, or email share options via the filter</li>
+              <li>Wrap tracking pixels or analytics code in hook callbacks</li>
+              <li>Test that injected content renders correctly on event pages</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="google-map-hooks">
+        <h2>Google Map Section Hooks</h2>
+        <p>Customise the Google Map section on event detail pages. Hooks are available to add content before and after the map, or to modify map settings.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Available Hooks</h3>
+            <ul>
+              <li><code>mep_before_google_map</code> — Inject content above the map</li>
+              <li><code>mep_after_google_map</code> — Inject content below the map</li>
+              <li><code>mep_google_map_args</code> — Filter the map configuration array</li>
+              <li><code>mep_google_map_marker</code> — Filter marker position and info window</li>
+              <li>Modify zoom level, map type, and styling via <code>mep_google_map_args</code></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Map Customisation</h3>
+            <ul>
+              <li>Change map height and width via CSS on the map container</li>
+              <li>Add multiple markers for events with multiple locations</li>
+              <li>Customise the info window content with event details</li>
+              <li>Set custom map styles (snazzymaps JSON for branded look)</li>
+              <li>Disable the map entirely by unhooking the default callback</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="custom-functions">
+        <h2>Adding Custom Functions</h2>
+        <p>Extend WpEvently by adding custom PHP functions to your theme's functions.php file or a site-specific plugin. Use the available action and filter hooks to modify behaviour.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Common Customisations</h3>
+            <ul>
+              <li>Modify event query parameters using <code>pre_get_posts</code> and <code>mep_event_query_args</code></li>
+              <li>Add custom fields to the event creation form</li>
+              <li>Redirect users after ticket purchase using <code>mep_ticket_purchase_redirect</code></li>
+              <li>Send custom email notifications on event registration</li>
+              <li>Validate attendee data before processing the booking</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Example Snippet</h3>
+            <ul>
+              <li><code>add_filter('mep_event_query_args', function($args) { $args['posts_per_page'] = 10; return $args; });</code></li>
+              <li>Always use a prefix for your function names to avoid conflicts</li>
+              <li>Check for function existence before declaring custom functions</li>
+              <li>Use <code>is_plugin_active()</code> to conditionally load hook code</li>
+              <li>Test customisations after every plugin update</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="ticket-rendering-hooks">
+        <h2>Hook into Ticket Rendering</h2>
+        <p>The ticket selection and rendering process exposes hooks that let you modify ticket display, pricing, availability, and checkout behaviour.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Ticket Display Hooks</h3>
+            <ul>
+              <li><code>mep_before_ticket_type</code> — Content before the ticket type selector</li>
+              <li><code>mep_after_ticket_type</code> — Content after the ticket type selector</li>
+              <li><code>mep_ticket_type_item</code> — Modify each ticket type row output</li>
+              <li><code>mep_ticket_price_html</code> — Filter the displayed price HTML</li>
+              <li>Add quantity limits, custom descriptions, or promotional badges</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking & Cart Hooks</h3>
+            <ul>
+              <li><code>mep_before_add_to_cart</code> — Before adding ticket to cart</li>
+              <li><code>mep_after_add_to_cart</code> — After ticket is added to cart</li>
+              <li><code>mep_ticket_validation</code> — Custom validation rules for ticket selection</li>
+              <li><code>mep_cart_item_data</code> — Filter cart item data for tickets</li>
+              <li>Integrate with loyalty programmes or membership discounts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="hook-reference">
+        <h2>Complete Hook Reference</h2>
+        <p>A comprehensive list of all action and filter hooks available in WpEvently. Use this as a quick reference when building custom integrations.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Action Hooks</h3>
+            <ul>
+              <li><code>mep_before_event_list</code> — Before event list output</li>
+              <li><code>mep_after_event_list</code> — After event list output</li>
+              <li><code>mep_before_single_event</code> — Before single event content</li>
+              <li><code>mep_after_single_event</code> — After single event content</li>
+              <li><code>mep_before_ticket_form</code> — Before the ticket booking form</li>
+              <li><code>mep_after_ticket_form</code> — After the ticket booking form</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Filter Hooks</h3>
+            <ul>
+              <li><code>mep_event_list_args</code> — Modify event list query arguments</li>
+              <li><code>mep_single_event_template</code> — Override single event template path</li>
+              <li><code>mep_ticket_price</code> — Modify ticket price before display</li>
+              <li><code>mep_attendee_data</code> — Filter attendee information on submission</li>
+              <li><code>mep_email_subject</code> — Customise email notification subjects</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Action Hooks' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBusTicketly — REST API</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="bus-manager-settings.html" class="docs-nav-link">Bus Manager Settings</a>
+        <a href="rest-api.html" class="docs-nav-link active">REST API</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>API Overview</h2>
+        <p>WpBusTicketly exposes REST API endpoints that allow external applications to retrieve bus schedules and passenger data. All requests must be authenticated using standard WordPress credentials.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Authentication</h3>
+            <ul>
+              <li>Use <strong>Basic Auth</strong> with WordPress username and application password</li>
+              <li>Generate an Application Password at <strong>Users &rarr; Profile &rarr; Application Passwords</strong></li>
+              <li>Include the credentials in the <code>Authorization</code> header:</li>
+              <li><code>Authorization: Basic base64(username:application_password)</code></li>
+              <li>OAuth 1.0a is also supported via WordPress REST API infrastructure</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Base URL</h3>
+            <ul>
+              <li>All API endpoints are prefixed with the WordPress REST API namespace:</li>
+              <li><code>https://your-site.com/wp-json/wbtm/v1/</code></li>
+              <li>Replace <code>your-site.com</code> with your actual domain name</li>
+              <li>Test connectivity by accessing the root endpoint</li>
+              <li>Responses are returned in JSON format</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Available Endpoints</h2>
+        <p>The following REST API endpoints are available for retrieving bus and booking data.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Get Bus List</h3>
+            <p><code>GET /wp-json/wbtm/v1/buses</code></p>
+            <ul>
+              <li>Returns a list of all published buses with their details</li>
+              <li>Each bus entry includes: ID, title, type, route, departure time, fare</li>
+              <li>Optional query parameters: <code>?route_id=5</code>, <code>?type=ac</code></li>
+              <li>Supports pagination: <code>?page=1&amp;per_page=20</code></li>
+              <li>Example response:</li>
+            </ul>
+            <pre style="background:#f4f1ea;padding:12px;font-size:12px;border-radius:2px;overflow-x:auto;margin-top:8px;">{
+  "buses": [
+    {
+      "id": 42,
+      "title": "Greenline Express",
+      "type": "AC",
+      "route": "Dhaka &rarr; Chittagong",
+      "departure": "08:00",
+      "fare": 550
+    }
+  ],
+  "total": 1,
+  "page": 1
+}</pre>
+          </article>
+          <article class="doc-card">
+            <h3>Get Passenger List</h3>
+            <p><code>GET /wp-json/wbtm/v1/passengers</code></p>
+            <ul>
+              <li>Returns passenger details for all confirmed bookings</li>
+              <li>Filter by bus: <code>?bus_id=42</code></li>
+              <li>Filter by travel date: <code>?date=2025-12-25</code></li>
+              <li>Each entry includes: passenger name, phone, email, seat numbers, fare</li>
+              <li>Example response:</li>
+            </ul>
+            <pre style="background:#f4f1ea;padding:12px;font-size:12px;border-radius:2px;overflow-x:auto;margin-top:8px;">{
+  "passengers": [
+    {
+      "booking_id": 103,
+      "name": "John Doe",
+      "phone": "+8801712345678",
+      "email": "john@example.com",
+      "seats": ["A1", "A2"],
+      "bus": "Greenline Express",
+      "travel_date": "2025-12-25",
+      "total_fare": 1100
+    }
+  ],
+  "total": 1
+}</pre>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Additional Endpoints</h2>
+        <p>Extended endpoints available for more granular data access.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Single Bus Details</h3>
+            <p><code>GET /wp-json/wbtm/v1/buses/{id}</code></p>
+            <ul>
+              <li>Returns full details for a specific bus by ID</li>
+              <li>Includes seat layout, boarding points, and pricing tiers</li>
+              <li>Example: <code>GET /wp-json/wbtm/v1/buses/42</code></li>
+              <li>Returns 404 if the bus ID does not exist</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Route List</h3>
+            <p><code>GET /wp-json/wbtm/v1/routes</code></p>
+            <ul>
+              <li>Returns all available routes with start and end points</li>
+              <li>Useful for populating dropdown selectors in external apps</li>
+              <li>Each entry includes: ID, name, start stop, end stop, distance</li>
+              <li>Supports the same pagination and filtering parameters</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Integration Use Cases</h2>
+        <p>The REST API enables a wide range of integrations beyond the core WordPress front-end.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>External Display Systems</h3>
+            <ul>
+              <li>Sync bus schedules with airport-style departure boards</li>
+              <li>Push real-time seat availability to digital signage</li>
+              <li>Display route maps on information kiosks</li>
+              <li>Update departure times automatically from the WordPress backend</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Custom Applications</h3>
+            <ul>
+              <li>Build mobile apps (iOS / Android) using the REST API as a backend</li>
+              <li>Create custom booking widgets for third-party websites</li>
+              <li>Integrate with CRM systems for automated passenger data sync</li>
+              <li>Build reporting dashboards with live booking and revenue data</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Rate Limits &amp; Best Practices</h2>
+        <p>Follow these guidelines to ensure reliable and efficient API usage.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Rate Limiting</h3>
+            <ul>
+              <li>WordPress REST API does not enforce strict rate limits by default</li>
+              <li>High-traffic applications should implement client-side caching</li>
+              <li>Use the <code>If-None-Match</code> header with ETags when possible</li>
+              <li>Consider using a caching plugin for frequently accessed endpoints</li>
+              <li>Respect server resources by limiting concurrent requests</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Security</h3>
+            <ul>
+              <li>Always use HTTPS in production to encrypt API traffic</li>
+              <li>Generate unique Application Passwords per integration</li>
+              <li>Never expose credentials in client-side JavaScript</li>
+              <li>Restrict API access by IP if the integration is internal</li>
+              <li>Regularly audit and revoke unused application passwords</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBusTicketly' },
+    { href: '', label: 'REST API' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

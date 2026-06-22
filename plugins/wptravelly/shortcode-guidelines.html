@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpTravelly — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Shortcode Guidelines</h2>
+        <p>WpTravelly provides a rich set of shortcodes to display tours in list, grid, modern, blossom, orchid, lotus, and flora styles with filtering, pagination, and sorting options.</p>
+        <h3>Tour Display Shortcodes</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Tour List (Default)</h3>
+            <ul>
+              <li><code>[wptravelly-tour-list column=3]</code> — default list view</li>
+              <li><code>[wptravelly-tour-list type='trending' column=4]</code> — trending tours</li>
+              <li><code>[wptravelly-tour-list type='popular' column=3]</code> — popular tours</li>
+              <li><code>[wptravelly-tour-list type='featured' column=4]</code> — featured tours</li>
+              <li>Supports attributes: <code>column</code>, <code>type</code>, <code>style</code>, <code>category</code></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Modern List View</h3>
+            <ul>
+              <li><code>[wptravelly-modern-list column=3]</code> — modern card layout</li>
+              <li><code>[wptravelly-modern-list column=2 style='box']</code> — box style modern</li>
+              <li><code>[wptravelly-modern-list category='adventure']</code> — filtered by category</li>
+              <li>Ideal for travel agencies showcasing curated packages</li>
+              <li>Works with all <code>type</code> filter values</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Grid View (Flora / Blossom / Orchid)</h3>
+            <ul>
+              <li><code>[wptravelly-flora-grid column=3]</code> — flora card design</li>
+              <li><code>[wptravelly-blossom-grid column=4]</code> — blossom style grid</li>
+              <li><code>[wptravelly-orchid-grid column=3]</code> — orchid elegant layout</li>
+              <li>Each style provides unique Card UI and hover effects</li>
+              <li>Use <code>column=2/3/4</code> to control columns</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Lotus Grid View</h3>
+            <ul>
+              <li><code>[wptravelly-lotus-grid column=3]</code> — lotus theme grid</li>
+              <li>Designed for premium / luxury tour presentation</li>
+              <li>Displays price, duration, and rating per card</li>
+              <li>Supports <code>category</code> and <code>organizer</code> filtering</li>
+              <li>Fully responsive across all devices</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Specialized Shortcodes</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Top Attractions</h3>
+            <ul>
+              <li><code>[wptravelly-top-attraction column=3]</code></li>
+              <li><code>[wptravelly-top-attraction column=4 type='popular']</code></li>
+              <li>Highlights top-rated or most-visited tours</li>
+              <li>Supports the <code>slider</code> attribute for carousel display</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Travel Location</h3>
+            <ul>
+              <li><code>[wptravelly-travel-location column=4]</code></li>
+              <li><code>[wptravelly-travel-location style='list']</code></li>
+              <li>Displays tours grouped by destination or location</li>
+              <li>Useful for "Tours in {City}" style sections</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour List with Top Filter</h3>
+            <ul>
+              <li><code>[wptravelly-tour-list-filter column=3]</code></li>
+              <li>Adds a filter bar above the tour grid</li>
+              <li>Users can filter by category, price range, duration</li>
+              <li>Ideal for comprehensive tour directories</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Search Shortcode</h3>
+            <ul>
+              <li><code>[wptravelly-tour-search]</code> — full search form</li>
+              <li><code>[wptravelly-tour-search style='horizontal']</code> — inline layout</li>
+              <li>Search by keyword, destination, date, or category</li>
+              <li>Results update dynamically (AJAX-based)</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Taxonomy Shortcodes</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Category List</h3>
+            <ul>
+              <li><code>[wptravelly-category-list column=4]</code></li>
+              <li><code>[wptravelly-category-list style='grid']</code></li>
+              <li>Displays all tour categories with linked archive pages</li>
+              <li>Each category shows name, image, and tour count</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Organizer List</h3>
+            <ul>
+              <li><code>[wptravelly-organizer-list column=3]</code></li>
+              <li>Showcases tour guides, agencies, or operators</li>
+              <li>Cards include photo, bio snippet, and contact info</li>
+              <li>Clicking navigates to the organizer archive</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tag &amp; Activity List</h3>
+            <ul>
+              <li><code>[wptravelly-tag-list column=4]</code></li>
+              <li><code>[wptravelly-activity-list column=3]</code></li>
+              <li>Displays tag cloud or activity icons</li>
+              <li>Useful for building filter or browse-by-interest pages</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Common Parameters</h3>
+            <ul>
+              <li><code>column</code> — number of columns (2, 3, or 4)</li>
+              <li><code>type</code> — all, trending, popular, featured</li>
+              <li><code>style</code> — grid, list, box, modern</li>
+              <li><code>category</code> — slug of the tour category</li>
+              <li><code>organizer</code> — slug of the tour organizer</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpTravelly' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

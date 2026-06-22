@@ -18,16 +18,190 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>WpBusTicketly &mdash; Bus Booking Pro for WordPress</h1>
-    <p class="lede">Complete documentation for WpBusTicketly bus routes, seat layouts, driver dispatch, and ticketing addons.</p>
-
-  </section>
-
-  <main id="main">
-
-  </main>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="bus-manager-settings.html" class="docs-nav-link">Bus Manager Settings</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="installation-setup">
+        <h2>Installation &amp; Setup</h2>
+        <p>Install the Bus Ticket Booking with Seat Reservation plugin via WordPress admin, zip upload, or FTP, then activate your Pro license.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin Installation</h3>
+            <ul>
+              <li><a href="installation-setup.html">Install the free Bus Ticket Booking plugin</a></li>
+              <li><a href="installation-setup.html">Install WpBusTicketly PRO and activate license</a></li>
+              <li>Ensure WooCommerce and MagePeople PDF Support are installed</li>
+              <li>Configure permalinks to use the Post name setting</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Initial Configuration</h3>
+            <ul>
+              <li>Complete the guided setup wizard for core bus settings</li>
+              <li>Configure global currency, date formats, and timezone</li>
+              <li>Set up payment gateways and checkout preferences</li>
+              <li>Manage plugin updates and data backup options</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-guidelines">
+        <h2>Shortcode Guidelines</h2>
+        <p>Display bus search forms, bus lists, and ticket views anywhere on your site using dedicated shortcodes.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Search &amp; Listing Shortcodes</h3>
+            <ul>
+              <li><a href="shortcode-guidelines.html">Bus Search Form Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Bus Lists Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">View Ticket Shortcode</a></li>
+              <li>Use shortcode parameters for style, order, and pagination</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Shortcode Best Practices</h3>
+            <ul>
+              <li>Place <code>[wbtm-bus-search-form]</code> on a page with slug /bus-search-list/</li>
+              <li>Ensure the search result page uses <code>[wbtm-bus-search]</code> shortcode</li>
+              <li>Re-save permalink settings if search results don't appear</li>
+              <li>Combine shortcodes with page builders for custom layouts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="general-guidelines">
+        <h2>General Guidelines</h2>
+        <p>Learn how to add buses, manage routes, set up pricing, handle taxes, and configure passenger management features.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Bus &amp; Route Management</h3>
+            <ul>
+              <li><a href="general-guidelines.html">Instructions to start a bus booking</a></li>
+              <li><a href="general-guidelines.html">Add a bus to the list from dashboard</a></li>
+              <li><a href="general-guidelines.html">Setup bus types (AC / Non-AC)</a></li>
+              <li><a href="general-guidelines.html">Create bus stops and boarding points</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Pricing &amp; Passenger Management</h3>
+            <ul>
+              <li><a href="general-guidelines.html">How to add VAT</a></li>
+              <li><a href="general-guidelines.html">How to add tax</a></li>
+              <li><a href="general-guidelines.html">Purchase a ticket from dashboard (PRO)</a></li>
+              <li><a href="general-guidelines.html">Export passenger list (PRO)</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="bus-manager-settings">
+        <h2>Bus Manager Settings</h2>
+        <p>Configure global settings, customize seat panels, translate the plugin, adjust PDF settings, and manage checkout fields.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Global &amp; Display Settings</h3>
+            <ul>
+              <li><a href="bus-manager-settings.html">Global settings (date picker, block editor)</a></li>
+              <li><a href="bus-manager-settings.html">Bus settings (seat status, return date, buffer time)</a></li>
+              <li><a href="bus-manager-settings.html">Customize bus manager colors</a></li>
+              <li><a href="bus-manager-settings.html">Customize seat panel settings</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Checkout, PDF &amp; Translation</h3>
+            <ul>
+              <li><a href="bus-manager-settings.html">Customize checkout field settings (PRO)</a></li>
+              <li><a href="bus-manager-settings.html">Customize PDF ticket settings (PRO)</a></li>
+              <li><a href="bus-manager-settings.html">Translate the bus manager plugin</a></li>
+              <li><a href="bus-manager-settings.html">Change bus label in dashboard</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="rest-api">
+        <h2>REST API</h2>
+        <p>Integrate the Bus Ticket Booking plugin with external applications using available REST API endpoints for bus and passenger data.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>API Endpoints</h3>
+            <ul>
+              <li><a href="rest-api.html">Get bus list through API</a></li>
+              <li><a href="rest-api.html">Get passenger list details through API</a></li>
+              <li>Authenticate requests using WordPress credentials</li>
+              <li>Retrieve booking data for external integrations</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Integration Use Cases</h3>
+            <ul>
+              <li>Sync bus schedules with external display systems</li>
+              <li>Build custom mobile apps using the REST API</li>
+              <li>Automate passenger data export to CRM systems</li>
+              <li>Create custom reporting dashboards with live data</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="available-addons">
+        <h2>Available Addons</h2>
+        <p>Extend the Bus Ticket Booking plugin with powerful addons for QR codes and the Pro version with advanced features.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Addon Overview</h3>
+            <ul>
+              <li><a href="available-addons.html">Bus Booking with Seat Reservation Pro</a></li>
+              <li><a href="available-addons.html">QR Code Addon</a></li>
+              <li>Enable PDF ticketing and custom emailing</li>
+              <li>Access advanced reporting and passenger management</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Pro Features</h3>
+            <ul>
+              <li>Passenger management with custom forms</li>
+              <li>PDF ticketing and custom email templates</li>
+              <li>Advanced sales reporting and CSV export</li>
+              <li>Translation ready with multi-language support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="faq">
+        <h2>FAQ</h2>
+        <p>Quick answers to common questions about installing, configuring, and troubleshooting the Bus Ticket Booking plugin.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Getting Started</h3>
+            <ul>
+              <li>How do I install the Bus Ticket Booking plugin?</li>
+              <li>What plugins are required for the Pro version?</li>
+              <li>Why is my search form not working?</li>
+              <li>How do I set up bus routes and boarding points?</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Troubleshooting</h3>
+            <ul>
+              <li>Why don't search results appear on the page?</li>
+              <li>How do I fix pricing issues on the cart page in Divi?</li>
+              <li>Why is my passenger list showing empty?</li>
+              <li>How do I re-save permalinks to fix 404 errors?</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
@@ -37,22 +211,10 @@
 (function(){
   "use strict";
 
-  /* ---- render topbar via React ---- */
   renderTopbar([
     { href: '../../index.html', label: 'All Plugins' },
-    { href: '#wpbusticketly', label: 'WpBusTicketly' }
+    { href: '#', label: 'WpBusTicketly' }
   ], '../../images/MG-web-logo.webp');
-
-  /* ---- live clock ---- */
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
-
 })();
 </script>
 </body>

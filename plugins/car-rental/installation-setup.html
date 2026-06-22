@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental — Installation & Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link active">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="vehicle-management.html" class="docs-nav-link">Vehicle Management</a>
+        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <h2>Installation &amp; Setup</h2>
+      <p>The Car Rental Manager plugin can be installed via the WordPress admin dashboard, direct ZIP upload, or manual FTP. After activation, the setup wizard guides you through the essential configuration steps to launch your car rental system.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Plugin Installation Methods</h3>
+          <ul>
+            <li><strong>WordPress Admin:</strong> Navigate to Plugins &gt; Add New and search for "Car Rental Manager". Click Install Now and activate.</li>
+            <li><strong>ZIP Upload:</strong> Download the plugin package from MagePeople, go to Plugins &gt; Add New &gt; Upload Plugin, select the ZIP file, and activate.</li>
+            <li><strong>FTP (Manual):</strong> Extract the plugin folder and upload it to <code>/wp-content/plugins/</code> via FTP. Activate from the WordPress Plugins screen.</li>
+            <li><strong>Pro Version:</strong> After purchasing, download the Pro ZIP from your MagePeople account and upload it via WordPress. The Pro license unlocks advanced features.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>System Requirements</h3>
+          <ul>
+            <li>WordPress 5.0 or higher (6.x recommended)</li>
+            <li>PHP 7.4 or higher (8.0+ recommended)</li>
+            <li>MySQL 5.6 or higher / MariaDB 10.1+</li>
+            <li>WooCommerce 5.0+ (optional, for payment processing)</li>
+            <li>Memory limit: at least 128MB (256MB recommended)</li>
+            <li>SSL certificate for secure payment transactions</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Setup Wizard</h3>
+      <p>Upon first activation, the setup wizard steps through the core configuration. You can also access it later from the Car Rental menu in your WordPress admin.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Wizard Steps</h3>
+          <ul>
+            <li><strong>General Settings:</strong> Define the plugin label (e.g., "Car Rental"), URL slug, and currency settings.</li>
+            <li><strong>Business Details:</strong> Enter your business name, address, contact information, and timezone.</li>
+            <li><strong>Rental Preferences:</strong> Set default rental duration (daily/hourly), min/max booking days, and advance notice period.</li>
+            <li><strong>Payment Configuration:</strong> Choose between WooCommerce, PayPal, Stripe, or bank transfer as payment gateways.</li>
+            <li><strong>Sample Data:</strong> Optionally import pre-built vehicle profiles and sample content to start quickly.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Post-Installation Checks</h3>
+          <ul>
+            <li>Verify that the Car Rental menu appears in your WordPress admin sidebar.</li>
+            <li>Check that required pages (Booking Form, Fleet Listing, Checkout) are created automatically.</li>
+            <li>Test the booking form on the front end to ensure styling and functionality work.</li>
+            <li>Confirm email notifications are triggered for test bookings.</li>
+            <li>Review the Settings panel for any additional customization options.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>WooCommerce Integration</h3>
+      <p>Car Rental Manager integrates seamlessly with WooCommerce for payment handling, or you can use standalone payment gateways.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>With WooCommerce</h3>
+          <ul>
+            <li>Install and activate WooCommerce before Car Rental Manager.</li>
+            <li>Rental bookings are added as WooCommerce products.</li>
+            <li>Supported gateways: Stripe, PayPal, BACS, Cheque, and any WooCommerce-compatible gateway.</li>
+            <li>Order management uses the standard WooCommerce order interface.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Without WooCommerce</h3>
+          <ul>
+            <li>Enable standalone mode in Car Rental settings.</li>
+            <li>Configure PayPal or Stripe directly within the plugin.</li>
+            <li>Booking data is managed entirely within Car Rental Manager.</li>
+            <li>Suitable for sites that do not sell physical products alongside rentals.</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'Car Rental' },
+    { href: '', label: 'Installation & Setup' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

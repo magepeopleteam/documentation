@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpTravelly — General Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link active">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>General Guidelines</h2>
+        <p>Manage tour taxonomies, create packages, configure booking settings, and follow best practices for a smooth tour booking experience with WpTravelly.</p>
+        <h3>Tour Management</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Creating a New Tour</h3>
+            <ul>
+              <li>Go to WpTravelly &rarr; Add New Tour in the WordPress admin</li>
+              <li>Enter the tour title, description, and featured image</li>
+              <li>Set tour type: single-day, multi-day, or recurring</li>
+              <li>Define pricing: regular price, sale price, and group rates</li>
+              <li>Add itinerary sections with day-wise descriptions</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Managing Tour Categories</h3>
+            <ul>
+              <li>Navigate to WpTravelly &rarr; Categories to add/edit categories</li>
+              <li>Assign a name, slug, description, and featured image</li>
+              <li>Organise categories hierarchically if needed (parent/child)</li>
+              <li>Use categories to group tours by theme or difficulty level</li>
+              <li>Display categories using <code>[wptravelly-category-list]</code></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour Organizers</h3>
+            <ul>
+              <li>Add tour organizers under WpTravelly &rarr; Organizers</li>
+              <li>Include name, bio, photo, contact email, and phone</li>
+              <li>Assign social media links (Facebook, Instagram, Twitter)</li>
+              <li>Link organizers to tours via the tour edit screen</li>
+              <li>Display organizers using <code>[wptravelly-organizer-list]</code></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour Tags &amp; Activities</h3>
+            <ul>
+              <li>Create tags for quick filtering (e.g. "Beach", "Hiking")</li>
+              <li>Define activities to highlight tour experiences</li>
+              <li>Tags and activities appear as filter options in front-end</li>
+              <li>Display tag lists with <code>[wptravelly-tag-list]</code></li>
+              <li>Display activity lists with <code>[wptravelly-activity-list]</code></li>
+            </ul>
+          </article>
+        </div>
+        <h3>Booking &amp; Pricing Configuration</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Pricing Options</h3>
+            <ul>
+              <li>Set base price per adult with optional child/infant pricing</li>
+              <li>Configure group discounts for large parties</li>
+              <li>Enable seasonal pricing for peak and off-peak periods</li>
+              <li>Offer deposit or partial payment options</li>
+              <li>Define currency symbol and position under settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking Rules</h3>
+            <ul>
+              <li>Set minimum and maximum travellers per booking</li>
+              <li>Define booking cutoff time (e.g. 24 hours before departure)</li>
+              <li>Enable automatic or manual booking confirmation</li>
+              <li>Configure cancellation policy and refund rules</li>
+              <li>Set buffer time between consecutive tour slots</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Calendar &amp; Availability</h3>
+            <ul>
+              <li>Define available dates and time slots per tour</li>
+              <li>Set recurring schedules (daily, weekly, monthly)</li>
+              <li>Block out dates manually or via availability rules</li>
+              <li>Display real-time availability on the front end</li>
+              <li>Prevent overbooking by setting capacity limits</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Email Notifications</h3>
+            <ul>
+              <li>Customise admin notification for new bookings</li>
+              <li>Configure customer confirmation and reminder emails</li>
+              <li>Set up cancellation and refund notification templates</li>
+              <li>Use shortcodes in email templates for dynamic data</li>
+              <li>Test email delivery with a sandbox booking</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Display &amp; Layout Tips</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Shortcode Placement</h3>
+            <ul>
+              <li>Use <code>[wptravelly-tour-list column=3]</code> on the main tours page</li>
+              <li>Combine <code>[wptravelly-tour-search]</code> with <code>[wptravelly-tour-list-filter]</code></li>
+              <li>Place <code>[wptravelly-top-attraction]</code> on the homepage</li>
+              <li>Add <code>[wptravelly-travel-location]</code> on destination pages</li>
+              <li>Avoid stacking multiple heavy shortcodes on a single page</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Style Selection Guide</h3>
+            <ul>
+              <li><strong>List</strong> — compact, text-heavy, good for directories</li>
+              <li><strong>Grid</strong> — balanced, image+text, most versatile</li>
+              <li><strong>Modern</strong> — clean cards, ideal for professional agencies</li>
+              <li><strong>Blossom / Orchid / Lotus / Flora</strong> — visual themes for branding</li>
+              <li>Test each style with your content to choose the best fit</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Content Best Practices</h3>
+            <ul>
+              <li>Write compelling tour descriptions with clear highlights</li>
+              <li>Use high-quality images (1200&times;800 px or larger)</li>
+              <li>Keep tour titles concise and keyword-rich</li>
+              <li>Include pricing prominently in tour cards</li>
+              <li>Add customer reviews and ratings to build trust</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>SEO Optimisation</h3>
+            <ul>
+              <li>Set unique meta titles and descriptions per tour</li>
+              <li>Use SEO-friendly URL slugs for tours and taxonomy pages</li>
+              <li>Enable breadcrumbs for better site navigation</li>
+              <li>Add schema markup for tour listings (JSON-LD)</li>
+              <li>Submit tour sitemaps to Google Search Console</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpTravelly' },
+    { href: '', label: 'General Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCab — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="plugin-settings.html" class="docs-nav-link">Plugin Settings</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="pro-features.html" class="docs-nav-link">Pro Features</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find quick answers to common questions about installing, configuring, pricing, and troubleshooting the eCab Taxi Booking Manager plugin.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I install the eCab plugin?</h3>
+            <ul>
+              <li>You can install eCab via WordPress Admin (Plugins &rarr; Add New &rarr; Upload Plugin), via FTP by uploading the extracted folder to /wp-content/plugins/, or directly through the WordPress plugin directory if listed</li>
+              <li>After installation, click Activate Plugin and ensure WooCommerce is installed and active</li>
+              <li>Go to Settings &rarr; Permalinks, select Post name, and click Save Changes</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>What pricing models does eCab support?</h3>
+            <ul>
+              <li><strong>Distance-based pricing:</strong> Fare calculated per kilometer or per mile plus waiting time charges</li>
+              <li><strong>Fixed hourly pricing:</strong> Flat hourly rate with configurable minimum hours and overtime charges</li>
+              <li><strong>Manual fixed location pricing:</strong> Predefined route pairs with manually set flat fares</li>
+              <li>Each transport service can use a different pricing model for maximum flexibility</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Do I need a Google Maps API key?</h3>
+            <ul>
+              <li>Yes, if you are using the distance-based pricing model, a valid Google Maps API key is required for distance and duration calculations</li>
+              <li>The Maps JavaScript API and Geocoding API must both be enabled in your Google Cloud Console</li>
+              <li>For manual fixed location pricing, a Google Maps API key is optional and only needed if you want to display a map on the booking form</li>
+              <li>Restrict your API key by HTTP referrer to prevent unauthorized use</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I add a new transport service?</h3>
+            <ul>
+              <li>Go to eCab &rarr; Transport Services in your WordPress admin menu</li>
+              <li>Click Add New and enter the service name, description, and featured image</li>
+              <li>Select the pricing model you want to use for this service</li>
+              <li>Configure the pricing details (per-km rate, hourly rate, or fixed location prices)</li>
+              <li>Set vehicle type, passenger capacity, and baggage capacity</li>
+              <li>Publish the service and embed the appropriate shortcode on your site</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I configure off days and schedules?</h3>
+            <ul>
+              <li>Navigate to eCab &rarr; Settings &rarr; Service Schedule</li>
+              <li>Set your weekly operating hours for each day of the week</li>
+              <li>Add off days for holidays or closures using the Off Day setting</li>
+              <li>Choose between repeated schedules (same weekly pattern) or particular date-specific schedules</li>
+              <li>Off days can be applied globally to all services or per individual transport service</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I set up extra services?</h3>
+            <ul>
+              <li>Go to eCab &rarr; Settings &rarr; Extra Features to create optional add-on services</li>
+              <li>Examples: child seats ($5), pet transportation ($10), extra luggage ($8)</li>
+              <li>Set a fixed price for each extra feature and choose per-booking or per-passenger billing</li>
+              <li>Extra services appear as optional checkboxes on the booking form</li>
+              <li>Customers can select extras during checkout and the charges are added to the WooCommerce cart</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I add a driver in the Pro version?</h3>
+            <ul>
+              <li>Navigate to eCab &rarr; Drivers and click Add New Driver</li>
+              <li>Enter the driver's name, email, phone number, and license information</li>
+              <li>Assign the driver to a specific vehicle type</li>
+              <li>Upload a driver photo for display on booking tickets</li>
+              <li>The driver receives login credentials for the driver panel where they can view and manage trips</li>
+              <li>Assign drivers to specific bookings from the order edit screen</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I translate the plugin?</h3>
+            <ul>
+              <li>eCab is fully translatable using .po/.mo translation files</li>
+              <li>Install Loco Translate plugin to translate directly from the WordPress admin</li>
+              <li>Alternatively, use Poedit to edit the .po file located in /wp-content/plugins/ecab/languages/</li>
+              <li>Name your translation file ecab-xx_XX.po (e.g., ecab-fr_FR.po for French)</li>
+              <li>All front-end and back-end strings are registered for translation</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Why is my shortcode not displaying?</h3>
+            <ul>
+              <li>Go to Settings &rarr; Permalinks and click Save Changes to flush rewrite rules</li>
+              <li>Verify WooCommerce is installed and active</li>
+              <li>Check that you are using the correct shortcode for your selected pricing model</li>
+              <li>Clear any caching plugins (WP Super Cache, W3 Total Cache) and CDN caches</li>
+              <li>Test with a default WordPress theme (Twenty Twenty-Four) to rule out theme conflicts</li>
+              <li>Check the browser console for JavaScript errors that may prevent the form from rendering</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I set up distance-based pricing for my city?</h3>
+            <ul>
+              <li>Enter a valid Google Maps API key in eCab &rarr; Settings &rarr; Maps</li>
+              <li>Choose your distance unit (km or miles) under eCab &rarr; Settings &rarr; General</li>
+              <li>Create a transport service and select Distance Based as the pricing model</li>
+              <li>Set the per-km rate (e.g., $1.50), per-hour waiting rate (e.g., $12.00), and initial base fare</li>
+              <li>Set a minimum fare to ensure short trips remain profitable</li>
+              <li>Optionally set different rates for different vehicle types</li>
+              <li>Embed the distance-based shortcode on your booking page</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I set up fixed hourly pricing for tours?</h3>
+            <ul>
+              <li>Create a transport service and select Fixed Hourly as the pricing model</li>
+              <li>Set the hourly rate (e.g., $25 per hour for a sedan)</li>
+              <li>Configure the minimum hours required per booking (e.g., minimum 3 hours)</li>
+              <li>Optionally set an included mileage cap (e.g., 50 km included per hour)</li>
+              <li>Configure overtime charges for bookings that run over the reserved time</li>
+              <li>Set extra distance charges per km for distances beyond the included mileage</li>
+              <li>Embed the fixed hourly shortcode on your tour booking page</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I set up manual fixed location pricing?</h3>
+            <ul>
+              <li>First, create your locations under eCab &rarr; Locations &rarr; Add Location</li>
+              <li>Enter the location name, address, and GPS coordinates (latitude/longitude)</li>
+              <li>Create a transport service and select Manual Fixed Location as the pricing model</li>
+              <li>Define location pairs (pickup &rarr; dropoff) and assign a fixed price to each pair</li>
+              <li>For example: Airport to Downtown Hotel — $35.00, Downtown Hotel to Convention Center — $12.00</li>
+              <li>Different vehicle types can have different prices for the same route pair</li>
+              <li>Embed the manual fixed location shortcode on your booking page</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>How do I set the advance booking window?</h3>
+            <ul>
+              <li>Go to eCab &rarr; Settings &rarr; General Settings</li>
+              <li>Find the Advance Booking Days setting</li>
+              <li>Enter the maximum number of days in advance customers can book (e.g., 30 for 30 days)</li>
+              <li>Set the minimum lead time in hours (e.g., 2 hours before the booking time)</li>
+              <li>These limits apply globally to all transport services</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Can I use eCab without WooCommerce?</h3>
+            <ul>
+              <li>No, WooCommerce is a required dependency for eCab. The plugin uses WooCommerce's order management, cart, and checkout systems to process bookings and payments</li>
+              <li>Both WooCommerce and eCab must be activated for the booking system to function</li>
+              <li>eCab integrates with WooCommerce payment gateways including PayPal, Stripe, and offline payments</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'eCab' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

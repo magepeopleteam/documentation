@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpRently — Installation &amp; Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link active">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="global-settings.html" class="docs-nav-link">Global Settings</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Installation &amp; Setup</h2>
+        <p>Get the Booking and Rental Manager for WooCommerce (WpRently) up and running on your WordPress site. Follow the steps below to install, activate, and configure the plugin for your first rental item.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin Installation</h3>
+            <ul>
+              <li><strong>Via WordPress Admin:</strong> Navigate to Plugins &rarr; Add New, search for "Booking and Rental Manager for WooCommerce", then click Install Now and Activate.</li>
+              <li><strong>Via Zip Upload:</strong> Download the plugin zip from your Magepeople account, go to Plugins &rarr; Add New &rarr; Upload Plugin, choose the zip file, and click Install Now.</li>
+              <li><strong>Via FTP:</strong> Extract the plugin folder and upload <code>/booking-and-rental-manager-for-woocommerce/</code> to <code>/wp-content/plugins/</code>, then activate from the admin Plugins screen.</li>
+              <li><strong>Pro Version:</strong> After activating the free version, install the Pro plugin the same way and enter your license key under WpRently &rarr; License to unlock premium features.</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Dependencies</h3>
+            <ul>
+              <li>WordPress 5.6 or higher (6.x recommended)</li>
+              <li>WooCommerce 5.0 or higher (required for full functionality)</li>
+              <li>PHP 7.4+ (8.0+ recommended for best performance)</li>
+              <li>MySQL 5.6+ or MariaDB 10.1+</li>
+              <li>Modern browser for the admin interface (Chrome, Firefox, Edge)</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Step-by-Step Setup Wizard</h3>
+        <p>After activation, the setup wizard launches automatically. Complete the wizard to configure the core rental parameters.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Step 1 — Rental Types</h3>
+            <ul>
+              <li>Enable the rental item types you want to offer: Bike, Car, Resort, Equipment, Dress, or General</li>
+              <li>Each type maps to a dedicated WooCommerce product category</li>
+              <li>You can rename labels for each type in General Settings later</li>
+              <li>Disable unused types to keep the admin menu clean</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Step 2 — Booking Mode</h3>
+            <ul>
+              <li>Choose between Single Day or Multiple Day rental model</li>
+              <li>Single Day: items are booked for one calendar day (e.g., 9 AM &ndash; 6 PM)</li>
+              <li>Multiple Day: items are booked across consecutive days with flexible pickup/return times</li>
+              <li>This setting can be overridden per product later</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Step 3 — Pricing &amp; Currency</h3>
+            <ul>
+              <li>Set your default currency and price format (WooCommerce settings apply)</li>
+              <li>Configure per-day or per-hour base pricing for new items</li>
+              <li>Enable seasonal pricing if you have the Seasonal Pricing addon</li>
+              <li>Set default tax rates for rental items</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Step 4 — Checkout &amp; Payment</h3>
+            <ul>
+              <li>Choose checkout mode: WooCommerce native or plugin's quick checkout</li>
+              <li>Enable guest checkout if you want rentals without account registration</li>
+              <li>Select which payment gateways appear for rental orders</li>
+              <li>Configure deposit requirements (percentage or fixed amount due upfront)</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Post-Installation Checklist</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Verify Plugin Activation</h3>
+            <ul>
+              <li>Check that a "WpRently" menu appears in the WordPress admin sidebar</li>
+              <li>Confirm rental product categories were created under Products &rarr; Categories</li>
+              <li>Visit Settings &rarr; Permalinks and click "Save Changes" to flush rewrite rules</li>
+              <li>Test by creating one rental product and viewing it on the front end</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Configure Addons</h3>
+            <ul>
+              <li><a href="available-addons.html">Browse available addons</a> to extend functionality</li>
+              <li><a href="addons/damage-deposit-handler/">Damage Deposit Handler</a> for refundable deposits</li>
+              <li><a href="addons/availability-calendar-sync/">Availability Calendar Sync</a> for Google/Outlook</li>
+              <li><a href="addons/late-return-fees/">Late Return Fees</a> for automated penalties</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpRently' },
+    { href: '', label: 'Installation &amp; Setup' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

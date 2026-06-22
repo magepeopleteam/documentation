@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="vehicle-management.html" class="docs-nav-link">Vehicle Management</a>
+        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <h2>Shortcode Guidelines</h2>
+      <p>Car Rental Manager provides shortcodes to embed booking forms, vehicle listings, and search interfaces on any WordPress page or post. Each shortcode supports configurable parameters for layout, filtering, and behaviour.</p>
+
+      <h3>Booking Form Shortcodes</h3>
+      <p>Use the <code>[mpcrbm_booking]</code> shortcode to display the rental booking form. Multiple layout styles and options are available.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Form Layouts</h3>
+          <ul>
+            <li><code>[mpcrbm_booking form='inline' progressbar='no']</code> &mdash; Inline form without progress bar.</li>
+            <li><code>[mpcrbm_booking form='horizontal' progressbar='yes']</code> &mdash; Horizontal step layout with progress indicator.</li>
+            <li><code>[mpcrbm_booking form='vertical' progressbar='yes']</code> &mdash; Vertical stacked form with progress steps.</li>
+            <li><code>[mpcrbm_booking form='inline' progressbar='yes' show_category='yes']</code> &mdash; Inline form with category selection.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Form Parameters</h3>
+          <ul>
+            <li><code>form</code> &mdash; Layout style: <code>inline</code>, <code>horizontal</code>, or <code>vertical</code>.</li>
+            <li><code>progressbar</code> &mdash; Show step progress: <code>yes</code> or <code>no</code>.</li>
+            <li><code>show_category</code> &mdash; Include category filter: <code>yes</code> or <code>no</code>.</li>
+            <li><code>show_vehicle</code> &mdash; Display vehicle selection step: <code>yes</code> or <code>no</code>.</li>
+            <li><code>class</code> &mdash; Additional CSS class names for custom styling.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Vehicle Listing Shortcodes</h3>
+      <p>Display your fleet with the <code>[rent-list]</code> shortcode. Supports grid and list views with filtering options.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>List Display Options</h3>
+          <ul>
+            <li><code>[rent-list type='car' style='grid']</code> &mdash; Car fleet in grid layout.</li>
+            <li><code>[rent-list type='car' style='list']</code> &mdash; Car fleet in list layout.</li>
+            <li><code>[rent-list type='car' style='grid' order='asc']</code> &mdash; Ascending order by title.</li>
+            <li><code>[rent-list type='car' style='grid' order='desc']</code> &mdash; Descending order by title.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>List Parameters</h3>
+          <ul>
+            <li><code>type</code> &mdash; Post type to list: <code>car</code>.</li>
+            <li><code>style</code> &mdash; Display style: <code>grid</code> or <code>list</code>.</li>
+            <li><code>order</code> &mdash; Sort order: <code>asc</code> (ascending) or <code>desc</code> (descending).</li>
+            <li><code>category</code> &mdash; Filter by category slug (e.g., <code>suv</code>, <code>sedan</code>).</li>
+            <li><code>posts_per_page</code> &mdash; Number of vehicles to display (default: all).</li>
+            <li><code>show_pagination</code> &mdash; Enable pagination: <code>yes</code> or <code>no</code>.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Search &amp; Filter Shortcodes</h3>
+      <p>Provide advanced search capabilities with dedicated filter shortcodes.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Search Form Shortcode</h3>
+          <ul>
+            <li><code>[mpcrbm_search placeholder='Search vehicles&hellip;']</code> &mdash; Basic search input.</li>
+            <li><code>[mpcrbm_search style='compact']</code> &mdash; Compact search bar.</li>
+            <li><code>[mpcrbm_search style='full' show_category='yes']</code> &mdash; Full search with category dropdown.</li>
+            <li>Results update dynamically via AJAX on supported themes.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Category Filter Shortcode</h3>
+          <ul>
+            <li><code>[mpcrbm_categories style='dropdown']</code> &mdash; Dropdown category selector.</li>
+            <li><code>[mpcrbm_categories style='list']</code> &mdash; Checkbox-style category list.</li>
+            <li><code>[mpcrbm_categories style='buttons']</code> &mdash; Button group filter.</li>
+            <li>Combine with <code>[rent-list]</code> for interactive filtering.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Special Purpose Shortcodes</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Dashboard &amp; Account</h3>
+          <ul>
+            <li><code>[mpcrbm_dashboard]</code> &mdash; Customer dashboard showing past and upcoming bookings.</li>
+            <li><code>[mpcrbm_my_account]</code> &mdash; Account management area for profile and booking history.</li>
+            <li>Both shortcodes require the user to be logged in.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Location &amp; Extras</h3>
+          <ul>
+            <li><code>[mpcrbm_locations]</code> &mdash; Display available pickup/drop-off locations.</li>
+            <li><code>[mpcrbm_extras]</code> &mdash; Show extra services available for add-on purchase.</li>
+            <li><code>[mpcrbm_faq]</code> &mdash; Render the FAQ section for customer self-service.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Shortcode Best Practices</h3>
+      <ul>
+        <li>Place only one booking form shortcode per page to avoid conflicting instances.</li>
+        <li>Use a dedicated page for the fleet listing with <code>[rent-list]</code> for better SEO.</li>
+        <li>Always test shortcodes in the WordPress customizer or a staging site before going live.</li>
+        <li>Combine shortcodes with Gutenberg blocks or page builders for advanced layouts.</li>
+        <li>Wrap shortcodes in custom containers if you need additional CSS styling.</li>
+      </ul>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'Car Rental' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

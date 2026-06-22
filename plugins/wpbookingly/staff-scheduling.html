@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBookingly — Staff &amp; Scheduling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="service-management.html" class="docs-nav-link">Service Management</a>
+        <a href="staff-scheduling.html" class="docs-nav-link active">Staff &amp; Scheduling</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="payment-integration.html" class="docs-nav-link">Payment Integration</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="staff-management">
+        <h2>Staff Management</h2>
+        <p>Staff members can be assigned to specific services and have their own schedules, making it easy to manage team-based appointments.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Adding Staff Members</h3>
+            <ul>
+              <li>Navigate to WpBookingly &gt; Staff in the WordPress admin</li>
+              <li>Enter staff name, email address, and contact information</li>
+              <li>Upload a profile photo for staff identification</li>
+              <li>Add a brief biography or specialization details</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Staff Assignment</h3>
+            <ul>
+              <li>Assign each staff member to one or more services</li>
+              <li>Multiple staff can serve the same service</li>
+              <li>Set staff-specific pricing for specialized services</li>
+              <li>Enable customer choice of staff during booking</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Bulk Staff Import</h3>
+            <ul>
+              <li>Use the CSV import feature for adding multiple staff at once</li>
+              <li>Prepare a CSV with columns for name, email, photo URL, and service IDs</li>
+              <li>Map CSV columns to staff fields during import</li>
+              <li>Review and confirm imported staff before saving</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Staff Permissions</h3>
+            <ul>
+              <li>Control what each staff member can view and edit</li>
+              <li>Enable staff-only dashboard access (Pro feature)</li>
+              <li>Restrict staff to viewing their own appointments</li>
+              <li>Allow staff to update appointment statuses</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="schedule-configuration">
+        <h2>Schedule Configuration</h2>
+        <p>Define working hours, time slots, and availability rules for each service and staff member.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Working Hours</h3>
+            <ul>
+              <li>Set weekly working days per staff member or service</li>
+              <li>Configure opening and closing hours for each day</li>
+              <li>Define lunch breaks or split shifts</li>
+              <li>Customize hours per day of the week</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Time Slots</h3>
+            <ul>
+              <li>Set slot duration based on your shortest service</li>
+              <li>Define gap time between consecutive appointments</li>
+              <li>Set maximum bookings per time slot</li>
+              <li>Auto-generate slots from working hours</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Date Restrictions</h3>
+            <ul>
+              <li>Define booking cutoff time (e.g., no same-day booking after 2 PM)</li>
+              <li>Set minimum advance notice for bookings</li>
+              <li>Limit maximum advance booking window (e.g., 30 days ahead)</li>
+              <li>Block specific dates for holidays or events</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Recurring Availability</h3>
+            <ul>
+              <li>Set recurring weekly schedules that repeat automatically</li>
+              <li>Override specific dates without affecting the base schedule</li>
+              <li>Copy schedules between staff members</li>
+              <li>Import schedules from a spreadsheet</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="holidays-off-days">
+        <h2>Holidays &amp; Off Days</h2>
+        <p>Manage exceptions to the regular schedule with global and staff-specific off days.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Global Holidays</h3>
+            <ul>
+              <li>Add public holidays that apply to all staff and services</li>
+              <li>Set recurring annual holidays (e.g., Christmas, New Year)</li>
+              <li>Import holiday calendars via CSV</li>
+              <li>Holidays override all working day settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Staff-Specific Off Days</h3>
+            <ul>
+              <li>Add individual staff vacation or sick days</li>
+              <li>Temporarily disable a staff member from receiving bookings</li>
+              <li>Set recurring weekly off days per staff member</li>
+              <li>Override default schedule for specific dates only</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="google-calendar-sync">
+        <h2>Google Calendar Sync</h2>
+        <p>Sync your WpBookingly schedule with Google Calendar to manage appointments from a single interface.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Setup &amp; Configuration</h3>
+            <ul>
+              <li>Requires the Staff and Resource Scheduler addon</li>
+              <li>Connect your Google account via OAuth 2.0</li>
+              <li>Select which calendar to sync with</li>
+              <li>Choose synchronization direction (one-way or two-way)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Sync Behavior</h3>
+            <ul>
+              <li>New bookings automatically create calendar events</li>
+              <li>Cancelled bookings remove events from the calendar</li>
+              <li>Rescheduled appointments update existing events</li>
+              <li>Conflicts are flagged and reported via email</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBookingly' },
+    { href: '', label: 'Staff &amp; Scheduling' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="list-shortcode">
+        <h2>Events List Style Shortcode</h2>
+        <p>Display events in a vertical list layout with event thumbnails, dates, titles, and ticket buttons. Ideal for sidebars, agendas, and schedule pages.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_list]</code> — Shows all upcoming events in list format</li>
+              <li><code>[mep_event_list limit="6"]</code> — Limits to 6 events</li>
+              <li><code>[mep_event_list show="3"]</code> — Shows 3 events per page with pagination</li>
+              <li><code>[mep_event_list category="conference"]</code> — Filters by event category slug</li>
+              <li><code>[mep_event_list order="asc"]</code> — Sorts events in ascending date order</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>limit</code> — Number of events to display (default: all)</li>
+              <li><code>show</code> — Events per page for paginated lists</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+              <li><code>style</code> — Layout style: <code>list</code> or <code>grid</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="grid-shortcode">
+        <h2>Events Grid Style Shortcode</h2>
+        <p>Display events in a responsive card grid. Each card shows the event thumbnail, date, title, location, and a book now button.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_grid]</code> — Shows all upcoming events in grid layout</li>
+              <li><code>[mep_event_grid column="3"]</code> — Sets grid to 3 columns</li>
+              <li><code>[mep_event_grid column="4" limit="8"]</code> — 4 columns showing 8 events</li>
+              <li><code>[mep_event_grid category="workshop"]</code> — Filters by category slug</li>
+              <li><code>[mep_event_grid show_footer="no"]</code> — Hides the footer area</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>column</code> — Number of grid columns (2, 3, or 4, default: 3)</li>
+              <li><code>limit</code> — Number of events to display</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li><code>show_footer</code> — Show/hide the card footer (<code>yes</code>/<code>no</code>)</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="minimal-shortcode">
+        <h2>Events Minimal Style Shortcode</h2>
+        <p>A minimal, clean layout that shows event titles and dates without thumbnails or extra styling. Perfect for embedding in tight spaces or text-heavy pages.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_minimal]</code> — Minimal list of upcoming events</li>
+              <li><code>[mep_event_minimal limit="5"]</code> — Limits to 5 events</li>
+              <li><code>[mep_event_minimal category="seminar"]</code> — Filters by category</li>
+              <li><code>[mep_event_minimal show_past="yes"]</code> — Includes past events in the list</li>
+              <li>No thumbnail or image output for minimal rendering</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>limit</code> — Number of events to display</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li><code>show_past</code> — Include past events (<code>yes</code>/<code>no</code>)</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+              <li>Ideal for sidebar widgets and footer areas</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="native-shortcode">
+        <h2>Events Native Style Shortcode</h2>
+        <p>Renders events using the native WordPress loop styling. Events blend seamlessly with your theme's default post layout for a consistent look.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_native]</code> — Displays events using native theme styling</li>
+              <li><code>[mep_event_native limit="4"]</code> — Shows 4 events</li>
+              <li><code>[mep_event_native category="meetup"]</code> — Filter by category</li>
+              <li><code>[mep_event_native show="3"]</code> — Pagination with 3 events per page</li>
+              <li>Respects your theme's archive and single post templates</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>limit</code> — Total events to display</li>
+              <li><code>show</code> — Events per page with pagination</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+              <li>Use this shortcode for archive-like event pages</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="calendar-shortcode">
+        <h2>Events Calendar Shortcode</h2>
+        <p>Display a full interactive calendar with events marked on their respective dates. Users can navigate between months and click events for details.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_calendar]</code> — Full calendar with all upcoming events</li>
+              <li><code>[mep_calendar category="conference"]</code> — Calendar filtered by category</li>
+              <li><code>[mep_calendar view="month"]</code> — Default month view</li>
+              <li><code>[mep_calendar view="week"]</code> — Week-by-week view</li>
+              <li>Clicking a date shows events scheduled for that day</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>category</code> — Filter events displayed on the calendar</li>
+              <li><code>view</code> — Initial calendar view: <code>month</code>, <code>week</code>, or <code>day</code></li>
+              <li><code>show_past</code> — Display past events on the calendar</li>
+              <li>AJAX-powered navigation between months and weeks</li>
+              <li>Responsive design works on mobile devices</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="recurring-shortcode">
+        <h2>Recurring Events Shortcode</h2>
+        <p>Display recurring event series with all future occurrences. Useful for weekly classes, monthly meetups, and multi-date conferences.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_recurring_event]</code> — Shows all recurring event series</li>
+              <li><code>[mep_recurring_event limit="3"]</code> — Limits to 3 series</li>
+              <li><code>[mep_recurring_event category="class"]</code> — Filter by category</li>
+              <li>Each entry shows the next upcoming date in the series</li>
+              <li>Click through to view all dates for a specific series</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>limit</code> — Number of recurring series to display</li>
+              <li><code>category</code> — Filter recurring events by category slug</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+              <li>Displays the next occurrence date for each series</li>
+              <li>Works with daily, weekly, monthly, and custom intervals</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="carousel-shortcode">
+        <h2>Events Carousel Style Shortcode</h2>
+        <p>Display events in a horizontal carousel slider with navigation arrows and optional autoplay. Great for hero sections, homepage banners, and featured content areas.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_carousel]</code> — Events carousel with default settings</li>
+              <li><code>[mep_event_carousel limit="8"]</code> — Shows 8 events in the carousel</li>
+              <li><code>[mep_event_carousel slide="3"]</code> — 3 events visible per slide</li>
+              <li><code>[mep_event_carousel autoplay="yes"]</code> — Enables autoplay</li>
+              <li><code>[mep_event_carousel category="featured"]</code> — Filter by category</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>limit</code> — Total events in the carousel</li>
+              <li><code>slide</code> — Number of events visible per slide (1-4)</li>
+              <li><code>autoplay</code> — Enable automatic sliding (<code>yes</code>/<code>no</code>)</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li><code>loop</code> — Infinite loop navigation (<code>yes</code>/<code>no</code>)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="category-shortcode">
+        <h2>Events by Category Shortcode</h2>
+        <p>Display events filtered by a single category. You can specify the category slug and choose between list or grid layout for the output.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep_event_category category="workshop"]</code> — Events in Workshop category</li>
+              <li><code>[mep_event_category category="conference" layout="grid"]</code> — Grid layout</li>
+              <li><code>[mep_event_category category="seminar" limit="4"]</code> — Limit to 4 events</li>
+              <li><code>[mep_event_category category="meetup" show="2"]</code> — 2 events per page</li>
+              <li>Replace <code>workshop</code> with your actual category slug</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>category</code> — (Required) The event category slug to filter by</li>
+              <li><code>layout</code> — Display layout: <code>list</code> or <code>grid</code></li>
+              <li><code>limit</code> — Number of events to display</li>
+              <li><code>show</code> — Events per page for paginated views</li>
+              <li><code>order</code> — Sort order: <code>asc</code> or <code>desc</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="common-parameters">
+        <h2>Common Shortcode Parameters</h2>
+        <p>These parameters are shared across multiple shortcodes and control global display behaviour such as date formats, filters, and styling.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Date & Filtering</h3>
+            <ul>
+              <li><code>from_date</code> — Show events starting from this date (YYYY-MM-DD)</li>
+              <li><code>to_date</code> — Show events up to this date (YYYY-MM-DD)</li>
+              <li><code>show_past</code> — Include past events in results</li>
+              <li><code>hide_expired</code> — Automatically hide expired events</li>
+              <li><code>city</code> — Filter events by city name</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Display Controls</h3>
+            <ul>
+              <li><code>column</code> — Number of grid columns (2-4)</li>
+              <li><code>order</code> — Sort direction: <code>asc</code> or <code>desc</code></li>
+              <li><code>show_footer</code> — Show/hide card footer elements</li>
+              <li><code>pagination</code> — Enable or disable pagination</li>
+              <li><code>class</code> — Additional CSS class for custom styling</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

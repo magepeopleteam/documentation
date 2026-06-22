@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpTravelly — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to the most common questions about installing, configuring, and troubleshooting the WpTravelly tour booking plugin.</p>
+        <h3>Installation &amp; Requirements</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Do I need WooCommerce to use WpTravelly?</h3>
+            <ul>
+              <li>Yes, WpTravelly requires WooCommerce to handle payments, checkout, and order management</li>
+              <li>Install and activate WooCommerce before or after installing WpTravelly</li>
+              <li>Any standard payment gateway supported by WooCommerce works</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I use WpTravelly without Elementor?</h3>
+            <ul>
+              <li>Absolutely. WpTravelly works with any WordPress theme</li>
+              <li>Use shortcodes to place tours anywhere on your site</li>
+              <li>Elementor integration is optional for visual page building</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Shortcode &amp; Display</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I show tours on a page?</h3>
+            <ul>
+              <li>Use <code>[wptravelly-tour-list column=3]</code> anywhere in your content</li>
+              <li>Choose from different styles: list, grid, modern, blossom, orchid, lotus, or flora</li>
+              <li>Use <code>type='trending'</code> or <code>type='popular'</code> for curated lists</li>
+              <li>Combine with <code>[wptravelly-tour-search]</code> for search functionality</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I filter tours by category?</h3>
+            <ul>
+              <li>Add <code>category='your-category-slug'</code> to any tour shortcode</li>
+              <li>Example: <code>[wptravelly-tour-list column=3 category='adventure']</code></li>
+              <li>Use <code>[wptravelly-category-list]</code> to display clickable categories</li>
+              <li>Apply filters via the top filter shortcode: <code>[wptravelly-tour-list-filter]</code></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Why are my tours not displaying?</h3>
+            <ul>
+              <li>Check that you have created at least one tour under WpTravelly</li>
+              <li>Verify the shortcode is typed correctly with square brackets</li>
+              <li>Ensure WooCommerce is active and compatible with your theme</li>
+              <li>Check for JavaScript errors in the browser console</li>
+              <li>Switch to a default theme (Twenty Twenty-Four) to rule out conflicts</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I show tours on the homepage?</h3>
+            <ul>
+              <li>Yes, paste any shortcode into the homepage content editor</li>
+              <li>Or use a widget area with a Text/Shortcode widget</li>
+              <li>Elementor users can add the Shortcode widget to any section</li>
+              <li>Use <code>[wptravelly-top-attraction column=3]</code> for a featured section</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Pricing &amp; Bookings</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Can I offer deposit payments?</h3>
+            <ul>
+              <li>Yes, enable deposit/partial payment under WpTravelly &rarr; Settings</li>
+              <li>Set a fixed amount or percentage of the total price</li>
+              <li>Customers pay the remainder on or before the tour date</li>
+              <li>Combine with WooCommerce payment gateways for processing</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I handle cancellations?</h3>
+            <ul>
+              <li>Configure cancellation rules under WpTravelly &rarr; Settings &rarr; Booking Rules</li>
+              <li>Set refund percentages based on days before departure</li>
+              <li>Enable automatic refunds via WooCommerce or process manually</li>
+              <li>Customise cancellation email templates for customer notification</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I manage group bookings?</h3>
+            <ul>
+              <li>Yes, set minimum and maximum capacity per tour or time slot</li>
+              <li>Offer group discounts based on number of travellers</li>
+              <li>Enable waitlisting when tours reach capacity</li>
+              <li>View all bookings under WooCommerce &rarr; Orders</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How are taxes handled?</h3>
+            <ul>
+              <li>WooCommerce tax settings apply to all tour bookings</li>
+              <li>Configure tax rates under WooCommerce &rarr; Settings &rarr; Tax</li>
+              <li>Tax can be inclusive or exclusive of the tour price</li>
+              <li>Tour prices display with tax based on your WooCommerce setup</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Troubleshooting &amp; Support</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>The plugin isn't working after update</h3>
+            <ul>
+              <li>Clear all caches (WordPress, browser, server, CDN)</li>
+              <li>Deactivate and reactivate WpTravelly</li>
+              <li>Ensure your license key is still valid and re-entered</li>
+              <li>Check the PHP version meets the minimum requirement</li>
+              <li>Contact MagePeople support with your system status report</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour page layout is broken</h3>
+            <ul>
+              <li>Temporarily switch to a default WordPress theme</li>
+              <li>Deactivate all plugins except WooCommerce and WpTravelly</li>
+              <li>Reactivate plugins one-by-one to identify the conflict</li>
+              <li>Check for template overrides that may be outdated</li>
+              <li>Verify your theme's CSS isn't overriding plugin styles</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I get support?</h3>
+            <ul>
+              <li>Free users: post on the WordPress.org plugin support forum</li>
+              <li>Pro users: open a ticket via your MagePeople account dashboard</li>
+              <li>Include your WordPress system status and plugin version</li>
+              <li>Check the MagePeople documentation site for guides first</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I translate WpTravelly?</h3>
+            <ul>
+              <li>Yes, the plugin is fully translation-ready</li>
+              <li>Use Loco Translate plugin or PO/MO file editing</li>
+              <li>Language files are in <code>/wp-content/plugins/wptravelly/languages/</code></li>
+              <li>Submit custom translations to the WordPress translation platform</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpTravelly' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — General Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link active">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="attendee-list">
+        <h2>Attendee List</h2>
+        <p>The attendee list shows all people who have registered for an event. You can view, search, filter, and manage attendees from the WordPress admin panel.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Viewing Attendees</h3>
+            <ul>
+              <li>Go to WpEvently &rarr; Attendees in the admin menu</li>
+              <li>All attendees across all events are listed in a table</li>
+              <li>Filter by event, date range, ticket type, or status</li>
+              <li>Click an attendee name to view their full details</li>
+              <li>Use the search box to find specific attendees by name or email</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Attendee Details</h3>
+            <ul>
+              <li>Full name, email address, and phone number</li>
+              <li>Ticket type purchased and quantity</li>
+              <li>Order ID and purchase date</li>
+              <li>Check-in status for event day management</li>
+              <li>Custom attendee form fields if enabled</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="export-csv">
+        <h2>Export Attendee List to CSV</h2>
+        <p>Export your attendee data to a CSV file for use in spreadsheets, email marketing tools, or external systems. The export includes all visible columns plus custom fields.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How to Export</h3>
+            <ul>
+              <li>Navigate to WpEvently &rarr; Attendees</li>
+              <li>Apply any filters you need (specific event, date range, etc.)</li>
+              <li>Click the Export CSV button above the attendee table</li>
+              <li>The CSV file downloads automatically to your computer</li>
+              <li>Open the file in Excel, Google Sheets, or any CSV reader</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>CSV File Structure</h3>
+            <ul>
+              <li>Columns include: Name, Email, Phone, Event Name, Ticket Type, Quantity, Order ID, Purchase Date, Status</li>
+              <li>Custom attendee form fields are appended as additional columns</li>
+              <li>Dates are formatted in YYYY-MM-DD HH:MM:SS format</li>
+              <li>UTF-8 encoding ensures special characters display correctly</li>
+              <li>Filtered exports only include attendees matching the current filters</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="backend-booking">
+        <h2>Backend Booking (Book for Customer)</h2>
+        <p>Site administrators can book tickets on behalf of customers directly from the WordPress admin. This is useful for phone orders, walk-in registrations, or manual adjustments.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Booking from Admin</h3>
+            <ul>
+              <li>Go to WpEvently &rarr; Add Booking from the admin menu</li>
+              <li>Select the event you want to book tickets for</li>
+              <li>Choose the ticket type and quantity</li>
+              <li>Enter the customer's name, email, and phone number</li>
+              <li>Complete the booking — the customer receives confirmation</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Use Cases</h3>
+            <ul>
+              <li>Phone orders from customers who prefer to call</li>
+              <li>Walk-in registrations at the event venue</li>
+              <li>Comping tickets or complimentary registrations</li>
+              <li>Transferring bookings between ticket types</li>
+              <li>Testing the booking flow for quality assurance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="attendee-form">
+        <h2>Attendee Registration Form</h2>
+        <p>The attendee form collects additional information from registrants during checkout. You can enable, disable, and customise which fields appear on the form.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Enabling the Form</h3>
+            <ul>
+              <li>Go to WpEvently &rarr; Settings &rarr; General Settings</li>
+              <li>Find the Attendee Form section</li>
+              <li>Toggle the option to Enable Attendee Form</li>
+              <li>Choose which fields are required or optional</li>
+              <li>Save changes and test the checkout flow</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Custom Fields</h3>
+            <ul>
+              <li>Add custom fields like company name, job title, dietary requirements</li>
+              <li>Field types: text, email, phone, number, dropdown, textarea, checkbox</li>
+              <li>Reorder fields by dragging them in the settings panel</li>
+              <li>Set conditional logic to show/hide fields based on ticket type</li>
+              <li>Exported CSV includes all custom attendee form fields</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="404-troubleshooting">
+        <h2>Event Page Shows 404 Error</h2>
+        <p>If your event pages return a 404 error despite correct settings, the issue is almost always related to permalink configuration. Follow these steps to resolve it.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Common Causes & Fixes</h3>
+            <ul>
+              <li>Permalinks set to "Plain" — change to "Post name" or custom structure</li>
+              <li>Rewrite rules need flushing — go to Settings &rarr; Permalinks and click Save</li>
+              <li>Event slug conflicts with existing page or post slugs</li>
+              <li>Plugin activated before WooCommerce — deactivate and reactivate WpEvently</li>
+              <li>Custom post type rewrite rules not registered — flush permalinks again</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Advanced Troubleshooting</h3>
+            <ul>
+              <li>Check .htaccess file exists and is writable</li>
+              <li>Verify mod_rewrite is enabled on the Apache server</li>
+              <li>Check for plugin conflicts by deactivating other plugins</li>
+              <li>Switch to a default WordPress theme to rule out theme issues</li>
+              <li>Use the WordPress health check tool to inspect rewrite rules</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="qr-codes">
+        <h2>QR Codes on Tickets</h2>
+        <p>QR codes on tickets enable quick attendee check-in at the event venue. Each ticket generates a unique QR code that can be scanned using a smartphone or dedicated scanner.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Enabling QR Codes</h3>
+            <ul>
+              <li>Install and activate the QR Code addon for WpEvently</li>
+              <li>Go to WpEvently &rarr; Settings &rarr; QR Code Settings</li>
+              <li>Enable QR code generation on PDF tickets</li>
+              <li>Choose QR code size, position, and error correction level</li>
+              <li>Save settings — new tickets will include QR codes automatically</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Scanning & Check-in</h3>
+            <ul>
+              <li>Use any QR code scanner app on iOS or Android</li>
+              <li>Scan the QR code on the attendee's ticket (printed or digital)</li>
+              <li>The scan validates the ticket and marks the attendee as checked in</li>
+              <li>Check-in status is updated in the attendee list in real time</li>
+              <li>Prevent duplicate entry with one-time scan validation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="waitlist">
+        <h2>Waitlist for Sold-Out Events</h2>
+        <p>When an event reaches full capacity, the waitlist feature allows interested attendees to register for a spot. They are automatically notified when tickets become available.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Enabling Waitlist</h3>
+            <ul>
+              <li>Install and activate the Waitlist addon</li>
+              <li>Go to WpEvently &rarr; Settings &rarr; Waitlist Settings</li>
+              <li>Enable the waitlist feature globally or per event</li>
+              <li>Configure notification settings for waitlist members</li>
+              <li>Set maximum waitlist size if needed</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Waitlist Management</h3>
+            <ul>
+              <li>Attendees join the waitlist from the event page when tickets are sold out</li>
+              <li>Email notifications are sent when new tickets become available</li>
+              <li>Waitlist positions are allocated on a first-come, first-served basis</li>
+              <li>Admin can view and manage the waitlist from the event edit screen</li>
+              <li>Expired waitlist entries are automatically cleaned up</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'General Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

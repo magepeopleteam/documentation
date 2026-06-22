@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpRently — Global Settings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="global-settings.html" class="docs-nav-link active">Global Settings</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Global Settings</h2>
+        <p>Configure the plugin globally from the WordPress admin. All settings are located under WpRently &rarr; Settings and apply across your entire rental catalogue.</p>
+
+        <h3>General Settings Tab</h3>
+        <p>Core plugin configuration including labels, slugs, and checkout preferences.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Labels &amp; Slugs</h3>
+            <ul>
+              <li><strong>Rental Label:</strong> Change the front-end display name for rentals (e.g., "Rentals", "Bookings", "Hire Items")</li>
+              <li><strong>URL Slug:</strong> Set the base slug for rental archive pages (default: <code>/rentals/</code>)</li>
+              <li><strong>Category Base:</strong> Customize the category URL prefix (default: <code>/rental-category/</code>)</li>
+              <li><strong>Type Labels:</strong> Rename each rental type label individually (Bike, Car, Resort, etc.)</li>
+              <li>After changing slugs, flush permalinks by saving Settings &rarr; Permalinks</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Checkout Mode</h3>
+            <ul>
+              <li><strong>WooCommerce Checkout:</strong> Uses the standard WooCommerce cart and checkout flow</li>
+              <li><strong>Quick Checkout:</strong> Plugin's built-in lightweight checkout for faster rentals</li>
+              <li><strong>Redirect After Add to Cart:</strong> Choose cart page, checkout page, or stay on product page</li>
+              <li><strong>Guest Checkout:</strong> Allow rentals without requiring a user account</li>
+              <li><strong>Terms &amp; Conditions:</strong> Require agreement to rental T&amp;Cs at checkout</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Pricing Settings Tab</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Default Pricing</h3>
+            <ul>
+              <li><strong>Default Pricing Model:</strong> Per Day, Per Hour, Per Day + Per Hour, or Flat Rate</li>
+              <li><strong>Currency Format:</strong> Inherits WooCommerce currency settings; can override for rentals only</li>
+              <li><strong>Price Display:</strong> Show prices with or without tax (incl./excl.)</li>
+              <li><strong>Minimum Price:</strong> Set a global minimum rental price to prevent under-pricing</li>
+              <li><strong>Maximum Price:</strong> Set a global cap on rental prices for listing consistency</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tax &amp; Fees</h3>
+            <ul>
+              <li><strong>Tax Class:</strong> Assign a WooCommerce tax class specifically for rental items</li>
+              <li><strong>Service Fee:</strong> Add a percentage-based service fee to all rental orders</li>
+              <li><strong>Deposit Requirement:</strong> Require an upfront deposit (percentage or fixed amount)</li>
+              <li><strong>Late Fee Settings:</strong> Configure default late-return penalties (requires the <a href="addons/late-return-fees/">Late Return Fees addon</a>)</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Availability Settings Tab</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Business Hours</h3>
+            <ul>
+              <li><strong>Operating Days:</strong> Select which days of the week your business operates</li>
+              <li><strong>Pickup Time Slots:</strong> Define available pickup times (e.g., 9 AM, 10 AM, 11 AM)</li>
+              <li><strong>Return Time Slots:</strong> Define available return times (e.g., 4 PM, 5 PM, 6 PM)</li>
+              <li><strong>Same-Day Booking:</strong> Allow or block bookings that start on the current day</li>
+              <li><strong>Advance Booking:</strong> Set a minimum and maximum number of days in advance for bookings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Off-Days &amp; Holidays</h3>
+            <ul>
+              <li><strong>Weekly Off-Days:</strong> Mark entire weekdays as non-operational (e.g., all Sundays)</li>
+              <li><strong>Holiday Dates:</strong> Add specific dates when the business is closed (e.g., Christmas, New Year)</li>
+              <li><strong>Recurring Holidays:</strong> Set holidays that repeat annually</li>
+              <li><strong>Seasonal Closures:</strong> Block longer periods for maintenance or low season</li>
+              <li>Off-days can also be set per product for individual item schedules</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Buffer &amp; Preparation</h3>
+            <ul>
+              <li><strong>Booking Buffer:</strong> Hours or days between consecutive bookings for cleaning/inspection</li>
+              <li><strong>Preparation Time:</strong> Minimum time before a booking starts for item preparation</li>
+              <li><strong>Max Booking Duration:</strong> Maximum number of days a single booking can span</li>
+              <li><strong>Min Booking Duration:</strong> Minimum rental period (e.g., 2-day minimum for equipment)</li>
+              <li>Duration limits can be overridden per product using the <a href="../wprently/addons/availability-calendar-sync/">Min-Max addon</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Calendar Sync</h3>
+            <ul>
+              <li><strong>Google Calendar:</strong> Connect your Google Calendar for two-way sync (requires the <a href="addons/availability-calendar-sync/">Availability Calendar Sync addon</a>)</li>
+              <li><strong>Outlook Calendar:</strong> Sync with Microsoft Outlook for corporate calendars</li>
+              <li><strong>iCal Feed:</strong> Export an iCal feed URL for external calendar apps</li>
+              <li><strong>Sync Interval:</strong> Set how often the calendars synchronize (every 15, 30, or 60 minutes)</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Display Settings Tab</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Front-End Layout</h3>
+            <ul>
+              <li><strong>Default Style:</strong> Choose between Grid and List as the default shortcode style</li>
+              <li><strong>Grid Columns:</strong> Default number of columns (1&ndash;6)</li>
+              <li><strong>Items Per Page:</strong> Default number of items shown per page in shortcodes</li>
+              <li><strong>Image Size:</strong> Set the thumbnail size for rental listing images</li>
+              <li><strong>Details Page Layout:</strong> Choose tabbed or single-page layout for the single product view</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Search Form</h3>
+            <ul>
+              <li><strong>Search Page:</strong> Select the WordPress page where search results are displayed</li>
+              <li><strong>Show Date Fields:</strong> Show or hide pickup/return date fields in the search form</li>
+              <li><strong>Show Type Filter:</strong> Display the rental type dropdown in the search form</li>
+              <li><strong>Show Category Filter:</strong> Display the category dropdown in the search form</li>
+              <li><strong>AJAX Search:</strong> Enable live AJAX filtering without page reload</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Translation &amp; Localization</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Language Files</h3>
+            <ul>
+              <li>The plugin is translation-ready with a <code>.pot</code> file included in the <code>/languages/</code> folder</li>
+              <li>Use <strong>Loco Translate</strong> plugin to translate strings directly from the WordPress admin</li>
+              <li>Use <strong>WPML</strong> or <strong>Polylang</strong> for multilingual rental sites with language switchers</li>
+              <li>Translatable strings include: labels, buttons, error messages, and email templates</li>
+              <li>Custom label changes made in settings are stored as site options, not translation files</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>RTL Support</h3>
+            <ul>
+              <li>The plugin includes basic RTL (right-to-left) stylesheet support</li>
+              <li>Automatically loaded when WordPress is set to an RTL language (Arabic, Hebrew, Persian, etc.)</li>
+              <li>Override RTL styles by adding custom CSS in the WordPress Customizer</li>
+              <li>All shortcodes and front-end elements respect the site's text direction setting</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Advanced Settings</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>API &amp; Integrations</h3>
+            <ul>
+              <li><strong>Google Maps API Key:</strong> Required for the search form's location picker and delivery zone mapping</li>
+              <li><strong>REST API:</strong> Enable the plugin's REST API endpoints for headless or third-party integration</li>
+              <li><strong>Webhooks:</strong> Configure outgoing webhooks for booking creation, status changes, and cancellations</li>
+              <li><strong>Analytics Tracking:</strong> Enable Google Analytics or Meta Pixel tracking for rental conversion events</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Email Configuration</h3>
+            <ul>
+              <li><strong>From Name:</strong> Sender name for all rental-related emails</li>
+              <li><strong>From Address:</strong> Sender email address for rental notifications</li>
+              <li><strong>Email Type:</strong> Choose between HTML, Plain Text, or Multipart</li>
+              <li><strong>CC &amp; BCC:</strong> Add additional recipients for booking confirmation emails</li>
+              <li>Email templates can be overridden by copying them to your theme's <code>/woocommerce/emails/</code> folder</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpRently' },
+    { href: '', label: 'Global Settings' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

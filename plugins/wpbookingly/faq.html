@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBookingly — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="service-management.html" class="docs-nav-link">Service Management</a>
+        <a href="staff-scheduling.html" class="docs-nav-link">Staff &amp; Scheduling</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="payment-integration.html" class="docs-nav-link">Payment Integration</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="installation-setup-faq">
+        <h2>Installation &amp; Setup</h2>
+        <p>Frequently asked questions about installing and configuring WpBookingly.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Do I need WooCommerce to use WpBookingly?</h3>
+            <ul>
+              <li>Yes, WooCommerce is required as a dependency for payment processing</li>
+              <li>Even free bookings use WooCommerce for order management</li>
+              <li>Install and activate WooCommerce before WpBookingly</li>
+              <li>Any WooCommerce-compatible theme works</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I display the booking form on a page?</h3>
+            <ul>
+              <li>Use the shortcode [wpbookingly_booking] on any page or post</li>
+              <li>Create a dedicated booking page in WordPress</li>
+              <li>Use the Gutenberg shortcode block or classic editor</li>
+              <li>Set the booking page URL in WpBookingly settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I install the Pro version alongside the free version?</h3>
+            <ul>
+              <li>No, deactivate and delete the free version first</li>
+              <li>The Pro version includes all free features and more</li>
+              <li>Your existing services and bookings are preserved</li>
+              <li>Upload the Pro zip via Plugins &gt; Add New &gt; Upload</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>What are the minimum server requirements?</h3>
+            <ul>
+              <li>PHP 7.4 or higher (PHP 8.0+ recommended)</li>
+              <li>WordPress 5.8 or later</li>
+              <li>MySQL 5.6+ or MariaDB 10.1+</li>
+              <li>cURL and JSON PHP extensions enabled</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="services-booking-faq">
+        <h2>Services &amp; Booking</h2>
+        <p>Common questions about creating services and managing bookings.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I create a new service?</h3>
+            <ul>
+              <li>Go to Service Booking &gt; Add New Service Booking</li>
+              <li>Enter a title, description, price, and duration</li>
+              <li>Assign the service to a category for organization</li>
+              <li>Publish when ready for customers to book</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I offer free consultations?</h3>
+            <ul>
+              <li>Yes, set the service price to $0 for free consultations</li>
+              <li>Free bookings skip the WooCommerce payment step</li>
+              <li>Customers still receive confirmation emails</li>
+              <li>Track free and paid bookings separately</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I handle cancellations or rescheduling?</h3>
+            <ul>
+              <li>Admins can cancel or reschedule from the booking edit screen</li>
+              <li>Customers can self-service from My Account or email links</li>
+              <li>Configure your cancellation and rescheduling policy in settings</li>
+              <li>Refund payments through WooCommerce if needed</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I enable recurring bookings?</h3>
+            <ul>
+              <li>Requires the Recurring Appointment Builder addon</li>
+              <li>Set a service as recurring in the service editor</li>
+              <li>Choose frequency: daily, weekly, bi-weekly, or monthly</li>
+              <li>Customers select the recurrence pattern during booking</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="staff-scheduling-faq">
+        <h2>Staff &amp; Scheduling</h2>
+        <p>Answers about staff management, schedules, and availability.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I add staff members?</h3>
+            <ul>
+              <li>Navigate to WpBookingly &gt; Staff in the admin menu</li>
+              <li>Click Add Staff and enter name, email, and photo</li>
+              <li>Assign staff to relevant services</li>
+              <li>Staff appear on the booking form for customer selection</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I integrate with Google Calendar?</h3>
+            <ul>
+              <li>Yes, uses the Staff and Resource Scheduler addon</li>
+              <li>Connect via OAuth 2.0 for two-way sync</li>
+              <li>New bookings create calendar events automatically</li>
+              <li>Cancellations and reschedules stay in sync</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I set staff working hours?</h3>
+            <ul>
+              <li>Go to WpBookingly &gt; Schedule &gt; Staff Schedule</li>
+              <li>Select a staff member and configure weekly hours</li>
+              <li>Add breaks, split shifts, and off days</li>
+              <li>Override specific dates for holidays</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I import staff via CSV?</h3>
+            <ul>
+              <li>Yes, use the CSV import feature in WpBookingly &gt; Staff</li>
+              <li>Prepare columns for name, email, photo, and service IDs</li>
+              <li>Map CSV columns during the import process</li>
+              <li>Review imported data before finalizing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcodes-faq">
+        <h2>Shortcodes &amp; Display</h2>
+        <p>Common questions about embedding booking forms and displays.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>What shortcode displays the main booking form?</h3>
+            <ul>
+              <li>[wpbookingly_booking] renders the complete booking flow</li>
+              <li>Shows service selection, date picker, and checkout</li>
+              <li>Place on a dedicated page for best results</li>
+              <li>Supports layout and styling parameters</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I show only specific services?</h3>
+            <ul>
+              <li>Use [wpbookingly_services category="your-category"]</li>
+              <li>Filter by service IDs with the service_id parameter</li>
+              <li>Combine with staff_id for filtered availability views</li>
+              <li>Set column count and display options</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I embed the booking form in a sidebar?</h3>
+            <ul>
+              <li>Yes, use a WordPress text widget with the shortcode</li>
+              <li>Elementor users can use the Shortcode widget</li>
+              <li>Gutenberg block editor has a shortcode block</li>
+              <li>Test mobile responsiveness after embedding</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I customize shortcode appearance?</h3>
+            <ul>
+              <li>Use parameters like layout, columns, and show_progress</li>
+              <li>Override colors and typography via custom CSS</li>
+              <li>Use the form style settings in WpBookingly options</li>
+              <li>Add custom CSS classes via shortcode parameters</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="payments-faq">
+        <h2>Payments &amp; Orders</h2>
+        <p>Frequently asked questions about payment processing and order management.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Which payment gateways are supported?</h3>
+            <ul>
+              <li>All WooCommerce-compatible payment gateways are supported</li>
+              <li>PayPal, Stripe, bank transfer, and cash on delivery</li>
+              <li>Configure gateways in WooCommerce &gt; Settings &gt; Payments</li>
+              <li>Stripe supports Apple Pay and Google Pay</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I set up deposit payments?</h3>
+            <ul>
+              <li>Configure deposit options per service in the service editor</li>
+              <li>Set a fixed amount or percentage-based deposit</li>
+              <li>Remaining balance is due on a configured date</li>
+              <li>Automatic payment reminders are sent to customers</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I process a refund?</h3>
+            <ul>
+              <li>Go to WooCommerce &gt; Orders and find the booking order</li>
+              <li>Click Refund and enter the refund amount</li>
+              <li>The booking status automatically updates</li>
+              <li>Customers receive a refund confirmation email</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I accept payments in multiple currencies?</h3>
+            <ul>
+              <li>Yes, with WooCommerce multi-currency extensions</li>
+              <li>Configure currencies in WooCommerce settings</li>
+              <li>Prices convert based on exchange rates</li>
+              <li>Customers select their preferred currency</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="troubleshooting-faq">
+        <h2>Troubleshooting</h2>
+        <p>Solutions to common issues encountered while using WpBookingly.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>The booking form is not showing up</h3>
+            <ul>
+              <li>Verify the shortcode is correctly typed on the page</li>
+              <li>Check that WpBookingly is activated</li>
+              <li>Ensure WooCommerce is installed and active</li>
+              <li>Clear any page caching plugins for the booking page</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Customers are not receiving email notifications</h3>
+            <ul>
+              <li>Check your WordPress email settings and SMTP configuration</li>
+              <li>Use an SMTP plugin (WP Mail SMTP, Post SMTP) for reliable delivery</li>
+              <li>Verify email templates in WpBookingly &gt; Email Settings</li>
+              <li>Check spam folders for test emails</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Time slots are not showing up</h3>
+            <ul>
+              <li>Verify working hours are configured for the selected day</li>
+              <li>Check if the staff member is available</li>
+              <li>Ensure the booking cutoff time has not passed</li>
+              <li>Confirm slots are not fully booked</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Plugin update causes errors</h3>
+            <ul>
+              <li>Always back up your site before updating</li>
+              <li>Update addons at the same time as the core plugin</li>
+              <li>Clear WordPress and browser caches after updating</li>
+              <li>Contact MagePeople support if issues persist</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBookingly' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="general-faq">
+        <h2>General Questions</h2>
+        <p>Common questions about installing, configuring, and using the WpEvently plugin for the first time.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I install WpEvently?</h3>
+            <ul>
+              <li>Install via WordPress admin: Plugins &rarr; Add New, search for "WpEvently"</li>
+              <li>Install via zip: Download from Magepeople, upload under Plugins &rarr; Add New &rarr; Upload</li>
+              <li>Install via FTP: Extract zip, upload folder to /wp-content/plugins/, activate</li>
+              <li>The Pro version requires manual zip upload — it is not available in the WP repo</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I sell paid tickets through the plugin?</h3>
+            <ul>
+              <li>Yes — WpEvently integrates with WooCommerce for paid ticket sales</li>
+              <li>Create free or paid ticket types with different prices</li>
+              <li>Supports multiple payment gateways via WooCommerce</li>
+              <li>Set up variable pricing, early bird discounts, and group rates</li>
+              <li>Tax configurations are inherited from WooCommerce settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Does the plugin support recurring events?</h3>
+            <ul>
+              <li>Yes — create daily, weekly, monthly, or custom interval recurring events</li>
+              <li>Set an end date or number of occurrences for the recurring series</li>
+              <li>Each occurrence can have its own ticket availability</li>
+              <li>Use the <code>[mep_recurring_event]</code> shortcode to display recurring series</li>
+              <li>Attendees can register for individual dates or the full series</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I show events on a page using shortcodes?</h3>
+            <ul>
+              <li>Use <code>[mep_event_list]</code> for a list, <code>[mep_event_grid]</code> for a grid</li>
+              <li>Use <code>[mep_calendar]</code> for an interactive calendar</li>
+              <li>Use <code>[mep_event_carousel]</code> for a sliding carousel</li>
+              <li>Add parameters like <code>limit="6"</code>, <code>column="3"</code>, <code>category="workshop"</code></li>
+              <li>Place shortcodes in any page, post, or widget area</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="setup-faq">
+        <h2>Setup & Configuration</h2>
+        <p>Answers to setup-related questions about permalinks, licensing, and initial configuration.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Why does my event page show a 404 error?</h3>
+            <ul>
+              <li>Your permalinks are likely set to "Plain" — go to Settings &rarr; Permalinks and choose "Post name"</li>
+              <li>After changing permalinks, click Save to flush rewrite rules</li>
+              <li>If still broken, deactivate and reactivate WpEvently to re-register rewrite rules</li>
+              <li>Check that no other plugin is conflicting with the event post type</li>
+              <li>Verify mod_rewrite is enabled on your server</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I activate my Pro license?</h3>
+            <ul>
+              <li>After installing the Pro version, go to WpEvently &rarr; License</li>
+              <li>Enter your purchase code (found in your Magepeople account)</li>
+              <li>Click Activate License — a success message confirms activation</li>
+              <li>Licenses are valid for the subscribed domain</li>
+              <li>Deactivate the license before moving sites</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I use the plugin without WooCommerce?</h3>
+            <ul>
+              <li>WooCommerce must be installed and active for WpEvently to function</li>
+              <li>The plugin uses WooCommerce for cart, checkout, and payment processing</li>
+              <li>Free events also go through the WooCommerce checkout flow</li>
+              <li>WooCommerce provides the customer and order management backend</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I change the event slug in URLs?</h3>
+            <ul>
+              <li>Go to WpEvently &rarr; Settings &rarr; General Settings</li>
+              <li>Find the Event Slug field and enter your preferred slug</li>
+              <li>Save changes and flush permalinks (Settings &rarr; Permalinks &rarr; Save)</li>
+              <li>Existing event URLs will change — set up redirects if needed</li>
+              <li>Common slugs: events, sessions, workshops, courses</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="attendee-faq">
+        <h2>Attendee & Ticket Management</h2>
+        <p>Frequently asked questions about managing attendees, tickets, and registrations.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Why is the attendee list showing empty?</h3>
+            <ul>
+              <li>Check that the attendee form is enabled in WpEvently settings</li>
+              <li>Verify that attendees have completed the checkout process</li>
+              <li>Test with a new registration to confirm data is being captured</li>
+              <li>Check for plugin conflicts that may block attendee data storage</li>
+              <li>Ensure the attendee database tables were created during installation</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I export attendee data to CSV?</h3>
+            <ul>
+              <li>Go to WpEvently &rarr; Attendees in the admin menu</li>
+              <li>Apply any desired filters (event, date range, ticket type)</li>
+              <li>Click the Export CSV button above the table</li>
+              <li>The file downloads with all visible columns plus custom fields</li>
+              <li>Open the CSV in any spreadsheet application</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Why don't I see the attendee form on the event page?</h3>
+            <ul>
+              <li>The attendee form must be enabled in WpEvently &rarr; Settings</li>
+              <li>Check that the event has ticket types associated with it</li>
+              <li>Verify the form is not hidden by a custom template override</li>
+              <li>Test with a different theme to rule out theme conflicts</li>
+              <li>Clear any caching plugins that may be serving stale HTML</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I book a ticket for someone from the backend?</h3>
+            <ul>
+              <li>Yes — go to WpEvently &rarr; Add Booking in the admin menu</li>
+              <li>Select the event, ticket type, and quantity</li>
+              <li>Enter the customer's name, email, and phone number</li>
+              <li>Complete the booking — the customer receives confirmation</li>
+              <li>This is useful for phone orders and walk-in registrations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="troubleshooting-faq">
+        <h2>Troubleshooting</h2>
+        <p>Solutions to common issues encountered while using WpEvently.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I enable QR codes on tickets?</h3>
+            <ul>
+              <li>Install and activate the QR Code addon for WpEvently</li>
+              <li>Go to WpEvently &rarr; Settings &rarr; QR Code Settings</li>
+              <li>Enable QR code generation and configure size and position</li>
+              <li>QR codes appear on new PDF tickets automatically</li>
+              <li>Existing tickets are not retroactively updated with QR codes</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I enable the waitlist for sold-out events?</h3>
+            <ul>
+              <li>Install and activate the Waitlist addon for WpEvently</li>
+              <li>Configure waitlist settings in WpEvently &rarr; Settings &rarr; Waitlist</li>
+              <li>Enable waitlist per event in the event edit screen</li>
+              <li>When tickets sell out, a "Join Waitlist" button appears</li>
+              <li>Users are notified when tickets become available again</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>The plugin is not working after an update — what should I do?</h3>
+            <ul>
+              <li>Check the Magepeople changelog for breaking changes</li>
+              <li>Clear all caching plugins and server cache</li>
+              <li>Flush permalinks by re-saving Settings &rarr; Permalinks</li>
+              <li>Deactivate and reactivate WpEvently and all addons</li>
+              <li>If issues persist, restore the previous version from backup</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I customise the look of my event pages?</h3>
+            <ul>
+              <li>Use Elementor to design custom single event page layouts</li>
+              <li>Override plugin templates by copying them to your theme</li>
+              <li>Add custom CSS in the WordPress Customizer or theme stylesheet</li>
+              <li>Use the action hooks to inject custom HTML into event templates</li>
+              <li>Install the Pro version for additional styling options</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="addon-faq">
+        <h2>Addon Questions</h2>
+        <p>Common questions about WpEvently addons, their installation, and compatibility.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I install addons?</h3>
+            <ul>
+              <li>Addons are installed like plugins — via zip upload in WordPress</li>
+              <li>Go to Plugins &rarr; Add New &rarr; Upload Plugin</li>
+              <li>Select the addon .zip file from your Magepeople account</li>
+              <li>Activate the addon and enter your license key if required</li>
+              <li>The base WpEvently plugin must be active for addons to work</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Are addons compatible with the free version?</h3>
+            <ul>
+              <li>Most addons work with both the free and Pro versions of WpEvently</li>
+              <li>Some advanced addons (Seat Plan, Marketplace) may require Pro</li>
+              <li>Check the individual addon documentation for compatibility details</li>
+              <li>Addon license keys are tied to your Magepeople account</li>
+              <li>Test addons on a staging site before using on production</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I use multiple addons together?</h3>
+            <ul>
+              <li>Yes — all addons are designed to work together seamlessly</li>
+              <li>For example, use QR Code, Waitlist, and Coupon addons simultaneously</li>
+              <li>Each addon adds its own settings section in the admin panel</li>
+              <li>There are no known conflicts between any WpEvently addons</li>
+              <li>Keep all addons updated to ensure cross-compatibility</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I get support for addons?</h3>
+            <ul>
+              <li>Contact Magepeople support through your account dashboard</li>
+              <li>Include your license key and site URL in support requests</li>
+              <li>Check the addon documentation for troubleshooting guides</li>
+              <li>Visit the Magepeople knowledge base for known issues</li>
+              <li>Pro users receive priority support with faster response times</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

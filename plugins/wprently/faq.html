@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpRently — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="global-settings.html" class="docs-nav-link">Global Settings</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>FAQ</h2>
+        <p>Quick answers to common questions about installing, configuring, and troubleshooting the Booking and Rental Manager for WooCommerce (WpRently).</p>
+
+        <h3>Installation &amp; Requirements</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Can I use this plugin without WooCommerce?</h3>
+            <ul>
+              <li>Yes, the plugin includes its own PayPal and Stripe integration for standalone use</li>
+              <li>However, WooCommerce is recommended for full functionality (inventory, tax, reporting)</li>
+              <li>Without WooCommerce, features like product categories and stock management are limited</li>
+              <li>Switch between modes under WpRently &rarr; Settings &rarr; General &rarr; Checkout Mode</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>What are the server requirements?</h3>
+            <ul>
+              <li>WordPress 5.6 or higher</li>
+              <li>PHP 7.4 or higher (PHP 8.x recommended)</li>
+              <li>MySQL 5.6+ or MariaDB 10.1+</li>
+              <li>At least 128 MB of WordPress memory limit</li>
+              <li>cURL and JSON extensions enabled on the server</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I upgrade from free to Pro?</h3>
+            <ul>
+              <li>Purchase a Pro license from the Magepeople website</li>
+              <li>Download the Pro plugin zip from your account dashboard</li>
+              <li>Install and activate the Pro plugin alongside the free version</li>
+              <li>Enter your license key under WpRently &rarr; License</li>
+              <li>All Pro features unlock immediately without losing existing data</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I install addons?</h3>
+            <ul>
+              <li>Addons are installed as separate plugins from your Magepeople account</li>
+              <li>Upload and activate them like any WordPress plugin</li>
+              <li>Each addon requires its own license key for updates</li>
+              <li>Check <a href="available-addons.html">Available Addons</a> for the full list</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Shortcodes &amp; Display</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I display rentals in a grid?</h3>
+            <ul>
+              <li>Use <code>[rent-list style='grid']</code> on any page or post</li>
+              <li>Control the number of columns with <code>columns='4'</code></li>
+              <li>Set items per page with <code>show='12'</code></li>
+              <li>Full parameter reference is in the <a href="shortcode-guidelines.html">Shortcode Guidelines</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I show only car rentals?</h3>
+            <ul>
+              <li>Use <code>[rent-list type='car']</code> to display only car rental items</li>
+              <li>Combine with other parameters: <code>[rent-list type='car' style='list' show='10']</code></li>
+              <li>Available type values: <code>bike</code>, <code>car</code>, <code>resort</code>, <code>equipment</code>, <code>dress</code></li>
+              <li>Use <code>bike_car_sd</code> for single-day or <code>bike_car_md</code> for multi-day items</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I add a search form?</h3>
+            <ul>
+              <li>Add the <code>[rent-search-form]</code> shortcode to any page</li>
+              <li>Customers can search by date, type, category, and location</li>
+              <li>Results are displayed on the results page set in Global Settings</li>
+              <li>Enable AJAX search for instant filtering without page reload</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Why are my shortcodes not rendering?</h3>
+            <ul>
+              <li>Ensure the shortcode is typed correctly with square brackets</li>
+              <li>Check that the plugin is active on the Plugins screen</li>
+              <li>Flush permalinks: go to Settings &rarr; Permalinks and click "Save Changes"</li>
+              <li>Verify your theme's <code>functions.php</code> does not remove <code>the_content</code> filter</li>
+              <li>Try using the shortcode in a Classic Editor block instead of a widget area</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Pricing &amp; Checkout</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How is the rental price calculated?</h3>
+            <ul>
+              <li>The price is based on the selected pricing model (per day, per hour, etc.)</li>
+              <li>Customers pick pickup and return dates on the product page</li>
+              <li>The plugin multiplies the rate by the number of days/hours</li>
+              <li>Addons can apply discounts, seasonal pricing, and late fees</li>
+              <li>Tax is added based on your WooCommerce tax settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I require a deposit?</h3>
+            <ul>
+              <li>Yes, enable deposits under WpRently &rarr; Settings &rarr; Pricing</li>
+              <li>Choose percentage-based or fixed-amount deposit</li>
+              <li>The deposit is charged at checkout; the balance can be collected on pickup</li>
+              <li>For refundable damage deposits, install the <a href="addons/damage-deposit-handler/">Damage Deposit Handler addon</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I set up seasonal pricing?</h3>
+            <ul>
+              <li>Install the Seasonal Pricing addon (included in the Pro bundle)</li>
+              <li>Define price rules by date range (e.g., summer: +20%, holidays: +50%)</li>
+              <li>Rules can be applied globally or per product</li>
+              <li>Seasonal prices override the base rate for the specified periods</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I offer discounts for long rentals?</h3>
+            <ul>
+              <li>Yes, use the "Discount Over X Days" feature (available in Pro)</li>
+              <li>Set tiered discounts: 3&ndash;5 days = 10% off, 6&ndash;10 days = 20% off, etc.</li>
+              <li>Discounts are applied automatically at checkout based on the rental duration</li>
+              <li>Compatible with all pricing models and seasonal pricing</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Availability &amp; Bookings</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I block specific dates?</h3>
+            <ul>
+              <li>Set off-days and holidays under WpRently &rarr; Settings &rarr; Availability</li>
+              <li>Block dates per product from the product edit screen's Availability tab</li>
+              <li>Off-days prevent any bookings on those dates</li>
+              <li>Manually block dates for maintenance or private events</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I sync with Google Calendar?</h3>
+            <ul>
+              <li>Yes, install the <a href="addons/availability-calendar-sync/">Availability Calendar Sync addon</a></li>
+              <li>Connect your Google or Outlook calendar from the addon settings</li>
+              <li>Bookings are mirrored in both directions in near-real-time</li>
+              <li>Prevents double-bookings when you also list on external platforms</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>What happens if an item is returned late?</h3>
+            <ul>
+              <li>With the <a href="addons/late-return-fees/">Late Return Fees addon</a>, a penalty is calculated automatically</li>
+              <li>Configure hourly or daily late fees with a grace period</li>
+              <li>Customers receive email reminders before and after the return time</li>
+              <li>Late fees are added to the order total or invoiced separately</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I manage delivery zones?</h3>
+            <ul>
+              <li>Install the <a href="addons/delivery-zone-mapper/">Delivery Zone Mapper addon</a></li>
+              <li>Draw delivery zones on a Google Map from the addon settings</li>
+              <li>Set per-zone pricing (flat rate or per km)</li>
+              <li>Customers see delivery fees calculated at checkout based on their address</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Troubleshooting</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin conflicts or errors</h3>
+            <ul>
+              <li>Disable other plugins one by one to identify conflicts</li>
+              <li>Switch to a default WordPress theme (Twenty Twenty-Four, Storefront) to test</li>
+              <li>Check the WordPress debug log at <code>/wp-content/debug.log</code> (if WP_DEBUG is enabled)</li>
+              <li>Ensure all plugin and addon versions are up to date</li>
+              <li>Contact support with the error details and server environment info</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Missing rental menu or settings</h3>
+            <ul>
+              <li>Verify the plugin is active and the free version is installed</li>
+              <li>Check user capabilities &mdash; only admins with "manage_options" can see the menu</li>
+              <li>Flush permalinks: Settings &rarr; Permalinks &rarr; Save Changes</li>
+              <li>Re-save the plugin settings to refresh option entries in the database</li>
+              <li>Reinstall the plugin if the menu is still missing after activation</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Bookings not appearing in calendar</h3>
+            <ul>
+              <li>Check that the order status is "Confirmed" or "Active" &mdash; pending orders do not block dates</li>
+              <li>Verify the product's availability calendar settings are correct</li>
+              <li>Check for date/timezone mismatches between the site and customer selections</li>
+              <li>If using the Calendar Sync addon, check the sync log for errors</li>
+              <li>Clear any caching plugins that might be serving stale calendar data</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Payment not processing</h3>
+            <ul>
+              <li>Verify the payment gateway is configured correctly in WooCommerce settings</li>
+              <li>Check that the currency matches between the plugin and payment gateway</li>
+              <li>Enable debug mode in the payment gateway to see error logs</li>
+              <li>Test with a sandbox/live key pair from your payment provider</li>
+              <li>Ensure the site uses HTTPS for secure payment transmission</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Support &amp; Resources</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Where can I get support?</h3>
+            <ul>
+              <li>Free version support is available via the WordPress.org plugin forum</li>
+              <li>Pro version and addon customers get priority email support</li>
+              <li>Submit a ticket through the Magepeople support portal</li>
+              <li>Include your license key, site URL, and a detailed description of the issue</li>
+              <li>Typical response time is within 24 hours on business days</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Where can I find video tutorials?</h3>
+            <ul>
+              <li>Visit the Magepeople YouTube channel for walkthrough videos</li>
+              <li>Video topics include: installation, configuration, shortcode setup, and addon usage</li>
+              <li>Subscribe to get notified of new tutorial releases</li>
+              <li>Each addon documentation page also links to relevant video guides</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpRently' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — REST API</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link active">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="api-overview">
+        <h2>REST API Overview</h2>
+        <p>WpEvently exposes REST API endpoints that allow external applications to read event data, retrieve ticket information, and manage attendees programmatically. The API follows WordPress REST API conventions.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Base URL</h3>
+            <ul>
+              <li><code>https://yoursite.com/wp-json/mep/v1/</code> — Base endpoint for all routes</li>
+              <li>All responses are returned in JSON format</li>
+              <li>Standard HTTP status codes indicate success or failure</li>
+              <li>Supports pagination, sorting, and field filtering</li>
+              <li>Rate limiting follows WordPress REST API defaults</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Available Endpoints</h3>
+            <ul>
+              <li><code>GET /events</code> — Retrieve a list of all events</li>
+              <li><code>GET /events/{id}</code> — Retrieve a single event by ID</li>
+              <li><code>GET /tickets</code> — Retrieve all ticket types</li>
+              <li><code>GET /tickets/{id}</code> — Retrieve a specific ticket type</li>
+              <li><code>GET /attendees</code> — Retrieve attendee records</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="authentication">
+        <h2>Authentication</h2>
+        <p>API requests must be authenticated using one of the supported methods. Choose the approach that best fits your integration scenario.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Authentication Methods</h3>
+            <ul>
+              <li><strong>Cookie Authentication</strong> — For logged-in admin requests from the same domain</li>
+              <li><strong>Application Passwords</strong> — Generate app-specific passwords for external services</li>
+              <li><strong>OAuth 1.0a</strong> — For third-party applications requiring delegated access</li>
+              <li><strong>Basic Auth</strong> — Simple username/password (use over HTTPS only)</li>
+              <li>Application Passwords are the recommended method for most integrations</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Setting Up Application Passwords</h3>
+            <ul>
+              <li>Go to Users &rarr; Profile in the WordPress admin</li>
+              <li>Scroll to the Application Passwords section</li>
+              <li>Enter a name for your application and click Add New</li>
+              <li>Copy the generated password — it is shown only once</li>
+              <li>Use it in the Authorization header: <code>Basic base64(username:password)</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="event-endpoints">
+        <h2>Event Endpoints</h2>
+        <p>Detailed reference for retrieving event data through the REST API. Filter events by date, category, status, and more using query parameters.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>List Events</h3>
+            <ul>
+              <li><code>GET /wp-json/mep/v1/events</code> — All published events</li>
+              <li><code>?category=workshop</code> — Filter by category slug</li>
+              <li><code>?start_date=2025-01-01</code> — Events starting after this date</li>
+              <li><code>?end_date=2025-12-31</code> — Events starting before this date</li>
+              <li><code>?per_page=20</code> — Results per page (default: 10, max: 100)</li>
+              <li><code>?page=2</code> — Paginated results page number</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Single Event Response</h3>
+            <ul>
+              <li><code>id</code> — Unique event ID</li>
+              <li><code>title</code> — Event title (rendered and raw)</li>
+              <li><code>date</code> — Event start date and time</li>
+              <li><code>end_date</code> — Event end date and time</li>
+              <li><code>location</code> — Venue address and coordinates</li>
+              <li><code>ticket_types</code> — Array of available ticket types</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="ticket-endpoints">
+        <h2>Ticket & Attendee Endpoints</h2>
+        <p>Access ticket type data and attendee records. These endpoints require authenticated requests with appropriate user permissions.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Ticket Endpoints</h3>
+            <ul>
+              <li><code>GET /wp-json/mep/v1/tickets</code> — All ticket types across events</li>
+              <li><code>GET /wp-json/mep/v1/tickets/{id}</code> — Single ticket type details</li>
+              <li><code>GET /wp-json/mep/v1/events/{id}/tickets</code> — Tickets for a specific event</li>
+              <li>Response includes: name, price, capacity, availability, description</li>
+              <li>Price returned as both formatted string and raw numeric value</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Attendee Endpoints</h3>
+            <ul>
+              <li><code>GET /wp-json/mep/v1/attendees</code> — All attendee records</li>
+              <li><code>GET /wp-json/mep/v1/attendees/{id}</code> — Single attendee details</li>
+              <li><code>GET /wp-json/mep/v1/events/{id}/attendees</code> — Attendees for an event</li>
+              <li>Response includes: name, email, ticket type, purchase date, status</li>
+              <li>Requires at least <code>edit_posts</code> capability</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="integration-use-cases">
+        <h2>Integration Use Cases</h2>
+        <p>Practical examples of how developers use the WpEvently REST API to build external applications and automate workflows.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>External Calendars</h3>
+            <ul>
+              <li>Sync events to Google Calendar, Outlook, or iCal</li>
+              <li>Poll the events endpoint periodically for new and updated events</li>
+              <li>Map event date, location, and description to calendar event fields</li>
+              <li>Handle recurring event expansion for multi-date sync</li>
+              <li>Implement webhook-style polling for near-real-time updates</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>CRM & Marketing Automation</h3>
+            <ul>
+              <li>Export attendee data to HubSpot, Salesforce, or Mailchimp</li>
+              <li>Trigger email campaigns based on event registration data</li>
+              <li>Segment attendees by ticket type, event category, or purchase date</li>
+              <li>Automate post-event follow-up and feedback collection</li>
+              <li>Build custom dashboards with real-time event and sales data</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="error-handling">
+        <h2>Error Handling & Rate Limiting</h2>
+        <p>Understand how the API communicates errors and how to handle them gracefully in your integration code.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Error Responses</h3>
+            <ul>
+              <li><code>400 Bad Request</code> — Invalid parameters or malformed request</li>
+              <li><code>401 Unauthorized</code> — Missing or invalid authentication</li>
+              <li><code>403 Forbidden</code> — Authenticated but insufficient permissions</li>
+              <li><code>404 Not Found</code> — Resource does not exist</li>
+              <li>Error responses include a <code>message</code> and <code>code</code> field</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Always implement exponential backoff for retries</li>
+              <li>Cache API responses to reduce server load</li>
+              <li>Use the <code>X-WP-Total</code> and <code>X-WP-TotalPages</code> headers for pagination</li>
+              <li>Handle network timeouts gracefully with user-facing messages</li>
+              <li>Log API errors for debugging and monitoring</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'REST API' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

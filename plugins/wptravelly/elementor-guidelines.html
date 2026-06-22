@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpTravelly — Elementor Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link active">Elementor Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Elementor Guidelines</h2>
+        <p>Leverage Elementor's visual builder alongside WpTravelly shortcodes to design stunning, fully custom tour pages without touching a line of code.</p>
+        <h3>Getting Started with Elementor</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Requirements</h3>
+            <ul>
+              <li>Elementor (Free) installed and activated</li>
+              <li>Elementor Pro recommended for theme builder features</li>
+              <li>WpTravelly plugin active with sample tour data</li>
+              <li>A Elementor-compatible theme (Hello Elementor, Astra, etc.)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Embedding Shortcodes in Elementor</h3>
+            <ul>
+              <li>Add a Shortcode widget from the Elementor panel</li>
+              <li>Paste your WpTravelly shortcode (e.g. <code>[wptravelly-tour-list column=3]</code>)</li>
+              <li>Adjust widget alignment, spacing, and background styles</li>
+              <li>Preview the tour list directly in the Elementor editor</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Elementor Theme Builder Integration</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Single Tour Template</h3>
+            <ul>
+              <li>Go to Templates &rarr; Theme Builder &rarr; Single Post</li>
+              <li>Select "Tour" as the post type condition</li>
+              <li>Design a custom single tour layout with dynamic data</li>
+              <li>Use the Post Content widget to render the tour description</li>
+              <li>Add custom sections for pricing, itinerary, and gallery</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour Archive Template</h3>
+            <ul>
+              <li>Create a new Archive template in Theme Builder</li>
+              <li>Set the condition to "Tour Archive"</li>
+              <li>Design the archive header with title and filter bar</li>
+              <li>Embed <code>[wptravelly-tour-list]</code> for the tour grid</li>
+              <li>Style pagination and responsive columns via Elementor</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Dynamic Tags (Elementor Pro)</h3>
+            <ul>
+              <li>Use dynamic tags to pull tour meta fields into your design</li>
+              <li>Display tour price, duration, and availability dynamically</li>
+              <li>Link buttons to booking pages with dynamic URLs</li>
+              <li>Conditionally show/hide sections based on tour data</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Global Widgets &amp; Templates</h3>
+            <ul>
+              <li>Save your tour card design as a Global widget</li>
+              <li>Reuse the widget across multiple pages</li>
+              <li>Update once and propagate changes everywhere</li>
+              <li>Combine with WpTravelly shortcodes inside saved templates</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Design &amp; Styling Tips</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Layout Best Practices</h3>
+            <ul>
+              <li>Use a 3- or 4-column grid for tour listing pages</li>
+              <li>Keep tour cards visually consistent with equal heights</li>
+              <li>Add hover effects on tour cards for interactivity</li>
+              <li>Use contrasting background sections to separate filters from results</li>
+              <li>Ensure sufficient whitespace between tour items</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Responsive Design</h3>
+            <ul>
+              <li>Preview tour pages at mobile, tablet, and desktop breakpoints</li>
+              <li>Reduce column counts on smaller screens (e.g. 1 col mobile)</li>
+              <li>Adjust font sizes and button padding per device</li>
+              <li>Test shortcode output on mobile viewports</li>
+              <li>Hide non-essential elements on small screens</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Custom CSS Classes</h3>
+            <ul>
+              <li>Add custom CSS classes to Elementor sections for fine-tuning</li>
+              <li>Target WpTravelly output via the section's wrapper class</li>
+              <li>Use Elementor's Custom CSS tab per widget for scoped styles</li>
+              <li>Avoid <code>!important</code> — increase specificity instead</li>
+              <li>Keep overrides in the theme's stylesheet for maintainability</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Performance Considerations</h3>
+            <ul>
+              <li>Limit the number of tours displayed per page (use pagination)</li>
+              <li>Optimise images uploaded via Elementor media panel</li>
+              <li>Use a caching plugin to serve static versions of tour pages</li>
+              <li>Minimise custom CSS/JS added through Elementor settings</li>
+              <li>Test page load speed after adding tour shortcodes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpTravelly' },
+    { href: '', label: 'Elementor Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBusTicketly — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="bus-manager-settings.html" class="docs-nav-link">Bus Manager Settings</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Available Shortcodes</h2>
+        <p>WpBusTicketly provides several shortcodes to display bus search forms, bus listings, and ticket views on any page or post. Each shortcode accepts optional parameters for customisation.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Bus Search Form</h3>
+            <p><code>[wbtm-bus-search-form]</code></p>
+            <ul>
+              <li>Renders the main bus search interface with origin, destination, and date fields</li>
+              <li>Place this on a page where customers begin their search</li>
+              <li>Recommended page slug: <code>/bus-search-list/</code></li>
+              <li>Automatically redirects results to the page containing <code>[wbtm-bus-search]</code></li>
+              <li>Styling can be customised via the Bus Manager colour settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Bus Lists / Search Results</h3>
+            <p><code>[wbtm-bus-search]</code></p>
+            <ul>
+              <li>Displays bus search results based on the user's origin, destination, and date</li>
+              <li>Must be placed on the same page referenced by the search form action</li>
+              <li>Shows available buses, departure times, seat availability, and pricing</li>
+              <li>Each bus entry links to the seat selection and booking flow</li>
+              <li>Supports pagination when many buses are available for a route</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Additional Shortcodes</h2>
+        <p>Beyond the core search pair, the plugin offers shortcodes for listing buses and displaying purchased tickets.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Bus Lists</h3>
+            <p><code>[wbtm-bus-list]</code></p>
+            <ul>
+              <li>Displays a static list of all available buses without requiring a search</li>
+              <li>Useful for route overview pages or sitemap-style navigation</li>
+              <li>Supports parameters: <code>style</code>, <code>order</code>, <code>orderby</code>, <code>posts_per_page</code></li>
+              <li>Example: <code>[wbtm-bus-list style="grid" order="asc" posts_per_page="10"]</code></li>
+              <li>Buses link to their individual booking pages</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>View Ticket</h3>
+            <p><code>[wbtm-view-ticket]</code></p>
+            <ul>
+              <li>Enables customers to look up their booking details using an order ID and email</li>
+              <li>Renders a simple form that fetches ticket information</li>
+              <li>Displays passenger details, seat numbers, departure time, and route</li>
+              <li>Ideal for a dedicated "View Ticket" page accessible from the menu</li>
+              <li>Works with the PDF ticket addon to display download links</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Shortcode Parameters</h2>
+        <p>Fine-tune the behaviour of each shortcode with the following optional attributes.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Common Parameters</h3>
+            <ul>
+              <li><code>style</code> &mdash; Display style: <code>list</code> (default) or <code>grid</code></li>
+              <li><code>order</code> &mdash; Sort order: <code>asc</code> or <code>desc</code></li>
+              <li><code>orderby</code> &mdash; Sort field: <code>date</code>, <code>title</code>, <code>price</code></li>
+              <li><code>posts_per_page</code> &mdash; Number of buses per page (default: <code>-1</code> for all)</li>
+              <li><code>bus_type</code> &mdash; Filter by bus type slug (e.g. <code>ac</code>, <code>non-ac</code>)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Examples</h3>
+            <ul>
+              <li><code>[wbtm-bus-list style="grid" orderby="title" posts_per_page="6"]</code></li>
+              <li><code>[wbtm-bus-search-form]</code> (used with default settings)</li>
+              <li><code>[wbtm-view-ticket]</code> (no parameters required)</li>
+              <li>Combine multiple shortcodes on the same page for complex layouts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Page Setup Best Practices</h2>
+        <p>Follow these guidelines to ensure your bus search system works correctly.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Page Structure</h3>
+            <ul>
+              <li>Create a page titled <strong>"Bus Search"</strong> with slug <code>/bus-search-list/</code></li>
+              <li>Place <code>[wbtm-bus-search-form]</code> on the search page</li>
+              <li>Place <code>[wbtm-bus-search]</code> on the same page or a dedicated results page</li>
+              <li>Create a <strong>"View Ticket"</strong> page with slug <code>/view-ticket/</code> and the <code>[wbtm-view-ticket]</code> shortcode</li>
+              <li>Add these pages to your navigation menu for easy access</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Troubleshooting Shortcodes</h3>
+            <ul>
+              <li>If search results don't appear, re-save permalinks at <strong>Settings &rarr; Permalinks</strong></li>
+              <li>Ensure no caching plugin is serving stale shortcode output</li>
+              <li>Verify the shortcode is not wrapped in paragraph tags by the editor</li>
+              <li>Use a classic WordPress editor or a shortcode block for reliable output</li>
+              <li>Check that the bus search form action URL points to the correct results page</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Page Builder Integration</h2>
+        <p>WpBusTicketly shortcodes work with most popular page builders. Use the native shortcode widget or element to embed them.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Elementor</h3>
+            <ul>
+              <li>Drag the <strong>Shortcode</strong> widget onto the page</li>
+              <li>Paste the shortcode (e.g. <code>[wbtm-bus-search-form]</code>) into the widget field</li>
+              <li>Save and preview the page to verify rendering</li>
+              <li>Style the surrounding section with Elementor's design controls</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Gutenberg Block Editor</h3>
+            <ul>
+              <li>Add a <strong>Shortcode</strong> block from the block inserter</li>
+              <li>Enter the shortcode directly into the block content area</li>
+              <li>Use the <strong>Code</strong> block if the shortcode is being wrapped in paragraphs</li>
+              <li>Preview the page to confirm the shortcode output renders correctly</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBusTicketly' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

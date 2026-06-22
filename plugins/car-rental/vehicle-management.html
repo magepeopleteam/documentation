@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental — Vehicle Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="vehicle-management.html" class="docs-nav-link active">Vehicle Management</a>
+        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <h2>Vehicle Management</h2>
+      <p>The Vehicle Management system allows you to build and maintain your entire fleet from the WordPress admin. Each vehicle profile supports images, detailed specifications, feature flags, categories, and custom terms.</p>
+
+      <h3>Adding and Managing Vehicles</h3>
+      <p>All vehicles are managed under the Car Rental &gt; Vehicles menu in the WordPress admin panel.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Creating a Vehicle</h3>
+          <ul>
+            <li>Go to Car Rental &gt; Vehicles &gt; Add New.</li>
+            <li>Enter the vehicle name (e.g., "Toyota Corolla 2025").</li>
+            <li>Upload a featured image and optional gallery images.</li>
+            <li>Write a detailed description highlighting features and conditions.</li>
+            <li>Select or create a vehicle category (e.g., Sedan, SUV, Hatchback).</li>
+            <li>Assign vehicle features such as AC, GPS, Bluetooth, and transmission type.</li>
+            <li>Set passenger capacity, number of doors, and luggage capacity.</li>
+            <li>Publish the vehicle to make it visible on the front end.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Editing &amp; Organising</h3>
+          <ul>
+            <li>Edit any vehicle from the Vehicles list table by clicking its title.</li>
+            <li>Use quick edit for bulk changes to status, category, or featured status.</li>
+            <li>Drag-and-drop reorder is available with the built-in sortable list.</li>
+            <li>Filter the vehicle list by category, status (published/draft), or date.</li>
+            <li>Trash vehicles to remove them from public view without permanent deletion.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Vehicle Categories &amp; Features</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Category Management</h3>
+          <ul>
+            <li>Create categories under Car Rental &gt; Vehicle Categories.</li>
+            <li>Assign a name, slug, description, and optional image per category.</li>
+            <li>Categories help users filter vehicles on the front-end listing.</li>
+            <li>Nested categories are supported for sub-types (e.g., Luxury &gt; Sports Car).</li>
+            <li>Categories can be shown or hidden from the booking form filter.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Feature Flags</h3>
+          <ul>
+            <li><strong>Transmission:</strong> Automatic or Manual.</li>
+            <li><strong>Fuel Type:</strong> Petrol, Diesel, Electric, Hybrid.</li>
+            <li><strong>Comfort:</strong> Air Conditioning, Heated Seats, Sunroof.</li>
+            <li><strong>Technology:</strong> Bluetooth, Apple CarPlay, Android Auto, GPS.</li>
+            <li><strong>Safety:</strong> ABS, Airbags, Parking Sensors, Rear Camera.</li>
+            <li>Features display as icons or tags on the vehicle detail page.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Extra Services &amp; Add-ons</h3>
+      <p>Attach optional extra services to any vehicle to upsell during the booking process.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Managing Extras</h3>
+          <ul>
+            <li>Go to Car Rental &gt; Extras to create add-on services.</li>
+            <li>Set a name (e.g., "Child Seat", "Additional Driver"), price, and description.</li>
+            <li>Choose between one-time fee or per-day pricing.</li>
+            <li>Extras can be optional or required during booking.</li>
+            <li>Assign extras globally or per vehicle from the vehicle edit screen.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Common Extra Services</h3>
+          <ul>
+            <li>Insurance packages (collision, theft, liability).</li>
+            <li>GPS navigation system rental.</li>
+            <li>Child booster seat or baby seat.</li>
+            <li>Additional driver authorization.</li>
+            <li>Roadside assistance coverage.</li>
+            <li>Winter tire / snow chain packages.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Location Management</h3>
+      <p>Configure pickup and drop-off locations for your fleet. Multi-location support allows customers to pick up from one location and return to another.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Setting Up Locations</h3>
+          <ul>
+            <li>Go to Car Rental &gt; Locations &gt; Add New.</li>
+            <li>Enter the location name, address, and contact details.</li>
+            <li>Set latitude and longitude for map integration.</li>
+            <li>Define opening hours for each location.</li>
+            <li>Mark a location as "Head Office" for primary business address.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Assigning Locations to Vehicles</h3>
+          <ul>
+            <li>Each vehicle can be available at one or multiple locations.</li>
+            <li>Set default pickup and drop-off locations per vehicle.</li>
+            <li>Customers can change locations during booking if enabled.</li>
+            <li>Location availability affects vehicle search results.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Import &amp; Export</h3>
+      <ul>
+        <li>Use the built-in CSV import tool to bulk-add vehicles from a spreadsheet.</li>
+        <li>Export your fleet to CSV for backup or offline editing.</li>
+        <li>The import supports vehicle name, description, category, features, pricing, and images.</li>
+        <li>Export data includes all vehicle metadata and assigned extras.</li>
+      </ul>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'Car Rental' },
+    { href: '', label: 'Vehicle Management' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

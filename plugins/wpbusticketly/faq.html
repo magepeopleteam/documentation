@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBusTicketly — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="bus-manager-settings.html" class="docs-nav-link">Bus Manager Settings</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Installation &amp; Requirements</h2>
+        <p>Common questions about installing the plugin and meeting system requirements.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I install the Bus Ticket Booking plugin?</h3>
+            <ul>
+              <li>Install via <strong>Plugins &rarr; Add New</strong> by searching "Bus Ticket Booking with Seat Reservation"</li>
+              <li>Alternatively, download the ZIP from MagePeople and upload via <strong>Plugins &rarr; Add New &rarr; Upload</strong></li>
+              <li>For the Pro version, upload the <code>wpbusticketly-pro.zip</code> file and activate your license key</li>
+              <li>Ensure WooCommerce is installed and activated alongside the bus plugin</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>What plugins are required for the Pro version?</h3>
+            <ul>
+              <li><strong>WooCommerce</strong> &mdash; required for payment processing and order management</li>
+              <li><strong>MagePeople PDF Support</strong> &mdash; required for PDF ticket generation</li>
+              <li>Both are free and available from the WordPress plugin repository</li>
+              <li>The Pro version itself also requires the core free plugin as a base</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Search &amp; Booking Issues</h2>
+        <p>Resolve problems with the search form, results display, and booking flow.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Why is my search form not working?</h3>
+            <ul>
+              <li>Verify the <code>[wbtm-bus-search-form]</code> and <code>[wbtm-bus-search]</code> shortcodes are on the correct pages</li>
+              <li>Go to <strong>Settings &rarr; Permalinks</strong> and click <strong>Save Changes</strong> to flush rewrite rules</li>
+              <li>Check that the search form action URL points to the page containing the results shortcode</li>
+              <li>Disable any caching plugin temporarily to rule out stale page output</li>
+              <li>Ensure at least one bus is published with an active route and available seats</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Why don't search results appear on the page?</h3>
+            <ul>
+              <li>Confirm the page slug is correct (recommended: <code>/bus-search-list/</code>)</li>
+              <li>Re-save permalink settings under <strong>Settings &rarr; Permalinks</strong></li>
+              <li>Ensure the <code>[wbtm-bus-search]</code> shortcode is on the same page as the form</li>
+              <li>Check that the selected origin and destination have buses assigned</li>
+              <li>Verify the travel date is within the bus's available schedule range</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Pricing &amp; Checkout Problems</h2>
+        <p>Fix common pricing display issues and checkout errors.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I fix pricing issues on the cart page in Divi?</h3>
+            <ul>
+              <li>This is a known compatibility issue with the Divi theme and WooCommerce</li>
+              <li>Switch to the default WordPress theme temporarily to confirm the cause</li>
+              <li>Add custom CSS to fix alignment or add a Divi compatibility plugin</li>
+              <li>Ensure WooCommerce template overrides in Divi are up to date</li>
+              <li>Contact Divi support if the issue persists after troubleshooting</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Why are taxes not showing on the ticket price?</h3>
+            <ul>
+              <li>Verify tax settings in <strong>WpBusTicketly &rarr; Settings &rarr; Tax</strong></li>
+              <li>Check WooCommerce tax options under <strong>WooCommerce &rarr; Settings &rarr; Tax</strong></li>
+              <li>Ensure the tax rate is enabled and assigned to the correct location</li>
+              <li>Set whether tax is inclusive or exclusive of the ticket price</li>
+              <li>Clear any caching plugins that may be storing stale pricing data</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Passenger &amp; Data Questions</h2>
+        <p>Manage passenger information and resolve data display issues.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Why is my passenger list showing empty?</h3>
+            <ul>
+              <li>Check that bookings exist for the selected bus and date filters</li>
+              <li>Ensure the booking status is "Confirmed" and not "Pending" or "Cancelled"</li>
+              <li>Refresh the passenger list page to load the latest data</li>
+              <li>Verify that passengers completed the checkout process successfully</li>
+              <li>Check WooCommerce orders to confirm the booking was placed</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I export passenger data?</h3>
+            <ul>
+              <li>The export feature is available in the Pro version only</li>
+              <li>Go to <strong>WpBusTicketly &rarr; Bookings</strong> and apply the desired filters</li>
+              <li>Click the <strong>Export CSV</strong> button to download the filtered data</li>
+              <li>The CSV includes passenger names, contact details, seats, and fares</li>
+              <li>Use the exported data for reporting, analysis, or external systems</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Technical &amp; Maintenance</h2>
+        <p>Address common technical issues and keep your system running smoothly.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I re-save permalinks to fix 404 errors?</h3>
+            <ul>
+              <li>Go to <strong>Settings &rarr; Permalinks</strong> in the WordPress admin</li>
+              <li>Scroll to the bottom and click <strong>Save Changes</strong> (no need to change settings)</li>
+              <li>This flushes the WordPress rewrite rules and resolves most 404 issues</li>
+              <li>Repeat this step after installing or updating the plugin</li>
+              <li>If using a caching plugin, clear the cache after re-saving permalinks</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How do I update the plugin without losing data?</h3>
+            <ul>
+              <li>Always backup your database and files before updating</li>
+              <li>Use the WordPress admin update notification for seamless updates</li>
+              <li>For manual updates, deactivate the plugin, replace the files, then reactivate</li>
+              <li>The Pro version requires an active license for automatic updates</li>
+              <li>Review the changelog before updating to check for breaking changes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section">
+        <h2>Translation &amp; Customisation</h2>
+        <p>Make the plugin work in your language and customise labels to match your brand.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I translate the plugin into my language?</h3>
+            <ul>
+              <li>Use the <strong>Loco Translate</strong> plugin to manage translation files directly from the admin</li>
+              <li>Translation files are in <code>/wp-content/plugins/wpbusticketly/languages/</code></li>
+              <li>Create a new translation for your locale (e.g. <code>de_DE</code> for German)</li>
+              <li>Translate each string shown in the plugin interface</li>
+              <li>Save the <code>.po</code> file and Loco Translate will compile the <code>.mo</code> file automatically</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I change the word "Bus" to "Coach"?</h3>
+            <ul>
+              <li>Yes, go to <strong>WpBusTicketly &rarr; Settings &rarr; Labels</strong></li>
+              <li>Find the "Bus" label field and replace it with your preferred term</li>
+              <li>You can also rename "Seat", "Boarding Point", and "Dropping Point"</li>
+              <li>All changes take effect immediately on the front-end</li>
+              <li>This does not affect WordPress admin labels or other plugins</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBusTicketly' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

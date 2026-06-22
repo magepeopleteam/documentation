@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCab — Pro Features</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="plugin-settings.html" class="docs-nav-link">Plugin Settings</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="pro-features.html" class="docs-nav-link active">Pro Features</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="pro-features">
+        <h2>Pro Features</h2>
+        <p>Unlock advanced capabilities with the Pro version of eCab. Manage drivers with a dedicated panel, operate intercity routes, create geofence-based service areas, and leverage automatic email notifications for a complete transportation management solution.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Driver Management</h3>
+            <ul>
+              <li>Add unlimited drivers to your transportation fleet from the WordPress admin panel</li>
+              <li>Assign drivers to specific vehicle types based on license class and qualifications</li>
+              <li>Each driver profile includes name, contact information, license number, and vehicle assignment</li>
+              <li>Upload driver photos and display them on booking confirmations and tickets</li>
+              <li>Track driver availability status (available, on trip, off duty, on break)</li>
+              <li>Maintain complete driver records including hiring date, performance notes, and rating history</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Driver Panel</h3>
+            <ul>
+              <li>Dedicated front-end login area for drivers to view their assigned trips and schedules</li>
+              <li>Drivers can update order statuses directly: Pending, Confirmed, In Progress, Completed, Cancelled</li>
+              <li>Real-time trip notifications appear on the driver panel dashboard</li>
+              <li>Drivers can view customer details, pickup location, dropoff location, and special instructions</li>
+              <li>Mobile-responsive design works on smartphones and tablets for on-the-go access</li>
+              <li>Trip history view allows drivers to review past completed jobs and earnings</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Intercity Operation Areas</h3>
+            <ul>
+              <li>Define operation areas for intercity travel, expanding your service beyond a single city</li>
+              <li>Set different pricing rules for intercity routes vs. intracity routes</li>
+              <li>Configure separate vehicle availability for intercity operations</li>
+              <li>Intercity routes support all three pricing models: distance-based, fixed hourly, and manual fixed location</li>
+              <li>Driver assignment can prioritize drivers licensed for intercity operation</li>
+              <li>Intercity bookings can have extended advance booking windows to accommodate longer trips</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Geofence-Based Service Areas</h3>
+            <ul>
+              <li>Draw geofence polygons on the Google Map to define precise service area boundaries</li>
+              <li>Bookings are only accepted when the pickup location falls within a defined geofence zone</li>
+              <li>Create multiple geofence zones with different pricing rules per zone</li>
+              <li>Automatic zone detection assigns the correct pricing structure based on the customer's pickup location</li>
+              <li>Geofence boundaries can be imported from KML files for complex service area definitions</li>
+              <li>Out-of-bounds bookings are gracefully rejected with a message explaining the service area limitation</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Automatic Email Notifications</h3>
+            <ul>
+              <li>Automated email sent to the driver when a new booking is confirmed and assigned</li>
+              <li>Admin receives booking confirmation emails with complete trip and customer details</li>
+              <li>Customer receives booking confirmation, reminder, and status update emails</li>
+              <li>Fully customizable email templates with placeholders for dynamic booking data</li>
+              <li>Email notifications can be enabled or disabled individually for each event type</li>
+              <li>SMTP integration ensures reliable email delivery through your preferred mail service</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Driver Information on Tickets &amp; Orders</h3>
+            <ul>
+              <li>Driver name and photo are automatically displayed on booking tickets and order confirmation pages</li>
+              <li>WooCommerce order details include linked driver information for admin reference</li>
+              <li>Customers can see who their assigned driver will be before the trip begins</li>
+              <li>Driver contact number can be shown on the ticket for direct customer communication</li>
+              <li>Printable ticket templates include all driver and vehicle information for professional presentation</li>
+              <li>Driver assignment can be manually overridden from the order edit screen</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Custom Driver Status Management</h3>
+            <ul>
+              <li>Define custom driver statuses beyond the defaults (e.g., Training, On Leave, Emergency)</li>
+              <li>Driver availability rules can automatically exclude unavailable drivers from new assignments</li>
+              <li>Status change history is logged for administrative auditing and performance tracking</li>
+              <li>Automated status transitions based on booking schedules (e.g., auto-switch to On Trip when booking starts)</li>
+              <li>Admin can manually override any driver status for exceptional circumstances</li>
+              <li>Custom statuses can have color-coded labels for quick visual reference in the driver list</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Enhanced Reporting &amp; Analytics</h3>
+            <ul>
+              <li>Detailed booking reports with filters by date range, vehicle type, driver, and pricing model</li>
+              <li>Revenue analytics broken down by route, driver, vehicle, and time period</li>
+              <li>Export reports to CSV or PDF for accounting and business analysis</li>
+              <li>Driver performance metrics including trip completion rates and on-time statistics</li>
+              <li>Fleet utilization reports to identify underused or overused vehicles</li>
+              <li>Customer booking history reports for loyalty program management and targeted marketing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'eCab' },
+    { href: '', label: 'Pro Features' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

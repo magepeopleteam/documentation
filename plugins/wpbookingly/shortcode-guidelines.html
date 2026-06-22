@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBookingly — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="service-management.html" class="docs-nav-link">Service Management</a>
+        <a href="staff-scheduling.html" class="docs-nav-link">Staff &amp; Scheduling</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="payment-integration.html" class="docs-nav-link">Payment Integration</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="primary-shortcodes">
+        <h2>Primary Booking Shortcodes</h2>
+        <p>Shortcodes allow you to embed booking forms and service displays anywhere on your WordPress site.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Main Booking Form</h3>
+            <ul>
+              <li><strong>[wpbookingly_booking]</strong> renders the full multi-step booking form</li>
+              <li>Displays service selection, date picker, time slots, and checkout</li>
+              <li>Automatically adapts to the configured booking flow</li>
+              <li>Best placed on a dedicated booking page</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Service List</h3>
+            <ul>
+              <li><strong>[wpbookingly_services]</strong> displays a browsable service catalog</li>
+              <li>Shows service name, description, price, and duration</li>
+              <li>Supports category filtering and search</li>
+              <li>Clicking a service redirects to the booking form</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Staff Availability</h3>
+            <ul>
+              <li><strong>[wpbookingly_staff]</strong> shows staff profiles and availability</li>
+              <li>Displays staff name, photo, bio, and assigned services</li>
+              <li>Shows real-time availability for the current week</li>
+              <li>Supports direct booking via staff selection</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Category Grid</h3>
+            <ul>
+              <li><strong>[wpbookingly_categories]</strong> renders a visual category grid</li>
+              <li>Each category card shows name, image, and service count</li>
+              <li>Clicking a category filters the service list</li>
+              <li>Customize grid columns via shortcode parameters</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-parameters">
+        <h2>Shortcode Parameters</h2>
+        <p>Customize the behavior and appearance of shortcodes using optional parameters.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Layout &amp; Styling</h3>
+            <ul>
+              <li><strong>layout</strong> &mdash; Choose inline, horizontal, or vertical form layout</li>
+              <li><strong>columns</strong> &mdash; Set number of grid columns (1-4, default 2)</li>
+              <li><strong>show_search</strong> &mdash; Enable or disable the search bar (true/false)</li>
+              <li><strong>show_filter</strong> &mdash; Show or hide category filter tabs (true/false)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Content Filtering</h3>
+            <ul>
+              <li><strong>category</strong> &mdash; Display services from a specific category slug</li>
+              <li><strong>staff_id</strong> &mdash; Show availability for a specific staff member</li>
+              <li><strong>service_id</strong> &mdash; Pre-select a specific service on load</li>
+              <li><strong>limit</strong> &mdash; Maximum number of items to display</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking Flow</h3>
+            <ul>
+              <li><strong>show_progress</strong> &mdash; Enable multi-step progress indicator</li>
+              <li><strong>show_summary</strong> &mdash; Display booking summary before checkout</li>
+              <li><strong>guest_checkout</strong> &mdash; Allow booking without registration</li>
+              <li><strong>redirect</strong> &mdash; Custom URL after successful booking</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Date &amp; Time</h3>
+            <ul>
+              <li><strong>date_format</strong> &mdash; Override the default date display format</li>
+              <li><strong>time_format</strong> &mdash; Override the default time display format</li>
+              <li><strong>first_day</strong> &mdash; Set the starting day of the week (0=Sun, 1=Mon)</li>
+              <li><strong>min_date</strong> &mdash; Earliest selectable date for booking</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-examples">
+        <h2>Usage Examples</h2>
+        <p>Practical examples showing how to use shortcodes in different scenarios.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Booking Form</h3>
+            <ul>
+              <li><code>[wpbookingly_booking]</code> &mdash; Full booking experience</li>
+              <li><code>[wpbookingly_booking layout="horizontal"]</code> &mdash; Horizontal layout</li>
+              <li><code>[wpbookingly_booking show_progress="true"]</code> &mdash; With progress bar</li>
+              <li><code>[wpbookingly_booking guest_checkout="true"]</code> &mdash; Guest only</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Filtered Displays</h3>
+            <ul>
+              <li><code>[wpbookingly_services category="consultation"]</code> &mdash; Single category</li>
+              <li><code>[wpbookingly_services columns="3" show_search="true"]</code> &mdash; Grid with search</li>
+              <li><code>[wpbookingly_staff staff_id="5"]</code> &mdash; Specific staff availability</li>
+              <li><code>[wpbookingly_categories columns="4"]</code> &mdash; 4-column category grid</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="embedding-tips">
+        <h2>Embedding &amp; Placement Tips</h2>
+        <p>Best practices for placing shortcodes on your WordPress site for optimal user experience.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Page Placement</h3>
+            <ul>
+              <li>Place the main booking shortcode on a dedicated, uncluttered page</li>
+              <li>Use the service list shortcode on category landing pages</li>
+              <li>Embed staff availability on team or about pages</li>
+              <li>Avoid placing multiple booking forms on the same page</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Widget Areas</h3>
+            <ul>
+              <li>Add the booking form to a sidebar using a WordPress text widget</li>
+              <li>Use Gutenberg shortcode blocks for easy placement in FSE themes</li>
+              <li>Elementor users can use the Shortcode widget</li>
+              <li>Test mobile rendering after embedding in widget areas</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBookingly' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

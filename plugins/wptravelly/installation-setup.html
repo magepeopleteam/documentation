@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpTravelly — Installation &amp; Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link active">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section">
+        <h2>Installation &amp; Setup</h2>
+        <p>Install the WpTravelly plugin via WordPress admin, zip upload, or FTP to start building and managing tour packages with WooCommerce integration.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Prerequisites</h3>
+            <ul>
+              <li>WordPress 5.8 or higher running any standard theme</li>
+              <li>WooCommerce plugin installed and activated</li>
+              <li>PHP 7.4+ with required extensions (curl, json, mbstring)</li>
+              <li>Minimum memory limit of 128 MB recommended</li>
+              <li>A valid license key for the Pro version (if applicable)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Install via WordPress Admin</h3>
+            <ul>
+              <li>Navigate to Plugins &rarr; Add New in your WordPress dashboard</li>
+              <li>Search for "WpTravelly" or "Travel Booking Manager"</li>
+              <li>Click Install Now next to the plugin listing</li>
+              <li>Click Activate after installation completes</li>
+              <li>Enter your license key under WpTravelly &rarr; License</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Manual Installation (Zip Upload)</h3>
+            <ul>
+              <li>Download the plugin zip file from your MagePeople account</li>
+              <li>Go to Plugins &rarr; Add New &rarr; Upload Plugin</li>
+              <li>Choose the downloaded .zip file and click Install Now</li>
+              <li>Click Activate Plugin once the upload finishes</li>
+              <li>Verify the WpTravelly menu appears in your admin sidebar</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Install via FTP</h3>
+            <ul>
+              <li>Extract the plugin zip file on your local machine</li>
+              <li>Connect to your server using an FTP client (e.g. FileZilla)</li>
+              <li>Upload the extracted folder to <code>/wp-content/plugins/</code></li>
+              <li>Log in to WordPress and go to Plugins &rarr; Installed Plugins</li>
+              <li>Find WpTravelly in the list and click Activate</li>
+            </ul>
+          </article>
+        </div>
+        <h3>Initial Configuration</h3>
+        <p>After activation, complete the setup wizard or manually configure these core settings:</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Global Settings</h3>
+            <ul>
+              <li>Set the default tour currency and price display format</li>
+              <li>Configure date formats and timezone for tour schedules</li>
+              <li>Define global booking cutoff and cancellation policies</li>
+              <li>Enable or disable guest checkout for tour bookings</li>
+              <li>Set up email notifications for booking confirmations</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tour Taxonomy Setup</h3>
+            <ul>
+              <li>Create tour categories (e.g. Adventure, Cultural, Wildlife)</li>
+              <li>Add tour organizers (guides or agencies running tours)</li>
+              <li>Define tour tags for filtering and cross-referencing</li>
+              <li>Set up tour activities and destinations</li>
+              <li>Assign featured images and icons to each taxonomy</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Payment &amp; Checkout</h3>
+            <ul>
+              <li>Configure WooCommerce payment gateways (PayPal, Stripe, etc.)</li>
+              <li>Set up tax rates for tour bookings if required</li>
+              <li>Enable partial or deposit payments for tours</li>
+              <li>Define default checkout fields and required information</li>
+              <li>Test a sandbox transaction before going live</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Page Creation</h3>
+            <ul>
+              <li>Create a dedicated "Tours" page to list all tour packages</li>
+              <li>Add a "Tour Search" page using the search shortcode</li>
+              <li>Create individual tour detail pages (auto-generated)</li>
+              <li>Set up a cart and checkout page via WooCommerce</li>
+              <li>Link pages in your main navigation menu</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpTravelly' },
+    { href: '', label: 'Installation &amp; Setup' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

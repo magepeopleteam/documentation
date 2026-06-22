@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Template Override</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link active">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="overriding-templates">
+        <h2>How to Override Event Templates</h2>
+        <p>WpEvently follows the WordPress template hierarchy. You can override any plugin template by copying it into your theme directory. This preserves your customisations across plugin updates.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Template Override Steps</h3>
+            <ul>
+              <li>Browse to <code>/wp-content/plugins/wp-event-manager/templates/</code></li>
+              <li>Locate the template file you want to customise</li>
+              <li>Create a folder in your theme: <code>/wp-content/themes/your-theme/wp-event-manager/</code></li>
+              <li>Copy the template file, preserving the subdirectory structure</li>
+              <li>Edit the copied file — your changes persist after plugin updates</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Template Hierarchy</h3>
+            <ul>
+              <li><code>single-event.php</code> — Single event detail page</li>
+              <li><code>archive-event.php</code> — Event archive listing page</li>
+              <li><code>content-single-event.php</code> — Content inside single event</li>
+              <li><code>content-event.php</code> — Content inside event listings</li>
+              <li><code>ticket/</code> — All ticket-related template partials</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="creating-new-templates">
+        <h2>Creating New Theme Templates</h2>
+        <p>You can create entirely new template files for custom event layouts. Use WordPress template hierarchy conventions to target specific event views.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Custom Template Files</h3>
+            <ul>
+              <li><code>single-event-{slug}.php</code> — Template for a specific event slug</li>
+              <li><code>single-event-{id}.php</code> — Template for a specific event ID</li>
+              <li><code>taxonomy-event_category-{slug}.php</code> — Category-specific archive</li>
+              <li><code>taxonomy-event_organizer-{slug}.php</code> — Organizer-specific archive</li>
+              <li>Use <code>template-loader.php</code> hooks for advanced custom routing</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Template Tags & Functions</h3>
+            <ul>
+              <li><code>mep_get_event_title()</code> — Retrieve the event title</li>
+              <li><code>mep_get_event_date()</code> — Display the event date</li>
+              <li><code>mep_get_event_time()</code> — Display the event time</li>
+              <li><code>mep_get_event_location()</code> — Get the venue location</li>
+              <li><code>mep_get_ticket_price()</code> — Retrieve ticket price info</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="pdf-tickets">
+        <h2>PDF Ticket Design</h2>
+        <p>Customise the PDF ticket layout that is generated when attendees purchase tickets. You can modify the header, body content, footer, and QR code placement.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>PDF Template Override</h3>
+            <ul>
+              <li>Copy <code>templates/pdf-ticket.php</code> to your theme override folder</li>
+              <li>Edit the HTML structure to match your brand</li>
+              <li>Add your company logo, colours, and typography</li>
+              <li>Modify ticket data fields shown on the PDF</li>
+              <li>Test the PDF output by purchasing a test ticket</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>PDF Styling Tips</h3>
+            <ul>
+              <li>Use inline CSS for PDF compatibility</li>
+              <li>Keep the design clean — PDFs are often printed on small paper</li>
+              <li>Include essential info: event name, date, time, venue, attendee name</li>
+              <li>Place the QR code in a prominent, scannable position</li>
+              <li>Add a unique ticket ID and barcode for entry scanning</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="social-share-icons">
+        <h2>Social Share Icons</h2>
+        <p>Override the default social share icons on the event details page. You can add, remove, or rearrange share buttons for Facebook, Twitter, LinkedIn, and more.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Customising Share Icons</h3>
+            <ul>
+              <li>Override <code>templates/social-share.php</code> in your theme</li>
+              <li>Add new networks: Pinterest, WhatsApp, Telegram, Email</li>
+              <li>Use custom icon sets (FontAwesome, SVG sprites, or images)</li>
+              <li>Modify the share URL structure for each platform</li>
+              <li>Add tracking parameters to share URLs for analytics</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Available Hook Points</h3>
+            <ul>
+              <li><code>mep_before_social_share</code> — Content before share icons</li>
+              <li><code>mep_after_social_share</code> — Content after share icons</li>
+              <li><code>mep_social_share_list</code> — Filter the share networks array</li>
+              <li>Use these hooks to inject custom share services</li>
+              <li>Test shared links on each platform for correct URL formatting</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="category-organizer-templates">
+        <h2>Category & Organizer Templates</h2>
+        <p>Override the archive templates for event categories and organizers. These templates control how lists of events grouped by category or organizer are displayed.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Category Archives</h3>
+            <ul>
+              <li>Copy <code>templates/taxonomy-event_category.php</code> to your theme</li>
+              <li>Customise the header to show the category name and description</li>
+              <li>Change the layout style (list, grid, or custom)</li>
+              <li>Add category-specific banners or branding</li>
+              <li>Include subcategory navigation for hierarchical categories</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Organizer Archives</h3>
+            <ul>
+              <li>Copy <code>templates/taxonomy-event_organizer.php</code> to your theme</li>
+              <li>Show organizer profile details at the top of the page</li>
+              <li>Display all events by that organizer in a grid or list</li>
+              <li>Add links to organizer website and social profiles</li>
+              <li>Include an organizer bio or description section</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="template-best-practices">
+        <h2>Template Override Best Practices</h2>
+        <p>Follow these guidelines to ensure your template overrides remain maintainable, compatible, and performant.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Maintenance Tips</h3>
+            <ul>
+              <li>Document each overridden template in a readme file</li>
+              <li>Review overridden templates after each plugin update</li>
+              <li>Use a child theme to keep customisations separate</li>
+              <li>Version control your theme files with Git</li>
+              <li>Test on a staging site before deploying to production</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Compatibility Checklist</h3>
+            <ul>
+              <li>Verify that all required template tags still exist after updates</li>
+              <li>Check for new template files added by plugin updates</li>
+              <li>Ensure your overridden template uses the same PHP version features</li>
+              <li>Test with both free and Pro versions of the plugin</li>
+              <li>Validate HTML output with W3C validator</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Template Override' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

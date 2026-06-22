@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCab — General Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="plugin-settings.html" class="docs-nav-link">Plugin Settings</a>
+        <a href="general-guidelines.html" class="docs-nav-link active">General Guidelines</a>
+        <a href="pro-features.html" class="docs-nav-link">Pro Features</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="general-guidelines">
+        <h2>General Guidelines</h2>
+        <p>Understand the three core pricing models, location management, initial pricing configuration, off-day settings, and translation support to fully leverage the eCab plugin for your transportation business.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Distance-Based Pricing Model</h3>
+            <p>The distance-based pricing model calculates fares dynamically based on the actual distance between the pickup and dropoff locations. A per-kilometer (or per-mile) rate is combined with per-hour waiting charges to produce the final fare.</p>
+            <ul>
+              <li>Requires a valid Google Maps API key for distance and duration calculations</li>
+              <li>Set a base fare (initial price) that applies to all trips regardless of distance</li>
+              <li>Configure per-km rate: e.g., $1.50 per kilometer traveled</li>
+              <li>Configure per-hour rate: e.g., $12.00 per hour of waiting time waiting</li>
+              <li>Fare formula: (distance &times; per-km rate) + (duration &times; per-hour rate) + initial price</li>
+              <li>Minimum fare can be enforced to ensure short trips remain profitable</li>
+              <li>Supports different rates for different vehicle types (sedan, SUV, minivan, etc.)</li>
+              <li>Night surcharge and peak-hour multipliers can be applied on top of the base rate</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Fixed Hourly Pricing Model</h3>
+            <p>The fixed hourly pricing model charges customers a flat rate per hour for the duration of their booking. This model is ideal for services where the customer hires the vehicle for a block of time, such as city tours, corporate charters, or event transportation.</p>
+            <ul>
+              <li>Set an hourly rate for each vehicle type (e.g., sedan $25/hr, SUV $35/hr)</li>
+              <li>Configure a minimum number of hours required per booking (e.g., minimum 3 hours)</li>
+              <li>Overtime charges can be applied for bookings that exceed the reserved hours</li>
+              <li>Included mileage cap can limit the distance covered within the hourly rate</li>
+              <li>Extra distance charges apply after the included mileage limit is exceeded</li>
+              <li>Waiting time during the rental period is included in the hourly rate</li>
+              <li>Fare formula: hourly rate &times; number of hours + overtime charges + extra distance fees</li>
+              <li>Half-hour increments can be enabled for more granular billing</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Manual Fixed Location Pricing Model</h3>
+            <p>The manual fixed location pricing model lets you define specific pickup and dropoff location pairs with predetermined flat fares. This model provides complete pricing predictability and is best for standard routes with known operating costs.</p>
+            <ul>
+              <li>Create location entries with names, addresses, and GPS coordinates</li>
+              <li>Define location pairs (pickup &rarr; dropoff) and assign a fixed price to each pair</li>
+              <li>For example: Airport to Downtown Hotel — $35, Downtown Hotel to Shopping Mall — $15</li>
+              <li>Different vehicle types can have different fixed prices for the same route</li>
+              <li>Customers select from dropdown menus for pickup and dropoff locations</li>
+              <li>One-way and round-trip pricing can be configured separately for each pair</li>
+              <li>Bulk import/export of location pairs via CSV is supported for large operations</li>
+              <li>No Google Maps API key is required for this pricing model unless map display is needed</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Initial Price (Base Fare)</h3>
+            <ul>
+              <li>The initial price is a fixed base charge added to every booking regardless of distance or duration</li>
+              <li>It covers operational costs such as booking processing, dispatch, and vehicle readiness</li>
+              <li>Can be set globally for all vehicles or individually per vehicle type</li>
+              <li>Initial price is the first component added in all three pricing model calculations</li>
+              <li>Recommended to cover costs even for very short trips or minimum-hour bookings</li>
+              <li>Can be set to zero if you prefer to charge only for distance or time</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Location Management</h3>
+            <ul>
+              <li>Locations serve as predefined pickup or dropoff points for the manual fixed pricing model</li>
+              <li>Each location includes a name, full address, and Google Maps coordinates</li>
+              <li>Locations can also be used as zones for distance-based pricing to restrict service areas</li>
+              <li>Organize locations into groups for easier management (e.g., Airports, Hotels, Train Stations)</li>
+              <li>Assign locations to specific vehicle types to create specialized route networks</li>
+              <li>Import locations in bulk using CSV or manually add them one at a time</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Off-Day &amp; Holiday Settings</h3>
+            <ul>
+              <li>Configure specific dates as off days when no bookings are accepted</li>
+              <li>Supports recurring off days (e.g., every Sunday) and one-time holiday closures</li>
+              <li>Off days apply globally to all transport services or can be set per service</li>
+              <li>Customers attempting to book on an off day will see an availability message</li>
+              <li>Set custom messages for different types of off days (holiday, maintenance, etc.)</li>
+              <li>Override off days for specific vehicles if some remain operational on holidays</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Translation &amp; Localization</h3>
+            <ul>
+              <li>eCab is fully translatable using standard WordPress .po/.mo translation files</li>
+              <li>Use plugins like Loco Translate or Poedit to create custom language files</li>
+              <li>All front-end booking form labels, buttons, and messages can be translated</li>
+              <li>Backend settings and admin interface strings are also translatable</li>
+              <li>Date formats, currency symbols, and number formatting adapt to locale settings</li>
+              <li>Right-to-left (RTL) language support is included for Arabic, Hebrew, and other RTL scripts</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Advance Booking &amp; Lead Time</h3>
+            <ul>
+              <li>Set the maximum number of days in advance a customer can book (e.g., 30, 60, or 90 days)</li>
+              <li>Configure minimum lead time required before a booking can be placed (e.g., 2 hours before departure)</li>
+              <li>Different lead times can be set for different vehicle types or services</li>
+              <li>Bookings outside the allowed window are automatically rejected with a user-friendly message</li>
+              <li>Cutoff times can be set for same-day bookings (e.g., no bookings after 6:00 PM for same-day service)</li>
+              <li>Advance booking settings help you manage fleet availability and driver scheduling</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'eCab' },
+    { href: '', label: 'General Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

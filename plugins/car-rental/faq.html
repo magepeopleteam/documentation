@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="vehicle-management.html" class="docs-nav-link">Vehicle Management</a>
+        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link active">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers to the most common questions about installing, configuring, and using the Car Rental Manager plugin. If you don't find what you need, refer to the detailed sections above or contact MagePeople support.</p>
+
+      <h3>Installation &amp; Getting Started</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>How do I install the Car Rental Manager plugin?</h3>
+          <p>Install via WordPress admin by going to Plugins &gt; Add New and searching for "Car Rental Manager". Alternatively, upload the Pro ZIP from your MagePeople account. See the <a href="installation-setup.html">Installation &amp; Setup</a> page for detailed steps.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>Does the plugin work without WooCommerce?</h3>
+          <p>Yes. Car Rental Manager works in standalone mode with its own PayPal or Stripe integration. WooCommerce is optional but recommended if you already use it for other products.</p>
+        </article>
+      </div>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>How do I display the booking form on a page?</h3>
+          <p>Use the shortcode <code>[mpcrbm_booking form='inline' progressbar='no']</code> on any page or post. You can choose from inline, horizontal, or vertical form layouts. Refer to the <a href="shortcode-guidelines.html">Shortcode Guidelines</a> for all available parameters.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>How do I add vehicles to my fleet?</h3>
+          <p>Go to Car Rental &gt; Vehicles &gt; Add New. Fill in the name, description, images, category, features, and pricing. Publish to make the vehicle visible on the front end. See <a href="vehicle-management.html">Vehicle Management</a> for full details.</p>
+        </article>
+      </div>
+
+      <h3>Pricing &amp; Payments</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Can I set different prices for different seasons?</h3>
+          <p>Yes. Use the Seasonal Pricing feature under Car Rental &gt; Pricing &gt; Seasonal Rates. Define date ranges with custom prices that override regular rates automatically. Learn more on the <a href="pricing-availability.html">Pricing &amp; Availability</a> page.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>How do I offer discounts for long-term rentals?</h3>
+          <p>Configure the "Discount over X days" setting in Pricing settings. Specify the minimum number of days and the discount percentage. The discount is applied automatically at checkout.</p>
+        </article>
+      </div>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>What payment gateways are supported?</h3>
+          <p>With WooCommerce, all major gateways are supported (Stripe, PayPal, Square, BACS, etc.). In standalone mode, PayPal and Stripe are built in. Bank transfer and cash on pickup are also available as offline options.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>Can I collect a security deposit?</h3>
+          <p>Yes. You can set a security deposit amount per vehicle from the vehicle edit screen. The deposit is added to the booking total and can be marked as refunded from the booking detail page.</p>
+        </article>
+      </div>
+
+      <h3>Availability &amp; Calendars</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>How do I prevent double bookings?</h3>
+          <p>The plugin performs real-time availability checks. When a vehicle is booked for a date range, it is automatically blocked for overlapping requests. You can also manually block dates from the vehicle's availability calendar.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>How do I set my business closure days?</h3>
+          <p>Go to Car Rental &gt; Settings &gt; Availability and add off days (e.g., public holidays). These apply globally. Per-vehicle off days can be set from each vehicle's calendar tab for maintenance scheduling.</p>
+        </article>
+      </div>
+
+      <h3>Customisation &amp; Translation</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Can I change the plugin label from "Car Rental" to something else?</h3>
+          <p>Yes. Go to Car Rental &gt; Settings &gt; General and change the "Label" field. The URL slug can also be customised. Changes are reflected immediately on the front end.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>How do I translate the plugin into another language?</h3>
+          <p>Use Loco Translate (free plugin) to translate all strings from the WordPress admin. The plugin also supports WPML and Polylang for full multi-language site setups. Language files are in the <code>/languages/</code> directory.</p>
+        </article>
+      </div>
+
+      <h3>Management &amp; Support</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>How do I manage customer bookings?</h3>
+          <p>All bookings are listed under Car Rental &gt; Bookings. You can filter by status, search by customer or vehicle, edit booking details, update status, process refunds, and send manual emails from this interface.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>How do I enable SMS notifications?</h3>
+          <p>SMS notifications require the Twilio add-on (available in the Pro version). After installing and configuring the add-on with your Twilio credentials, enable SMS alerts in the Email/SMS notification settings.</p>
+        </article>
+      </div>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Can customers cancel their booking?</h3>
+          <p>Cancellation options depend on your settings. You can allow or disallow customer cancellations, set a cancellation cutoff period, and define refund tiers (full refund, partial, or non-refundable) based on how far in advance the cancellation occurs.</p>
+        </article>
+
+        <article class="doc-card">
+          <h3>Where can I get support if I have issues?</h3>
+          <p>Free version support is available on the WordPress.org plugin forum. Pro version customers receive priority support via the MagePeople ticket system. Check the <a href="general-guidelines.html">General Guidelines</a> for best practices before reaching out.</p>
+        </article>
+      </div>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'Car Rental' },
+    { href: '', label: 'FAQ' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

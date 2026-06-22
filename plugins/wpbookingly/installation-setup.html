@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBookingly — Installation &amp; Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link active">Installation &amp; Setup</a>
+        <a href="service-management.html" class="docs-nav-link">Service Management</a>
+        <a href="staff-scheduling.html" class="docs-nav-link">Staff &amp; Scheduling</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="payment-integration.html" class="docs-nav-link">Payment Integration</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="system-requirements">
+        <h2>System Requirements</h2>
+        <p>Before installing WpBookingly, ensure your server meets the minimum requirements for smooth operation of the booking plugin.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Server Environment</h3>
+            <ul>
+              <li>PHP version 7.4 or higher (PHP 8.0+ recommended)</li>
+              <li>WordPress 5.8 or later installed</li>
+              <li>MySQL 5.6+ or MariaDB 10.1+ database</li>
+              <li>cURL and JSON extensions enabled on the server</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Required Plugins</h3>
+            <ul>
+              <li>WooCommerce plugin must be installed and activated</li>
+              <li>WooCommerce serves as the payment processing backbone</li>
+              <li>MagePeople PDF Support recommended for PDF ticket generation</li>
+              <li>Loco Translate or WPML for multilingual setups</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="installation-methods">
+        <h2>Installation Methods</h2>
+        <p>WpBookingly can be installed through multiple methods depending on your license type and hosting environment.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>WordPress Admin Install</h3>
+            <ul>
+              <li>Navigate to Plugins &gt; Add New in the WordPress dashboard</li>
+              <li>Search for "WpBookingly" in the plugin repository</li>
+              <li>Click Install Now and then Activate</li>
+              <li>The free version is available directly from WordPress.org</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Pro Version Upload</h3>
+            <ul>
+              <li>Download the Pro version zip from your MagePeople account</li>
+              <li>Go to Plugins &gt; Add New &gt; Upload Plugin</li>
+              <li>Choose the downloaded zip file and click Install Now</li>
+              <li>Enter your license key under WpBookingly settings to activate</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>FTP Installation</h3>
+            <ul>
+              <li>Extract the plugin zip file on your local machine</li>
+              <li>Upload the wpbookingly folder to /wp-content/plugins/</li>
+              <li>Navigate to Plugins in WordPress admin and activate</li>
+              <li>Useful for servers with upload size limitations</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>WP-CLI Installation</h3>
+            <ul>
+              <li>Run wp plugin install wpbookingly from the command line</li>
+              <li>Activate with wp plugin activate wpbookingly</li>
+              <li>For Pro, use wp plugin install /path/to/wpbookingly-pro.zip</li>
+              <li>Ideal for headless or automated deployment workflows</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="setup-wizard">
+        <h2>Setup Wizard</h2>
+        <p>Upon activation, the quick setup wizard guides you through the initial configuration of your booking system.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Industry Selection</h3>
+            <ul>
+              <li>Choose your business type from pre-defined industries</li>
+              <li>Options include Consultation, Salon, Car Wash, Repair, and more</li>
+              <li>The selection pre-configures labels and defaults</li>
+              <li>You can customize everything later in settings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Regional Settings</h3>
+            <ul>
+              <li>Set your timezone for accurate appointment scheduling</li>
+              <li>Configure the default currency for pricing</li>
+              <li>Choose date and time display formats</li>
+              <li>Set the first day of the week for calendar views</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking Preferences</h3>
+            <ul>
+              <li>Enable or disable guest checkout for faster bookings</li>
+              <li>Set default booking status (pending, confirmed, or auto-approved)</li>
+              <li>Configure minimum and maximum advance booking notice</li>
+              <li>Enable mobile optimization for on-the-go bookings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Notification Defaults</h3>
+            <ul>
+              <li>Set up admin email notification addresses</li>
+              <li>Configure customer confirmation email templates</li>
+              <li>Enable or disable SMS notifications (if addon installed)</li>
+              <li>Define reminder timing before appointments</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="post-install-config">
+        <h2>Post-Install Configuration</h2>
+        <p>After the wizard, fine-tune additional settings to match your specific business requirements.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>General Settings</h3>
+            <ul>
+              <li>Access Settings via WpBookingly &gt; Settings in the admin menu</li>
+              <li>Customize the booking form slug and page URLs</li>
+              <li>Configure loading indicators and spinner styles</li>
+              <li>Set up reCAPTCHA for spam protection</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking Page Setup</h3>
+            <ul>
+              <li>Create a dedicated booking page via Pages &gt; Add New</li>
+              <li>Insert the primary booking shortcode into the page content</li>
+              <li>Set the page as the booking destination in WpBookingly settings</li>
+              <li>Enable pretty permalinks for clean booking page URLs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBookingly' },
+    { href: '', label: 'Installation &amp; Setup' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

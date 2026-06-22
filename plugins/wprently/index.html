@@ -18,15 +18,165 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>WpRently &mdash; Booking and Rental Manager Pro for WordPress</h1>
-    <p class="lede">Complete documentation for WpRently damage deposits, calendar sync, delivery zones, rental insurance, and late return fees addons.</p>
-  </section>
-
-  <main id="main">
-
-  </main>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="global-settings.html" class="docs-nav-link">Global Settings</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="installation-setup">
+        <h2>Installation &amp; Setup</h2>
+        <p>Install the Booking and Rental Manager for WooCommerce (WpRently) plugin via WordPress admin, zip upload, or FTP to start renting items.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin Installation</h3>
+            <ul>
+              <li><a href="installation-setup.html">Install the free Rent and Booking Manager plugin</a></li>
+              <li><a href="installation-setup.html">Install the Pro version and activate license</a></li>
+              <li>WooCommerce is required as a dependency</li>
+              <li>Works with or without WooCommerce (own PayPal/Stripe)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Initial Configuration</h3>
+            <ul>
+              <li>Run the setup wizard for core rental settings</li>
+              <li>Configure rental types: bike, car, resort, equipment, dress</li>
+              <li>Set pricing models: single day or multiple day</li>
+              <li>Configure payment gateways and checkout preferences</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-guidelines">
+        <h2>Shortcode Guidelines</h2>
+        <p>Display rent items in grid or list styles anywhere on your site using dedicated shortcodes with multiple parameters.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Rent List Shortcodes</h3>
+            <ul>
+              <li><a href="shortcode-guidelines.html">Rent List Shortcode</a></li>
+              <li><code>[rent-list]</code> with style, show, order, type parameters</li>
+              <li><code>[rent-list type='bike_car_sd']</code> for single-day rentals</li>
+              <li><code>[rent-add-to-cart id='1']</code> for single item purchase</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Display Options</h3>
+            <ul>
+              <li>Grid style: <code>[rent-list style='grid']</code></li>
+              <li>List style: <code>[rent-list style='list']</code></li>
+              <li>Filter by category: <code>[rent-list category='ID']</code></li>
+              <li>Control items shown: <code>[rent-list show='6']</code></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="general-guidelines">
+        <h2>General Guidelines</h2>
+        <p>Set up rent item search forms, display rent lists, and manage your rental inventory across different item types.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Search &amp; Listings</h3>
+            <ul>
+              <li><a href="general-guidelines.html">Rent Item Search Form</a></li>
+              <li><a href="shortcode-guidelines.html">Rent List Shortcode</a></li>
+              <li>Display items by type: bike, car, resort, equipment, dress</li>
+              <li>Manage inventory and availability calendars</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Item Management</h3>
+            <ul>
+              <li>Add rental items with images and descriptions</li>
+              <li>Set pricing per day or per hour</li>
+              <li>Configure seasonal pricing with addons</li>
+              <li>Manage bookings and order statuses</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="global-settings">
+        <h2>Global Settings</h2>
+        <p>Customize the plugin globally with translation support and other site-wide configuration options.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Translation &amp; Localization</h3>
+            <ul>
+              <li><a href="global-settings.html">How to translate the plugin</a></li>
+              <li>Use Loco Translate or WPML for translations</li>
+              <li>Change labels and slugs in general settings</li>
+              <li>Multi-language support for rental listings</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Global Configuration</h3>
+            <ul>
+              <li>Set global rental terms and conditions</li>
+              <li>Configure default booking duration</li>
+              <li>Manage off-day and holiday settings</li>
+              <li>Set advance booking cutoff dates</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="available-addons">
+        <h2>Available Addons</h2>
+        <p>Extend the Booking and Rental Manager with premium addons for discounts, minimum/maximum booking days, and seasonal pricing.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Pricing Addons</h3>
+            <ul>
+              <li><a href="available-addons.html">Discount Over X Days (PRO)</a></li>
+              <li><a href="available-addons.html">Seasonal Pricing (PRO)</a></li>
+              <li><a href="available-addons.html">Min-Max Booking Day</a></li>
+              <li>Offer tiered discounts based on rental duration</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Pro Version</h3>
+            <ul>
+              <li><a href="available-addons.html">Booking and Rental Manager Pro</a></li>
+              <li>Advanced reporting and analytics</li>
+              <li>Custom email templates</li>
+              <li>Priority support and updates</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="faq">
+        <h2>FAQ</h2>
+        <p>Quick answers to common questions about installing, configuring, and using the Booking and Rental Manager plugin.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Getting Started</h3>
+            <ul>
+              <li>How do I install the Booking and Rental Manager plugin?</li>
+              <li>Can I use this plugin without WooCommerce?</li>
+              <li>How do I add rental items to my site?</li>
+              <li>What types of items can I rent out?</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Shortcodes &amp; Display</h3>
+            <ul>
+              <li>How do I display rent items in a grid?</li>
+              <li>How do I show only bike or car rentals?</li>
+              <li>How do I add a search form for rent items?</li>
+              <li>How do I limit the number of items shown?</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
@@ -36,22 +186,10 @@
 (function(){
   "use strict";
 
-  /* ---- render topbar via React ---- */
   renderTopbar([
     { href: '../../index.html', label: 'All Plugins' },
-    { href: '#wprently', label: 'WpRently' }
+    { href: '', label: 'WpRently' }
   ], '../../images/MG-web-logo.webp');
-
-  /* ---- live clock ---- */
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
-
 })();
 </script>
 </body>

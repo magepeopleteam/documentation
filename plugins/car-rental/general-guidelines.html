@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Rental — General Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="vehicle-management.html" class="docs-nav-link">Vehicle Management</a>
+        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
+        <a href="general-guidelines.html" class="docs-nav-link active">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <h2>General Guidelines</h2>
+      <p>This section covers customisation, internationalisation, email notifications, booking management, FAQ configuration, and best practices for running your car rental operation efficiently.</p>
+
+      <h3>Plugin Customisation</h3>
+      <p>Tailor the plugin to match your brand and workflow through the Settings panel and built-in customisation options.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Branding &amp; Labels</h3>
+          <ul>
+            <li>Change the plugin public label from "Car Rental" to any custom name (e.g., "Rent-a-Car").</li>
+            <li>Set a custom URL slug for all rental pages (e.g., <code>/vehicles/</code> instead of <code>/car-rental/</code>).</li>
+            <li>Upload a custom logo or brand icon for the booking form header.</li>
+            <li>Configure your business address, phone number, and email displayed on invoices.</li>
+            <li>Customize the booking form colours via the Style tab in settings.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Behaviour Settings</h3>
+          <ul>
+            <li>Enable or disable guest checkout for faster bookings without account creation.</li>
+            <li>Require customer account creation for all bookings.</li>
+            <li>Set the default booking status (Pending, Confirmed, or On Hold).</li>
+            <li>Choose whether to send admin notification emails on new bookings.</li>
+            <li>Configure automatic booking confirmation after successful payment.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Translation &amp; Localisation</h3>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Translating the Plugin</h3>
+          <ul>
+            <li>Use <strong>Loco Translate</strong> to translate all plugin strings directly from the WordPress admin.</li>
+            <li>Language files are located in <code>/wp-content/plugins/car-rental-manager/languages/</code>.</li>
+            <li>The plugin supports both <code>.po</code> and <code>.mo</code> file formats.</li>
+            <li>WPML and Polylang are supported for multi-language sites.</li>
+            <li>Translate vehicle names, descriptions, and categories separately per language.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Regional Settings</h3>
+          <ul>
+            <li>Set the default currency and currency position (before/after amount, with/without space).</li>
+            <li>Configure date format for the booking calendar (d/m/Y, m/d/Y, etc.).</li>
+            <li>Choose the first day of the week for calendar displays.</li>
+            <li>Set the timezone to match your business location.</li>
+            <li>Configure measurement units (km or miles) for vehicle distance tracking.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Email Notifications</h3>
+      <p>Automated email notifications keep customers and admins informed at every stage of the booking lifecycle.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Notification Triggers</h3>
+          <ul>
+            <li><strong>New Booking:</strong> Sent to admin when a booking is placed.</li>
+            <li><strong>Booking Confirmed:</strong> Sent to customer when booking status changes to confirmed.</li>
+            <li><strong>Booking Cancelled:</strong> Sent when a booking is cancelled by customer or admin.</li>
+            <li><strong>Upcoming Reminder:</strong> Sent to customer 24 hours before pickup.</li>
+            <li><strong>Payment Receipt:</strong> Sent after successful payment with invoice details.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Email Customisation</h3>
+          <ul>
+            <li>Edit email subject lines and body content for each notification type.</li>
+            <li>Use shortcode placeholders: <code>{customer_name}</code>, <code>{vehicle_name}</code>, <code>{pickup_date}</code>, <code>{total_price}</code>.</li>
+            <li>Choose HTML or plain text email format.</li>
+            <li>Send test emails from the settings panel to verify delivery.</li>
+            <li>Integrate with SMTP plugins for reliable email delivery.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>Booking Management</h3>
+      <p>Manage all rental bookings from a centralised dashboard with filtering, status updates, and detailed views.</p>
+
+      <div class="doc-grid">
+        <article class="doc-card">
+          <h3>Dashboard Overview</h3>
+          <ul>
+            <li>View total bookings, revenue, active rentals, and fleet utilisation stats.</li>
+            <li>Filter bookings by status (Pending, Confirmed, Completed, Cancelled, Refunded).</li>
+            <li>Search bookings by customer name, vehicle, booking ID, or date range.</li>
+            <li>Export bookings to CSV for accounting or offline records.</li>
+            <li>Quick actions: confirm, complete, cancel, or refund from the list view.</li>
+          </ul>
+        </article>
+
+        <article class="doc-card">
+          <h3>Detailed Booking View</h3>
+          <ul>
+            <li>View full booking details: customer info, vehicle, dates, extras, and total.</li>
+            <li>Edit booking dates, vehicle assignment, or add-ons after placement.</li>
+            <li>Add internal notes visible only to staff.</li>
+            <li>Send a manual email to the customer from the booking edit screen.</li>
+            <li>View payment history and refund status for each booking.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3>FAQ Management</h3>
+      <p>Provide a self-service FAQ section to reduce support queries.</p>
+
+      <ul>
+        <li>Go to Car Rental &gt; FAQ &gt; Add New to create a new FAQ entry.</li>
+        <li>Group FAQs by category for better organisation.</li>
+        <li>Display FAQs on the front end using the <code>[mpcrbm_faq]</code> shortcode.</li>
+        <li>FAQs support WYSIWYG content for detailed answers with images or links.</li>
+        <li>Reorder FAQs by drag-and-drop in the admin list.</li>
+      </ul>
+
+      <h3>Best Practices</h3>
+      <ul>
+        <li>Regularly update the plugin and add-ons to the latest version for security and features.</li>
+        <li>Back up your database before major configuration changes.</li>
+        <li>Test booking flows on a staging site before deploying to production.</li>
+        <li>Use a caching plugin with page exclusion for booking form pages.</li>
+        <li>Monitor booking logs for errors or failed payment attempts.</li>
+        <li>Provide clear terms and conditions linked from the booking form.</li>
+      </ul>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'Car Rental' },
+    { href: '', label: 'General Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

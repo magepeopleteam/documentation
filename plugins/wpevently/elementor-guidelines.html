@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Elementor Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link active">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="elementor-widgets">
+        <h2>Elementor Widgets Overview</h2>
+        <p>WpEvently registers dedicated Elementor widgets that allow you to place event content anywhere in your Elementor-built pages without touching shortcodes. These widgets are found in the Elementor panel under the WpEvently category.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Available Widgets</h3>
+            <ul>
+              <li><strong>Event List</strong> — Displays events in a vertical list format</li>
+              <li><strong>Event Grid</strong> — Responsive card grid with sort and filter options</li>
+              <li><strong>Event Calendar</strong> — Interactive month/week/day calendar widget</li>
+              <li><strong>Event Carousel</strong> — Horizontal slider with navigation and autoplay</li>
+              <li><strong>Event Minimal</strong> — Clean text-only event list for compact spaces</li>
+              <li><strong>Event Native</strong> — Native WordPress loop style events</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Widget Location</h3>
+            <ul>
+              <li>Open any page or template in Elementor editor</li>
+              <li>Click the + icon to open the widget panel</li>
+              <li>Search for "WpEvently" or scroll to the WpEvently section</li>
+              <li>Drag the desired widget onto the canvas</li>
+              <li>Configure options in the left sidebar content panel</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="shortcodes-in-elementor">
+        <h2>Using Shortcodes in Elementor</h2>
+        <p>You can also use any WpEvently shortcode inside Elementor pages by placing it in the Shortcode widget or the Text widget. This is useful when you need parameter-level control not exposed in the widget UI.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Shortcode Widget Method</h3>
+            <ul>
+              <li>Add the "Shortcode" widget from the Elementor panel</li>
+              <li>Paste your WpEvently shortcode into the input field</li>
+              <li>Example: <code>[mep_event_grid column="3" limit="6"]</code></li>
+              <li>Click Apply — the events render directly in the editor</li>
+              <li>Style the wrapper using Elementor spacing and background options</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Text Widget Method</h3>
+            <ul>
+              <li>Add the "Text" widget to your Elementor canvas</li>
+              <li>Switch to the Text tab in the widget settings</li>
+              <li>Type or paste the shortcode directly into the text editor</li>
+              <li>Example: <code>[mep_calendar category="conference"]</code></li>
+              <li>Elementor processes the shortcode and displays the output</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="single-event-page">
+        <h2>Single Event Page Design</h2>
+        <p>Design custom single event detail pages using Elementor. You can create unique layouts for each event or a global template that applies to all events.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Building with Elementor</h3>
+            <ul>
+              <li>Create a new page or edit an existing event post</li>
+              <li>Click "Edit with Elementor" to launch the builder</li>
+              <li>Add WpEvently widgets to display event details, maps, tickets</li>
+              <li>Use dynamic tags to pull event meta fields into text widgets</li>
+              <li>Style the page with Elementor sections, columns, and spacing</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Recommended Layout Structure</h3>
+            <ul>
+              <li>Hero section with event featured image and title overlay</li>
+              <li>Details section with date, time, location, and description</li>
+              <li>Ticket selection area using the event ticket widget</li>
+              <li>Google Map section for venue location</li>
+              <li>Related events section at the bottom using Event Grid widget</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="theme-builder">
+        <h2>Theme Builder Integration</h2>
+        <p>Elementor Pro's Theme Builder allows you to create global templates for single event pages, event archives, and search results. This provides site-wide consistency without per-page editing.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Setting Up Theme Builder</h3>
+            <ul>
+              <li>Go to Templates &rarr; Theme Builder in the Elementor menu</li>
+              <li>Click "Add New" and select "Single" template type</li>
+              <li>Set the preview condition to "WpEvently Events"</li>
+              <li>Design the template using WpEvently widgets and dynamic data</li>
+              <li>Publish the template — all event pages now use this design</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Condition & Display Rules</h3>
+            <ul>
+              <li>Apply to all events: set condition to "All Events"</li>
+              <li>Apply to specific categories: choose "Event Category" condition</li>
+              <li>Create different templates for different event types</li>
+              <li>Use Elementor Pro's dynamic tags for event meta fields</li>
+              <li>Override individual event pages with "Single Event" conditions</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="styling-tips">
+        <h2>Elementor Styling Tips</h2>
+        <p>Optimise your event pages with these styling recommendations. Consistent typography, spacing, and colour choices improve the attendee experience.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Design Best Practices</h3>
+            <ul>
+              <li>Use a consistent heading hierarchy across all event pages</li>
+              <li>Match event card colours to your brand palette</li>
+              <li>Ensure ticket buttons have sufficient contrast for accessibility</li>
+              <li>Test responsive layouts on mobile and tablet viewports</li>
+              <li>Add hover effects to event cards for visual feedback</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Performance Considerations</h3>
+            <ul>
+              <li>Optimise event featured images before uploading</li>
+              <li>Limit the number of events displayed per page</li>
+              <li>Use lazy loading for event carousel images</li>
+              <li>Minimise custom CSS to reduce render-blocking resources</li>
+              <li>Cache Elementor templates for faster page loads</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Elementor Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

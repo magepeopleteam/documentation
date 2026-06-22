@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpBookingly — Payment Integration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="service-management.html" class="docs-nav-link">Service Management</a>
+        <a href="staff-scheduling.html" class="docs-nav-link">Staff &amp; Scheduling</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="payment-integration.html" class="docs-nav-link active">Payment Integration</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="woocommerce-integration">
+        <h2>WooCommerce Integration</h2>
+        <p>WpBookingly uses WooCommerce as its payment processing engine, providing a secure and familiar checkout experience.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How It Works</h3>
+            <ul>
+              <li>Bookings are added to the WooCommerce cart during checkout</li>
+              <li>Customers proceed through WooCommerce&rsquo;s standard checkout flow</li>
+              <li>Inventory and booking availability are checked in real time</li>
+              <li>Order statuses sync between WooCommerce and WpBookingly</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Setup Requirements</h3>
+            <ul>
+              <li>WooCommerce must be installed, activated, and configured</li>
+              <li>Configure WooCommerce currency to match your pricing</li>
+              <li>Set up WooCommerce shipping zones if applicable</li>
+              <li>Enable guest checkout in WooCommerce for faster bookings</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="payment-gateways">
+        <h2>Supported Payment Gateways</h2>
+        <p>All WooCommerce-compatible payment gateways work seamlessly with WpBookingly bookings.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Popular Gateways</h3>
+            <ul>
+              <li>PayPal Standard and PayPal Express Checkout</li>
+              <li>Stripe (credit cards, Apple Pay, Google Pay)</li>
+              <li>Direct bank transfer and offline payments</li>
+              <li>Cash on delivery for on-site services</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Gateway Configuration</h3>
+            <ul>
+              <li>Enable and configure gateways in WooCommerce &gt; Settings &gt; Payments</li>
+              <li>Enter API keys and credentials for live processing</li>
+              <li>Test gateways using WooCommerce sandbox modes</li>
+              <li>Multi-currency gateways supported for international bookings</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="deposit-payments">
+        <h2>Deposit &amp; Partial Payments</h2>
+        <p>Offer flexible payment options with deposit and partial payment configurations.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Deposit Configuration</h3>
+            <ul>
+              <li>Set a flat or percentage-based deposit amount per service</li>
+              <li>Configure the remaining balance due date</li>
+              <li>Send automatic payment reminders for outstanding balances</li>
+              <li>Deposits work with all supported payment gateways</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Payment Plans</h3>
+            <ul>
+              <li>Create multi-installment payment plans using the WooCommerce Deposits addon</li>
+              <li>Set installment amounts, intervals, and due dates</li>
+              <li>Automatically calculate interest or service fees for plans</li>
+              <li>Customers see full payment schedule during checkout</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="order-management">
+        <h2>Order &amp; Booking Management</h2>
+        <p>Manage bookings and orders from a unified dashboard with full lifecycle control.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Booking Statuses</h3>
+            <ul>
+              <li><strong>Pending</strong> &mdash; Awaiting payment or manual approval</li>
+              <li><strong>Confirmed</strong> &mdash; Payment received and booking secured</li>
+              <li><strong>In Progress</strong> &mdash; Appointment is currently underway</li>
+              <li><strong>Completed</strong> &mdash; Appointment finished successfully</li>
+              <li><strong>Cancelled</strong> &mdash; Booking cancelled by customer or admin</li>
+              <li><strong>No Show</strong> &mdash; Customer did not attend</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Admin Actions</h3>
+            <ul>
+              <li>View all bookings from WpBookingly &gt; All Bookings</li>
+              <li>Change booking status manually from the edit screen</li>
+              <li>Reschedule bookings to different dates and times</li>
+              <li>Process refunds directly from WooCommerce order pages</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Customer Self-Service</h3>
+            <ul>
+              <li>Customers can view bookings via My Account &gt; Appointments</li>
+              <li>Allow customers to cancel bookings within a defined window</li>
+              <li>Enable self-service rescheduling with availability checks</li>
+              <li>Email links provide one-click access to booking management</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Refund Handling</h3>
+            <ul>
+              <li>Refunds are processed through WooCommerce order management</li>
+              <li>Full and partial refunds are supported</li>
+              <li>Refund amounts automatically update booking status</li>
+              <li>Configure a refund policy that displays during checkout</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="free-consultations">
+        <h2>Free Consultations &amp; $0 Bookings</h2>
+        <p>WpBookingly supports free bookings with no payment required, ideal for consultations or complimentary services.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Setup Free Services</h3>
+            <ul>
+              <li>Set service price to $0 in the service editor</li>
+              <li>Free bookings skip the WooCommerce checkout entirely</li>
+              <li>Customers receive a confirmation without payment</li>
+              <li>Still captures customer details and appointment time</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Hybrid Models</h3>
+            <ul>
+              <li>Offer free initial consultations with paid follow-ups</li>
+              <li>Use deposit mode with $0 minimum for free trials</li>
+              <li>Combine free and paid extras on the same service</li>
+              <li>Track free bookings separately in reports</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpBookingly' },
+    { href: '', label: 'Payment Integration' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

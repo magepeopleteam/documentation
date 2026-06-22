@@ -18,16 +18,265 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>WpEvently &mdash; Event Manager Plugin for WordPress</h1>
-    <p class="lede">Complete documentation for WpEvently events, ticket types, seating, and checkout addons.</p>
-  </section>
-
-  <main id="main">
-
-
-  </main>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="installation-setup">
+        <h2>Installation &amp; Setup</h2>
+        <p>Install the WooCommerce Event Manager plugin via automatic install, zip upload, or FTP, then activate your license to get started.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin Installation</h3>
+            <ul>
+              <li><a href="installation-setup.html">Install via WordPress admin, zip file, or FTP</a></li>
+              <li><a href="installation-setup.html">Install the Pro version and activate your license</a></li>
+              <li>Ensure PHP 7.4+ and WordPress 5.8+ for compatibility</li>
+              <li>Configure permalinks to use the Post name setting</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Initial Configuration</h3>
+            <ul>
+              <li><a href="installation-setup.html">Complete the guided setup wizard for core event settings</a></li>
+              <li><a href="installation-setup.html">Configure global currency, date formats, and timezone</a></li>
+              <li>Set up payment gateways and checkout preferences</li>
+              <li>Manage plugin updates and data backup options</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-guidelines">
+        <h2>Shortcode Guidelines</h2>
+        <p>Display events anywhere on your site using shortcodes with list, grid, calendar, carousel, timeline, and many other layout styles.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Event Display Shortcodes</h3>
+            <ul>
+              <li><a href="shortcode-guidelines.html">Events — List Style Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Events — Grid Style Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Events — Minimal Style Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Events — Native Style Shortcode</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Advanced Display Options</h3>
+            <ul>
+              <li><a href="shortcode-guidelines.html">Events Calendar Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Recurring Events Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Events Carousel Style Shortcode</a></li>
+              <li><a href="shortcode-guidelines.html">Events by Category Shortcode</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="elementor-guidelines">
+        <h2>Elementor Guidelines</h2>
+        <p>Use dedicated Elementor widgets to build and customize single event pages, add shortcodes, and style event layouts visually.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Elementor Widgets &amp; Shortcodes</h3>
+            <ul>
+              <li><a href="elementor-guidelines.html">Add shortcodes inside Elementor pages</a></li>
+              <li><a href="elementor-guidelines.html">Design a single event details page with Elementor</a></li>
+              <li><a href="elementor-guidelines.html">Find all available Elementor widgets</a></li>
+              <li>Use theme builder integration for global event templates</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Page Building Tips</h3>
+            <ul>
+              <li>Combine Elementor widgets with event shortcodes for rich layouts</li>
+              <li>Style the event registration form using Elementor forms</li>
+              <li>Customize ticket selection UI with custom CSS classes</li>
+              <li>Preview responsive event layouts before publishing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="template-override">
+        <h2>Template Override</h2>
+        <p>Override default plugin templates in your theme to customize the look and feel of event pages, ticket designs, and social sharing.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Template Customization</h3>
+            <ul>
+              <li><a href="template-override.html">Override event templates in your theme</a></li>
+              <li><a href="template-override.html">Create new theme templates from scratch</a></li>
+              <li><a href="template-override.html">Design custom PDF tickets</a></li>
+              <li><a href="template-override.html">Customize social share icons</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Advanced Overrides</h3>
+            <ul>
+              <li><a href="template-override.html">Override category and organizer page templates</a></li>
+              <li>Copy template files from plugin to theme directory</li>
+              <li>Maintain template structure while modifying HTML/PHP</li>
+              <li>Test template changes in a staging environment first</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="action-hooks">
+        <h2>Action Hooks</h2>
+        <p>Extend the plugin functionality using available action hooks for social sharing buttons, Google Maps sections, and more.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Available Action Hooks</h3>
+            <ul>
+              <li><a href="action-hooks.html">Social Share Button Action Hooks</a></li>
+              <li><a href="action-hooks.html">Google Map Section Action Hooks</a></li>
+              <li>Use hooks to inject custom content before/after event details</li>
+              <li>Hook into ticket rendering for additional markup</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Developer Integration</h3>
+            <ul>
+              <li>Add custom functions via theme functions.php</li>
+              <li>Use WordPress add_action and apply_filters properly</li>
+              <li>Test hook compatibility across plugin updates</li>
+              <li>Document custom hook implementations for maintainability</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="rest-api">
+        <h2>REST API</h2>
+        <p>Integrate the WooCommerce Event Manager with external applications using the available REST API endpoints for event data.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>API Endpoints</h3>
+            <ul>
+              <li><a href="rest-api.html">REST API Details of Event Manager</a></li>
+              <li>Access event data programmatically via REST routes</li>
+              <li>Authenticate API requests using WordPress credentials</li>
+              <li>Retrieve events, tickets, attendees, and orders</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Integration Use Cases</h3>
+            <ul>
+              <li>Sync event data with external calendar applications</li>
+              <li>Build custom mobile apps using the REST API</li>
+              <li>Automate attendee data export to CRM systems</li>
+              <li>Create custom reporting dashboards with live event data</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="video-tutorials">
+        <h2>Video Tutorials</h2>
+        <p>Follow step-by-step video guides for designing event pages with Elementor and selecting custom templates for single event views.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Elementor Video Guides</h3>
+            <ul>
+              <li><a href="video-tutorials.html">Design a single event page with Elementor</a></li>
+              <li><a href="video-tutorials.html">Select different templates for event pages</a></li>
+              <li>Learn Elementor widget placement and styling</li>
+              <li>Build responsive event layouts visually</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Quick Start Videos</h3>
+            <ul>
+              <li>Getting started with plugin installation and setup</li>
+              <li>Creating your first event in under 5 minutes</li>
+              <li>Configuring ticket types and pricing</li>
+              <li>Setting up payment gateways for live events</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="general-guidelines">
+        <h2>General Guidelines</h2>
+        <p>Find solutions to common tasks including attendee management, QR codes, PDF tickets, waitlist setup, and troubleshooting tips.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Attendee Management</h3>
+            <ul>
+              <li><a href="general-guidelines.html">Where to find the attendee list</a></li>
+              <li><a href="general-guidelines.html">Export attendee data to CSV</a></li>
+              <li><a href="general-guidelines.html">Book tickets from the backend</a></li>
+              <li><a href="general-guidelines.html">Enable the attendee registration form</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Troubleshooting &amp; Settings</h3>
+            <ul>
+              <li><a href="general-guidelines.html">Event page shows 404 error</a></li>
+              <li><a href="general-guidelines.html">Attendee list shows empty</a></li>
+              <li><a href="general-guidelines.html">Enable QR codes on tickets</a></li>
+              <li><a href="general-guidelines.html">Enable waitlist for sold-out events</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="available-addons">
+        <h2>Available Addons</h2>
+        <p>Extend the WooCommerce Event Manager with powerful addons for coupons, waitlists, QR codes, calendars, seat plans, and more.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Ticket &amp; Registration Addons</h3>
+            <ul>
+              <li><a href="available-addons.html">WooCommerce Event Coupon Code Addon</a></li>
+              <li><a href="available-addons.html">WooCommerce Event Waitlist Addon</a></li>
+              <li><a href="available-addons.html">Event Max-Min Quantity Limiting Addon</a></li>
+              <li><a href="available-addons.html">Membership Price Addon</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Display &amp; Utility Addons</h3>
+            <ul>
+              <li><a href="available-addons.html">WooCommerce Event Calendar Addon</a></li>
+              <li><a href="available-addons.html">WooCommerce Event QR Code Addon</a></li>
+              <li><a href="available-addons.html">Seat Plan Addon for Event Manager</a></li>
+              <li><a href="available-addons.html">Event Marketplace / Frontend Submit Addon</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="faq">
+        <h2>FAQ</h2>
+        <p>Quick answers to the most common questions about installing, configuring, and troubleshooting the WooCommerce Event Manager plugin.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Getting Started</h3>
+            <ul>
+              <li><a href="faq.html">How do I install the WooCommerce Event Manager plugin?</a></li>
+              <li><a href="faq.html">Can I sell paid tickets through the plugin?</a></li>
+              <li><a href="faq.html">Does the plugin support recurring events?</a></li>
+              <li><a href="faq.html">How do I show events on a page using shortcodes?</a></li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Common Issues</h3>
+            <ul>
+              <li><a href="faq.html">Why is my event page showing a 404 error?</a></li>
+              <li><a href="faq.html">Why don't I see the attendee form on the event page?</a></li>
+              <li><a href="faq.html">Why is the attendee list showing empty?</a></li>
+              <li><a href="faq.html">How do I enable waitlist when an event is sold out?</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer>
     BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
@@ -36,83 +285,10 @@
 <script>
 (function(){
   "use strict";
-
-  /* ---- render topbar via React ---- */
   renderTopbar([
     { href: '../../index.html', label: 'All Plugins' },
-    { href: '#wpevently', label: 'WpEvently' }
+    { href: '', label: 'WpEvently' }
   ], '../../images/MG-web-logo.webp');
-
-  /* ---- live clock ---- */
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
-
-  /* ---- addon accordion ---- */
-  document.querySelectorAll('.addon-row').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var panel = btn.nextElementSibling;
-      var expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      if(expanded){
-        panel.style.maxHeight = '0px';
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + 'px';
-      }
-    });
-  });
-
-  /* ---- expand/collapse all per plugin ---- */
-  document.querySelectorAll('.toggle-all').forEach(function(toggle){
-    toggle.addEventListener('click', function(){
-      var group = toggle.getAttribute('data-target');
-      var rows = document.querySelectorAll('[data-group="' + group + '"] .addon-row');
-      var anyCollapsed = Array.prototype.some.call(rows, function(r){
-        return r.getAttribute('aria-expanded') !== 'true';
-      });
-      rows.forEach(function(row){
-        var panel = row.nextElementSibling;
-        row.setAttribute('aria-expanded', String(anyCollapsed));
-        panel.style.maxHeight = anyCollapsed ? panel.scrollHeight + 'px' : '0px';
-      });
-      toggle.textContent = anyCollapsed ? 'Collapse all' : 'Expand all';
-    });
-  });
-
-  /* ---- search filter across plugins + addons ---- */
-  var searchInput = document.getElementById('searchInput');
-  var noResults = document.getElementById('noResults');
-  var plugins = document.querySelectorAll('.plugin');
-
-  searchInput.addEventListener('input', function(){
-    var q = searchInput.value.trim().toLowerCase();
-    var anyVisible = false;
-
-    plugins.forEach(function(plugin){
-      var pluginName = (plugin.getAttribute('data-name') || '').toLowerCase();
-      var addonItems = plugin.querySelectorAll('.addon');
-      var pluginMatches = q === '' || pluginName.indexOf(q) !== -1;
-      var anyAddonMatch = false;
-
-      addonItems.forEach(function(item){
-        var addonName = (item.getAttribute('data-name') || '').toLowerCase();
-        var match = q === '' || pluginMatches || addonName.indexOf(q) !== -1;
-        item.classList.toggle('hidden-by-search', !match);
-        if(match) anyAddonMatch = true;
-      });
-
-      var showPlugin = q === '' || pluginMatches || anyAddonMatch;
-      plugin.classList.toggle('hidden-by-search', !showPlugin);
-      if(showPlugin) anyVisible = true;
-    });
-
-    noResults.style.display = anyVisible ? 'none' : 'block';
-  });
 })();
 </script>
 </body>

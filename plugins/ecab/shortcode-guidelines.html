@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCab — Shortcode Guidelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+  <div id="topbar-root"></div>
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
+        <a href="plugin-settings.html" class="docs-nav-link">Plugin Settings</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="pro-features.html" class="docs-nav-link">Pro Features</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="shortcode-guidelines">
+        <h2>Shortcode Guidelines</h2>
+        <p>Display transport booking forms anywhere on your site using dedicated shortcodes. eCab provides separate shortcodes for each pricing model, giving you full control over the customer booking experience.</p>
+
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Distance-Based Pricing Shortcode</h3>
+            <p>Use this shortcode to display a booking form that calculates fares based on pickup-to-dropoff distance. Customers select their pickup and dropoff locations, and the fare is computed per kilometer plus per-hour waiting charges.</p>
+            <ul>
+              <li>Shortcode automatically detects the distance-based pricing model</li>
+              <li>Google Maps integration provides address autocomplete for pickup and dropoff</li>
+              <li>Fare is dynamically calculated based on the route distance and duration</li>
+              <li>Supports additional parameters like vehicle type and passenger count filtering</li>
+              <li>Real-time fare preview updates as the customer adjusts pickup and dropoff locations</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Fixed Hourly Pricing Shortcode</h3>
+            <p>Display a booking form tailored for hourly rental services. Customers book a vehicle for a set number of hours with a flat hourly rate, ideal for airport transfers, city tours, or event transportation.</p>
+            <ul>
+              <li>Customers select pickup location and duration in hours</li>
+              <li>Fare is calculated as hourly rate multiplied by the number of hours</li>
+              <li>Supports minimum hour requirements (e.g., minimum 3 hours per booking)</li>
+              <li>Can include extra charges for additional distance beyond included mileage</li>
+              <li>Waiting time and overtime charges can be configured separately</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Manual Fixed Location Pricing Shortcode</h3>
+            <p>Use this shortcode when you have predefined routes with fixed prices. Customers select from a list of pickup and dropoff location pairs, each with a predetermined fare, providing a simple and predictable booking experience.</p>
+            <ul>
+              <li>Customers choose from predefined location pairs (e.g., Airport to Downtown Hotel)</li>
+              <li>Each location pair has a manually configured fixed price</li>
+              <li>Perfect for standard routes with known distances and traffic patterns</li>
+              <li>Dropdown-style selection simplifies the booking process for customers</li>
+              <li>Can include multiple vehicle types with different fixed prices per route</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Embedding Shortcodes</h3>
+            <ul>
+              <li>Place the shortcode in any WordPress post, page, or custom post type</li>
+              <li>Use the Classic Editor by pasting the shortcode directly into the editor</li>
+              <li>In Gutenberg, add a Shortcode block and paste the shortcode code</li>
+              <li>In Elementor, use the Shortcode widget to embed eCab booking forms</li>
+              <li>Shortcodes can also be added to widget areas, footers, or sidebars</li>
+              <li>Wrap shortcodes in custom HTML containers for additional styling control</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Shortcode Parameters</h3>
+            <ul>
+              <li>style: control the layout style of the booking form (horizontal, vertical)</li>
+              <li>class: add custom CSS classes to the shortcode wrapper for branding</li>
+              <li>vehicle_id: pre-select a specific transport vehicle by its ID</li>
+              <li>hide_location: set to yes to hide the location selection step</li>
+              <li>hide_date: set to yes to hide the date/time selection step</li>
+              <li>hide_passenger: set to yes to hide the passenger/bag count selector</li>
+            </ul>
+          </article>
+
+          <article class="doc-card">
+            <h3>Troubleshooting Shortcodes</h3>
+            <ul>
+              <li>If the shortcode displays as plain text, ensure permalinks are saved (Settings &rarr; Permalinks &rarr; Save)</li>
+              <li>Verify WooCommerce is installed and activated for payment processing</li>
+              <li>Check that the selected pricing model matches the shortcode type</li>
+              <li>Clear any caching plugins or CDN caches to reload the shortcode output</li>
+              <li>Test the shortcode on a default WordPress theme to rule out theme conflicts</li>
+              <li>Enable WordPress debugging to identify PHP errors from conflicting plugins</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'eCab' },
+    { href: '', label: 'Shortcode Guidelines' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>

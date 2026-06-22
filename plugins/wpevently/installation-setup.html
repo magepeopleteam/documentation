@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Installation & Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
+        <a href="installation-setup.html" class="docs-nav-link active">Installation &amp; Setup</a>
+        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
+        <a href="template-override.html" class="docs-nav-link">Template Override</a>
+        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
+        <a href="rest-api.html" class="docs-nav-link">REST API</a>
+        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
+        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
+        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
+        <a href="faq.html" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+
+      <section class="doc-section" id="installation-methods">
+        <h2>Installation Methods</h2>
+        <p>Install the WpEvently plugin using one of three standard WordPress methods. Each approach achieves the same result, so pick the one that suits your workflow.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Via WordPress Admin</h3>
+            <ul>
+              <li>Navigate to Plugins &rarr; Add New in your WordPress dashboard</li>
+              <li>Search for "WpEvently" or "WooCommerce Event Manager"</li>
+              <li>Click Install Now, then Activate once the installation finishes</li>
+              <li>The plugin will appear in your installed plugins list</li>
+              <li>Pro version requires manual upload — see zip method below</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Via Zip Upload</h3>
+            <ul>
+              <li>Download the plugin .zip file from your Magepeople account</li>
+              <li>Go to Plugins &rarr; Add New &rarr; Upload Plugin</li>
+              <li>Choose the downloaded .zip file and click Install Now</li>
+              <li>Click Activate Plugin after the upload completes</li>
+              <li>This method is required for the Pro version installation</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Via FTP</h3>
+            <ul>
+              <li>Extract the plugin .zip file on your local machine</li>
+              <li>Connect to your server using an FTP client (FileZilla, WinSCP, etc.)</li>
+              <li>Upload the extracted folder to /wp-content/plugins/</li>
+              <li>Return to WordPress admin and go to Plugins</li>
+              <li>Find WpEvently in the list and click Activate</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Pro Version Activation</h3>
+            <ul>
+              <li>Purchase the Pro version from the Magepeople website</li>
+              <li>Download the pro plugin .zip from your account dashboard</li>
+              <li>Install via zip upload — do not install both free and pro</li>
+              <li>Go to WpEvently &rarr; License in the admin menu</li>
+              <li>Enter your purchase code and click Activate License</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="requirements">
+        <h2>System Requirements</h2>
+        <p>Ensure your server meets the following minimum requirements before installing the plugin. Meeting these guarantees smooth operation and compatibility.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>WordPress & PHP</h3>
+            <ul>
+              <li>WordPress 5.8 or higher (6.x recommended)</li>
+              <li>PHP version 7.4 or later (PHP 8.0+ recommended)</li>
+              <li>MySQL 5.6+ or MariaDB 10.1+</li>
+              <li>WooCommerce plugin installed and active (4.0+)</li>
+              <li>Memory limit of 128 MB or more (256 MB recommended)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Server Extensions</h3>
+            <ul>
+              <li>mod_rewrite enabled (for clean permalinks)</li>
+              <li>GD Library or Imagick for image processing</li>
+              <li>cURL extension enabled for API communications</li>
+              <li>JSON extension for REST API functionality</li>
+              <li>MBString extension for multi-byte character support</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="permalinks">
+        <h2>Permalink Configuration</h2>
+        <p>WpEvently requires clean permalinks for event pages, ticket URLs, and calendar views. The plugin will not function correctly with the default "Plain" permalink structure.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Setting Up Permalinks</h3>
+            <ul>
+              <li>Go to Settings &rarr; Permalinks in your WordPress dashboard</li>
+              <li>Select the "Post name" option for best compatibility</li>
+              <li>Click Save Changes to flush the rewrite rules</li>
+              <li>Visit an event page to confirm URLs resolve correctly</li>
+              <li>If you see a 404, navigate to Settings &rarr; Permalinks again and re-save</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Custom Structure Options</h3>
+            <ul>
+              <li><code>/%postname%/</code> — Recommended default structure</li>
+              <li><code>/events/%postname%/</code> — Events under a dedicated prefix</li>
+              <li><code>/%category%/%postname%/</code> — Includes event category in URL</li>
+              <li>Always flush permalinks after changing the structure</li>
+              <li>Test a few event and ticket pages after each change</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="post-installation">
+        <h2>Post-Installation Steps</h2>
+        <p>After installing and activating the plugin, follow these steps to configure your first events and ensure everything is working correctly.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Initial Wizard</h3>
+            <ul>
+              <li>Run the guided setup wizard from the WpEvently dashboard</li>
+              <li>Configure global currency, date format, and timezone</li>
+              <li>Set default ticket settings and registration options</li>
+              <li>Choose email notification preferences</li>
+              <li>Save settings and verify the configuration summary</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Verification Checklist</h3>
+            <ul>
+              <li>Create a test event and publish it</li>
+              <li>View the event on the front end to verify the URL works</li>
+              <li>Test the ticket purchase flow with a sandbox payment</li>
+              <li>Check that attendee data appears in the admin panel</li>
+              <li>Confirm email notifications are sent for test registrations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: 'index.html', label: 'WpEvently' },
+    { href: '', label: 'Installation & Setup' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>
