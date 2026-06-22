@@ -1040,6 +1040,18 @@
     noResults.style.display = anyVisible ? 'none' : 'block';
   });
  
+  /* ---- read ?q= param on load ---- */
+  (function(){
+    var m = window.location.search.match(/[?&]q=([^&]*)/);
+    if(m){
+      var q = decodeURIComponent(m[1]);
+      searchInput.value = q;
+      var evt = document.createEvent('Event');
+      evt.initEvent('input', true, true);
+      searchInput.dispatchEvent(evt);
+    }
+  })();
+
   /* ---- active nav link on scroll ---- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#topnav a'));
   var sections = Array.prototype.slice.call(document.querySelectorAll('.plugin'));

@@ -32,7 +32,14 @@ function Topbar({ navLinks, logoPath }) {
         h('circle', { cx: '11', cy: '11', r: '7' }),
         h('path', { d: 'M21 21l-4.3-4.3' })
       ),
-      h('input', { id: 'searchInput', type: 'text', placeholder: 'Search plugins or addons\u2026', autoComplete: 'off' })
+      h('input', { id: 'searchInput', type: 'text', placeholder: 'Search plugins or addons\u2026', autoComplete: 'off', onKeyDown: function(e) {
+        if (e.key === 'Enter') {
+          var q = e.target.value.trim();
+          if (q && !document.querySelector('.plugin')) {
+            window.location.href = homeHref + '?q=' + encodeURIComponent(q);
+          }
+        }
+      } })
     ),
     h('div', { className: 'clock mono', id: 'clock' }, '--:--:--')
   );
