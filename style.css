@@ -692,18 +692,27 @@
 
     .ticket-head{ padding:18px 16px 16px; }
 
-    /* Addon rows wrap to two lines: code + name + chevron, then tag + button. */
+    /* Addon rows become a 2-row grid so the name always gets a full line:
+         row 1:  [code] [name .......................] [chevron]
+         row 2:  [code] [tag]                          [button]
+       The code cell spans both rows on the left. */
     .addon-row{
-      flex-wrap:wrap;
-      gap:10px 12px;
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      grid-template-areas:
+        "code name chev"
+        "code tag  btn";
+      align-items:center;
+      column-gap:12px;
+      row-gap:12px;
       padding:14px 16px;
     }
-    .addon-code{ flex:0 0 auto; order:1; }
-    .addon-name-wrap{ flex:1 1 0; min-width:0; order:2; }
+    .addon-code{ grid-area:code; align-self:start; padding-top:3px; flex:none; }
+    .addon-name-wrap{ grid-area:name; min-width:0; }
     .addon-name{ font-size:14px; }
-    .chevron{ order:3; margin-left:auto; }
-    .addon-tag{ order:4; flex:0 0 auto; }
-    .addon-row .doc-btn{ order:5; flex:0 0 auto; }
+    .chevron{ grid-area:chev; align-self:center; margin:0; }
+    .addon-tag{ grid-area:tag; justify-self:start; align-self:center; flex:none; }
+    .addon-row .doc-btn{ grid-area:btn; justify-self:end; }
     .addon-panel-inner{ padding:0 16px 16px; }
 
     .doc-section h2{ font-size:19px; }
