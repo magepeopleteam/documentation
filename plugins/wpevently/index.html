@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpEvently — Documentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const data = {
+  title: 'WpEvently — Event Manager Plugin for WordPress',
+  description: 'Complete documentation for WpEvently events, ticket types, seating, and checkout addons.',
+  boardRows: [
+    h(BoardRow, {
+      img: '../../images/event.png',
+      alt: 'wpevently',
+      dest: 'WpEvently',
+      sub: 'Events & ticket management',
+      countHref: '#wpevently',
+      countLabel: '14 addons',
+      statusLabel: 'DOCS READY',
+      goHref: '#wpevently',
+      delay: '.1s'
+    })
+  ],
+  plugins: [
+    {
+      id: 'wpevently',
+      dataName: 'Event Manager Plugin WpEvently wpevently',
+      navLabel: 'WpEvently',
+      ticketId: 'wpevently',
+      title: 'WpEvently',
+      subtitle: null,
+      description: 'Sell event tickets, manage attendees, and handle seating with flexible pass types, discount rules, and full checkout customization.',
+      addons: [
+        { code: '01', name: 'WooCommerce Integration', tag: 'Ecommerce', description: 'Sync ticket sales directly with WooCommerce orders, coupons, and customer accounts for a unified store experience.' },
+        { code: '02', name: 'Ticket Types & Pricing', tag: 'Pricing', description: 'Create multiple ticket tiers — early bird, VIP, group, and free — each with its own price, capacity, and sale window.' },
+        { code: '03', name: 'Seat Layout Builder', tag: 'Layout', description: 'Drag-and-drop seat maps for reserved seating events. Assign rows, sections, and individual seats with real-time availability.' },
+        { code: '04', name: 'Discount & Coupon Engine', tag: 'Promotions', description: 'Generate time-limited coupon codes, percentage or fixed discounts, and early-bird pricing rules that auto-apply at checkout.' },
+        { code: '05', name: 'Attendee Management', tag: 'CRM', description: 'View, search, and export attendee lists. Check in attendees on the day with QR codes and mark no-shows.' },
+        { code: '06', name: 'Calendar Sync', tag: 'Integration', description: 'Push events to Google Calendar, iCal, or Outlook. Subscribers get one-click .ics file downloads after purchase.' },
+        { code: '07', name: 'Recurring Events', tag: 'Schedule', description: 'Set daily, weekly, or monthly recurrence patterns. Each instance retains its own capacity, pricing, and attendee list.' },
+        { code: '08', name: 'Checkout Customizer', tag: 'Checkout', description: 'Add custom form fields, terms checkboxes, and conditional logic to the ticket checkout flow without touching theme files.' },
+        { code: '09', name: 'PDF Ticket Generator', tag: 'Tickets', description: 'Generate branded PDF tickets with QR codes, seat numbers, and order details. Attach automatically to confirmation emails.' },
+        { code: '10', name: 'Waitlist & Notifications', tag: 'Notifications', description: 'When an event sells out, let attendees join a waitlist. Auto-notify them when spots open and offer a time-limited purchase window.' },
+        { code: '11', name: 'Multi-Currency Support', tag: 'Payments', description: 'Display ticket prices in multiple currencies based on the attendee\'s region. Settle in your base currency via the payment gateway.' },
+        { code: '12', name: 'Event Add-ons', tag: 'Extras', description: 'Sell add-ons like parking passes, meal upgrades, merchandise, or insurance alongside the ticket in a single cart.' },
+        { code: '13', name: 'Capacity Manager', tag: 'Planning', description: 'Set venue-wide and per-section capacity. Get alerts when you hit 80 %, 90 %, and 100 % sold.' },
+        { code: '14', name: 'Reporting & Analytics', tag: 'Reports', description: 'Sales reports, attendance summaries, and refund analytics with CSV export. Filter by date range and ticket type.' }
+      ]
+    }
+  ],
+  pluginCount: 1,
+  addonCount: 14,
+  navLinks: [
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: '#wpevently', label: 'WpEvently' }
+  ]
+};
+
+renderPage(data);
+</script>
+</body>
+</html>

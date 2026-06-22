@@ -16,26 +16,11 @@
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="js/layout.js"></script>
 </head>
 <body>
  
-  <header class="topbar">
-    <div class="brand"><img src="images/MG-web-logo.webp" alt=""></div>
-    <nav class="topnav" id="topnav">
-      <a href="#wpevently">WpEvently</a>
-      <a href="#wpbusticketly">WpBusTicketly</a>
-      <a href="#wptravelly">WpTravelly</a>
-      <a href="#wpbookingly">WpBookingly</a>
-      <a href="#ecab">eCab</a>
-      <a href="#wprently">WpRently</a>
-      <a href="#car-rental-plugin-wordpress">Car Rental</a>
-    </nav>
-    <div class="search-wrap">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <input id="searchInput" type="text" placeholder="Search plugins or addons…" autocomplete="off">
-    </div>
-    <div class="clock mono" id="clock">--:--:--</div>
-  </header>
+  <div id="topbar-root"></div>
  
   <section class="hero">
     <div class="eyebrow">Documentation Hub · WordPress Booking Suite</div>
@@ -51,63 +36,63 @@
         <span class="flap" style="animation-delay:.05s"><span class="dest">Event Manager Pro — WpEvently <span class="pro-badge">PRO</span></span><span class="sub">Ticketing, seating, check-in</span></span>
         <div class="count-wrap"><a href="#wpevently" class="count flap" style="animation-delay:.08s">14 addons</a></div>
         <span class="status flap" style="animation-delay:.11s">DOCS READY</span>
-        <a href="#wpevently" class="go flap" style="animation-delay:.14s">Read Documentation</a>
+        <a href="plugins/wpevently/index.html" class="go flap" style="animation-delay:.14s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.05s"><img src="images/bus.png" alt="wpbusticketly"></span>
         <span class="flap" style="animation-delay:.08s"><span class="dest">Bus Booking Pro — WpBusTicketly <span class="pro-badge">PRO</span></span><span class="sub">Routes, seats, dispatch</span></span>
         <div class="count-wrap"><a href="#wpbusticketly" class="count flap" style="animation-delay:.11s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.14s">DOCS READY</span>
-        <a href="#wpbusticketly" class="go flap" style="animation-delay:.17s">Read Documentation</a>
+        <a href="plugins/wpbusticketly/index.html" class="go flap" style="animation-delay:.17s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.08s"><img src="images/travel.png" alt="wptravelly"></span>
         <span class="flap" style="animation-delay:.11s"><span class="dest">Tour Booking Pro — WpTravelly <span class="pro-badge">PRO</span></span><span class="sub">Itineraries &amp; packages</span></span>
         <div class="count-wrap"><a href="#wptravelly" class="count flap" style="animation-delay:.14s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.17s">DOCS READY</span>
-        <a href="#wptravelly" class="go flap" style="animation-delay:.20s">Read Documentation</a>
+        <a href="plugins/wptravelly/index.html" class="go flap" style="animation-delay:.20s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.11s"><img src="images/service.png" alt="wpbookingly"></span>
         <span class="flap" style="animation-delay:.14s"><span class="dest">Service Booking Pro — WpBookingly <span class="pro-badge">PRO</span></span><span class="sub">Appointments &amp; staff</span></span>
         <div class="count-wrap"><a href="#wpbookingly" class="count flap" style="animation-delay:.17s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.20s">DOCS READY</span>
-        <a href="#wpbookingly" class="go flap" style="animation-delay:.23s">Read Documentation</a>
+        <a href="plugins/wpbookingly/index.html" class="go flap" style="animation-delay:.23s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.14s"><img src="images/ecab.png" alt="ecab"></span>
         <span class="flap" style="animation-delay:.17s"><span class="dest">Taxi Cab and Chauffeur Booking Pro — eCab <span class="pro-badge">PRO</span></span><span class="sub">Rides &amp; dispatch</span></span>
         <div class="count-wrap"><a href="#ecab" class="count flap" style="animation-delay:.20s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.23s">DOCS READY</span>
-        <a href="#ecab" class="go flap" style="animation-delay:.26s">Read Documentation</a>
+        <a href="plugins/ecab/index.html" class="go flap" style="animation-delay:.26s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.17s"><img src="images/rental.png" alt="wprently"></span>
         <span class="flap" style="animation-delay:.20s"><span class="dest">Booking and Rental Manager Pro — WpRently <span class="pro-badge">PRO</span></span><span class="sub">Inventory &amp; deposits</span></span>
         <div class="count-wrap"><a href="#wprently" class="count flap" style="animation-delay:.23s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.26s">DOCS READY</span>
-        <a href="#wprently" class="go flap" style="animation-delay:.29s">Read Documentation</a>
+        <a href="plugins/wprently/index.html" class="go flap" style="animation-delay:.29s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.20s"><img src="images/car-rental.png" alt="car-rental-plugin-wordpress"></span>
         <span class="flap" style="animation-delay:.23s"><span class="dest">Car Rental Pro for WordPress <span class="pro-badge">PRO</span></span><span class="sub">Fleet &amp; driver management</span></span>
         <div class="count-wrap"><a href="#car-rental-plugin-wordpress" class="count flap" style="animation-delay:.26s">5 addons</a></div>
         <span class="status flap" style="animation-delay:.29s">DOCS READY</span>
-        <a href="#car-rental-plugin-wordpress" class="go flap" style="animation-delay:.32s">Read Documentation</a>
+        <a href="plugins/car-rental/index.html" class="go flap" style="animation-delay:.32s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.23s"><img src="images/discount.png" alt="advanced-discount-coupon-store-credit"></span>
         <span class="flap" style="animation-delay:.26s"><span class="dest">Advanced Discount Coupon and Store Credit <span class="pro-badge">PRO</span></span><span class="sub">Coupons, tiered discounts &amp; store credit</span></span>
         <div class="count-wrap"><a href="#advanced-discount-coupon-store-credit" class="count flap" style="animation-delay:.29s">0 addons</a></div>
         <span class="status flap" style="animation-delay:.32s">DOCS READY</span>
-        <a href="#advanced-discount-coupon-store-credit" class="go flap" style="animation-delay:.35s">Read Documentation</a>
+        <a href="plugins/advanced-discount-coupon-store-credit/index.html" class="go flap" style="animation-delay:.35s">Read Documentation</a>
       </div>
       <div class="board-row">
         <span class="code flap" style="animation-delay:.26s"><img src="images/partial.png" alt="wpdeposity"></span>
         <span class="flap" style="animation-delay:.29s"><span class="dest">Deposit &amp; Partial Payment Pro — WpDeposity <span class="pro-badge">PRO</span></span><span class="sub">Partial payments &amp; deposit scheduling</span></span>
         <div class="count-wrap"><a href="#wpdeposity" class="count flap" style="animation-delay:.32s">0 addons</a></div>
         <span class="status flap" style="animation-delay:.35s">DOCS READY</span>
-        <a href="#wpdeposity" class="go flap" style="animation-delay:.38s">Read Documentation</a>
+        <a href="plugins/wpdeposity/index.html" class="go flap" style="animation-delay:.38s">Read Documentation</a>
       </div>
     </div>
   </section>
@@ -972,7 +957,18 @@
 <script>
 (function(){
   "use strict";
- 
+
+  /* ---- render topbar via React ---- */
+  renderTopbar([
+    { href: '#wpevently', label: 'WpEvently' },
+    { href: '#wpbusticketly', label: 'WpBusTicketly' },
+    { href: '#wptravelly', label: 'WpTravelly' },
+    { href: '#wpbookingly', label: 'WpBookingly' },
+    { href: '#ecab', label: 'eCab' },
+    { href: '#wprently', label: 'WpRently' },
+    { href: '#car-rental-plugin-wordpress', label: 'Car Rental' }
+  ], 'images/MG-web-logo.webp');
+
   /* ---- live clock ---- */
   var clockEl = document.getElementById('clock');
   function tick(){
@@ -1044,6 +1040,14 @@
     noResults.style.display = anyVisible ? 'none' : 'block';
   });
  
+  /* ---- doc-btn links to plugin pages ---- */
+  document.querySelectorAll('.doc-btn').forEach(function(btn){
+    var section = btn.closest('.plugin');
+    if(section){
+      btn.href = 'plugins/' + section.id + '/index.html';
+    }
+  });
+
   /* ---- active nav link on scroll ---- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#topnav a'));
   var sections = Array.prototype.slice.call(document.querySelectorAll('.plugin'));
