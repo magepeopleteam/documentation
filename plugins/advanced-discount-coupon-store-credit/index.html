@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WpCouponly — Advanced Discount Coupon &amp; Store Credit Documentation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
+<link rel="stylesheet" href="../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <aside class="docs-sidebar">
+      <h3 class="docs-sidebar-title">Documentation</h3>
+      <nav class="docs-nav">
+        <a href="#installation-setup" class="docs-nav-link">Installation &amp; Setup</a>
+        <a href="#shortcode-guidelines" class="docs-nav-link">Shortcode Guidelines</a>
+        <a href="#discount-rules" class="docs-nav-link">Discount Rules</a>
+        <a href="#store-credit" class="docs-nav-link">Store Credit</a>
+        <a href="#general-guidelines" class="docs-nav-link">General Guidelines</a>
+        <a href="#faq" class="docs-nav-link">FAQ</a>
+      </nav>
+    </aside>
+    <main class="docs-content">
+      <section class="doc-section" id="installation-setup">
+        <h2>Installation &amp; Setup</h2>
+        <p>Install the Advanced Discount Coupon and Store Credit plugin via WordPress admin, zip upload, or FTP, then activate your Pro license to unlock the full discount engine.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Plugin Installation</h3>
+            <ul>
+              <li>Install the free WpCouponly plugin from the WordPress repository</li>
+              <li>Install WpCouponly PRO and activate your license key</li>
+              <li>Ensure WooCommerce is installed and active</li>
+              <li>Configure permalinks to use the Post name setting</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Initial Configuration</h3>
+            <ul>
+              <li>Enable the discount engine from the plugin settings</li>
+              <li>Set your default currency and store credit options</li>
+              <li>Connect with booking plugins such as WpEvently, WpBusTicketly, and WpTravelly</li>
+              <li>Activate the store credit module for refunds and rewards</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="shortcode-guidelines">
+        <h2>Shortcode Guidelines</h2>
+        <p>Surface store credit balances and available offers anywhere on your site, and combine the plugin with the standard WooCommerce cart and checkout flow.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Display &amp; Placement</h3>
+            <ul>
+              <li>Show a customer's current store credit balance on the My Account page</li>
+              <li>Display available coupons and active campaigns to logged-in users</li>
+              <li>Let customers apply store credit alongside coupons at checkout</li>
+              <li>Place balance and offer widgets with page builders for custom layouts</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Best Practices</h3>
+            <ul>
+              <li>Combine discount rules with the native WooCommerce cart and checkout</li>
+              <li>Re-save permalink settings if account pages don't appear</li>
+              <li>Test discount and credit behaviour on a staging site first</li>
+              <li>Use clear messaging so customers understand applied savings</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="discount-rules">
+        <h2>Discount Rules</h2>
+        <p>Create smart promotions with flexible, condition-based discount rules targeting events, categories, customers, dates, and quantities.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Conditional Discount Types</h3>
+            <ul>
+              <li>Event-based targeting and organizer-specific offers</li>
+              <li>Category-level promotions across products and services</li>
+              <li>Ticket type and bus route differentiation</li>
+              <li>Tour package and destination-based offers</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Time &amp; Customer Rules</h3>
+            <ul>
+              <li>Weekly day-based pricing and seasonal fare adjustments</li>
+              <li>Customizable date-range discounts for campaigns</li>
+              <li>Repeat customer (Nth order) loyalty incentives</li>
+              <li>Quantity-triggered reductions and group booking discounts</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="store-credit">
+        <h2>Store Credit</h2>
+        <p>Convert refunds into store credit, let customers redeem it on future bookings, and combine credit with coupons for flexible loyalty rewards.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Credit Management</h3>
+            <ul>
+              <li>Convert refunds and partial cancellations into store credit</li>
+              <li>Redeem store credit on future bookings and orders</li>
+              <li>Configure store credit expiration settings</li>
+              <li>Allow combined coupon and store credit usage</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Booking Integrations</h3>
+            <ul>
+              <li>Route-specific and bus category discounts for WpBusTicketly</li>
+              <li>Package-level and tour organizer pricing for WpTravelly</li>
+              <li>Event and category promotions for WpEvently</li>
+              <li>Group travel incentives across booking plugins</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="general-guidelines">
+        <h2>General Guidelines</h2>
+        <p>Control how discounts and credits apply, set usage limits, and track campaign performance to reward your most loyal customers.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Usage &amp; Limits</h3>
+            <ul>
+              <li>Set per-customer usage limits on coupons and credit</li>
+              <li>Apply automatic discounts without coupon codes</li>
+              <li>Restrict offers to specific products or services</li>
+              <li>Handle partial cancellation refunds gracefully</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Tracking &amp; Optimization</h3>
+            <ul>
+              <li>Monitor coupon usage with performance analytics</li>
+              <li>Track which campaigns drive the most sales</li>
+              <li>Run special campaigns to increase conversions</li>
+              <li>Reward loyal customers with targeted offers</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="doc-section" id="faq">
+        <h2>FAQ</h2>
+        <p>Quick answers to common questions about configuring discount rules, store credit, and campaigns with the Advanced Discount Coupon plugin.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Getting Started</h3>
+            <ul>
+              <li>Which booking plugins does WpCouponly support?</li>
+              <li>What is the difference between the free and Pro versions?</li>
+              <li>How do I enable the store credit module?</li>
+              <li>How do I activate my Pro license key?</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Troubleshooting</h3>
+            <ul>
+              <li>Why is my discount rule not applying at checkout?</li>
+              <li>Why is a customer's store credit balance not showing?</li>
+              <li>Can coupons and store credit be stacked together?</li>
+              <li>How is a refund converted into store credit?</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 9 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+
+  renderTopbar([
+    { href: '../../index.html', label: 'All Plugins' },
+    { href: '#', label: 'WpCouponly' }
+  ], '../../images/MG-web-logo.webp');
+})();
+</script>
+</body>
+</html>
