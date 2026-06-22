@@ -16,32 +16,94 @@ function Head({ title, description }) {
 
 function Topbar({ navLinks, logoPath }) {
   var homeHref = logoPath ? logoPath.replace('images/MG-web-logo.webp', 'index.html') : 'index.html';
-  return h('header', { className: 'topbar' },
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  // Auto-close the mobile menu when the viewport grows back to desktop width.
+  React.useEffect(function () {
+    function onResize() { if (window.innerWidth > 880) setMenuOpen(false); }
+    window.addEventListener('resize', onResize);
+    return function () { window.removeEventListener('resize', onResize); };
+  }, []);
+
+  // Lock background scrolling while the mobile drawer is open.
+  React.useEffect(function () {
+    document.body.classList.toggle('nav-locked', menuOpen);
+    return function () { document.body.classList.remove('nav-locked'); };
+  }, [menuOpen]);
+
+  // Live clock — runs on every page that renders the topbar, so the time works
+  // globally without each page needing its own inline tick script.
+  React.useEffect(function () {
+    var el = document.getElementById('clock');
+    if (!el) return;
+    function pad(n) { return n.toString().padStart(2, '0'); }
+    function tick() {
+      var d = new Date();
+      el.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+    }
+    tick();
+    var id = setInterval(tick, 1000);
+    return function () { clearInterval(id); };
+  }, []);
+
+  function closeMenu() { setMenuOpen(false); }
+
+  // Derive a "back" target from the breadcrumb: the deepest nav link that points
+  // to a real page (not the current page marker '#'/'' and not an in-page anchor).
+  // Home pages use only '#section' anchors, so they get no back button.
+  var backLink = null;
+  for (var bi = 0; bi < navLinks.length; bi++) {
+    var bhref = navLinks[bi].href;
+    if (bhref && bhref !== '#' && bhref.charAt(0) !== '#') backLink = navLinks[bi];
+  }
+
+  return h('header', { className: 'topbar' + (menuOpen ? ' menu-open' : '') },
     h('div', { className: 'brand' },
-      h('a', { href: homeHref },
-        h('img', { src: logoPath || '../images/MG-web-logo.webp', alt: '' })
+      h('a', { href: homeHref, onClick: closeMenu },
+        h('img', { src: logoPath || '../images/MG-web-logo.webp', alt: 'Magepeople' })
       )
     ),
-    h('nav', { className: 'topnav', id: 'topnav' },
-      ...navLinks.map(link =>
-        h('a', { key: link.href, href: link.href }, link.label)
-      )
+    backLink ? h('a', {
+      className: 'topbar-back',
+      href: backLink.href,
+      'aria-label': 'Back to ' + backLink.label,
+      onClick: closeMenu
+    },
+      h('span', { className: 'topbar-back-arrow', 'aria-hidden': 'true' }, '←'),
+      h('span', { className: 'topbar-back-label' }, backLink.label)
+    ) : null,
+    h('button', {
+      className: 'nav-toggle',
+      type: 'button',
+      'aria-label': menuOpen ? 'Close navigation menu' : 'Open navigation menu',
+      'aria-expanded': String(menuOpen),
+      'aria-controls': 'topbar-collapse',
+      onClick: function () { setMenuOpen(function (o) { return !o; }); }
+    },
+      h('span', null), h('span', null), h('span', null)
     ),
-    h('div', { className: 'search-wrap' },
-      h('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2' },
-        h('circle', { cx: '11', cy: '11', r: '7' }),
-        h('path', { d: 'M21 21l-4.3-4.3' })
+    h('div', { className: 'topbar-collapse', id: 'topbar-collapse' },
+      h('nav', { className: 'topnav', id: 'topnav' },
+        ...navLinks.map(link =>
+          h('a', { key: link.href, href: link.href, onClick: closeMenu }, link.label)
+        )
       ),
-      h('input', { id: 'searchInput', type: 'text', placeholder: 'Search plugins or addons\u2026', autoComplete: 'off', onKeyDown: function(e) {
-        if (e.key === 'Enter') {
-          var q = e.target.value.trim();
-          if (q && !document.querySelector('.plugin')) {
-            window.location.href = homeHref + '?q=' + encodeURIComponent(q);
+      h('div', { className: 'search-wrap' },
+        h('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2' },
+          h('circle', { cx: '11', cy: '11', r: '7' }),
+          h('path', { d: 'M21 21l-4.3-4.3' })
+        ),
+        h('input', { id: 'searchInput', type: 'text', placeholder: 'Search plugins or addons\u2026', autoComplete: 'off', onKeyDown: function(e) {
+          if (e.key === 'Enter') {
+            var q = e.target.value.trim();
+            if (q && !document.querySelector('.plugin')) {
+              window.location.href = homeHref + '?q=' + encodeURIComponent(q);
+            }
           }
-        }
-      } })
-    ),
-    h('div', { className: 'clock mono', id: 'clock' }, '--:--:--')
+        } })
+      ),
+      h('div', { className: 'clock mono', id: 'clock' }, '--:--:--')
+    )
   );
 }
 

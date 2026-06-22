@@ -60,6 +60,8 @@
     letter-spacing:.04em;
     white-space:nowrap;
   }
+  .brand a{ display:flex; align-items:center; }
+  .brand img{ height:28px; width:auto; display:block; }
   .brand .dot{
     width:8px; height:8px; border-radius:50%;
     background:var(--amber);
@@ -67,6 +69,57 @@
     animation:blink 2.4s ease-in-out infinite;
   }
   @keyframes blink{0%,100%{opacity:1;}50%{opacity:.25;}}
+
+  /* On desktop the collapse wrapper is transparent so its children
+     (nav, search, clock) lay out directly inside the topbar flex row. */
+  .topbar-collapse{ display:contents; }
+
+  /* Hamburger button — hidden on desktop, shown via the mobile query below. */
+  .nav-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    width:38px; height:36px;
+    margin-left:auto;
+    padding:8px 7px;
+    background:transparent;
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    flex:0 0 auto;
+  }
+  .nav-toggle span{
+    display:block; height:2px; width:100%;
+    background:var(--ink); border-radius:2px;
+    transition:transform .25s ease, opacity .2s ease;
+  }
+  .topbar.menu-open .nav-toggle span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+  .topbar.menu-open .nav-toggle span:nth-child(2){ opacity:0; }
+  .topbar.menu-open .nav-toggle span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+  body.nav-locked{ overflow:hidden; }
+
+  /* Contextual back button — hidden on desktop (the breadcrumb in .topnav is
+     visible there) and shown on mobile where the nav lives inside the drawer. */
+  .topbar-back{
+    display:none;
+    align-items:center;
+    gap:6px;
+    flex:0 1 auto;
+    min-width:2.5rem;
+    max-width:44vw;
+    font-family:var(--mono);
+    font-size:12px;
+    color:var(--ink-dim);
+    background:var(--panel);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    padding:7px 12px;
+    white-space:nowrap;
+    overflow:hidden;
+  }
+  .topbar-back:hover{ color:var(--amber); border-color:var(--amber-dim); text-decoration:none; }
+  .topbar-back-arrow{ font-size:14px; line-height:1; flex:0 0 auto; }
+  .topbar-back-label{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
   .topnav{
     display:flex; gap:4px;
@@ -119,9 +172,63 @@
   }
 
   @media (max-width: 880px){
-    .topbar{flex-wrap:wrap; padding:12px 16px;}
-    .topnav{order:3; width:100%;}
-    .search-wrap{width:160px;}
+    .topbar{ gap:10px; padding:10px 16px; flex-wrap:nowrap; }
+    .brand{ flex:0 0 auto; }
+    .topbar-back{ display:inline-flex; }
+    .nav-toggle{ display:flex; }
+
+    /* Collapse wrapper becomes a slide-down drawer under the fixed bar. */
+    .topbar-collapse{
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      gap:14px;
+      position:fixed;
+      top:56px; left:0; right:0;
+      max-height:calc(100vh - 56px);
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      padding:18px 16px calc(18px + env(safe-area-inset-bottom, 0px));
+      background:rgba(247,244,238,.98);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--rule);
+      box-shadow:0 14px 28px rgba(0,0,0,.08);
+      transform:translateY(-10px);
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition:opacity .22s ease, transform .22s ease, visibility .22s;
+    }
+    .topbar.menu-open .topbar-collapse{
+      transform:translateY(0);
+      opacity:1;
+      visibility:visible;
+      pointer-events:auto;
+    }
+
+    .topnav{
+      flex-direction:column;
+      align-items:stretch;
+      justify-content:flex-start;
+      gap:4px;
+      flex:none;
+      overflow:visible;
+    }
+    .topnav a{
+      font-size:14px;
+      padding:11px 14px;
+      border:1px solid var(--rule);
+      border-radius:var(--radius);
+    }
+    .search-wrap{ width:100%; }
+    .search-wrap input{ padding:11px 12px 11px 32px; font-size:14px; }
+    .search-wrap svg{ width:16px; height:16px; }
+    .clock{ text-align:center; font-size:12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .topbar-collapse,
+    .nav-toggle span{ transition:none; }
   }
 
   /* ---------------- HERO / BOARD ---------------- */
@@ -245,17 +352,27 @@
   @media (max-width: 760px){
     .board-head{display:none;}
     .board-row{
-      grid-template-columns: 70px 1fr;
-      grid-template-areas:
-        "code dest"
-        "meta meta";
-      row-gap:6px;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:10px 12px;
+      padding:16px;
     }
-    .board-row .code{grid-area:code;}
-    .board-row .dest{grid-area:dest;}
-    .board-row .count, .board-row .status, .board-row .go{
-      grid-area:meta; display:inline-block; margin-right:14px;
+    /* logo */
+    .board-row > .code{ flex:0 0 auto; order:1; }
+    .board-row .code img{ width:36px; }
+    /* plugin name + sub — claims the whole first line beside the logo so the
+       addon count, status and button wrap onto the line below it. */
+    .board-row > .flap:not(.code):not(.status):not(.go){
+      flex:1 1 auto;
+      min-width:calc(100% - 56px);
+      order:2;
     }
+    .board-row .dest{ font-size:15px; }
+    /* line 2: addon count, status, then the read-docs button pushed right */
+    .board-row > .count-wrap{ flex:0 0 auto; order:3; justify-content:flex-start; }
+    .board-row > .status{ flex:0 0 auto; order:4; text-align:left; }
+    .board-row > .go{ order:5; margin-left:auto; justify-content:flex-end; }
   }
 
   /* ---------------- DOCS LAYOUT (plugin / addon pages) ---------------- */
@@ -548,4 +665,49 @@
     font-family:var(--mono);
     font-size:11px;
     letter-spacing:.05em;
+  }
+
+  /* ---------------- RESPONSIVE: TABLET ---------------- */
+  @media (max-width: 760px){
+    .hero{ padding:40px 18px 28px; }
+    .hero p.lede{ font-size:15px; margin-bottom:28px; }
+
+    main{ padding:16px 18px 72px; }
+    .plugin{ margin-top:40px; }
+
+    .ticket-head{ padding:20px 18px 18px; gap:16px; }
+    .ticket-head h2{ font-size:20px; }
+    .ticket-head p{ font-size:13.5px; }
+    .plugin-controls{ padding-left:18px; padding-right:18px; }
+
+    .docs-section-wrap{ padding:28px 18px 60px; }
+  }
+
+  /* ---------------- RESPONSIVE: PHONE ---------------- */
+  @media (max-width: 560px){
+    .hero{ padding:32px 16px 24px; }
+    .hero .eyebrow{ font-size:11px; letter-spacing:.14em; }
+
+    main{ padding:12px 16px 64px; }
+
+    .ticket-head{ padding:18px 16px 16px; }
+
+    /* Addon rows wrap to two lines: code + name + chevron, then tag + button. */
+    .addon-row{
+      flex-wrap:wrap;
+      gap:10px 12px;
+      padding:14px 16px;
+    }
+    .addon-code{ flex:0 0 auto; order:1; }
+    .addon-name-wrap{ flex:1 1 0; min-width:0; order:2; }
+    .addon-name{ font-size:14px; }
+    .chevron{ order:3; margin-left:auto; }
+    .addon-tag{ order:4; flex:0 0 auto; }
+    .addon-row .doc-btn{ order:5; flex:0 0 auto; }
+    .addon-panel-inner{ padding:0 16px 16px; }
+
+    .doc-section h2{ font-size:19px; }
+    .doc-card{ padding:18px 16px; }
+
+    footer{ padding:24px 16px; letter-spacing:.03em; }
   }
