@@ -154,7 +154,7 @@
   }
   .board-head{
     display:grid;
-    grid-template-columns: 90px 1fr 130px 130px 75px;
+    grid-template-columns: 90px 1fr 120px 120px 170px;
     gap:0;
     padding:10px 20px;
     font-family:var(--mono);
@@ -169,7 +169,7 @@
   .board-head span:last-child{ text-align:right; }
   .board-row{
     display:grid;
-    grid-template-columns: 90px 1fr 130px 130px 75px;
+    grid-template-columns: 90px 1fr 120px 120px 170px;
     align-items:center;
     gap:0;
     padding:14px 20px;
@@ -213,16 +213,18 @@
   .board-row .status{ text-align:center; }
   .board-row .go{ font-family:var(--mono); font-size:11px; display:flex; justify-content:flex-end; }
   .board-row a.go{
-    padding:6px 14px;
-    border-radius:var(--radius);
-    background:var(--amber);
-    color:#fff;
+    font-family:var(--mono);
+    font-size:12px;
     font-weight:600;
-    letter-spacing:.04em;
-    transition:background .15s ease;
+    padding:7px 18px;
+    border-radius:6px;
+    background:#2563eb;
+    color:#fff;
     text-decoration:none;
+    transition:background .2s;
+    white-space:nowrap;
   }
-  .board-row a.go:hover{ background:var(--amber-dim); color:#fff; text-decoration:none; }
+  .board-row a.go:hover{ background:#1d4ed8; }
 
   .flap{
     display:inline-block;
@@ -430,13 +432,13 @@
     font-size:12px;
     font-weight:600;
     color:#fff;
-    background:var(--amber);
+    background:#2563eb;
     padding:7px 18px;
     border-radius:6px;
     text-decoration:none;
-    transition:opacity .2s;
+    transition:background .2s;
   }
-  .addon-panel-inner a:hover{ opacity:.8; }
+  .addon-panel-inner a:hover{ background:#1d4ed8; }
 
   .doc-btn{
     display:inline-block;
@@ -444,13 +446,13 @@
     font-size:12px;
     font-weight:600;
     color:#fff;
-    background:var(--amber);
+    background:#2563eb;
     padding:7px 18px;
     border-radius:6px;
     text-decoration:none;
-    transition:opacity .2s;
+    transition:background .2s;
   }
-  .doc-btn:hover{ opacity:.8; }
+  .doc-btn:hover{ background:#1d4ed8; }
 
   .hidden-by-search{ display:none !important; }
   .no-results{
