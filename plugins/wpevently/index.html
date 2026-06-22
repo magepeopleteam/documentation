@@ -15,61 +15,105 @@
 <script src="../../js/layout.js"></script>
 </head>
 <body>
-<div id="root"></div>
 
-<script type="text/babel">
-const data = {
-  title: 'WpEvently — Event Manager Plugin for WordPress',
-  description: 'Complete documentation for WpEvently events, ticket types, seating, and checkout addons.',
-  boardRows: [
-    h(BoardRow, {
-      img: '../../images/event.png',
-      alt: 'wpevently',
-      dest: 'WpEvently',
-      sub: 'Events & ticket management',
-      countHref: '#wpevently',
-      countLabel: '14 addons',
-      statusLabel: 'DOCS READY',
-      goHref: '#wpevently',
-      delay: '.1s'
-    })
-  ],
-  plugins: [
-    {
-      id: 'wpevently',
-      dataName: 'Event Manager Plugin WpEvently wpevently',
-      navLabel: 'WpEvently',
-      ticketId: 'wpevently',
-      title: 'WpEvently',
-      subtitle: null,
-      description: 'Sell event tickets, manage attendees, and handle seating with flexible pass types, discount rules, and full checkout customization.',
-      addons: [
-        { code: '01', name: 'WooCommerce Integration', tag: 'Ecommerce', description: 'Sync ticket sales directly with WooCommerce orders, coupons, and customer accounts for a unified store experience.' },
-        { code: '02', name: 'Ticket Types & Pricing', tag: 'Pricing', description: 'Create multiple ticket tiers — early bird, VIP, group, and free — each with its own price, capacity, and sale window.' },
-        { code: '03', name: 'Seat Layout Builder', tag: 'Layout', description: 'Drag-and-drop seat maps for reserved seating events. Assign rows, sections, and individual seats with real-time availability.' },
-        { code: '04', name: 'Discount & Coupon Engine', tag: 'Promotions', description: 'Generate time-limited coupon codes, percentage or fixed discounts, and early-bird pricing rules that auto-apply at checkout.' },
-        { code: '05', name: 'Attendee Management', tag: 'CRM', description: 'View, search, and export attendee lists. Check in attendees on the day with QR codes and mark no-shows.' },
-        { code: '06', name: 'Calendar Sync', tag: 'Integration', description: 'Push events to Google Calendar, iCal, or Outlook. Subscribers get one-click .ics file downloads after purchase.' },
-        { code: '07', name: 'Recurring Events', tag: 'Schedule', description: 'Set daily, weekly, or monthly recurrence patterns. Each instance retains its own capacity, pricing, and attendee list.' },
-        { code: '08', name: 'Checkout Customizer', tag: 'Checkout', description: 'Add custom form fields, terms checkboxes, and conditional logic to the ticket checkout flow without touching theme files.' },
-        { code: '09', name: 'PDF Ticket Generator', tag: 'Tickets', description: 'Generate branded PDF tickets with QR codes, seat numbers, and order details. Attach automatically to confirmation emails.' },
-        { code: '10', name: 'Waitlist & Notifications', tag: 'Notifications', description: 'When an event sells out, let attendees join a waitlist. Auto-notify them when spots open and offer a time-limited purchase window.' },
-        { code: '11', name: 'Multi-Currency Support', tag: 'Payments', description: 'Display ticket prices in multiple currencies based on the attendee\'s region. Settle in your base currency via the payment gateway.' },
-        { code: '12', name: 'Event Add-ons', tag: 'Extras', description: 'Sell add-ons like parking passes, meal upgrades, merchandise, or insurance alongside the ticket in a single cart.' },
-        { code: '13', name: 'Capacity Manager', tag: 'Planning', description: 'Set venue-wide and per-section capacity. Get alerts when you hit 80 %, 90 %, and 100 % sold.' },
-        { code: '14', name: 'Reporting & Analytics', tag: 'Reports', description: 'Sales reports, attendance summaries, and refund analytics with CSV export. Filter by date range and ticket type.' }
-      ]
-    }
-  ],
-  pluginCount: 1,
-  addonCount: 14,
-  navLinks: [
+  <div id="topbar-root"></div>
+
+  <section class="hero">
+    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
+    <h1>WpEvently &mdash; Event Manager Plugin for WordPress</h1>
+    <p class="lede">Complete documentation for WpEvently events, ticket types, seating, and checkout addons.</p>
+  </section>
+
+  <main id="main">
+
+
+  </main>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- render topbar via React ---- */
+  renderTopbar([
     { href: '../../index.html', label: 'All Plugins' },
     { href: '#wpevently', label: 'WpEvently' }
-  ]
-};
+  ], '../../images/MG-web-logo.webp');
 
-renderPage(data);
+  /* ---- live clock ---- */
+  var clockEl = document.getElementById('clock');
+  function tick(){
+    var d = new Date();
+    var pad = function(n){ return n.toString().padStart(2,'0'); };
+    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ---- addon accordion ---- */
+  document.querySelectorAll('.addon-row').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var panel = btn.nextElementSibling;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if(expanded){
+        panel.style.maxHeight = '0px';
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ---- expand/collapse all per plugin ---- */
+  document.querySelectorAll('.toggle-all').forEach(function(toggle){
+    toggle.addEventListener('click', function(){
+      var group = toggle.getAttribute('data-target');
+      var rows = document.querySelectorAll('[data-group="' + group + '"] .addon-row');
+      var anyCollapsed = Array.prototype.some.call(rows, function(r){
+        return r.getAttribute('aria-expanded') !== 'true';
+      });
+      rows.forEach(function(row){
+        var panel = row.nextElementSibling;
+        row.setAttribute('aria-expanded', String(anyCollapsed));
+        panel.style.maxHeight = anyCollapsed ? panel.scrollHeight + 'px' : '0px';
+      });
+      toggle.textContent = anyCollapsed ? 'Collapse all' : 'Expand all';
+    });
+  });
+
+  /* ---- search filter across plugins + addons ---- */
+  var searchInput = document.getElementById('searchInput');
+  var noResults = document.getElementById('noResults');
+  var plugins = document.querySelectorAll('.plugin');
+
+  searchInput.addEventListener('input', function(){
+    var q = searchInput.value.trim().toLowerCase();
+    var anyVisible = false;
+
+    plugins.forEach(function(plugin){
+      var pluginName = (plugin.getAttribute('data-name') || '').toLowerCase();
+      var addonItems = plugin.querySelectorAll('.addon');
+      var pluginMatches = q === '' || pluginName.indexOf(q) !== -1;
+      var anyAddonMatch = false;
+
+      addonItems.forEach(function(item){
+        var addonName = (item.getAttribute('data-name') || '').toLowerCase();
+        var match = q === '' || pluginMatches || addonName.indexOf(q) !== -1;
+        item.classList.toggle('hidden-by-search', !match);
+        if(match) anyAddonMatch = true;
+      });
+
+      var showPlugin = q === '' || pluginMatches || anyAddonMatch;
+      plugin.classList.toggle('hidden-by-search', !showPlugin);
+      if(showPlugin) anyVisible = true;
+    });
+
+    noResults.style.display = anyVisible ? 'none' : 'block';
+  });
+})();
 </script>
 </body>
 </html>
