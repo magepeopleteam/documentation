@@ -15,9 +15,12 @@ function Head({ title, description }) {
 }
 
 function Topbar({ navLinks, logoPath }) {
+  var homeHref = logoPath ? logoPath.replace('images/MG-web-logo.webp', 'index.html') : 'index.html';
   return h('header', { className: 'topbar' },
     h('div', { className: 'brand' },
-      h('img', { src: logoPath || '../images/MG-web-logo.webp', alt: '' })
+      h('a', { href: homeHref },
+        h('img', { src: logoPath || '../images/MG-web-logo.webp', alt: '' })
+      )
     ),
     h('nav', { className: 'topnav', id: 'topnav' },
       ...navLinks.map(link =>
