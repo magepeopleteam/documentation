@@ -7,411 +7,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #10141b;
-    --bg-soft: #141a23;
-    --panel: #181f29;
-    --panel-edge: #232c39;
-    --rule: #29333f;
-    --ink: #eceff3;
-    --ink-dim: #8b94a4;
-    --ink-faint: #5c6573;
-    --amber: #f5a623;
-    --amber-dim: #c9881d;
-    --amber-glow: rgba(245,166,35,.18);
-    --teal: #36d0ba;
-    --red: #e5544b;
-    --radius: 2px;
-    --mono: "Space Mono", monospace;
-    --sans: "Inter", system-ui, sans-serif;
-  }
-
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--bg);
-    background-image:
-      radial-gradient(circle at 12% 8%, rgba(245,166,35,.05), transparent 40%),
-      radial-gradient(circle at 90% 90%, rgba(54,208,186,.04), transparent 45%);
-    color:var(--ink);
-    font-family:var(--sans);
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:var(--amber); text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  ::selection{background:var(--amber-glow); color:var(--ink);}
-
-  button{font-family:inherit; cursor:pointer;}
-  button:focus-visible,
-  a:focus-visible,
-  input:focus-visible{
-    outline:2px solid var(--teal);
-    outline-offset:2px;
-  }
-
-  .mono{font-family:var(--mono);}
-
-  /* ---------------- TOPBAR ---------------- */
-  .topbar{
-    position:sticky; top:0; z-index:50;
-    display:flex; align-items:center; gap:24px;
-    padding:14px 28px;
-    background:rgba(16,20,27,.9);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--rule);
-  }
-  .brand{
-    display:flex; align-items:center; gap:10px;
-    font-family:var(--mono); font-weight:700;
-    letter-spacing:.04em;
-    white-space:nowrap;
-  }
-  .brand .dot{
-    width:8px; height:8px; border-radius:50%;
-    background:var(--amber);
-    box-shadow:0 0 8px 2px var(--amber-glow);
-    animation:blink 2.4s ease-in-out infinite;
-  }
-  @keyframes blink{0%,100%{opacity:1;}50%{opacity:.25;}}
-
-  .topnav{
-    display:flex; gap:4px;
-    flex:1;
-    overflow-x:auto;
-    scrollbar-width:none;
-  }
-  .topnav::-webkit-scrollbar{display:none;}
-  .topnav a{
-    font-family:var(--mono); font-size:12px;
-    color:var(--ink-dim);
-    padding:8px 12px;
-    border:1px solid transparent;
-    white-space:nowrap;
-    letter-spacing:.03em;
-    border-radius:var(--radius);
-  }
-  .topnav a:hover{ color:var(--ink); text-decoration:none; }
-  .topnav a.active{
-    color:var(--amber);
-    border-color:var(--panel-edge);
-    background:var(--panel);
-  }
-
-  .clock{
-    font-family:var(--mono); font-size:12px;
-    color:var(--ink-faint);
-    white-space:nowrap;
-  }
-
-  .search-wrap{
-    position:relative;
-    width:220px;
-  }
-  .search-wrap input{
-    width:100%;
-    background:var(--bg-soft);
-    border:1px solid var(--rule);
-    color:var(--ink);
-    font-family:var(--mono);
-    font-size:12px;
-    padding:8px 10px 8px 28px;
-    border-radius:var(--radius);
-  }
-  .search-wrap input::placeholder{color:var(--ink-faint);}
-  .search-wrap svg{
-    position:absolute; left:8px; top:50%; transform:translateY(-50%);
-    width:14px; height:14px; color:var(--ink-faint);
-  }
-
-  @media (max-width: 880px){
-    .topbar{flex-wrap:wrap; padding:12px 16px;}
-    .topnav{order:3; width:100%;}
-    .search-wrap{width:160px;}
-  }
-
-  /* ---------------- HERO / BOARD ---------------- */
-  .hero{
-    padding:64px 28px 40px;
-    max-width:1100px; margin:0 auto;
-  }
-  .hero .eyebrow{
-    font-family:var(--mono); font-size:12px; color:var(--amber);
-    letter-spacing:.18em; text-transform:uppercase;
-    margin-bottom:14px;
-  }
-  .hero h1{
-    font-family:var(--mono);
-    font-size:clamp(28px, 5vw, 46px);
-    line-height:1.15;
-    margin:0 0 16px;
-    max-width:760px;
-    font-weight:700;
-  }
-  .hero p.lede{
-    color:var(--ink-dim);
-    max-width:560px;
-    font-size:15.5px;
-    margin:0 0 36px;
-  }
-
-  .board{
-    border:1px solid var(--rule);
-    background:var(--panel);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  .board-head{
-    display:grid;
-    grid-template-columns: 90px 1fr 110px 130px 160px;
-    gap:0;
-    padding:10px 20px;
-    font-family:var(--mono);
-    font-size:11px;
-    letter-spacing:.08em;
-    color:var(--ink-faint);
-    text-transform:uppercase;
-    border-bottom:1px solid var(--rule);
-  }
-  .board-row{
-    display:grid;
-    grid-template-columns: 90px 1fr 110px 130px 160px;
-    align-items:center;
-    gap:0;
-    padding:14px 20px;
-    border-bottom:1px solid var(--rule);
-    text-decoration:none;
-    color:var(--ink);
-    transition:background .15s ease;
-  }
-  .board-row:last-child{border-bottom:none;}
-  .board-row:hover{ background:var(--bg-soft); text-decoration:none; }
-  .board-row .code{ font-family:var(--mono); color:var(--amber); font-size:13px; }
-  .board-row .dest{ font-weight:600; font-size:14.5px; }
-  .board-row .sub{ display:block; font-weight:400; font-size:12px; color:var(--ink-faint); margin-top:2px; }
-  .board-row .count{ font-family:var(--mono); font-size:13px; color:var(--ink-dim); }
-  .board-row .status{ font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--teal); }
-  .board-row .go{ font-family:var(--mono); font-size:11px; color:var(--ink-faint); text-align:right; }
-
-  .flap{
-    display:inline-block;
-    transform-origin:top center;
-    animation:flap-in .5s cubic-bezier(.2,.8,.2,1) both;
-  }
-  @media (prefers-reduced-motion: reduce){
-    .flap{animation:none;}
-  }
-  @keyframes flap-in{
-    0%{ transform:rotateX(-90deg); opacity:0; }
-    60%{ transform:rotateX(8deg); opacity:1; }
-    100%{ transform:rotateX(0deg); opacity:1; }
-  }
-
-  @media (max-width: 760px){
-    .board-head{display:none;}
-    .board-row{
-      grid-template-columns: 70px 1fr;
-      grid-template-areas:
-        "code dest"
-        "meta meta";
-      row-gap:6px;
-    }
-    .board-row .code{grid-area:code;}
-    .board-row .dest{grid-area:dest;}
-    .board-row .count, .board-row .status, .board-row .go{
-      grid-area:meta; display:inline-block; margin-right:14px;
-    }
-  }
-
-  /* ---------------- MAIN / PLUGIN SECTIONS ---------------- */
-  main{
-    max-width:1100px; margin:0 auto;
-    padding:20px 28px 100px;
-  }
-
-  .plugin{
-    scroll-margin-top:84px;
-    margin-top:56px;
-  }
-  .plugin:first-of-type{ margin-top:24px; }
-
-  .ticket{
-    border:1px solid var(--panel-edge);
-    background:var(--panel);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-
-  .ticket-head{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    gap:24px;
-    padding:24px 26px 22px;
-    flex-wrap:wrap;
-  }
-  .ticket-id{
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--amber);
-    letter-spacing:.06em;
-    margin-bottom:8px;
-    display:block;
-  }
-  .ticket-head h2{
-    margin:0 0 8px;
-    font-size:22px;
-    font-weight:700;
-  }
-  .ticket-head p{
-    margin:0;
-    color:var(--ink-dim);
-    font-size:14px;
-    max-width:520px;
-  }
-  .ticket-meta{
-    display:flex; flex-direction:column; align-items:flex-end; gap:10px;
-    font-family:var(--mono);
-  }
-  .addon-count{
-    font-size:11px; letter-spacing:.08em; color:var(--ink-faint);
-    text-transform:uppercase;
-  }
-  .addon-count strong{ color:var(--ink); font-size:16px; display:block; font-family:var(--mono); }
-
-  .toggle-all{
-    font-family:var(--mono); font-size:11px;
-    color:var(--ink-dim);
-    background:transparent;
-    border:1px solid var(--rule);
-    padding:6px 10px;
-    border-radius:var(--radius);
-  }
-  .toggle-all:hover{ color:var(--amber); border-color:var(--amber-dim); }
-
-  .perforation{
-    position:relative;
-    height:1px;
-    background:repeating-linear-gradient(to right, var(--rule) 0 8px, transparent 8px 16px);
-    margin:0 0;
-  }
-  .perforation::before,
-  .perforation::after{
-    content:"";
-    position:absolute;
-    top:-9px;
-    width:18px; height:18px;
-    border-radius:50%;
-    background:var(--bg);
-    border:1px solid var(--panel-edge);
-  }
-  .perforation::before{ left:-9px; }
-  .perforation::after{ right:-9px; }
-
-  .addons{
-    list-style:none;
-    margin:0; padding:6px 0;
-  }
-  .addon{
-    border-bottom:1px solid var(--rule);
-  }
-  .addon:last-child{ border-bottom:none; }
-
-  .addon-row{
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:16px;
-    padding:16px 26px;
-    background:transparent;
-    border:none;
-    color:var(--ink);
-    text-align:left;
-  }
-  .addon-row:hover{ background:var(--bg-soft); }
-  .addon-code{
-    font-family:var(--mono); font-size:11px; color:var(--ink-faint);
-    flex:0 0 64px;
-  }
-  .addon-name{
-    flex:1;
-    font-weight:600;
-    font-size:14.5px;
-  }
-  .addon-tag{
-    font-family:var(--mono);
-    font-size:10px;
-    letter-spacing:.06em;
-    color:var(--teal);
-    border:1px solid rgba(54,208,186,.3);
-    padding:3px 7px;
-    border-radius:var(--radius);
-    text-transform:uppercase;
-    flex:0 0 auto;
-    white-space:nowrap;
-  }
-  .chevron{
-    flex:0 0 auto;
-    width:10px; height:10px;
-    border-right:2px solid var(--ink-faint);
-    border-bottom:2px solid var(--ink-faint);
-    transform:rotate(-45deg);
-    transition:transform .2s ease;
-  }
-  .addon-row[aria-expanded="true"] .chevron{ transform:rotate(45deg); }
-
-  .addon-panel{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .25s ease;
-  }
-  .addon-panel-inner{
-    padding:0 26px 18px 106px;
-    color:var(--ink-dim);
-    font-size:13.5px;
-    max-width:640px;
-  }
-  .addon-panel-inner a{
-    display:inline-block;
-    margin-top:10px;
-    font-family:var(--mono);
-    font-size:12px;
-    color:var(--amber);
-  }
-
-  .hidden-by-search{ display:none !important; }
-  .no-results{
-    display:none;
-    text-align:center;
-    padding:60px 20px;
-    color:var(--ink-faint);
-    font-family:var(--mono);
-    font-size:13px;
-  }
-
-  footer{
-    border-top:1px solid var(--rule);
-    padding:28px;
-    text-align:center;
-    color:var(--ink-faint);
-    font-family:var(--mono);
-    font-size:11px;
-    letter-spacing:.05em;
-  }
-</style>
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <header class="topbar">
-    <div class="brand"><span class="dot"></span> DOCS // BOOKING&nbsp;SUITE</div>
+    <div class="brand"><img src="images/MG-web-logo.webp" alt=""></div>
     <nav class="topnav" id="topnav">
-      <a href="#event">EVT · Event</a>
-      <a href="#rental">RNT · Rental</a>
-      <a href="#bus">BUS · Bus</a>
-      <a href="#travel">TRV · Travel</a>
-      <a href="#car">CAR · Car Rental</a>
+      <a href="#wpevently">WpEvently</a>
+      <a href="#wpbusticketly">WpBusTicketly</a>
+      <a href="#wptravelly">WpTravelly</a>
+      <a href="#wpbookingly">WpBookingly</a>
+      <a href="#ecab">eCab</a>
+      <a href="#wprently">WpRently</a>
+      <a href="#car-rental-plugin-wordpress">Car Rental</a>
+      <a href="#universal-addons">Universal</a>
     </nav>
     <div class="search-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -419,75 +34,89 @@
     </div>
     <div class="clock mono" id="clock">--:--:--</div>
   </header>
-
+ 
   <section class="hero">
     <div class="eyebrow">Departure board · last refreshed on load</div>
-    <h1>Five booking plugins.<br>Twenty‑five addons. One board.</h1>
-    <p class="lede">Everything you need to wire up reservations, fleets, seats, and itineraries — indexed below like a schedule, because that's basically what it is.</p>
-
+    <h1>Seven booking plugins.<br>Thirty‑seven addons. One board.</h1>
+    <p class="lede">Everything you need to wire up events, fleets, services, and rentals — indexed below like a schedule, because that's basically what it is.</p>
+ 
     <div class="board">
       <div class="board-head">
-        <span>Code</span><span>Plugin</span><span>Addons</span><span>Status</span><span>Jump</span>
+        <span>Slug</span><span>Plugin</span><span>Addons</span><span>Status</span><span>Jump</span>
       </div>
-      <a href="#event" class="board-row">
-        <span class="code flap" style="animation-delay:.02s">EVT‑100</span>
-        <span class="flap" style="animation-delay:.06s"><span class="dest">Event Booking</span><span class="sub">Ticketing, seating, check-in</span></span>
-        <span class="count flap" style="animation-delay:.10s">5 addons</span>
+      <a href="#wpevently" class="board-row">
+        <span class="code flap" style="animation-delay:.02s">wpevently</span>
+        <span class="flap" style="animation-delay:.05s"><span class="dest">Event Manager Plugin — WpEvently</span><span class="sub">Ticketing, seating, check-in</span></span>
+        <span class="count flap" style="animation-delay:.08s">5 addons</span>
+        <span class="status flap" style="animation-delay:.11s">DOCS READY</span>
+        <span class="go flap" style="animation-delay:.14s">VIEW →</span>
+      </a>
+      <a href="#wpbusticketly" class="board-row">
+        <span class="code flap" style="animation-delay:.05s">wpbusticketly</span>
+        <span class="flap" style="animation-delay:.08s"><span class="dest">Bus Booking Pro — WpBusTicketly</span><span class="sub">Routes, seats, dispatch</span></span>
+        <span class="count flap" style="animation-delay:.11s">5 addons</span>
         <span class="status flap" style="animation-delay:.14s">DOCS READY</span>
-        <span class="go flap" style="animation-delay:.18s">VIEW →</span>
+        <span class="go flap" style="animation-delay:.17s">VIEW →</span>
       </a>
-      <a href="#rental" class="board-row">
-        <span class="code flap" style="animation-delay:.06s">RNT‑200</span>
-        <span class="flap" style="animation-delay:.10s"><span class="dest">Equipment Rental</span><span class="sub">Inventory &amp; deposits</span></span>
+      <a href="#wptravelly" class="board-row">
+        <span class="code flap" style="animation-delay:.08s">wptravelly</span>
+        <span class="flap" style="animation-delay:.11s"><span class="dest">Tour Booking Pro — WpTravelly</span><span class="sub">Itineraries &amp; packages</span></span>
         <span class="count flap" style="animation-delay:.14s">5 addons</span>
-        <span class="status flap" style="animation-delay:.18s">DOCS READY</span>
-        <span class="go flap" style="animation-delay:.22s">VIEW →</span>
+        <span class="status flap" style="animation-delay:.17s">DOCS READY</span>
+        <span class="go flap" style="animation-delay:.20s">VIEW →</span>
       </a>
-      <a href="#bus" class="board-row">
-        <span class="code flap" style="animation-delay:.10s">BUS‑300</span>
-        <span class="flap" style="animation-delay:.14s"><span class="dest">Bus Booking</span><span class="sub">Routes, seats, dispatch</span></span>
-        <span class="count flap" style="animation-delay:.18s">5 addons</span>
-        <span class="status flap" style="animation-delay:.22s">DOCS READY</span>
+      <a href="#wpbookingly" class="board-row">
+        <span class="code flap" style="animation-delay:.11s">wpbookingly</span>
+        <span class="flap" style="animation-delay:.14s"><span class="dest">Service Booking Pro — WpBookingly</span><span class="sub">Appointments &amp; staff</span></span>
+        <span class="count flap" style="animation-delay:.17s">5 addons</span>
+        <span class="status flap" style="animation-delay:.20s">DOCS READY</span>
+        <span class="go flap" style="animation-delay:.23s">VIEW →</span>
+      </a>
+      <a href="#ecab" class="board-row">
+        <span class="code flap" style="animation-delay:.14s">ecab</span>
+        <span class="flap" style="animation-delay:.17s"><span class="dest">Taxi Cab and Chauffeur Booking Pro — eCab</span><span class="sub">Rides &amp; dispatch</span></span>
+        <span class="count flap" style="animation-delay:.20s">5 addons</span>
+        <span class="status flap" style="animation-delay:.23s">DOCS READY</span>
         <span class="go flap" style="animation-delay:.26s">VIEW →</span>
       </a>
-      <a href="#travel" class="board-row">
-        <span class="code flap" style="animation-delay:.14s">TRV‑400</span>
-        <span class="flap" style="animation-delay:.18s"><span class="dest">Travel &amp; Tours</span><span class="sub">Itineraries &amp; packages</span></span>
-        <span class="count flap" style="animation-delay:.22s">5 addons</span>
+      <a href="#wprently" class="board-row">
+        <span class="code flap" style="animation-delay:.17s">wprently</span>
+        <span class="flap" style="animation-delay:.20s"><span class="dest">Booking and Rental Manager Pro — WpRently</span><span class="sub">Inventory &amp; deposits</span></span>
+        <span class="count flap" style="animation-delay:.23s">5 addons</span>
         <span class="status flap" style="animation-delay:.26s">DOCS READY</span>
-        <span class="go flap" style="animation-delay:.30s">VIEW →</span>
+        <span class="go flap" style="animation-delay:.29s">VIEW →</span>
       </a>
-      <a href="#car" class="board-row">
-        <span class="code flap" style="animation-delay:.18s">CAR‑500</span>
-        <span class="flap" style="animation-delay:.22s"><span class="dest">Car Rental</span><span class="sub">Fleet &amp; driver management</span></span>
+      <a href="#car-rental-plugin-wordpress" class="board-row">
+        <span class="code flap" style="animation-delay:.20s">car-rental-plugin-wordpress</span>
+        <span class="flap" style="animation-delay:.23s"><span class="dest">Car Rental Plugin for WordPress</span><span class="sub">Fleet &amp; driver management</span></span>
         <span class="count flap" style="animation-delay:.26s">5 addons</span>
-        <span class="status flap" style="animation-delay:.30s">DOCS READY</span>
-        <span class="go flap" style="animation-delay:.34s">VIEW →</span>
+        <span class="status flap" style="animation-delay:.29s">DOCS READY</span>
+        <span class="go flap" style="animation-delay:.32s">VIEW →</span>
       </a>
     </div>
   </section>
-
+ 
   <main id="main">
-
-    <!-- EVENT -->
-    <section class="plugin" id="event" data-name="Event Booking">
+ 
+    <!-- WPEVENTLY -->
+    <section class="plugin" id="wpevently" data-name="Event Manager Plugin WpEvently wpevently">
       <div class="ticket">
         <div class="ticket-head">
           <div>
-            <span class="ticket-id">EVT‑100</span>
-            <h2>Event Booking</h2>
+            <span class="ticket-id">wpevently</span>
+            <h2>Event Manager Plugin<span class="sub-title">WpEvently</span></h2>
             <p>Sell tickets, manage capacity, and run check‑in for conferences, concerts, and multi‑session events.</p>
           </div>
           <div class="ticket-meta">
             <span class="addon-count">Addons<strong>05</strong></span>
-            <button class="toggle-all" data-target="event">Expand all</button>
+            <button class="toggle-all" data-target="wpevently">Expand all</button>
           </div>
         </div>
         <div class="perforation"></div>
-        <ul class="addons" data-group="event">
+        <ul class="addons" data-group="wpevently">
           <li class="addon" data-name="Seating Chart Designer">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">EVT‑101</span>
+              <span class="addon-code mono">01</span>
               <span class="addon-name">Seating Chart Designer</span>
               <span class="addon-tag">Layout</span>
               <span class="chevron"></span>
@@ -501,7 +130,7 @@
           </li>
           <li class="addon" data-name="Multi-Day Pass Builder">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">EVT‑102</span>
+              <span class="addon-code mono">02</span>
               <span class="addon-name">Multi-Day Pass Builder</span>
               <span class="addon-tag">Pricing</span>
               <span class="chevron"></span>
@@ -515,7 +144,7 @@
           </li>
           <li class="addon" data-name="Waitlist Manager">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">EVT‑103</span>
+              <span class="addon-code mono">03</span>
               <span class="addon-name">Waitlist Manager</span>
               <span class="addon-tag">Capacity</span>
               <span class="chevron"></span>
@@ -529,7 +158,7 @@
           </li>
           <li class="addon" data-name="QR Check-In Scanner">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">EVT‑104</span>
+              <span class="addon-code mono">04</span>
               <span class="addon-name">QR Check‑In Scanner</span>
               <span class="addon-tag">On-site</span>
               <span class="chevron"></span>
@@ -543,7 +172,7 @@
           </li>
           <li class="addon" data-name="Sponsor Showcase">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">EVT‑105</span>
+              <span class="addon-code mono">05</span>
               <span class="addon-name">Sponsor Showcase</span>
               <span class="addon-tag">Marketing</span>
               <span class="chevron"></span>
@@ -558,116 +187,26 @@
         </ul>
       </div>
     </section>
-
-    <!-- RENTAL -->
-    <section class="plugin" id="rental" data-name="Equipment Rental">
+ 
+    <!-- WPBUSTICKETLY -->
+    <section class="plugin" id="wpbusticketly" data-name="Bus Booking Pro WpBusTicketly wpbusticketly">
       <div class="ticket">
         <div class="ticket-head">
           <div>
-            <span class="ticket-id">RNT‑200</span>
-            <h2>Equipment Rental</h2>
-            <p>Run a rental counter for gear, tools, or venue equipment with deposits, availability, and return tracking built in.</p>
-          </div>
-          <div class="ticket-meta">
-            <span class="addon-count">Addons<strong>05</strong></span>
-            <button class="toggle-all" data-target="rental">Expand all</button>
-          </div>
-        </div>
-        <div class="perforation"></div>
-        <ul class="addons" data-group="rental">
-          <li class="addon" data-name="Damage Deposit Handler">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">RNT‑201</span>
-              <span class="addon-name">Damage Deposit Handler</span>
-              <span class="addon-tag">Payments</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Holds a refundable deposit at checkout and releases or partially withholds it after the item is inspected on return.
-                <a href="#">Read the Damage Deposit Handler docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Availability Calendar Sync">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">RNT‑202</span>
-              <span class="addon-name">Availability Calendar Sync</span>
-              <span class="addon-tag">Scheduling</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Two‑way sync with Google and Outlook calendars so rental blocks stay accurate across every channel you book from.
-                <a href="#">Read the Availability Calendar Sync docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Delivery Zone Mapper">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">RNT‑203</span>
-              <span class="addon-name">Delivery Zone Mapper</span>
-              <span class="addon-tag">Logistics</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Draw delivery radii on a map and charge distance‑based fees automatically at checkout.
-                <a href="#">Read the Delivery Zone Mapper docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Rental Insurance">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">RNT‑204</span>
-              <span class="addon-name">Rental Insurance</span>
-              <span class="addon-tag">Protection</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Offers an optional protection plan at checkout that waives part of the deposit liability for covered renters.
-                <a href="#">Read the Rental Insurance docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Late Return Fees">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">RNT‑205</span>
-              <span class="addon-name">Late Return Fees</span>
-              <span class="addon-tag">Billing</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Charges a configurable hourly or daily fee automatically once an item passes its scheduled return time.
-                <a href="#">Read the Late Return Fees docs →</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- BUS -->
-    <section class="plugin" id="bus" data-name="Bus Booking">
-      <div class="ticket">
-        <div class="ticket-head">
-          <div>
-            <span class="ticket-id">BUS‑300</span>
-            <h2>Bus Booking</h2>
+            <span class="ticket-id">wpbusticketly</span>
+            <h2>Bus Booking Pro<span class="sub-title">WpBusTicketly</span></h2>
             <p>Sell seats across fixed routes, manage fleets and drivers, and give riders live updates on where their bus is.</p>
           </div>
           <div class="ticket-meta">
             <span class="addon-count">Addons<strong>05</strong></span>
-            <button class="toggle-all" data-target="bus">Expand all</button>
+            <button class="toggle-all" data-target="wpbusticketly">Expand all</button>
           </div>
         </div>
         <div class="perforation"></div>
-        <ul class="addons" data-group="bus">
+        <ul class="addons" data-group="wpbusticketly">
           <li class="addon" data-name="Seat Layout Designer">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">BUS‑301</span>
+              <span class="addon-code mono">01</span>
               <span class="addon-name">Seat Layout Designer</span>
               <span class="addon-tag">Layout</span>
               <span class="chevron"></span>
@@ -681,7 +220,7 @@
           </li>
           <li class="addon" data-name="Route & Stop Manager">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">BUS‑302</span>
+              <span class="addon-code mono">02</span>
               <span class="addon-name">Route &amp; Stop Manager</span>
               <span class="addon-tag">Routing</span>
               <span class="chevron"></span>
@@ -695,7 +234,7 @@
           </li>
           <li class="addon" data-name="Driver Dispatch Panel">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">BUS‑303</span>
+              <span class="addon-code mono">03</span>
               <span class="addon-name">Driver Dispatch Panel</span>
               <span class="addon-tag">Operations</span>
               <span class="chevron"></span>
@@ -709,7 +248,7 @@
           </li>
           <li class="addon" data-name="Live GPS Tracking">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">BUS‑304</span>
+              <span class="addon-code mono">04</span>
               <span class="addon-name">Live GPS Tracking</span>
               <span class="addon-tag">Real-time</span>
               <span class="chevron"></span>
@@ -723,7 +262,7 @@
           </li>
           <li class="addon" data-name="Group Discount Rules">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">BUS‑305</span>
+              <span class="addon-code mono">05</span>
               <span class="addon-name">Group Discount Rules</span>
               <span class="addon-tag">Pricing</span>
               <span class="chevron"></span>
@@ -738,26 +277,26 @@
         </ul>
       </div>
     </section>
-
-    <!-- TRAVEL -->
-    <section class="plugin" id="travel" data-name="Travel & Tours">
+ 
+    <!-- WPTRAVELLY -->
+    <section class="plugin" id="wptravelly" data-name="Tour Booking Pro WpTravelly wptravelly">
       <div class="ticket">
         <div class="ticket-head">
           <div>
-            <span class="ticket-id">TRV‑400</span>
-            <h2>Travel &amp; Tours</h2>
+            <span class="ticket-id">wptravelly</span>
+            <h2>Tour Booking Pro<span class="sub-title">WpTravelly</span></h2>
             <p>Package multi‑day trips with guides, pricing in local currency, and bundled extras like transport or meals.</p>
           </div>
           <div class="ticket-meta">
             <span class="addon-count">Addons<strong>05</strong></span>
-            <button class="toggle-all" data-target="travel">Expand all</button>
+            <button class="toggle-all" data-target="wptravelly">Expand all</button>
           </div>
         </div>
         <div class="perforation"></div>
-        <ul class="addons" data-group="travel">
+        <ul class="addons" data-group="wptravelly">
           <li class="addon" data-name="Itinerary Builder">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">TRV‑401</span>
+              <span class="addon-code mono">01</span>
               <span class="addon-name">Itinerary Builder</span>
               <span class="addon-tag">Planning</span>
               <span class="chevron"></span>
@@ -771,7 +310,7 @@
           </li>
           <li class="addon" data-name="Multi-Currency Pricing">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">TRV‑402</span>
+              <span class="addon-code mono">02</span>
               <span class="addon-name">Multi‑Currency Pricing</span>
               <span class="addon-tag">Payments</span>
               <span class="chevron"></span>
@@ -785,7 +324,7 @@
           </li>
           <li class="addon" data-name="Guide Assignment">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">TRV‑403</span>
+              <span class="addon-code mono">03</span>
               <span class="addon-name">Guide Assignment</span>
               <span class="addon-tag">Operations</span>
               <span class="chevron"></span>
@@ -799,7 +338,7 @@
           </li>
           <li class="addon" data-name="Package Bundler">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">TRV‑404</span>
+              <span class="addon-code mono">04</span>
               <span class="addon-name">Package Bundler</span>
               <span class="addon-tag">Pricing</span>
               <span class="chevron"></span>
@@ -813,7 +352,7 @@
           </li>
           <li class="addon" data-name="Travel Insurance">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">TRV‑405</span>
+              <span class="addon-code mono">05</span>
               <span class="addon-name">Travel Insurance</span>
               <span class="addon-tag">Protection</span>
               <span class="chevron"></span>
@@ -828,26 +367,296 @@
         </ul>
       </div>
     </section>
-
-    <!-- CAR RENTAL -->
-    <section class="plugin" id="car" data-name="Car Rental">
+ 
+    <!-- WPBOOKINGLY -->
+    <section class="plugin" id="wpbookingly" data-name="Service Booking Pro WpBookingly wpbookingly">
       <div class="ticket">
         <div class="ticket-head">
           <div>
-            <span class="ticket-id">CAR‑500</span>
-            <h2>Car Rental</h2>
+            <span class="ticket-id">wpbookingly</span>
+            <h2>Service Booking Pro<span class="sub-title">WpBookingly</span></h2>
+            <p>Schedule appointments for salons, clinics, repair shops, or any service business with staff and resource availability built in.</p>
+          </div>
+          <div class="ticket-meta">
+            <span class="addon-count">Addons<strong>05</strong></span>
+            <button class="toggle-all" data-target="wpbookingly">Expand all</button>
+          </div>
+        </div>
+        <div class="perforation"></div>
+        <ul class="addons" data-group="wpbookingly">
+          <li class="addon" data-name="Staff & Resource Scheduler">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">01</span>
+              <span class="addon-name">Staff &amp; Resource Scheduler</span>
+              <span class="addon-tag">Scheduling</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Assigns appointments to specific staff or rooms based on working hours, skills, and existing bookings.
+                <a href="#">Read the Staff &amp; Resource Scheduler docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Recurring Appointment Builder">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">02</span>
+              <span class="addon-name">Recurring Appointment Builder</span>
+              <span class="addon-tag">Scheduling</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Lets customers book a weekly or monthly series in one step instead of repeating the same booking each time.
+                <a href="#">Read the Recurring Appointment Builder docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="SMS & Email Reminder">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">03</span>
+              <span class="addon-name">SMS &amp; Email Reminder</span>
+              <span class="addon-tag">Notifications</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Sends automatic reminders before an appointment, with timing and channel configurable per service.
+                <a href="#">Read the SMS &amp; Email Reminder docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Service Package Bundler">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">04</span>
+              <span class="addon-name">Service Package Bundler</span>
+              <span class="addon-tag">Pricing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Groups several services into a single package price, such as a consultation plus follow‑up visit.
+                <a href="#">Read the Service Package Bundler docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Customer Review Collector">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">05</span>
+              <span class="addon-name">Customer Review Collector</span>
+              <span class="addon-tag">Feedback</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Sends a review request after each completed appointment and displays approved reviews on the booking page.
+                <a href="#">Read the Customer Review Collector docs →</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- ECAB -->
+    <section class="plugin" id="ecab" data-name="Taxi Cab and Chauffeur Booking Pro eCab ecab">
+      <div class="ticket">
+        <div class="ticket-head">
+          <div>
+            <span class="ticket-id">ecab</span>
+            <h2>Taxi Cab and Chauffeur Booking Pro<span class="sub-title">eCab</span></h2>
+            <p>Run on‑demand and pre‑booked rides with fare estimation, driver dispatch, and corporate billing.</p>
+          </div>
+          <div class="ticket-meta">
+            <span class="addon-count">Addons<strong>05</strong></span>
+            <button class="toggle-all" data-target="ecab">Expand all</button>
+          </div>
+        </div>
+        <div class="perforation"></div>
+        <ul class="addons" data-group="ecab">
+          <li class="addon" data-name="Fare Estimator & Zones">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">01</span>
+              <span class="addon-name">Fare Estimator &amp; Zones</span>
+              <span class="addon-tag">Pricing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Quotes a fare before booking using distance, time of day, and configurable surge zones.
+                <a href="#">Read the Fare Estimator &amp; Zones docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Driver Mobile App Sync">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">02</span>
+              <span class="addon-name">Driver Mobile App Sync</span>
+              <span class="addon-tag">Operations</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Pushes ride assignments straight to a driver's phone and syncs status back in real time.
+                <a href="#">Read the Driver Mobile App Sync docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Ride Dispatch Queue">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">03</span>
+              <span class="addon-name">Ride Dispatch Queue</span>
+              <span class="addon-tag">Operations</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Matches incoming ride requests to the nearest available driver and reassigns automatically if one declines.
+                <a href="#">Read the Ride Dispatch Queue docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Airport Transfer Packages">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">04</span>
+              <span class="addon-name">Airport Transfer Packages</span>
+              <span class="addon-tag">Pricing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Offers flat‑rate airport pickup and drop‑off packages, with flight‑tracking buffer built into pickup time.
+                <a href="#">Read the Airport Transfer Packages docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Corporate Account Billing">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">05</span>
+              <span class="addon-name">Corporate Account Billing</span>
+              <span class="addon-tag">Billing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Lets companies set up a monthly invoiced account so employee rides don't need a card at checkout.
+                <a href="#">Read the Corporate Account Billing docs →</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- WPRENTLY -->
+    <section class="plugin" id="wprently" data-name="Booking and Rental Manager Pro WpRently wprently">
+      <div class="ticket">
+        <div class="ticket-head">
+          <div>
+            <span class="ticket-id">wprently</span>
+            <h2>Booking and Rental Manager Pro<span class="sub-title">WpRently</span></h2>
+            <p>Run a rental counter for gear, tools, or venue equipment with deposits, availability, and return tracking built in.</p>
+          </div>
+          <div class="ticket-meta">
+            <span class="addon-count">Addons<strong>05</strong></span>
+            <button class="toggle-all" data-target="wprently">Expand all</button>
+          </div>
+        </div>
+        <div class="perforation"></div>
+        <ul class="addons" data-group="wprently">
+          <li class="addon" data-name="Damage Deposit Handler">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">01</span>
+              <span class="addon-name">Damage Deposit Handler</span>
+              <span class="addon-tag">Payments</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Holds a refundable deposit at checkout and releases or partially withholds it after the item is inspected on return.
+                <a href="#">Read the Damage Deposit Handler docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Availability Calendar Sync">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">02</span>
+              <span class="addon-name">Availability Calendar Sync</span>
+              <span class="addon-tag">Scheduling</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Two‑way sync with Google and Outlook calendars so rental blocks stay accurate across every channel you book from.
+                <a href="#">Read the Availability Calendar Sync docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Delivery Zone Mapper">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">03</span>
+              <span class="addon-name">Delivery Zone Mapper</span>
+              <span class="addon-tag">Logistics</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Draw delivery radii on a map and charge distance‑based fees automatically at checkout.
+                <a href="#">Read the Delivery Zone Mapper docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Rental Insurance">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">04</span>
+              <span class="addon-name">Rental Insurance</span>
+              <span class="addon-tag">Protection</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Offers an optional protection plan at checkout that waives part of the deposit liability for covered renters.
+                <a href="#">Read the Rental Insurance docs →</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Late Return Fees">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">05</span>
+              <span class="addon-name">Late Return Fees</span>
+              <span class="addon-tag">Billing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Charges a configurable hourly or daily fee automatically once an item passes its scheduled return time.
+                <a href="#">Read the Late Return Fees docs →</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- CAR RENTAL -->
+    <section class="plugin" id="car-rental-plugin-wordpress" data-name="Car Rental Plugin for WordPress car-rental-plugin-wordpress">
+      <div class="ticket">
+        <div class="ticket-head">
+          <div>
+            <span class="ticket-id">car-rental-plugin-wordpress</span>
+            <h2>Car Rental Plugin for WordPress</h2>
             <p>Manage a fleet of vehicles for self‑drive hire, with verification, mileage, and fuel rules handled automatically.</p>
           </div>
           <div class="ticket-meta">
             <span class="addon-count">Addons<strong>05</strong></span>
-            <button class="toggle-all" data-target="car">Expand all</button>
+            <button class="toggle-all" data-target="car-rental">Expand all</button>
           </div>
         </div>
         <div class="perforation"></div>
-        <ul class="addons" data-group="car">
+        <ul class="addons" data-group="car-rental">
           <li class="addon" data-name="Fleet Manager">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">CAR‑501</span>
+              <span class="addon-code mono">01</span>
               <span class="addon-name">Fleet Manager</span>
               <span class="addon-tag">Inventory</span>
               <span class="chevron"></span>
@@ -861,7 +670,7 @@
           </li>
           <li class="addon" data-name="License Verification">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">CAR‑502</span>
+              <span class="addon-code mono">02</span>
               <span class="addon-name">License Verification</span>
               <span class="addon-tag">Compliance</span>
               <span class="chevron"></span>
@@ -875,7 +684,7 @@
           </li>
           <li class="addon" data-name="Mileage Tracker">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">CAR‑503</span>
+              <span class="addon-code mono">03</span>
               <span class="addon-name">Mileage Tracker</span>
               <span class="addon-tag">Billing</span>
               <span class="chevron"></span>
@@ -889,7 +698,7 @@
           </li>
           <li class="addon" data-name="Additional Driver">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">CAR‑504</span>
+              <span class="addon-code mono">04</span>
               <span class="addon-name">Additional Driver</span>
               <span class="addon-tag">Add-on</span>
               <span class="chevron"></span>
@@ -903,7 +712,7 @@
           </li>
           <li class="addon" data-name="Fuel Policy Calculator">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">CAR‑505</span>
+              <span class="addon-code mono">05</span>
               <span class="addon-name">Fuel Policy Calculator</span>
               <span class="addon-tag">Billing</span>
               <span class="chevron"></span>
@@ -918,19 +727,44 @@
         </ul>
       </div>
     </section>
-
+ 
+    <!-- UNIVERSAL ADDONS -->
+    <section class="plugin universal" id="universal-addons" data-name="Advanced Discount Coupon and Store Credit advanced-discount-coupon-store-credit Deposit Partial Payment Pro WpDeposity wpdeposity">
+      <div class="universal-head">
+        <div class="eyebrow">Works with every plugin above</div>
+        <h2>Universal add‑ons</h2>
+        <p>These two modules aren't tied to one plugin — install either alongside any booking plugin on this board to extend checkout.</p>
+      </div>
+      <div class="universal-grid">
+        <div class="universal-card" data-name="Advanced Discount Coupon and Store Credit">
+          <span class="ticket-id">advanced-discount-coupon-store-credit</span>
+          <h3>Advanced Discount Coupon and Store Credit</h3>
+          <p>Layer coupon codes, tiered discounts, and a store‑credit wallet on top of any booking checkout, with per‑plugin rules if you need them.</p>
+          <a href="#">Read the Advanced Discount Coupon and Store Credit docs →</a>
+          <span class="applies">Applies to: all 7 plugins above</span>
+        </div>
+        <div class="universal-card" data-name="Deposit & Partial Payment Pro WpDeposity">
+          <span class="ticket-id">wpdeposity</span>
+          <h3>Deposit &amp; Partial Payment Pro<span class="sub-title" style="display:inline; margin-left:6px;">WpDeposity</span></h3>
+          <p>Let customers reserve with a partial payment now and pay the balance later, on a schedule you define per booking type.</p>
+          <a href="#">Read the WpDeposity docs →</a>
+          <span class="applies">Applies to: all 7 plugins above</span>
+        </div>
+      </div>
+    </section>
+ 
     <p class="no-results" id="noResults">No plugins or addons match that search.</p>
-
+ 
   </main>
-
+ 
   <footer>
-    BOOKING SUITE DOCS · 5 PLUGINS · 25 ADDONS · BUILT WITH PLAIN HTML, CSS &amp; JS
+    BOOKING SUITE DOCS · 7 PLUGINS · 35 PLUGIN ADDONS · 2 UNIVERSAL ADDONS · BUILT WITH PLAIN HTML, CSS &amp; JS
   </footer>
-
+ 
 <script>
 (function(){
   "use strict";
-
+ 
   /* ---- live clock ---- */
   var clockEl = document.getElementById('clock');
   function tick(){
@@ -940,7 +774,7 @@
   }
   tick();
   setInterval(tick, 1000);
-
+ 
   /* ---- addon accordion ---- */
   document.querySelectorAll('.addon-row').forEach(function(btn){
     btn.addEventListener('click', function(){
@@ -954,7 +788,7 @@
       }
     });
   });
-
+ 
   /* ---- expand/collapse all per plugin ---- */
   document.querySelectorAll('.toggle-all').forEach(function(toggle){
     toggle.addEventListener('click', function(){
@@ -971,41 +805,41 @@
       toggle.textContent = anyCollapsed ? 'Collapse all' : 'Expand all';
     });
   });
-
+ 
   /* ---- search filter across plugins + addons ---- */
   var searchInput = document.getElementById('searchInput');
   var noResults = document.getElementById('noResults');
   var plugins = document.querySelectorAll('.plugin');
-
+ 
   searchInput.addEventListener('input', function(){
     var q = searchInput.value.trim().toLowerCase();
     var anyVisible = false;
-
+ 
     plugins.forEach(function(plugin){
       var pluginName = (plugin.getAttribute('data-name') || '').toLowerCase();
-      var addonItems = plugin.querySelectorAll('.addon');
+      var addonItems = plugin.querySelectorAll('.addon, .universal-card');
       var pluginMatches = q === '' || pluginName.indexOf(q) !== -1;
       var anyAddonMatch = false;
-
+ 
       addonItems.forEach(function(item){
         var addonName = (item.getAttribute('data-name') || '').toLowerCase();
         var match = q === '' || pluginMatches || addonName.indexOf(q) !== -1;
         item.classList.toggle('hidden-by-search', !match);
         if(match) anyAddonMatch = true;
       });
-
+ 
       var showPlugin = q === '' || pluginMatches || anyAddonMatch;
       plugin.classList.toggle('hidden-by-search', !showPlugin);
       if(showPlugin) anyVisible = true;
     });
-
+ 
     noResults.style.display = anyVisible ? 'none' : 'block';
   });
-
+ 
   /* ---- active nav link on scroll ---- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#topnav a'));
   var sections = Array.prototype.slice.call(document.querySelectorAll('.plugin'));
-
+ 
   if('IntersectionObserver' in window){
     var observer = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
@@ -1017,11 +851,12 @@
         }
       });
     }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
-
+ 
     sections.forEach(function(s){ observer.observe(s); });
   }
-
+ 
 })();
 </script>
 </body>
 </html>
+ 
