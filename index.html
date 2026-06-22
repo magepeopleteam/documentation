@@ -13,6 +13,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
  
@@ -26,7 +29,6 @@
       <a href="#ecab">eCab</a>
       <a href="#wprently">WpRently</a>
       <a href="#car-rental-plugin-wordpress">Car Rental</a>
-      <a href="#universal-addons">Universal</a>
     </nav>
     <div class="search-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -47,7 +49,7 @@
       <div class="board-row">
         <span class="code flap" style="animation-delay:.02s"><img src="images/event.png" alt="wpevently"></span>
         <span class="flap" style="animation-delay:.05s"><span class="dest">Event Manager Pro — WpEvently <span class="pro-badge">PRO</span></span><span class="sub">Ticketing, seating, check-in</span></span>
-        <div class="count-wrap"><a href="#wpevently" class="count flap" style="animation-delay:.08s">5 addons</a></div>
+        <div class="count-wrap"><a href="#wpevently" class="count flap" style="animation-delay:.08s">14 addons</a></div>
         <span class="status flap" style="animation-delay:.11s">DOCS READY</span>
         <a href="#wpevently" class="go flap" style="animation-delay:.14s">READ →</a>
       </div>
@@ -93,6 +95,20 @@
         <span class="status flap" style="animation-delay:.29s">DOCS READY</span>
         <a href="#car-rental-plugin-wordpress" class="go flap" style="animation-delay:.32s">READ →</a>
       </div>
+      <div class="board-row">
+        <span class="code flap" style="animation-delay:.23s"><img src="images/discount.png" alt="advanced-discount-coupon-store-credit"></span>
+        <span class="flap" style="animation-delay:.26s"><span class="dest">Advanced Discount Coupon and Store Credit <span class="pro-badge">PRO</span></span><span class="sub">Coupons, tiered discounts &amp; store credit</span></span>
+        <div class="count-wrap"><a href="#advanced-discount-coupon-store-credit" class="count flap" style="animation-delay:.29s">0 addons</a></div>
+        <span class="status flap" style="animation-delay:.32s">DOCS READY</span>
+        <a href="#advanced-discount-coupon-store-credit" class="go flap" style="animation-delay:.35s">READ →</a>
+      </div>
+      <div class="board-row">
+        <span class="code flap" style="animation-delay:.26s"><img src="images/partial.png" alt="wpdeposity"></span>
+        <span class="flap" style="animation-delay:.29s"><span class="dest">Deposit &amp; Partial Payment Pro — WpDeposity <span class="pro-badge">PRO</span></span><span class="sub">Partial payments &amp; deposit scheduling</span></span>
+        <div class="count-wrap"><a href="#wpdeposity" class="count flap" style="animation-delay:.32s">0 addons</a></div>
+        <span class="status flap" style="animation-delay:.35s">DOCS READY</span>
+        <a href="#wpdeposity" class="go flap" style="animation-delay:.38s">READ →</a>
+      </div>
     </div>
   </section>
  
@@ -108,79 +124,233 @@
             <p>Sell tickets, manage capacity, and run check‑in for conferences, concerts, and multi‑session events.</p>
           </div>
           <div class="ticket-meta">
-            <span class="addon-count">Addons<strong>05</strong></span>
+            <span class="addon-count">Addons<strong>14</strong></span>
             <button class="toggle-all" data-target="wpevently">Expand all</button>
           </div>
         </div>
         <div class="perforation"></div>
         <ul class="addons" data-group="wpevently">
-          <li class="addon" data-name="Seating Chart Designer">
+          <li class="addon" data-name="Event Max-Min Quantity Limiting Add-On">
             <button class="addon-row" aria-expanded="false">
               <span class="addon-code mono">01</span>
-              <span class="addon-name">Seating Chart Designer</span>
-              <span class="addon-tag">Layout</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Draw custom venue maps, assign seat tiers, and block off rows for accessibility or holds. Pulls live availability into the booking flow.
-                <a href="#">Read the Seating Chart Designer docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Multi-Day Pass Builder">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">02</span>
-              <span class="addon-name">Multi-Day Pass Builder</span>
-              <span class="addon-tag">Pricing</span>
-              <span class="chevron"></span>
-            </button>
-            <div class="addon-panel">
-              <div class="addon-panel-inner">
-                Bundle several sessions or days into a single pass with its own price and entry rules, separate from single‑day tickets.
-                <a href="#">Read the Multi-Day Pass Builder docs →</a>
-              </div>
-            </div>
-          </li>
-          <li class="addon" data-name="Waitlist Manager">
-            <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">03</span>
-              <span class="addon-name">Waitlist Manager</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Event Max‑Min Quantity Limiting <span class="addon-badge">Add‑On</span></span>
+              </span>
               <span class="addon-tag">Capacity</span>
               <span class="chevron"></span>
             </button>
             <div class="addon-panel">
               <div class="addon-panel-inner">
-                Automatically queues people once an event sells out and releases seats to the next person in line when a ticket is cancelled.
-                <a href="#">Read the Waitlist Manager docs →</a>
+                The event max-min addon is necessary for limiting the amount of tickets sold. Organizers can set a maximum buying quantity or minimum purchase quantity.
+                <a href="#" class="doc-btn">Read documentation</a>
               </div>
             </div>
           </li>
-          <li class="addon" data-name="QR Check-In Scanner">
+          <li class="addon" data-name="Marketplace / Frontend Submission Add-On">
             <button class="addon-row" aria-expanded="false">
-              <span class="addon-code mono">04</span>
-              <span class="addon-name">QR Check‑In Scanner</span>
-              <span class="addon-tag">On-site</span>
+              <span class="addon-code mono">02</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Marketplace / Frontend Submission <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Management</span>
               <span class="chevron"></span>
             </button>
             <div class="addon-panel">
               <div class="addon-panel-inner">
-                Turns any phone into a gate scanner. Marks tickets as used in real time and flags duplicates instantly.
-                <a href="#">Read the QR Check‑In Scanner docs →</a>
+                This is event marketplace addon that is needed to allow event submit from frontend. Multiple organisers can sell tickets together in a same site.
+                <a href="#" class="doc-btn">Read documentation</a>
               </div>
             </div>
           </li>
-          <li class="addon" data-name="Sponsor Showcase">
+          <li class="addon" data-name="WooCommerce Event QR Code Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">03</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">WooCommerce Event QR Code <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Check‑in</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                QR code addon is needed to validate the ticket. If you have a large event then this addon must need to check ticket validity by scanning by QR scanner or mobile.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="WooCommerce Event Waitlist Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">04</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">WooCommerce Event Waitlist <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Capacity</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Waitlist addon is very useful, if any ticket became sold out organiser can get subscription for next available ticket sell.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="WooCommerce Event Calendar Add-On">
             <button class="addon-row" aria-expanded="false">
               <span class="addon-code mono">05</span>
-              <span class="addon-name">Sponsor Showcase</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">WooCommerce Event Calendar <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Display</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Event Calendar addon is a nice enhancement of event list display in calendar so that everyone can easily understand event date.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Book Events from Dashboard Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">06</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Book Events from Dashboard <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Admin</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                This Addon is mainly used for admin, if anyone wants to get order offline like phone order then after taking order admin can add attendee from dashboard.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Email Reminder Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">07</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Email Reminder <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Notification</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Send automatic reminder emails before an event. This helps reduce no-shows and keeps attendees informed.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Group Ticket Qty Addon">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">08</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Group Ticket Qty <span class="addon-badge">Addon</span></span>
+              </span>
+              <span class="addon-tag">Ticketing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Enable customers to purchase multiple tickets in groups with flexible quantity selection options.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Event Seat Plan Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">09</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Event Seat Plan <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Layout</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                A seat plan addon is needed for that organiser who wants to display a seat plan for customers to choose seating during event ticket buying.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Membership Price Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">10</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Membership Price <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Pricing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                A membership pricing addon for the event is needed for that organiser who wants to offer different pricing based on the user role of a WordPress website.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Event Duplicator Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">11</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Event Duplicator <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Utility</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Duplicator addon mainly needed to save time while event creating, if you have an already created event and you want to duplicate that event then this addon needed.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Category Based Ticket Type">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">12</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Category Based Ticket Type</span>
+              </span>
+              <span class="addon-tag">Ticketing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                Assign different ticket types based on categories for better organization and flexible event pricing options.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="WooCommerce Event Coupon Code Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">13</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">WooCommerce Event Coupon Code <span class="addon-badge">Add‑On</span></span>
+              </span>
               <span class="addon-tag">Marketing</span>
               <span class="chevron"></span>
             </button>
             <div class="addon-panel">
               <div class="addon-panel-inner">
-                Adds a tiered sponsor wall to the event page and confirmation emails, with click tracking per sponsor.
-                <a href="#">Read the Sponsor Showcase docs →</a>
+                Event coupon addon that is used for marketing purpose and giving discount to customer for boosting sell.
+                <a href="#" class="doc-btn">Read documentation</a>
+              </div>
+            </div>
+          </li>
+          <li class="addon" data-name="Review and Rating Add-On">
+            <button class="addon-row" aria-expanded="false">
+              <span class="addon-code mono">14</span>
+              <span class="addon-name-wrap">
+                <span class="addon-name">Review and Rating <span class="addon-badge">Add‑On</span></span>
+              </span>
+              <span class="addon-tag">Marketing</span>
+              <span class="chevron"></span>
+            </button>
+            <div class="addon-panel">
+              <div class="addon-panel-inner">
+                The Event Review and Rating Addon is a fantastic value-added offering designed to help businesses gather feedback from customers about their events.
+                <a href="#" class="doc-btn">Read documentation</a>
               </div>
             </div>
           </li>
@@ -728,27 +898,34 @@
       </div>
     </section>
  
-    <!-- UNIVERSAL ADDONS -->
-    <section class="plugin universal" id="universal-addons" data-name="Advanced Discount Coupon and Store Credit advanced-discount-coupon-store-credit Deposit Partial Payment Pro WpDeposity wpdeposity">
-      <div class="universal-head">
-        <div class="eyebrow">Works with every plugin above</div>
-        <h2>Universal add‑ons</h2>
-        <p>These two modules aren't tied to one plugin — install either alongside any booking plugin on this board to extend checkout.</p>
-      </div>
-      <div class="universal-grid">
-        <div class="universal-card" data-name="Advanced Discount Coupon and Store Credit">
-          <span class="ticket-id">advanced-discount-coupon-store-credit</span>
-          <h3>Advanced Discount Coupon and Store Credit</h3>
-          <p>Layer coupon codes, tiered discounts, and a store‑credit wallet on top of any booking checkout, with per‑plugin rules if you need them.</p>
-          <a href="#">Read the Advanced Discount Coupon and Store Credit docs →</a>
-          <span class="applies">Applies to: all 7 plugins above</span>
+    <!-- ADVANCED DISCOUNT COUPON AND STORE CREDIT -->
+    <section class="plugin" id="advanced-discount-coupon-store-credit" data-name="Advanced Discount Coupon and Store Credit">
+      <div class="ticket">
+        <div class="ticket-head">
+          <div>
+            <span class="ticket-id">advanced-discount-coupon-store-credit</span>
+            <h2>Advanced Discount Coupon and Store Credit</h2>
+            <p>Layer coupon codes, tiered discounts, and a store‑credit wallet on top of any booking checkout, with per‑plugin rules if you need them.</p>
+          </div>
+          <div class="ticket-meta">
+            <a href="#" class="doc-btn">Read documentation</a>
+          </div>
         </div>
-        <div class="universal-card" data-name="Deposit & Partial Payment Pro WpDeposity">
-          <span class="ticket-id">wpdeposity</span>
-          <h3>Deposit &amp; Partial Payment Pro<span class="sub-title" style="display:inline; margin-left:6px;">WpDeposity</span></h3>
-          <p>Let customers reserve with a partial payment now and pay the balance later, on a schedule you define per booking type.</p>
-          <a href="#">Read the WpDeposity docs →</a>
-          <span class="applies">Applies to: all 7 plugins above</span>
+      </div>
+    </section>
+
+    <!-- WPDEPOSITY -->
+    <section class="plugin" id="wpdeposity" data-name="Deposit and Partial Payment Pro WpDeposity wpdeposity">
+      <div class="ticket">
+        <div class="ticket-head">
+          <div>
+            <span class="ticket-id">wpdeposity</span>
+            <h2>Deposit &amp; Partial Payment Pro<span class="sub-title">WpDeposity</span></h2>
+            <p>Let customers reserve with a partial payment now and pay the balance later, on a schedule you define per booking type.</p>
+          </div>
+          <div class="ticket-meta">
+            <a href="#" class="doc-btn">Read documentation</a>
+          </div>
         </div>
       </div>
     </section>
@@ -758,7 +935,7 @@
   </main>
  
   <footer>
-    BOOKING SUITE DOCS · 7 PLUGINS · 35 PLUGIN ADDONS · 2 UNIVERSAL ADDONS · BUILT WITH PLAIN HTML, CSS &amp; JS
+    BOOKING SUITE DOCS · 9 PLUGINS · 49 PLUGIN ADDONS · BUILT WITH PLAIN HTML, CSS &amp; JS
   </footer>
  
 <script>
@@ -817,7 +994,7 @@
  
     plugins.forEach(function(plugin){
       var pluginName = (plugin.getAttribute('data-name') || '').toLowerCase();
-      var addonItems = plugin.querySelectorAll('.addon, .universal-card');
+      var addonItems = plugin.querySelectorAll('.addon');
       var pluginMatches = q === '' || pluginName.indexOf(q) !== -1;
       var anyAddonMatch = false;
  
