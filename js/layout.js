@@ -147,6 +147,7 @@ function Hero({ title, description, rows }) {
 function AddonRow({ code, name, tag, description, docHref }) {
   const [expanded, setExpanded] = React.useState(false);
   const panelId = 'panel-' + code;
+  const hasDocs = docHref && docHref !== '#';
   return h('li', { className: 'addon', 'data-name': name },
     h('button',
       {
@@ -159,15 +160,17 @@ function AddonRow({ code, name, tag, description, docHref }) {
         h('span', { className: 'addon-name' }, name)
       ),
       h('span', { className: 'addon-tag' }, tag),
-      h('a', {
-        href: docHref || '#' + name.toLowerCase().replace(/\s+/g, '-'),
-        className: 'doc-btn',
-        onClick: e => {
-          e.preventDefault();
-          e.stopPropagation();
-          setExpanded(true);
-        }
-      }, 'Read documentation'),
+      hasDocs
+        ? h('a', {
+            href: docHref,
+            className: 'doc-btn',
+            onClick: e => {
+              e.preventDefault();
+              e.stopPropagation();
+              setExpanded(true);
+            }
+          }, 'Read documentation')
+        : h('span', { className: 'doc-btn disabled' }, 'Not Ready'),
       h('span', { className: 'chevron' })
     ),
     h('div',

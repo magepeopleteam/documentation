@@ -666,6 +666,15 @@
     margin-left:auto;
   }
   .doc-btn:hover{ background:#1d4ed8; }
+  .doc-btn.disabled{
+    background:var(--panel);
+    color:var(--ink-faint);
+    border:1px solid var(--panel-edge);
+    cursor:default;
+    pointer-events:none;
+    opacity:.7;
+  }
+  .doc-btn.disabled:hover{ background:var(--panel); }
 
   .hidden-by-search{ display:none !important; }
   .no-results{
