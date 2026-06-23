@@ -38,147 +38,656 @@
     <main class="docs-content">
 
       <section class="doc-section" id="social-share-hooks">
-        <h2>Social Share Button Hooks</h2>
-        <p>WpEvently provides hooks around the social share buttons section, allowing you to inject additional share networks, custom content, or analytics tracking.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Available Hooks</h3>
-            <ul>
-              <li><code>mep_before_social_share</code> — Fires before the social share buttons</li>
-              <li><code>mep_after_social_share</code> — Fires after the social share buttons</li>
-              <li><code>mep_social_share_list</code> — Filter hook to modify the share networks array</li>
-              <li><code>mep_social_share_item</code> — Action hook for each individual share button</li>
-              <li>Use these to add custom share services or promotional banners</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Usage Example</h3>
-            <ul>
-              <li><code>add_action('mep_before_social_share', 'my_custom_share_header');</code></li>
-              <li>Define a function that echoes HTML before the share buttons</li>
-              <li>Add WhatsApp, Telegram, or email share options via the filter</li>
-              <li>Wrap tracking pixels or analytics code in hook callbacks</li>
-              <li>Test that injected content renders correctly on event pages</li>
-            </ul>
-          </article>
+        <h2>Social Share Button Action Hooks</h2>
+        <p>The WooCommerce Event Manager Plugin Social Share Button Section has a couple of Action Hooks available. You can hook up your function from anywhere from your website.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_before_social_share_list</code></div>
+              <div class="url-desc">Fires before the social share button list is rendered.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_after_social_share_list</code></div>
+              <div class="url-desc">Fires after the social share button list is rendered.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <section class="doc-section" id="google-map-hooks">
-        <h2>Google Map Section Hooks</h2>
-        <p>Customise the Google Map section on event detail pages. Hooks are available to add content before and after the map, or to modify map settings.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Available Hooks</h3>
-            <ul>
-              <li><code>mep_before_google_map</code> — Inject content above the map</li>
-              <li><code>mep_after_google_map</code> — Inject content below the map</li>
-              <li><code>mep_google_map_args</code> — Filter the map configuration array</li>
-              <li><code>mep_google_map_marker</code> — Filter marker position and info window</li>
-              <li>Modify zoom level, map type, and styling via <code>mep_google_map_args</code></li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Map Customisation</h3>
-            <ul>
-              <li>Change map height and width via CSS on the map container</li>
-              <li>Add multiple markers for events with multiple locations</li>
-              <li>Customise the info window content with event details</li>
-              <li>Set custom map styles (snazzymaps JSON for branded look)</li>
-              <li>Disable the map entirely by unhooking the default callback</li>
-            </ul>
-          </article>
+        <h2>Google MAP Section Action Hooks</h2>
+        <p>The WooCommerce Event Manager Plugin Google MAP Section has a couple of Action Hooks available. You can hook up your function from anywhere from your website.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_before_google_map</code></div>
+              <div class="url-desc">Fires before the Google Map section on the event details page.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_after_google_map</code></div>
+              <div class="url-desc">Fires after the Google Map section on the event details page.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section class="doc-section" id="custom-functions">
-        <h2>Adding Custom Functions</h2>
-        <p>Extend WpEvently by adding custom PHP functions to your theme's functions.php file or a site-specific plugin. Use the available action and filter hooks to modify behaviour.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Common Customisations</h3>
-            <ul>
-              <li>Modify event query parameters using <code>pre_get_posts</code> and <code>mep_event_query_args</code></li>
-              <li>Add custom fields to the event creation form</li>
-              <li>Redirect users after ticket purchase using <code>mep_ticket_purchase_redirect</code></li>
-              <li>Send custom email notifications on event registration</li>
-              <li>Validate attendee data before processing the booking</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Example Snippet</h3>
-            <ul>
-              <li><code>add_filter('mep_event_query_args', function($args) { $args['posts_per_page'] = 10; return $args; });</code></li>
-              <li>Always use a prefix for your function names to avoid conflicts</li>
-              <li>Check for function existence before declaring custom functions</li>
-              <li>Use <code>is_plugin_active()</code> to conditionally load hook code</li>
-              <li>Test customisations after every plugin update</li>
-            </ul>
-          </article>
+      <section class="doc-section" id="event-page-hooks">
+        <h2>Event Page Action Hooks</h2>
+        <p>Action hooks available on the single event details page to inject custom content around key sections.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_title</code></div>
+              <div class="url-desc">Fires in the event title section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_organizer</code></div>
+              <div class="url-desc">Fires in the event organizer section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_location</code></div>
+              <div class="url-desc">Fires in the event location section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_time</code></div>
+              <div class="url-desc">Fires in the event date/time section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_description</code></div>
+              <div class="url-desc">Fires in the event description section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_custom_slider</code></div>
+              <div class="url-desc">Fires in the event custom slider/gallery section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_timeline</code></div>
+              <div class="url-desc">Fires in the event timeline section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_social</code></div>
+              <div class="url-desc">Fires in the social share section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_map</code></div>
+              <div class="url-desc">Fires in the Google Map section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_speaker</code></div>
+              <div class="url-desc">Fires in the event speaker section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_related</code></div>
+              <div class="url-desc">Fires in the related events section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_faq</code></div>
+              <div class="url-desc">Fires in the event FAQ section.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_registration</code></div>
+              <div class="url-desc">Fires in the event registration section.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section class="doc-section" id="ticket-rendering-hooks">
-        <h2>Hook into Ticket Rendering</h2>
-        <p>The ticket selection and rendering process exposes hooks that let you modify ticket display, pricing, availability, and checkout behaviour.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Ticket Display Hooks</h3>
-            <ul>
-              <li><code>mep_before_ticket_type</code> — Content before the ticket type selector</li>
-              <li><code>mep_after_ticket_type</code> — Content after the ticket type selector</li>
-              <li><code>mep_ticket_type_item</code> — Modify each ticket type row output</li>
-              <li><code>mep_ticket_price_html</code> — Filter the displayed price HTML</li>
-              <li>Add quantity limits, custom descriptions, or promotional badges</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Booking & Cart Hooks</h3>
-            <ul>
-              <li><code>mep_before_add_to_cart</code> — Before adding ticket to cart</li>
-              <li><code>mep_after_add_to_cart</code> — After ticket is added to cart</li>
-              <li><code>mep_ticket_validation</code> — Custom validation rules for ticket selection</li>
-              <li><code>mep_cart_item_data</code> — Filter cart item data for tickets</li>
-              <li>Integrate with loyalty programmes or membership discounts</li>
-            </ul>
-          </article>
+      <section class="doc-section" id="ticket-cart-hooks">
+        <h2>Ticket &amp; Cart Action Hooks</h2>
+        <p>Action hooks available in the ticket selection area and WooCommerce cart/checkout flow.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_before_ticket_type</code></div>
+              <div class="url-desc">Fires before the ticket type list in the admin settings.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_ticket_type_loop_list_row_start</code></div>
+              <div class="url-desc">Fires at the start of each ticket type row in the booking form.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_hidden_item_ticket</code></div>
+              <div class="url-desc">Fires inside each ticket item for hidden input fields.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mepgq_max_qty_hook</code></div>
+              <div class="url-desc">Fires for max quantity group checks.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_multi_attendee</code></div>
+              <div class="url-desc">Fires for multi-attendee registration fields.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_single_attendee</code></div>
+              <div class="url-desc">Fires for single attendee registration fields.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_add_term_condition</code></div>
+              <div class="url-desc">Fires for the terms and conditions checkbox.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_after_ticket_types</code></div>
+              <div class="url-desc">Fires after all ticket types are displayed.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_cart_data_reg</code></div>
+              <div class="url-desc">Fires when cart item data is registered.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_cart_after_ticket_type</code></div>
+              <div class="url-desc">Fires after a ticket type in the cart display.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_after_cart_item_display_list</code></div>
+              <div class="url-desc">Fires after the cart item display list.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_cart_order_data_add</code></div>
+              <div class="url-desc">Fires when order data is added for an event ticket.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_after_event_booking</code></div>
+              <div class="url-desc">Fires after an event booking is completed.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_wc_order_status_change</code></div>
+              <div class="url-desc">Fires when WooCommerce order status changes for an event order.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <section class="doc-section" id="hook-reference">
-        <h2>Complete Hook Reference</h2>
-        <p>A comprehensive list of all action and filter hooks available in WpEvently. Use this as a quick reference when building custom integrations.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Action Hooks</h3>
-            <ul>
-              <li><code>mep_before_event_list</code> — Before event list output</li>
-              <li><code>mep_after_event_list</code> — After event list output</li>
-              <li><code>mep_before_single_event</code> — Before single event content</li>
-              <li><code>mep_after_single_event</code> — After single event content</li>
-              <li><code>mep_before_ticket_form</code> — Before the ticket booking form</li>
-              <li><code>mep_after_ticket_form</code> — After the ticket booking form</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Filter Hooks</h3>
-            <ul>
-              <li><code>mep_event_list_args</code> — Modify event list query arguments</li>
-              <li><code>mep_single_event_template</code> — Override single event template path</li>
-              <li><code>mep_ticket_price</code> — Modify ticket price before display</li>
-              <li><code>mep_attendee_data</code> — Filter attendee information on submission</li>
-              <li><code>mep_email_subject</code> — Customise email notification subjects</li>
-            </ul>
-          </article>
+      <section class="doc-section" id="list-calendar-hooks">
+        <h2>Event List &amp; Calendar Action Hooks</h2>
+        <p>Action hooks available in event list shortcodes and the calendar view.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_list_shortcode</code></div>
+              <div class="url-desc">Fires inside the event list shortcode loop for each event.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_list_loop_header</code></div>
+              <div class="url-desc">Fires at the start of the event list loop.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_list_loop_footer</code></div>
+              <div class="url-desc">Fires at the end of each event item in the list loop.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_list_loop_end</code></div>
+              <div class="url-desc">Fires after the event list loop ends.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_everyday_date_list_display</code></div>
+              <div class="url-desc">Fires when displaying everyday date lists for events.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_single_before_event_date_list_item</code></div>
+              <div class="url-desc">Fires before each event date list item on the single event page.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_single_after_event_date_list_item</code></div>
+              <div class="url-desc">Fires after each event date list item on the single event page.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_list_ribbon</code></div>
+              <div class="url-desc">Fires in the ribbon area of event list items.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_list_thumb</code></div>
+              <div class="url-desc">Fires in the thumbnail area of event list items.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_list_location</code></div>
+              <div class="url-desc">Fires in the location area of event list items.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_list_organizer</code></div>
+              <div class="url-desc">Fires in the organizer area of event list items.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_list_price</code></div>
+              <div class="url-desc">Fires in the price area of event list items.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_before_add_calendar_button</code></div>
+              <div class="url-desc">Fires before the Add to Calendar button.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_after_add_calendar_button</code></div>
+              <div class="url-desc">Fires after the Add to Calendar button.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_calendar_before_render</code></div>
+              <div class="url-desc">Fires before the calendar is rendered.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_calendar_after_render</code></div>
+              <div class="url-desc">Fires after the calendar is rendered.</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="doc-section" id="admin-hooks">
+        <h2>Admin &amp; Settings Action Hooks</h2>
+        <p>Action hooks available in the WordPress admin area for event settings and management.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mp_event_all_in_tab_menu</code></div>
+              <div class="url-desc">Fires in the event edit page tab menu area.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_event_tab_setting_item</code></div>
+              <div class="url-desc">Fires for each event tab setting item.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_tab_before_ticket_pricing</code></div>
+              <div class="url-desc">Fires before the ticket pricing tab in event settings.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_tab_before_location</code></div>
+              <div class="url-desc">Fires before the location tab in event settings.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_tab_after_location</code></div>
+              <div class="url-desc">Fires after the location tab in event settings.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_settings_save</code></div>
+              <div class="url-desc">Fires when event settings are saved.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_after_event_edit_save</code></div>
+              <div class="url-desc">Fires after the event edit page save action.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>add_mpwem_common_script</code></div>
+              <div class="url-desc">Fires to enqueue common admin scripts.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>add_mpwem_admin_script</code></div>
+              <div class="url-desc">Fires to enqueue admin-specific scripts.</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="doc-section" id="filter-hooks">
+        <h2>Filter Hook Reference</h2>
+        <p>Available filter hooks to modify data throughout the plugin.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_ticket_type_price</code></div>
+              <div class="url-desc">Modify the ticket price before display. Passes price, ticket name, event ID, and ticket type.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_confirmation_text</code></div>
+              <div class="url-desc">Modify the confirmation email body text.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_should_send_confirmation_email</code></div>
+              <div class="url-desc">Determine whether to send the confirmation email.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_cart_item_data</code></div>
+              <div class="url-desc">Modify cart item data before adding to cart.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_cart_date_format</code></div>
+              <div class="url-desc">Modify the date format used in cart display.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mage_event_location_in_list_view</code></div>
+              <div class="url-desc">Modify the location display in event list views.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mage_event_location_in_ticket</code></div>
+              <div class="url-desc">Modify the location display in the ticket area.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mage_event_single_tags</code></div>
+              <div class="url-desc">Modify the tags display on the single event page.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_datetime_status</code></div>
+              <div class="url-desc">Modify whether the end date/time is displayed for events.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_upcoming_date</code></div>
+              <div class="url-desc">Modify the upcoming date display for recurring events.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_total_seat_counts</code></div>
+              <div class="url-desc">Modify the total seat count for an event.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_total_resv_seat_count</code></div>
+              <div class="url-desc">Modify the reserved seat count for an event.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_ticket_permission</code></div>
+              <div class="url-desc">Modify ticket purchase permission for a specific ticket type.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mpwem_early_date</code></div>
+              <div class="url-desc">Modify early bird date availability for a ticket type.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_events_post_type_support</code></div>
+              <div class="url-desc">Modify the post type support features for events.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_events_post_type_show_in_rest</code></div>
+              <div class="url-desc">Modify whether events are exposed via the REST API.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#e8f5e9;color:#2e7d32;">Filter</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_fb_app_id</code></div>
+              <div class="url-desc">Modify the Facebook app ID used in meta tags.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
     </main>
   </div>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
@@ -188,6 +697,7 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Action Hooks' }
   ], '../../images/MG-web-logo.webp');
+  renderFooter();
 })();
 </script>
 </body>

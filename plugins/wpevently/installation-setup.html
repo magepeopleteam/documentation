@@ -39,130 +39,57 @@
 
       <section class="doc-section" id="installation-methods">
         <h2>Installation Methods</h2>
-        <p>Install the WpEvently plugin using one of three standard WordPress methods. Each approach achieves the same result, so pick the one that suits your workflow.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Via WordPress Admin</h3>
-            <ul>
-              <li>Navigate to Plugins &rarr; Add New in your WordPress dashboard</li>
-              <li>Search for "WpEvently" or "WooCommerce Event Manager"</li>
-              <li>Click Install Now, then Activate once the installation finishes</li>
-              <li>The plugin will appear in your installed plugins list</li>
-              <li>Pro version requires manual upload — see zip method below</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Via Zip Upload</h3>
-            <ul>
-              <li>Download the plugin .zip file from your Magepeople account</li>
-              <li>Go to Plugins &rarr; Add New &rarr; Upload Plugin</li>
-              <li>Choose the downloaded .zip file and click Install Now</li>
-              <li>Click Activate Plugin after the upload completes</li>
-              <li>This method is required for the Pro version installation</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Via FTP</h3>
-            <ul>
-              <li>Extract the plugin .zip file on your local machine</li>
-              <li>Connect to your server using an FTP client (FileZilla, WinSCP, etc.)</li>
-              <li>Upload the extracted folder to /wp-content/plugins/</li>
-              <li>Return to WordPress admin and go to Plugins</li>
-              <li>Find WpEvently in the list and click Activate</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Pro Version Activation</h3>
-            <ul>
-              <li>Purchase the Pro version from the Magepeople website</li>
-              <li>Download the pro plugin .zip from your account dashboard</li>
-              <li>Install via zip upload — do not install both free and pro</li>
-              <li>Go to WpEvently &rarr; License in the admin menu</li>
-              <li>Enter your purchase code and click Activate License</li>
-            </ul>
-          </article>
-        </div>
+        <p>You have three options to install WooCommerce Event Manager.</p>
+
+        <h3>Automatic Install via WordPress (Recommended)</h3>
+        <ol>
+          <li>Go to your admin page and go to Plugins &rarr; Add New.</li>
+          <li>Search for &ldquo;mage eventpress&rdquo;.</li>
+          <li>Find &ldquo;WooCommerce mage eventpress&rdquo; by Mage People team and click Install.</li>
+          <li>Activate it from the installation page or your Plugins page.</li>
+        </ol>
+        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/Screenshot_89.png" alt="Install via WordPress admin" style="max-width:100%;height:auto;"></p>
+
+        <h3>Adding via Zip file</h3>
+        <ol>
+          <li>Download the plugin zip file from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
+          <li>Go to <strong>Plugins &rarr; Add New</strong>.</li>
+          <li>Click on the <strong>Upload Plugin</strong> button.</li>
+          <li>Choose the plugin zip file and click on <strong>Install Now</strong> button.</li>
+          <li>Activate the plugin from the installation page or your Plugins page.</li>
+        </ol>
+        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/install-wc-event-manager-plugin.png" alt="Install via zip upload" style="max-width:100%;height:auto;"></p>
+
+        <h3>Uploading via FTP</h3>
+        <ol>
+          <li>Download the plugin zip file from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
+          <li>Connect to your blog via FTP.</li>
+          <li>Extract the zip file you downloaded, and upload the <code>mage-eventpress</code> folder to your <code>wp-content/plugins</code> folder.</li>
+          <li>Visit your Plugins page in the admin area.</li>
+          <li>Activate the plugin.</li>
+        </ol>
       </section>
 
-      <section class="doc-section" id="requirements">
-        <h2>System Requirements</h2>
-        <p>Ensure your server meets the following minimum requirements before installing the plugin. Meeting these guarantees smooth operation and compatibility.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>WordPress & PHP</h3>
-            <ul>
-              <li>WordPress 5.8 or higher (6.x recommended)</li>
-              <li>PHP version 7.4 or later (PHP 8.0+ recommended)</li>
-              <li>MySQL 5.6+ or MariaDB 10.1+</li>
-              <li>WooCommerce plugin installed and active (4.0+)</li>
-              <li>Memory limit of 128 MB or more (256 MB recommended)</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Server Extensions</h3>
-            <ul>
-              <li>mod_rewrite enabled (for clean permalinks)</li>
-              <li>GD Library or Imagick for image processing</li>
-              <li>cURL extension enabled for API communications</li>
-              <li>JSON extension for REST API functionality</li>
-              <li>MBString extension for multi-byte character support</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+      <section class="doc-section" id="pro-version">
+        <h2>Pro Version Installation</h2>
+        <p>Event Manager Pro Version comes with 2 addons:</p>
+        <ol>
+          <li><strong>WooCommerce Event Manager Addon: Form Builder</strong></li>
+          <li><strong>WooCommerce Event Manager Addon: PDF Tickets</strong></li>
+        </ol>
 
-      <section class="doc-section" id="permalinks">
-        <h2>Permalink Configuration</h2>
-        <p>WpEvently requires clean permalinks for event pages, ticket URLs, and calendar views. The plugin will not function correctly with the default "Plain" permalink structure.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Setting Up Permalinks</h3>
-            <ul>
-              <li>Go to Settings &rarr; Permalinks in your WordPress dashboard</li>
-              <li>Select the "Post name" option for best compatibility</li>
-              <li>Click Save Changes to flush the rewrite rules</li>
-              <li>Visit an event page to confirm URLs resolve correctly</li>
-              <li>If you see a 404, navigate to Settings &rarr; Permalinks again and re-save</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Custom Structure Options</h3>
-            <ul>
-              <li><code>/%postname%/</code> — Recommended default structure</li>
-              <li><code>/events/%postname%/</code> — Events under a dedicated prefix</li>
-              <li><code>/%category%/%postname%/</code> — Includes event category in URL</li>
-              <li>Always flush permalinks after changing the structure</li>
-              <li>Test a few event and ticket pages after each change</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+        <h3>Install WooCommerce Event Manager Addon: Form Builder</h3>
+        <p>Download the plugin zip file from My Account after buying <a href="https://mage-people.com/product/mage-woo-event-booking-manager-pro/" target="_blank">pro version</a> then go to <strong>Plugins &rarr; Add New</strong>. Click on the <strong>Upload Plugin</strong> button. Choose the plugin zip file <code>woocommerce-event-manager-addon-form-builder.zip</code> and click on <strong>Install Now</strong> button.</p>
+        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/install-wc-event-manager-plugin.png" alt="Install Form Builder addon" style="max-width:100%;height:auto;"></p>
 
-      <section class="doc-section" id="post-installation">
-        <h2>Post-Installation Steps</h2>
-        <p>After installing and activating the plugin, follow these steps to configure your first events and ensure everything is working correctly.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Initial Wizard</h3>
-            <ul>
-              <li>Run the guided setup wizard from the WpEvently dashboard</li>
-              <li>Configure global currency, date format, and timezone</li>
-              <li>Set default ticket settings and registration options</li>
-              <li>Choose email notification preferences</li>
-              <li>Save settings and verify the configuration summary</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Verification Checklist</h3>
-            <ul>
-              <li>Create a test event and publish it</li>
-              <li>View the event on the front end to verify the URL works</li>
-              <li>Test the ticket purchase flow with a sandbox payment</li>
-              <li>Check that attendee data appears in the admin panel</li>
-              <li>Confirm email notifications are sent for test registrations</li>
-            </ul>
-          </article>
-        </div>
+        <h3>Install WooCommerce Event Manager Addon: PDF Tickets</h3>
+        <p>It is a similar process to install the form builder addon. In this case just choose the plugin zip file <code>woocommerce-event-manager-pdf-ticket.zip</code> and click on <strong>Install Now</strong> button.</p>
+        <p>Once installation is done, you will get a notice like below:</p>
+        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-notice-1024x100.png" alt="mpdf support addon notice" style="max-width:100%;height:auto;"></p>
+        <p>This notice appears because you need to install another <strong>mpdf support addon</strong> that you can install easily by clicking install. It may take some time if you install on a local server as its size is bigger.</p>
+        <p>Once installation and activation is done you can check the status menu in the left sidebar and you will see like this:</p>
+        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-status-1024x219.png" alt="mpdf status screen" style="max-width:100%;height:auto;"></p>
+        <p>If you see all statuses look green, that means all done and you are ready to use.</p>
       </section>
 
     </main>

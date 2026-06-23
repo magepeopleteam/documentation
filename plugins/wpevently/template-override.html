@@ -38,173 +38,371 @@
     <main class="docs-content">
 
       <section class="doc-section" id="overriding-templates">
-        <h2>How to Override Event Templates</h2>
-        <p>WpEvently follows the WordPress template hierarchy. You can override any plugin template by copying it into your theme directory. This preserves your customisations across plugin updates.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Template Override Steps</h3>
-            <ul>
-              <li>Browse to <code>/wp-content/plugins/wp-event-manager/templates/</code></li>
-              <li>Locate the template file you want to customise</li>
-              <li>Create a folder in your theme: <code>/wp-content/themes/your-theme/wp-event-manager/</code></li>
-              <li>Copy the template file, preserving the subdirectory structure</li>
-              <li>Edit the copied file — your changes persist after plugin updates</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Template Hierarchy</h3>
-            <ul>
-              <li><code>single-event.php</code> — Single event detail page</li>
-              <li><code>archive-event.php</code> — Event archive listing page</li>
-              <li><code>content-single-event.php</code> — Content inside single event</li>
-              <li><code>content-event.php</code> — Content inside event listings</li>
-              <li><code>ticket/</code> — All ticket-related template partials</li>
-            </ul>
-          </article>
-        </div>
+        <h2>How to Override and Change Event Templates</h2>
+        <p>Sometimes you may need to change some of the default design or content to your own design, such as if you want to change the icons or add/remove a new class. We have the override feature in the WooCommerce Event Manager plugin. So you can do it easily and very smartly.</p>
+        <p>For example, you want to change the default icons of the sidebar address list. To do this please follow the process below:</p>
+        <ol>
+          <li>First, go to your theme folder and create a new folder named <strong>mage-events</strong>. Then enter into this newly created folder. Create another folder into it name it as <strong>single</strong>.</li>
+          <li>Now go to the <code>plugins/mage-eventpress/templates</code> folder. Copy the <code>location_list.php</code> file.</li>
+          <li>Go back to your theme folder then go to <code>mage-events/single</code> folder and paste the template file.</li>
+          <li>Now open the template file and change the icons. The plugin always loads this template file <code>location_list.php</code> from your theme folder. So this change will never be lost in any future update of the plugin.</li>
+        </ol>
+        <p>You can follow this process to override any template files of the WooCommerce Event Manager Plugin.</p>
       </section>
 
       <section class="doc-section" id="creating-new-templates">
-        <h2>Creating New Theme Templates</h2>
-        <p>You can create entirely new template files for custom event layouts. Use WordPress template hierarchy conventions to target specific event views.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Custom Template Files</h3>
-            <ul>
-              <li><code>single-event-{slug}.php</code> — Template for a specific event slug</li>
-              <li><code>single-event-{id}.php</code> — Template for a specific event ID</li>
-              <li><code>taxonomy-event_category-{slug}.php</code> — Category-specific archive</li>
-              <li><code>taxonomy-event_organizer-{slug}.php</code> — Organizer-specific archive</li>
-              <li>Use <code>template-loader.php</code> hooks for advanced custom routing</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Template Tags & Functions</h3>
-            <ul>
-              <li><code>mep_get_event_title()</code> — Retrieve the event title</li>
-              <li><code>mep_get_event_date()</code> — Display the event date</li>
-              <li><code>mep_get_event_time()</code> — Display the event time</li>
-              <li><code>mep_get_event_location()</code> — Get the venue location</li>
-              <li><code>mep_get_ticket_price()</code> — Retrieve ticket price info</li>
-            </ul>
-          </article>
+        <h2>How to Create New Theme/Template</h2>
+        <p>WooCommerce Events Manager plugin is fully developer friendly. It comes with 4 pre-active themes, but most of the time clients want to make a custom theme which is similar to their theme or any design. That&rsquo;s why we made our plugin fully flexible so you can easily create a new theme/template or override any default theme. If you have experience in customizing WooCommerce template then it will be very easy for you. It&rsquo;s like WooCommerce templating.</p>
+        <ol>
+          <li>First, you need to copy the <code>mage-eventpress/templates/</code> folder from the plugin folder, and paste it into your theme folder and rename it as <strong>mage-events</strong>: <code>theme-folder/mage-events/</code></li>
+          <li>Now you can create as many templates/themes as you want. You just need to put your theme files into: <code>theme-folder/mage-events/themes/</code></li>
+          <li>Suppose you want to make a theme and the file name will be <code>dhaka.php</code>. The file structure will be: <code>theme-folder/mage-events/themes/dhaka.php</code></li>
+          <li>Then you need to create a theme name, just like WordPress page template naming. You just need to set the name in the first line by PHP comment: <code>// Template Name: Dhaka</code></li>
+        </ol>
+        <p>That&rsquo;s it! You can now find this theme in the template list which you can find in the event page in dashboard and the event settings page.</p>
+
+        <h3>Available Hooks for Custom Themes</h3>
+        <p>WooCommerce Event Manager plugin comes with a bunch of hooks which you can use anywhere to display values:</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_title</code></div>
+              <div class="url-desc">Display the event title.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_thumbnail</code></div>
+              <div class="url-desc">Display the event featured image.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_date</code></div>
+              <div class="url-desc">Display event date with time.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_date_only</code></div>
+              <div class="url-desc">Display event date only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_time_only</code></div>
+              <div class="url-desc">Display event time only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_details</code></div>
+              <div class="url-desc">Display event details.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_add_to_cart</code></div>
+              <div class="url-desc">Display the event cart section with ticket type, extra service, and cart button.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_faq</code></div>
+              <div class="url-desc">Display event frequently asked questions.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_map</code></div>
+              <div class="url-desc">Generate the Google Map with event location.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_price</code></div>
+              <div class="url-desc">Print the event price.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_seat</code></div>
+              <div class="url-desc">Display event total seat and available seats.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_organizer</code></div>
+              <div class="url-desc">Print the event organizer name.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location</code></div>
+              <div class="url-desc">Display event location as address.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location_venue</code></div>
+              <div class="url-desc">Display the event venue name.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location_street</code></div>
+              <div class="url-desc">Display event address street only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location_state</code></div>
+              <div class="url-desc">Display event address state only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location_city</code></div>
+              <div class="url-desc">Display event address city only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_location_country</code></div>
+              <div class="url-desc">Display event address country only.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_social_share</code></div>
+              <div class="url-desc">Display social share buttons.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_event_add_calendar</code></div>
+              <div class="url-desc">Display Add to Calendar button.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <section class="doc-section" id="pdf-tickets">
-        <h2>PDF Ticket Design</h2>
-        <p>Customise the PDF ticket layout that is generated when attendees purchase tickets. You can modify the header, body content, footer, and QR code placement.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>PDF Template Override</h3>
-            <ul>
-              <li>Copy <code>templates/pdf-ticket.php</code> to your theme override folder</li>
-              <li>Edit the HTML structure to match your brand</li>
-              <li>Add your company logo, colours, and typography</li>
-              <li>Modify ticket data fields shown on the PDF</li>
-              <li>Test the PDF output by purchasing a test ticket</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>PDF Styling Tips</h3>
-            <ul>
-              <li>Use inline CSS for PDF compatibility</li>
-              <li>Keep the design clean — PDFs are often printed on small paper</li>
-              <li>Include essential info: event name, date, time, venue, attendee name</li>
-              <li>Place the QR code in a prominent, scannable position</li>
-              <li>Add a unique ticket ID and barcode for entry scanning</li>
-            </ul>
-          </article>
+        <h2>How to Create Your Own PDF Ticket Design</h2>
+        <p>We have a PDF Ticket add-on that generates a PDF Ticket for a registered attendee of an event. By default, there is a simple basic PDF ticket design. But if you want you can create your own design PDF ticket.</p>
+        <ol>
+          <li>First copy this folder from the PDF Addon Plugin: <code>woocommerce-event-manager-pdf-ticket/templates/pdf-theme</code></li>
+          <li>Then paste it into your theme folder, and rename the <code>pdf-theme</code> folder to <code>mage-events-pdf-themes</code></li>
+          <li>Now create your own theme. Create a new PHP file name it as you want. Then open the file and add this line at the beginning of the file: <code>&lt;?php // Template Name: YOUR THEME NAME HERE</code></li>
+          <li>Now start your Ticket design HTML. You can code as you wish, but remember there are some limitations for CSS attributes for PDF generation.</li>
+        </ol>
+
+        <h3>Available PDF Hooks</h3>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_logo</code></div>
+              <div class="url-desc">Show PDF logo set in PDF settings page.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_company_address</code></div>
+              <div class="url-desc">Show company address.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_company_phone</code></div>
+              <div class="url-desc">Show company phone number.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_name</code></div>
+              <div class="url-desc">Show registered event name.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_org_name</code></div>
+              <div class="url-desc">Show event organizer name.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_start_date</code></div>
+              <div class="url-desc">Show event start date.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_start_time</code></div>
+              <div class="url-desc">Show event start time.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_attendee_info</code></div>
+              <div class="url-desc">Show attendee info given during registration.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_location</code></div>
+              <div class="url-desc">Show event location.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_qr_code</code></div>
+              <div class="url-desc">Display QR code. Pass the permalink as argument: <code>do_action('mep_qr_code', get_the_permalink())</code>.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_order_id</code></div>
+              <div class="url-desc">Show order ID.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_ticket_no</code></div>
+              <div class="url-desc">Show ticket number.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_ticket_price</code></div>
+              <div class="url-desc">Show ticket price.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_ticket_type</code></div>
+              <div class="url-desc">Show ticket type.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_ticket_term_title</code></div>
+              <div class="url-desc">Show terms text title.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fce4ec;color:#c62828;">Hook</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>mep_pdf_event_ticket_term_text</code></div>
+              <div class="url-desc">Show terms text.</div>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <section class="doc-section" id="social-share-icons">
-        <h2>Social Share Icons</h2>
-        <p>Override the default social share icons on the event details page. You can add, remove, or rearrange share buttons for Facebook, Twitter, LinkedIn, and more.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Customising Share Icons</h3>
-            <ul>
-              <li>Override <code>templates/social-share.php</code> in your theme</li>
-              <li>Add new networks: Pinterest, WhatsApp, Telegram, Email</li>
-              <li>Use custom icon sets (FontAwesome, SVG sprites, or images)</li>
-              <li>Modify the share URL structure for each platform</li>
-              <li>Add tracking parameters to share URLs for analytics</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Available Hook Points</h3>
-            <ul>
-              <li><code>mep_before_social_share</code> — Content before share icons</li>
-              <li><code>mep_after_social_share</code> — Content after share icons</li>
-              <li><code>mep_social_share_list</code> — Filter the share networks array</li>
-              <li>Use these hooks to inject custom share services</li>
-              <li>Test shared links on each platform for correct URL formatting</li>
-            </ul>
-          </article>
-        </div>
+        <h2>How to Override and Change/Add New Social Share Icon</h2>
+        <p>The WooCommerce Event Manager plugin has a wonderful template override feature. You can modify or add any content to any template. If you want to change/add a new social share icon in the Share button template, please follow the process below.</p>
+        <ol>
+          <li>First, go to your theme folder and create a new folder named <strong>mage-events</strong>. Then enter into this newly created folder. Create another folder into it name it a <strong>single</strong>.</li>
+          <li>Now go to the <code>plugins/mage-eventpress/templates</code> folder. Copy the <code>share_btn.php</code> file.</li>
+          <li>Go back to your theme folder then go to <code>mage-events/single</code> folder and paste the template file.</li>
+          <li>Now you can edit this file as you wish. You can add a new share button or change the existing button.</li>
+        </ol>
       </section>
 
       <section class="doc-section" id="category-organizer-templates">
-        <h2>Category & Organizer Templates</h2>
-        <p>Override the archive templates for event categories and organizers. These templates control how lists of events grouped by category or organizer are displayed.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Category Archives</h3>
-            <ul>
-              <li>Copy <code>templates/taxonomy-event_category.php</code> to your theme</li>
-              <li>Customise the header to show the category name and description</li>
-              <li>Change the layout style (list, grid, or custom)</li>
-              <li>Add category-specific banners or branding</li>
-              <li>Include subcategory navigation for hierarchical categories</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Organizer Archives</h3>
-            <ul>
-              <li>Copy <code>templates/taxonomy-event_organizer.php</code> to your theme</li>
-              <li>Show organizer profile details at the top of the page</li>
-              <li>Display all events by that organizer in a grid or list</li>
-              <li>Add links to organizer website and social profiles</li>
-              <li>Include an organizer bio or description section</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="doc-section" id="template-best-practices">
-        <h2>Template Override Best Practices</h2>
-        <p>Follow these guidelines to ensure your template overrides remain maintainable, compatible, and performant.</p>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Maintenance Tips</h3>
-            <ul>
-              <li>Document each overridden template in a readme file</li>
-              <li>Review overridden templates after each plugin update</li>
-              <li>Use a child theme to keep customisations separate</li>
-              <li>Version control your theme files with Git</li>
-              <li>Test on a staging site before deploying to production</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Compatibility Checklist</h3>
-            <ul>
-              <li>Verify that all required template tags still exist after updates</li>
-              <li>Check for new template files added by plugin updates</li>
-              <li>Ensure your overridden template uses the same PHP version features</li>
-              <li>Test with both free and Pro versions of the plugin</li>
-              <li>Validate HTML output with W3C validator</li>
-            </ul>
-          </article>
-        </div>
+        <h2>How to Override and Change Event Category or Organizer Page Templates</h2>
+        <p>The WooCommerce Events Manager plugin is fully developer-friendly. You can follow the steps below if you want to change or override any part of the category or organizer list page design. If you have experience customizing WooCommerce templates, it will be effortless for you. It&rsquo;s like WooCommerce templating.</p>
+        <ol>
+          <li>First, you need to create a new folder in your active theme folder and rename it as <strong>mage-events</strong>: <code>theme-folder/mage-events/</code></li>
+          <li>Now, please go to <code>wp-content/plugins/mage-eventpress/templates</code> folder and copy the file <code>taxonomy-category.php</code> or the <code>taxonomy-organizer.php</code> file and paste it to the <code>theme-folder/mage-events/</code> folder.</li>
+          <li>You can change any part of the code in the template files. Suppose you want to change the grid style to the list style of the event list on the category page. You need to change the code line 17:</li>
+        </ol>
+        <p>Change from:</p>
+        <pre><code>do_action('mep_event_list_shortcode', get_the_id(), 'three_column', 'grid');</code></pre>
+        <p>Change to:</p>
+        <pre><code>do_action('mep_event_list_shortcode', get_the_id(), 'one_column', 'list');</code></pre>
       </section>
 
     </main>
   </div>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
@@ -214,6 +412,7 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Template Override' }
   ], '../../images/MG-web-logo.webp');
+  renderFooter();
 })();
 </script>
 </body>
