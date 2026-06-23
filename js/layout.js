@@ -107,7 +107,7 @@ function Topbar({ navLinks, logoPath }) {
   );
 }
 
-function BoardRow({ code, img, alt, dest, sub, badge, countHref, countLabel, statusLabel, goHref, delay }) {
+function BoardRow({ code, img, alt, dest, sub, badge, countHref, countLabel, goHref, delay }) {
   return h('div', { className: 'board-row' },
     h('span', { className: 'code flap', style: { animationDelay: delay } },
       h('img', { src: img, alt: alt })
@@ -122,7 +122,6 @@ function BoardRow({ code, img, alt, dest, sub, badge, countHref, countLabel, sta
     h('div', { className: 'count-wrap' },
       h('a', { href: countHref, className: 'count flap', style: { animationDelay: delay } }, countLabel)
     ),
-    h('span', { className: 'status flap', style: { animationDelay: delay } }, statusLabel),
     h('a', { href: goHref, className: 'go flap', style: { animationDelay: delay } }, 'Read Documentation')
   );
 }

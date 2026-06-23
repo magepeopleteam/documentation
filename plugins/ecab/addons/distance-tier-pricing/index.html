@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distance Tier Pricing — eCab Add‑On</title>
+<link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon.ico">
+<link rel="stylesheet" href="../../../../style.css">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../../../js/layout.js"></script>
+</head>
+<body>
+
+  <div id="topbar-root"></div>
+
+  <section class="hero">
+    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
+    <h1>Distance Tier Pricing &mdash; eCab Add‑On</h1>
+    <p class="lede">Charge accurately with tiered pricing based on distance. Create flexible fare rules to match short, medium, or long rides and increase your earning potential.</p>
+  </section>
+
+  <main id="main">
+
+  </main>
+
+  <footer>
+    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 49 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
+  </footer>
+
+<script>
+(function(){
+  "use strict";
+
+  renderTopbar([
+    { href: '../../../../index.html', label: 'All Plugins' },
+    { href: '../../index.html', label: 'eCab' },
+    { href: '#', label: 'Distance Tier Pricing' }
+  ], '../../../../images/MG-web-logo.webp');
+
+  var clockEl = document.getElementById('clock');
+  function tick(){
+    var d = new Date();
+    var pad = function(n){ return n.toString().padStart(2,'0'); };
+    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
