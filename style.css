@@ -341,15 +341,19 @@
     font-weight:600;
     padding:7px 14px;
     border-radius:6px;
-    background:#059669;
-    color:#fff;
+    background:transparent;
+    color:var(--ink-dim);
+    border:1px solid var(--rule);
     text-decoration:none;
-    transition:background .2s;
+    transition:background .2s, color .2s;
     white-space:nowrap;
     display:inline-flex;
     justify-self:center;
+    grid-column:4;
   }
-  .board-row a.buy:hover{ background:#047857; }
+  .board-row a.buy:hover{ background:var(--bg-soft); color:var(--ink); border-color:var(--ink-faint); }
+  .btn-group{ display:contents; }
+  .board-row a.go{ grid-column:5; justify-self:end; }
 
   .flap{
     display:inline-block;
@@ -385,10 +389,10 @@
       order:2;
     }
     .board-row .dest{ font-size:15px; }
-    /* line 2: addon count, then the buy and read-docs buttons pushed right */
+    /* line 2: addon count, then button group pushed right */
     .board-row > .count-wrap{ flex:0 0 auto; order:3; justify-content:flex-start; }
-    .board-row > a.buy{ order:4; margin-left:auto; }
-    .board-row > a.go{ order:5; }
+    .board-row > .btn-group{ order:4; display:flex; gap:6px; }
+    .board-row > .btn-group a{ font-size:11px; padding:6px 10px; }
   }
 
   /* ---------------- DOCS LAYOUT (plugin / addon pages) ---------------- */
