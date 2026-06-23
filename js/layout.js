@@ -213,10 +213,24 @@ function PluginSection({ id, dataName, ticketId, title, subtitle, description, a
   );
 }
 
-function Footer({ pluginCount, addonCount }) {
+function Footer({ copyright, pluginCount, addonCount }) {
+  if (copyright) {
+    return h('footer', null,
+      h('p', null,
+        '\u00a9 2026 ',
+        h('a', { href: 'https://mage-people.com', target: '_blank', rel: 'noopener' }, 'MagePeople'),
+        '. All rights reserved.'
+      )
+    );
+  }
   return h('footer', null,
-    'BOOKING SUITE DOCS \u00b7 ' + pluginCount + ' PLUGINS \u00b7 ' + addonCount + ' PLUGIN ADDONS \u00b7 BUILT WITH PLAIN HTML, CSS & JS'
+    'BOOKING SUITE DOCS \u00b7 ' + (pluginCount || '7') + ' PLUGINS \u00b7 ' + (addonCount || '44') + ' PLUGIN ADDONS \u00b7 BUILT WITH PLAIN HTML, CSS & JS'
   );
+}
+
+function renderFooter(opts) {
+  var el = document.getElementById('footer-root');
+  if (el) ReactDOM.render(h(Footer, opts || {}), el);
 }
 
 function renderTopbar(navLinks, logoPath) {

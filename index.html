@@ -720,9 +720,7 @@
  
   </main>
  
-  <footer>
-    <p>&copy; 2026 <a href="https://mage-people.com" target="_blank" rel="noopener">MagePeople</a>. All rights reserved.</p>
-  </footer>
+  <div id="footer-root"></div>
  
 <script>
 (function(){
@@ -737,6 +735,9 @@
     { href: '#ecab', label: 'eCab' },
     { href: '#wprently', label: 'WpRently' },
   ], 'images/MG-web-logo.webp');
+
+  /* ---- render footer via React ---- */
+  renderFooter({ copyright: true });
 
   /* ---- live clock ---- */
   var clockEl = document.getElementById('clock');
@@ -823,7 +824,7 @@
 
   /* ---- active nav link on scroll ---- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('#topnav a'));
-  var sections = Array.prototype.slice.call(document.querySelectorAll('.plugin'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.plugin, #all-plugins'));
  
   if('IntersectionObserver' in window){
     var observer = new IntersectionObserver(function(entries){
@@ -839,6 +840,14 @@
  
     sections.forEach(function(s){ observer.observe(s); });
   }
+ 
+  /* ---- active nav link on click ---- */
+  navLinks.forEach(function(link){
+    link.addEventListener('click', function(){
+      navLinks.forEach(function(l){ l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
  
 })();
 </script>
