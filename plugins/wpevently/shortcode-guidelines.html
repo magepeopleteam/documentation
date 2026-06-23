@@ -32,7 +32,7 @@
         <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
         <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
         <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
+        <a href="general-guidelines.html" class="docs-nav-link">FAQ</a>
       </nav>
     </aside>
     <main class="docs-content">
@@ -280,12 +280,498 @@
         </div>
       </section>
 
+      <section class="doc-section" id="list-search-shortcode">
+        <h2>Events — List with Search Filter Shortcode</h2>
+        <p>This shortcode presents the event list with a search filter.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list column=4 show=4 pagination='yes' search-filter='yes']</code> — Grid with search filter, 4 columns, 4 per page</li>
+              <li><code>[event-list search-filter='yes']</code> — Add search filter to default event list</li>
+              <li>The <code>search-filter</code> parameter adds a live search box above the event grid</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>search-filter</code> — Enable search filter (<code>yes</code>/<code>no</code>)</li>
+              <li><code>show</code> — Events per page with pagination</li>
+              <li><code>column</code> — Number of grid columns (2-4)</li>
+              <li><code>pagination</code> — Enable pagination (<code>yes</code>/<code>no</code>)</li>
+              <li>Works with any <code>[event-list]</code> style variant</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="event-params-shortcode">
+        <h2>Event List Shortcode Parameters Reference</h2>
+        <p>Complete list of all parameters available in the <code>[event-list]</code> shortcode:</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Parameter Table</h3>
+            <table class="params-table">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>cat</code></td><td>Category ID (integer)</td><td><code>0</code></td></tr>
+                <tr><td><code>org</code></td><td>Organizer ID (integer)</td><td><code>0</code></td></tr>
+                <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code>, <code>minimal</code>, <code>native</code>, <code>timeline</code>, <code>title</code>, <code>spring</code>, <code>winter</code></td><td><code>grid</code></td></tr>
+                <tr><td><code>column</code></td><td><code>3</code>, <code>4</code> (integer)</td><td><code>3</code></td></tr>
+                <tr><td><code>cat-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td></tr>
+                <tr><td><code>org-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td></tr>
+                <tr><td><code>show</code></td><td>Number of events (integer)</td><td><code>-1</code> (all)</td></tr>
+                <tr><td><code>pagination</code></td><td><code>yes</code>, <code>no</code>, <code>carousal</code></td><td><code>no</code></td></tr>
+                <tr><td><code>city</code></td><td>City name</td><td><code>null</code></td></tr>
+                <tr><td><code>country</code></td><td>Country name</td><td><code>null</code></td></tr>
+                <tr><td><code>carousal-nav</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td></tr>
+                <tr><td><code>carousal-dots</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td></tr>
+                <tr><td><code>carousal-id</code></td><td>Unique ID (integer)</td><td><code>102448</code></td></tr>
+                <tr><td><code>timeline-mode</code></td><td><code>vertical</code>, <code>horizontal</code></td><td><code>vertical</code></td></tr>
+                <tr><td><code>sort</code></td><td><code>ASC</code>, <code>DESC</code></td><td><code>ASC</code></td></tr>
+                <tr><td><code>status</code></td><td><code>upcoming</code>, <code>expired</code></td><td><code>upcoming</code></td></tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="vertical-timeline-shortcode">
+        <h2>Events — Vertical Timeline Style Shortcode</h2>
+        <p>Display events in a vertical timeline layout with dates arranged along a central line.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='timeline' timeline-mode='vertical']</code> — Vertical timeline view</li>
+              <li><code>[event-list style='timeline' timeline-mode='vertical' limit='6']</code> — Limit to 6 events</li>
+              <li><code>[event-list style='timeline' timeline-mode='vertical' category='conference']</code> — Filter by category</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>style</code> — Set to <code>timeline</code> to enable timeline layout</li>
+              <li><code>timeline-mode</code> — Layout direction: <code>vertical</code> or <code>horizontal</code></li>
+              <li><code>limit</code> — Number of events to display</li>
+              <li><code>category</code> — Filter by event category slug</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="horizontal-timeline-shortcode">
+        <h2>Events — Horizontal Timeline Style Shortcode</h2>
+        <p>Display events in a horizontal timeline layout with dates flowing left to right.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='timeline' timeline-mode='horizontal']</code> — Horizontal timeline view</li>
+              <li><code>[event-list style='timeline' timeline-mode='horizontal' limit='8']</code> — Limit to 8 events</li>
+              <li><code>[event-list style='timeline' timeline-mode='horizontal' category='workshop']</code> — Filter by category</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>style</code> — Set to <code>timeline</code></li>
+              <li><code>timeline-mode</code> — Set to <code>horizontal</code></li>
+              <li><code>limit</code> — Number of events to display</li>
+              <li>Ideal for featured event sliders and hero sections</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="title-style-shortcode">
+        <h2>Events — Title Style Shortcode</h2>
+        <p>Display events as a clean title-only list without thumbnails or dates. Perfect for compact sidebars and navigation areas.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='title']</code> — Title-only event list</li>
+              <li><code>[event-list style='title' limit='10']</code> — Shows 10 event titles</li>
+              <li><code>[event-list style='title' category='seminar']</code> — Filter by category</li>
+              <li>No thumbnails, dates, or buttons are rendered</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>style</code> — Set to <code>title</code></li>
+              <li><code>limit</code> — Number of titles to display</li>
+              <li><code>category</code> — Filter by event category slug</li>
+              <li>Minimal markup for easy custom styling</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="spring-style-shortcode">
+        <h2>Events — Spring Style Shortcode</h2>
+        <p>Display events with a vibrant spring-themed design aesthetic using warm colours and soft styling.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='spring']</code> — Spring-themed event grid</li>
+              <li><code>[event-list style='spring' column='4']</code> — 4-column spring layout</li>
+              <li><code>[event-list style='spring' limit='8']</code> — Limit to 8 events</li>
+              <li>Applies a unique spring colour scheme to cards</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>style</code> — Set to <code>spring</code></li>
+              <li><code>column</code> — Grid columns (3 or 4)</li>
+              <li><code>limit</code> — Number of events</li>
+              <li><code>category</code> — Filter by category slug</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="winter-style-shortcode">
+        <h2>Events — Winter Style Shortcode</h2>
+        <p>Display events with a cool winter-themed design using icy blues and clean white aesthetics.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='winter']</code> — Winter-themed event grid</li>
+              <li><code>[event-list style='winter' column='4']</code> — 4-column winter layout</li>
+              <li><code>[event-list style='winter' limit='6']</code> — Limit to 6 events</li>
+              <li>Applies a distinctive winter colour palette</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>style</code> — Set to <code>winter</code></li>
+              <li><code>column</code> — Grid columns (3 or 4)</li>
+              <li><code>limit</code> — Number of events</li>
+              <li><code>category</code> — Filter by category slug</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="calendar-pro-shortcode">
+        <h2>Events Calendar Shortcode — Pro Version</h2>
+        <p>Advanced calendar shortcodes available in the Pro version with category and month filtering.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[mep-event-calendar]</code> — Full pro calendar with all events</li>
+              <li><code>[mep-event-calendar cat_id=44]</code> — Filter calendar by category ID</li>
+              <li><code>[mep-event-calendar-month month='2028-09']</code> — Show calendar for a specific month</li>
+              <li>Replace <code>44</code> and <code>2028-09</code> with your category ID and target month</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>cat_id</code> — Filter calendar events by category ID</li>
+              <li><code>month</code> — Display a specific month (format: <code>YYYY-MM</code>)</li>
+              <li>Requires the Pro version of WooCommerce Event Manager</li>
+              <li>AJAX-powered month navigation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="speakers-shortcode">
+        <h2>Events Speakers Shortcode</h2>
+        <p>Display event speakers. Show speakers for a specific event or list all speakers.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-speaker-list]</code> — Display all speakers</li>
+              <li><code>[event-speaker-list event=14829]</code> — Speakers for a specific event ID</li>
+              <li>Replace <code>14829</code> with your actual event ID</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Notes</h3>
+            <ul>
+              <li>Without the <code>event</code> parameter, all speakers are listed</li>
+              <li>With the <code>event</code> parameter, only speakers assigned to that event appear</li>
+              <li>Ideal for conference and multi-speaker event pages</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="registration-shortcode">
+        <h2>Single Event Registration Shortcode</h2>
+        <p>Display the registration form for a single event so users can add tickets directly to their cart.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-add-cart-section event=10408]</code> — Registration form for event ID 10408</li>
+              <li>Replace <code>10408</code> with your actual event ID</li>
+              <li>Renders the full ticket selection and add-to-cart interface</li>
+              <li>Works with WooCommerce cart and checkout flow</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>event</code> — (Required) The event ID to show registration for</li>
+              <li>Displays ticket types, quantities, and pricing</li>
+              <li>Integrates with attendee form fields</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="expired-shortcode">
+        <h2>Expired Events Shortcode</h2>
+        <p>Display a list of expired or past events that have already taken place.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[expire-event-list]</code> — List all expired events</li>
+              <li><code>[expire-event-list limit='5']</code> — Show only 5 expired events</li>
+              <li>Useful for archives and past event summaries</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Notes</h3>
+            <ul>
+              <li>Automatically filters events whose end date has passed</li>
+              <li>Can be combined with the <code>status</code> parameter on <code>[event-list]</code></li>
+              <li>Ideal for "Past Events" pages</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="city-shortcode">
+        <h2>Events by City Shortcode</h2>
+        <p>Display events filtered by a specific city name using the <code>city</code> parameter.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list city='Texas']</code> — Events in Texas</li>
+              <li><code>[event-list city='New York' style='grid']</code> — Grid layout filtered by city</li>
+              <li><code>[event-list city='London' limit='4']</code> — 4 events in London</li>
+              <li>Replace <code>Texas</code> with your desired city name</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>city</code> — City name to filter events by (case-sensitive)</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>Events are filtered server-side by the assigned city meta field</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="country-shortcode">
+        <h2>Events by Country Shortcode</h2>
+        <p>Display events filtered by a specific country code using the <code>country</code> parameter.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list country='US']</code> — Events in the United States</li>
+              <li><code>[event-list country='GB' style='grid']</code> — Grid of events in the UK</li>
+              <li><code>[event-list country='IN' limit='6']</code> — 6 events in India</li>
+              <li>Use ISO 2-letter country codes (US, GB, IN, DE, FR, etc.)</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>country</code> — ISO 2-letter country code</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>Combine with <code>city</code> for precise location filtering</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="city-list-shortcode">
+        <h2>Events City List Shortcode</h2>
+        <p>Display a list of all cities that have events, useful for city-based navigation.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-city-list]</code> — Shows all cities with events</li>
+              <li>Each city links to events in that location</li>
+              <li>Ideal for location-based event discovery</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Notes</h3>
+            <ul>
+              <li>Automatically extracts cities from event meta data</li>
+              <li>Only displays cities that have at least one event</li>
+              <li>Great for "Events Near You" style navigation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="pagination-shortcode">
+        <h2>Events With Pagination Shortcode</h2>
+        <p>Enable pagination on the event list to control how many events appear per page.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='grid' pagination='yes' show='8' column='4']</code> — Paginated grid with 8 events per page</li>
+              <li><code>[event-list pagination='yes' show='5']</code> — 5 events per page with pagination</li>
+              <li><code>[event-list style='list' pagination='yes' show='10']</code> — 10 events per page in list view</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>pagination</code> — Enable pagination (<code>yes</code>/<code>no</code>/<code>carousal</code>)</li>
+              <li><code>show</code> — Number of events per page</li>
+              <li>Page navigation links are automatically generated</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="single-organizer-shortcode">
+        <h2>Events by Single Organizer Shortcode</h2>
+        <p>Display events from a single organizer by using the <code>org</code> parameter with an organizer ID.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='grid' org='15']</code> — Events by organizer ID 15</li>
+              <li><code>[event-list org='8' style='list']</code> — List of events by organizer ID 8</li>
+              <li><code>[event-list org='22' limit='4']</code> — 4 events by organizer ID 22</li>
+              <li>Replace the number with your actual organizer ID</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>org</code> — Organizer ID (integer) to filter events by</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>Only events assigned to the specified organizer are shown</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="org-filter-shortcode">
+        <h2>Events Filter by Organization Shortcode</h2>
+        <p>Display an interactive organization filter dropdown above the event list.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='grid' org-filter='yes']</code> — Grid with organizer filter dropdown</li>
+              <li><code>[event-list org-filter='yes']</code> — Default list with organizer filter</li>
+              <li>Users can select an organizer from the dropdown to filter results</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>org-filter</code> — Show organizer filter dropdown (<code>yes</code>/<code>no</code>)</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>AJAX-powered filtering without page reload</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="single-category-shortcode">
+        <h2>Events by Single Category Shortcode</h2>
+        <p>Display events from a single category using the <code>cat</code> parameter with a category ID.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list cat='44']</code> — Events from category ID 44</li>
+              <li><code>[event-list cat='12' style='grid' column='4']</code> — 4-column grid from category ID 12</li>
+              <li><code>[event-list cat='7' limit='3']</code> — 3 events from category ID 7</li>
+              <li>Replace the number with your actual category ID</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>cat</code> — Category ID (integer) to filter events by</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>Use category slug with <code>category</code> parameter for string-based filtering</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="cat-filter-shortcode">
+        <h2>Events Filter by Category Shortcode</h2>
+        <p>Display an interactive category filter dropdown above the event list.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list cat-filter='yes']</code> — Default list with category filter dropdown</li>
+              <li><code>[event-list style='grid' cat-filter='yes']</code> — Grid with category filter</li>
+              <li>Users can select a category from the dropdown to filter</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Parameters</h3>
+            <ul>
+              <li><code>cat-filter</code> — Show category filter dropdown (<code>yes</code>/<code>no</code>)</li>
+              <li>All standard <code>[event-list]</code> parameters apply</li>
+              <li>AJAX-powered filtering without page reload</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="doc-section" id="columns-shortcode">
+        <h2>How to Define Column Numbers in Grid-Style Event List</h2>
+        <p>The <code>column</code> parameter controls how many columns appear in the grid-style layout.</p>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>Basic Usage</h3>
+            <ul>
+              <li><code>[event-list style='grid' column='3']</code> — 3-column grid</li>
+              <li><code>[event-list style='grid' column='4']</code> — 4-column grid</li>
+              <li><code>[event-list style='grid' column='3' limit='9']</code> — 3 columns with 9 events</li>
+              <li>Supports <code>3</code> or <code>4</code> columns</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Notes</h3>
+            <ul>
+              <li>Default value is <code>3</code> if not specified</li>
+              <li>Only applies when <code>style='grid'</code> is used</li>
+              <li>Responsive: columns stack on smaller screens</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
     </main>
   </div>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
@@ -295,6 +781,7 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderFooter();
 })();
 </script>
 </body>
