@@ -231,6 +231,19 @@ function Footer({ copyright, pluginCount, addonCount }) {
   );
 }
 
+function initCopyButtons(){
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var code = btn.getAttribute('data-code') || btn.previousElementSibling.textContent;
+      navigator.clipboard.writeText(code).then(function(){
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function(){ btn.textContent = 'Copy'; btn.classList.remove('copied'); },2000);
+      });
+    });
+  });
+}
+
 function initVideoPlayers(){
   document.querySelectorAll('.video-player').forEach(function(wrap){
     var vid = wrap.querySelector('video');

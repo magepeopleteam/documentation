@@ -40,44 +40,51 @@
       <section class="doc-section" id="event-list">
         <h2>Event List Shortcode</h2>
         <p>The main shortcode for displaying events. Supports multiple display styles, filters, and pagination via parameters.</p>
-        <pre><code>[event-list]</code></pre>
 
-        <h3>Parameters</h3>
-        <table class="params-table">
-          <thead>
-            <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code>, <code>minimal</code>, <code>native</code>, <code>timeline</code>, <code>title</code>, <code>spring</code>, <code>winter</code></td><td><code>grid</code></td><td>Display layout style</td></tr>
-            <tr><td><code>column</code></td><td>Integer (<code>3</code>, <code>4</code>)</td><td><code>3</code></td><td>Number of grid columns (grid style only)</td></tr>
-            <tr><td><code>cat</code></td><td>Category ID (integer)</td><td><code>0</code></td><td>Filter by category ID</td></tr>
-            <tr><td><code>org</code></td><td>Organizer ID (integer)</td><td><code>0</code></td><td>Filter by organizer ID</td></tr>
-            <tr><td><code>tag</code></td><td>Tag ID (integer)</td><td><code>0</code></td><td>Filter by tag ID</td></tr>
-            <tr><td><code>show</code></td><td>Integer</td><td><code>-1</code></td><td>Number of events to display (-1 = all)</td></tr>
-            <tr><td><code>pagination</code></td><td><code>yes</code>, <code>no</code>, <code>carousal</code></td><td><code>no</code></td><td>Enable pagination or carousel mode</td></tr>
-            <tr><td><code>pagination-style</code></td><td><code>load_more</code></td><td><code>load_more</code></td><td>Pagination style</td></tr>
-            <tr><td><code>cat-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show category filter dropdown</td></tr>
-            <tr><td><code>org-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show organizer filter dropdown</td></tr>
-            <tr><td><code>tag-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show tag filter dropdown</td></tr>
-            <tr><td><code>search-filter</code></td><td><code>yes</code>, empty</td><td>(empty)</td><td>Enable search/filter UI</td></tr>
-            <tr><td><code>city</code></td><td>City name</td><td>(empty)</td><td>Filter by city</td></tr>
-            <tr><td><code>state</code></td><td>State name</td><td>(empty)</td><td>Filter by state</td></tr>
-            <tr><td><code>country</code></td><td>Country name</td><td>(empty)</td><td>Filter by country</td></tr>
-            <tr><td><code>sort</code></td><td><code>ASC</code>, <code>DESC</code></td><td><code>ASC</code></td><td>Sort order</td></tr>
-            <tr><td><code>status</code></td><td><code>upcoming</code>, <code>expired</code></td><td><code>upcoming</code></td><td>Event status filter</td></tr>
-            <tr><td><code>year</code></td><td>Year (YYYY)</td><td>(empty)</td><td>Filter by year</td></tr>
-            <tr><td><code>timeline-mode</code></td><td><code>vertical</code>, <code>horizontal</code></td><td><code>vertical</code></td><td>Timeline direction</td></tr>
-            <tr><td><code>carousal-nav</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Carousel navigation arrows</td></tr>
-            <tr><td><code>carousal-dots</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Carousel dot indicators</td></tr>
-            <tr><td><code>carousal-id</code></td><td>Unique ID (integer)</td><td><code>102448</code></td><td>Carousel instance ID</td></tr>
-            <tr><td><code>title-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show title filter (<code>events_list</code>)</td></tr>
-            <tr><td><code>category-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show category filter (<code>events_list</code>)</td></tr>
-            <tr><td><code>organizer-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show organizer filter (<code>events_list</code>)</td></tr>
-            <tr><td><code>city-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show city filter (<code>events_list</code>)</td></tr>
-            <tr><td><code>state-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show state filter (<code>events_list</code>)</td></tr>
-            <tr><td><code>date-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show date filter (<code>events_list</code>)</td></tr>
-          </tbody>
-        </table>
+        <div class="shortcode-card">
+          <h3>Basic Usage</h3>
+          <div class="shortcode-box">
+            <code>[event-list]</code>
+            <button class="copy-btn" data-code="[event-list]">Copy</button>
+          </div>
+
+          <h3 style="margin-top:20px;">Parameters</h3>
+          <table class="params-table" style="margin-top:8px;">
+            <thead>
+              <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code>, <code>minimal</code>, <code>native</code>, <code>timeline</code>, <code>title</code>, <code>spring</code>, <code>winter</code></td><td><code>grid</code></td><td>Display layout style</td></tr>
+              <tr><td><code>column</code></td><td>Integer (<code>3</code>, <code>4</code>)</td><td><code>3</code></td><td>Number of grid columns (grid style only)</td></tr>
+              <tr><td><code>cat</code></td><td>Category ID (integer)</td><td><code>0</code></td><td>Filter by category ID</td></tr>
+              <tr><td><code>org</code></td><td>Organizer ID (integer)</td><td><code>0</code></td><td>Filter by organizer ID</td></tr>
+              <tr><td><code>tag</code></td><td>Tag ID (integer)</td><td><code>0</code></td><td>Filter by tag ID</td></tr>
+              <tr><td><code>show</code></td><td>Integer</td><td><code>-1</code></td><td>Number of events to display (-1 = all)</td></tr>
+              <tr><td><code>pagination</code></td><td><code>yes</code>, <code>no</code>, <code>carousal</code></td><td><code>no</code></td><td>Enable pagination or carousel mode</td></tr>
+              <tr><td><code>pagination-style</code></td><td><code>load_more</code></td><td><code>load_more</code></td><td>Pagination style</td></tr>
+              <tr><td><code>cat-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show category filter dropdown</td></tr>
+              <tr><td><code>org-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show organizer filter dropdown</td></tr>
+              <tr><td><code>tag-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show tag filter dropdown</td></tr>
+              <tr><td><code>search-filter</code></td><td><code>yes</code>, empty</td><td>(empty)</td><td>Enable search/filter UI</td></tr>
+              <tr><td><code>city</code></td><td>City name</td><td>(empty)</td><td>Filter by city</td></tr>
+              <tr><td><code>state</code></td><td>State name</td><td>(empty)</td><td>Filter by state</td></tr>
+              <tr><td><code>country</code></td><td>Country name</td><td>(empty)</td><td>Filter by country</td></tr>
+              <tr><td><code>sort</code></td><td><code>ASC</code>, <code>DESC</code></td><td><code>ASC</code></td><td>Sort order</td></tr>
+              <tr><td><code>status</code></td><td><code>upcoming</code>, <code>expired</code></td><td><code>upcoming</code></td><td>Event status filter</td></tr>
+              <tr><td><code>year</code></td><td>Year (YYYY)</td><td>(empty)</td><td>Filter by year</td></tr>
+              <tr><td><code>timeline-mode</code></td><td><code>vertical</code>, <code>horizontal</code></td><td><code>vertical</code></td><td>Timeline direction</td></tr>
+              <tr><td><code>carousal-nav</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Carousel navigation arrows</td></tr>
+              <tr><td><code>carousal-dots</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Carousel dot indicators</td></tr>
+              <tr><td><code>carousal-id</code></td><td>Unique ID (integer)</td><td><code>102448</code></td><td>Carousel instance ID</td></tr>
+              <tr><td><code>title-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show title filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>category-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show category filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>organizer-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show organizer filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>city-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show city filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>state-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show state filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>date-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show date filter (<code>events_list</code>)</td></tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="doc-section" id="style-examples">
@@ -161,73 +168,101 @@
         </div>
       </section>
 
-      <section class="doc-section" id="events-list-shortcode">
-        <h2>Events List with Search Filter</h2>
-        <p>Display events with an advanced search and filter UI including title search, date range, category, organizer, city, and state filters.</p>
-        <pre><code>[events_list search-filter='yes']</code></pre>
-        <p>This shortcode provides a rich filtering interface with title search, date pickers, category/organizer/city/state dropdowns, and grid/list/calendar view toggles.</p>
-      </section>
+      <section class="doc-section" id="shortcode-list">
+        <h2>All Shortcodes</h2>
+        <p>Quick-reference cards for every shortcode. Click <strong>Copy</strong> to copy a shortcode to your clipboard.</p>
+        <div class="shortcode-grid">
 
-      <section class="doc-section" id="expired-shortcode">
-        <h2>Expired Events Shortcode</h2>
-        <p>Display a list of expired or past events that have already taken place.</p>
-        <pre><code>[expire-event-list]</code></pre>
-        <p>Accepts all standard <code>[event-list]</code> parameters. Internally sets <code>status='expired'</code>.</p>
-      </section>
+          <div class="shortcode-card">
+            <h3>Events List with Search Filter</h3>
+            <p>Advanced search and filter UI including title search, date range, category, organizer, city, and state filters.</p>
+            <div class="shortcode-box">
+              <code>[events_list search-filter='yes']</code>
+              <button class="copy-btn" data-code="[events_list search-filter='yes']">Copy</button>
+            </div>
+          </div>
 
-      <section class="doc-section" id="recurring-shortcode">
-        <h2>Recurring Events Shortcode</h2>
-        <p>Display recurring event series. Accepts the same parameters as <code>[event-list]</code>.</p>
-        <pre><code>[event-list-recurring]</code></pre>
-      </section>
+          <div class="shortcode-card">
+            <h3>Expired Events</h3>
+            <p>Display past events that have already taken place. Accepts all standard <code>[event-list]</code> parameters.</p>
+            <div class="shortcode-box">
+              <code>[expire-event-list]</code>
+              <button class="copy-btn" data-code="[expire-event-list]">Copy</button>
+            </div>
+          </div>
 
-      <section class="doc-section" id="registration-shortcode">
-        <h2>Single Event Registration Shortcode</h2>
-        <p>Display the registration form with ticket selection for a single event.</p>
-        <pre><code>[event-add-cart-section event=10408]</code></pre>
-        <p><strong>Parameters:</strong></p>
-        <table class="params-table">
-          <thead>
-            <tr><th>Parameter</th><th>Required</th><th>Description</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>event</code></td><td>Yes</td><td>The event ID to show registration for</td></tr>
-          </tbody>
-        </table>
-      </section>
+          <div class="shortcode-card">
+            <h3>Recurring Events</h3>
+            <p>Display recurring event series. Accepts the same parameters as <code>[event-list]</code>.</p>
+            <div class="shortcode-box">
+              <code>[event-list-recurring]</code>
+              <button class="copy-btn" data-code="[event-list-recurring]">Copy</button>
+            </div>
+          </div>
 
-      <section class="doc-section" id="speakers-shortcode">
-        <h2>Event Speakers Shortcode</h2>
-        <p>Display event speakers.</p>
-        <pre><code>[event-speaker-list]</code></pre>
-      </section>
+          <div class="shortcode-card">
+            <h3>Event Registration</h3>
+            <p>Display the registration form with ticket selection for a single event.</p>
+            <div class="shortcode-box">
+              <code>[event-add-cart-section event=10408]</code>
+              <button class="copy-btn" data-code="[event-add-cart-section event=10408]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Required</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>event</code></td><td>Yes</td><td>The event ID to show registration for</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-      <section class="doc-section" id="city-list-shortcode">
-        <h2>Event City List Shortcode</h2>
-        <p>Display a list of all cities that have events.</p>
-        <pre><code>[event-city-list]</code></pre>
-      </section>
+          <div class="shortcode-card">
+            <h3>Event Speakers</h3>
+            <p>Display event speakers.</p>
+            <div class="shortcode-box">
+              <code>[event-speaker-list]</code>
+              <button class="copy-btn" data-code="[event-speaker-list]">Copy</button>
+            </div>
+          </div>
 
-      <section class="doc-section" id="calendar-free-shortcode">
-        <h2>Event Calendar Shortcode (Free)</h2>
-        <p>Display an interactive event calendar.</p>
-        <pre><code>[event-calendar]</code></pre>
-      </section>
+          <div class="shortcode-card">
+            <h3>Event City List</h3>
+            <p>Display a list of all cities that have events.</p>
+            <div class="shortcode-box">
+              <code>[event-city-list]</code>
+              <button class="copy-btn" data-code="[event-city-list]">Copy</button>
+            </div>
+          </div>
 
-      <section class="doc-section" id="calendar-pro-shortcode">
-        <h2>Event Calendar Shortcode (Pro)</h2>
-        <p>Advanced calendar shortcode available in the Pro version with category and month filtering.</p>
-        <pre><code>[mep-event-calendar]</code></pre>
-        <p><strong>Parameters:</strong></p>
-        <table class="params-table">
-          <thead>
-            <tr><th>Parameter</th><th>Description</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><code>cat_id</code></td><td>Filter calendar events by category ID</td></tr>
-            <tr><td><code>month</code></td><td>Display a specific month (format: <code>YYYY-MM</code>)</td></tr>
-          </tbody>
-        </table>
+          <div class="shortcode-card">
+            <h3>Event Calendar (Free)</h3>
+            <p>Display an interactive event calendar.</p>
+            <div class="shortcode-box">
+              <code>[event-calendar]</code>
+              <button class="copy-btn" data-code="[event-calendar]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Event Calendar (Pro)</h3>
+            <p>Advanced calendar with category and month filtering.</p>
+            <div class="shortcode-box">
+              <code>[mep-event-calendar]</code>
+              <button class="copy-btn" data-code="[mep-event-calendar]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>cat_id</code></td><td>Filter calendar events by category ID</td></tr>
+                <tr><td><code>month</code></td><td>Display a specific month (format: <code>YYYY-MM</code>)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
       </section>
 
     </main>
@@ -244,6 +279,7 @@
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
   renderFooter();
+  initCopyButtons();
 })();
 </script>
 </body>
