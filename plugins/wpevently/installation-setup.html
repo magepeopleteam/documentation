@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -43,31 +44,36 @@
 
         <h3>Automatic Install via WordPress (Recommended)</h3>
         <ol>
-          <li>Go to your admin page and go to Plugins &rarr; Add New.</li>
-          <li>Search for &ldquo;mage eventpress&rdquo;.</li>
-          <li>Find &ldquo;WooCommerce mage eventpress&rdquo; by Mage People team and click Install.</li>
-          <li>Activate it from the installation page or your Plugins page.</li>
+          <li>Go to your admin page and go to <strong>Plugins &rarr; Add New</strong>.</li>
+          <li>Search for &ldquo;evently&rdquo; or find &ldquo;WooCommerce evently&rdquo; by <strong>Mage People</strong> team and click <strong>Install</strong>.</li>
+          <li>Activate it from the installation page or your <strong>Plugins</strong> page.</li>
         </ol>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/Screenshot_89.png" alt="Install via WordPress admin" style="max-width:100%;height:auto;"></p>
+        <div class="video-player">
+          <video src="video/install.webm"></video>
+          <button class="video-btn"><i class="fas fa-play"></i></button>
+        </div>
 
         <h3>Adding via Zip file</h3>
         <ol>
-          <li>Download the plugin zip file from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
-          <li>Go to <strong>Plugins &rarr; Add New</strong>.</li>
-          <li>Click on the <strong>Upload Plugin</strong> button.</li>
-          <li>Choose the plugin zip file and click on <strong>Install Now</strong> button.</li>
-          <li>Activate the plugin from the installation page or your Plugins page.</li>
+          <li>Download the plugin zip from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
+          <li>Go to <strong>Plugins &rarr; Add New</strong>, click <strong>Upload Plugin</strong>, choose the zip, and click <strong>Install Now</strong>.</li>
+          <li>Activate the plugin from the installation or <strong>Plugins</strong> page.</li>
         </ol>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/install-wc-event-manager-plugin.png" alt="Install via zip upload" style="max-width:100%;height:auto;"></p>
+        <div class="video-player">
+          <video src="video/upload.webm"></video>
+          <button class="video-btn"><i class="fas fa-play"></i></button>
+        </div>
 
         <h3>Uploading via FTP</h3>
         <ol>
-          <li>Download the plugin zip file from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
-          <li>Connect to your blog via FTP.</li>
-          <li>Extract the zip file you downloaded, and upload the <code>mage-eventpress</code> folder to your <code>wp-content/plugins</code> folder.</li>
-          <li>Visit your Plugins page in the admin area.</li>
-          <li>Activate the plugin.</li>
+          <li>Download the plugin zip from the WordPress <a href="https://wordpress.org/plugins/mage-eventpress/" target="_blank">directory</a>.</li>
+          <li>Connect via FTP, extract the zip, and upload the <code>mage-eventpress</code> folder to <code>wp-content/plugins/</code>.</li>
+          <li>Go to your <strong>Plugins</strong> page and activate the plugin.</li>
         </ol>
+        <div class="video-player">
+          <video src="video/ftp.webm"></video>
+          <button class="video-btn"><i class="fas fa-play"></i></button>
+        </div>
       </section>
 
       <section class="doc-section" id="pro-version">
@@ -80,15 +86,15 @@
 
         <h3>Install WooCommerce Event Manager Addon: Form Builder</h3>
         <p>Download the plugin zip file from My Account after buying <a href="https://mage-people.com/product/mage-woo-event-booking-manager-pro/" target="_blank">pro version</a> then go to <strong>Plugins &rarr; Add New</strong>. Click on the <strong>Upload Plugin</strong> button. Choose the plugin zip file <code>woocommerce-event-manager-addon-form-builder.zip</code> and click on <strong>Install Now</strong> button.</p>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/install-wc-event-manager-plugin.png" alt="Install Form Builder addon" style="max-width:100%;height:auto;"></p>
+        <img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/install-wc-event-manager-plugin.png" alt="Install Form Builder addon">
 
         <h3>Install WooCommerce Event Manager Addon: PDF Tickets</h3>
         <p>It is a similar process to install the form builder addon. In this case just choose the plugin zip file <code>woocommerce-event-manager-pdf-ticket.zip</code> and click on <strong>Install Now</strong> button.</p>
         <p>Once installation is done, you will get a notice like below:</p>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-notice-1024x100.png" alt="mpdf support addon notice" style="max-width:100%;height:auto;"></p>
+        <img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-notice-1024x100.png" alt="mpdf support addon notice">
         <p>This notice appears because you need to install another <strong>mpdf support addon</strong> that you can install easily by clicking install. It may take some time if you install on a local server as its size is bigger.</p>
         <p>Once installation and activation is done you can check the status menu in the left sidebar and you will see like this:</p>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-status-1024x219.png" alt="mpdf status screen" style="max-width:100%;height:auto;"></p>
+        <img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/mpdf-status-1024x219.png" alt="mpdf status screen">
         <p>If you see all statuses look green, that means all done and you are ready to use.</p>
       </section>
 
@@ -106,6 +112,7 @@
     { href: '', label: 'Installation & Setup' }
   ], '../../images/MG-web-logo.webp');
   renderFooter();
+  initVideoPlayers();
 })();
 </script>
 </body>

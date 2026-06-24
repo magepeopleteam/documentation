@@ -231,6 +231,21 @@ function Footer({ copyright, pluginCount, addonCount }) {
   );
 }
 
+function initVideoPlayers(){
+  document.querySelectorAll('.video-player').forEach(function(wrap){
+    var vid = wrap.querySelector('video');
+    var btn = wrap.querySelector('.video-btn');
+    if(!vid||!btn)return;
+    vid.removeAttribute('controls');
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      if(vid.paused){ vid.play(); btn.innerHTML='<i class=\"fas fa-pause\"></i>'; }
+      else{ vid.pause(); btn.innerHTML='<i class=\"fas fa-play\"></i>'; }
+    });
+    vid.addEventListener('ended',function(){ btn.innerHTML='<i class=\"fas fa-play\"></i>'; });
+  });
+}
+
 function renderFooter(opts) {
   var el = document.getElementById('footer-root');
   if (el) ReactDOM.render(h(Footer, opts || {}), el);
