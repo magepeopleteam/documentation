@@ -423,11 +423,15 @@
   .docs-nav-link.active{color:var(--amber); border-left-color:var(--amber); background:var(--amber-glow);}
   .docs-content{flex:1; min-width:0;}
   .docs-content img{width:100%; height:auto; display:block; border:1px solid var(--rule); border-radius:8px;}
-  .video-player{position:relative; width:100%;}
+  .video-player{position:relative; width:100%; cursor:pointer;}
   .video-player video{width:100%; height:auto; display:block; border:1px solid var(--rule); border-radius:8px;}
-  .video-btn{position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.6); color:#fff; border:none; border-radius:50%; width:44px; height:44px; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s;}
+  .video-btn{position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.6); color:#fff; border:none; border-radius:50%; width:44px; height:44px; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s; z-index:1;}
   .video-btn:hover{background:rgba(0,0,0,0.8);}
   .video-btn i{margin-left:2px;}
+  .video-modal{position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; padding:24px;}
+  .video-modal video{max-width:100%; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.5);}
+  .video-close{position:absolute; top:16px; right:24px; background:none; border:none; color:#fff; font-size:32px; cursor:pointer; line-height:1; opacity:0.7; transition:opacity .15s;}
+  .video-close:hover{opacity:1;}
   .doc-section{
     scroll-margin-top:84px;
     margin-bottom:56px;
