@@ -49,39 +49,73 @@
           </div>
 
           <h3 style="margin-top:20px;">Parameters</h3>
-          <table class="params-table" style="margin-top:8px;">
+          <p style="font-size:13px;color:var(--ink-dim);margin:4px 0 12px;">Add any of these parameters inside the shortcode like <code>[event-list style='grid' cat='5' pagination='yes']</code>. Multiple parameters can be combined.</p>
+
+          <h4 style="font-family:var(--mono);font-size:12px;font-weight:700;margin:16px 0 4px;color:var(--ink);">Layout</h4>
+          <p style="font-size:12px;color:var(--ink-dim);margin:2px 0 6px;">Control how events are displayed — choose a layout style, set grid columns, or switch to timeline view.</p>
+          <table class="params-table">
             <thead>
               <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
             </thead>
             <tbody>
               <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code>, <code>minimal</code>, <code>native</code>, <code>timeline</code>, <code>title</code>, <code>spring</code>, <code>winter</code></td><td><code>grid</code></td><td>Display layout style</td></tr>
               <tr><td><code>column</code></td><td>Integer (<code>3</code>, <code>4</code>)</td><td><code>3</code></td><td>Number of grid columns (grid style only)</td></tr>
+              <tr><td><code>timeline-mode</code></td><td><code>vertical</code>, <code>horizontal</code></td><td><code>vertical</code></td><td>Timeline direction (requires <code>style='timeline'</code>)</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-family:var(--mono);font-size:12px;font-weight:700;margin:16px 0 4px;color:var(--ink);">Pagination &amp; Carousel</h4>
+          <p style="font-size:12px;color:var(--ink-dim);margin:2px 0 6px;">Add page numbers, a <em>Load More</em> button, or switch to carousel mode. Carousel sub-parameters only apply when <code>pagination='carousal'</code>.</p>
+          <table class="params-table">
+            <thead>
+              <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>pagination</code></td><td><code>yes</code>, <code>no</code>, <code>carousal</code></td><td><code>no</code></td><td>Enable pagination or carousel mode. Works with all styles except <code>timeline</code>.</td></tr>
+              <tr><td><code>pagination-style</code></td><td><code>load_more</code></td><td><code>load_more</code></td><td>Pagination style — <code>load_more</code> adds a button; omit for numbered pages (requires <code>pagination='yes'</code>)</td></tr>
+              <tr><td><code>carousal-nav</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Carousel navigation arrows (requires <code>pagination='carousal'</code>)</td></tr>
+              <tr><td><code>carousal-dots</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Carousel dot indicators (requires <code>pagination='carousal'</code>)</td></tr>
+              <tr><td><code>carousal-id</code></td><td>Unique ID (integer)</td><td><code>102448</code></td><td>Unique instance ID — use a random value when multiple carousels on the same page (requires <code>pagination='carousal'</code>)</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-family:var(--mono);font-size:12px;font-weight:700;margin:16px 0 4px;color:var(--ink);">Content Filtering</h4>
+          <p style="font-size:12px;color:var(--ink-dim);margin:2px 0 6px;">Narrow down events by category, organizer, tag, location, date, or status. Combine multiple filters to refine results.</p>
+          <table class="params-table">
+            <thead>
+              <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+            </thead>
+            <tbody>
               <tr><td><code>cat</code></td><td>Category ID (integer)</td><td><code>0</code></td><td>Filter by category ID</td></tr>
               <tr><td><code>org</code></td><td>Organizer ID (integer)</td><td><code>0</code></td><td>Filter by organizer ID</td></tr>
               <tr><td><code>tag</code></td><td>Tag ID (integer)</td><td><code>0</code></td><td>Filter by tag ID</td></tr>
-              <tr><td><code>show</code></td><td>Integer</td><td><code>-1</code></td><td>Number of events to display (-1 = all)</td></tr>
-              <tr><td><code>pagination</code></td><td><code>yes</code>, <code>no</code>, <code>carousal</code></td><td><code>no</code></td><td>Enable pagination or carousel mode</td></tr>
-              <tr><td><code>pagination-style</code></td><td><code>load_more</code></td><td><code>load_more</code></td><td>Pagination style</td></tr>
-              <tr><td><code>cat-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show category filter dropdown</td></tr>
-              <tr><td><code>org-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show organizer filter dropdown</td></tr>
-              <tr><td><code>tag-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show tag filter dropdown</td></tr>
-              <tr><td><code>search-filter</code></td><td><code>yes</code>, empty</td><td>(empty)</td><td>Enable search/filter UI</td></tr>
               <tr><td><code>city</code></td><td>City name</td><td>(empty)</td><td>Filter by city</td></tr>
               <tr><td><code>state</code></td><td>State name</td><td>(empty)</td><td>Filter by state</td></tr>
               <tr><td><code>country</code></td><td>Country name</td><td>(empty)</td><td>Filter by country</td></tr>
               <tr><td><code>sort</code></td><td><code>ASC</code>, <code>DESC</code></td><td><code>ASC</code></td><td>Sort order</td></tr>
               <tr><td><code>status</code></td><td><code>upcoming</code>, <code>expired</code></td><td><code>upcoming</code></td><td>Event status filter</td></tr>
               <tr><td><code>year</code></td><td>Year (YYYY)</td><td>(empty)</td><td>Filter by year</td></tr>
-              <tr><td><code>timeline-mode</code></td><td><code>vertical</code>, <code>horizontal</code></td><td><code>vertical</code></td><td>Timeline direction</td></tr>
-              <tr><td><code>carousal-nav</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Carousel navigation arrows</td></tr>
-              <tr><td><code>carousal-dots</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Carousel dot indicators</td></tr>
-              <tr><td><code>carousal-id</code></td><td>Unique ID (integer)</td><td><code>102448</code></td><td>Carousel instance ID</td></tr>
-              <tr><td><code>title-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show title filter (<code>events_list</code>)</td></tr>
-              <tr><td><code>category-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show category filter (<code>events_list</code>)</td></tr>
-              <tr><td><code>organizer-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show organizer filter (<code>events_list</code>)</td></tr>
-              <tr><td><code>city-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show city filter (<code>events_list</code>)</td></tr>
-              <tr><td><code>state-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show state filter (<code>events_list</code>)</td></tr>
-              <tr><td><code>date-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show date filter (<code>events_list</code>)</td></tr>
+              <tr><td><code>show</code></td><td>Integer</td><td><code>-1</code></td><td>Number of events to display (-1 = all)</td></tr>
+            </tbody>
+          </table>
+
+          <h4 style="font-family:var(--mono);font-size:12px;font-weight:700;margin:16px 0 4px;color:var(--ink);">Filter UI</h4>
+          <p style="font-size:12px;color:var(--ink-dim);margin:2px 0 6px;">Enable the advanced search/filter bar, then show/hide individual filter controls. Sub-parameters only work when <code>search-filter='yes'</code> is set.</p>
+          <table class="params-table">
+            <thead>
+              <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>search-filter</code></td><td><code>yes</code>, empty</td><td>(empty)</td><td>Enable the advanced search/filter UI</td></tr>
+              <tr><td><code>cat-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show category filter dropdown</td></tr>
+              <tr><td><code>org-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show organizer filter dropdown</td></tr>
+              <tr><td><code>tag-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Show tag filter dropdown</td></tr>
+              <tr><td><code>title-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show title filter (requires <code>search-filter='yes'</code>)</td></tr>
+              <tr><td><code>category-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show category filter (requires <code>search-filter='yes'</code>)</td></tr>
+              <tr><td><code>organizer-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show organizer filter (requires <code>search-filter='yes'</code>)</td></tr>
+              <tr><td><code>city-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show city filter (requires <code>search-filter='yes'</code>)</td></tr>
+              <tr><td><code>state-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show state filter (requires <code>search-filter='yes'</code>)</td></tr>
+              <tr><td><code>date-filter</code></td><td><code>yes</code>, <code>no</code></td><td><code>yes</code></td><td>Show date filter (requires <code>search-filter='yes'</code>)</td></tr>
             </tbody>
           </table>
         </div>
