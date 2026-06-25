@@ -19,17 +19,7 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
-        <a href="vehicle-management.html" class="docs-nav-link">Vehicle Management</a>
-        <a href="pricing-availability.html" class="docs-nav-link">Pricing &amp; Availability</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
       <section class="doc-section" id="installation-setup">
         <h2>Installation &amp; Setup</h2>
@@ -178,9 +168,7 @@
     </main>
   </div>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
@@ -190,6 +178,8 @@
     { href: '../../index.html', label: 'All Plugins' },
     { href: '', label: 'Car Rental' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebarCarRental(null, true);
+  renderFooter();
 })();
 </script>
 </body>

@@ -606,6 +606,110 @@ function renderDocsSidebarRently(activePage, hideBackLink) {
   if (el) ReactDOM.render(h(RentlyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
 }
 
+function CarRentalDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/car-rental/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'vehicle-management.html', label: 'Vehicle Management' },
+    { href: base + 'pricing-availability.html', label: 'Pricing & Availability' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'faq.html', label: 'FAQ' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarCarRental(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(CarRentalDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
+function CouponlyDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/advanced-discount-coupon-store-credit/';
+  var links = [
+    { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
+    { href: base + 'index.html#shortcode-guidelines', label: 'Shortcode Guidelines' },
+    { href: base + 'index.html#discount-rules', label: 'Discount Rules' },
+    { href: base + 'index.html#store-credit', label: 'Store Credit' },
+    { href: base + 'index.html#general-guidelines', label: 'General Guidelines' },
+    { href: base + 'index.html#faq', label: 'FAQ' }
+  ];
+
+  function isActive(href) { return false; }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link'
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarCouponly(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(CouponlyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
+function DeposityDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wpdeposity/';
+  var links = [
+    { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
+    { href: base + 'index.html#shortcode-guidelines', label: 'Shortcode Guidelines' },
+    { href: base + 'index.html#deposit-types', label: 'Deposit Types' },
+    { href: base + 'index.html#payment-management', label: 'Order & Payment Management' },
+    { href: base + 'index.html#general-guidelines', label: 'General Guidelines' },
+    { href: base + 'index.html#faq', label: 'FAQ' }
+  ];
+
+  function isActive(href) { return false; }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link'
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarDeposity(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(DeposityDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
 function renderPage({ title, description, boardRows, plugins, pluginCount, addonCount, navLinks }) {
   const root = document.getElementById('root');
   if (!root) return;
