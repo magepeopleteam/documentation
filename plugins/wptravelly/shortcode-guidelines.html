@@ -9,158 +9,274 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="../../js/layout.js"></script>
+<style>
+.docs-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: .9em; }
+.shortcode-card code { background: none; padding: 0; }
+.shortcode-grid { grid-template-columns: 1fr; }
+.doc-grid { grid-template-columns: 1fr; }
+</style>
 </head>
 <body>
+
   <div id="topbar-root"></div>
+
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
-        <a href="template-override.html" class="docs-nav-link">Template Override</a>
-        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
-      <section class="doc-section">
+
+      <section class="doc-section" id="shortcode-list">
         <h2>Shortcode Guidelines</h2>
-        <p>WpTravelly provides a rich set of shortcodes to display tours in list, grid, modern, blossom, orchid, lotus, and flora styles with filtering, pagination, and sorting options.</p>
-        <h3>Tour Display Shortcodes</h3>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Tour List (Default)</h3>
-            <ul>
-              <li><code>[wptravelly-tour-list column=3]</code> — default list view</li>
-              <li><code>[wptravelly-tour-list type='trending' column=4]</code> — trending tours</li>
-              <li><code>[wptravelly-tour-list type='popular' column=3]</code> — popular tours</li>
-              <li><code>[wptravelly-tour-list type='featured' column=4]</code> — featured tours</li>
-              <li>Supports attributes: <code>column</code>, <code>type</code>, <code>style</code>, <code>category</code></li>
-            </ul>
-          </article>
-          <article class="doc-card">
+        <p>WpTravelly provides shortcodes to display tours in various styles including list, grid, modern, blossom, orchid, lotus, and flora views.</p>
+
+        <div class="shortcode-grid">
+
+          <div class="shortcode-card">
+            <h3>Tour List</h3>
+            <p>Default tour list view. Supports column layout, trending/popular/featured filters, and category filtering.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-tour-list column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-tour-list column=3]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>column</code></td><td><code>2</code>, <code>3</code>, <code>4</code></td><td><code>3</code></td><td>Number of grid columns</td></tr>
+                <tr><td><code>type</code></td><td><code>all</code>, <code>trending</code>, <code>popular</code>, <code>featured</code></td><td><code>all</code></td><td>Tour filter type</td></tr>
+                <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code>, <code>modern</code></td><td><code>grid</code></td><td>Display layout style</td></tr>
+                <tr><td><code>category</code></td><td>Slug</td><td>(empty)</td><td>Filter by tour category slug</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Tour List with Filter</h3>
+            <p>Adds a filter bar above the tour grid. Users can filter by category, price range, and duration.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-tour-list-filter column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-tour-list-filter column=3]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Modern List View</h3>
-            <ul>
-              <li><code>[wptravelly-modern-list column=3]</code> — modern card layout</li>
-              <li><code>[wptravelly-modern-list column=2 style='box']</code> — box style modern</li>
-              <li><code>[wptravelly-modern-list category='adventure']</code> — filtered by category</li>
-              <li>Ideal for travel agencies showcasing curated packages</li>
-              <li>Works with all <code>type</code> filter values</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Grid View (Flora / Blossom / Orchid)</h3>
-            <ul>
-              <li><code>[wptravelly-flora-grid column=3]</code> — flora card design</li>
-              <li><code>[wptravelly-blossom-grid column=4]</code> — blossom style grid</li>
-              <li><code>[wptravelly-orchid-grid column=3]</code> — orchid elegant layout</li>
-              <li>Each style provides unique Card UI and hover effects</li>
-              <li>Use <code>column=2/3/4</code> to control columns</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Lotus Grid View</h3>
-            <ul>
-              <li><code>[wptravelly-lotus-grid column=3]</code> — lotus theme grid</li>
-              <li>Designed for premium / luxury tour presentation</li>
-              <li>Displays price, duration, and rating per card</li>
-              <li>Supports <code>category</code> and <code>organizer</code> filtering</li>
-              <li>Fully responsive across all devices</li>
-            </ul>
-          </article>
-        </div>
-        <h3>Specialized Shortcodes</h3>
-        <div class="doc-grid">
-          <article class="doc-card">
+            <p>Modern card layout ideal for travel agencies showcasing curated packages.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-modern-list column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-modern-list column=3]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>column</code></td><td><code>2</code>, <code>3</code>, <code>4</code></td><td><code>3</code></td><td>Number of columns</td></tr>
+                <tr><td><code>style</code></td><td><code>box</code></td><td>(empty)</td><td>Box style modern layout</td></tr>
+                <tr><td><code>category</code></td><td>Slug</td><td>(empty)</td><td>Filter by tour category</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Grid Views (Flora / Blossom / Orchid / Lotus)</h3>
+            <p>Themed grid layouts — each provides unique card UI and hover effects.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-flora-grid column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-flora-grid column=3]">Copy</button>
+            </div>
+            <div class="shortcode-box" style="margin-top:8px;">
+              <code>[wptravelly-blossom-grid column=4]</code>
+              <button class="copy-btn" data-code="[wptravelly-blossom-grid column=4]">Copy</button>
+            </div>
+            <div class="shortcode-box" style="margin-top:8px;">
+              <code>[wptravelly-orchid-grid column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-orchid-grid column=3]">Copy</button>
+            </div>
+            <div class="shortcode-box" style="margin-top:8px;">
+              <code>[wptravelly-lotus-grid column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-lotus-grid column=3]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Top Attractions</h3>
-            <ul>
-              <li><code>[wptravelly-top-attraction column=3]</code></li>
-              <li><code>[wptravelly-top-attraction column=4 type='popular']</code></li>
-              <li>Highlights top-rated or most-visited tours</li>
-              <li>Supports the <code>slider</code> attribute for carousel display</li>
-            </ul>
-          </article>
-          <article class="doc-card">
+            <p>Highlights top-rated or most-visited tours. Supports slider attribute for carousel display.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-top-attraction column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-top-attraction column=3]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Travel Location</h3>
-            <ul>
-              <li><code>[wptravelly-travel-location column=4]</code></li>
-              <li><code>[wptravelly-travel-location style='list']</code></li>
-              <li>Displays tours grouped by destination or location</li>
-              <li>Useful for "Tours in {City}" style sections</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Tour List with Top Filter</h3>
-            <ul>
-              <li><code>[wptravelly-tour-list-filter column=3]</code></li>
-              <li>Adds a filter bar above the tour grid</li>
-              <li>Users can filter by category, price range, duration</li>
-              <li>Ideal for comprehensive tour directories</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Search Shortcode</h3>
-            <ul>
-              <li><code>[wptravelly-tour-search]</code> — full search form</li>
-              <li><code>[wptravelly-tour-search style='horizontal']</code> — inline layout</li>
-              <li>Search by keyword, destination, date, or category</li>
-              <li>Results update dynamically (AJAX-based)</li>
-            </ul>
-          </article>
-        </div>
-        <h3>Taxonomy Shortcodes</h3>
-        <div class="doc-grid">
-          <article class="doc-card">
+            <p>Displays tours grouped by destination or location.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-travel-location column=4]</code>
+              <button class="copy-btn" data-code="[wptravelly-travel-location column=4]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Tour Search</h3>
+            <p>Full search form with keyword, destination, date, and category filters. Results update dynamically via AJAX.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-tour-search]</code>
+              <button class="copy-btn" data-code="[wptravelly-tour-search]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Category List</h3>
-            <ul>
-              <li><code>[wptravelly-category-list column=4]</code></li>
-              <li><code>[wptravelly-category-list style='grid']</code></li>
-              <li>Displays all tour categories with linked archive pages</li>
-              <li>Each category shows name, image, and tour count</li>
-            </ul>
-          </article>
-          <article class="doc-card">
+            <p>Displays all tour categories with linked archive pages. Each shows name, image, and tour count.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-category-list column=4]</code>
+              <button class="copy-btn" data-code="[wptravelly-category-list column=4]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Organizer List</h3>
-            <ul>
-              <li><code>[wptravelly-organizer-list column=3]</code></li>
-              <li>Showcases tour guides, agencies, or operators</li>
-              <li>Cards include photo, bio snippet, and contact info</li>
-              <li>Clicking navigates to the organizer archive</li>
-            </ul>
-          </article>
-          <article class="doc-card">
+            <p>Showcases tour guides, agencies, or operators with photo, bio snippet, and contact info.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-organizer-list column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-organizer-list column=3]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
             <h3>Tag &amp; Activity List</h3>
-            <ul>
-              <li><code>[wptravelly-tag-list column=4]</code></li>
-              <li><code>[wptravelly-activity-list column=3]</code></li>
-              <li>Displays tag cloud or activity icons</li>
-              <li>Useful for building filter or browse-by-interest pages</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Common Parameters</h3>
-            <ul>
-              <li><code>column</code> — number of columns (2, 3, or 4)</li>
-              <li><code>type</code> — all, trending, popular, featured</li>
-              <li><code>style</code> — grid, list, box, modern</li>
-              <li><code>category</code> — slug of the tour category</li>
-              <li><code>organizer</code> — slug of the tour organizer</li>
-            </ul>
-          </article>
+            <p>Displays tag cloud or activity icons. Useful for building browse-by-interest pages.</p>
+            <div class="shortcode-box">
+              <code>[wptravelly-tag-list column=4]</code>
+              <button class="copy-btn" data-code="[wptravelly-tag-list column=4]">Copy</button>
+            </div>
+            <div class="shortcode-box" style="margin-top:8px;">
+              <code>[wptravelly-activity-list column=3]</code>
+              <button class="copy-btn" data-code="[wptravelly-activity-list column=3]">Copy</button>
+            </div>
+          </div>
+
         </div>
       </section>
+
+      <section class="doc-section" id="style-examples">
+        <h2>Style Examples</h2>
+        <p>The tour shortcodes support multiple display styles via the <code>style</code> parameter.</p>
+
+        <div class="api-endpoints">
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-tour-list style='grid' column='3']</code></div>
+              <div class="url-desc">Tours displayed in a responsive card grid.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-tour-list style='list']</code></div>
+              <div class="url-desc">Tours displayed in a vertical list layout.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-modern-list style='box']</code></div>
+              <div class="url-desc">Clean box-style modern layout for curated packages.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-flora-grid column='4']</code></div>
+              <div class="url-desc">Flora-themed card design with vibrant styling.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-blossom-grid column='4']</code></div>
+              <div class="url-desc">Blossom style grid with elegant card presentation.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-orchid-grid column='3']</code></div>
+              <div class="url-desc">Orchid elegant layout for premium tour presentation.</div>
+            </div>
+          </div>
+
+          <div class="api-endpoint">
+            <span class="api-method api-method-get" style="background:#fef3c7;color:#92400e;">Style</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>[wptravelly-lotus-grid column='3']</code></div>
+              <div class="url-desc">Lotus theme for luxury tour packages.</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="doc-section" id="common-parameters">
+        <h2>Common Parameters</h2>
+        <p>Fine-tune your shortcodes with these optional attributes.</p>
+        <div class="api-endpoints">
+          <div class="api-endpoint">
+            <span class="api-method" style="background:#e8f5e9;color:#2e7d32;width:80px;">Param</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>column</code></div>
+              <div class="url-desc">Number of columns — <code>2</code>, <code>3</code>, or <code>4</code></div>
+            </div>
+          </div>
+          <div class="api-endpoint">
+            <span class="api-method" style="background:#e8f5e9;color:#2e7d32;width:80px;">Param</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>type</code></div>
+              <div class="url-desc">Tour filter — <code>all</code>, <code>trending</code>, <code>popular</code>, <code>featured</code></div>
+            </div>
+          </div>
+          <div class="api-endpoint">
+            <span class="api-method" style="background:#e8f5e9;color:#2e7d32;width:80px;">Param</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>style</code></div>
+              <div class="url-desc">Display style — <code>grid</code>, <code>list</code>, <code>box</code>, <code>modern</code></div>
+            </div>
+          </div>
+          <div class="api-endpoint">
+            <span class="api-method" style="background:#e8f5e9;color:#2e7d32;width:80px;">Param</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>category</code></div>
+              <div class="url-desc">Filter by tour category slug</div>
+            </div>
+          </div>
+          <div class="api-endpoint">
+            <span class="api-method" style="background:#e8f5e9;color:#2e7d32;width:80px;">Param</span>
+            <div class="api-endpoint-url">
+              <div class="url-path"><code>organizer</code></div>
+              <div class="url-desc">Filter by tour organizer slug</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+
+  <div id="footer-root"></div>
+
 <script>
 (function(){
   "use strict";
@@ -169,6 +285,9 @@
     { href: 'index.html', label: 'WpTravelly' },
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebarTravelly();
+  renderFooter();
+  initCopyButtons();
 })();
 </script>
 </body>

@@ -402,6 +402,104 @@ function renderDocsSidebarBus(activePage, hideBackLink) {
   if (el) ReactDOM.render(h(BusDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
 }
 
+function TravellyDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wptravelly/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'template-override.html', label: 'Template Override' },
+    { href: base + 'elementor-guidelines.html', label: 'Elementor Guidelines' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'faq.html', label: 'FAQ' },
+    { href: '/index.html#wptravelly', label: 'Available Addons' }
+  ];
+
+  var addonLinks = [
+    { href: base + 'addons/backend-order/', label: 'Backend Order' },
+    { href: base + 'addons/seat-plan/', label: 'Seat Plan' },
+    { href: base + 'addons/seasonal-pricing/', label: 'Seasonal Pricing' },
+    { href: base + 'addons/group-ticket-quantity/', label: 'Group Ticket Quantity' },
+    { href: base + 'addons/group-bulk-pricing/', label: 'Group & Bulk Pricing' },
+    { href: base + 'addons/early-bird-pricing/', label: 'Early Bird Pricing' },
+    { href: base + 'addons/qr-code/', label: 'QR Code' },
+    { href: base + 'addons/max-min-booking/', label: 'Max-Min Booking' },
+    { href: base + 'addons/buy-x-get-y-free/', label: 'Buy X Get Y Free' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      }),
+      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+      ...addonLinks.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarTravelly(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(TravellyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
+function BookinglyDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wpbookingly/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'service-management.html', label: 'Service Management' },
+    { href: base + 'staff-scheduling.html', label: 'Staff & Scheduling' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'payment-integration.html', label: 'Payment Integration' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'faq.html', label: 'FAQ' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarBookingly(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(BookinglyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
 function renderPage({ title, description, boardRows, plugins, pluginCount, addonCount, navLinks }) {
   const root = document.getElementById('root');
   if (!root) return;

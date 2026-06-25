@@ -3,50 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Max-Min Booking — WpTravelly Add‑On</title>
+<title>WpTravelly — Max-Min Booking Addon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon.ico">
 <link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="../../../../js/layout.js"></script>
+<style>
+.docs-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: .9em; }
+.api-endpoint code { background: #eef; padding: 2px 6px; border-radius: 4px; font-size: .85em; }
+</style>
 </head>
 <body>
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Max‑Min Booking &mdash; WpTravelly Add‑On</h1>
-    <p class="lede">Control tour participation with minimum and maximum limits. Ensures every tour has the right number of travelers, helping you plan better and avoid overbooking.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Max-Min Booking Addon</h2>
+        <p>Control tour participation with minimum and maximum limits. Ensures every tour has the right number of travelers, helping you plan better and avoid overbooking.</p>
+      </section>
 
-  </main>
+      <section class="doc-section" id="installation">
+        <h2>Installation</h2>
+        <ol>
+          <li>Download the addon zip from your account.</li>
+          <li>Go to <strong>Plugins &rarr; Add New &rarr; Upload Plugin</strong>.</li>
+          <li>Upload the zip and click <strong>Install Now</strong>.</li>
+          <li>Activate the plugin from the Plugins page.</li>
+        </ol>
+      </section>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 49 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+      <section class="doc-section" id="usage">
+        <h2>Usage</h2>
+        <ol>
+          <li>Go to the tour edit page and find <strong>Max-Min Booking</strong> settings.</li>
+<li>Set the minimum number of travelers required for the tour to run.</li>
+<li>Set the maximum capacity for the tour.</li>
+<li>Customers cannot book below the minimum or above the maximum limit.</li>
+        </ol>
+      </section>
+
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product-category/plugins/tour-booking/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpTravelly' },
-    { href: '#', label: 'Max-Min Booking' }
+    { href: '', label: 'Max-Min Booking' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebarTravelly('index.html');
+  renderFooter();
 })();
 </script>
 </body>
