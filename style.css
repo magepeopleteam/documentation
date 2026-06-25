@@ -412,6 +412,11 @@
     text-transform:uppercase; color:var(--ink-faint);
     margin:0 0 16px;
   }
+  .docs-sidebar-title:not(:first-child){
+    margin-top:24px;
+    padding-top:16px;
+    border-top:1px solid var(--rule);
+  }
   .docs-nav{display:flex; flex-direction:column; gap:2px;}
   .docs-nav-link{
     font-family:var(--mono); font-size:13px; color:var(--ink-dim);

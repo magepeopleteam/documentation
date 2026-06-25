@@ -286,26 +286,43 @@ function renderTopbar(navLinks, logoPath) {
 }
 
 function DocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wpevently/';
   var links = [
-    { href: 'installation-setup.html', label: 'Installation & Setup' },
-    { href: 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
-    { href: 'elementor-guidelines.html', label: 'Elementor Guidelines' },
-    { href: 'template-override.html', label: 'Template Override' },
-    { href: 'action-hooks.html', label: 'Action Hooks' },
-    { href: 'rest-api.html', label: 'REST API' },
-    { href: 'faq.html', label: 'FAQ' },
-    { href: '../../index.html#wpevently', label: 'Available Addons' }
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'elementor-guidelines.html', label: 'Elementor Guidelines' },
+    { href: base + 'template-override.html', label: 'Template Override' },
+    { href: base + 'action-hooks.html', label: 'Action Hooks' },
+    { href: base + 'rest-api.html', label: 'REST API' },
+    { href: base + 'faq.html', label: 'FAQ' },
+    { href: '/index.html#wpevently', label: 'Available Addons' }
   ];
+
+  var addonLinks = [
+    { href: base + 'addons/min-max-quantity.html', label: 'Min/Max Quantity' }
+  ];
+
+  function isActive(href) {
+    return activePage && href.endsWith(activePage);
+  }
 
   return h('aside', { className: 'docs-sidebar' },
     h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
     h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
       ...links.map(function(link) {
         return h('a', {
           key: link.href,
           href: link.href,
-          className: 'docs-nav-link' + (activePage === link.href ? ' active' : '')
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      }),
+      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+      ...addonLinks.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
         }, link.label);
       })
     )
