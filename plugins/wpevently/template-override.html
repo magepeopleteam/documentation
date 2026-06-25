@@ -9,6 +9,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .docs-content code{
+    font-family:var(--mono); font-size:12px;
+    background:var(--bg-soft); color:var(--amber);
+    padding:2px 6px; border-radius:3px;
+    border:1px solid var(--rule);
+  }
+  .api-endpoint code{
+    background:none; color:var(--amber);
+    padding:0; border:none;
+  }
+</style>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -19,47 +32,39 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
-        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
-        <a href="template-override.html" class="docs-nav-link active">Template Override</a>
-        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
-        <a href="rest-api.html" class="docs-nav-link">REST API</a>
-        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="general-guidelines.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
 
       <section class="doc-section" id="overriding-templates">
-        <h2>How to Override and Change Event Templates</h2>
-        <p>Sometimes you may need to change some of the default design or content to your own design, such as if you want to change the icons or add/remove a new class. We have the override feature in the WooCommerce Event Manager plugin. So you can do it easily and very smartly.</p>
-        <p>For example, you want to change the default icons of the sidebar address list. To do this please follow the process below:</p>
+        <h2>Override Event Templates</h2>
+        <p>You can customize the default design or content of event templates by overriding them in your theme. This ensures your changes are preserved through plugin updates.</p>
+
+        <div class="video-player">
+          <video src="video/template.webm" poster="images/template-override.png"></video>
+          <button class="video-btn"><i class="fas fa-play"></i></button>
+        </div>
+        
+        <h3>Steps to Override Templates</h3>
         <ol>
-          <li>First, go to your theme folder and create a new folder named <strong>mage-events</strong>. Then enter into this newly created folder. Create another folder into it name it as <strong>single</strong>.</li>
-          <li>Now go to the <code>plugins/mage-eventpress/templates</code> folder. Copy the <code>location_list.php</code> file.</li>
-          <li>Go back to your theme folder then go to <code>mage-events/single</code> folder and paste the template file.</li>
-          <li>Now open the template file and change the icons. The plugin always loads this template file <code>location_list.php</code> from your theme folder. So this change will never be lost in any future update of the plugin.</li>
+          <li>Create a folder named <code>mage-events</code> in your theme folder.</li>
+          <li>Inside it, create a subfolder named <code>single</code>.</li>
+          <li>Copy the template file from <code>plugins/mage-eventpress/templates</code> (e.g. <code>location_list.php</code>).</li>
+          <li>Paste it into <code>theme-folder/mage-events/single/</code>.</li>
+          <li>Edit the file to make your changes. The plugin will load your version instead of the default.</li>
         </ol>
-        <p>You can follow this process to override any template files of the WooCommerce Event Manager Plugin.</p>
       </section>
 
       <section class="doc-section" id="creating-new-templates">
-        <h2>How to Create New Theme/Template</h2>
-        <p>WooCommerce Events Manager plugin is fully developer friendly. It comes with 4 pre-active themes, but most of the time clients want to make a custom theme which is similar to their theme or any design. That&rsquo;s why we made our plugin fully flexible so you can easily create a new theme/template or override any default theme. If you have experience in customizing WooCommerce template then it will be very easy for you. It&rsquo;s like WooCommerce templating.</p>
+        <h2>Create Custom Theme/Template</h2>
+        <p>The plugin is fully developer-friendly. You can create custom themes similar to WooCommerce templating.</p>
+        
+        <h3>Steps to Create a New Theme</h3>
         <ol>
-          <li>First, you need to copy the <code>mage-eventpress/templates/</code> folder from the plugin folder, and paste it into your theme folder and rename it as <strong>mage-events</strong>: <code>theme-folder/mage-events/</code></li>
-          <li>Now you can create as many templates/themes as you want. You just need to put your theme files into: <code>theme-folder/mage-events/themes/</code></li>
-          <li>Suppose you want to make a theme and the file name will be <code>dhaka.php</code>. The file structure will be: <code>theme-folder/mage-events/themes/dhaka.php</code></li>
-          <li>Then you need to create a theme name, just like WordPress page template naming. You just need to set the name in the first line by PHP comment: <code>// Template Name: Dhaka</code></li>
+          <li>Copy <code>mage-eventpress/templates/</code> folder to your theme and rename it to <code>mage-events</code>.</li>
+          <li>Create a new PHP file in <code>theme-folder/mage-events/themes/</code> (e.g. <code>dhaka.php</code>).</li>
+          <li>Add a template name at the top: <code>&lt;?php // Template Name: Dhaka</code></li>
+          <li>Your theme will now appear in the event page template list.</li>
         </ol>
-        <p>That&rsquo;s it! You can now find this theme in the template list which you can find in the event page in dashboard and the event settings page.</p>
 
         <h3>Available Hooks for Custom Themes</h3>
         <p>WooCommerce Event Manager plugin comes with a bunch of hooks which you can use anywhere to display values:</p>
@@ -230,13 +235,15 @@
       </section>
 
       <section class="doc-section" id="pdf-tickets">
-        <h2>How to Create Your Own PDF Ticket Design</h2>
-        <p>We have a PDF Ticket add-on that generates a PDF Ticket for a registered attendee of an event. By default, there is a simple basic PDF ticket design. But if you want you can create your own design PDF ticket.</p>
+        <h2>Create Custom PDF Ticket Design</h2>
+        <p>Design your own PDF ticket template for registered attendees.</p>
+        
+        <h3>Steps to Create PDF Theme</h3>
         <ol>
-          <li>First copy this folder from the PDF Addon Plugin: <code>woocommerce-event-manager-pdf-ticket/templates/pdf-theme</code></li>
-          <li>Then paste it into your theme folder, and rename the <code>pdf-theme</code> folder to <code>mage-events-pdf-themes</code></li>
-          <li>Now create your own theme. Create a new PHP file name it as you want. Then open the file and add this line at the beginning of the file: <code>&lt;?php // Template Name: YOUR THEME NAME HERE</code></li>
-          <li>Now start your Ticket design HTML. You can code as you wish, but remember there are some limitations for CSS attributes for PDF generation.</li>
+          <li>Copy <code>woocommerce-event-manager-pdf-ticket/templates/pdf-theme</code> from the PDF Addon plugin.</li>
+          <li>Paste it into your theme folder and rename to <code>mage-events-pdf-themes</code>.</li>
+          <li>Create a new PHP file with a template name: <code>&lt;?php // Template Name: Your Theme</code></li>
+          <li>Design your ticket HTML. Note: some CSS attributes have limitations for PDF generation.</li>
         </ol>
 
         <h3>Available PDF Hooks</h3>
@@ -375,27 +382,36 @@
       </section>
 
       <section class="doc-section" id="social-share-icons">
-        <h2>How to Override and Change/Add New Social Share Icon</h2>
-        <p>The WooCommerce Event Manager plugin has a wonderful template override feature. You can modify or add any content to any template. If you want to change/add a new social share icon in the Share button template, please follow the process below.</p>
+        <h2>Override Social Share Icons</h2>
+        <p>Customize or add new social share icons to the share button template.</p>
+        
+        <h3>Steps to Override Share Icons</h3>
         <ol>
-          <li>First, go to your theme folder and create a new folder named <strong>mage-events</strong>. Then enter into this newly created folder. Create another folder into it name it a <strong>single</strong>.</li>
-          <li>Now go to the <code>plugins/mage-eventpress/templates</code> folder. Copy the <code>share_btn.php</code> file.</li>
-          <li>Go back to your theme folder then go to <code>mage-events/single</code> folder and paste the template file.</li>
-          <li>Now you can edit this file as you wish. You can add a new share button or change the existing button.</li>
+          <li>Create a folder named <code>mage-events</code> in your theme folder.</li>
+          <li>Inside it, create a subfolder named <code>single</code>.</li>
+          <li>Copy <code>share_btn.php</code> from <code>plugins/mage-eventpress/templates</code>.</li>
+          <li>Paste it into <code>theme-folder/mage-events/single/</code>.</li>
+          <li>Edit the file to add or change share buttons as needed.</li>
         </ol>
       </section>
 
       <section class="doc-section" id="category-organizer-templates">
-        <h2>How to Override and Change Event Category or Organizer Page Templates</h2>
-        <p>The WooCommerce Events Manager plugin is fully developer-friendly. You can follow the steps below if you want to change or override any part of the category or organizer list page design. If you have experience customizing WooCommerce templates, it will be effortless for you. It&rsquo;s like WooCommerce templating.</p>
+        <h2>Override Category/Organizer Pages</h2>
+        <p>Customize the category or organizer list page templates.</p>
+        
+        <h3>Steps to Override</h3>
         <ol>
-          <li>First, you need to create a new folder in your active theme folder and rename it as <strong>mage-events</strong>: <code>theme-folder/mage-events/</code></li>
-          <li>Now, please go to <code>wp-content/plugins/mage-eventpress/templates</code> folder and copy the file <code>taxonomy-category.php</code> or the <code>taxonomy-organizer.php</code> file and paste it to the <code>theme-folder/mage-events/</code> folder.</li>
-          <li>You can change any part of the code in the template files. Suppose you want to change the grid style to the list style of the event list on the category page. You need to change the code line 17:</li>
+          <li>Create a folder named <code>mage-events</code> in your theme folder.</li>
+          <li>Copy <code>taxonomy-category.php</code> or <code>taxonomy-organizer.php</code> from <code>wp-content/plugins/mage-eventpress/templates</code>.</li>
+          <li>Paste it into <code>theme-folder/mage-events/</code>.</li>
+          <li>Edit the template file to change the layout or styling.</li>
         </ol>
-        <p>Change from:</p>
+
+        <h3>Example: Change Grid to List</h3>
+        <p>Change line 17 in <code>taxonomy-category.php</code>:</p>
+        <p>From:</p>
         <pre><code>do_action('mep_event_list_shortcode', get_the_id(), 'three_column', 'grid');</code></pre>
-        <p>Change to:</p>
+        <p>To:</p>
         <pre><code>do_action('mep_event_list_shortcode', get_the_id(), 'one_column', 'list');</code></pre>
       </section>
 
@@ -412,7 +428,9 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Template Override' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebar('template-override.html');
   renderFooter();
+  initVideoPlayers();
 })();
 </script>
 </body>

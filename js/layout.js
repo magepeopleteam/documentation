@@ -285,6 +285,38 @@ function renderTopbar(navLinks, logoPath) {
   );
 }
 
+function DocsSidebar({ activePage, hideBackLink }) {
+  var links = [
+    { href: 'installation-setup.html', label: 'Installation & Setup' },
+    { href: 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: 'elementor-guidelines.html', label: 'Elementor Guidelines' },
+    { href: 'template-override.html', label: 'Template Override' },
+    { href: 'action-hooks.html', label: 'Action Hooks' },
+    { href: 'rest-api.html', label: 'REST API' },
+    { href: 'faq.html', label: 'FAQ' },
+    { href: '../../index.html#wpevently', label: 'Available Addons' }
+  ];
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (activePage === link.href ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebar(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(DocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
 function renderPage({ title, description, boardRows, plugins, pluginCount, addonCount, navLinks }) {
   const root = document.getElementById('root');
   if (!root) return;

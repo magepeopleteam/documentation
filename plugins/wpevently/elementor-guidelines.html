@@ -19,29 +19,21 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
-        <a href="elementor-guidelines.html" class="docs-nav-link active">Elementor Guidelines</a>
-        <a href="template-override.html" class="docs-nav-link">Template Override</a>
-        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
-        <a href="rest-api.html" class="docs-nav-link">REST API</a>
-        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="general-guidelines.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
 
       <section class="doc-section" id="find-elementor-widgets">
-        <h2>How to Find Elementor Widgets of the Plugin</h2>
+        <h2>Using Event Widgets in Elementor</h2>
         <p>First, edit any page with Elementor and scroll down the Elementor widgets panel. You&rsquo;ll find the WooCommerce Event Manager widgets at the bottom of the panel.</p>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/edit-page-with-elementor.jpg" alt="Edit page with Elementor" style="max-width:100%;height:auto;"></p>
-        <p><img src="https://docs.mage-people.com/woocommerce-event-manager/wp-content/uploads/sites/3/2021/09/find-elementor-widgets.jpg" alt="Find Elementor widgets" style="max-width:100%;height:auto;"></p>
+
+        <h3>Step-by-Step Guide</h3>
+        <ol>
+          <li>Edit any page or template with Elementor.</li>
+          <li>In the Elementor panel, scroll down to the <strong>WooCommerce Event Manager</strong> section.</li>
+          <li>Drag and drop any event widget onto your page canvas.</li>
+          <li>Configure the widget settings in the left panel — adjust layout, filters, and styling options.</li>
+          <li>Click <strong>Publish</strong> or <strong>Update</strong> to save your changes.</li>
+        </ol>
       </section>
 
       <section class="doc-section" id="shortcodes-in-elementor">
@@ -60,7 +52,7 @@
       </section>
 
       <section class="doc-section" id="single-event-page">
-        <h2>How to Design a Single Event Details Page Using Elementor</h2>
+        <h2>Design a Single Event Page with Elementor</h2>
         <p>You can design a custom single event details page layout using Elementor. Watch the video tutorial below for a step-by-step walkthrough.</p>
         <div class="video-wrap">
           <iframe src="https://www.youtube-nocookie.com/embed/iQUFlRToS2g" title="How to design a single event details page using Elementor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -80,6 +72,7 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Elementor Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebar('elementor-guidelines.html');
   renderFooter();
 })();
 </script>

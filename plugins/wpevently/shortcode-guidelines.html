@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -19,27 +20,17 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
-        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
-        <a href="template-override.html" class="docs-nav-link">Template Override</a>
-        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
-        <a href="rest-api.html" class="docs-nav-link">REST API</a>
-        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="general-guidelines.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
 
       <section class="doc-section" id="event-list">
         <h2>Event List Shortcode</h2>
         <p>The main shortcode for displaying events. Supports multiple display styles, filters, and pagination via parameters.</p>
+
+        <div class="video-player" style="margin-bottom:24px;">
+          <video src="video/shortcode.webm" poster="images/shortcode.png"></video>
+          <button class="video-btn"><i class="fas fa-play"></i></button>
+        </div>
 
         <div class="shortcode-card">
           <h3>Basic Usage</h3>
@@ -49,7 +40,7 @@
           </div>
 
           <h3 style="margin-top:20px;">Parameters</h3>
-          <p style="font-size:13px;color:var(--ink-dim);margin:4px 0 12px;">Add any of these parameters inside the shortcode like <code>[event-list style='grid' cat='5' pagination='yes']</code>. Multiple parameters can be combined.</p>
+          <p style="font-size:13px;color:var(--ink-dim);margin:4px 0 12px;">Add any of these parameters inside the shortcode like <code style="font-family:var(--mono);font-size:12px;background:var(--bg-soft);color:var(--amber);padding:2px 6px;border-radius:3px;border:1px solid var(--rule);">[event-list style='grid' cat='5' pagination='yes']</code>. Multiple parameters can be combined.</p>
 
           <h4 style="font-family:var(--mono);font-size:12px;font-weight:700;margin:16px 0 4px;color:var(--ink);">Layout</h4>
           <p style="font-size:12px;color:var(--ink-dim);margin:2px 0 6px;">Control how events are displayed — choose a layout style, set grid columns, or switch to timeline view.</p>
@@ -312,8 +303,10 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebar('shortcode-guidelines.html');
   renderFooter();
   initCopyButtons();
+  initVideoPlayers();
 })();
 </script>
 </body>

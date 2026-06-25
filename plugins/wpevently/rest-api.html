@@ -19,22 +19,7 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
-        <a href="elementor-guidelines.html" class="docs-nav-link">Elementor Guidelines</a>
-        <a href="template-override.html" class="docs-nav-link">Template Override</a>
-        <a href="action-hooks.html" class="docs-nav-link">Action Hooks</a>
-        <a href="rest-api.html" class="docs-nav-link active">REST API</a>
-        <a href="video-tutorials.html" class="docs-nav-link">Video Tutorials</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="general-guidelines.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
 
       <section class="doc-section" id="api-details">
@@ -117,6 +102,7 @@
     { href: 'index.html', label: 'WpEvently' },
     { href: '', label: 'REST API' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebar('rest-api.html');
   renderFooter();
 })();
 </script>
