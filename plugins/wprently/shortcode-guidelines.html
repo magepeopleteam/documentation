@@ -9,119 +9,117 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="../../js/layout.js"></script>
+<style>
+.docs-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: .9em; }
+.shortcode-card code { background: none; padding: 0; }
+.shortcode-grid { grid-template-columns: 1fr; }
+.doc-grid { grid-template-columns: 1fr; }
+</style>
 </head>
 <body>
+
   <div id="topbar-root"></div>
+
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="global-settings.html" class="docs-nav-link">Global Settings</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
-      <section class="doc-section">
+
+      <section class="doc-section" id="shortcode-list">
         <h2>Shortcode Guidelines</h2>
         <p>Use shortcodes to display rental items, search forms, and booking widgets anywhere on your WordPress site. All shortcodes support a consistent set of parameters for styling, filtering, and pagination.</p>
 
-        <h3>Rent List Shortcode</h3>
-        <p>The primary shortcode for displaying rental items is <code>[rent-list]</code>. It renders a grid or list of rental products filtered by type, category, or custom query.</p>
+        <div class="shortcode-grid">
 
-        <h3>Shortcode Parameters</h3>
-        <p>The following table lists all supported parameters for the <code>[rent-list]</code> shortcode.</p>
+          <div class="shortcode-card">
+            <h3>Rent List</h3>
+            <p>The primary shortcode for displaying rental items. Renders a grid or list of rental products filtered by type, category, or custom query.</p>
+            <div class="shortcode-box">
+              <code>[rent-list]</code>
+              <button class="copy-btn" data-code="[rent-list]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>style</code></td><td><code>grid</code>, <code>list</code></td><td><code>grid</code></td><td>Display layout style</td></tr>
+                <tr><td><code>show</code></td><td>Integer</td><td><code>6</code></td><td>Number of items to display per page</td></tr>
+                <tr><td><code>order</code></td><td><code>ASC</code>, <code>DESC</code></td><td><code>DESC</code></td><td>Sort order</td></tr>
+                <tr><td><code>orderby</code></td><td><code>date</code>, <code>title</code>, <code>price</code>, <code>rand</code>, <code>menu_order</code></td><td><code>date</code></td><td>Field to sort by</td></tr>
+                <tr><td><code>type</code></td><td><code>bike</code>, <code>car</code>, <code>resort</code>, <code>equipment</code>, <code>dress</code>, <code>bike_car_sd</code>, <code>bike_car_md</code></td><td>(empty)</td><td>Filter by rental type</td></tr>
+                <tr><td><code>category</code></td><td>String</td><td>(empty)</td><td>Comma-separated category IDs or slugs</td></tr>
+                <tr><td><code>ids</code></td><td>String</td><td>(empty)</td><td>Comma-separated product IDs to display</td></tr>
+                <tr><td><code>columns</code></td><td><code>1</code> &ndash; <code>6</code></td><td><code>3</code></td><td>Number of grid columns (grid style only)</td></tr>
+                <tr><td><code>pagination</code></td><td><code>on</code>, <code>off</code></td><td><code>on</code></td><td>Show pagination</td></tr>
+                <tr><td><code>search</code></td><td><code>on</code>, <code>off</code></td><td><code>off</code></td><td>Show search bar above the list</td></tr>
+                <tr><td><code>class</code></td><td>String</td><td>(empty)</td><td>Additional CSS class names for the wrapper</td></tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div style="overflow-x:auto; border:1px solid var(--panel-edge); background:var(--panel); border-radius:var(--radius); margin-bottom:28px;">
-          <table style="width:100%; border-collapse:collapse; font-size:13px;">
-            <thead>
-              <tr style="font-family:var(--mono); font-size:11px; letter-spacing:.08em; color:var(--ink-faint); text-transform:uppercase; border-bottom:1px solid var(--rule);">
-                <th style="padding:10px 16px; text-align:left;">Parameter</th>
-                <th style="padding:10px 16px; text-align:left;">Type</th>
-                <th style="padding:10px 16px; text-align:left;">Default</th>
-                <th style="padding:10px 16px; text-align:left;">Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">style</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">grid</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Display layout: <code>grid</code> or <code>list</code></td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">show</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">integer</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">6</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Number of items to display per page</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">order</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">DESC</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Sort order: <code>ASC</code> (ascending) or <code>DESC</code> (descending)</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">orderby</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">date</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Sort field: <code>date</code>, <code>title</code>, <code>price</code>, <code>rand</code>, <code>menu_order</code></td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">type</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">&mdash;</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Filter by rental type: <code>bike</code>, <code>car</code>, <code>resort</code>, <code>equipment</code>, <code>dress</code>; or <code>bike_car_sd</code> for single-day bike/car, <code>bike_car_md</code> for multi-day</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">category</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">&mdash;</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Comma-separated list of category IDs or slugs to filter by</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">ids</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">&mdash;</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Comma-separated list of specific product IDs to display</td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">columns</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">integer</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">3</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Number of grid columns (1&ndash;6). Only applies when <code>style='grid'</code></td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">pagination</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">on</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Show pagination: <code>on</code> or <code>off</code></td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">search</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">off</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Show a search bar above the list: <code>on</code> or <code>off</code></td>
-              </tr>
-              <tr style="border-bottom:1px solid var(--rule);">
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; white-space:nowrap;">class</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">string</td>
-                <td style="padding:10px 16px; font-family:var(--mono); font-size:12px; color:var(--ink-faint);">&mdash;</td>
-                <td style="padding:10px 16px; color:var(--ink-dim);">Additional CSS class names for the wrapper div</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="shortcode-card">
+            <h3>Rent Add to Cart</h3>
+            <p>Displays a single-item add-to-cart button for a specific rental product. Accepts a valid WooCommerce product ID.</p>
+            <div class="shortcode-box">
+              <code>[rent-add-to-cart id="1"]</code>
+              <button class="copy-btn" data-code='[rent-add-to-cart id="1"]'>Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>id</code></td><td>Integer</td><td>(required)</td><td>Valid WooCommerce product ID</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Rent Search Form</h3>
+            <p>Renders an advanced rental search form with date picker, type selector, and category dropdown. Results can be displayed on a separate search results page.</p>
+            <div class="shortcode-box">
+              <code>[rent-search-form]</code>
+              <button class="copy-btn" data-code="[rent-search-form]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>class</code></td><td>String</td><td>(empty)</td><td>Additional CSS class names for the form</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Rent Cart</h3>
+            <p>Displays a mini rental cart for the quick checkout flow. Shows selected items, dates, and total cost. Works with the plugin's standalone checkout mode.</p>
+            <div class="shortcode-box">
+              <code>[rent-cart]</code>
+              <button class="copy-btn" data-code="[rent-cart]">Copy</button>
+            </div>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Rent Checkout</h3>
+            <p>Renders the standalone rental checkout form. Collects customer details, rental dates, and payment info. Only applicable when using the plugin's built-in checkout.</p>
+            <div class="shortcode-box">
+              <code>[rent-checkout]</code>
+              <button class="copy-btn" data-code="[rent-checkout]">Copy</button>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <h3>Usage Examples</h3>
+      <section class="doc-section" id="usage-examples">
+        <h2>Usage Examples</h2>
+        <p>Practical examples showing how to use shortcodes in different scenarios.</p>
         <div class="doc-grid">
           <article class="doc-card">
             <h3>Basic Grid</h3>
@@ -158,49 +156,13 @@
             </ul>
           </article>
         </div>
-
-        <h3>Additional Shortcodes</h3>
-        <div class="doc-grid">
-          <article class="doc-card">
-            <h3>Rent Add to Cart</h3>
-            <ul>
-              <li><code>[rent-add-to-cart id='1']</code> &mdash; single-item add-to-cart button</li>
-              <li>Useful for direct purchasing of a specific rental product</li>
-              <li>The <code>id</code> parameter accepts a valid WooCommerce product ID</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Rent Search Form</h3>
-            <ul>
-              <li><code>[rent-search-form]</code> &mdash; renders the advanced rental search form</li>
-              <li>Includes date picker, type selector, and category dropdown</li>
-              <li>Results can be displayed on a separate search results page</li>
-              <li>Customizable form fields via the plugin settings</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Rent Cart</h3>
-            <ul>
-              <li><code>[rent-cart]</code> &mdash; displays a mini rental cart for the quick checkout flow</li>
-              <li>Shows selected items, dates, and total cost</li>
-              <li>Works with the plugin's standalone checkout mode</li>
-            </ul>
-          </article>
-          <article class="doc-card">
-            <h3>Rent Checkout</h3>
-            <ul>
-              <li><code>[rent-checkout]</code> &mdash; renders the standalone rental checkout form</li>
-              <li>Collects customer details, rental dates, and payment info</li>
-              <li>Only applicable when using the plugin's built-in checkout</li>
-            </ul>
-          </article>
-        </div>
       </section>
+
     </main>
   </div>
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+
+  <div id="footer-root"></div>
+
 <script>
 (function(){
   "use strict";
@@ -209,6 +171,9 @@
     { href: 'index.html', label: 'WpRently' },
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebarRently();
+  renderFooter();
+  initCopyButtons();
 })();
 </script>
 </body>

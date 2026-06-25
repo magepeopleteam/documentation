@@ -9,70 +9,103 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../favicon.ico">
 <link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="../../js/layout.js"></script>
+<style>
+.docs-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: .9em; }
+.shortcode-card code { background: none; padding: 0; }
+.shortcode-grid { grid-template-columns: 1fr; }
+.doc-grid { grid-template-columns: 1fr; }
+</style>
 </head>
 <body>
-  <div id="topbar-root"></div>
-  <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="index.html" class="docs-nav-link">&larr; Back to Overview</a>
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link active">Shortcode Guidelines</a>
-        <a href="plugin-settings.html" class="docs-nav-link">Plugin Settings</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="pro-features.html" class="docs-nav-link">Pro Features</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
-    <main class="docs-content">
-      <section class="doc-section" id="shortcode-guidelines">
-        <h2>Shortcode Guidelines</h2>
-        <p>Display transport booking forms anywhere on your site using dedicated shortcodes. eCab provides separate shortcodes for each pricing model, giving you full control over the customer booking experience.</p>
 
+  <div id="topbar-root"></div>
+
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
+
+      <section class="doc-section" id="shortcode-list">
+        <h2>Shortcode Guidelines</h2>
+        <p>eCab provides separate shortcodes for each pricing model, giving you full control over the customer booking experience. Display transport booking forms anywhere on your site.</p>
+
+        <div class="shortcode-grid">
+
+          <div class="shortcode-card">
+            <h3>Distance-Based Pricing</h3>
+            <p>Displays a booking form that calculates fares based on pickup-to-dropoff distance. Google Maps integration provides address autocomplete and dynamic fare calculation.</p>
+            <div class="shortcode-box">
+              <code>[ecab_booking]</code>
+              <button class="copy-btn" data-code="[ecab_booking]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>style</code></td><td><code>horizontal</code>, <code>vertical</code></td><td><code>horizontal</code></td><td>Layout style of the booking form</td></tr>
+                <tr><td><code>vehicle_id</code></td><td>Integer</td><td>(empty)</td><td>Pre-select a specific transport vehicle by ID</td></tr>
+                <tr><td><code>hide_location</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Hide the location selection step</td></tr>
+                <tr><td><code>hide_date</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Hide the date/time selection step</td></tr>
+                <tr><td><code>hide_passenger</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Hide the passenger/bag count selector</td></tr>
+                <tr><td><code>class</code></td><td>String</td><td>(empty)</td><td>Custom CSS class for branding</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Fixed Hourly Pricing</h3>
+            <p>Displays a booking form tailored for hourly rental services. Customers book a vehicle for a set number of hours with a flat hourly rate.</p>
+            <div class="shortcode-box">
+              <code>[ecab_hourly_booking]</code>
+              <button class="copy-btn" data-code="[ecab_hourly_booking]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>style</code></td><td><code>horizontal</code>, <code>vertical</code></td><td><code>horizontal</code></td><td>Layout style of the booking form</td></tr>
+                <tr><td><code>vehicle_id</code></td><td>Integer</td><td>(empty)</td><td>Pre-select a specific vehicle by ID</td></tr>
+                <tr><td><code>hide_date</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Hide the date/time selection step</td></tr>
+                <tr><td><code>class</code></td><td>String</td><td>(empty)</td><td>Custom CSS class for branding</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="shortcode-card">
+            <h3>Manual Fixed Location Pricing</h3>
+            <p>Displays a booking form for predefined routes with fixed prices. Customers choose from location pairs with predetermined fares.</p>
+            <div class="shortcode-box">
+              <code>[ecab_fixed_booking]</code>
+              <button class="copy-btn" data-code="[ecab_fixed_booking]">Copy</button>
+            </div>
+            <table class="params-table" style="margin-top:12px;">
+              <thead>
+                <tr><th>Parameter</th><th>Values</th><th>Default</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>style</code></td><td><code>horizontal</code>, <code>vertical</code></td><td><code>horizontal</code></td><td>Layout style of the booking form</td></tr>
+                <tr><td><code>vehicle_id</code></td><td>Integer</td><td>(empty)</td><td>Pre-select a specific vehicle by ID</td></tr>
+                <tr><td><code>hide_date</code></td><td><code>yes</code>, <code>no</code></td><td><code>no</code></td><td>Hide the date/time selection step</td></tr>
+                <tr><td><code>class</code></td><td>String</td><td>(empty)</td><td>Custom CSS class for branding</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="doc-section" id="embedding-tips">
+        <h2>Embedding &amp; Placement Tips</h2>
+        <p>Best practices for placing shortcodes on your WordPress site for optimal user experience.</p>
         <div class="doc-grid">
           <article class="doc-card">
-            <h3>Distance-Based Pricing Shortcode</h3>
-            <p>Use this shortcode to display a booking form that calculates fares based on pickup-to-dropoff distance. Customers select their pickup and dropoff locations, and the fare is computed per kilometer plus per-hour waiting charges.</p>
-            <ul>
-              <li>Shortcode automatically detects the distance-based pricing model</li>
-              <li>Google Maps integration provides address autocomplete for pickup and dropoff</li>
-              <li>Fare is dynamically calculated based on the route distance and duration</li>
-              <li>Supports additional parameters like vehicle type and passenger count filtering</li>
-              <li>Real-time fare preview updates as the customer adjusts pickup and dropoff locations</li>
-            </ul>
-          </article>
-
-          <article class="doc-card">
-            <h3>Fixed Hourly Pricing Shortcode</h3>
-            <p>Display a booking form tailored for hourly rental services. Customers book a vehicle for a set number of hours with a flat hourly rate, ideal for airport transfers, city tours, or event transportation.</p>
-            <ul>
-              <li>Customers select pickup location and duration in hours</li>
-              <li>Fare is calculated as hourly rate multiplied by the number of hours</li>
-              <li>Supports minimum hour requirements (e.g., minimum 3 hours per booking)</li>
-              <li>Can include extra charges for additional distance beyond included mileage</li>
-              <li>Waiting time and overtime charges can be configured separately</li>
-            </ul>
-          </article>
-
-          <article class="doc-card">
-            <h3>Manual Fixed Location Pricing Shortcode</h3>
-            <p>Use this shortcode when you have predefined routes with fixed prices. Customers select from a list of pickup and dropoff location pairs, each with a predetermined fare, providing a simple and predictable booking experience.</p>
-            <ul>
-              <li>Customers choose from predefined location pairs (e.g., Airport to Downtown Hotel)</li>
-              <li>Each location pair has a manually configured fixed price</li>
-              <li>Perfect for standard routes with known distances and traffic patterns</li>
-              <li>Dropdown-style selection simplifies the booking process for customers</li>
-              <li>Can include multiple vehicle types with different fixed prices per route</li>
-            </ul>
-          </article>
-
-          <article class="doc-card">
-            <h3>Embedding Shortcodes</h3>
+            <h3>Page Placement</h3>
             <ul>
               <li>Place the shortcode in any WordPress post, page, or custom post type</li>
               <li>Use the Classic Editor by pasting the shortcode directly into the editor</li>
@@ -82,23 +115,10 @@
               <li>Wrap shortcodes in custom HTML containers for additional styling control</li>
             </ul>
           </article>
-
           <article class="doc-card">
-            <h3>Shortcode Parameters</h3>
+            <h3>Troubleshooting</h3>
             <ul>
-              <li>style: control the layout style of the booking form (horizontal, vertical)</li>
-              <li>class: add custom CSS classes to the shortcode wrapper for branding</li>
-              <li>vehicle_id: pre-select a specific transport vehicle by its ID</li>
-              <li>hide_location: set to yes to hide the location selection step</li>
-              <li>hide_date: set to yes to hide the date/time selection step</li>
-              <li>hide_passenger: set to yes to hide the passenger/bag count selector</li>
-            </ul>
-          </article>
-
-          <article class="doc-card">
-            <h3>Troubleshooting Shortcodes</h3>
-            <ul>
-              <li>If the shortcode displays as plain text, ensure permalinks are saved (Settings &rarr; Permalinks &rarr; Save)</li>
+              <li>If the shortcode displays as plain text, save permalinks (Settings &rarr; Permalinks &rarr; Save)</li>
               <li>Verify WooCommerce is installed and activated for payment processing</li>
               <li>Check that the selected pricing model matches the shortcode type</li>
               <li>Clear any caching plugins or CDN caches to reload the shortcode output</li>
@@ -108,11 +128,12 @@
           </article>
         </div>
       </section>
+
     </main>
   </div>
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+
+  <div id="footer-root"></div>
+
 <script>
 (function(){
   "use strict";
@@ -121,6 +142,9 @@
     { href: 'index.html', label: 'eCab' },
     { href: '', label: 'Shortcode Guidelines' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebarEcab();
+  renderFooter();
+  initCopyButtons();
 })();
 </script>
 </body>

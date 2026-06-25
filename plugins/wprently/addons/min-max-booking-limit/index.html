@@ -4,8 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Min and Max Booking Limit — WpRently Add‑On</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon.ico">
 <link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -15,38 +19,55 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Min and Max Booking Limit &mdash; WpRently Add‑On</h1>
-    <p class="lede">Set minimum and maximum booking limits for rental items. Helps control rental quantity per customer and keeps your inventory usage balanced and well-managed.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Min and Max Booking Limit Add‑On</h2>
+        <p>Set minimum and maximum booking limits for rental items. Helps control rental quantity per customer and keeps your inventory usage balanced and well-managed.</p>
+      </section>
 
-  </main>
+      <section class="doc-section" id="installation">
+        <h2>Installation</h2>
+        <ol>
+          <li>Download the addon zip from your MagePeople account.</li>
+          <li>Go to <strong>Plugins &rarr; Add New &rarr; Upload Plugin</strong>.</li>
+          <li>Upload the zip file and click <strong>Install Now</strong>.</li>
+          <li>Activate the plugin from the Plugins page.</li>
+        </ol>
+      </section>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 49 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+      <section class="doc-section" id="usage">
+        <h2>Usage</h2>
+        <ol>
+          <li>Navigate to the WpRently settings panel and locate the Min and Max Booking Limit section.</li>
+          <li>Set the minimum quantity per booking (e.g., 1 item minimum).</li>
+          <li>Set the maximum quantity per booking (e.g., 5 items maximum).</li>
+          <li>When a customer tries to book outside these limits, the system displays an appropriate error message and prevents the booking.</li>
+        </ol>
+      </section>
+
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase from MagePeople. Visit the <a href="https://mage-people.com" target="_blank" rel="noopener">MagePeople website</a> for pricing and licensing details.</p>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpRently' },
-    { href: '#', label: 'Min and Max Booking Limit' }
+    { href: '', label: 'Min and Max Booking Limit' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebarRently();
+  renderFooter();
 })();
 </script>
 </body>

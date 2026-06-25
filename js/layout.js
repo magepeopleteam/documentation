@@ -500,6 +500,112 @@ function renderDocsSidebarBookingly(activePage, hideBackLink) {
   if (el) ReactDOM.render(h(BookinglyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
 }
 
+function EcabDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/ecab/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'plugin-settings.html', label: 'Plugin Settings' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'pro-features.html', label: 'Pro Features' },
+    { href: base + 'faq.html', label: 'FAQ' },
+    { href: '/index.html#ecab', label: 'Available Addons' }
+  ];
+
+  var addonLinks = [
+    { href: base + 'addons/peak-hour-pricing/', label: 'Peak Hour Pricing' },
+    { href: base + 'addons/distance-tier-pricing/', label: 'Distance Tier Pricing' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      }),
+      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+      ...addonLinks.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarEcab(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(EcabDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
+function RentlyDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wprently/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'global-settings.html', label: 'Global Settings' },
+    { href: base + 'faq.html', label: 'FAQ' },
+    { href: '/index.html#wprently', label: 'Available Addons' }
+  ];
+
+  var addonLinks = [
+    { href: base + 'addons/min-max-booking-limit/', label: 'Min and Max Booking Limit' },
+    { href: base + 'addons/seasonal-pricing-management/', label: 'Seasonal Pricing Management' },
+    { href: base + 'addons/multi-day-discount-pricing/', label: 'Multi-Day Discount Pricing' },
+    { href: base + 'addons/admin-backend-order/', label: 'Admin Backend Order' },
+    { href: base + 'addons/pricing-discount-over-x-days/', label: 'Pricing Discount Over x Days' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      }),
+      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+      ...addonLinks.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarRently(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(RentlyDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
 function renderPage({ title, description, boardRows, plugins, pluginCount, addonCount, navLinks }) {
   const root = document.getElementById('root');
   if (!root) return;
