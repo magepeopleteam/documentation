@@ -3,12 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WooCommerce Event QR Code — WpEvently Add‑On</title>
+<title>WpEvently — WooCommerce Event QR Code Addon</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon.ico">
 <link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  .docs-content code{
+    font-family:var(--mono); font-size:12px;
+    background:var(--bg-soft); color:var(--amber);
+    padding:2px 6px; border-radius:3px;
+    border:1px solid var(--rule);
+  }
+  .api-endpoint code{
+    background:none; color:var(--amber);
+    padding:0; border:none;
+  }
+</style>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -23,8 +36,8 @@
     <main class="docs-content">
 
       <section class="doc-section" id="overview">
-        <h2>Overview</h2>
-        <p>The WooCommerce Event QR Code Addon provides a simple solution for managing QR codes for attendee sign-in or check-in at the event spot. QR codes are added to PDF tickets for easy scanning at the event gate.</p>
+        <h2>WooCommerce Event QR Code Addon</h2>
+        <p>QR code addon is needed to validate the ticket. If you have a large event then this addon must need to check ticket validity by scanning by QR scanner or mobile.</p>
       </section>
 
       <section class="doc-section" id="settings">
