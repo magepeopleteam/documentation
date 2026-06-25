@@ -23,44 +23,106 @@
         <h2>FAQ</h2>
         <p>Quick answers to common questions about installing, configuring, and troubleshooting the Booking and Rental Manager for WooCommerce (WpRently).</p>
 
-        <h3>Installation &amp; Requirements</h3>
+        <h3>General Questions</h3>
         <div class="doc-grid">
           <article class="doc-card">
-            <h3>Can I use this plugin without WooCommerce?</h3>
+            <h3>How can I translate WpRently into other languages?</h3>
             <ul>
-              <li>Yes, the plugin includes its own PayPal and Stripe integration for standalone use</li>
-              <li>However, WooCommerce is recommended for full functionality (inventory, tax, reporting)</li>
-              <li>Without WooCommerce, features like product categories and stock management are limited</li>
-              <li>Switch between modes under WpRently &rarr; Settings &rarr; General &rarr; Checkout Mode</li>
+              <li>WpRently is translation-ready with a <code>.pot</code> file in the <code>/languages/</code> folder</li>
+              <li>Use <strong>Loco Translate</strong> or <strong>Poedit</strong> to create translation files</li>
+              <li>Custom label changes in settings are stored as site options</li>
             </ul>
           </article>
           <article class="doc-card">
-            <h3>What are the server requirements?</h3>
+            <h3>Can WpRently send automated email or SMS notifications?</h3>
             <ul>
-              <li>WordPress 5.6 or higher</li>
-              <li>PHP 7.4 or higher (PHP 8.x recommended)</li>
-              <li>MySQL 5.6+ or MariaDB 10.1+</li>
-              <li>At least 128 MB of WordPress memory limit</li>
-              <li>cURL and JSON extensions enabled on the server</li>
+              <li>Yes, email notifications are sent for booking confirmations and status changes</li>
+              <li>SMS notifications require an additional SMS gateway integration</li>
+              <li>Configure email templates under WpRently &rarr; Settings &rarr; Email Settings</li>
             </ul>
           </article>
           <article class="doc-card">
-            <h3>How do I upgrade from free to Pro?</h3>
+            <h3>Does WpRently integrate with WooCommerce?</h3>
             <ul>
-              <li>Purchase a Pro license from the Magepeople website</li>
-              <li>Download the Pro plugin zip from your account dashboard</li>
-              <li>Install and activate the Pro plugin alongside the free version</li>
-              <li>Enter your license key under WpRently &rarr; License</li>
-              <li>All Pro features unlock immediately without losing existing data</li>
+              <li>Yes, WpRently integrates seamlessly with WooCommerce</li>
+              <li>Uses WooCommerce checkout, cart, and payment gateways when enabled</li>
+              <li>Also supports standalone checkout mode without WooCommerce</li>
             </ul>
           </article>
           <article class="doc-card">
-            <h3>How do I install addons?</h3>
+            <h3>Can I customize the booking form and fields?</h3>
             <ul>
-              <li>Addons are installed as separate plugins from your Magepeople account</li>
-              <li>Upload and activate them like any WordPress plugin</li>
-              <li>Each addon requires its own license key for updates</li>
-              <li>Check <a href="available-addons.html">Available Addons</a> for the full list</li>
+              <li>Yes, create custom registration forms under the Registration Form settings</li>
+              <li>Add, remove, or reorder fields for each rental item</li>
+              <li>Field types include text, dropdown, checkbox, date, and file upload</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Does WpRently support discount coupons or promo codes?</h3>
+            <ul>
+              <li>Yes, when using WooCommerce checkout mode, all WooCommerce coupons are supported</li>
+              <li>In standalone mode, discount addons like Pricing Discount Over X Days apply automatically</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Is there an option for partial payments?</h3>
+            <ul>
+              <li>Yes, enable deposits under WpRently &rarr; Settings &rarr; Pricing</li>
+              <li>Choose percentage-based or fixed-amount deposit</li>
+              <li>The balance can be collected at pickup or a later date</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>What payment gateways does WpRently support?</h3>
+            <ul>
+              <li>With WooCommerce: all WooCommerce gateways (PayPal, Stripe, Square, etc.)</li>
+              <li>Standalone mode: built-in PayPal and Stripe integration</li>
+              <li>Additional gateways can be added via WooCommerce extensions</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>How does WpRently handle security deposits?</h3>
+            <ul>
+              <li>Enable Security Deposit for individual rental items</li>
+              <li>Set a fixed amount or percentage as a refundable deposit</li>
+              <li>The deposit is charged separately and refunded upon return</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Is there an option to block specific dates?</h3>
+            <ul>
+              <li>Yes, set off-days and holidays under WpRently &rarr; Settings &rarr; Availability</li>
+              <li>Block dates per product from the product edit screen's Availability tab</li>
+              <li>Off-days prevent any bookings on those dates</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Does WpRently support hourly, daily, and weekly rentals?</h3>
+            <ul>
+              <li>Yes, configure the pricing model per product: Per Day, Per Hour, Per Day + Per Hour, or Flat Rate</li>
+              <li>Mix different pricing models across your rental catalogue</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can customers book rentals for specific dates?</h3>
+            <ul>
+              <li>Yes, customers select pickup and return dates on the product page</li>
+              <li>Availability is checked in real-time before adding to cart</li>
+              <li>Blocked dates and off-days are automatically excluded</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Is WpRently mobile-friendly and responsive?</h3>
+            <ul>
+              <li>Yes, all shortcodes and templates are fully responsive</li>
+              <li>Works seamlessly on mobile, tablet, and desktop devices</li>
+            </ul>
+          </article>
+          <article class="doc-card">
+            <h3>Can I use WpRently for any type of rental business?</h3>
+            <ul>
+              <li>Yes, WpRently supports bike, car, equipment, dress, resort, and other rental types</li>
+              <li>Custom rental types can be added via the Rent Item Type settings</li>
             </ul>
           </article>
         </div>
@@ -81,17 +143,16 @@
             <ul>
               <li>Use <code>[rent-list type='car']</code> to display only car rental items</li>
               <li>Combine with other parameters: <code>[rent-list type='car' style='list' show='10']</code></li>
-              <li>Available type values: <code>bike</code>, <code>car</code>, <code>resort</code>, <code>equipment</code>, <code>dress</code></li>
-              <li>Use <code>bike_car_sd</code> for single-day or <code>bike_car_md</code> for multi-day items</li>
+              <li>Available type values: <code>bike</code>, <code>car</code>, <code>resort</code>, <code>equipment</code>, <code>dress</code>, <code>others</code></li>
             </ul>
           </article>
           <article class="doc-card">
             <h3>How do I add a search form?</h3>
             <ul>
-              <li>Add the <code>[rent-search-form]</code> shortcode to any page</li>
+              <li>Add the <code>[rbfw_search]</code> shortcode to any page</li>
+              <li>Place <code>[search-result]</code> on the <code>search-item-list</code> page</li>
               <li>Customers can search by date, type, category, and location</li>
-              <li>Results are displayed on the results page set in Global Settings</li>
-              <li>Enable AJAX search for instant filtering without page reload</li>
+              <li>The search form value works only when assigned in the rent item settings</li>
             </ul>
           </article>
           <article class="doc-card">
@@ -227,6 +288,20 @@
               <li>Enable debug mode in the payment gateway to see error logs</li>
               <li>Test with a sandbox/live key pair from your payment provider</li>
               <li>Ensure the site uses HTTPS for secure payment transmission</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Per-Product FAQ</h3>
+        <div class="doc-grid">
+          <article class="doc-card">
+            <h3>How do I add FAQs to a rental item?</h3>
+            <ul>
+              <li>Navigate to the rental item edit screen and locate the <strong>FAQ</strong> tab.</li>
+              <li>Toggle FAQ Settings to <strong>Enable</strong>.</li>
+              <li>Add Questions and Answers using the provided fields.</li>
+              <li>Click <strong>Add FAQ</strong> to add more questions.</li>
+              <li>Update the rental item — FAQs are displayed on the front-end product page.</li>
             </ul>
           </article>
         </div>
