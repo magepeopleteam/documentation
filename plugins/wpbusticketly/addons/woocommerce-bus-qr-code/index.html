@@ -3,69 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QR Code — WpBusTicketly Add‑On</title>
+<title>WpBusTicketly — QR Code Addon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../../favicon.ico">
 <link rel="stylesheet" href="../../../../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="../../../../js/layout.js"></script>
+<style>
+.docs-content code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: .9em; }
+.api-endpoint code { background: #eef; padding: 2px 6px; border-radius: 4px; font-size: .85em; }
+</style>
 </head>
 <body>
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>QR Code &mdash; WpBusTicketly Add‑On</h1>
-    <p class="lede">Add QR code support to your bus ticket booking system for fast and secure ticket validation.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>QR Code Addon</h2>
+        <p>Add QR code support to your bus ticket booking system for fast and secure ticket validation.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>Add QR code support to your bus ticket booking system for fast and secure ticket validation. This is a PRO feature of the WpBusTicketly plugin.</p>
-    </section>
+      <section class="doc-section" id="installation">
+        <h2>Installation</h2>
+        <ol>
+          <li>Download the addon zip from your account.</li>
+          <li>Go to <strong>Plugins &rarr; Add New &rarr; Upload Plugin</strong>.</li>
+          <li>Upload the zip and click <strong>Install Now</strong>.</li>
+          <li>Activate the plugin from the Plugins page.</li>
+        </ol>
+      </section>
 
-    <section class="doc-section" id="settings">
-      <h2>Settings</h2>
-      <p>To enable QR code, go to <strong>Bus → Settings → QR Settings</strong>:</p>
-      <ul>
-        <li><strong>Enable/Disable</strong> — Toggle the QR code feature on or off.</li>
-        <li><strong>Checker Role</strong> — Set the user role for ticket checkers who can scan and validate tickets.</li>
-      </ul>
-    </section>
+      <section class="doc-section" id="settings">
+        <h2>Settings</h2>
+        <p>To enable QR code, go to <strong>Bus &rarr; Settings &rarr; QR Settings</strong>:</p>
+        <ul>
+          <li><strong>Enable/Disable</strong> &mdash; Toggle the QR code feature on or off.</li>
+          <li><strong>Checker Role</strong> &mdash; Set the user role for ticket checkers who can scan and validate tickets.</li>
+        </ul>
+      </section>
 
-    <section class="doc-section" id="usage">
-      <h2>Usage</h2>
-      <p>Once enabled, QR codes appear on all PDF tickets. The checker scans the ticket to validate it. Check-in status is updated in real time and can be viewed in the Passenger List.</p>
-    </section>
+      <section class="doc-section" id="usage">
+        <h2>Usage</h2>
+        <ol>
+          <li>Once enabled, QR codes appear on all PDF tickets.</li>
+          <li>The checker scans the ticket using a QR scanning app.</li>
+          <li>Check-in status is updated in real time and can be viewed in the Passenger List.</li>
+        </ol>
+      </section>
 
-  </main>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/woocommerce-bus-qr-code-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 45 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+    </main>
+  </div>
+
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpBusTicketly' },
-    { href: '#', label: 'QR Code' }
+    { href: '', label: 'QR Code' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebarBus('index.html');
+  renderFooter();
 })();
 </script>
 </body>

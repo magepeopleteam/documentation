@@ -351,6 +351,57 @@ function renderDocsSidebar(activePage, hideBackLink) {
   if (el) ReactDOM.render(h(DocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
 }
 
+function BusDocsSidebar({ activePage, hideBackLink }) {
+  var base = '/plugins/wpbusticketly/';
+  var links = [
+    { href: base + 'installation-setup.html', label: 'Installation & Setup' },
+    { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
+    { href: base + 'general-guidelines.html', label: 'General Guidelines' },
+    { href: base + 'bus-manager-settings.html', label: 'Bus Manager Settings' },
+    { href: base + 'rest-api.html', label: 'REST API' },
+    { href: base + 'faq.html', label: 'FAQ' },
+    { href: '/index.html#wpbusticketly', label: 'Available Addons' }
+  ];
+
+  var addonLinks = [
+    { href: base + 'addons/woocommerce-bus-qr-code/', label: 'QR Code' }
+  ];
+
+  function isActive(href) {
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
+  }
+
+  return h('aside', { className: 'docs-sidebar' },
+    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+    h('nav', { className: 'docs-nav' },
+      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+      ...links.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      }),
+      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+      ...addonLinks.map(function(link) {
+        return h('a', {
+          key: link.href,
+          href: link.href,
+          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+        }, link.label);
+      })
+    )
+  );
+}
+
+function renderDocsSidebarBus(activePage, hideBackLink) {
+  var el = document.getElementById('sidebar-root');
+  if (el) ReactDOM.render(h(BusDocsSidebar, { activePage: activePage, hideBackLink: hideBackLink }), el);
+}
+
 function renderPage({ title, description, boardRows, plugins, pluginCount, addonCount, navLinks }) {
   const root = document.getElementById('root');
   if (!root) return;

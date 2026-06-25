@@ -19,18 +19,7 @@
   <div id="topbar-root"></div>
 
   <div class="docs-section-wrap">
-    <aside class="docs-sidebar">
-      <h3 class="docs-sidebar-title">Documentation</h3>
-      <nav class="docs-nav">
-        <a href="installation-setup.html" class="docs-nav-link">Installation &amp; Setup</a>
-        <a href="shortcode-guidelines.html" class="docs-nav-link">Shortcode Guidelines</a>
-        <a href="general-guidelines.html" class="docs-nav-link">General Guidelines</a>
-        <a href="bus-manager-settings.html" class="docs-nav-link">Bus Manager Settings</a>
-        <a href="rest-api.html" class="docs-nav-link">REST API</a>
-        <a href="available-addons.html" class="docs-nav-link">Available Addons</a>
-        <a href="faq.html" class="docs-nav-link">FAQ</a>
-      </nav>
-    </aside>
+    <div id="sidebar-root"></div>
     <main class="docs-content">
       <section class="doc-section" id="installation-setup">
         <h2>Installation &amp; Setup</h2>
@@ -210,11 +199,11 @@
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../index.html', label: 'All Plugins' },
-    { href: '#', label: 'WpBusTicketly' }
+    { href: '', label: 'WpBusTicketly' }
   ], '../../images/MG-web-logo.webp');
+  renderDocsSidebarBus('', true);
 })();
 </script>
 </body>
