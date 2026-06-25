@@ -18,53 +18,40 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Group Ticket Qty &mdash; WpEvently Add‑On</h1>
-    <p class="lede">Enable customers to purchase multiple tickets in groups with flexible quantity selection options.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>With the Global/Common Qty Addon, the WooCommerce Event Manager Plugin's ticket quantity can be managed as a common or global quantity. By default, quantity works per ticket type, but this addon allows you to manage inventory across all ticket types together.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>With the Global/Common Qty Addon, the WooCommerce Event Manager Plugin's ticket quantity can be managed as a common or global quantity. By default, quantity works per ticket type, but this addon allows you to manage inventory across all ticket types together.</p>
-    </section>
+      <section class="doc-section" id="settings">
+        <h2>Settings</h2>
+        <p>After installation, navigate to the event edit page. You will find settings to enable common/global quantity management. Instead of tracking stock per ticket type, the addon uses a single pooled quantity for the entire event.</p>
+      </section>
 
-    <section class="doc-section" id="settings">
-      <h2>Settings</h2>
-      <p>After installation, navigate to the event edit page. You will find settings to enable common/global quantity management. Instead of tracking stock per ticket type, the addon uses a single pooled quantity for the entire event.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/global-common-qty-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/global-common-qty-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Group Ticket Qty' }
+    { href: '', label: 'Group Ticket Qty' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

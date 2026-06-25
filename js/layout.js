@@ -299,11 +299,25 @@ function DocsSidebar({ activePage, hideBackLink }) {
   ];
 
   var addonLinks = [
-    { href: base + 'addons/min-max-quantity.html', label: 'Min/Max Quantity' }
+    { href: base + 'addons/min-max-quantity.html', label: 'Min/Max Quantity' },
+    { href: base + 'addons/book-events-from-dashboard/index.html', label: 'Book Events from Dashboard' },
+    { href: base + 'addons/event-seat-plan/index.html', label: 'Event Seat Plan' },
+    { href: base + 'addons/email-reminder/index.html', label: 'Email Reminder' },
+    { href: base + 'addons/event-duplicator/index.html', label: 'Event Duplicator' },
+    { href: base + 'addons/group-ticket-qty/index.html', label: 'Group Ticket Qty' },
+    { href: base + 'addons/event-max-min-quantity-limiting/index.html', label: 'Event Max-Min Qty Limiting' },
+    { href: base + 'addons/category-based-ticket-type/index.html', label: 'Category Based Ticket Type' },
+    { href: base + 'addons/woocommerce-event-calendar/index.html', label: 'Event Calendar' },
+    { href: base + 'addons/woocommerce-event-qr-code/index.html', label: 'Event QR Code' },
+    { href: base + 'addons/membership-price/index.html', label: 'Membership Price' },
+    { href: base + 'addons/marketplace-frontend-submission/index.html', label: 'Marketplace / Frontend Submission' },
+    { href: base + 'addons/woocommerce-event-coupon-code/index.html', label: 'Event Coupon Code' },
+    { href: base + 'addons/review-and-rating/index.html', label: 'Review & Rating' },
+    { href: base + 'addons/woocommerce-event-waitlist/index.html', label: 'Event Waitlist' }
   ];
 
   function isActive(href) {
-    return activePage && href.endsWith(activePage);
+    return href === window.location.pathname;
   }
 
   return h('aside', { className: 'docs-sidebar' },

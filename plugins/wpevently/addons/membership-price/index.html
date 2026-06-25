@@ -18,62 +18,49 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Membership Price &mdash; WpEvently Add‑On</h1>
-    <p class="lede">A membership pricing addon for the event is needed for that organiser who wants to offer different pricing based on the user role of a WordPress website.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>With this addon, the WooCommerce Event Manager Plugin's ticket price can be set as different member prices. Pricing works depending on the member type logged in.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>With this addon, the WooCommerce Event Manager Plugin's ticket price can be set as different member prices. Pricing works depending on the member type logged in.</p>
-    </section>
+      <section class="doc-section" id="compatibility">
+        <h2>Compatibility</h2>
+        <p>Currently supported with:</p>
+        <ul>
+          <li>WordPress Default User Roles</li>
+          <li>WooCommerce Membership Plugin</li>
+        </ul>
+      </section>
 
-    <section class="doc-section" id="compatibility">
-      <h2>Compatibility</h2>
-      <p>Currently supported with:</p>
-      <ul>
-        <li>WordPress Default User Roles</li>
-        <li>WooCommerce Membership Plugin</li>
-      </ul>
-    </section>
+      <section class="doc-section" id="settings">
+        <h2>Settings</h2>
+        <p>After installation, navigate to the event settings to select which membership plugin you are using. Then configure membership pricing for each ticket type &mdash; different prices can be set for different membership levels.</p>
+      </section>
 
-    <section class="doc-section" id="settings">
-      <h2>Settings</h2>
-      <p>After installation, navigate to the event settings to select which membership plugin you are using. Then configure membership pricing for each ticket type — different prices can be set for different membership levels.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/membership-price-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/membership-price-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Membership Price' }
+    { href: '', label: 'Membership Price' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

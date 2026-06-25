@@ -18,72 +18,59 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Event Seat Plan &mdash; WpEvently Add‑On</h1>
-    <p class="lede">A seat plan addon is needed for that organiser who wants to display a seat plan for customers to choose seating during event ticket buying.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>This Event Plugin addon for Seat Plan allows anyone to sell tickets with a seat plan. Different seat types can have different pricing, and the system is very flexible for seat mapping.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>This Event Plugin addon for Seat Plan allows anyone to sell tickets with a seat plan. Different seat types can have different pricing, and the system is very flexible for seat mapping.</p>
-    </section>
+      <section class="doc-section" id="design">
+        <h2>Seat Plan Design</h2>
+        <p>You can design a seat plan with a configurable number of columns and rows. Any row can be left blank, kept empty, or have a description for a position. Seat size can be adjusted, and seat types can be assigned for different pricing (VIP, 1st Class, 2nd Class, etc.).</p>
+      </section>
 
-    <section class="doc-section" id="design">
-      <h2>Seat Plan Design</h2>
-      <p>You can design a seat plan with a configurable number of columns and rows. Any row can be left blank, kept empty, or have a description for a position. Seat size can be adjusted, and seat types can be assigned for different pricing (VIP, 1st Class, 2nd Class, etc.).</p>
-    </section>
+      <section class="doc-section" id="customization">
+        <h2>Customization</h2>
+        <p>Different seat plan designs and colors can be changed through settings. Prices can also be set differently based on ticket type. Additionally, extra products (like caps, t-shirts, etc.) can be sold alongside the seat booking.</p>
+      </section>
 
-    <section class="doc-section" id="customization">
-      <h2>Customization</h2>
-      <p>Different seat plan designs and colors can be changed through settings. Prices can also be set differently based on ticket type. Additionally, extra products (like caps, t-shirts, etc.) can be sold alongside the seat booking.</p>
-    </section>
+      <section class="doc-section" id="use-cases">
+        <h2>Use Cases</h2>
+        <p>This addon is suitable for any kind of seat plan booking that has a fixed time and date:</p>
+        <ul>
+          <li>Seminar booking</li>
+          <li>Billboard booking</li>
+          <li>Trade fair position selling</li>
+          <li>Cinema booking (requires Recurring addon)</li>
+          <li>Movie ticket selling (requires Recurring addon)</li>
+          <li>Beach umbrella position selling</li>
+          <li>Restaurant table booking</li>
+        </ul>
+      </section>
 
-    <section class="doc-section" id="use-cases">
-      <h2>Use Cases</h2>
-      <p>This addon is suitable for any kind of seat plan booking that has a fixed time and date:</p>
-      <ul>
-        <li>Seminar booking</li>
-        <li>Billboard booking</li>
-        <li>Trade fair position selling</li>
-        <li>Cinema booking (requires Recurring addon)</li>
-        <li>Movie ticket selling (requires Recurring addon)</li>
-        <li>Beach umbrella position selling</li>
-        <li>Restaurant table booking</li>
-      </ul>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/seat-plan-addon-for-event-manager/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/seat-plan-addon-for-event-manager/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Seat Plan' }
+    { href: '', label: 'Seat Plan' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

@@ -18,55 +18,42 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Marketplace / Frontend Submission &mdash; WpEvently Add‑On</h1>
-    <p class="lede">This is event marketplace addon that is needed to allow event submit from frontend. Multiple organisers can sell tickets together in a same site.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>With the Event Marketplace / Frontend Submit Addon, organizers can submit events from their My Account or organizer page. Organizers can also view their event ticket selling balance, see the attendee list, and download the attendee list.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>With the Event Marketplace / Frontend Submit Addon, organizers can submit events from their My Account or organizer page. Organizers can also view their event ticket selling balance, see the attendee list, and download the attendee list.</p>
-    </section>
+      <section class="doc-section" id="shortcode">
+        <h2>Shortcode</h2>
+        <p>Use the following shortcode for organizer registration:</p>
+        <pre><code>[mefs_custom_registration]</code></pre>
+        <p>This shortcode displays the registration form that allows new organizers to sign up and start submitting events from the frontend.</p>
+      </section>
 
-    <section class="doc-section" id="shortcode">
-      <h2>Shortcode</h2>
-      <p>Use the following shortcode for organizer registration:</p>
-      <pre><code>[mefs_custom_registration]</code></pre>
-      <p>This shortcode displays the registration form that allows new organizers to sign up and start submitting events from the frontend.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/event-marketplace-frontend-submit-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/event-marketplace-frontend-submit-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Marketplace' }
+    { href: '', label: 'Marketplace' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

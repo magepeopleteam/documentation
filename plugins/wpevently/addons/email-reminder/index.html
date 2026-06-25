@@ -18,53 +18,40 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Email Reminder &mdash; WpEvently Add‑On</h1>
-    <p class="lede">Send automatic reminder emails before an event. This helps reduce no-shows and keeps attendees informed.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>The Event Email Reminder Addon sends automatic email reminders to event attendees. You can also send review emails or any other communication before or after the event.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>The Event Email Reminder Addon sends automatic email reminders to event attendees. You can also send review emails or any other communication before or after the event.</p>
-    </section>
+      <section class="doc-section" id="settings">
+        <h2>Settings</h2>
+        <p>You can set up a maximum of 3 reminders per event. Each reminder can be configured with its own timing (before or after the event). The addon also keeps log details so you can view the sending history for each event.</p>
+      </section>
 
-    <section class="doc-section" id="settings">
-      <h2>Settings</h2>
-      <p>You can set up a maximum of 3 reminders per event. Each reminder can be configured with its own timing (before or after the event). The addon also keeps log details so you can view the sending history for each event.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/event-email-reminder-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/event-email-reminder-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Email Reminder' }
+    { href: '', label: 'Email Reminder' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

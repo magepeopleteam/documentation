@@ -18,58 +18,45 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>WooCommerce Event Waitlist &mdash; WpEvently Add‑On</h1>
-    <p class="lede">Waitlist addon is very useful, if any ticket became sold out organiser can get subscription for next available ticket sell.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>The WooCommerce Event Waitlist Addon works with the Event plugin. Once event ticket available quantity finishes, the waitlist plugin activates and subscribers can join the waitlist. The admin can then send email to users for the next free slot.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>The WooCommerce Event Waitlist Addon works with the Event plugin. Once event ticket available quantity finishes, the waitlist plugin activates and subscribers can join the waitlist. The admin can then send email to users for the next free slot.</p>
-    </section>
+      <section class="doc-section" id="installation">
+        <h2>Installation</h2>
+        <p>Install and activate the addon from your WordPress plugins page. Once activated, the waitlist feature will be available on events where ticket quantity has reached zero.</p>
+      </section>
 
-    <section class="doc-section" id="installation">
-      <h2>Installation</h2>
-      <p>Install and activate the addon from your WordPress plugins page. Once activated, the waitlist feature will be available on events where ticket quantity has reached zero.</p>
-    </section>
+      <section class="doc-section" id="usage">
+        <h2>Usage</h2>
+        <p>When an event ticket sells out, customers see a waitlist signup option instead of the add-to-cart button. Subscribers are added to the waitlist, and the admin receives notification. When a new slot becomes available, the admin can send email notifications to waitlisted users.</p>
+      </section>
 
-    <section class="doc-section" id="usage">
-      <h2>Usage</h2>
-      <p>When an event ticket sells out, customers see a waitlist signup option instead of the add-to-cart button. Subscribers are added to the waitlist, and the admin receives notification. When a new slot becomes available, the admin can send email notifications to waitlisted users.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/woocommerce-event-waitlist-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/woocommerce-event-waitlist-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Event Waitlist' }
+    { href: '', label: 'Event Waitlist' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

@@ -18,53 +18,40 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>Book Events from Dashboard &mdash; WpEvently Add‑On</h1>
-    <p class="lede">This Addon is mainly used for admin, if anyone wants to get order offline like phone order then after taking order admin can add attendee from dashboard.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>This addon adds a new feature to your Event Manager plugin so you can book any event from the WordPress Dashboard for your customer. This is mainly needed for phone call orders, offline orders, or spot registrations.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>This addon adds a new feature to your Event Manager plugin so you can book any event from the WordPress Dashboard for your customer. This is mainly needed for phone call orders, offline orders, or spot registrations.</p>
-    </section>
+      <section class="doc-section" id="usage">
+        <h2>Usage</h2>
+        <p>After installation, you will find a new "Book Event" option in your WordPress admin. You can select the event, choose ticket types and quantities, and complete the booking on behalf of the customer &mdash; all from the dashboard.</p>
+      </section>
 
-    <section class="doc-section" id="usage">
-      <h2>Usage</h2>
-      <p>After installation, you will find a new "Book Event" option in your WordPress admin. You can select the event, choose ticket types and quantities, and complete the booking on behalf of the customer — all from the dashboard.</p>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/book-an-event-from-dashboard-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/book-an-event-from-dashboard-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Dashboard Booking' }
+    { href: '', label: 'Dashboard Booking' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>

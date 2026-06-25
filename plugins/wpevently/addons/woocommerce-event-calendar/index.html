@@ -18,56 +18,43 @@
 
   <div id="topbar-root"></div>
 
-  <section class="hero">
-    <div class="eyebrow">Documentation Hub &middot; WordPress Booking Suite</div>
-    <h1>WooCommerce Event Calendar &mdash; WpEvently Add‑On</h1>
-    <p class="lede">Event Calendar addon is a nice enhancement of event list display in calendar so that everyone can easily understand event date.</p>
-  </section>
+  <div class="docs-section-wrap">
+    <div id="sidebar-root"></div>
+    <main class="docs-content">
 
-  <main id="main">
+      <section class="doc-section" id="overview">
+        <h2>Overview</h2>
+        <p>The WooCommerce Event Calendar Addon showcases events into an awesome calendar display. Just install the plugin and use the shortcode to show the calendar anywhere on your website.</p>
+      </section>
 
-    <section class="doc-section" id="overview">
-      <h2>Overview</h2>
-      <p>The WooCommerce Event Calendar Addon showcases events into an awesome calendar display. Just install the plugin and use the shortcode to show the calendar anywhere on your website.</p>
-    </section>
+      <section class="doc-section" id="shortcode">
+        <h2>Shortcode</h2>
+        <p>Display the current month calendar:</p>
+        <pre><code>[mep-event-calendar]</code></pre>
+        <p>To display a specific month, use the shortcode with the year and month:</p>
+        <pre><code>[mep-event-calendar-month month='2028-09']</code></pre>
+      </section>
 
-    <section class="doc-section" id="shortcode">
-      <h2>Shortcode</h2>
-      <p>Display the current month calendar:</p>
-      <pre><code>[mep-event-calendar]</code></pre>
-      <p>To display a specific month, use the shortcode with the year and month:</p>
-      <pre><code>[mep-event-calendar-month month='2028-09']</code></pre>
-    </section>
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/woocommerce-event-calendar-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
 
-    <section class="doc-section" id="purchase">
-      <h2>Purchase</h2>
-      <p>This addon is available for purchase at the <a href="https://mage-people.com/product/woocommerce-event-calendar-addon/" target="_blank" rel="noopener">MagePeople website</a>.</p>
-    </section>
+    </main>
+  </div>
 
-  </main>
-
-  <footer>
-    BOOKING SUITE DOCS &middot; 7 PLUGINS &middot; 44 PLUGIN ADDONS &middot; BUILT WITH PLAIN HTML, CSS &amp; JS
-  </footer>
+  <div id="footer-root"></div>
 
 <script>
 (function(){
   "use strict";
-
   renderTopbar([
     { href: '../../../../index.html', label: 'All Plugins' },
     { href: '../../index.html', label: 'WpEvently' },
-    { href: '#', label: 'Event Calendar' }
+    { href: '', label: 'Event Calendar' }
   ], '../../../../images/MG-web-logo.webp');
-
-  var clockEl = document.getElementById('clock');
-  function tick(){
-    var d = new Date();
-    var pad = function(n){ return n.toString().padStart(2,'0'); };
-    clockEl.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds());
-  }
-  tick();
-  setInterval(tick, 1000);
+  renderDocsSidebar('index.html');
+  renderFooter();
 })();
 </script>
 </body>
