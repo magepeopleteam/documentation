@@ -317,7 +317,10 @@ function DocsSidebar({ activePage, hideBackLink }) {
   ];
 
   function isActive(href) {
-    return href === window.location.pathname;
+    var path = window.location.pathname;
+    if (href === path) return true;
+    if (path.endsWith('/') && href === path + 'index.html') return true;
+    return false;
   }
 
   return h('aside', { className: 'docs-sidebar' },
