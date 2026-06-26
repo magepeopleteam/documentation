@@ -1,0 +1,76 @@
+# =============================================================================
+# Deploy Documentation to cPanel via FTP
+# =============================================================================
+# Trigger:  GitHub Release published
+# Action:   Uploads all static files to public_html/docs/ on cPanel
+# =============================================================================
+
+name: Deploy to cPanel
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    name: Deploy to cPanel via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      # ------------------------------------------------------------------
+      # 1. Check out the repository at the tag associated with the release
+      # ------------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      # ------------------------------------------------------------------
+      # 2. Verify the project structure looks correct
+      # ------------------------------------------------------------------
+      - name: Validate project structure
+        run: |
+          echo "=== Validating project structure ==="
+          if [ ! -f index.html ]; then
+            echo "::error::index.html not found — is this the documentation root?"
+            exit 1
+          fi
+          echo "  ✓ index.html found"
+          if [ ! -d plugins ]; then
+            echo "::error::plugins/ directory not found"
+            exit 1
+          fi
+          echo "  ✓ plugins/ directory found"
+          if [ ! -f style.css ]; then
+            echo "::error::style.css not found"
+            exit 1
+          fi
+          echo "  ✓ style.css found"
+          echo "=== Validation passed ==="
+          echo ""
+          echo "--- Top-level contents ---"
+          ls -la
+
+      # ------------------------------------------------------------------
+      # 3. Deploy via FTP using SamKirkland's FTP Deploy Action
+      #    Only changed files are transferred; unrelated remote files are
+      #    left untouched (no --dangerous-clean-slash).
+      # ------------------------------------------------------------------
+      - name: Upload files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_DIRECTORY }}  # e.g. public_html/v1/
+          exclude: |
+            **/.git/**
+            **/.gitignore
+            **/.github/**
+            **/.opencode/**
+            **/node_modules/**
+            **/.DS_Store
+            **/Thumbs.db
+            **/*.md
+            **/LICENSE
