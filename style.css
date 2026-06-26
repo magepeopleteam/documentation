@@ -263,7 +263,7 @@
   }
   .board-head{
     display:grid;
-    grid-template-columns: 90px 1fr 110px 90px 105px;
+    grid-template-columns: 70px 1fr 110px 90px 105px;
     column-gap:8px;
     padding:10px 20px;
     font-family:var(--mono);
@@ -278,7 +278,7 @@
   .board-head span:last-child{ text-align:right; }
   .board-row{
     display:grid;
-    grid-template-columns: 90px 1fr 110px 90px 105px;
+    grid-template-columns: 70px 1fr 110px 90px 105px;
     align-items:center;
     column-gap:8px;
     padding:14px 20px;
@@ -353,6 +353,7 @@
   }
   .board-row a.buy:hover{ background:var(--bg-soft); color:var(--ink); border-color:var(--ink-faint); }
   .btn-group{ display:contents; }
+  .board-actions{ display:contents; }
   .board-row a.go{ grid-column:5; justify-self:end; }
 
   .flap{
@@ -372,27 +373,23 @@
   @media (max-width: 760px){
     .board-head{display:none;}
     .board-row{
-      display:flex;
-      flex-wrap:wrap;
+      display:grid;
+      grid-template-columns:auto 1fr;
+      grid-template-areas:
+        "logo name"
+        "acts acts";
       align-items:center;
-      gap:10px 12px;
+      gap:6px 10px;
       padding:16px;
     }
-    /* logo */
-    .board-row > .code{ flex:0 0 auto; order:1; }
+    .board-row > .code{ grid-area:logo; }
     .board-row .code img{ width:56px; }
-    /* plugin name + sub — claims the whole first line beside the logo so the
-       addon count, status and button wrap onto the line below it. */
-    .board-row > .flap:not(.code){
-      flex:1 1 auto;
-      min-width:calc(100% - 56px);
-      order:2;
-    }
+    .board-row > .flap:not(.code){ grid-area:name; min-width:0; }
     .board-row .dest{ font-size:15px; }
-    /* line 2: addon count, then button group pushed right */
-    .board-row > .count-wrap{ flex:0 0 auto; order:3; justify-content:flex-start; }
-    .board-row > .btn-group{ order:4; display:flex; gap:6px; }
-    .board-row > .btn-group a{ font-size:11px; padding:6px 10px; }
+    .board-actions{ grid-area:acts; display:flex; flex-wrap:nowrap; gap:0; align-items:center; }
+    .board-actions > .count-wrap{ white-space:nowrap; }
+    .board-actions > .btn-group{ display:inline-flex; gap:6px; flex-wrap:nowrap; margin-left:auto; }
+    .board-actions > .btn-group a{ font-size:11px; padding:6px 10px; white-space:nowrap; }
   }
 
   /* ---------------- DOCS LAYOUT (plugin / addon pages) ---------------- */
@@ -700,7 +697,7 @@
     width:100%;
     display:flex;
     align-items:center;
-    gap:16px;
+    gap:8px;
     padding:16px 26px;
     background:transparent;
     border:none;
@@ -710,7 +707,7 @@
   .addon-row:hover{ background:var(--bg-soft); }
   .addon-code{
     font-family:var(--mono); font-size:12px; color:var(--ink-faint);
-    flex:0 0 64px;
+    flex:0 0 40px;
   }
   .addon-name-wrap{
     flex:1;
