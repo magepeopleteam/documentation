@@ -299,6 +299,7 @@ function renderTopbar(navLinks, logoPath) {
 }
 
 function DocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wpevently/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -336,25 +337,28 @@ function DocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      }),
-      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
-      ...addonLinks.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation & Addons'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        }),
+        h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+        ...addonLinks.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -365,6 +369,7 @@ function renderDocsSidebar(activePage, hideBackLink) {
 }
 
 function BusDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wpbusticketly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -387,25 +392,28 @@ function BusDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      }),
-      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
-      ...addonLinks.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation & Addons'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        }),
+        h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+        ...addonLinks.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -416,6 +424,7 @@ function renderDocsSidebarBus(activePage, hideBackLink) {
 }
 
 function TravellyDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wptravelly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -446,25 +455,28 @@ function TravellyDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      }),
-      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
-      ...addonLinks.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation & Addons'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        }),
+        h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+        ...addonLinks.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -475,6 +487,7 @@ function renderDocsSidebarTravelly(activePage, hideBackLink) {
 }
 
 function BookinglyDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wpbookingly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -493,17 +506,20 @@ function BookinglyDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -514,6 +530,7 @@ function renderDocsSidebarBookingly(activePage, hideBackLink) {
 }
 
 function EcabDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/ecab/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -537,25 +554,28 @@ function EcabDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      }),
-      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
-      ...addonLinks.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation & Addons'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        }),
+        h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+        ...addonLinks.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -566,6 +586,7 @@ function renderDocsSidebarEcab(activePage, hideBackLink) {
 }
 
 function RentlyDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wprently/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -591,25 +612,28 @@ function RentlyDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      }),
-      h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
-      ...addonLinks.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation & Addons'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        }),
+        h('h3', { className: 'docs-sidebar-title' }, 'Addons'),
+        ...addonLinks.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -620,6 +644,7 @@ function renderDocsSidebarRently(activePage, hideBackLink) {
 }
 
 function CarRentalDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/car-rental/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
@@ -637,17 +662,20 @@ function CarRentalDocsSidebar({ activePage, hideBackLink }) {
     return false;
   }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link' + (isActive(link.href) ? ' active' : '')
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -658,6 +686,7 @@ function renderDocsSidebarCarRental(activePage, hideBackLink) {
 }
 
 function CouponlyDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/advanced-discount-coupon-store-credit/';
   var links = [
     { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
@@ -670,17 +699,20 @@ function CouponlyDocsSidebar({ activePage, hideBackLink }) {
 
   function isActive(href) { return false; }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link'
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link'
+          }, link.label);
+        })
+      )
     )
   );
 }
@@ -691,6 +723,7 @@ function renderDocsSidebarCouponly(activePage, hideBackLink) {
 }
 
 function DeposityDocsSidebar({ activePage, hideBackLink }) {
+  var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var base = '/plugins/wpdeposity/';
   var links = [
     { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
@@ -703,17 +736,20 @@ function DeposityDocsSidebar({ activePage, hideBackLink }) {
 
   function isActive(href) { return false; }
 
-  return h('aside', { className: 'docs-sidebar' },
-    h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
-    h('nav', { className: 'docs-nav' },
-      hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
-      ...links.map(function(link) {
-        return h('a', {
-          key: link.href,
-          href: link.href,
-          className: 'docs-nav-link'
-        }, link.label);
-      })
+  return h('aside', { className: 'docs-sidebar' + (sidebarOpen ? ' sidebar-open' : '') },
+    h('button', { className: 'docs-sidebar-toggle', onClick: function(){ setSidebarOpen(function(o){ return !o; }); }, 'aria-expanded': String(sidebarOpen) }, 'Documentation'),
+    h('div', { className: 'docs-sidebar-collapse' },
+      h('h3', { className: 'docs-sidebar-title' }, 'Documentation'),
+      h('nav', { className: 'docs-nav' },
+        hideBackLink ? null : h('a', { href: base + 'index.html', className: 'docs-nav-link' }, '\u2190 Back to Overview'),
+        ...links.map(function(link) {
+          return h('a', {
+            key: link.href,
+            href: link.href,
+            className: 'docs-nav-link'
+          }, link.label);
+        })
+      )
     )
   );
 }
