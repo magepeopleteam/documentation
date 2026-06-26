@@ -432,6 +432,8 @@
   .video-btn i{margin-left:2px;}
   .video-modal{position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; padding:24px;}
   .video-modal video{max-width:100%; max-height:90vh; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.5);}
+  .video-modal .video-frame{width:90vw; max-width:960px; max-height:90vh; aspect-ratio:16/9; border-radius:8px; box-shadow:0 8px 40px rgba(0,0,0,0.5); background:#000; overflow:hidden;}
+  .video-modal .video-frame iframe{width:100%; height:100%; display:block; border:0;}
   .video-close{position:absolute; top:16px; right:24px; background:none; border:none; color:#fff; font-size:32px; cursor:pointer; line-height:1; opacity:0.7; transition:opacity .15s;}
   .video-close:hover{opacity:1;}
   .doc-section{

@@ -38,8 +38,10 @@
       <section class="doc-section" id="overview">
         <h2>Event Seat Plan Addon</h2>
         <p>The Seat Plan Addon for WpEvently transforms standard event ticketing into an interactive, visual booking experience. By leveraging WooCommerce, it ensures real-time availability and allows attendees to select their preferred seats directly from a custom map.</p>
-        <p>Visit the <a href="https://mage-people.com/product/seat-plan-addon-for-event-manager/" target="_blank" rel="noopener">MagePeople site</a> and look for the Seat Plan Addon for Event Manager.</p>
-        <p><img src="images/image46.png" alt="How to Add Event Seating Plan Using Seat Plan Addon 3" style="max-width:100%;height:auto;"></p>
+        <div class="video-player" data-youtube="pgERknhb__U">
+  <img src="images/image46.png" alt="How to Add Event Seating Plan Using Seat Plan Addon 3" style="width:100%;display:block;border-radius:var(--radius);border:1px solid var(--rule);background:#fff;">
+  <button class="video-btn"><i class="fas fa-play"></i></button>
+</div>
       </section>
 
       <section class="doc-section" id="installation">
@@ -172,6 +174,11 @@
         <p>Click <strong>Update</strong> and check the seat design on your booking page.</p>
       </section>
 
+      <section class="doc-section" id="purchase">
+        <h2>Purchase</h2>
+        <p>This addon is available for purchase at the <a href="https://mage-people.com/product/seat-plan-addon-for-event-manager/" target="_blank" rel="noopener">MagePeople website</a>.</p>
+      </section>
+
     </main>
   </div>
 
@@ -187,6 +194,16 @@
   ], '../../../../images/MG-web-logo.webp');
   renderDocsSidebar('index.html');
   renderFooter();
+  var yt = document.querySelector('[data-youtube]');
+  if(yt) yt.addEventListener('click',function(){
+    var id = this.dataset.youtube;
+    var o = document.createElement('div');
+    o.className = 'video-modal';
+    o.innerHTML = '<button class="video-close">&times;</button><div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div>';
+    document.body.appendChild(o);
+    o.querySelector('.video-close').addEventListener('click',function(){ o.remove(); });
+    o.addEventListener('click',function(e){ if(e.target===o) o.remove(); });
+  });
 })();
 </script>
 </body>
