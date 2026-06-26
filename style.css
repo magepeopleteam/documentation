@@ -751,6 +751,28 @@
     margin-left:auto;
   }
   .doc-btn:hover{ background:#1d4ed8; }
+
+  .addon-row .btn-group{
+    display:inline-flex;
+    gap:6px;
+    margin-left:auto;
+  }
+
+  .buy-btn{
+    font-family:var(--mono);
+    font-size:12px;
+    font-weight:600;
+    padding:7px 14px;
+    border-radius:6px;
+    background:transparent;
+    color:var(--ink-dim);
+    border:1px solid var(--rule);
+    text-decoration:none;
+    transition:background .2s, color .2s;
+    white-space:nowrap;
+    display:inline-flex;
+  }
+  .buy-btn:hover{ background:var(--bg-soft); color:var(--ink); border-color:var(--ink-faint); }
   .doc-btn.disabled{
     background:var(--panel);
     color:var(--ink-faint);
@@ -815,10 +837,10 @@
        The code and chevron cells span both rows. */
     .addon-row{
       display:grid;
-      grid-template-columns:auto 1fr auto auto;
+      grid-template-columns:auto 1fr auto;
       grid-template-areas:
-        "code name doc  chev"
-        "code tag  tag  chev";
+        "code name tag"
+        "code btns chev";
       align-items:center;
       column-gap:10px;
       row-gap:7px;
@@ -827,12 +849,17 @@
     .addon-code{ grid-area:code; align-self:start; padding-top:2px; flex:none; }
     .addon-name-wrap{ grid-area:name; min-width:0; }
     .addon-name{ font-size:14.5px; }
+    .addon-row .btn-group{
+      grid-area:btns; justify-self:start; align-self:center;
+      display:flex; gap:6px; margin-left:0;
+    }
+    .addon-row .buy-btn,
     .addon-row .doc-btn{
-      grid-area:doc; justify-self:end; align-self:center;
-      font-size:11.5px; padding:6px 8px; white-space:nowrap;
+      font-size:11.5px; padding:6px 8px;
     }
     .addon-tag{ grid-area:tag; justify-self:start; align-self:center; flex:none; }
-    .chevron{ grid-area:chev; justify-self:end; align-self:center; margin:0; }
+    .chevron{ grid-area:chev; justify-self:end; align-self:center; margin:0; transform:rotate(45deg); }
+    .addon-row[aria-expanded="true"] .chevron{ transform:rotate(-135deg); }
     .addon-panel-inner{ padding:0 14px 14px; }
 
     .doc-section h2{ font-size:19px; }

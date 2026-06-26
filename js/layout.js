@@ -144,10 +144,11 @@ function Hero({ title, description, rows }) {
   );
 }
 
-function AddonRow({ code, name, tag, description, docHref }) {
+function AddonRow({ code, name, tag, description, docHref, buyUrl }) {
   const [expanded, setExpanded] = React.useState(false);
   const panelId = 'panel-' + code;
   const hasDocs = docHref && docHref !== '#';
+  const hasBuy = buyUrl && buyUrl !== '#';
   return h('li', { className: 'addon', 'data-name': name },
     h('button',
       {
@@ -160,17 +161,28 @@ function AddonRow({ code, name, tag, description, docHref }) {
         h('span', { className: 'addon-name' }, name)
       ),
       h('span', { className: 'addon-tag' }, tag),
-      hasDocs
-        ? h('a', {
-            href: docHref,
-            className: 'doc-btn',
-            onClick: e => {
-              e.preventDefault();
-              e.stopPropagation();
-              setExpanded(true);
-            }
-          }, 'Read documentation')
-        : h('span', { className: 'doc-btn disabled' }, 'Not Ready'),
+      h('span', { className: 'btn-group' },
+        hasBuy
+          ? h('a', {
+              href: buyUrl,
+              className: 'buy-btn',
+              target: '_blank',
+              rel: 'noopener',
+              onClick: e => e.stopPropagation()
+            }, 'Buy Addon')
+          : null,
+        hasDocs
+          ? h('a', {
+              href: docHref,
+              className: 'doc-btn',
+              onClick: e => {
+                e.preventDefault();
+                e.stopPropagation();
+                setExpanded(true);
+              }
+            }, 'Read Docs')
+          : h('span', { className: 'doc-btn disabled' }, 'Not Ready')
+      ),
       h('span', { className: 'chevron' })
     ),
     h('div',
@@ -189,7 +201,8 @@ function PluginSection({ id, dataName, ticketId, title, subtitle, description, a
       name: a.name,
       tag: a.tag,
       description: a.description,
-      docHref: a.docHref || '#'
+      docHref: a.docHref || '#',
+      buyUrl: a.buyUrl || '#'
     })
   );
   return h('section', { className: 'plugin', id, 'data-name': dataName },
@@ -201,7 +214,7 @@ function PluginSection({ id, dataName, ticketId, title, subtitle, description, a
           h('p', null, description)
         ),
         h('div', { className: 'ticket-meta' },
-          h('a', { href: '#', className: 'doc-btn' }, 'Read documentation')
+          h('a', { href: '#', className: 'doc-btn' }, 'Read Docs')
         )
       )
     ),
