@@ -298,9 +298,18 @@ function renderTopbar(navLinks, logoPath) {
   );
 }
 
+function getSiteRoot() {
+  var p = window.location.pathname;
+  var i = p.indexOf('/plugins/');
+  if (i !== -1) return p.substring(0, i);
+  if (p.endsWith('.html')) return p.substring(0, p.lastIndexOf('/'));
+  return p.replace(/\/+$/, '');
+}
+
 function DocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wpevently/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wpevently/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
@@ -309,7 +318,7 @@ function DocsSidebar({ activePage, hideBackLink }) {
     { href: base + 'action-hooks.html', label: 'Action Hooks' },
     { href: base + 'rest-api.html', label: 'REST API' },
     { href: base + 'faq.html', label: 'FAQ' },
-    { href: '/index.html#wpevently', label: 'Available Addons' }
+    { href: root + '/index.html#wpevently', label: 'Available Addons' }
   ];
 
   var addonLinks = [
@@ -370,7 +379,8 @@ function renderDocsSidebar(activePage, hideBackLink) {
 
 function BusDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wpbusticketly/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wpbusticketly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
@@ -378,7 +388,7 @@ function BusDocsSidebar({ activePage, hideBackLink }) {
     { href: base + 'bus-manager-settings.html', label: 'Bus Manager Settings' },
     { href: base + 'rest-api.html', label: 'REST API' },
     { href: base + 'faq.html', label: 'FAQ' },
-    { href: '/index.html#wpbusticketly', label: 'Available Addons' }
+    { href: root + '/index.html#wpbusticketly', label: 'Available Addons' }
   ];
 
   var addonLinks = [
@@ -425,7 +435,8 @@ function renderDocsSidebarBus(activePage, hideBackLink) {
 
 function TravellyDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wptravelly/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wptravelly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
@@ -433,7 +444,7 @@ function TravellyDocsSidebar({ activePage, hideBackLink }) {
     { href: base + 'elementor-guidelines.html', label: 'Elementor Guidelines' },
     { href: base + 'general-guidelines.html', label: 'General Guidelines' },
     { href: base + 'faq.html', label: 'FAQ' },
-    { href: '/index.html#wptravelly', label: 'Available Addons' }
+    { href: root + '/index.html#wptravelly', label: 'Available Addons' }
   ];
 
   var addonLinks = [
@@ -488,7 +499,8 @@ function renderDocsSidebarTravelly(activePage, hideBackLink) {
 
 function BookinglyDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wpbookingly/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wpbookingly/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'service-management.html', label: 'Service Management' },
@@ -531,7 +543,8 @@ function renderDocsSidebarBookingly(activePage, hideBackLink) {
 
 function EcabDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/ecab/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/ecab/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
@@ -539,7 +552,7 @@ function EcabDocsSidebar({ activePage, hideBackLink }) {
     { href: base + 'general-guidelines.html', label: 'General Guidelines' },
     { href: base + 'pro-features.html', label: 'Pro Features' },
     { href: base + 'faq.html', label: 'FAQ' },
-    { href: '/index.html#ecab', label: 'Available Addons' }
+    { href: root + '/index.html#ecab', label: 'Available Addons' }
   ];
 
   var addonLinks = [
@@ -587,14 +600,15 @@ function renderDocsSidebarEcab(activePage, hideBackLink) {
 
 function RentlyDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wprently/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wprently/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
     { href: base + 'general-guidelines.html', label: 'General Guidelines' },
     { href: base + 'global-settings.html', label: 'Global Settings' },
     { href: base + 'faq.html', label: 'FAQ' },
-    { href: '/index.html#wprently', label: 'Available Addons' }
+    { href: root + '/index.html#wprently', label: 'Available Addons' }
   ];
 
   var addonLinks = [
@@ -645,7 +659,8 @@ function renderDocsSidebarRently(activePage, hideBackLink) {
 
 function CarRentalDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/car-rental/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/car-rental/';
   var links = [
     { href: base + 'installation-setup.html', label: 'Installation & Setup' },
     { href: base + 'shortcode-guidelines.html', label: 'Shortcode Guidelines' },
@@ -687,7 +702,8 @@ function renderDocsSidebarCarRental(activePage, hideBackLink) {
 
 function CouponlyDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/advanced-discount-coupon-store-credit/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/advanced-discount-coupon-store-credit/';
   var links = [
     { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
     { href: base + 'index.html#shortcode-guidelines', label: 'Shortcode Guidelines' },
@@ -724,7 +740,8 @@ function renderDocsSidebarCouponly(activePage, hideBackLink) {
 
 function DeposityDocsSidebar({ activePage, hideBackLink }) {
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
-  var base = '/plugins/wpdeposity/';
+  var root = getSiteRoot();
+  var base = root + '/plugins/wpdeposity/';
   var links = [
     { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
     { href: base + 'index.html#shortcode-guidelines', label: 'Shortcode Guidelines' },
