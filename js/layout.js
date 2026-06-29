@@ -59,7 +59,7 @@ function Topbar({ navLinks, logoPath }) {
 
   return h('header', { className: 'topbar' + (menuOpen ? ' menu-open' : '') },
     h('div', { className: 'brand' },
-      h('a', { href: homeHref, onClick: closeMenu },
+      h('a', { href: 'https://mage-people.com/', onClick: closeMenu },
         h('img', { src: logoPath || '../images/MG-web-logo.webp', alt: 'Magepeople' })
       )
     ),
@@ -95,6 +95,7 @@ function Topbar({ navLinks, logoPath }) {
         ),
         h('input', { id: 'docSearch', type: 'text', placeholder: 'Search within docs\u2026', autoComplete: 'off' })
       ) : null,
+      h('a', { href: 'https://mage-people.com/', className: 'topbar-support' }, 'Visit MagePeople'),
       h('a', { href: 'https://support.mage-people.com/portal/en/newticket', target: '_blank', rel: 'noopener', className: 'topbar-support' }, 'Quick Support')
     )
   );
@@ -222,18 +223,13 @@ function PluginSection({ id, dataName, ticketId, title, subtitle, description, a
   );
 }
 
-function Footer({ copyright, pluginCount, addonCount }) {
-  if (copyright) {
-    return h('footer', null,
-      h('p', null,
-        '\u00a9 2026 ',
-        h('a', { href: 'https://mage-people.com', target: '_blank', rel: 'noopener' }, 'MagePeople'),
-        '. All rights reserved.'
-      )
-    );
-  }
+function Footer() {
   return h('footer', null,
-    'BOOKING SUITE DOCS \u00b7 ' + (pluginCount || '7') + ' PLUGINS \u00b7 ' + (addonCount || '44') + ' PLUGIN ADDONS \u00b7 BUILT WITH PLAIN HTML, CSS & JS'
+    h('p', null,
+      '\u00a9 2026 ',
+      h('a', { href: 'https://mage-people.com', target: '_blank', rel: 'noopener' }, 'MagePeople'),
+      '. All rights reserved.'
+    )
   );
 }
 
