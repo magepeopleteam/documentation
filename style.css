@@ -661,6 +661,14 @@
     border:1px solid var(--rule);
     white-space:nowrap;
   }
+  .version{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--ink-dim);
+    letter-spacing:.04em;
+    display:inline-block;
+    margin-top:4px;
+  }
   .addon-count{
     font-size:12px; letter-spacing:.08em; color:var(--ink-faint);
     text-transform:uppercase;
@@ -786,6 +794,8 @@
   a.addon-name:hover{
     text-decoration:underline;
   }
+  .addon-name-wrap .version{ display:table; }
+
   .addon-badge{
     font-family:var(--mono);
     font-size:11px;
