@@ -150,6 +150,18 @@
     color:var(--ink-faint);
     white-space:nowrap;
   }
+  .topbar-support{
+    font-family:var(--mono);
+    font-size:12px;
+    font-weight:600;
+    color:#2563eb;
+    text-decoration:none;
+    white-space:nowrap;
+    padding:6px 12px;
+    border-radius:6px;
+    transition:background .2s;
+  }
+  .topbar-support:hover{ background:var(--bg-soft); }
 
   .search-wrap{
     position:relative;
@@ -796,7 +808,7 @@
   }
   .addon-name{
     font-weight:600;
-    font-size:16px;
+    font-size:14.5px;
     flex:1;
     min-width:0;
   }

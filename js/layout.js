@@ -88,21 +88,14 @@ function Topbar({ navLinks, logoPath }) {
           h('a', { key: link.href, href: link.href, onClick: closeMenu }, link.label)
         )
       ),
-      h('div', { className: 'search-wrap' },
+      document.querySelector('.docs-content') ? h('div', { className: 'search-wrap' },
         h('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2' },
           h('circle', { cx: '11', cy: '11', r: '7' }),
           h('path', { d: 'M21 21l-4.3-4.3' })
         ),
-        h('input', { id: 'searchInput', type: 'text', placeholder: 'Search plugins or addons\u2026', autoComplete: 'off', onKeyDown: function(e) {
-          if (e.key === 'Enter') {
-            var q = e.target.value.trim();
-            if (q && !document.querySelector('.plugin')) {
-              window.location.href = homeHref + '?q=' + encodeURIComponent(q);
-            }
-          }
-        } })
-      ),
-      h('div', { className: 'clock mono', id: 'clock' }, '--:--:--')
+        h('input', { id: 'docSearch', type: 'text', placeholder: 'Search within docs\u2026', autoComplete: 'off' })
+      ) : null,
+      h('a', { href: 'https://support.mage-people.com/portal/en/newticket', target: '_blank', rel: 'noopener', className: 'topbar-support' }, 'Quick Support')
     )
   );
 }
@@ -809,3 +802,17 @@ function renderPage({ title, description, boardRows, plugins, pluginCount, addon
     root
   );
 }
+
+/* ---- doc search filter ---- */
+document.addEventListener('DOMContentLoaded', function() {
+  var input = document.getElementById('docSearch');
+  if (!input) return;
+  var sections = document.querySelectorAll('.doc-section');
+  input.addEventListener('input', function() {
+    var q = input.value.trim().toLowerCase();
+    sections.forEach(function(section) {
+      var match = q === '' || section.textContent.toLowerCase().indexOf(q) !== -1;
+      section.style.display = match ? '' : 'none';
+    });
+  });
+});
