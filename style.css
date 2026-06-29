@@ -705,6 +705,54 @@
   }
   .addon:last-child{ border-bottom:none; }
 
+  .addons-head{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 26px;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    border-bottom:1px solid var(--rule);
+    background:var(--panel);
+    user-select:none;
+  }
+  .addons-head .addon-code{
+    flex:0 0 40px;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+  }
+  .addons-head .addon-name{
+    flex:1;
+    min-width:0;
+    font-weight:600;
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+  }
+  .head-group{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:60px;
+    width:310px;
+    margin-left:auto;
+  }
+  .head-group .type-label{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    font-weight:600;
+  }
+
+
   .addon-row{
     width:100%;
     display:flex;
@@ -730,6 +778,13 @@
     font-size:16px;
     flex:1;
     min-width:0;
+  }
+  a.addon-name{
+    text-decoration:none;
+    color:inherit;
+  }
+  a.addon-name:hover{
+    text-decoration:underline;
   }
   .addon-badge{
     font-family:var(--mono);
@@ -898,6 +953,8 @@
          row 1:  [01] [name .........] [Read documentation] [›]
          row 2:  [01] [tag .............................. ] [›]
        The code and chevron cells span both rows. */
+    .addons-head{ display:none; }
+
     .addon-row{
       display:grid;
       grid-template-columns:auto 1fr auto;
