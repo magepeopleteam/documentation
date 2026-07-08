@@ -42,17 +42,17 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/docs-ff2": {
+  "/docs-044": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-5d6": {
+  "/docs-a12": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-d7c": {
+  "/docs-22b": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/addons/bank-payment-gateway/overview-0b2": {
@@ -171,25 +171,9 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-wpdeposityb-44-022"
   },
-  "/docs/category/wpequipments-657": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-wpequipmentsf-2-f-f55"
-  },
   "/docs/category/wpevently-f12": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-wpevently-2-e-5-c7f"
-  },
-  "/docs/category/wpfoodly-4c3": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-wpfoodly-1-b-8-6de"
-  },
-  "/docs/category/wpgrouply-2fc": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-wpgrouply-39-d-449"
-  },
-  "/docs/category/wpgymly-5dd": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-wpgymlyb-85-348"
   },
   "/docs/category/wprently-2e6": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -439,30 +423,6 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wpdeposity-shortcodesd-1-e-01a"
   },
-  "/docs/plugins/wpequipments/changelog-c00": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-changelog-26-e-d08"
-  },
-  "/docs/plugins/wpequipments/faq-855": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-faq-429-c84"
-  },
-  "/docs/plugins/wpequipments/features-add": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-features-33-b-9c0"
-  },
-  "/docs/plugins/wpequipments/overview-b7a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-overviewcd-6-547"
-  },
-  "/docs/plugins/wpequipments/settings-b41": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-settings-0-ad-966"
-  },
-  "/docs/plugins/wpequipments/shortcodes-679": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpequipments-shortcodes-8-e-8-155"
-  },
   "/docs/plugins/wpevently/changelog-33f": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wpevently-changelogae-0-568"
@@ -510,78 +470,6 @@
   "/docs/plugins/wpevently/video-tutorials-d3a": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wpevently-video-tutorials-6-a-1-460"
-  },
-  "/docs/plugins/wpfoodly/changelog-1e5": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-changelog-78-e-795"
-  },
-  "/docs/plugins/wpfoodly/faq-581": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-faq-4-e-2-d61"
-  },
-  "/docs/plugins/wpfoodly/features-0dd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-features-4-aa-cd3"
-  },
-  "/docs/plugins/wpfoodly/overview-972": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-overviewda-5-db1"
-  },
-  "/docs/plugins/wpfoodly/settings-2a1": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-settings-43-c-86a"
-  },
-  "/docs/plugins/wpfoodly/shortcodes-fda": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpfoodly-shortcodes-26-c-9cd"
-  },
-  "/docs/plugins/wpgrouply/changelog-8b8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-changelog-83-b-e99"
-  },
-  "/docs/plugins/wpgrouply/faq-860": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-faq-98-b-0c3"
-  },
-  "/docs/plugins/wpgrouply/features-f21": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-features-9-e-0-5fa"
-  },
-  "/docs/plugins/wpgrouply/overview-620": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-overview-4-c-8-e30"
-  },
-  "/docs/plugins/wpgrouply/settings-759": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-settingsfd-6-c03"
-  },
-  "/docs/plugins/wpgrouply/shortcodes-4e9": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgrouply-shortcodescb-4-15e"
-  },
-  "/docs/plugins/wpgymly/changelog-2e0": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-changelog-119-f5c"
-  },
-  "/docs/plugins/wpgymly/faq-b0d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-faq-459-7f1"
-  },
-  "/docs/plugins/wpgymly/features-af2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-features-357-c8b"
-  },
-  "/docs/plugins/wpgymly/overview-bd4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-overview-18-f-256"
-  },
-  "/docs/plugins/wpgymly/settings-ade": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-settings-708-5e9"
-  },
-  "/docs/plugins/wpgymly/shortcodes-e3d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpgymly-shortcodes-590-5a6"
   },
   "/docs/plugins/wprently/addons/admin-backend-order/overview-296": {
     "__comp": "__comp---theme-doc-item-178-a40",

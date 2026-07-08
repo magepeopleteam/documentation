@@ -341,36 +341,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpequipments/changelog",
-              "path": "/docs/plugins/wpequipments/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpequipments/faq",
-              "path": "/docs/plugins/wpequipments/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpequipments/features",
-              "path": "/docs/plugins/wpequipments/features",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpequipments/overview",
-              "path": "/docs/plugins/wpequipments/overview",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpequipments/settings",
-              "path": "/docs/plugins/wpequipments/settings",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpequipments/shortcodes",
-              "path": "/docs/plugins/wpequipments/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wpevently/changelog",
               "path": "/docs/plugins/wpevently/changelog",
               "sidebar": "docsSidebar"
@@ -428,96 +398,6 @@
             {
               "id": "plugins/wpevently/video-tutorials",
               "path": "/docs/plugins/wpevently/video-tutorials",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/changelog",
-              "path": "/docs/plugins/wpfoodly/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/faq",
-              "path": "/docs/plugins/wpfoodly/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/features",
-              "path": "/docs/plugins/wpfoodly/features",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/overview",
-              "path": "/docs/plugins/wpfoodly/overview",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/settings",
-              "path": "/docs/plugins/wpfoodly/settings",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpfoodly/shortcodes",
-              "path": "/docs/plugins/wpfoodly/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/changelog",
-              "path": "/docs/plugins/wpgrouply/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/faq",
-              "path": "/docs/plugins/wpgrouply/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/features",
-              "path": "/docs/plugins/wpgrouply/features",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/overview",
-              "path": "/docs/plugins/wpgrouply/overview",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/settings",
-              "path": "/docs/plugins/wpgrouply/settings",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgrouply/shortcodes",
-              "path": "/docs/plugins/wpgrouply/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/changelog",
-              "path": "/docs/plugins/wpgymly/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/faq",
-              "path": "/docs/plugins/wpgymly/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/features",
-              "path": "/docs/plugins/wpgymly/features",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/overview",
-              "path": "/docs/plugins/wpgymly/overview",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/settings",
-              "path": "/docs/plugins/wpgymly/settings",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpgymly/shortcodes",
-              "path": "/docs/plugins/wpgymly/shortcodes",
               "sidebar": "docsSidebar"
             },
             {
@@ -711,13 +591,8 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/advanced-discount-coupon-and-store-credit",
-              "path": "/docs/category/advanced-discount-coupon-and-store-credit",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/car-rental",
-              "path": "/docs/category/car-rental",
+              "id": "/category/wpevently",
+              "path": "/docs/category/wpevently",
               "sidebar": "docsSidebar"
             },
             {
@@ -731,6 +606,16 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "/category/wptravelly",
+              "path": "/docs/category/wptravelly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-1",
+              "path": "/docs/category/addons-1",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "/category/wpbookingly",
               "path": "/docs/category/wpbookingly",
               "sidebar": "docsSidebar"
@@ -741,38 +626,8 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/addons-1",
-              "path": "/docs/category/addons-1",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpdeposity",
-              "path": "/docs/category/wpdeposity",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpequipments",
-              "path": "/docs/category/wpequipments",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpevently",
-              "path": "/docs/category/wpevently",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpfoodly",
-              "path": "/docs/category/wpfoodly",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpgrouply",
-              "path": "/docs/category/wpgrouply",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/wpgymly",
-              "path": "/docs/category/wpgymly",
+              "id": "/category/addons-2",
+              "path": "/docs/category/addons-2",
               "sidebar": "docsSidebar"
             },
             {
@@ -781,8 +636,8 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/addons-2",
-              "path": "/docs/category/addons-2",
+              "id": "/category/addons-3",
+              "path": "/docs/category/addons-3",
               "sidebar": "docsSidebar"
             },
             {
@@ -811,13 +666,18 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/wptravelly",
-              "path": "/docs/category/wptravelly",
+              "id": "/category/car-rental",
+              "path": "/docs/category/car-rental",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/addons-3",
-              "path": "/docs/category/addons-3",
+              "id": "/category/advanced-discount-coupon-and-store-credit",
+              "path": "/docs/category/advanced-discount-coupon-and-store-credit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpdeposity",
+              "path": "/docs/category/wpdeposity",
               "sidebar": "docsSidebar"
             },
             {
