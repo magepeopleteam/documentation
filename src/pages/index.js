@@ -136,33 +136,37 @@ export default function Home() {
       <main>
         <section className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.pluginGrid}>
+            <div className={styles.pluginList}>
+              <div className={styles.listHeader}>
+                <span className={styles.colIcon}>Logo</span>
+                <span className={styles.colPlugin}>Plugin</span>
+                <span className={styles.colAddons}>Addons</span>
+                <span className={styles.colActions}></span>
+              </div>
               {plugins.map((plugin) => (
-                <div key={plugin.title} className={styles.pluginCard}>
-                  <div className={styles.pluginCardHeader}>
+                <div key={plugin.title} className={styles.listRow}>
+                  <span className={styles.colIcon}>
                     <img
                       src={`/img/plugins/${plugin.icon}`}
                       alt={plugin.title}
                       className={styles.pluginIcon}
                     />
-                    <div className={styles.pluginCardInfo}>
-                      <Heading as="h3" className={styles.pluginCardTitle}>
-                        {plugin.tagline}
-                      </Heading>
-                      <p className={styles.pluginCardDescription}>
-                        {plugin.description}
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.pluginCardMeta}>
+                  </span>
+                  <span className={styles.colPlugin}>
+                    <Link to={plugin.docLink} className={styles.pluginName}>
+                      {plugin.tagline}
+                    </Link>
+                    <span className={styles.pluginSub}>{plugin.description}</span>
                     <span className={styles.pluginVersion}>V{plugin.version}</span>
-                    {plugin.addons > 0 && (
-                      <span className={styles.pluginAddons}>
+                  </span>
+                  <span className={styles.colAddons}>
+                    {plugin.addons > 0 ? (
+                      <span className={styles.addonCount}>
                         {plugin.addons} addon{plugin.addons > 1 ? 's' : ''}
                       </span>
-                    )}
-                  </div>
-                  <div className={styles.pluginCardActions}>
+                    ) : null}
+                  </span>
+                  <span className={styles.colActions}>
                     <a
                       href={plugin.buyLink}
                       target="_blank"
@@ -173,7 +177,7 @@ export default function Home() {
                     <Link to={plugin.docLink} className={styles.readButton}>
                       Read Docs
                     </Link>
-                  </div>
+                  </span>
                 </div>
               ))}
             </div>
