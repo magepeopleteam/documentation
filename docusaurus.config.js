@@ -38,7 +38,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
-          editUrl: 'https://github.com/magepeople/magepeople-docs/tree/main/',
+          editUrl: 'https://github.com/magepeopleteam/documentation/tree/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
@@ -70,10 +70,9 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'getting-started/installation',
+            to: '/docs/getting-started/installation',
             position: 'left',
-            label: 'Documentation',
+            label: 'Getting Started',
           },
           {
             to: '/docs/plugins/wpevently/overview',
@@ -91,6 +90,16 @@ const config = {
             position: 'left',
           },
 
+          {
+            href: 'https://mage-people.com',
+            label: 'Website',
+            position: 'right',
+          },
+          {
+            href: 'https://support.mage-people.com/portal/en/newticket',
+            label: 'Support',
+            position: 'right',
+          },
           {
             href: 'https://github.com/magepeopleteam',
             label: 'GitHub',
@@ -136,12 +145,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'MagePeople',
-                href: 'https://magepeople.com',
+                label: 'Website',
+                href: 'https://mage-people.com',
               },
               {
                 label: 'Support',
-                href: 'https://magepeople.com/support/',
+                href: 'https://support.mage-people.com/portal/en/newticket',
               },
               {
                 label: 'Facebook',

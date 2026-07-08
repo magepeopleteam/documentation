@@ -36,5 +36,4 @@ sidebar_position: 6
 
 If you cannot resolve an issue, contact MagePeople support:
 
-- [Support Portal](https://magepeople.com/support/)
-- Email: support@magepeople.com
+- [Support Portal](https://support.mage-people.com/portal/en/newticket)

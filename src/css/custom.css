@@ -1,11 +1,11 @@
 :root {
-  --ifm-color-primary: #b5660a;
-  --ifm-color-primary-dark: #a35c09;
-  --ifm-color-primary-darker: #8c4e08;
-  --ifm-color-primary-darkest: #734007;
-  --ifm-color-primary-light: #c87c1e;
-  --ifm-color-primary-lighter: #d48d35;
-  --ifm-color-primary-lightest: #e0a352;
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
   --ifm-code-font-size: 90%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.06);
   --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -35,7 +35,7 @@
   --ifm-code-color: #211c12;
   --ifm-pre-background: #fffdf8;
   --ifm-blockquote-border-left-width: 3px;
-  --ifm-blockquote-border-color: #b5660a;
+  --ifm-blockquote-border-color: #2563eb;
 }
 
 [data-theme='dark'] {
@@ -64,6 +64,37 @@
 /* Topbar / Navbar */
 .navbar {
   backdrop-filter: blur(8px);
+}
+
+@media (width >= 997px) {
+  .navbar__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar__items:first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__items--right {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .navbar__brand {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .navbar__brand img {
@@ -232,12 +263,12 @@ code {
 
 /* Active nav link highlight */
 :root {
-  --ifm-menu-color-active: #b5660a;
-  --ifm-menu-color-background-active: rgba(181, 102, 10, 0.08);
+  --ifm-menu-color-active: #2563eb;
+  --ifm-menu-color-background-active: rgba(37, 99, 235, 0.08);
 }
 
 .menu__link--active:not(.menu__link--sublist) {
-  border-left: 3px solid #b5660a;
+  border-left: 3px solid #2563eb;
   font-weight: 700;
 }
 
