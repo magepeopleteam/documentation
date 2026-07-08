@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/overview",
+  "title": "Overview",
+  "description": "WPRently — rental management plugin overview.",
+  "source": "@site/docs/plugins/wprently/overview.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/overview",
+  "permalink": "/docs/plugins/wprently/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wprently/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "WPRently — rental management plugin overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WPRently",
+    "permalink": "/docs/category/wprently"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wprently/features"
+  }
+}

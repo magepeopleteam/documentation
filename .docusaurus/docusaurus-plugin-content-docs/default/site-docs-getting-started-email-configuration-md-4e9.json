@@ -1,0 +1,31 @@
+{
+  "id": "getting-started/email-configuration",
+  "title": "Email Configuration",
+  "description": "Configure email notifications for MagePeople booking plugins.",
+  "source": "@site/docs/getting-started/email-configuration.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/email-configuration",
+  "permalink": "/docs/getting-started/email-configuration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/getting-started/email-configuration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Email Configuration",
+    "description": "Configure email notifications for MagePeople booking plugins.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Elementor Integration",
+    "permalink": "/docs/getting-started/elementor-integration"
+  },
+  "next": {
+    "title": "Troubleshooting",
+    "permalink": "/docs/getting-started/troubleshooting"
+  }
+}

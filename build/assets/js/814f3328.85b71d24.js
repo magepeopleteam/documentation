@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmagepeople_docs=self.webpackChunkmagepeople_docs||[]).push([["1833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);

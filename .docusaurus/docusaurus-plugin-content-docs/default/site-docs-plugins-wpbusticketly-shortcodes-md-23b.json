@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPBusTicketly shortcodes reference.",
+  "source": "@site/docs/plugins/wpbusticketly/shortcodes.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/shortcodes",
+  "permalink": "/docs/plugins/wpbusticketly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbusticketly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPBusTicketly shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpbusticketly/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbusticketly/faq"
+  }
+}

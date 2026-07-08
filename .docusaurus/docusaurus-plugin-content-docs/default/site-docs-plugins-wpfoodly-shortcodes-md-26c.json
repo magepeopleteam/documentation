@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpfoodly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPFoodly shortcodes reference.",
+  "source": "@site/docs/plugins/wpfoodly/shortcodes.md",
+  "sourceDirName": "plugins/wpfoodly",
+  "slug": "/plugins/wpfoodly/shortcodes",
+  "permalink": "/docs/plugins/wpfoodly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpfoodly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPFoodly shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpfoodly/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpfoodly/faq"
+  }
+}

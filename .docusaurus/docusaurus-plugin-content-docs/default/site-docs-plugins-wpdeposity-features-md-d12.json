@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpdeposity/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for WPDeposity.",
+  "source": "@site/docs/plugins/wpdeposity/features.md",
+  "sourceDirName": "plugins/wpdeposity",
+  "slug": "/plugins/wpdeposity/features",
+  "permalink": "/docs/plugins/wpdeposity/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpdeposity/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for WPDeposity.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/wpdeposity/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpdeposity/settings"
+  }
+}

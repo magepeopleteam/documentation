@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpgymly/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WPGymly.",
+  "source": "@site/docs/plugins/wpgymly/faq.md",
+  "sourceDirName": "plugins/wpgymly",
+  "slug": "/plugins/wpgymly/faq",
+  "permalink": "/docs/plugins/wpgymly/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpgymly/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WPGymly.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpgymly/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpgymly/changelog"
+  }
+}

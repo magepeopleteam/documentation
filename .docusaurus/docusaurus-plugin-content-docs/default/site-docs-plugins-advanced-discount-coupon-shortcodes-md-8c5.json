@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon/shortcodes",
+  "title": "Shortcodes",
+  "description": "Advanced Discount Coupon shortcodes reference.",
+  "source": "@site/docs/plugins/advanced-discount-coupon/shortcodes.md",
+  "sourceDirName": "plugins/advanced-discount-coupon",
+  "slug": "/plugins/advanced-discount-coupon/shortcodes",
+  "permalink": "/docs/plugins/advanced-discount-coupon/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/advanced-discount-coupon/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "Advanced Discount Coupon shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/advanced-discount-coupon/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/advanced-discount-coupon/faq"
+  }
+}

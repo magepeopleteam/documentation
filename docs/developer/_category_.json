@@ -1,0 +1,8 @@
+{
+  "label": "Developer",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Technical documentation for developers — hooks, filters, REST API, and customization guides."
+  }
+}

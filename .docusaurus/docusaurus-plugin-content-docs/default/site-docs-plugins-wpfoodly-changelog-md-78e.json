@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpfoodly/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPFoodly.",
+  "source": "@site/docs/plugins/wpfoodly/changelog.md",
+  "sourceDirName": "plugins/wpfoodly",
+  "slug": "/plugins/wpfoodly/changelog",
+  "permalink": "/docs/plugins/wpfoodly/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpfoodly/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPFoodly.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpfoodly/faq"
+  },
+  "next": {
+    "title": "WPGrouply",
+    "permalink": "/docs/category/wpgrouply"
+  }
+}

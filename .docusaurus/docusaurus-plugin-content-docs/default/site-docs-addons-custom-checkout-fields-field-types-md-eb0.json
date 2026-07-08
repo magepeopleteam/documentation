@@ -1,0 +1,31 @@
+{
+  "id": "addons/custom-checkout-fields/field-types",
+  "title": "Field Types",
+  "description": "Available field types for custom checkout fields.",
+  "source": "@site/docs/addons/custom-checkout-fields/field-types.md",
+  "sourceDirName": "addons/custom-checkout-fields",
+  "slug": "/addons/custom-checkout-fields/field-types",
+  "permalink": "/docs/addons/custom-checkout-fields/field-types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/addons/custom-checkout-fields/field-types.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Field Types",
+    "description": "Available field types for custom checkout fields.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/addons/custom-checkout-fields/overview"
+  },
+  "next": {
+    "title": "WooCommerce Booking Elementor",
+    "permalink": "/docs/category/woocommerce-booking-elementor"
+  }
+}

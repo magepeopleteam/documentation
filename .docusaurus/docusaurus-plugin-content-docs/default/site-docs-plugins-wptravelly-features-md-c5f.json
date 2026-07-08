@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for WPTravelly.",
+  "source": "@site/docs/plugins/wptravelly/features.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/features",
+  "permalink": "/docs/plugins/wptravelly/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for WPTravelly.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/wptravelly/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wptravelly/settings"
+  }
+}

@@ -4,9 +4,9 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
+  "title": "MagePeople Docs",
+  "tagline": "Documentation for MagePeople WordPress plugins",
+  "favicon": "img/favicon.png",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -29,11 +29,28 @@ export default {
       "gitEagerVcs": true
     }
   },
-  "url": "https://your-docusaurus-site.example.com",
+  "url": "https://magepeople.com",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "magepeople",
+  "projectName": "magepeople-docs",
   "onBrokenLinks": "throw",
+  "markdown": {
+    "hooks": {
+      "onBrokenMarkdownLinks": "warn",
+      "onBrokenMarkdownImages": "throw"
+    },
+    "format": "mdx",
+    "mermaid": false,
+    "emoji": true,
+    "mdx1Compat": {
+      "comments": false,
+      "admonitions": false,
+      "headingIds": false
+    },
+    "anchors": {
+      "maintainCase": false
+    }
+  },
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -48,22 +65,12 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "routeBasePath": "docs",
+          "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/",
+          "showLastUpdateTime": true,
+          "showLastUpdateAuthor": true
         },
-        "blog": {
-          "showReadingTime": true,
-          "feedOptions": {
-            "type": [
-              "rss",
-              "atom"
-            ],
-            "xslt": true
-          },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          "onInlineTags": "warn",
-          "onInlineAuthors": "warn",
-          "onUntruncatedBlogPosts": "warn"
-        },
+        "blog": false,
         "theme": {
           "customCss": "./src/css/custom.css"
         }
@@ -77,26 +84,42 @@ export default {
       "defaultMode": "light",
       "disableSwitch": false
     },
+    "docs": {
+      "sidebar": {
+        "hideable": true,
+        "autoCollapseCategories": true
+      },
+      "versionPersistence": "localStorage"
+    },
     "navbar": {
-      "title": "My Site",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "MagePeople",
+        "src": "img/mage-people-logo.webp"
       },
       "items": [
         {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
+          "type": "doc",
+          "docId": "getting-started/installation",
           "position": "left",
-          "label": "Tutorial"
+          "label": "Documentation"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
+          "to": "/docs/plugins/wpevently/overview",
+          "label": "Plugins",
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "to": "/docs/addons/woocommerce-booking-elementor/overview",
+          "label": "Addons",
+          "position": "left"
+        },
+        {
+          "to": "/docs/developer/hooks",
+          "label": "Developer",
+          "position": "left"
+        },
+        {
+          "href": "https://github.com/magepeopleteam",
           "label": "GitHub",
           "position": "right"
         }
@@ -107,11 +130,48 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Documentation",
           "items": [
             {
-              "label": "Tutorial",
-              "to": "/docs/intro"
+              "label": "Getting Started",
+              "to": "/docs/getting-started/installation"
+            },
+            {
+              "label": "Plugins",
+              "to": "/docs/plugins/wpevently/overview"
+            },
+            {
+              "label": "Addons",
+              "to": "/docs/addons/woocommerce-booking-elementor/overview"
+            },
+            {
+              "label": "Developer",
+              "to": "/docs/developer/hooks"
+            }
+          ]
+        },
+        {
+          "title": "Plugins",
+          "items": [
+            {
+              "label": "WPEvently",
+              "to": "/docs/plugins/wpevently/overview"
+            },
+            {
+              "label": "eCab",
+              "to": "/docs/plugins/ecab/overview"
+            },
+            {
+              "label": "WPTravelly",
+              "to": "/docs/plugins/wptravelly/overview"
+            },
+            {
+              "label": "WPBookingly",
+              "to": "/docs/plugins/wpbookingly/overview"
+            },
+            {
+              "label": "WPRently",
+              "to": "/docs/plugins/wprently/overview"
             }
           ]
         },
@@ -119,16 +179,20 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "MagePeople",
+              "href": "https://magepeople.com"
             },
             {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "label": "Support",
+              "href": "https://magepeople.com/support/"
             },
             {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
+              "label": "Facebook",
+              "href": "https://facebook.com/magepeople"
+            },
+            {
+              "label": "YouTube",
+              "href": "https://youtube.com/@magepeople"
             }
           ]
         },
@@ -136,17 +200,13 @@ export default {
           "title": "More",
           "items": [
             {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/magepeopleteam"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 MagePeople. All rights reserved."
     },
     "prism": {
       "theme": {
@@ -340,7 +400,11 @@ export default {
           }
         ]
       },
-      "additionalLanguages": [],
+      "additionalLanguages": [
+        "php",
+        "bash",
+        "json"
+      ],
       "magicComments": [
         {
           "className": "theme-code-block-highlighted-line",
@@ -351,13 +415,6 @@ export default {
           }
         }
       ]
-    },
-    "docs": {
-      "versionPersistence": "localStorage",
-      "sidebar": {
-        "hideable": false,
-        "autoCollapseCategories": false
-      }
     },
     "blog": {
       "sidebar": {
@@ -388,22 +445,5 @@ export default {
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
-  "noIndex": false,
-  "markdown": {
-    "format": "mdx",
-    "mermaid": false,
-    "emoji": true,
-    "mdx1Compat": {
-      "comments": false,
-      "admonitions": false,
-      "headingIds": false
-    },
-    "anchors": {
-      "maintainCase": false
-    },
-    "hooks": {
-      "onBrokenMarkdownLinks": "warn",
-      "onBrokenMarkdownImages": "throw"
-    }
-  }
+  "noIndex": false
 };

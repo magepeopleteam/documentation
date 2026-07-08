@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpfoodly/settings",
+  "title": "Settings",
+  "description": "Configure WPFoodly food ordering settings.",
+  "source": "@site/docs/plugins/wpfoodly/settings.md",
+  "sourceDirName": "plugins/wpfoodly",
+  "slug": "/plugins/wpfoodly/settings",
+  "permalink": "/docs/plugins/wpfoodly/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpfoodly/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure WPFoodly food ordering settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpfoodly/features"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpfoodly/shortcodes"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/overview",
+  "title": "Overview",
+  "description": "eCab — taxi booking plugin for WordPress overview.",
+  "source": "@site/docs/plugins/ecab/overview.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/overview",
+  "permalink": "/docs/plugins/ecab/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/ecab/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "eCab — taxi booking plugin for WordPress overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "eCab",
+    "permalink": "/docs/category/ecab"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/ecab/features"
+  }
+}

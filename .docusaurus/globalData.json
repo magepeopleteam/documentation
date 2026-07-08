@@ -8,70 +8,605 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "getting-started/installation",
           "docs": [
             {
-              "id": "intro",
-              "path": "/docs/intro",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/bank-payment-gateway/overview",
+              "path": "/docs/addons/bank-payment-gateway/overview",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/bank-payment-gateway/settings",
+              "path": "/docs/addons/bank-payment-gateway/settings",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/custom-checkout-fields/field-types",
+              "path": "/docs/addons/custom-checkout-fields/field-types",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/custom-checkout-fields/overview",
+              "path": "/docs/addons/custom-checkout-fields/overview",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/woocommerce-booking-elementor/overview",
+              "path": "/docs/addons/woocommerce-booking-elementor/overview",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
-              "sidebar": "tutorialSidebar"
+              "id": "addons/woocommerce-booking-elementor/widgets",
+              "path": "/docs/addons/woocommerce-booking-elementor/widgets",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
-              "sidebar": "tutorialSidebar"
+              "id": "developer/customization",
+              "path": "/docs/developer/customization",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
+              "id": "developer/filters",
+              "path": "/docs/developer/filters",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
+              "id": "developer/hooks",
+              "path": "/docs/developer/hooks",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
+              "id": "developer/rest-api",
+              "path": "/docs/developer/rest-api",
+              "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
-              "sidebar": "tutorialSidebar"
+              "id": "getting-started/elementor-integration",
+              "path": "/docs/getting-started/elementor-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/email-configuration",
+              "path": "/docs/getting-started/email-configuration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/docs/getting-started/installation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/license-activation",
+              "path": "/docs/getting-started/license-activation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/troubleshooting",
+              "path": "/docs/getting-started/troubleshooting",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/woocommerce-setup",
+              "path": "/docs/getting-started/woocommerce-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/changelog",
+              "path": "/docs/plugins/advanced-discount-coupon/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/faq",
+              "path": "/docs/plugins/advanced-discount-coupon/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/features",
+              "path": "/docs/plugins/advanced-discount-coupon/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/overview",
+              "path": "/docs/plugins/advanced-discount-coupon/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/settings",
+              "path": "/docs/plugins/advanced-discount-coupon/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon/shortcodes",
+              "path": "/docs/plugins/advanced-discount-coupon/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/changelog",
+              "path": "/docs/plugins/car-rental/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/faq",
+              "path": "/docs/plugins/car-rental/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/features",
+              "path": "/docs/plugins/car-rental/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/overview",
+              "path": "/docs/plugins/car-rental/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/settings",
+              "path": "/docs/plugins/car-rental/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/shortcodes",
+              "path": "/docs/plugins/car-rental/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/changelog",
+              "path": "/docs/plugins/ecab/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/faq",
+              "path": "/docs/plugins/ecab/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/features",
+              "path": "/docs/plugins/ecab/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/overview",
+              "path": "/docs/plugins/ecab/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/settings",
+              "path": "/docs/plugins/ecab/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/shortcodes",
+              "path": "/docs/plugins/ecab/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/changelog",
+              "path": "/docs/plugins/wpbookingly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/faq",
+              "path": "/docs/plugins/wpbookingly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/features",
+              "path": "/docs/plugins/wpbookingly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/overview",
+              "path": "/docs/plugins/wpbookingly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/settings",
+              "path": "/docs/plugins/wpbookingly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/shortcodes",
+              "path": "/docs/plugins/wpbookingly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/changelog",
+              "path": "/docs/plugins/wpbusticketly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/faq",
+              "path": "/docs/plugins/wpbusticketly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/features",
+              "path": "/docs/plugins/wpbusticketly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/overview",
+              "path": "/docs/plugins/wpbusticketly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/settings",
+              "path": "/docs/plugins/wpbusticketly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/shortcodes",
+              "path": "/docs/plugins/wpbusticketly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/changelog",
+              "path": "/docs/plugins/wpdeposity/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/faq",
+              "path": "/docs/plugins/wpdeposity/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/features",
+              "path": "/docs/plugins/wpdeposity/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/overview",
+              "path": "/docs/plugins/wpdeposity/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/settings",
+              "path": "/docs/plugins/wpdeposity/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/shortcodes",
+              "path": "/docs/plugins/wpdeposity/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/changelog",
+              "path": "/docs/plugins/wpequipments/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/faq",
+              "path": "/docs/plugins/wpequipments/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/features",
+              "path": "/docs/plugins/wpequipments/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/overview",
+              "path": "/docs/plugins/wpequipments/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/settings",
+              "path": "/docs/plugins/wpequipments/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpequipments/shortcodes",
+              "path": "/docs/plugins/wpequipments/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/changelog",
+              "path": "/docs/plugins/wpevently/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/faq",
+              "path": "/docs/plugins/wpevently/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/features",
+              "path": "/docs/plugins/wpevently/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/overview",
+              "path": "/docs/plugins/wpevently/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/settings",
+              "path": "/docs/plugins/wpevently/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/shortcodes",
+              "path": "/docs/plugins/wpevently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/changelog",
+              "path": "/docs/plugins/wpfoodly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/faq",
+              "path": "/docs/plugins/wpfoodly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/features",
+              "path": "/docs/plugins/wpfoodly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/overview",
+              "path": "/docs/plugins/wpfoodly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/settings",
+              "path": "/docs/plugins/wpfoodly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpfoodly/shortcodes",
+              "path": "/docs/plugins/wpfoodly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/changelog",
+              "path": "/docs/plugins/wpgrouply/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/faq",
+              "path": "/docs/plugins/wpgrouply/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/features",
+              "path": "/docs/plugins/wpgrouply/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/overview",
+              "path": "/docs/plugins/wpgrouply/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/settings",
+              "path": "/docs/plugins/wpgrouply/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgrouply/shortcodes",
+              "path": "/docs/plugins/wpgrouply/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/changelog",
+              "path": "/docs/plugins/wpgymly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/faq",
+              "path": "/docs/plugins/wpgymly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/features",
+              "path": "/docs/plugins/wpgymly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/overview",
+              "path": "/docs/plugins/wpgymly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/settings",
+              "path": "/docs/plugins/wpgymly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpgymly/shortcodes",
+              "path": "/docs/plugins/wpgymly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/changelog",
+              "path": "/docs/plugins/wprently/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/faq",
+              "path": "/docs/plugins/wprently/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/features",
+              "path": "/docs/plugins/wprently/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/overview",
+              "path": "/docs/plugins/wprently/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/settings",
+              "path": "/docs/plugins/wprently/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/shortcodes",
+              "path": "/docs/plugins/wprently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/changelog",
+              "path": "/docs/plugins/wptravelly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/faq",
+              "path": "/docs/plugins/wptravelly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/features",
+              "path": "/docs/plugins/wptravelly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/overview",
+              "path": "/docs/plugins/wptravelly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/settings",
+              "path": "/docs/plugins/wptravelly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/shortcodes",
+              "path": "/docs/plugins/wptravelly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "videos/developer-videos",
+              "path": "/docs/videos/developer-videos",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "videos/getting-started",
+              "path": "/docs/videos/getting-started",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "videos/plugin-tutorials",
+              "path": "/docs/videos/plugin-tutorials",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/plugins",
+              "path": "/docs/category/plugins",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/advanced-discount-coupon",
+              "path": "/docs/category/advanced-discount-coupon",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/car-rental",
+              "path": "/docs/category/car-rental",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/ecab",
+              "path": "/docs/category/ecab",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpbookingly",
+              "path": "/docs/category/wpbookingly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpbusticketly",
+              "path": "/docs/category/wpbusticketly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpdeposity",
+              "path": "/docs/category/wpdeposity",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpequipments",
+              "path": "/docs/category/wpequipments",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpevently",
+              "path": "/docs/category/wpevently",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpfoodly",
+              "path": "/docs/category/wpfoodly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpgrouply",
+              "path": "/docs/category/wpgrouply",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpgymly",
+              "path": "/docs/category/wpgymly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wprently",
+              "path": "/docs/category/wprently",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wptravelly",
+              "path": "/docs/category/wptravelly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons",
+              "path": "/docs/category/addons",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/bank-payment-gateway",
+              "path": "/docs/category/bank-payment-gateway",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/custom-checkout-fields",
+              "path": "/docs/category/custom-checkout-fields",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/woocommerce-booking-elementor",
+              "path": "/docs/category/woocommerce-booking-elementor",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/developer",
+              "path": "/docs/category/developer",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/videos",
+              "path": "/docs/category/videos",
+              "sidebar": "docsSidebar"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "docsSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/category/getting-started",
+                "label": "Getting Started"
               }
             }
           }

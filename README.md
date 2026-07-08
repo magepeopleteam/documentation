@@ -1,41 +1,40 @@
-# Website
+# MagePeople Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Documentation portal for [MagePeople](https://magepeople.com) WordPress plugins.
 
-## Installation
+Built with [Docusaurus](https://docusaurus.io/).
 
-```bash
-yarn
-```
-
-## Local Development
+## Getting Started
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Project Structure
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
+```
+docs/
+├── getting-started/   # Installation, setup, configuration
+├── plugins/           # Plugin documentation
+├── addons/            # Addon documentation
+├── developer/         # Hooks, filters, REST API
+└── videos/            # Video tutorials
 ```
 
-Not using SSH:
+## Adding a New Plugin
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+1. Create a new folder under `docs/plugins/your-plugin/`
+2. Add `_category_.json` with the plugin name
+3. Add markdown files (overview.md, features.md, settings.md, etc.)
+4. The sidebar auto-generates from the folder structure
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## License
+
+Proprietary — all rights reserved.

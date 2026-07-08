@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for eCab taxi booking.",
+  "source": "@site/docs/plugins/ecab/features.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/features",
+  "permalink": "/docs/plugins/ecab/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/ecab/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for eCab taxi booking.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/ecab/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/ecab/settings"
+  }
+}

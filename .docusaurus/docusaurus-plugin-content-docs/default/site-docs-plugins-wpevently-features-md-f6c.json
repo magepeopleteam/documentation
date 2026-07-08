@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for WPEvently.",
+  "source": "@site/docs/plugins/wpevently/features.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/features",
+  "permalink": "/docs/plugins/wpevently/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpevently/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for WPEvently.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/wpevently/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpevently/settings"
+  }
+}

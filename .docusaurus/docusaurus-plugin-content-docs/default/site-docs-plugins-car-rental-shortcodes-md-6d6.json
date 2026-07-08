@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/shortcodes",
+  "title": "Shortcodes",
+  "description": "Car Rental shortcodes reference.",
+  "source": "@site/docs/plugins/car-rental/shortcodes.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/shortcodes",
+  "permalink": "/docs/plugins/car-rental/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/car-rental/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "Car Rental shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/car-rental/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/car-rental/faq"
+  }
+}

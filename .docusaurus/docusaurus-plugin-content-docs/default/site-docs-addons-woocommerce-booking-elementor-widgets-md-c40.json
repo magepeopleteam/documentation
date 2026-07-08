@@ -1,0 +1,31 @@
+{
+  "id": "addons/woocommerce-booking-elementor/widgets",
+  "title": "Widgets Reference",
+  "description": "Available Elementor widgets from the booking Elementor addon.",
+  "source": "@site/docs/addons/woocommerce-booking-elementor/widgets.md",
+  "sourceDirName": "addons/woocommerce-booking-elementor",
+  "slug": "/addons/woocommerce-booking-elementor/widgets",
+  "permalink": "/docs/addons/woocommerce-booking-elementor/widgets",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/addons/woocommerce-booking-elementor/widgets.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Widgets Reference",
+    "description": "Available Elementor widgets from the booking Elementor addon.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/addons/woocommerce-booking-elementor/overview"
+  },
+  "next": {
+    "title": "Developer",
+    "permalink": "/docs/category/developer"
+  }
+}

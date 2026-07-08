@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/overview",
+  "title": "Overview",
+  "description": "Car Rental — vehicle booking and fleet management plugin overview.",
+  "source": "@site/docs/plugins/car-rental/overview.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/overview",
+  "permalink": "/docs/plugins/car-rental/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/car-rental/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "Car Rental — vehicle booking and fleet management plugin overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Car Rental",
+    "permalink": "/docs/category/car-rental"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/car-rental/features"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPTravelly.",
+  "source": "@site/docs/plugins/wptravelly/changelog.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/changelog",
+  "permalink": "/docs/plugins/wptravelly/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPTravelly.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wptravelly/faq"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons"
+  }
+}

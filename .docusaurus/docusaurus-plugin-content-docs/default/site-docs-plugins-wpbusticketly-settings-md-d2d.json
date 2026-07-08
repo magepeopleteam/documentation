@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/settings",
+  "title": "Settings",
+  "description": "Configure WPBusTicketly settings.",
+  "source": "@site/docs/plugins/wpbusticketly/settings.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/settings",
+  "permalink": "/docs/plugins/wpbusticketly/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbusticketly/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure WPBusTicketly settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpbusticketly/features"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpbusticketly/shortcodes"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPBookingly shortcodes reference.",
+  "source": "@site/docs/plugins/wpbookingly/shortcodes.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/shortcodes",
+  "permalink": "/docs/plugins/wpbookingly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbookingly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPBookingly shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpbookingly/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbookingly/faq"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/overview",
+  "title": "Overview",
+  "description": "WPTravelly — travel and tour booking plugin overview.",
+  "source": "@site/docs/plugins/wptravelly/overview.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/overview",
+  "permalink": "/docs/plugins/wptravelly/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "WPTravelly — travel and tour booking plugin overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WPTravelly",
+    "permalink": "/docs/category/wptravelly"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wptravelly/features"
+  }
+}

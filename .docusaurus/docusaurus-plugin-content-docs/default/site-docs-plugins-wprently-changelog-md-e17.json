@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPRently.",
+  "source": "@site/docs/plugins/wprently/changelog.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/changelog",
+  "permalink": "/docs/plugins/wprently/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wprently/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPRently.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wprently/faq"
+  },
+  "next": {
+    "title": "WPTravelly",
+    "permalink": "/docs/category/wptravelly"
+  }
+}

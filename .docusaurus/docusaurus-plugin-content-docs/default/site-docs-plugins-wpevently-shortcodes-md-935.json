@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPEvently shortcodes reference for embedding events anywhere.",
+  "source": "@site/docs/plugins/wpevently/shortcodes.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/shortcodes",
+  "permalink": "/docs/plugins/wpevently/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpevently/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPEvently shortcodes reference for embedding events anywhere.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpevently/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpevently/faq"
+  }
+}

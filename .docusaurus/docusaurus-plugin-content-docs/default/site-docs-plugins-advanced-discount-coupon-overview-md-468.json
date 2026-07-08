@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon/overview",
+  "title": "Overview",
+  "description": "Advanced Discount Coupon — dynamic coupon management for WooCommerce.",
+  "source": "@site/docs/plugins/advanced-discount-coupon/overview.md",
+  "sourceDirName": "plugins/advanced-discount-coupon",
+  "slug": "/plugins/advanced-discount-coupon/overview",
+  "permalink": "/docs/plugins/advanced-discount-coupon/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/advanced-discount-coupon/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "Advanced Discount Coupon — dynamic coupon management for WooCommerce.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Advanced Discount Coupon",
+    "permalink": "/docs/category/advanced-discount-coupon"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/advanced-discount-coupon/features"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPTravelly shortcodes reference.",
+  "source": "@site/docs/plugins/wptravelly/shortcodes.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/shortcodes",
+  "permalink": "/docs/plugins/wptravelly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPTravelly shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wptravelly/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wptravelly/faq"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpgymly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WPGymly shortcodes reference.",
+  "source": "@site/docs/plugins/wpgymly/shortcodes.md",
+  "sourceDirName": "plugins/wpgymly",
+  "slug": "/plugins/wpgymly/shortcodes",
+  "permalink": "/docs/plugins/wpgymly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpgymly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WPGymly shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpgymly/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpgymly/faq"
+  }
+}

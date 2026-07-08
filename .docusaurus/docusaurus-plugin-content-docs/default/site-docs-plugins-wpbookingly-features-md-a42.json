@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for WPBookingly.",
+  "source": "@site/docs/plugins/wpbookingly/features.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/features",
+  "permalink": "/docs/plugins/wpbookingly/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbookingly/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for WPBookingly.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/wpbookingly/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpbookingly/settings"
+  }
+}

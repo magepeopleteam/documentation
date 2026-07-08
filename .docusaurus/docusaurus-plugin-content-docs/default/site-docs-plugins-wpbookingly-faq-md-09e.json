@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WPBookingly.",
+  "source": "@site/docs/plugins/wpbookingly/faq.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/faq",
+  "permalink": "/docs/plugins/wpbookingly/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbookingly/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WPBookingly.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpbookingly/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpbookingly/changelog"
+  }
+}

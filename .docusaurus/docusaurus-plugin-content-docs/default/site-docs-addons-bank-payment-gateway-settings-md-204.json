@@ -1,0 +1,31 @@
+{
+  "id": "addons/bank-payment-gateway/settings",
+  "title": "Settings",
+  "description": "Configure bank payment gateway settings.",
+  "source": "@site/docs/addons/bank-payment-gateway/settings.md",
+  "sourceDirName": "addons/bank-payment-gateway",
+  "slug": "/addons/bank-payment-gateway/settings",
+  "permalink": "/docs/addons/bank-payment-gateway/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/addons/bank-payment-gateway/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure bank payment gateway settings.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/addons/bank-payment-gateway/overview"
+  },
+  "next": {
+    "title": "Custom Checkout Fields",
+    "permalink": "/docs/category/custom-checkout-fields"
+  }
+}

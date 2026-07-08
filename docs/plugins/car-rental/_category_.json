@@ -1,0 +1,7 @@
+{
+  "label": "Car Rental",
+  "link": {
+    "type": "generated-index",
+    "description": "Car rental management plugin — manage fleet, drivers, and vehicle bookings."
+  }
+}

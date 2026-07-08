@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpequipments/overview",
+  "title": "Overview",
+  "description": "WPEquipments — equipment rental plugin overview.",
+  "source": "@site/docs/plugins/wpequipments/overview.md",
+  "sourceDirName": "plugins/wpequipments",
+  "slug": "/plugins/wpequipments/overview",
+  "permalink": "/docs/plugins/wpequipments/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpequipments/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "WPEquipments — equipment rental plugin overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WPEquipments",
+    "permalink": "/docs/category/wpequipments"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpequipments/features"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for Advanced Discount Coupon.",
+  "source": "@site/docs/plugins/advanced-discount-coupon/changelog.md",
+  "sourceDirName": "plugins/advanced-discount-coupon",
+  "slug": "/plugins/advanced-discount-coupon/changelog",
+  "permalink": "/docs/plugins/advanced-discount-coupon/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/advanced-discount-coupon/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for Advanced Discount Coupon.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/advanced-discount-coupon/faq"
+  },
+  "next": {
+    "title": "Car Rental",
+    "permalink": "/docs/category/car-rental"
+  }
+}

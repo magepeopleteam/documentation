@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WPRently.",
+  "source": "@site/docs/plugins/wprently/faq.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/faq",
+  "permalink": "/docs/plugins/wprently/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wprently/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WPRently.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wprently/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wprently/changelog"
+  }
+}
