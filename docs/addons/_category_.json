@@ -2,7 +2,7 @@
   "label": "Addons",
   "position": 3,
   "link": {
-    "type": "generated-index",
-    "description": "Extend your MagePeople plugins with powerful addons."
+    "type": "doc",
+    "id": "addons/index"
   }
 }

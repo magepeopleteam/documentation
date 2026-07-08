@@ -12,7 +12,7 @@ Event is always one, but the ticket type is multiple. One event could have vario
 
 It is not possible to change the quantity on the Cart page. It will create an attendee duplication issue in the event booking.
 
-## How to add tax in event manager ?
+## How to add tax in event manager
 
 ### Enabling Tax
 
@@ -40,7 +40,7 @@ This feature is available in the Form Builder plugin version 4.0.4. Users can su
 
 **How to Approve/Reject:** After a user submits a request, the admin can see the request list in the Cancellation Request page from the dashboard and approve or reject it.
 
-## How to get event ID ?
+## How to get event ID
 
 View the event in edit mode. In the URL, you will see the event ID (the number in the URL parameter).
 
@@ -71,14 +71,14 @@ Go to **Events → Category**. The category ID will be displayed in the list.
 
 This feature is included in the [WooCommerce Event Waitlist Addon](https://mage-people.com/product/woocommerce-event-waitlist-addon/).
 
-## Where is PDF ticket Settings ?
+## Where is PDF ticket Settings
 
 1. Log in to your WordPress admin panel.
 2. Click the "Events" button to open a drop-down list.
 3. Find the "PDF setting" button in the drop-down list.
 4. Click "PDF Setting" to access the PDF ticket setting panel.
 
-## How Can I enable Attendee form ?
+## How Can I enable Attendee form
 
 To enable the attendee form you must first install a plugin named "Form Builder". Once installed:
 
@@ -95,7 +95,7 @@ Please buy the premium version of the plugin to get this feature. If you already
 
 Yes, you can book event tickets for customers as a backend user. This feature is available in the [WooCommerce Event: Book an Event From Dashboard addon](https://mage-people.com/product/woocommerce-event-book-an-event-from-dashboard/).
 
-## How can I export Attendee list ?
+## How can I export Attendee list
 
 *(Attendee List is a PRO feature that comes with the PRO version.)*
 
@@ -110,7 +110,7 @@ Yes, you can book event tickets for customers as a backend user. This feature is
 
 The attendee list may show empty if you do not have a premium version of the plugin installed.
 
-## Where Can I see Attendee list ?
+## Where Can I see Attendee list
 
 *(Attendee List is a PRO feature that comes with the PRO version.)*
 

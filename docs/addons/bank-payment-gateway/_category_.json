@@ -1,7 +1,0 @@
-{
-  "label": "Bank Payment Gateway",
-  "link": {
-    "type": "generated-index",
-    "description": "Direct bank transfer payment gateway for booking plugins."
-  }
-}

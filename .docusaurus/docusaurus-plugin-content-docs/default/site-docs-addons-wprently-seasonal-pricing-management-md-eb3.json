@@ -1,0 +1,31 @@
+{
+  "id": "addons/wprently/seasonal-pricing-management",
+  "title": "Seasonal Pricing Management",
+  "description": "Apply different rental prices based on seasons and time ranges.",
+  "source": "@site/docs/addons/wprently/seasonal-pricing-management.md",
+  "sourceDirName": "addons/wprently",
+  "slug": "/addons/wprently/seasonal-pricing-management",
+  "permalink": "/docs/addons/wprently/seasonal-pricing-management",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/seasonal-pricing-management.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Seasonal Pricing Management",
+    "description": "Apply different rental prices based on seasons and time ranges.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Pricing Discount Over x Days",
+    "permalink": "/docs/addons/wprently/pricing-discount-over-x-days"
+  },
+  "next": {
+    "title": "Developer",
+    "permalink": "/docs/category/developer"
+  }
+}

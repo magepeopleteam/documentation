@@ -1,0 +1,31 @@
+{
+  "id": "addons/wptravelly/early-bird-pricing",
+  "title": "Early Bird Pricing",
+  "description": "Reward early bookings with special discounts for your tours.",
+  "source": "@site/docs/addons/wptravelly/early-bird-pricing.md",
+  "sourceDirName": "addons/wptravelly",
+  "slug": "/addons/wptravelly/early-bird-pricing",
+  "permalink": "/docs/addons/wptravelly/early-bird-pricing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/early-bird-pricing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Early Bird Pricing",
+    "description": "Reward early bookings with special discounts for your tours.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Buy X Get Y Free",
+    "permalink": "/docs/addons/wptravelly/buy-x-get-y-free"
+  },
+  "next": {
+    "title": "Group & Bulk Pricing",
+    "permalink": "/docs/addons/wptravelly/group-bulk-pricing"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/email-reminder",
+  "title": "Email Reminder",
+  "description": "Send automatic reminder emails before an event to reduce no-shows.",
+  "source": "@site/docs/addons/wpevently/email-reminder.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/email-reminder",
+  "permalink": "/docs/addons/wpevently/email-reminder",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/email-reminder.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Email Reminder",
+    "description": "Send automatic reminder emails before an event to reduce no-shows.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Category Based Ticket Type",
+    "permalink": "/docs/addons/wpevently/category-based-ticket-type"
+  },
+  "next": {
+    "title": "Event Duplicator",
+    "permalink": "/docs/addons/wpevently/event-duplicator"
+  }
+}

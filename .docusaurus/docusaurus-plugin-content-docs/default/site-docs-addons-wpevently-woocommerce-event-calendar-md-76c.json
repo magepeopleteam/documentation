@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/woocommerce-event-calendar",
+  "title": "WooCommerce Event Calendar",
+  "description": "Display events in a calendar view for easy date-based browsing.",
+  "source": "@site/docs/addons/wpevently/woocommerce-event-calendar.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/woocommerce-event-calendar",
+  "permalink": "/docs/addons/wpevently/woocommerce-event-calendar",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-calendar.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "title": "WooCommerce Event Calendar",
+    "description": "Display events in a calendar view for easy date-based browsing.",
+    "sidebar_position": 12
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Review and Rating",
+    "permalink": "/docs/addons/wpevently/review-and-rating"
+  },
+  "next": {
+    "title": "WooCommerce Event Coupon Code",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-coupon-code"
+  }
+}

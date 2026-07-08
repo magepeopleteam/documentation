@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/event-duplicator",
+  "title": "Event Duplicator",
+  "description": "Duplicate events with all settings, ticket types, and details to save time.",
+  "source": "@site/docs/addons/wpevently/event-duplicator.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/event-duplicator",
+  "permalink": "/docs/addons/wpevently/event-duplicator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/event-duplicator.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Event Duplicator",
+    "description": "Duplicate events with all settings, ticket types, and details to save time.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Email Reminder",
+    "permalink": "/docs/addons/wpevently/email-reminder"
+  },
+  "next": {
+    "title": "Event Max-Min Quantity Limiting",
+    "permalink": "/docs/addons/wpevently/event-max-min-quantity-limiting"
+  }
+}

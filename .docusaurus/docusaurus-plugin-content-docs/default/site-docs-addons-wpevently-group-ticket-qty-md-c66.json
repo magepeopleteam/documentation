@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/group-ticket-qty",
+  "title": "Group Ticket Qty",
+  "description": "Enable customers to purchase multiple tickets in groups with pooled quantity management.",
+  "source": "@site/docs/addons/wpevently/group-ticket-qty.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/group-ticket-qty",
+  "permalink": "/docs/addons/wpevently/group-ticket-qty",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/group-ticket-qty.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "Group Ticket Qty",
+    "description": "Enable customers to purchase multiple tickets in groups with pooled quantity management.",
+    "sidebar_position": 7
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Min/Max Quantity",
+    "permalink": "/docs/addons/wpevently/min-max-quantity"
+  },
+  "next": {
+    "title": "Marketplace / Frontend Submission",
+    "permalink": "/docs/addons/wpevently/marketplace-frontend-submission"
+  }
+}

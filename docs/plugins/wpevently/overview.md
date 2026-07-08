@@ -13,7 +13,7 @@ WPEvently (formerly WooCommerce Event Manager) is a comprehensive event manageme
 Install the WooCommerce Event Manager plugin via automatic install, zip upload, or FTP, then activate your license to get started.
 
 - [Plugin Installation](/docs/plugins/wpevently/installation-setup) — Install via WordPress admin, zip file, or FTP
-- [Pro Version](/docs/plugins/wpevently/installation-setup#pro-version) — Install the Pro version and activate your license
+- [Pro Version](/docs/plugins/wpevently/installation-setup#pro-version-installation) — Install the Pro version and activate your license
 - Ensure PHP 7.4+ and WordPress 5.8+ for compatibility
 - Configure permalinks to use the Post name setting
 
@@ -73,15 +73,15 @@ Integrate the WooCommerce Event Manager with external applications using the ava
 
 Quick answers to the most common questions about installing, configuring, and troubleshooting.
 
-- [How to get event ID](/docs/plugins/wpevently/faq#event-id)
-- [How to find event organizer ID](/docs/plugins/wpevently/faq#organizer-id)
-- [How to find event category ID](/docs/plugins/wpevently/faq#category-id)
-- [How to add shortcode in the editor](/docs/plugins/wpevently/faq#shortcode-editor)
-- [How to add tax in event manager](/docs/plugins/wpevently/faq#tax-settings)
-- [Where is PDF ticket settings](/docs/plugins/wpevently/faq#pdf-ticket-settings)
-- [How to enable attendee form](/docs/plugins/wpevently/faq#attendee-form)
-- [How to enable QR code in tickets](/docs/plugins/wpevently/faq#qr-codes)
-- [Where to see attendee list](/docs/plugins/wpevently/faq#attendee-list)
-- [How to export attendee list](/docs/plugins/wpevently/faq#export-csv)
-- [Event page shows 404 error](/docs/plugins/wpevently/faq#404-troubleshooting)
-- [Cancellation request from My Account](/docs/plugins/wpevently/faq#cancellation-request)
+- [How to get event ID](/docs/plugins/wpevently/faq#how-to-get-event-id)
+- [How to find event organizer ID](/docs/plugins/wpevently/faq#how-to-find-event-organizer-id)
+- [How to find event category ID](/docs/plugins/wpevently/faq#how-to-find-event-category-id)
+- [How to add shortcode in the editor](/docs/plugins/wpevently/faq#how-to-add-the-shortcode-in-the-editor)
+- [How to add tax in event manager](/docs/plugins/wpevently/faq#how-to-add-tax-in-event-manager)
+- [Where is PDF ticket settings](/docs/plugins/wpevently/faq#where-is-pdf-ticket-settings)
+- [How to enable attendee form](/docs/plugins/wpevently/faq#how-can-i-enable-attendee-form)
+- [How to enable QR code in tickets](/docs/plugins/wpevently/faq#how-can-i-enable-qr-code-in-my-ticket-and-how-it-works)
+- [Where to see attendee list](/docs/plugins/wpevently/faq#where-can-i-see-attendee-list)
+- [How to export attendee list](/docs/plugins/wpevently/faq#how-can-i-export-attendee-list)
+- [Event page shows 404 error](/docs/plugins/wpevently/faq#i-did-correct-setting-but-event-page-shows-404-error)
+- [Cancellation request from My Account](/docs/plugins/wpevently/faq#cancellation-request-from-my-account-in-front-end)

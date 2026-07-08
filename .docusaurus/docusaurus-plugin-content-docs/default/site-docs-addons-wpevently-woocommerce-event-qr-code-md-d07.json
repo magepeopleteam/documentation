@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/woocommerce-event-qr-code",
+  "title": "WooCommerce Event QR Code",
+  "description": "Validate tickets with QR codes for secure event entry.",
+  "source": "@site/docs/addons/wpevently/woocommerce-event-qr-code.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/woocommerce-event-qr-code",
+  "permalink": "/docs/addons/wpevently/woocommerce-event-qr-code",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-qr-code.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 14,
+  "frontMatter": {
+    "title": "WooCommerce Event QR Code",
+    "description": "Validate tickets with QR codes for secure event entry.",
+    "sidebar_position": 14
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WooCommerce Event Coupon Code",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-coupon-code"
+  },
+  "next": {
+    "title": "WooCommerce Event Waitlist",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-waitlist"
+  }
+}

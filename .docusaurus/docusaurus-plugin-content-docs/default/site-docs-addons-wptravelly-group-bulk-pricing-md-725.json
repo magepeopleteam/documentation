@@ -1,0 +1,31 @@
+{
+  "id": "addons/wptravelly/group-bulk-pricing",
+  "title": "Group & Bulk Pricing",
+  "description": "Offer bulk discounts for group travelers to attract bigger groups.",
+  "source": "@site/docs/addons/wptravelly/group-bulk-pricing.md",
+  "sourceDirName": "addons/wptravelly",
+  "slug": "/addons/wptravelly/group-bulk-pricing",
+  "permalink": "/docs/addons/wptravelly/group-bulk-pricing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/group-bulk-pricing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Group & Bulk Pricing",
+    "description": "Offer bulk discounts for group travelers to attract bigger groups.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Early Bird Pricing",
+    "permalink": "/docs/addons/wptravelly/early-bird-pricing"
+  },
+  "next": {
+    "title": "Group Ticket Quantity",
+    "permalink": "/docs/addons/wptravelly/group-ticket-quantity"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/woocommerce-event-coupon-code",
+  "title": "WooCommerce Event Coupon Code",
+  "description": "Create event-specific coupons with usage restrictions.",
+  "source": "@site/docs/addons/wpevently/woocommerce-event-coupon-code.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/woocommerce-event-coupon-code",
+  "permalink": "/docs/addons/wpevently/woocommerce-event-coupon-code",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-coupon-code.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 13,
+  "frontMatter": {
+    "title": "WooCommerce Event Coupon Code",
+    "description": "Create event-specific coupons with usage restrictions.",
+    "sidebar_position": 13
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WooCommerce Event Calendar",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-calendar"
+  },
+  "next": {
+    "title": "WooCommerce Event QR Code",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-qr-code"
+  }
+}

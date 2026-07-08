@@ -1,0 +1,31 @@
+{
+  "id": "addons/wprently/admin-backend-order",
+  "title": "Admin Backend Order",
+  "description": "Allow admins to create and manage rental orders directly from the WordPress dashboard.",
+  "source": "@site/docs/addons/wprently/admin-backend-order.md",
+  "sourceDirName": "addons/wprently",
+  "slug": "/addons/wprently/admin-backend-order",
+  "permalink": "/docs/addons/wprently/admin-backend-order",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/admin-backend-order.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Admin Backend Order",
+    "description": "Allow admins to create and manage rental orders directly from the WordPress dashboard.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WpRently",
+    "permalink": "/docs/addons/wprently"
+  },
+  "next": {
+    "title": "Min and Max Booking Limit",
+    "permalink": "/docs/addons/wprently/min-max-booking-limit"
+  }
+}

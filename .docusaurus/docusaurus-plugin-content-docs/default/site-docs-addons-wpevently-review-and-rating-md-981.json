@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/review-and-rating",
+  "title": "Review and Rating",
+  "description": "Gather feedback from customers with event reviews and star ratings.",
+  "source": "@site/docs/addons/wpevently/review-and-rating.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/review-and-rating",
+  "permalink": "/docs/addons/wpevently/review-and-rating",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/review-and-rating.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "title": "Review and Rating",
+    "description": "Gather feedback from customers with event reviews and star ratings.",
+    "sidebar_position": 11
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Event Seat Plan",
+    "permalink": "/docs/addons/wpevently/event-seat-plan"
+  },
+  "next": {
+    "title": "WooCommerce Event Calendar",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-calendar"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "WpRently",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "slug": "addons/wprently",
+    "description": "Addons for the WpRently rental booking plugin."
+  }
+}

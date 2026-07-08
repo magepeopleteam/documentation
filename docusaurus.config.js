@@ -80,7 +80,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs/addons/woocommerce-booking-elementor/overview',
+            to: '/docs/addons',
             label: 'Addons',
             position: 'left',
           },
@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: 'Addons',
-                to: '/docs/addons/woocommerce-booking-elementor/overview',
+                to: '/docs/addons',
               },
               {
                 label: 'Developer',

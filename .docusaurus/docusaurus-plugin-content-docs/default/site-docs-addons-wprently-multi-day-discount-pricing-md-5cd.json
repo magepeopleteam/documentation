@@ -1,0 +1,31 @@
+{
+  "id": "addons/wprently/multi-day-discount-pricing",
+  "title": "Multi-Day Discount Pricing",
+  "description": "Offer special discounts for multi-day rentals to encourage longer bookings.",
+  "source": "@site/docs/addons/wprently/multi-day-discount-pricing.md",
+  "sourceDirName": "addons/wprently",
+  "slug": "/addons/wprently/multi-day-discount-pricing",
+  "permalink": "/docs/addons/wprently/multi-day-discount-pricing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/multi-day-discount-pricing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Multi-Day Discount Pricing",
+    "description": "Offer special discounts for multi-day rentals to encourage longer bookings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Min and Max Booking Limit",
+    "permalink": "/docs/addons/wprently/min-max-booking-limit"
+  },
+  "next": {
+    "title": "Pricing Discount Over x Days",
+    "permalink": "/docs/addons/wprently/pricing-discount-over-x-days"
+  }
+}

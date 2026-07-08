@@ -1,0 +1,9 @@
+{
+  "label": "eCab",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "addons/ecab",
+    "description": "Addons for the eCab taxi booking plugin."
+  }
+}

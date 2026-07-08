@@ -108,7 +108,7 @@ export default {
           "position": "left"
         },
         {
-          "to": "/docs/addons/woocommerce-booking-elementor/overview",
+          "to": "/docs/addons",
           "label": "Addons",
           "position": "left"
         },
@@ -151,7 +151,7 @@ export default {
             },
             {
               "label": "Addons",
-              "to": "/docs/addons/woocommerce-booking-elementor/overview"
+              "to": "/docs/addons"
             },
             {
               "label": "Developer",

@@ -1,0 +1,31 @@
+{
+  "id": "addons/wptravelly/seasonal-pricing",
+  "title": "Seasonal Pricing",
+  "description": "Offer dynamic tour pricing based on peak seasons and holidays.",
+  "source": "@site/docs/addons/wptravelly/seasonal-pricing.md",
+  "sourceDirName": "addons/wptravelly",
+  "slug": "/addons/wptravelly/seasonal-pricing",
+  "permalink": "/docs/addons/wptravelly/seasonal-pricing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/seasonal-pricing.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "title": "Seasonal Pricing",
+    "description": "Offer dynamic tour pricing based on peak seasons and holidays.",
+    "sidebar_position": 8
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "QR Code Addon",
+    "permalink": "/docs/addons/wptravelly/qr-code"
+  },
+  "next": {
+    "title": "Seat Plan",
+    "permalink": "/docs/addons/wptravelly/seat-plan"
+  }
+}

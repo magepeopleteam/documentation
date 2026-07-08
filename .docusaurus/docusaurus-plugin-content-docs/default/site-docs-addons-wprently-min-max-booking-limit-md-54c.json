@@ -1,0 +1,31 @@
+{
+  "id": "addons/wprently/min-max-booking-limit",
+  "title": "Min and Max Booking Limit",
+  "description": "Set minimum and maximum day booking limits for your rental system.",
+  "source": "@site/docs/addons/wprently/min-max-booking-limit.md",
+  "sourceDirName": "addons/wprently",
+  "slug": "/addons/wprently/min-max-booking-limit",
+  "permalink": "/docs/addons/wprently/min-max-booking-limit",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/min-max-booking-limit.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Min and Max Booking Limit",
+    "description": "Set minimum and maximum day booking limits for your rental system.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Admin Backend Order",
+    "permalink": "/docs/addons/wprently/admin-backend-order"
+  },
+  "next": {
+    "title": "Multi-Day Discount Pricing",
+    "permalink": "/docs/addons/wprently/multi-day-discount-pricing"
+  }
+}
