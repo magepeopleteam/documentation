@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure WpRently — Booking and Rental Manager for WooCommerce.",
+  "source": "@site/docs/plugins/wprently/installation-setup.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/installation-setup",
+  "permalink": "/docs/plugins/wprently/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wprently/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure WpRently — Booking and Rental Manager for WooCommerce.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wprently/features"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wprently/settings"
+  }
+}

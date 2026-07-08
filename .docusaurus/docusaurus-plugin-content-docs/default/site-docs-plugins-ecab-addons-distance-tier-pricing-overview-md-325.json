@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/addons/distance-tier-pricing/overview",
+  "title": "Distance Tier Pricing",
+  "description": "Distance Tier Pricing addon for eCab — tiered pricing based on distance.",
+  "source": "@site/docs/plugins/ecab/addons/distance-tier-pricing/overview.md",
+  "sourceDirName": "plugins/ecab/addons/distance-tier-pricing",
+  "slug": "/plugins/ecab/addons/distance-tier-pricing/overview",
+  "permalink": "/docs/plugins/ecab/addons/distance-tier-pricing/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/ecab/addons/distance-tier-pricing/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Distance Tier Pricing",
+    "description": "Distance Tier Pricing addon for eCab — tiered pricing based on distance.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons"
+  },
+  "next": {
+    "title": "Peak Hour Pricing",
+    "permalink": "/docs/plugins/ecab/addons/peak-hour-pricing/overview"
+  }
+}

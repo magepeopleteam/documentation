@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpevently/faq",
   "title": "FAQ",
-  "description": "Frequently asked questions about WPEvently.",
+  "description": "Quick answers to the most common questions about installing, configuring, and troubleshooting the WooCommerce Event Manager plugin.",
   "source": "@site/docs/plugins/wpevently/faq.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/faq",
@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 5,
+  "sidebarPosition": 8,
   "frontMatter": {
     "title": "FAQ",
-    "description": "Frequently asked questions about WPEvently.",
-    "sidebar_position": 5
+    "description": "Quick answers to the most common questions about installing, configuring, and troubleshooting the WooCommerce Event Manager plugin.",
+    "sidebar_position": 8
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpevently/shortcodes"
+    "title": "REST API",
+    "permalink": "/docs/plugins/wpevently/rest-api"
   },
   "next": {
-    "title": "Changelog",
-    "permalink": "/docs/plugins/wpevently/changelog"
+    "title": "Developer Hooks",
+    "permalink": "/docs/plugins/wpevently/developer-hooks"
   }
 }

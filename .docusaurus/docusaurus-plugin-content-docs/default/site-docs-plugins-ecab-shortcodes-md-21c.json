@@ -1,7 +1,7 @@
 {
   "id": "plugins/ecab/shortcodes",
   "title": "Shortcodes",
-  "description": "eCab shortcodes reference for embedding booking forms.",
+  "description": "eCab shortcodes reference for embedding taxi booking forms.",
   "source": "@site/docs/plugins/ecab/shortcodes.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/shortcodes",
@@ -16,7 +16,7 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "eCab shortcodes reference for embedding booking forms.",
+    "description": "eCab shortcodes reference for embedding taxi booking forms.",
     "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/ecab/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/ecab/faq"
+    "title": "Pro Features",
+    "permalink": "/docs/plugins/ecab/features"
   }
 }

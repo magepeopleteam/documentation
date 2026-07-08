@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpbusticketly/overview",
   "title": "Overview",
-  "description": "WPBusTicketly — bus ticket booking plugin overview.",
+  "description": "WpBusTicketly — Bus Ticket Booking with Seat Reservation plugin overview.",
   "source": "@site/docs/plugins/wpbusticketly/overview.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPBusTicketly — bus ticket booking plugin overview.",
+    "description": "WpBusTicketly — Bus Ticket Booking with Seat Reservation plugin overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPBusTicketly",
+    "title": "WpBusTicketly",
     "permalink": "/docs/category/wpbusticketly"
   },
   "next": {

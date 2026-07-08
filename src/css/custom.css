@@ -216,6 +216,14 @@ pre {
   font-weight: 600;
 }
 
+/* Video embeds */
+.doc-video {
+  max-width: 640px;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem 0;
+}
+
 /* Inline code */
 code {
   font-size: 0.85em;

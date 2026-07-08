@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpevently/overview",
   "title": "Overview",
-  "description": "WPEvently — WordPress event management plugin overview.",
+  "description": "WPEvently — powerful WordPress event management plugin with shortcodes, Elementor widgets, REST API, and action hooks for complete event management.",
   "source": "@site/docs/plugins/wpevently/overview.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPEvently — WordPress event management plugin overview.",
+    "description": "WPEvently — powerful WordPress event management plugin with shortcodes, Elementor widgets, REST API, and action hooks for complete event management.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPEvently",
+    "title": "WpEvently",
     "permalink": "/docs/category/wpevently"
   },
   "next": {

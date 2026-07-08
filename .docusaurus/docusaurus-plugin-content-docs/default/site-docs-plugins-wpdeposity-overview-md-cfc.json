@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpdeposity/overview",
   "title": "Overview",
-  "description": "WPDeposity — deposit and partial payment plugin overview.",
+  "description": "WpDeposity — deposit and partial payment plugin for WooCommerce.",
   "source": "@site/docs/plugins/wpdeposity/overview.md",
   "sourceDirName": "plugins/wpdeposity",
   "slug": "/plugins/wpdeposity/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPDeposity — deposit and partial payment plugin overview.",
+    "description": "WpDeposity — deposit and partial payment plugin for WooCommerce.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPDeposity",
+    "title": "WpDeposity",
     "permalink": "/docs/category/wpdeposity"
   },
   "next": {

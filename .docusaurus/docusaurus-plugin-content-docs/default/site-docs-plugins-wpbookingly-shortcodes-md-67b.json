@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpbookingly/shortcodes",
   "title": "Shortcodes",
-  "description": "WPBookingly shortcodes reference.",
+  "description": "WpBookingly shortcode reference for booking forms and service listings.",
   "source": "@site/docs/plugins/wpbookingly/shortcodes.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/shortcodes",
@@ -16,7 +16,7 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "WPBookingly shortcodes reference.",
+    "description": "WpBookingly shortcode reference for booking forms and service listings.",
     "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wpbookingly/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpbookingly/faq"
+    "title": "Staff & Scheduling",
+    "permalink": "/docs/plugins/wpbookingly/staff-scheduling"
   }
 }

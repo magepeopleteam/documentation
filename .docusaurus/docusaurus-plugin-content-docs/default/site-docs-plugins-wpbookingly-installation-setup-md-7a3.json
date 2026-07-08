@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure WpBookingly appointment booking plugin.",
+  "source": "@site/docs/plugins/wpbookingly/installation-setup.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/installation-setup",
+  "permalink": "/docs/plugins/wpbookingly/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbookingly/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure WpBookingly appointment booking plugin.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpbookingly/features"
+  },
+  "next": {
+    "title": "Service Management",
+    "permalink": "/docs/plugins/wpbookingly/service-management"
+  }
+}

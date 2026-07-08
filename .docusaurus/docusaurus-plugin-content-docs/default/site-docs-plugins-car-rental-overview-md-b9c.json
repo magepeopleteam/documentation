@@ -1,7 +1,7 @@
 {
   "id": "plugins/car-rental/overview",
   "title": "Overview",
-  "description": "Car Rental — vehicle booking and fleet management plugin overview.",
+  "description": "Car Rental Manager plugin for WordPress overview.",
   "source": "@site/docs/plugins/car-rental/overview.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/overview",
@@ -16,7 +16,7 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "Car Rental — vehicle booking and fleet management plugin overview.",
+    "description": "Car Rental Manager plugin for WordPress overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",

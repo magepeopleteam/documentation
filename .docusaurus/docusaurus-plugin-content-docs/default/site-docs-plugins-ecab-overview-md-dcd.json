@@ -1,7 +1,7 @@
 {
   "id": "plugins/ecab/overview",
   "title": "Overview",
-  "description": "eCab — taxi booking plugin for WordPress overview.",
+  "description": "eCab — Taxi Booking Plugin for WordPress overview.",
   "source": "@site/docs/plugins/ecab/overview.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/overview",
@@ -16,7 +16,7 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "eCab — taxi booking plugin for WordPress overview.",
+    "description": "eCab — Taxi Booking Plugin for WordPress overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
@@ -25,7 +25,7 @@
     "permalink": "/docs/category/ecab"
   },
   "next": {
-    "title": "Features",
-    "permalink": "/docs/plugins/ecab/features"
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/ecab/installation-setup"
   }
 }

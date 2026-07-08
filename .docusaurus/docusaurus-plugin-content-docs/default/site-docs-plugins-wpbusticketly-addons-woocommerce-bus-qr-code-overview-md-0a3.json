@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+  "title": "QR Code Addon",
+  "description": "QR Code addon for WpBusTicketly — add QR code support to bus tickets.",
+  "source": "@site/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview.md",
+  "sourceDirName": "plugins/wpbusticketly/addons/woocommerce-bus-qr-code",
+  "slug": "/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+  "permalink": "/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "QR Code Addon",
+    "description": "QR Code addon for WpBusTicketly — add QR code support to bus tickets.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons-1"
+  },
+  "next": {
+    "title": "WpDeposity",
+    "permalink": "/docs/category/wpdeposity"
+  }
+}

@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpevently/faq"
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wpevently/elementor-integration"
   },
   "next": {
-    "title": "WPFoodly",
-    "permalink": "/docs/category/wpfoodly"
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wpevently/template-override"
   }
 }

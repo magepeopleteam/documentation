@@ -1,7 +1,7 @@
 {
   "id": "plugins/wptravelly/shortcodes",
   "title": "Shortcodes",
-  "description": "WPTravelly shortcodes reference.",
+  "description": "WpTravelly shortcode reference for displaying tours.",
   "source": "@site/docs/plugins/wptravelly/shortcodes.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/shortcodes",
@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 4,
+  "sidebarPosition": 3,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "WPTravelly shortcodes reference.",
-    "sidebar_position": 4
+    "description": "WpTravelly shortcode reference for displaying tours.",
+    "sidebar_position": 3
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wptravelly/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wptravelly/faq"
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wptravelly/elementor-integration"
   }
 }

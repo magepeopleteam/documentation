@@ -91,33 +91,33 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/changelog",
-              "path": "/docs/plugins/advanced-discount-coupon/changelog",
+              "id": "plugins/advanced-discount-coupon-store-credit/changelog",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/changelog",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/faq",
-              "path": "/docs/plugins/advanced-discount-coupon/faq",
+              "id": "plugins/advanced-discount-coupon-store-credit/faq",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/faq",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/features",
-              "path": "/docs/plugins/advanced-discount-coupon/features",
+              "id": "plugins/advanced-discount-coupon-store-credit/features",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/features",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/overview",
-              "path": "/docs/plugins/advanced-discount-coupon/overview",
+              "id": "plugins/advanced-discount-coupon-store-credit/overview",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/overview",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/settings",
-              "path": "/docs/plugins/advanced-discount-coupon/settings",
+              "id": "plugins/advanced-discount-coupon-store-credit/settings",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/settings",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon/shortcodes",
-              "path": "/docs/plugins/advanced-discount-coupon/shortcodes",
+              "id": "plugins/advanced-discount-coupon-store-credit/shortcodes",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes",
               "sidebar": "docsSidebar"
             },
             {
@@ -136,8 +136,18 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/car-rental/installation-setup",
+              "path": "/docs/plugins/car-rental/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/car-rental/overview",
               "path": "/docs/plugins/car-rental/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/pricing-availability",
+              "path": "/docs/plugins/car-rental/pricing-availability",
               "sidebar": "docsSidebar"
             },
             {
@@ -148,6 +158,21 @@
             {
               "id": "plugins/car-rental/shortcodes",
               "path": "/docs/plugins/car-rental/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/vehicle-management",
+              "path": "/docs/plugins/car-rental/vehicle-management",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/addons/distance-tier-pricing/overview",
+              "path": "/docs/plugins/ecab/addons/distance-tier-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/addons/peak-hour-pricing/overview",
+              "path": "/docs/plugins/ecab/addons/peak-hour-pricing/overview",
               "sidebar": "docsSidebar"
             },
             {
@@ -163,6 +188,11 @@
             {
               "id": "plugins/ecab/features",
               "path": "/docs/plugins/ecab/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/installation-setup",
+              "path": "/docs/plugins/ecab/installation-setup",
               "sidebar": "docsSidebar"
             },
             {
@@ -196,8 +226,23 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wpbookingly/installation-setup",
+              "path": "/docs/plugins/wpbookingly/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wpbookingly/overview",
               "path": "/docs/plugins/wpbookingly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/payment-integration",
+              "path": "/docs/plugins/wpbookingly/payment-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/service-management",
+              "path": "/docs/plugins/wpbookingly/service-management",
               "sidebar": "docsSidebar"
             },
             {
@@ -208,6 +253,21 @@
             {
               "id": "plugins/wpbookingly/shortcodes",
               "path": "/docs/plugins/wpbookingly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/staff-scheduling",
+              "path": "/docs/plugins/wpbookingly/staff-scheduling",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+              "path": "/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/available-addons",
+              "path": "/docs/plugins/wpbusticketly/available-addons",
               "sidebar": "docsSidebar"
             },
             {
@@ -226,8 +286,18 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wpbusticketly/installation-setup",
+              "path": "/docs/plugins/wpbusticketly/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wpbusticketly/overview",
               "path": "/docs/plugins/wpbusticketly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/rest-api",
+              "path": "/docs/plugins/wpbusticketly/rest-api",
               "sidebar": "docsSidebar"
             },
             {
@@ -306,6 +376,16 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wpevently/developer-hooks",
+              "path": "/docs/plugins/wpevently/developer-hooks",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/elementor-integration",
+              "path": "/docs/plugins/wpevently/elementor-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wpevently/faq",
               "path": "/docs/plugins/wpevently/faq",
               "sidebar": "docsSidebar"
@@ -316,8 +396,18 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wpevently/installation-setup",
+              "path": "/docs/plugins/wpevently/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wpevently/overview",
               "path": "/docs/plugins/wpevently/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/rest-api",
+              "path": "/docs/plugins/wpevently/rest-api",
               "sidebar": "docsSidebar"
             },
             {
@@ -328,6 +418,16 @@
             {
               "id": "plugins/wpevently/shortcodes",
               "path": "/docs/plugins/wpevently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/template-override",
+              "path": "/docs/plugins/wpevently/template-override",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/video-tutorials",
+              "path": "/docs/plugins/wpevently/video-tutorials",
               "sidebar": "docsSidebar"
             },
             {
@@ -421,6 +521,36 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wprently/addons/admin-backend-order/overview",
+              "path": "/docs/plugins/wprently/addons/admin-backend-order/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/min-max-booking-limit/overview",
+              "path": "/docs/plugins/wprently/addons/min-max-booking-limit/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/multi-day-discount-pricing/overview",
+              "path": "/docs/plugins/wprently/addons/multi-day-discount-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/pricing-discount-over-x-days/overview",
+              "path": "/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/seasonal-pricing-management/overview",
+              "path": "/docs/plugins/wprently/addons/seasonal-pricing-management/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/available-addons",
+              "path": "/docs/plugins/wprently/available-addons",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wprently/changelog",
               "path": "/docs/plugins/wprently/changelog",
               "sidebar": "docsSidebar"
@@ -433,6 +563,21 @@
             {
               "id": "plugins/wprently/features",
               "path": "/docs/plugins/wprently/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/general-guidelines",
+              "path": "/docs/plugins/wprently/general-guidelines",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/global-settings",
+              "path": "/docs/plugins/wprently/global-settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/installation-setup",
+              "path": "/docs/plugins/wprently/installation-setup",
               "sidebar": "docsSidebar"
             },
             {
@@ -451,8 +596,58 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wptravelly/addons/backend-order/overview",
+              "path": "/docs/plugins/wptravelly/addons/backend-order/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/buy-x-get-y-free/overview",
+              "path": "/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/early-bird-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/early-bird-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/group-bulk-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/group-bulk-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/group-ticket-quantity/overview",
+              "path": "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/max-min-booking/overview",
+              "path": "/docs/plugins/wptravelly/addons/max-min-booking/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/qr-code/overview",
+              "path": "/docs/plugins/wptravelly/addons/qr-code/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/seasonal-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/seasonal-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/seat-plan/overview",
+              "path": "/docs/plugins/wptravelly/addons/seat-plan/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wptravelly/changelog",
               "path": "/docs/plugins/wptravelly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/elementor-integration",
+              "path": "/docs/plugins/wptravelly/elementor-integration",
               "sidebar": "docsSidebar"
             },
             {
@@ -463,6 +658,11 @@
             {
               "id": "plugins/wptravelly/features",
               "path": "/docs/plugins/wptravelly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/installation-setup",
+              "path": "/docs/plugins/wptravelly/installation-setup",
               "sidebar": "docsSidebar"
             },
             {
@@ -478,6 +678,11 @@
             {
               "id": "plugins/wptravelly/shortcodes",
               "path": "/docs/plugins/wptravelly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/template-override",
+              "path": "/docs/plugins/wptravelly/template-override",
               "sidebar": "docsSidebar"
             },
             {
@@ -506,8 +711,8 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/advanced-discount-coupon",
-              "path": "/docs/category/advanced-discount-coupon",
+              "id": "/category/advanced-discount-coupon-and-store-credit",
+              "path": "/docs/category/advanced-discount-coupon-and-store-credit",
               "sidebar": "docsSidebar"
             },
             {
@@ -521,6 +726,11 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "/category/addons",
+              "path": "/docs/category/addons",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "/category/wpbookingly",
               "path": "/docs/category/wpbookingly",
               "sidebar": "docsSidebar"
@@ -528,6 +738,11 @@
             {
               "id": "/category/wpbusticketly",
               "path": "/docs/category/wpbusticketly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-1",
+              "path": "/docs/category/addons-1",
               "sidebar": "docsSidebar"
             },
             {
@@ -566,13 +781,48 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "/category/addons-2",
+              "path": "/docs/category/addons-2",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/admin-backend-order",
+              "path": "/docs/category/admin-backend-order",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/min-and-max-booking-limit",
+              "path": "/docs/category/min-and-max-booking-limit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/multi-day-discount-pricing",
+              "path": "/docs/category/multi-day-discount-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/pricing-discount-over-x-days",
+              "path": "/docs/category/pricing-discount-over-x-days",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/seasonal-pricing-management",
+              "path": "/docs/category/seasonal-pricing-management",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "/category/wptravelly",
               "path": "/docs/category/wptravelly",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/addons",
-              "path": "/docs/category/addons",
+              "id": "/category/addons-3",
+              "path": "/docs/category/addons-3",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-4",
+              "path": "/docs/category/addons-4",
               "sidebar": "docsSidebar"
             },
             {

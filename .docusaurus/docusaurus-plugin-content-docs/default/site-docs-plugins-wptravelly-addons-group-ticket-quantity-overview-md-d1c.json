@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/addons/group-ticket-quantity/overview",
+  "title": "Group Ticket Quantity",
+  "description": "Sell group tickets with size limits and discounts using the Group Ticket Quantity addon.",
+  "source": "@site/docs/plugins/wptravelly/addons/group-ticket-quantity/overview.md",
+  "sourceDirName": "plugins/wptravelly/addons/group-ticket-quantity",
+  "slug": "/plugins/wptravelly/addons/group-ticket-quantity/overview",
+  "permalink": "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/addons/group-ticket-quantity/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Group Ticket Quantity",
+    "description": "Sell group tickets with size limits and discounts using the Group Ticket Quantity addon.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Group & Bulk Pricing",
+    "permalink": "/docs/plugins/wptravelly/addons/group-bulk-pricing/overview"
+  },
+  "next": {
+    "title": "Max-Min Booking",
+    "permalink": "/docs/plugins/wptravelly/addons/max-min-booking/overview"
+  }
+}

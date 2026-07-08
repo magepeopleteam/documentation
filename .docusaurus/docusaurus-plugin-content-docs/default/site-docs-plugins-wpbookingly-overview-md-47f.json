@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpbookingly/overview",
   "title": "Overview",
-  "description": "WPBookingly — appointment booking plugin overview.",
+  "description": "WpBookingly — appointment booking plugin overview.",
   "source": "@site/docs/plugins/wpbookingly/overview.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPBookingly — appointment booking plugin overview.",
+    "description": "WpBookingly — appointment booking plugin overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPBookingly",
+    "title": "WpBookingly",
     "permalink": "/docs/category/wpbookingly"
   },
   "next": {

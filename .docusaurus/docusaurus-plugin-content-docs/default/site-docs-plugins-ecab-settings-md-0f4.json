@@ -1,7 +1,7 @@
 {
   "id": "plugins/ecab/settings",
   "title": "Settings",
-  "description": "Configure eCab taxi booking settings.",
+  "description": "Configure eCab taxi booking plugin settings.",
   "source": "@site/docs/plugins/ecab/settings.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/settings",
@@ -16,13 +16,13 @@
   "sidebarPosition": 3,
   "frontMatter": {
     "title": "Settings",
-    "description": "Configure eCab taxi booking settings.",
+    "description": "Configure eCab taxi booking plugin settings.",
     "sidebar_position": 3
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Features",
-    "permalink": "/docs/plugins/ecab/features"
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/ecab/installation-setup"
   },
   "next": {
     "title": "Shortcodes",

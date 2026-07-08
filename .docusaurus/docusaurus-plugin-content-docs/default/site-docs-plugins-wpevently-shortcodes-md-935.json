@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpevently/shortcodes",
   "title": "Shortcodes",
-  "description": "WPEvently shortcodes reference for embedding events anywhere.",
+  "description": "Display events anywhere on your site using shortcodes with list, grid, calendar, carousel, timeline, and many other layout styles.",
   "source": "@site/docs/plugins/wpevently/shortcodes.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/shortcodes",
@@ -16,7 +16,7 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "WPEvently shortcodes reference for embedding events anywhere.",
+    "description": "Display events anywhere on your site using shortcodes with list, grid, calendar, carousel, timeline, and many other layout styles.",
     "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wpevently/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpevently/faq"
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wpevently/elementor-integration"
   }
 }

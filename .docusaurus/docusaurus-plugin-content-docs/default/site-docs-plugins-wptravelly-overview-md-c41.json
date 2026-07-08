@@ -1,7 +1,7 @@
 {
   "id": "plugins/wptravelly/overview",
   "title": "Overview",
-  "description": "WPTravelly — travel and tour booking plugin overview.",
+  "description": "WpTravelly — tour and travel booking plugin overview.",
   "source": "@site/docs/plugins/wptravelly/overview.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPTravelly — travel and tour booking plugin overview.",
+    "description": "WpTravelly — tour and travel booking plugin overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPTravelly",
+    "title": "WpTravelly",
     "permalink": "/docs/category/wptravelly"
   },
   "next": {

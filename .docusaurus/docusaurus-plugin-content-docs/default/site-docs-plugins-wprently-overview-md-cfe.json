@@ -1,7 +1,7 @@
 {
   "id": "plugins/wprently/overview",
   "title": "Overview",
-  "description": "WPRently — rental management plugin overview.",
+  "description": "WpRently — Booking and Rental Manager for WooCommerce overview.",
   "source": "@site/docs/plugins/wprently/overview.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/overview",
@@ -16,12 +16,12 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
-    "description": "WPRently — rental management plugin overview.",
+    "description": "WpRently — Booking and Rental Manager for WooCommerce overview.",
     "sidebar_position": 1
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "WPRently",
+    "title": "WpRently",
     "permalink": "/docs/category/wprently"
   },
   "next": {

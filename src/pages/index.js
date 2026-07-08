@@ -82,7 +82,7 @@ const plugins = [
     version: '1.0.2',
     addons: 0,
     icon: 'discount.png',
-    docLink: '/docs/plugins/advanced-discount-coupon/overview',
+    docLink: '/docs/plugins/advanced-discount-coupon-store-credit/overview',
     buyLink: 'https://mage-people.com/product/mage-coupon-advanced-for-woocommerce/#pricing',
   },
   {

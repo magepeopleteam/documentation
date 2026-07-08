@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/pricing-availability",
+  "title": "Pricing & Availability",
+  "description": "Configure pricing models, seasonal rates, and availability for Car Rental Manager.",
+  "source": "@site/docs/plugins/car-rental/pricing-availability.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/pricing-availability",
+  "permalink": "/docs/plugins/car-rental/pricing-availability",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/car-rental/pricing-availability.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Pricing & Availability",
+    "description": "Configure pricing models, seasonal rates, and availability for Car Rental Manager.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/car-rental/installation-setup"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/car-rental/settings"
+  }
+}

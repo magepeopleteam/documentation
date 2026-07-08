@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/ecab/faq"
+    "title": "Pro Features",
+    "permalink": "/docs/plugins/ecab/features"
   },
   "next": {
-    "title": "WPBookingly",
-    "permalink": "/docs/category/wpbookingly"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/ecab/faq"
   }
 }

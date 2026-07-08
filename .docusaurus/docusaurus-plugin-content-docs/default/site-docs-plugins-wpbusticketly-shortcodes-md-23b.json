@@ -1,7 +1,7 @@
 {
   "id": "plugins/wpbusticketly/shortcodes",
   "title": "Shortcodes",
-  "description": "WPBusTicketly shortcodes reference.",
+  "description": "WpBusTicketly shortcodes reference for embedding bus booking forms.",
   "source": "@site/docs/plugins/wpbusticketly/shortcodes.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/shortcodes",
@@ -16,16 +16,16 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "WPBusTicketly shortcodes reference.",
+    "description": "WpBusTicketly shortcodes reference for embedding bus booking forms.",
     "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Settings",
+    "title": "Bus Manager Settings",
     "permalink": "/docs/plugins/wpbusticketly/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpbusticketly/faq"
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wpbusticketly/available-addons"
   }
 }

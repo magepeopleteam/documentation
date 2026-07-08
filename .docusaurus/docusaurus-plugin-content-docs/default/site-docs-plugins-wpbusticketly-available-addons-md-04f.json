@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/available-addons",
+  "title": "Available Addons",
+  "description": "Addons available for the WpBusTicketly bus booking plugin.",
+  "source": "@site/docs/plugins/wpbusticketly/available-addons.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/available-addons",
+  "permalink": "/docs/plugins/wpbusticketly/available-addons",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wpbusticketly/available-addons.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Available Addons",
+    "description": "Addons available for the WpBusTicketly bus booking plugin.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpbusticketly/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpbusticketly/changelog"
+  }
+}

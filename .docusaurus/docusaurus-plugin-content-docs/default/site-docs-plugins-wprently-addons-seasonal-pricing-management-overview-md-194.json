@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/addons/seasonal-pricing-management/overview",
+  "title": "Seasonal Pricing Management",
+  "description": "Apply different rental prices based on seasons and date ranges in WpRently.",
+  "source": "@site/docs/plugins/wprently/addons/seasonal-pricing-management/overview.md",
+  "sourceDirName": "plugins/wprently/addons/seasonal-pricing-management",
+  "slug": "/plugins/wprently/addons/seasonal-pricing-management/overview",
+  "permalink": "/docs/plugins/wprently/addons/seasonal-pricing-management/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wprently/addons/seasonal-pricing-management/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Seasonal Pricing Management",
+    "description": "Apply different rental prices based on seasons and date ranges in WpRently.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Seasonal Pricing Management",
+    "permalink": "/docs/category/seasonal-pricing-management"
+  },
+  "next": {
+    "title": "WpTravelly",
+    "permalink": "/docs/category/wptravelly"
+  }
+}

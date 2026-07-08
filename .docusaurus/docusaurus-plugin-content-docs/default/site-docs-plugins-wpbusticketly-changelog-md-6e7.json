@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpbusticketly/faq"
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wpbusticketly/available-addons"
   },
   "next": {
-    "title": "WPDeposity",
-    "permalink": "/docs/category/wpdeposity"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbusticketly/faq"
   }
 }

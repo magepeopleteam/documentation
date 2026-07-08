@@ -1,22 +1,107 @@
 ---
 title: Overview
-description: WPRently — rental management plugin overview.
+description: WpRently — Booking and Rental Manager for WooCommerce overview.
 sidebar_position: 1
 ---
 
-# WPRently
+# Overview
 
-WPRently is a versatile rental management plugin for WordPress, ideal for renting vehicles, equipment, and other products.
+WpRently (Booking and Rental Manager for WooCommerce) lets you rent out bikes, cars, resorts, equipment, dresses, and more. Install the plugin and start renting items on your WordPress site.
 
-## Key Features
+## Installation & Setup
 
-- Product rental management
-- Daily/hourly pricing
-- Availability calendar
-- Deposit and security amounts
-- WooCommerce integration
-- Elementor widgets
+Install the plugin via WordPress admin, zip upload, or FTP to start renting items.
 
-## Getting Started
+- [Install the free Rent and Booking Manager plugin](/docs/plugins/wprently/installation-setup)
+- [Install the Pro version and activate license](/docs/plugins/wprently/installation-setup)
+- WooCommerce is required as a dependency
+- Works with or without WooCommerce (own PayPal/Stripe)
 
-Go to **WPRently** in your WordPress admin to start managing rental products.
+### Initial Configuration
+
+- Run the setup wizard for core rental settings
+- Configure rental types: bike, car, resort, equipment, dress
+- Set pricing models: single day or multiple day
+- Configure payment gateways and checkout preferences
+
+## Shortcode Guidelines
+
+Display rent items in grid or list styles anywhere on your site using dedicated shortcodes with multiple parameters.
+
+- [Rent List Shortcode](/docs/plugins/wprently/shortcodes)
+- `[rent-list]` with style, show, order, type parameters
+- `[rent-list type='bike_car_sd']` for single-day rentals
+- `[rent-add-to-cart id='1']` for single item purchase
+
+### Display Options
+
+- Grid style: `[rent-list style='grid']`
+- List style: `[rent-list style='list']`
+- Filter by category: `[rent-list category='ID']`
+- Control items shown: `[rent-list show='6']`
+
+## General Guidelines
+
+Set up rent item search forms, display rent lists, and manage your rental inventory across different item types.
+
+- [Rent Item Search Form](/docs/plugins/wprently/general-guidelines)
+- [Rent List Shortcode](/docs/plugins/wprently/shortcodes)
+- Display items by type: bike, car, resort, equipment, dress
+- Manage inventory and availability calendars
+
+### Item Management
+
+- Add rental items with images and descriptions
+- Set pricing per day or per hour
+- Configure seasonal pricing with addons
+- Manage bookings and order statuses
+
+## Global Settings
+
+Customize the plugin globally with translation support and other site-wide configuration options.
+
+- [How to translate the plugin](/docs/plugins/wprently/global-settings)
+- Use Loco Translate or WPML for translations
+- Change labels and slugs in general settings
+- Multi-language support for rental listings
+
+### Global Configuration
+
+- Set global rental terms and conditions
+- Configure default booking duration
+- Manage off-day and holiday settings
+- Set advance booking cutoff dates
+
+## Available Addons
+
+Extend the plugin with premium addons for discounts, minimum/maximum booking days, and seasonal pricing.
+
+- [Discount Over X Days (PRO)](/docs/plugins/wprently/available-addons)
+- [Seasonal Pricing (PRO)](/docs/plugins/wprently/available-addons)
+- [Min-Max Booking Day](/docs/plugins/wprently/available-addons)
+- Offer tiered discounts based on rental duration
+
+### Pro Version
+
+- [Booking and Rental Manager Pro](/docs/plugins/wprently/available-addons)
+- Advanced reporting and analytics
+- Custom email templates
+- Priority support and updates
+
+## FAQ
+
+Quick answers to common questions about installing, configuring, and using the plugin.
+
+### Getting Started
+
+- How do I install the Booking and Rental Manager plugin?
+- Can I use this plugin without WooCommerce?
+- How do I add rental items to my site?
+- What types of items can I rent out?
+
+### Shortcodes & Display
+
+- How do I display rent items in a grid?
+- How do I show only bike or car rentals?
+- How do I add a search form for rent items?
+- How do I limit the number of items shown?

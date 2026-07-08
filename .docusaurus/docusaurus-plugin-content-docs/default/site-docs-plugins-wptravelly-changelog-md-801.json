@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wptravelly/faq"
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wptravelly/template-override"
   },
   "next": {
-    "title": "Addons",
-    "permalink": "/docs/category/addons"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wptravelly/faq"
   }
 }

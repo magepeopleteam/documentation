@@ -1,7 +1,7 @@
 {
   "id": "plugins/wprently/shortcodes",
   "title": "Shortcodes",
-  "description": "WPRently shortcodes reference.",
+  "description": "WpRently shortcode guidelines and reference.",
   "source": "@site/docs/plugins/wprently/shortcodes.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/shortcodes",
@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 4,
+  "sidebarPosition": 3,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "WPRently shortcodes reference.",
-    "sidebar_position": 4
+    "description": "WpRently shortcode guidelines and reference.",
+    "sidebar_position": 3
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wprently/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wprently/faq"
+    "title": "Global Settings",
+    "permalink": "/docs/plugins/wprently/global-settings"
   }
 }

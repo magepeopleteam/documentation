@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/addons/max-min-booking/overview",
+  "title": "Max-Min Booking",
+  "description": "Control tour participation with minimum and maximum limits using the Max-Min Booking addon.",
+  "source": "@site/docs/plugins/wptravelly/addons/max-min-booking/overview.md",
+  "sourceDirName": "plugins/wptravelly/addons/max-min-booking",
+  "slug": "/plugins/wptravelly/addons/max-min-booking/overview",
+  "permalink": "/docs/plugins/wptravelly/addons/max-min-booking/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/addons/max-min-booking/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Max-Min Booking",
+    "description": "Control tour participation with minimum and maximum limits using the Max-Min Booking addon.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Group Ticket Quantity",
+    "permalink": "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview"
+  },
+  "next": {
+    "title": "QR Code",
+    "permalink": "/docs/plugins/wptravelly/addons/qr-code/overview"
+  }
+}

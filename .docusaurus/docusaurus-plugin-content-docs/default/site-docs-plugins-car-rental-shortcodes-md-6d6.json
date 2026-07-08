@@ -1,7 +1,7 @@
 {
   "id": "plugins/car-rental/shortcodes",
   "title": "Shortcodes",
-  "description": "Car Rental shortcodes reference.",
+  "description": "Car Rental Manager shortcodes reference for embedding booking forms and listings.",
   "source": "@site/docs/plugins/car-rental/shortcodes.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/shortcodes",
@@ -16,7 +16,7 @@
   "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
-    "description": "Car Rental shortcodes reference.",
+    "description": "Car Rental Manager shortcodes reference for embedding booking forms and listings.",
     "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/car-rental/settings"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/car-rental/faq"
+    "title": "Vehicle Management",
+    "permalink": "/docs/plugins/car-rental/vehicle-management"
   }
 }

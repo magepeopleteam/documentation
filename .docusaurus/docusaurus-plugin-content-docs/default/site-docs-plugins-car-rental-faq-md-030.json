@@ -1,7 +1,7 @@
 {
   "id": "plugins/car-rental/faq",
   "title": "FAQ",
-  "description": "Frequently asked questions about Car Rental.",
+  "description": "Frequently asked questions about the Car Rental Manager plugin.",
   "source": "@site/docs/plugins/car-rental/faq.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/faq",
@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 5,
+  "sidebarPosition": 6,
   "frontMatter": {
     "title": "FAQ",
-    "description": "Frequently asked questions about Car Rental.",
-    "sidebar_position": 5
+    "description": "Frequently asked questions about the Car Rental Manager plugin.",
+    "sidebar_position": 6
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Shortcodes",
-    "permalink": "/docs/plugins/car-rental/shortcodes"
-  },
-  "next": {
     "title": "Changelog",
     "permalink": "/docs/plugins/car-rental/changelog"
+  },
+  "next": {
+    "title": "eCab",
+    "permalink": "/docs/category/ecab"
   }
 }

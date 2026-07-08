@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpbookingly/faq"
+    "title": "Staff & Scheduling",
+    "permalink": "/docs/plugins/wpbookingly/staff-scheduling"
   },
   "next": {
-    "title": "WPBusTicketly",
-    "permalink": "/docs/category/wpbusticketly"
+    "title": "Payment Integration",
+    "permalink": "/docs/plugins/wpbookingly/payment-integration"
   }
 }

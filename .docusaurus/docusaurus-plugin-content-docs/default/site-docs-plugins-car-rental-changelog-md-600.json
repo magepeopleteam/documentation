@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/car-rental/faq"
+    "title": "Vehicle Management",
+    "permalink": "/docs/plugins/car-rental/vehicle-management"
   },
   "next": {
-    "title": "eCab",
-    "permalink": "/docs/category/ecab"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/car-rental/faq"
   }
 }

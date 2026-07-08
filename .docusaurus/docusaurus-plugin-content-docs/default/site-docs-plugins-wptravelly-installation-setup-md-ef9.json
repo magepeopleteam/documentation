@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure WpTravelly tour booking plugin.",
+  "source": "@site/docs/plugins/wptravelly/installation-setup.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/installation-setup",
+  "permalink": "/docs/plugins/wptravelly/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeople/magepeople-docs/tree/main/docs/plugins/wptravelly/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure WpTravelly tour booking plugin.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wptravelly/features"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wptravelly/settings"
+  }
+}

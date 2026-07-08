@@ -1,7 +1,7 @@
 {
   "id": "plugins/ecab/faq",
   "title": "FAQ",
-  "description": "Frequently asked questions about eCab taxi booking.",
+  "description": "Frequently asked questions about the eCab taxi booking plugin.",
   "source": "@site/docs/plugins/ecab/faq.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/faq",
@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 5,
+  "sidebarPosition": 6,
   "frontMatter": {
     "title": "FAQ",
-    "description": "Frequently asked questions about eCab taxi booking.",
-    "sidebar_position": 5
+    "description": "Frequently asked questions about the eCab taxi booking plugin.",
+    "sidebar_position": 6
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Shortcodes",
-    "permalink": "/docs/plugins/ecab/shortcodes"
-  },
-  "next": {
     "title": "Changelog",
     "permalink": "/docs/plugins/ecab/changelog"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons"
   }
 }

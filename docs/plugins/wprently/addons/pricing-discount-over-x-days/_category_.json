@@ -1,0 +1,7 @@
+{
+  "label": "Pricing Discount Over X Days",
+  "link": {
+    "type": "generated-index",
+    "description": "Apply tiered discounts for longer rental periods."
+  }
+}

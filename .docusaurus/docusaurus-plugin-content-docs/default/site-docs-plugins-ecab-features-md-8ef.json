@@ -1,7 +1,7 @@
 {
   "id": "plugins/ecab/features",
-  "title": "Features",
-  "description": "Comprehensive feature list for eCab taxi booking.",
+  "title": "Pro Features",
+  "description": "Comprehensive pro features for eCab taxi booking plugin.",
   "source": "@site/docs/plugins/ecab/features.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/features",
@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055000,
-  "sidebarPosition": 2,
+  "sidebarPosition": 5,
   "frontMatter": {
-    "title": "Features",
-    "description": "Comprehensive feature list for eCab taxi booking.",
-    "sidebar_position": 2
+    "title": "Pro Features",
+    "description": "Comprehensive pro features for eCab taxi booking plugin.",
+    "sidebar_position": 5
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Overview",
-    "permalink": "/docs/plugins/ecab/overview"
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/ecab/shortcodes"
   },
   "next": {
-    "title": "Settings",
-    "permalink": "/docs/plugins/ecab/settings"
+    "title": "Changelog",
+    "permalink": "/docs/plugins/ecab/changelog"
   }
 }
