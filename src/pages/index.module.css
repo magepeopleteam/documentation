@@ -113,126 +113,192 @@
   background: #334155;
 }
 
-/* Board (plugin list) */
-.board {
+/* Plugin grid */
+.pluginGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pluginCard {
   border: 1px solid #e2dccc;
   background: #fffdf8;
   border-radius: 2px;
-  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: box-shadow 0.2s, border-color 0.2s;
 }
 
-[data-theme='dark'] .board {
+.pluginCard:hover {
+  border-color: #9a9183;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+
+[data-theme='dark'] .pluginCard {
   border-color: #334155;
   background: #1e293b;
 }
 
-.boardHead {
-  display: grid;
-  grid-template-columns: 70px 1fr 110px 90px 105px;
-  column-gap: 8px;
-  padding: 10px 20px;
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: #9a9183;
-  text-transform: uppercase;
-  border-bottom: 1px solid #e2dccc;
+[data-theme='dark'] .pluginCard:hover {
+  border-color: #64748b;
+  box-shadow: 0 2px 12px rgba(0,0,0,.2);
 }
 
-[data-theme='dark'] .boardHead {
-  color: #64748b;
-  border-color: #334155;
-}
-
-.boardHead span:nth-child(3) {
-  text-align: center;
-}
-
-.boardHead span:last-child {
-  text-align: right;
-}
-
-.boardRow {
-  display: grid;
-  grid-template-columns: 70px 1fr 110px 90px 105px;
-  align-items: center;
-  column-gap: 8px;
-  padding: 14px 20px;
-  border-bottom: 1px solid #e2dccc;
-  color: #211c12;
-  transition: background 0.15s ease;
-}
-
-.boardRow:last-child {
-  border-bottom: none;
-}
-
-.boardRow:hover {
-  background: #efeade;
-}
-
-[data-theme='dark'] .boardRow {
-  color: #f1f5f9;
-  border-color: #334155;
-}
-
-[data-theme='dark'] .boardRow:hover {
-  background: #263348;
-}
-
-.boardCode {
+.cardTop {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  gap: 14px;
+  align-items: flex-start;
 }
 
-.boardIcon {
-  width: 56px;
+.cardIcon {
+  width: 48px;
   height: auto;
   display: block;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 
-.boardInfo {
+.cardInfo {
   display: flex;
   flex-direction: column;
   gap: 2px;
   min-width: 0;
+  flex: 1;
 }
 
-.boardDest {
+.cardName {
   font-weight: 600;
-  font-size: 14.5px;
+  font-size: 14px;
   text-decoration: none;
   color: inherit;
+  line-height: 1.3;
 }
 
-.boardDest:hover {
+.cardName:hover {
   text-decoration: underline;
 }
 
-.boardSub {
-  font-weight: 400;
+.cardSub {
   font-size: 12px;
   color: #9a9183;
-  margin-top: 2px;
+  line-height: 1.3;
 }
 
-[data-theme='dark'] .boardSub {
+[data-theme='dark'] .cardSub {
   color: #64748b;
 }
 
-.boardVersion {
+.cardVersion {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   font-size: 11px;
   color: #6b6356;
   letter-spacing: 0.04em;
   display: inline-block;
+}
+
+[data-theme='dark'] .cardVersion {
+  color: #94a3b8;
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #e2dccc;
+}
+
+[data-theme='dark'] .cardBottom {
+  border-color: #334155;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+}
+
+.cardActions {
+  display: flex;
+  gap: 6px;
+}
+
+.cardBuy {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+  color: #6b6356;
+  border: 1px solid #e2dccc;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.cardBuy:hover {
+  background: #efeade;
+  color: #211c12;
+  border-color: #9a9183;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .cardBuy {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .cardBuy:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+}
+
+.cardDocs {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  padding: 6px 12px;
+}
+
+.cardDocs:hover {
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .cardDocs {
+  background: #3b82f6;
+}
+
+[data-theme='dark'] .cardDocs:hover {
+  background: #2563eb;
+}
+
+.cardVersionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 4px;
 }
 
-[data-theme='dark'] .boardVersion {
-  color: #94a3b8;
+.cardBadgeRow {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
 .freeBadge {
@@ -268,19 +334,10 @@
   line-height: 1.4;
 }
 
-.boardActions {
-  display: contents;
-}
-
-.countWrap {
-  display: flex;
-  justify-content: center;
-}
-
 .countLink {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 13px;
-  padding: 3px 10px;
+  font-size: 12px;
+  padding: 2px 8px;
   border-radius: 999px;
   background: #f7f4ee;
   color: #6b6356;
@@ -308,75 +365,6 @@
   background: rgba(251, 191, 36, 0.14);
   border-color: #fbbf24;
   color: #fbbf24;
-}
-
-.btnGroup {
-  display: contents;
-}
-
-.buyBtn {
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 7px 14px;
-  border-radius: 6px;
-  background: transparent;
-  color: #6b6356;
-  border: 1px solid #e2dccc;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
-  display: inline-flex;
-  justify-self: center;
-  grid-column: 4;
-}
-
-.buyBtn:hover {
-  background: #efeade;
-  color: #211c12;
-  border-color: #9a9183;
-  text-decoration: none;
-}
-
-[data-theme='dark'] .buyBtn {
-  color: #94a3b8;
-  border-color: #475569;
-}
-
-[data-theme='dark'] .buyBtn:hover {
-  background: #1e293b;
-  color: #f1f5f9;
-  border-color: #64748b;
-}
-
-.goBtn {
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 6px;
-  background: #2563eb;
-  color: #fff;
-  text-decoration: none;
-  transition: background 0.2s;
-  white-space: nowrap;
-  display: inline-flex;
-  padding: 7px 14px;
-  justify-self: end;
-  grid-column: 5;
-}
-
-.goBtn:hover {
-  background: #1d4ed8;
-  color: #fff;
-  text-decoration: none;
-}
-
-[data-theme='dark'] .goBtn {
-  background: #3b82f6;
-}
-
-[data-theme='dark'] .goBtn:hover {
-  background: #2563eb;
 }
 
 /* Buy/Read buttons (reused in addon sections) */
@@ -821,58 +809,24 @@
     gap: 1.5rem;
   }
 
-  .boardHead {
-    display: none;
+  .pluginGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .boardRow {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-      'logo name'
-      '.    acts';
-    align-items: center;
-    gap: 6px 10px;
-    padding: 16px;
+  .cardBottom {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .boardCode {
-    grid-area: logo;
+  .cardActions {
+    justify-content: stretch;
   }
 
-  .boardCode .boardIcon {
-    width: 56px;
-  }
-
-  .boardInfo {
-    grid-area: name;
-    min-width: 0;
-  }
-
-  .boardActions {
-    grid-area: acts;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0;
-    align-items: center;
-  }
-
-  .countWrap {
-    white-space: nowrap;
-  }
-
-  .btnGroup {
-    display: inline-flex;
-    gap: 6px;
-    flex-wrap: nowrap;
-    margin-left: auto;
-  }
-
-  .buyBtn,
-  .goBtn {
-    font-size: 11px;
-    padding: 6px 10px;
-    white-space: nowrap;
+  .cardBuy,
+  .cardDocs {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
   }
 
   .summaryInline {
@@ -986,5 +940,11 @@
   .ticketAddonCountValue {
     display: inline;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pluginGrid {
+    grid-template-columns: 1fr;
   }
 }

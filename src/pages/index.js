@@ -241,52 +241,46 @@ export default function Home() {
 
         <section className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.board}>
-              <div className={styles.boardHead}>
-                <span>Logo</span>
-                <span>Plugin</span>
-                <span>Addons</span>
-                <span></span>
-              </div>
+            <div className={styles.pluginGrid}>
               {plugins.map((plugin) => (
-                <div key={plugin.title} className={styles.boardRow}>
-                  <span className={styles.boardCode}>
+                <div key={plugin.title} className={styles.pluginCard}>
+                  <div className={styles.cardTop}>
                     <img
                       src={`/img/plugins/${plugin.icon}`}
                       alt={plugin.title}
-                      className={styles.boardIcon}
+                      className={styles.cardIcon}
                     />
-                  </span>
-                  <span className={styles.boardInfo}>
-                    <Link to={plugin.docLink} className={styles.boardDest}>
-                      {plugin.tagline}
-                      {plugin.free ? <span className={styles.freeBadge}>FREE</span> : null}
-                      {plugin.pro ? <span className={styles.proBadge}>PRO</span> : null}
-                    </Link>
-                    <span className={styles.boardSub}>{plugin.description}</span>
-                    <span className={styles.boardVersion}>V<strong>{plugin.version}</strong></span>
-                  </span>
-                  <span className={styles.boardActions}>
-                    <span className={styles.countWrap}>
+                    <div className={styles.cardInfo}>
+                      <Link to={plugin.docLink} className={styles.cardName}>
+                        {plugin.tagline}
+                      </Link>
+                      <span className={styles.cardSub}>{plugin.description}</span>
+                      <div className={styles.cardVersionRow}>
+                        <span className={styles.cardVersion}>V<strong>{plugin.version}</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.cardBottom}>
+                    <div className={styles.cardMeta}>
                       {plugin.addons > 0 ? (
                         <a href={`#${plugin.addonKey}`} className={styles.countLink}>
                           {plugin.addons} addon{plugin.addons > 1 ? 's' : ''}
                         </a>
                       ) : null}
-                    </span>
-                    <span className={styles.btnGroup}>
+                    </div>
+                    <div className={styles.cardActions}>
                       <a
                         href={plugin.buyLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.buyBtn}>
+                        className={styles.cardBuy}>
                         Buy Plugin
                       </a>
-                      <Link to={plugin.docLink} className={styles.goBtn}>
+                      <Link to={plugin.docLink} className={styles.cardDocs}>
                         Read Docs
                       </Link>
-                    </span>
-                  </span>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
