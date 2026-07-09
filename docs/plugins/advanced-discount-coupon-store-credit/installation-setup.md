@@ -1,6 +1,6 @@
 ---
 title: Installation & Setup
-description: Install and configure the Car Rental Manager plugin for WordPress.
+description: Install and configure the Advanced Discount Coupon and Store Credit plugin.
 sidebar_position: 2
 ---
 

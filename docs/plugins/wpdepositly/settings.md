@@ -1,6 +1,6 @@
 ---
 title: Settings
-description: Configure WPDeposity deposit settings.
+description: Configure WPDepositly deposit settings.
 sidebar_position: 3
 ---
 

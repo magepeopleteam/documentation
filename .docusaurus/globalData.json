@@ -181,11 +181,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon-store-credit/changelog",
-              "path": "/docs/plugins/advanced-discount-coupon-store-credit/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/advanced-discount-coupon-store-credit/faq",
               "path": "/docs/plugins/advanced-discount-coupon-store-credit/faq",
               "sidebar": "docsSidebar"
@@ -193,6 +188,11 @@
             {
               "id": "plugins/advanced-discount-coupon-store-credit/features",
               "path": "/docs/plugins/advanced-discount-coupon-store-credit/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/installation-setup",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/installation-setup",
               "sidebar": "docsSidebar"
             },
             {
@@ -208,11 +208,6 @@
             {
               "id": "plugins/advanced-discount-coupon-store-credit/shortcodes",
               "path": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/car-rental/changelog",
-              "path": "/docs/plugins/car-rental/changelog",
               "sidebar": "docsSidebar"
             },
             {
@@ -266,11 +261,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/ecab/changelog",
-              "path": "/docs/plugins/ecab/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/ecab/faq",
               "path": "/docs/plugins/ecab/faq",
               "sidebar": "docsSidebar"
@@ -298,11 +288,6 @@
             {
               "id": "plugins/ecab/shortcodes",
               "path": "/docs/plugins/ecab/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpbookingly/changelog",
-              "path": "/docs/plugins/wpbookingly/changelog",
               "sidebar": "docsSidebar"
             },
             {
@@ -361,11 +346,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpbusticketly/changelog",
-              "path": "/docs/plugins/wpbusticketly/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wpbusticketly/faq",
               "path": "/docs/plugins/wpbusticketly/faq",
               "sidebar": "docsSidebar"
@@ -401,38 +381,33 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/changelog",
-              "path": "/docs/plugins/wpdeposity/changelog",
+              "id": "plugins/wpdepositly/faq",
+              "path": "/docs/plugins/wpdepositly/faq",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/faq",
-              "path": "/docs/plugins/wpdeposity/faq",
+              "id": "plugins/wpdepositly/features",
+              "path": "/docs/plugins/wpdepositly/features",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/features",
-              "path": "/docs/plugins/wpdeposity/features",
+              "id": "plugins/wpdepositly/installation-setup",
+              "path": "/docs/plugins/wpdepositly/installation-setup",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/overview",
-              "path": "/docs/plugins/wpdeposity/overview",
+              "id": "plugins/wpdepositly/overview",
+              "path": "/docs/plugins/wpdepositly/overview",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/settings",
-              "path": "/docs/plugins/wpdeposity/settings",
+              "id": "plugins/wpdepositly/settings",
+              "path": "/docs/plugins/wpdepositly/settings",
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpdeposity/shortcodes",
-              "path": "/docs/plugins/wpdeposity/shortcodes",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpevently/changelog",
-              "path": "/docs/plugins/wpevently/changelog",
+              "id": "plugins/wpdepositly/shortcodes",
+              "path": "/docs/plugins/wpdepositly/shortcodes",
               "sidebar": "docsSidebar"
             },
             {
@@ -521,11 +496,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wprently/changelog",
-              "path": "/docs/plugins/wprently/changelog",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wprently/faq",
               "path": "/docs/plugins/wprently/faq",
               "sidebar": "docsSidebar"
@@ -608,11 +578,6 @@
             {
               "id": "plugins/wptravelly/addons/seat-plan/overview",
               "path": "/docs/plugins/wptravelly/addons/seat-plan/overview",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wptravelly/changelog",
-              "path": "/docs/plugins/wptravelly/changelog",
               "sidebar": "docsSidebar"
             },
             {
@@ -751,8 +716,8 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "/category/wpdeposity",
-              "path": "/docs/category/wpdeposity",
+              "id": "/category/wpdepositly",
+              "path": "/docs/category/wpdepositly",
               "sidebar": "docsSidebar"
             },
             {

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon-store-credit/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure the Advanced Discount Coupon and Store Credit plugin.",
+  "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/installation-setup.md",
+  "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
+  "slug": "/plugins/advanced-discount-coupon-store-credit/installation-setup",
+  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure the Advanced Discount Coupon and Store Credit plugin.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/features"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/settings"
+  }
+}

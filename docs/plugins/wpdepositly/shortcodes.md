@@ -1,6 +1,6 @@
 ---
 title: Shortcodes
-description: WPDeposity shortcodes reference.
+description: WPDepositly shortcodes reference.
 sidebar_position: 4
 ---
 
@@ -9,7 +9,7 @@ sidebar_position: 4
 ## Payment Dashboard
 
 ```
-[wpdeposity_dashboard]
+[wpdepositly_dashboard]
 ```
 
 Display customer payment dashboard with balance history.
@@ -17,7 +17,7 @@ Display customer payment dashboard with balance history.
 ## Deposit Form
 
 ```
-[wpdeposity_deposit_form booking_id="123"]
+[wpdepositly_deposit_form booking_id="123"]
 ```
 
 Display deposit payment form for a specific booking.
@@ -25,7 +25,7 @@ Display deposit payment form for a specific booking.
 ## Balance Overview
 
 ```
-[wpdeposity_balance]
+[wpdepositly_balance]
 ```
 
 Show outstanding balance for the logged-in customer.

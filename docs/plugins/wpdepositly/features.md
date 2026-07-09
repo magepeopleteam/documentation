@@ -1,6 +1,6 @@
 ---
 title: Features
-description: Comprehensive feature list for WPDeposity.
+description: Comprehensive feature list for WPDepositly.
 sidebar_position: 2
 ---
 

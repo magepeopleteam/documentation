@@ -1,6 +1,6 @@
 ---
 title: FAQ
-description: Frequently asked questions about WPDeposity.
+description: Frequently asked questions about WPDepositly.
 sidebar_position: 5
 ---
 
@@ -14,9 +14,9 @@ You can offer percentage-based deposits, fixed amount deposits, or require full 
 
 The balance due date is configurable in settings, typically set to a specific number of days before the event or booking date.
 
-## Does WPDeposity work with all MagePeople plugins?
+## Does WPDepositly work with all MagePeople plugins?
 
-Yes. WPDeposity is designed to work seamlessly with all MagePeople booking and rental plugins.
+Yes. WPDepositly is designed to work seamlessly with all MagePeople booking and rental plugins.
 
 ## Can customers choose between deposit and full payment?
 

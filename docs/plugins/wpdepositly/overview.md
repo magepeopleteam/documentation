@@ -1,28 +1,12 @@
 ---
 title: Overview
-description: WpDeposity — deposit and partial payment plugin for WooCommerce.
+description: WpDepositly — deposit and partial payment plugin for WooCommerce.
 sidebar_position: 1
 ---
 
-# WpDeposity
+# WpDepositly
 
-Install the Deposit & Partial Payment plugin via WordPress admin, zip upload, or FTP, then activate your Pro license to let customers pay deposits and balances in installments.
-
-## Installation & Setup
-
-### Plugin Installation
-
-- Install the free WpDepositly plugin from the WordPress repository
-- Install WpDepositly PRO as a separate plugin and activate your license
-- Ensure WooCommerce is installed and active
-- Existing free version settings are retained during the upgrade
-
-### Initial Configuration
-
-- Enable deposits globally or per product type
-- Choose a default deposit type (fixed or percentage)
-- Configure payment gateways that support partial payments
-- Turn on automated email confirmations and reminders
+WpDepositly — deposit and partial payment plugin for WooCommerce.
 
 ## Shortcode Guidelines
 

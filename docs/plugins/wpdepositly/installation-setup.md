@@ -1,6 +1,6 @@
 ---
 title: Installation & Setup
-description: Install and configure the Car Rental Manager plugin for WordPress.
+description: Install and configure WpDepositly deposit and partial payment plugin.
 sidebar_position: 2
 ---
 

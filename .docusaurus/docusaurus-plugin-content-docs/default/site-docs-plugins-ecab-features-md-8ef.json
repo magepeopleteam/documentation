@@ -11,8 +11,8 @@
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/features.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": "Shahadat",
-  "lastUpdatedAt": 1783494863000,
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Pro Features",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/ecab/shortcodes"
   },
   "next": {
-    "title": "Changelog",
-    "permalink": "/docs/plugins/ecab/changelog"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/ecab/faq"
   }
 }

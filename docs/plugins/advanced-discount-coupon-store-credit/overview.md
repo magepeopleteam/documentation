@@ -6,23 +6,7 @@ sidebar_position: 1
 
 # Advanced Discount Coupon and Store Credit
 
-Install the Advanced Discount Coupon and Store Credit plugin via WordPress admin, zip upload, or FTP, then activate your Pro license to unlock the full discount engine.
-
-## Installation & Setup
-
-### Plugin Installation
-
-- Install the free WpCouponly plugin from the WordPress repository
-- Install WpCouponly PRO and activate your license key
-- Ensure WooCommerce is installed and active
-- Configure permalinks to use the Post name setting
-
-### Initial Configuration
-
-- Enable the discount engine from the plugin settings
-- Set your default currency and store credit options
-- Connect with booking plugins such as WpEvently, WpBusTicketly, and WpTravelly
-- Activate the store credit module for refunds and rewards
+Advanced Discount Coupon and Store Credit — dynamic coupon management and store credit for WooCommerce.
 
 ## Shortcode Guidelines
 
