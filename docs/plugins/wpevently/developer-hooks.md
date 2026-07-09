@@ -1,5 +1,5 @@
 ---
-title: Developer Hooks
+title: Hooks
 description: Extend the plugin functionality using available action hooks and filters for social sharing, Google Maps, event pages, tickets, cart, and more.
 sidebar_position: 9
 ---

@@ -53,9 +53,6 @@ Learn about price-based models, location management, initial pricing, off-day se
 
 Unlock advanced capabilities with the Pro version including driver management, intercity operations, and geofence-based service areas.
 
-- [Driver Management](/docs/plugins/ecab/features)
-- [Intercity Operations](/docs/plugins/ecab/features)
-- [Geofence Service Areas](/docs/plugins/ecab/features)
 - Automatic email notifications to drivers and admins
 - Enhanced reporting and analytics
 

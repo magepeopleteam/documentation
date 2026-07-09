@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Frequently asked questions about the WpBusTicketly bus booking plugin.
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 # Frequently Asked Questions

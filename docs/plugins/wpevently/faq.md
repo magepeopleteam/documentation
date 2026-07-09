@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Quick answers to the most common questions about installing, configuring, and troubleshooting the WooCommerce Event Manager plugin.
-sidebar_position: 8
+sidebar_position: 10
 ---
 
 # FAQ
