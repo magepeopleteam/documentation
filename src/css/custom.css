@@ -11,7 +11,7 @@
   --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --ifm-heading-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --ifm-heading-font-weight: 700;
-  --ifm-navbar-background-color: rgba(247,244,238,0.88);
+  --ifm-navbar-background-color: #f7f4ee;
   --ifm-navbar-shadow: 0 1px 0 #e2dccc;
   --ifm-background-color: #f7f4ee;
   --ifm-background-surface-color: #fffdf8;
@@ -47,7 +47,7 @@
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-navbar-background-color: rgba(15,23,42,0.9);
+  --ifm-navbar-background-color: #0f172a;
   --ifm-background-color: #0f172a;
   --ifm-background-surface-color: #1e293b;
   --ifm-card-background-color: #1e293b;
@@ -62,9 +62,6 @@
 }
 
 /* Topbar / Navbar */
-.navbar {
-  backdrop-filter: blur(8px);
-}
 
 @media (width >= 997px) {
   .navbar__inner {
