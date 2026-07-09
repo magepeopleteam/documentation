@@ -84,11 +84,6 @@ const config = {
             label: 'Addons',
             position: 'left',
           },
-          {
-            to: '/docs/developer/hooks',
-            label: 'Developer',
-            position: 'left',
-          },
 
           {
             href: 'https://mage-people.com',
@@ -124,10 +119,6 @@ const config = {
               {
                 label: 'Addons',
                 to: '/docs/addons',
-              },
-              {
-                label: 'Developer',
-                to: '/docs/developer/hooks',
               },
             ],
           },

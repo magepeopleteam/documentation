@@ -4,15 +4,15 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'b6b'),
+    component: ComponentCreator('/docs', '3d1'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'd1b'),
+        component: ComponentCreator('/docs', '3ed'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'e4d'),
+            component: ComponentCreator('/docs', '028'),
             routes: [
               {
                 path: '/docs/addons/',
@@ -285,12 +285,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/category/developer',
-                component: ComponentCreator('/docs/category/developer', '920'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/category/ecab',
                 component: ComponentCreator('/docs/category/ecab', '718'),
                 exact: true,
@@ -333,12 +327,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/category/videos',
-                component: ComponentCreator('/docs/category/videos', 'c72'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/category/wpbookingly',
                 component: ComponentCreator('/docs/category/wpbookingly', '114'),
                 exact: true,
@@ -371,30 +359,6 @@ export default [
               {
                 path: '/docs/category/wptravelly',
                 component: ComponentCreator('/docs/category/wptravelly', '1a8'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/developer/customization',
-                component: ComponentCreator('/docs/developer/customization', 'a05'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/developer/filters',
-                component: ComponentCreator('/docs/developer/filters', '309'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/developer/hooks',
-                component: ComponentCreator('/docs/developer/hooks', 'ca1'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/developer/rest-api',
-                component: ComponentCreator('/docs/developer/rest-api', '95a'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -1001,24 +965,6 @@ export default [
               {
                 path: '/docs/plugins/wptravelly/template-override',
                 component: ComponentCreator('/docs/plugins/wptravelly/template-override', '9c5'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/videos/developer-videos',
-                component: ComponentCreator('/docs/videos/developer-videos', 'ce3'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/videos/getting-started',
-                component: ComponentCreator('/docs/videos/getting-started', '1bf'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/videos/plugin-tutorials',
-                component: ComponentCreator('/docs/videos/plugin-tutorials', '2e0'),
                 exact: true,
                 sidebar: "docsSidebar"
               }

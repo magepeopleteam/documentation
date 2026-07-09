@@ -176,26 +176,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "developer/customization",
-              "path": "/docs/developer/customization",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "developer/filters",
-              "path": "/docs/developer/filters",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "developer/hooks",
-              "path": "/docs/developer/hooks",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "developer/rest-api",
-              "path": "/docs/developer/rest-api",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "getting-started/elementor-integration",
               "path": "/docs/getting-started/elementor-integration",
               "sidebar": "docsSidebar"
@@ -701,21 +681,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "videos/developer-videos",
-              "path": "/docs/videos/developer-videos",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "videos/getting-started",
-              "path": "/docs/videos/getting-started",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "videos/plugin-tutorials",
-              "path": "/docs/videos/plugin-tutorials",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "/category/getting-started",
               "path": "/docs/category/getting-started",
               "sidebar": "docsSidebar"
@@ -838,16 +803,6 @@
             {
               "id": "addons/wprently",
               "path": "/docs/addons/wprently",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/developer",
-              "path": "/docs/category/developer",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "/category/videos",
-              "path": "/docs/category/videos",
               "sidebar": "docsSidebar"
             }
           ],

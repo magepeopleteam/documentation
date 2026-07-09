@@ -113,11 +113,6 @@ export default {
           "position": "left"
         },
         {
-          "to": "/docs/developer/hooks",
-          "label": "Developer",
-          "position": "left"
-        },
-        {
           "href": "https://mage-people.com",
           "label": "Website",
           "position": "right"
@@ -152,10 +147,6 @@ export default {
             {
               "label": "Addons",
               "to": "/docs/addons"
-            },
-            {
-              "label": "Developer",
-              "to": "/docs/developer/hooks"
             }
           ]
         },

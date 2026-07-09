@@ -1,15 +1,15 @@
 {
-  "/docs-b6b": {
+  "/docs-3d1": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-d1b": {
+  "/docs-3ed": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-e4d": {
+  "/docs-028": {
     "__comp": "a94703ab"
   },
   "/docs/addons/-227": {
@@ -192,10 +192,6 @@
     "__comp": "14eb3368",
     "__props": "130112f2"
   },
-  "/docs/category/developer-920": {
-    "__comp": "14eb3368",
-    "__props": "9ecbe8fb"
-  },
   "/docs/category/ecab-718": {
     "__comp": "14eb3368",
     "__props": "ffde0145"
@@ -224,10 +220,6 @@
     "__comp": "14eb3368",
     "__props": "6e459f26"
   },
-  "/docs/category/videos-c72": {
-    "__comp": "14eb3368",
-    "__props": "d1755fc5"
-  },
   "/docs/category/wpbookingly-114": {
     "__comp": "14eb3368",
     "__props": "1b867076"
@@ -251,22 +243,6 @@
   "/docs/category/wptravelly-1a8": {
     "__comp": "14eb3368",
     "__props": "c4ef5fb3"
-  },
-  "/docs/developer/customization-a05": {
-    "__comp": "17896441",
-    "content": "e51652db"
-  },
-  "/docs/developer/filters-309": {
-    "__comp": "17896441",
-    "content": "441beea2"
-  },
-  "/docs/developer/hooks-ca1": {
-    "__comp": "17896441",
-    "content": "5f4e9ca2"
-  },
-  "/docs/developer/rest-api-95a": {
-    "__comp": "17896441",
-    "content": "6da2cfa3"
   },
   "/docs/getting-started/elementor-integration-de9": {
     "__comp": "17896441",
@@ -671,18 +647,6 @@
   "/docs/plugins/wptravelly/template-override-9c5": {
     "__comp": "17896441",
     "content": "18cefb6f"
-  },
-  "/docs/videos/developer-videos-ce3": {
-    "__comp": "17896441",
-    "content": "b1f68d14"
-  },
-  "/docs/videos/getting-started-1bf": {
-    "__comp": "17896441",
-    "content": "0fa1c607"
-  },
-  "/docs/videos/plugin-tutorials-2e0": {
-    "__comp": "17896441",
-    "content": "6ceb8c95"
   },
   "/-2e1": {
     "__comp": "c4f5d8e4",
