@@ -10,7 +10,7 @@ Activate your plugin license to unlock automatic updates and priority support.
 
 ## Where to Find Your License Key
 
-Your license key is delivered via email after purchase. You can also find it in your [MagePeople account](https://magepeople.com/my-account/) under **My Downloads**.
+Your license key is delivered via email after purchase. You can also find it in your [MagePeople account](https://mage-people.com/my-account/) under **My Downloads**.
 
 ## How to Activate
 
@@ -23,4 +23,4 @@ Your license key is delivered via email after purchase. You can also find it in 
 
 - Ensure your license key is entered exactly as provided (no extra spaces).
 - Check that your site URL matches the domain registered for the license.
-- Contact [support](https://magepeople.com/support/) if issues persist.
+- Contact [support](https://support.mage-people.com/portal/en/newticket) if issues persist.

@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "Shahadat",
-  "lastUpdatedAt": 1783494863000,
+  "lastUpdatedAt": 1783570142000,
   "sidebarPosition": 7,
   "frontMatter": {
     "title": "FAQ",
@@ -21,8 +21,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Changelog",
-    "permalink": "/docs/plugins/wptravelly/changelog"
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wptravelly/template-override"
   },
   "next": {
     "title": "Addons",

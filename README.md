@@ -1,6 +1,6 @@
 # MagePeople Docs
 
-Documentation portal for [MagePeople](https://magepeople.com) WordPress plugins.
+Documentation portal for [MagePeople](https://mage-people.com) WordPress plugins.
 
 Built with [Docusaurus](https://docusaurus.io/).
 

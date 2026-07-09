@@ -21,8 +21,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Changelog",
-    "permalink": "/docs/plugins/wpevently/changelog"
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wpevently/elementor-integration"
   },
   "next": {
     "title": "REST API",

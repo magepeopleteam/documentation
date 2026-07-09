@@ -3,16 +3,21 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/search',
+    component: ComponentCreator('/search', '822'),
+    exact: true
+  },
+  {
     path: '/docs',
-    component: ComponentCreator('/docs', '232'),
+    component: ComponentCreator('/docs', '85f'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'bfe'),
+        component: ComponentCreator('/docs', '33b'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'e12'),
+            component: ComponentCreator('/docs', 'c66'),
             routes: [
               {
                 path: '/docs/addons/ecab',
@@ -339,8 +344,8 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/category/wpdeposity',
-                component: ComponentCreator('/docs/category/wpdeposity', '514'),
+                path: '/docs/category/wpdepositly',
+                component: ComponentCreator('/docs/category/wpdepositly', '3c6'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -363,44 +368,14 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/getting-started/elementor-integration',
-                component: ComponentCreator('/docs/getting-started/elementor-integration', 'de9'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/getting-started/email-configuration',
-                component: ComponentCreator('/docs/getting-started/email-configuration', '41c'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/getting-started/installation',
-                component: ComponentCreator('/docs/getting-started/installation', 'd43'),
+                component: ComponentCreator('/docs/getting-started/installation', 'd1f'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/docs/getting-started/license-activation',
-                component: ComponentCreator('/docs/getting-started/license-activation', '2c8'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/getting-started/troubleshooting',
-                component: ComponentCreator('/docs/getting-started/troubleshooting', 'eca'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/getting-started/woocommerce-setup',
-                component: ComponentCreator('/docs/getting-started/woocommerce-setup', 'dc6'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/advanced-discount-coupon-store-credit/changelog',
-                component: ComponentCreator('/docs/plugins/advanced-discount-coupon-store-credit/changelog', 'e38'),
+                component: ComponentCreator('/docs/getting-started/license-activation', 'd29'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -417,8 +392,14 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
+                path: '/docs/plugins/advanced-discount-coupon-store-credit/installation-setup',
+                component: ComponentCreator('/docs/plugins/advanced-discount-coupon-store-credit/installation-setup', '0f2'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
                 path: '/docs/plugins/advanced-discount-coupon-store-credit/overview',
-                component: ComponentCreator('/docs/plugins/advanced-discount-coupon-store-credit/overview', '1d7'),
+                component: ComponentCreator('/docs/plugins/advanced-discount-coupon-store-credit/overview', '9ed'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -435,14 +416,8 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/car-rental/changelog',
-                component: ComponentCreator('/docs/plugins/car-rental/changelog', '5a4'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/car-rental/faq',
-                component: ComponentCreator('/docs/plugins/car-rental/faq', 'e92'),
+                component: ComponentCreator('/docs/plugins/car-rental/faq', 'd7a'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -454,7 +429,7 @@ export default [
               },
               {
                 path: '/docs/plugins/car-rental/installation-setup',
-                component: ComponentCreator('/docs/plugins/car-rental/installation-setup', '7ce'),
+                component: ComponentCreator('/docs/plugins/car-rental/installation-setup', 'eac'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -501,12 +476,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/ecab/changelog',
-                component: ComponentCreator('/docs/plugins/ecab/changelog', '619'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/ecab/faq',
                 component: ComponentCreator('/docs/plugins/ecab/faq', '991'),
                 exact: true,
@@ -520,7 +489,7 @@ export default [
               },
               {
                 path: '/docs/plugins/ecab/installation-setup',
-                component: ComponentCreator('/docs/plugins/ecab/installation-setup', 'd65'),
+                component: ComponentCreator('/docs/plugins/ecab/installation-setup', 'c53'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -543,14 +512,8 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpbookingly/changelog',
-                component: ComponentCreator('/docs/plugins/wpbookingly/changelog', 'da0'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/wpbookingly/faq',
-                component: ComponentCreator('/docs/plugins/wpbookingly/faq', '2c1'),
+                component: ComponentCreator('/docs/plugins/wpbookingly/faq', 'e26'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -562,7 +525,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpbookingly/installation-setup',
-                component: ComponentCreator('/docs/plugins/wpbookingly/installation-setup', 'e45'),
+                component: ComponentCreator('/docs/plugins/wpbookingly/installation-setup', 'd5b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -615,12 +578,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpbusticketly/changelog',
-                component: ComponentCreator('/docs/plugins/wpbusticketly/changelog', '19d'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/wpbusticketly/faq',
                 component: ComponentCreator('/docs/plugins/wpbusticketly/faq', '7fe'),
                 exact: true,
@@ -634,7 +591,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpbusticketly/installation-setup',
-                component: ComponentCreator('/docs/plugins/wpbusticketly/installation-setup', '5e9'),
+                component: ComponentCreator('/docs/plugins/wpbusticketly/installation-setup', '962'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -663,44 +620,38 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/changelog',
-                component: ComponentCreator('/docs/plugins/wpdeposity/changelog', 'cd3'),
+                path: '/docs/plugins/wpdepositly/faq',
+                component: ComponentCreator('/docs/plugins/wpdepositly/faq', '0cb'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/faq',
-                component: ComponentCreator('/docs/plugins/wpdeposity/faq', '8e7'),
+                path: '/docs/plugins/wpdepositly/features',
+                component: ComponentCreator('/docs/plugins/wpdepositly/features', '2bc'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/features',
-                component: ComponentCreator('/docs/plugins/wpdeposity/features', '258'),
+                path: '/docs/plugins/wpdepositly/installation-setup',
+                component: ComponentCreator('/docs/plugins/wpdepositly/installation-setup', '2b4'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/overview',
-                component: ComponentCreator('/docs/plugins/wpdeposity/overview', '9af'),
+                path: '/docs/plugins/wpdepositly/overview',
+                component: ComponentCreator('/docs/plugins/wpdepositly/overview', 'd49'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/settings',
-                component: ComponentCreator('/docs/plugins/wpdeposity/settings', '1dd'),
+                path: '/docs/plugins/wpdepositly/settings',
+                component: ComponentCreator('/docs/plugins/wpdepositly/settings', 'ff1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wpdeposity/shortcodes',
-                component: ComponentCreator('/docs/plugins/wpdeposity/shortcodes', '055'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wpevently/changelog',
-                component: ComponentCreator('/docs/plugins/wpevently/changelog', 'fe4'),
+                path: '/docs/plugins/wpdepositly/shortcodes',
+                component: ComponentCreator('/docs/plugins/wpdepositly/shortcodes', '486'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -730,7 +681,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpevently/installation-setup',
-                component: ComponentCreator('/docs/plugins/wpevently/installation-setup', '493'),
+                component: ComponentCreator('/docs/plugins/wpevently/installation-setup', '6a9'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -807,14 +758,8 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wprently/changelog',
-                component: ComponentCreator('/docs/plugins/wprently/changelog', '9a6'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/wprently/faq',
-                component: ComponentCreator('/docs/plugins/wprently/faq', '3cb'),
+                component: ComponentCreator('/docs/plugins/wprently/faq', '83d'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -838,7 +783,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wprently/installation-setup',
-                component: ComponentCreator('/docs/plugins/wprently/installation-setup', '76f'),
+                component: ComponentCreator('/docs/plugins/wprently/installation-setup', 'cd2'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -915,12 +860,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wptravelly/changelog',
-                component: ComponentCreator('/docs/plugins/wptravelly/changelog', 'b60'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/wptravelly/elementor-integration',
                 component: ComponentCreator('/docs/plugins/wptravelly/elementor-integration', 'e92'),
                 exact: true,
@@ -928,7 +867,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wptravelly/faq',
-                component: ComponentCreator('/docs/plugins/wptravelly/faq', 'ac1'),
+                component: ComponentCreator('/docs/plugins/wptravelly/faq', '4e1'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -940,7 +879,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wptravelly/installation-setup',
-                component: ComponentCreator('/docs/plugins/wptravelly/installation-setup', 'f25'),
+                component: ComponentCreator('/docs/plugins/wptravelly/installation-setup', '3d2'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

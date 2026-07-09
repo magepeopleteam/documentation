@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "Shahadat",
-  "lastUpdatedAt": 1783494863000,
+  "lastUpdatedAt": 1783570142000,
   "sidebarPosition": 6,
   "frontMatter": {
     "title": "FAQ",
@@ -21,8 +21,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Changelog",
-    "permalink": "/docs/plugins/wprently/changelog"
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wprently/available-addons"
   },
   "next": {
     "title": "General Guidelines",

@@ -225,7 +225,7 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 
 - Free version support is available via the WordPress.org plugin forum
 - Pro version and addon customers get priority email support
-- Submit a ticket through the Magepeople support portal
+- Submit a ticket through the [Magepeople support portal](https://support.mage-people.com/portal/en/newticket)
 - Include your license key, site URL, and a detailed description of the issue
 - Typical response time is within 24 hours on business days
 
