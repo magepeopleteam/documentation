@@ -21,11 +21,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "addons/index",
-              "path": "/docs/addons/",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "addons/wpbusticketly/qr-code",
               "path": "/docs/addons/wpbusticketly/qr-code",
               "sidebar": "docsSidebar"
@@ -778,6 +773,11 @@
             {
               "id": "/category/wpdeposity",
               "path": "/docs/category/wpdeposity",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-4",
+              "path": "/docs/category/addons-4",
               "sidebar": "docsSidebar"
             },
             {

@@ -103,12 +103,12 @@ export default {
           "label": "Getting Started"
         },
         {
-          "to": "/docs/plugins/wpevently/overview",
+          "to": "/docs/category/plugins",
           "label": "Plugins",
           "position": "left"
         },
         {
-          "to": "/docs/addons",
+          "to": "/docs/category/addons",
           "label": "Addons",
           "position": "left"
         },
@@ -146,7 +146,7 @@ export default {
             },
             {
               "label": "Addons",
-              "to": "/docs/addons"
+              "to": "/docs/category/addons"
             }
           ]
         },

@@ -1,20 +1,16 @@
 {
-  "/docs-3d1": {
+  "/docs-232": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-3ed": {
+  "/docs-bfe": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-028": {
+  "/docs-e12": {
     "__comp": "a94703ab"
-  },
-  "/docs/addons/-227": {
-    "__comp": "17896441",
-    "content": "9f09f3de"
   },
   "/docs/addons/ecab-1fc": {
     "__comp": "14eb3368",
@@ -179,6 +175,10 @@
   "/docs/category/addons-3-d45": {
     "__comp": "14eb3368",
     "__props": "4711864c"
+  },
+  "/docs/category/addons-4-e0f": {
+    "__comp": "14eb3368",
+    "__props": "56e4e8f3"
   },
   "/docs/category/admin-backend-order-573": {
     "__comp": "14eb3368",

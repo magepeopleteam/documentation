@@ -4,22 +4,16 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3d1'),
+    component: ComponentCreator('/docs', '232'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '3ed'),
+        component: ComponentCreator('/docs', 'bfe'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '028'),
+            component: ComponentCreator('/docs', 'e12'),
             routes: [
-              {
-                path: '/docs/addons/',
-                component: ComponentCreator('/docs/addons/', '227'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
               {
                 path: '/docs/addons/ecab',
                 component: ComponentCreator('/docs/addons/ecab', '1fc'),
@@ -263,6 +257,12 @@ export default [
               {
                 path: '/docs/category/addons-3',
                 component: ComponentCreator('/docs/category/addons-3', 'd45'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/category/addons-4',
+                component: ComponentCreator('/docs/category/addons-4', 'e0f'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

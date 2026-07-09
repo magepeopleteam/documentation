@@ -75,12 +75,12 @@ const config = {
             label: 'Getting Started',
           },
           {
-            to: '/docs/plugins/wpevently/overview',
+            to: '/docs/category/plugins',
             label: 'Plugins',
             position: 'left',
           },
           {
-            to: '/docs/addons',
+            to: '/docs/category/addons',
             label: 'Addons',
             position: 'left',
           },
@@ -118,7 +118,7 @@ const config = {
               },
               {
                 label: 'Addons',
-                to: '/docs/addons',
+                to: '/docs/category/addons',
               },
             ],
           },
