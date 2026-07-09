@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPRently.",
+  "source": "@site/docs/plugins/wprently/changelog.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/changelog",
+  "permalink": "/docs/plugins/wprently/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPRently.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wprently/available-addons"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wprently/faq"
+  }
+}

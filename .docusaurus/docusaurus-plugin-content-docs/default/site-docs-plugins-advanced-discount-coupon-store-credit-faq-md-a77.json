@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon-store-credit/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about Advanced Discount Coupon.",
+  "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/faq.md",
+  "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
+  "slug": "/plugins/advanced-discount-coupon-store-credit/faq",
+  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about Advanced Discount Coupon.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/changelog"
+  }
+}

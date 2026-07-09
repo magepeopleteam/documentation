@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPBookingly.",
+  "source": "@site/docs/plugins/wpbookingly/changelog.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/changelog",
+  "permalink": "/docs/plugins/wpbookingly/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPBookingly.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Staff & Scheduling",
+    "permalink": "/docs/plugins/wpbookingly/staff-scheduling"
+  },
+  "next": {
+    "title": "Payment Integration",
+    "permalink": "/docs/plugins/wpbookingly/payment-integration"
+  }
+}

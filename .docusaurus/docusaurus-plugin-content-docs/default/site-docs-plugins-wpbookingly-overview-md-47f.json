@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/overview",
+  "title": "Overview",
+  "description": "WpBookingly — appointment booking plugin overview.",
+  "source": "@site/docs/plugins/wpbookingly/overview.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/overview",
+  "permalink": "/docs/plugins/wpbookingly/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "WpBookingly — appointment booking plugin overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WpBookingly",
+    "permalink": "/docs/category/wpbookingly"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpbookingly/features"
+  }
+}

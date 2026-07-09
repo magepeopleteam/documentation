@@ -1,0 +1,31 @@
+{
+  "id": "getting-started/license-activation",
+  "title": "License Activation",
+  "description": "Activate your MagePeople plugin license to receive updates and support.",
+  "source": "@site/docs/getting-started/license-activation.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/license-activation",
+  "permalink": "/docs/getting-started/license-activation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/getting-started/license-activation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "License Activation",
+    "description": "Activate your MagePeople plugin license to receive updates and support.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/installation"
+  },
+  "next": {
+    "title": "WooCommerce Setup",
+    "permalink": "/docs/getting-started/woocommerce-setup"
+  }
+}

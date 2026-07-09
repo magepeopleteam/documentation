@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/settings",
+  "title": "Settings",
+  "description": "Configure eCab taxi booking plugin settings.",
+  "source": "@site/docs/plugins/ecab/settings.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/settings",
+  "permalink": "/docs/plugins/ecab/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure eCab taxi booking plugin settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/ecab/installation-setup"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/ecab/shortcodes"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/template-override",
+  "title": "Template Override",
+  "description": "Customize WpTravelly templates via theme overrides.",
+  "source": "@site/docs/plugins/wptravelly/template-override.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/template-override",
+  "permalink": "/docs/plugins/wptravelly/template-override",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/template-override.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "Template Override",
+    "description": "Customize WpTravelly templates via theme overrides.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wptravelly/elementor-integration"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wptravelly/changelog"
+  }
+}

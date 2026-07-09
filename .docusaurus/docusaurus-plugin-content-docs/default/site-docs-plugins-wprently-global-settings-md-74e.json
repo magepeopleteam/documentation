@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/global-settings",
+  "title": "Global Settings",
+  "description": "Configure WpRently global settings — general, translation, style, payment, and more.",
+  "source": "@site/docs/plugins/wprently/global-settings.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/global-settings",
+  "permalink": "/docs/plugins/wprently/global-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/global-settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Global Settings",
+    "description": "Configure WpRently global settings — general, translation, style, payment, and more.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wprently/shortcodes"
+  },
+  "next": {
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wprently/available-addons"
+  }
+}

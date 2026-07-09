@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPBusTicketly.",
+  "source": "@site/docs/plugins/wpbusticketly/changelog.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/changelog",
+  "permalink": "/docs/plugins/wpbusticketly/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPBusTicketly.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wpbusticketly/available-addons"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbusticketly/faq"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "developer/rest-api",
+  "title": "REST API",
+  "description": "REST API reference for MagePeople plugins.",
+  "source": "@site/docs/developer/rest-api.md",
+  "sourceDirName": "developer",
+  "slug": "/developer/rest-api",
+  "permalink": "/docs/developer/rest-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/developer/rest-api.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "REST API",
+    "description": "REST API reference for MagePeople plugins.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Filters",
+    "permalink": "/docs/developer/filters"
+  },
+  "next": {
+    "title": "Customization",
+    "permalink": "/docs/developer/customization"
+  }
+}

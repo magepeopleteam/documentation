@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/rest-api",
+  "title": "REST API",
+  "description": "WpBusTicketly REST API documentation for bus and passenger data.",
+  "source": "@site/docs/plugins/wpbusticketly/rest-api.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/rest-api",
+  "permalink": "/docs/plugins/wpbusticketly/rest-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/rest-api.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "REST API",
+    "description": "WpBusTicketly REST API documentation for bus and passenger data.",
+    "sidebar_position": 7
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbusticketly/faq"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons-2"
+  }
+}

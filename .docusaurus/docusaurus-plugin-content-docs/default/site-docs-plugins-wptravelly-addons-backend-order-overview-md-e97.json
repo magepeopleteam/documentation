@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/addons/backend-order/overview",
+  "title": "Backend Order",
+  "description": "Manage tour bookings from the WordPress dashboard with the Backend Order addon.",
+  "source": "@site/docs/plugins/wptravelly/addons/backend-order/overview.md",
+  "sourceDirName": "plugins/wptravelly/addons/backend-order",
+  "slug": "/plugins/wptravelly/addons/backend-order/overview",
+  "permalink": "/docs/plugins/wptravelly/addons/backend-order/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/addons/backend-order/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Backend Order",
+    "description": "Manage tour bookings from the WordPress dashboard with the Backend Order addon.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons-1"
+  },
+  "next": {
+    "title": "Buy X Get Y Free",
+    "permalink": "/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview"
+  }
+}

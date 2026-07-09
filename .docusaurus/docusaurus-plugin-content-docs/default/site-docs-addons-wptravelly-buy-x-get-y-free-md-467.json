@@ -1,0 +1,31 @@
+{
+  "id": "addons/wptravelly/buy-x-get-y-free",
+  "title": "Buy X Get Y Free",
+  "description": "Create attractive promotions offering free tickets when customers buy a set number.",
+  "source": "@site/docs/addons/wptravelly/buy-x-get-y-free.md",
+  "sourceDirName": "addons/wptravelly",
+  "slug": "/addons/wptravelly/buy-x-get-y-free",
+  "permalink": "/docs/addons/wptravelly/buy-x-get-y-free",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/buy-x-get-y-free.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Buy X Get Y Free",
+    "description": "Create attractive promotions offering free tickets when customers buy a set number.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Backend Order",
+    "permalink": "/docs/addons/wptravelly/backend-order"
+  },
+  "next": {
+    "title": "Early Bird Pricing",
+    "permalink": "/docs/addons/wptravelly/early-bird-pricing"
+  }
+}

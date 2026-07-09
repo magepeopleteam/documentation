@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install the WooCommerce Event Manager plugin via automatic install, zip upload, or FTP, then activate your license to get started.",
+  "source": "@site/docs/plugins/wpevently/installation-setup.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/installation-setup",
+  "permalink": "/docs/plugins/wpevently/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install the WooCommerce Event Manager plugin via automatic install, zip upload, or FTP, then activate your license to get started.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpevently/features"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpevently/settings"
+  }
+}

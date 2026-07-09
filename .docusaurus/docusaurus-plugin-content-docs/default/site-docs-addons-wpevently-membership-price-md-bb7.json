@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/membership-price",
+  "title": "Membership Price",
+  "description": "Offer different pricing based on user roles and membership levels.",
+  "source": "@site/docs/addons/wpevently/membership-price.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/membership-price",
+  "permalink": "/docs/addons/wpevently/membership-price",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/membership-price.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "title": "Membership Price",
+    "description": "Offer different pricing based on user roles and membership levels.",
+    "sidebar_position": 9
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Marketplace / Frontend Submission",
+    "permalink": "/docs/addons/wpevently/marketplace-frontend-submission"
+  },
+  "next": {
+    "title": "Event Seat Plan",
+    "permalink": "/docs/addons/wpevently/event-seat-plan"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "videos/getting-started",
+  "title": "Getting Started Videos",
+  "description": "Video tutorials to help you get started with MagePeople plugins.",
+  "source": "@site/docs/videos/getting-started.md",
+  "sourceDirName": "videos",
+  "slug": "/videos/getting-started",
+  "permalink": "/docs/videos/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/videos/getting-started.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Getting Started Videos",
+    "description": "Video tutorials to help you get started with MagePeople plugins.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Videos",
+    "permalink": "/docs/category/videos"
+  },
+  "next": {
+    "title": "Plugin Tutorials",
+    "permalink": "/docs/videos/plugin-tutorials"
+  }
+}

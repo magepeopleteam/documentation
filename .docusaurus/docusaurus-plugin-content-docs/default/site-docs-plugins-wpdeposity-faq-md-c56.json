@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpdeposity/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WPDeposity.",
+  "source": "@site/docs/plugins/wpdeposity/faq.md",
+  "sourceDirName": "plugins/wpdeposity",
+  "slug": "/plugins/wpdeposity/faq",
+  "permalink": "/docs/plugins/wpdeposity/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpdeposity/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WPDeposity.",
+    "sidebar_position": 5
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpdeposity/shortcodes"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpdeposity/changelog"
+  }
+}

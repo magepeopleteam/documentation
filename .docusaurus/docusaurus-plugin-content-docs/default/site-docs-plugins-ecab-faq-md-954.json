@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about the eCab taxi booking plugin.",
+  "source": "@site/docs/plugins/ecab/faq.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/faq",
+  "permalink": "/docs/plugins/ecab/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about the eCab taxi booking plugin.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/ecab/changelog"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons"
+  }
+}

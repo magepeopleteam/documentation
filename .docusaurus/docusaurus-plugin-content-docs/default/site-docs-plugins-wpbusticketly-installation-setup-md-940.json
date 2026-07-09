@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure the WpBusTicketly Bus Ticket Booking plugin.",
+  "source": "@site/docs/plugins/wpbusticketly/installation-setup.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/installation-setup",
+  "permalink": "/docs/plugins/wpbusticketly/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure the WpBusTicketly Bus Ticket Booking plugin.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpbusticketly/features"
+  },
+  "next": {
+    "title": "Bus Manager Settings",
+    "permalink": "/docs/plugins/wpbusticketly/settings"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/overview",
+  "title": "Overview",
+  "description": "WpRently — Booking and Rental Manager for WooCommerce overview.",
+  "source": "@site/docs/plugins/wprently/overview.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/overview",
+  "permalink": "/docs/plugins/wprently/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "WpRently — Booking and Rental Manager for WooCommerce overview.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WpRently",
+    "permalink": "/docs/category/wprently"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wprently/features"
+  }
+}

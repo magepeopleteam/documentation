@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for eCab.",
+  "source": "@site/docs/plugins/ecab/changelog.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/changelog",
+  "permalink": "/docs/plugins/ecab/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for eCab.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Pro Features",
+    "permalink": "/docs/plugins/ecab/features"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/ecab/faq"
+  }
+}

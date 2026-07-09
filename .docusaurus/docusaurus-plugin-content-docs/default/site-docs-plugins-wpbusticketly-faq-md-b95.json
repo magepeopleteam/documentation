@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about the WpBusTicketly bus booking plugin.",
+  "source": "@site/docs/plugins/wpbusticketly/faq.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/faq",
+  "permalink": "/docs/plugins/wpbusticketly/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about the WpBusTicketly bus booking plugin.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpbusticketly/changelog"
+  },
+  "next": {
+    "title": "REST API",
+    "permalink": "/docs/plugins/wpbusticketly/rest-api"
+  }
+}

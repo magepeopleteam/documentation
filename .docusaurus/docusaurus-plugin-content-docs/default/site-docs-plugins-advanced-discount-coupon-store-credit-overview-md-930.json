@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon-store-credit/overview",
+  "title": "Overview",
+  "description": "Advanced Discount Coupon and Store Credit — dynamic coupon management and store credit for WooCommerce.",
+  "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/overview.md",
+  "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
+  "slug": "/plugins/advanced-discount-coupon-store-credit/overview",
+  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Overview",
+    "description": "Advanced Discount Coupon and Store Credit — dynamic coupon management and store credit for WooCommerce.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Advanced Discount Coupon and Store Credit",
+    "permalink": "/docs/category/advanced-discount-coupon-and-store-credit"
+  },
+  "next": {
+    "title": "Features",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/features"
+  }
+}

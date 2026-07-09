@@ -1,0 +1,950 @@
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background: #f7f4ee;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(37,99,235,.05), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(13,143,126,.05), transparent 45%);
+}
+
+[data-theme='dark'] .hero {
+  background: #0f172a;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(37,99,235,.08), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(13,143,126,.08), transparent 45%);
+}
+
+.heroContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heroBadge {
+  display: inline-block;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 0.8rem;
+  color: #6b6356;
+  background: #efeade;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+[data-theme='dark'] .heroBadge {
+  color: #94a3b8;
+  background: #1e293b;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  color: #211c12;
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #f1f5f9;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  color: #6b6356;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+[data-theme='dark'] .heroDescription {
+  color: #94a3b8;
+}
+
+.section {
+  padding: 3rem 0;
+  background: #f7f4ee;
+}
+
+[data-theme='dark'] .section {
+  background: #0f172a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Summary inline */
+.summaryInline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.summaryItem {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 0.82rem;
+  color: #6b6356;
+  padding: 0 1.2rem;
+  white-space: nowrap;
+}
+
+.summaryItem strong {
+  font-size: 1.5rem;
+  color: #2563eb;
+  font-weight: 800;
+}
+
+[data-theme='dark'] .summaryItem {
+  color: #94a3b8;
+}
+
+.summarySep {
+  width: 1px;
+  height: 1.2rem;
+  background: #e2dccc;
+}
+
+[data-theme='dark'] .summarySep {
+  background: #334155;
+}
+
+/* Plugin grid */
+.pluginGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pluginCard {
+  border: 1px solid #e2dccc;
+  background: #fffdf8;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.pluginCard:hover {
+  border-color: #9a9183;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+
+[data-theme='dark'] .pluginCard {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+[data-theme='dark'] .pluginCard:hover {
+  border-color: #64748b;
+  box-shadow: 0 2px 12px rgba(0,0,0,.2);
+}
+
+.cardTop {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.cardIcon {
+  width: 48px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.cardName {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.3;
+}
+
+.cardName:hover {
+  text-decoration: underline;
+}
+
+.cardSub {
+  font-size: 12px;
+  color: #9a9183;
+  line-height: 1.3;
+}
+
+[data-theme='dark'] .cardSub {
+  color: #64748b;
+}
+
+.cardVersion {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  letter-spacing: 0.04em;
+  display: inline-block;
+}
+
+[data-theme='dark'] .cardVersion {
+  color: #94a3b8;
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #e2dccc;
+}
+
+[data-theme='dark'] .cardBottom {
+  border-color: #334155;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+}
+
+.cardActions {
+  display: flex;
+  gap: 6px;
+}
+
+.cardBuy {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: transparent;
+  color: #6b6356;
+  border: 1px solid #e2dccc;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.cardBuy:hover {
+  background: #efeade;
+  color: #211c12;
+  border-color: #9a9183;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .cardBuy {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .cardBuy:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+}
+
+.cardDocs {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  padding: 6px 12px;
+}
+
+.cardDocs:hover {
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .cardDocs {
+  background: #3b82f6;
+}
+
+[data-theme='dark'] .cardDocs:hover {
+  background: #2563eb;
+}
+
+.cardVersionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.cardBadgeRow {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.freeBadge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid #e2dccc;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  line-height: 1.4;
+  color: #6b6356;
+  margin-left: 6px;
+}
+
+[data-theme='dark'] .freeBadge {
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.proBadge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  margin-left: 3px;
+  line-height: 1.4;
+}
+
+.countLink {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f7f4ee;
+  color: #6b6356;
+  border: 1px solid #e2dccc;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.countLink:hover {
+  background: rgba(181, 102, 10, 0.14);
+  border-color: #b5660a;
+  color: #b5660a;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .countLink {
+  background: #0f172a;
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .countLink:hover {
+  background: rgba(251, 191, 36, 0.14);
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
+/* Buy/Read buttons (reused in addon sections) */
+.buyButton {
+  display: inline-flex;
+  align-items: center;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6356;
+  padding: 7px 14px;
+  border: 1px solid #e2dccc;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.buyButton:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .buyButton {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .buyButton:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+.readButton {
+  display: inline-flex;
+  align-items: center;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;
+  padding: 7px 14px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.readButton:hover {
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .readButton {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+[data-theme='dark'] .readButton:hover {
+  background: #2563eb;
+}
+
+/* Addon sections (ticket style) */
+.addonSection {
+  scroll-margin-top: 84px;
+  margin-top: 56px;
+}
+
+.ticket {
+  border: 1px solid #e2dccc;
+  background: #fffdf8;
+  border-radius: 2px;
+}
+
+[data-theme='dark'] .ticket {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.ticketHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 26px 22px;
+  flex-wrap: wrap;
+}
+
+.ticketId {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 13px;
+  color: #2563eb;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ticketHead h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #211c12;
+}
+
+[data-theme='dark'] .ticketHead h2 {
+  color: #f1f5f9;
+}
+
+.ticketSubTitle {
+  font-weight: 400;
+}
+
+.ticketHead p {
+  margin: 0;
+  color: #6b6356;
+  font-size: 16px;
+  max-width: 520px;
+}
+
+[data-theme='dark'] .ticketHead p {
+  color: #94a3b8;
+}
+
+.ticketMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.ticketAddonCount {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #9a9183;
+  text-transform: uppercase;
+}
+
+.ticketAddonCountValue {
+  color: #211c12;
+  font-size: 16px;
+  display: block;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+[data-theme='dark'] .ticketAddonCountValue {
+  color: #f1f5f9;
+}
+
+.toggleAll {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  background: transparent;
+  border: 1px solid #e2dccc;
+  padding: 6px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.toggleAll:hover {
+  color: #b5660a;
+  border-color: #8c4e08;
+}
+
+[data-theme='dark'] .toggleAll {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .toggleAll:hover {
+  color: #f59e0b;
+  border-color: #d97706;
+}
+
+.perforation {
+  position: relative;
+  height: 1px;
+  background: repeating-linear-gradient(to right, #e2dccc 0 8px, transparent 8px 16px);
+  margin: 0;
+}
+
+[data-theme='dark'] .perforation {
+  background: repeating-linear-gradient(to right, #334155 0 8px, transparent 8px 16px);
+}
+
+.perforation::before,
+.perforation::after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f7f4ee;
+  border: 1px solid #e2dccc;
+}
+
+[data-theme='dark'] .perforation::before,
+[data-theme='dark'] .perforation::after {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.perforation::before {
+  left: -9px;
+}
+
+.perforation::after {
+  right: -9px;
+}
+
+/* Addon list */
+.addonList {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.addonItem {
+  border-bottom: 1px solid #e2dccc;
+}
+
+.addonItem:last-child {
+  border-bottom: none;
+}
+
+[data-theme='dark'] .addonItem {
+  border-color: #334155;
+}
+
+.addonListHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #9a9183;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2dccc;
+  background: #fffdf8;
+  user-select: none;
+}
+
+[data-theme='dark'] .addonListHead {
+  color: #64748b;
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.addonListHeadCode {
+  flex: 0 0 40px;
+}
+
+.addonListHeadName {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.headGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  width: 310px;
+  margin-left: auto;
+}
+
+.headTypeLabel {
+  font-weight: 600;
+}
+
+/* Addon row */
+.addonRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 26px;
+  background: transparent;
+  border: none;
+  color: #211c12;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.addonRow:hover {
+  background: #efeade;
+}
+
+[data-theme='dark'] .addonRow {
+  color: #f1f5f9;
+}
+
+[data-theme='dark'] .addonRow:hover {
+  background: #263348;
+}
+
+.addonCode {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  color: #9a9183;
+  flex: 0 0 40px;
+}
+
+[data-theme='dark'] .addonCode {
+  color: #64748b;
+}
+
+.addonNameWrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.addonNameLink {
+  font-weight: 600;
+  font-size: 14.5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.addonNameLink:hover {
+  text-decoration: underline;
+}
+
+.addonBadge {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.15);
+  padding: 2px 9px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+[data-theme='dark'] .addonBadge {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
+}
+
+.addonVersion {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  letter-spacing: 0.04em;
+  display: table;
+  margin-top: 4px;
+}
+
+[data-theme='dark'] .addonVersion {
+  color: #94a3b8;
+}
+
+.addonTag {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #b5660a;
+  background: rgba(181, 102, 10, 0.12);
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 0 0 100px;
+  text-align: center;
+  white-space: nowrap;
+  align-self: center;
+}
+
+[data-theme='dark'] .addonTag {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+}
+
+.addonActions {
+  display: inline-flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.chevron {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #9a9183;
+  border-bottom: 2px solid #9a9183;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.chevronExpanded {
+  transform: rotate(45deg);
+}
+
+[data-theme='dark'] .chevron {
+  border-color: #64748b;
+}
+
+.addonPanel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.addonPanelOpen {
+  max-height: 300px;
+}
+
+.addonPanelInner {
+  padding: 0 26px 18px 106px;
+  color: #6b6356;
+  font-size: 15px;
+  max-width: 640px;
+}
+
+[data-theme='dark'] .addonPanelInner {
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    gap: 1.5rem;
+  }
+
+  .pluginGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardBottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cardActions {
+    justify-content: stretch;
+  }
+
+  .cardBuy,
+  .cardDocs {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .summaryInline {
+    gap: 0;
+  }
+
+  .summaryItem {
+    font-size: 0.75rem;
+    padding: 0 0.8rem;
+  }
+
+  .summaryItem strong {
+    font-size: 1.3rem;
+  }
+
+  .ticketHead {
+    padding: 20px 18px 18px;
+    gap: 16px;
+  }
+
+  .ticketHead h2 {
+    font-size: 20px;
+  }
+
+  .ticketHead p {
+    font-size: 15px;
+  }
+
+  .addonListHead {
+    display: none;
+  }
+
+  .addonRow {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      'code name tag'
+      'code btns chev';
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 7px;
+    padding: 12px 14px;
+  }
+
+  .addonCode {
+    grid-area: code;
+    align-self: start;
+    padding-top: 2px;
+    flex: none;
+  }
+
+  .addonNameWrap {
+    grid-area: name;
+    min-width: 0;
+  }
+
+  .addonNameLink {
+    font-size: 14.5px;
+  }
+
+  .addonActions {
+    grid-area: btns;
+    justify-self: start;
+    align-self: center;
+    margin-left: 0;
+  }
+
+  .addonActions .buyButton,
+  .addonActions .readButton {
+    font-size: 11.5px;
+    padding: 6px 8px;
+    white-space: nowrap;
+  }
+
+  .addonTag {
+    grid-area: tag;
+    justify-self: start;
+    align-self: center;
+    flex: none;
+  }
+
+  .chevron {
+    grid-area: chev;
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+    transform: rotate(45deg);
+  }
+
+  .chevronExpanded {
+    transform: rotate(-135deg);
+  }
+
+  .addonPanelInner {
+    padding: 0 14px 14px;
+  }
+
+  .ticketMeta {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .ticketAddonCount {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .ticketAddonCountValue {
+    display: inline;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pluginGrid {
+    grid-template-columns: 1fr;
+  }
+}

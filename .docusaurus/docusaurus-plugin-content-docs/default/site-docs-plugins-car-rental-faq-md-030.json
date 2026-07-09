@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about the Car Rental Manager plugin.",
+  "source": "@site/docs/plugins/car-rental/faq.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/faq",
+  "permalink": "/docs/plugins/car-rental/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about the Car Rental Manager plugin.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/car-rental/changelog"
+  },
+  "next": {
+    "title": "Advanced Discount Coupon and Store Credit",
+    "permalink": "/docs/category/advanced-discount-coupon-and-store-credit"
+  }
+}

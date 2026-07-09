@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/service-management",
+  "title": "Service Management",
+  "description": "Create and manage services with WpBookingly.",
+  "source": "@site/docs/plugins/wpbookingly/service-management.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/service-management",
+  "permalink": "/docs/plugins/wpbookingly/service-management",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/service-management.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Service Management",
+    "description": "Create and manage services with WpBookingly.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/wpbookingly/installation-setup"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wpbookingly/settings"
+  }
+}

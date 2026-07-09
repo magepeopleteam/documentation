@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/payment-integration",
+  "title": "Payment Integration",
+  "description": "Configure payments with WpBookingly and WooCommerce.",
+  "source": "@site/docs/plugins/wpbookingly/payment-integration.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/payment-integration",
+  "permalink": "/docs/plugins/wpbookingly/payment-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/payment-integration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Payment Integration",
+    "description": "Configure payments with WpBookingly and WooCommerce.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpbookingly/changelog"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpbookingly/faq"
+  }
+}

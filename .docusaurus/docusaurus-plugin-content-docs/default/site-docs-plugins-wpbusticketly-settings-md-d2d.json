@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/settings",
+  "title": "Bus Manager Settings",
+  "description": "Configure WpBusTicketly bus booking settings.",
+  "source": "@site/docs/plugins/wpbusticketly/settings.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/settings",
+  "permalink": "/docs/plugins/wpbusticketly/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Bus Manager Settings",
+    "description": "Configure WpBusTicketly bus booking settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/wpbusticketly/installation-setup"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpbusticketly/shortcodes"
+  }
+}

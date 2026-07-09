@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WpTravelly.",
+  "source": "@site/docs/plugins/wptravelly/faq.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/faq",
+  "permalink": "/docs/plugins/wptravelly/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WpTravelly.",
+    "sidebar_position": 7
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wptravelly/changelog"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons-1"
+  }
+}

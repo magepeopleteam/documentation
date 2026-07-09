@@ -1,0 +1,658 @@
+{
+  "/docs-232": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/docs-bfe": {
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
+  },
+  "/docs-e12": {
+    "__comp": "a94703ab"
+  },
+  "/docs/addons/ecab-1fc": {
+    "__comp": "14eb3368",
+    "__props": "2f748d3a"
+  },
+  "/docs/addons/ecab/distance-tier-pricing-1f3": {
+    "__comp": "17896441",
+    "content": "48d5bbfd"
+  },
+  "/docs/addons/ecab/peak-hour-pricing-96d": {
+    "__comp": "17896441",
+    "content": "570e16e4"
+  },
+  "/docs/addons/wpbusticketly-fd5": {
+    "__comp": "14eb3368",
+    "__props": "cac18eb8"
+  },
+  "/docs/addons/wpbusticketly/qr-code-be3": {
+    "__comp": "17896441",
+    "content": "adeb57cb"
+  },
+  "/docs/addons/wpevently-3b1": {
+    "__comp": "14eb3368",
+    "__props": "5a654318"
+  },
+  "/docs/addons/wpevently/book-events-from-dashboard-42d": {
+    "__comp": "17896441",
+    "content": "db2b21a3"
+  },
+  "/docs/addons/wpevently/category-based-ticket-type-980": {
+    "__comp": "17896441",
+    "content": "533faff7"
+  },
+  "/docs/addons/wpevently/email-reminder-7db": {
+    "__comp": "17896441",
+    "content": "c2817821"
+  },
+  "/docs/addons/wpevently/event-duplicator-280": {
+    "__comp": "17896441",
+    "content": "b5c5f7c6"
+  },
+  "/docs/addons/wpevently/event-max-min-quantity-limiting-910": {
+    "__comp": "17896441",
+    "content": "7944e320"
+  },
+  "/docs/addons/wpevently/event-seat-plan-ecf": {
+    "__comp": "17896441",
+    "content": "c8ae6489"
+  },
+  "/docs/addons/wpevently/group-ticket-qty-692": {
+    "__comp": "17896441",
+    "content": "c66624b5"
+  },
+  "/docs/addons/wpevently/marketplace-frontend-submission-d20": {
+    "__comp": "17896441",
+    "content": "873afce3"
+  },
+  "/docs/addons/wpevently/membership-price-83a": {
+    "__comp": "17896441",
+    "content": "bb7c7d31"
+  },
+  "/docs/addons/wpevently/min-max-quantity-11e": {
+    "__comp": "17896441",
+    "content": "196df1a8"
+  },
+  "/docs/addons/wpevently/review-and-rating-99c": {
+    "__comp": "17896441",
+    "content": "981818f0"
+  },
+  "/docs/addons/wpevently/woocommerce-event-calendar-3a5": {
+    "__comp": "17896441",
+    "content": "76c4ee2e"
+  },
+  "/docs/addons/wpevently/woocommerce-event-coupon-code-210": {
+    "__comp": "17896441",
+    "content": "81c24eaa"
+  },
+  "/docs/addons/wpevently/woocommerce-event-qr-code-39b": {
+    "__comp": "17896441",
+    "content": "d0708891"
+  },
+  "/docs/addons/wpevently/woocommerce-event-waitlist-63b": {
+    "__comp": "17896441",
+    "content": "837298a9"
+  },
+  "/docs/addons/wprently-dd9": {
+    "__comp": "14eb3368",
+    "__props": "cfa19445"
+  },
+  "/docs/addons/wprently/admin-backend-order-bb9": {
+    "__comp": "17896441",
+    "content": "ab4b5cce"
+  },
+  "/docs/addons/wprently/min-max-booking-limit-d0a": {
+    "__comp": "17896441",
+    "content": "54c6176c"
+  },
+  "/docs/addons/wprently/multi-day-discount-pricing-91e": {
+    "__comp": "17896441",
+    "content": "5cdaf85a"
+  },
+  "/docs/addons/wprently/pricing-discount-over-x-days-e19": {
+    "__comp": "17896441",
+    "content": "aa8c3ac6"
+  },
+  "/docs/addons/wprently/seasonal-pricing-management-1c9": {
+    "__comp": "17896441",
+    "content": "eb3feb45"
+  },
+  "/docs/addons/wptravelly-8b3": {
+    "__comp": "14eb3368",
+    "__props": "a3879d9c"
+  },
+  "/docs/addons/wptravelly/backend-order-1f0": {
+    "__comp": "17896441",
+    "content": "ad7c86b9"
+  },
+  "/docs/addons/wptravelly/buy-x-get-y-free-8a5": {
+    "__comp": "17896441",
+    "content": "467142e1"
+  },
+  "/docs/addons/wptravelly/early-bird-pricing-538": {
+    "__comp": "17896441",
+    "content": "a82ce120"
+  },
+  "/docs/addons/wptravelly/group-bulk-pricing-6ba": {
+    "__comp": "17896441",
+    "content": "725d6b5d"
+  },
+  "/docs/addons/wptravelly/group-ticket-quantity-645": {
+    "__comp": "17896441",
+    "content": "ad6a6d08"
+  },
+  "/docs/addons/wptravelly/max-min-booking-b52": {
+    "__comp": "17896441",
+    "content": "c7f8ab42"
+  },
+  "/docs/addons/wptravelly/qr-code-c3b": {
+    "__comp": "17896441",
+    "content": "c73e065d"
+  },
+  "/docs/addons/wptravelly/seasonal-pricing-297": {
+    "__comp": "17896441",
+    "content": "7f066965"
+  },
+  "/docs/addons/wptravelly/seat-plan-bb5": {
+    "__comp": "17896441",
+    "content": "cde9779c"
+  },
+  "/docs/category/addons-23c": {
+    "__comp": "14eb3368",
+    "__props": "f61a6038"
+  },
+  "/docs/category/addons-1-22e": {
+    "__comp": "14eb3368",
+    "__props": "eef129b8"
+  },
+  "/docs/category/addons-2-e6f": {
+    "__comp": "14eb3368",
+    "__props": "4a782151"
+  },
+  "/docs/category/addons-3-d45": {
+    "__comp": "14eb3368",
+    "__props": "4711864c"
+  },
+  "/docs/category/addons-4-e0f": {
+    "__comp": "14eb3368",
+    "__props": "56e4e8f3"
+  },
+  "/docs/category/admin-backend-order-573": {
+    "__comp": "14eb3368",
+    "__props": "e697c580"
+  },
+  "/docs/category/advanced-discount-coupon-and-store-credit-590": {
+    "__comp": "14eb3368",
+    "__props": "3527e81a"
+  },
+  "/docs/category/car-rental-56f": {
+    "__comp": "14eb3368",
+    "__props": "130112f2"
+  },
+  "/docs/category/ecab-718": {
+    "__comp": "14eb3368",
+    "__props": "ffde0145"
+  },
+  "/docs/category/getting-started-d48": {
+    "__comp": "14eb3368",
+    "__props": "c260b502"
+  },
+  "/docs/category/min-and-max-booking-limit-653": {
+    "__comp": "14eb3368",
+    "__props": "4f63202f"
+  },
+  "/docs/category/multi-day-discount-pricing-044": {
+    "__comp": "14eb3368",
+    "__props": "0a94d070"
+  },
+  "/docs/category/plugins-586": {
+    "__comp": "14eb3368",
+    "__props": "821fedbe"
+  },
+  "/docs/category/pricing-discount-over-x-days-7a0": {
+    "__comp": "14eb3368",
+    "__props": "467b83ad"
+  },
+  "/docs/category/seasonal-pricing-management-0d2": {
+    "__comp": "14eb3368",
+    "__props": "6e459f26"
+  },
+  "/docs/category/wpbookingly-114": {
+    "__comp": "14eb3368",
+    "__props": "1b867076"
+  },
+  "/docs/category/wpbusticketly-5a0": {
+    "__comp": "14eb3368",
+    "__props": "4fdd8ea4"
+  },
+  "/docs/category/wpdeposity-514": {
+    "__comp": "14eb3368",
+    "__props": "b441a8dc"
+  },
+  "/docs/category/wpevently-f12": {
+    "__comp": "14eb3368",
+    "__props": "2e529d5d"
+  },
+  "/docs/category/wprently-2e6": {
+    "__comp": "14eb3368",
+    "__props": "00c0d791"
+  },
+  "/docs/category/wptravelly-1a8": {
+    "__comp": "14eb3368",
+    "__props": "c4ef5fb3"
+  },
+  "/docs/getting-started/elementor-integration-de9": {
+    "__comp": "17896441",
+    "content": "d71b555e"
+  },
+  "/docs/getting-started/email-configuration-41c": {
+    "__comp": "17896441",
+    "content": "4e9d0f17"
+  },
+  "/docs/getting-started/installation-d43": {
+    "__comp": "17896441",
+    "content": "54f44165"
+  },
+  "/docs/getting-started/license-activation-2c8": {
+    "__comp": "17896441",
+    "content": "c55b45a3"
+  },
+  "/docs/getting-started/troubleshooting-eca": {
+    "__comp": "17896441",
+    "content": "ffb8877b"
+  },
+  "/docs/getting-started/woocommerce-setup-dc6": {
+    "__comp": "17896441",
+    "content": "a6fb6615"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/changelog-e38": {
+    "__comp": "17896441",
+    "content": "1d23b781"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/faq-1c3": {
+    "__comp": "17896441",
+    "content": "a77390b2"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/features-6b0": {
+    "__comp": "17896441",
+    "content": "e2c44dea"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/overview-1d7": {
+    "__comp": "17896441",
+    "content": "930a96dc"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/settings-69f": {
+    "__comp": "17896441",
+    "content": "30ad230b"
+  },
+  "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes-14f": {
+    "__comp": "17896441",
+    "content": "036f819c"
+  },
+  "/docs/plugins/car-rental/changelog-5a4": {
+    "__comp": "17896441",
+    "content": "6001b035"
+  },
+  "/docs/plugins/car-rental/faq-e92": {
+    "__comp": "17896441",
+    "content": "030ac1f6"
+  },
+  "/docs/plugins/car-rental/features-ef2": {
+    "__comp": "17896441",
+    "content": "27fe700f"
+  },
+  "/docs/plugins/car-rental/installation-setup-7ce": {
+    "__comp": "17896441",
+    "content": "de2b757e"
+  },
+  "/docs/plugins/car-rental/overview-edf": {
+    "__comp": "17896441",
+    "content": "b9c371ba"
+  },
+  "/docs/plugins/car-rental/pricing-availability-75c": {
+    "__comp": "17896441",
+    "content": "b965a969"
+  },
+  "/docs/plugins/car-rental/settings-4b7": {
+    "__comp": "17896441",
+    "content": "de09fc09"
+  },
+  "/docs/plugins/car-rental/shortcodes-8d9": {
+    "__comp": "17896441",
+    "content": "6d6f277b"
+  },
+  "/docs/plugins/car-rental/vehicle-management-4be": {
+    "__comp": "17896441",
+    "content": "da21901d"
+  },
+  "/docs/plugins/ecab/addons/distance-tier-pricing/overview-18c": {
+    "__comp": "17896441",
+    "content": "325a5120"
+  },
+  "/docs/plugins/ecab/addons/peak-hour-pricing/overview-bdd": {
+    "__comp": "17896441",
+    "content": "4c87e57d"
+  },
+  "/docs/plugins/ecab/changelog-619": {
+    "__comp": "17896441",
+    "content": "e74783de"
+  },
+  "/docs/plugins/ecab/faq-991": {
+    "__comp": "17896441",
+    "content": "9546314c"
+  },
+  "/docs/plugins/ecab/features-38b": {
+    "__comp": "17896441",
+    "content": "8ef5efff"
+  },
+  "/docs/plugins/ecab/installation-setup-d65": {
+    "__comp": "17896441",
+    "content": "9285048b"
+  },
+  "/docs/plugins/ecab/overview-7f5": {
+    "__comp": "17896441",
+    "content": "dcdde8a0"
+  },
+  "/docs/plugins/ecab/settings-653": {
+    "__comp": "17896441",
+    "content": "0f493b56"
+  },
+  "/docs/plugins/ecab/shortcodes-76c": {
+    "__comp": "17896441",
+    "content": "21cc7bb0"
+  },
+  "/docs/plugins/wpbookingly/changelog-da0": {
+    "__comp": "17896441",
+    "content": "0396cd60"
+  },
+  "/docs/plugins/wpbookingly/faq-2c1": {
+    "__comp": "17896441",
+    "content": "09ec6cb5"
+  },
+  "/docs/plugins/wpbookingly/features-2be": {
+    "__comp": "17896441",
+    "content": "a421642d"
+  },
+  "/docs/plugins/wpbookingly/installation-setup-e45": {
+    "__comp": "17896441",
+    "content": "7a3b4267"
+  },
+  "/docs/plugins/wpbookingly/overview-2ee": {
+    "__comp": "17896441",
+    "content": "47f2b07f"
+  },
+  "/docs/plugins/wpbookingly/payment-integration-ab1": {
+    "__comp": "17896441",
+    "content": "c594d375"
+  },
+  "/docs/plugins/wpbookingly/service-management-cb7": {
+    "__comp": "17896441",
+    "content": "d75ee3db"
+  },
+  "/docs/plugins/wpbookingly/settings-09d": {
+    "__comp": "17896441",
+    "content": "88075cd1"
+  },
+  "/docs/plugins/wpbookingly/shortcodes-811": {
+    "__comp": "17896441",
+    "content": "67b1a720"
+  },
+  "/docs/plugins/wpbookingly/staff-scheduling-b77": {
+    "__comp": "17896441",
+    "content": "6fcb40c6"
+  },
+  "/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview-03b": {
+    "__comp": "17896441",
+    "content": "0a3d5460"
+  },
+  "/docs/plugins/wpbusticketly/available-addons-23c": {
+    "__comp": "17896441",
+    "content": "04fc6dc5"
+  },
+  "/docs/plugins/wpbusticketly/changelog-19d": {
+    "__comp": "17896441",
+    "content": "6e727783"
+  },
+  "/docs/plugins/wpbusticketly/faq-7fe": {
+    "__comp": "17896441",
+    "content": "b953c2a3"
+  },
+  "/docs/plugins/wpbusticketly/features-a7d": {
+    "__comp": "17896441",
+    "content": "9e857029"
+  },
+  "/docs/plugins/wpbusticketly/installation-setup-5e9": {
+    "__comp": "17896441",
+    "content": "9406cd2f"
+  },
+  "/docs/plugins/wpbusticketly/overview-b22": {
+    "__comp": "17896441",
+    "content": "fd98d2d5"
+  },
+  "/docs/plugins/wpbusticketly/rest-api-39f": {
+    "__comp": "17896441",
+    "content": "ed5effb6"
+  },
+  "/docs/plugins/wpbusticketly/settings-18f": {
+    "__comp": "17896441",
+    "content": "d2dd2644"
+  },
+  "/docs/plugins/wpbusticketly/shortcodes-033": {
+    "__comp": "17896441",
+    "content": "23b4dee4"
+  },
+  "/docs/plugins/wpdeposity/changelog-cd3": {
+    "__comp": "17896441",
+    "content": "889a98b0"
+  },
+  "/docs/plugins/wpdeposity/faq-8e7": {
+    "__comp": "17896441",
+    "content": "c56ebc2a"
+  },
+  "/docs/plugins/wpdeposity/features-258": {
+    "__comp": "17896441",
+    "content": "d128a3f6"
+  },
+  "/docs/plugins/wpdeposity/overview-9af": {
+    "__comp": "17896441",
+    "content": "cfc56d76"
+  },
+  "/docs/plugins/wpdeposity/settings-1dd": {
+    "__comp": "17896441",
+    "content": "8d8642a3"
+  },
+  "/docs/plugins/wpdeposity/shortcodes-055": {
+    "__comp": "17896441",
+    "content": "d1e55556"
+  },
+  "/docs/plugins/wpevently/changelog-fe4": {
+    "__comp": "17896441",
+    "content": "ae00dabb"
+  },
+  "/docs/plugins/wpevently/developer-hooks-a43": {
+    "__comp": "17896441",
+    "content": "3337f7de"
+  },
+  "/docs/plugins/wpevently/elementor-integration-d33": {
+    "__comp": "17896441",
+    "content": "22c3160d"
+  },
+  "/docs/plugins/wpevently/faq-b7c": {
+    "__comp": "17896441",
+    "content": "8d3758e9"
+  },
+  "/docs/plugins/wpevently/features-ef1": {
+    "__comp": "17896441",
+    "content": "f6c57cfc"
+  },
+  "/docs/plugins/wpevently/installation-setup-493": {
+    "__comp": "17896441",
+    "content": "7f2361ed"
+  },
+  "/docs/plugins/wpevently/overview-385": {
+    "__comp": "17896441",
+    "content": "d4750e5c"
+  },
+  "/docs/plugins/wpevently/rest-api-51e": {
+    "__comp": "17896441",
+    "content": "e23e00f4"
+  },
+  "/docs/plugins/wpevently/settings-840": {
+    "__comp": "17896441",
+    "content": "3965c919"
+  },
+  "/docs/plugins/wpevently/shortcodes-e22": {
+    "__comp": "17896441",
+    "content": "9354b0b9"
+  },
+  "/docs/plugins/wpevently/template-override-e2f": {
+    "__comp": "17896441",
+    "content": "1dc5bfa8"
+  },
+  "/docs/plugins/wpevently/video-tutorials-5fe": {
+    "__comp": "17896441",
+    "content": "6a11ba28"
+  },
+  "/docs/plugins/wprently/addons/admin-backend-order/overview-23d": {
+    "__comp": "17896441",
+    "content": "3b245637"
+  },
+  "/docs/plugins/wprently/addons/min-max-booking-limit/overview-305": {
+    "__comp": "17896441",
+    "content": "d4ac6b9c"
+  },
+  "/docs/plugins/wprently/addons/multi-day-discount-pricing/overview-c55": {
+    "__comp": "17896441",
+    "content": "4f877f67"
+  },
+  "/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview-8e2": {
+    "__comp": "17896441",
+    "content": "fd751a01"
+  },
+  "/docs/plugins/wprently/addons/seasonal-pricing-management/overview-8f0": {
+    "__comp": "17896441",
+    "content": "1943bd5a"
+  },
+  "/docs/plugins/wprently/available-addons-d6d": {
+    "__comp": "17896441",
+    "content": "47569161"
+  },
+  "/docs/plugins/wprently/changelog-9a6": {
+    "__comp": "17896441",
+    "content": "e17e9bfd"
+  },
+  "/docs/plugins/wprently/faq-3cb": {
+    "__comp": "17896441",
+    "content": "15d39d5a"
+  },
+  "/docs/plugins/wprently/features-38a": {
+    "__comp": "17896441",
+    "content": "cac8f6ab"
+  },
+  "/docs/plugins/wprently/general-guidelines-c0e": {
+    "__comp": "17896441",
+    "content": "feaaabbf"
+  },
+  "/docs/plugins/wprently/global-settings-0a3": {
+    "__comp": "17896441",
+    "content": "74e8cd5c"
+  },
+  "/docs/plugins/wprently/installation-setup-76f": {
+    "__comp": "17896441",
+    "content": "1834fa96"
+  },
+  "/docs/plugins/wprently/overview-15b": {
+    "__comp": "17896441",
+    "content": "cfedd548"
+  },
+  "/docs/plugins/wprently/settings-749": {
+    "__comp": "17896441",
+    "content": "6dd103a5"
+  },
+  "/docs/plugins/wprently/shortcodes-392": {
+    "__comp": "17896441",
+    "content": "4c9b1bff"
+  },
+  "/docs/plugins/wptravelly/addons/backend-order/overview-512": {
+    "__comp": "17896441",
+    "content": "e9784806"
+  },
+  "/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview-8de": {
+    "__comp": "17896441",
+    "content": "e801d6b5"
+  },
+  "/docs/plugins/wptravelly/addons/early-bird-pricing/overview-c29": {
+    "__comp": "17896441",
+    "content": "e1265076"
+  },
+  "/docs/plugins/wptravelly/addons/group-bulk-pricing/overview-484": {
+    "__comp": "17896441",
+    "content": "c5b0dc74"
+  },
+  "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview-757": {
+    "__comp": "17896441",
+    "content": "d1cd0942"
+  },
+  "/docs/plugins/wptravelly/addons/max-min-booking/overview-f34": {
+    "__comp": "17896441",
+    "content": "f519732d"
+  },
+  "/docs/plugins/wptravelly/addons/qr-code/overview-6fb": {
+    "__comp": "17896441",
+    "content": "98656f86"
+  },
+  "/docs/plugins/wptravelly/addons/seasonal-pricing/overview-5aa": {
+    "__comp": "17896441",
+    "content": "c709cc9d"
+  },
+  "/docs/plugins/wptravelly/addons/seat-plan/overview-dad": {
+    "__comp": "17896441",
+    "content": "176a52e1"
+  },
+  "/docs/plugins/wptravelly/changelog-b60": {
+    "__comp": "17896441",
+    "content": "801aafb4"
+  },
+  "/docs/plugins/wptravelly/elementor-integration-e92": {
+    "__comp": "17896441",
+    "content": "9d40f6b9"
+  },
+  "/docs/plugins/wptravelly/faq-ac1": {
+    "__comp": "17896441",
+    "content": "7efc8071"
+  },
+  "/docs/plugins/wptravelly/features-030": {
+    "__comp": "17896441",
+    "content": "c5f3ad32"
+  },
+  "/docs/plugins/wptravelly/installation-setup-f25": {
+    "__comp": "17896441",
+    "content": "ef9cdd98"
+  },
+  "/docs/plugins/wptravelly/overview-949": {
+    "__comp": "17896441",
+    "content": "c41831e7"
+  },
+  "/docs/plugins/wptravelly/settings-c0f": {
+    "__comp": "17896441",
+    "content": "60ab4033"
+  },
+  "/docs/plugins/wptravelly/shortcodes-c96": {
+    "__comp": "17896441",
+    "content": "37be3db3"
+  },
+  "/docs/plugins/wptravelly/template-override-9c5": {
+    "__comp": "17896441",
+    "content": "18cefb6f"
+  },
+  "/-2e1": {
+    "__comp": "c4f5d8e4",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

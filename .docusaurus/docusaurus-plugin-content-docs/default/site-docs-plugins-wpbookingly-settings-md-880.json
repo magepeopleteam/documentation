@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbookingly/settings",
+  "title": "Settings",
+  "description": "Configure WPBookingly appointment settings.",
+  "source": "@site/docs/plugins/wpbookingly/settings.md",
+  "sourceDirName": "plugins/wpbookingly",
+  "slug": "/plugins/wpbookingly/settings",
+  "permalink": "/docs/plugins/wpbookingly/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure WPBookingly appointment settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Service Management",
+    "permalink": "/docs/plugins/wpbookingly/service-management"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpbookingly/shortcodes"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/woocommerce-event-waitlist",
+  "title": "WooCommerce Event Waitlist",
+  "description": "Capture customer interest when tickets are sold out with a waitlist system.",
+  "source": "@site/docs/addons/wpevently/woocommerce-event-waitlist.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/woocommerce-event-waitlist",
+  "permalink": "/docs/addons/wpevently/woocommerce-event-waitlist",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-waitlist.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 15,
+  "frontMatter": {
+    "title": "WooCommerce Event Waitlist",
+    "description": "Capture customer interest when tickets are sold out with a waitlist system.",
+    "sidebar_position": 15
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WooCommerce Event QR Code",
+    "permalink": "/docs/addons/wpevently/woocommerce-event-qr-code"
+  },
+  "next": {
+    "title": "WpTravelly",
+    "permalink": "/docs/addons/wptravelly"
+  }
+}

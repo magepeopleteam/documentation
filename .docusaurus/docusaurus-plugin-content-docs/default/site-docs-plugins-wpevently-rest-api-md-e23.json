@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/rest-api",
+  "title": "REST API",
+  "description": "Integrate the WooCommerce Event Manager with external applications using the available REST API endpoints for event data.",
+  "source": "@site/docs/plugins/wpevently/rest-api.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/rest-api",
+  "permalink": "/docs/plugins/wpevently/rest-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/rest-api.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "REST API",
+    "description": "Integrate the WooCommerce Event Manager with external applications using the available REST API endpoints for event data.",
+    "sidebar_position": 7
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wpevently/template-override"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpevently/faq"
+  }
+}

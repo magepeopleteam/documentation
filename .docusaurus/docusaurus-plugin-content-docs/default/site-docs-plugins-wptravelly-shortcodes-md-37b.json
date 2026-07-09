@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WpTravelly shortcode reference for displaying tours.",
+  "source": "@site/docs/plugins/wptravelly/shortcodes.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/shortcodes",
+  "permalink": "/docs/plugins/wptravelly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WpTravelly shortcode reference for displaying tours.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/wptravelly/settings"
+  },
+  "next": {
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wptravelly/elementor-integration"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpdeposity/settings",
+  "title": "Settings",
+  "description": "Configure WPDeposity deposit settings.",
+  "source": "@site/docs/plugins/wpdeposity/settings.md",
+  "sourceDirName": "plugins/wpdeposity",
+  "slug": "/plugins/wpdeposity/settings",
+  "permalink": "/docs/plugins/wpdeposity/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpdeposity/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure WPDeposity deposit settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/wpdeposity/features"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wpdeposity/shortcodes"
+  }
+}

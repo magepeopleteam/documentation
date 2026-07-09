@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for Car Rental.",
+  "source": "@site/docs/plugins/car-rental/changelog.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/changelog",
+  "permalink": "/docs/plugins/car-rental/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for Car Rental.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Vehicle Management",
+    "permalink": "/docs/plugins/car-rental/vehicle-management"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/car-rental/faq"
+  }
+}

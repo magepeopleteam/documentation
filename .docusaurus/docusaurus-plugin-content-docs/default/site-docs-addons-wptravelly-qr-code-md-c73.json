@@ -1,0 +1,31 @@
+{
+  "id": "addons/wptravelly/qr-code",
+  "title": "QR Code Addon",
+  "description": "Validate tour tickets quickly with QR codes for secure check-ins.",
+  "source": "@site/docs/addons/wptravelly/qr-code.md",
+  "sourceDirName": "addons/wptravelly",
+  "slug": "/addons/wptravelly/qr-code",
+  "permalink": "/docs/addons/wptravelly/qr-code",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/qr-code.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "title": "QR Code Addon",
+    "description": "Validate tour tickets quickly with QR codes for secure check-ins.",
+    "sidebar_position": 7
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Max-Min Booking",
+    "permalink": "/docs/addons/wptravelly/max-min-booking"
+  },
+  "next": {
+    "title": "Seasonal Pricing",
+    "permalink": "/docs/addons/wptravelly/seasonal-pricing"
+  }
+}

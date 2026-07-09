@@ -1,0 +1,31 @@
+{
+  "id": "getting-started/installation",
+  "title": "Installation",
+  "description": "Learn how to install MagePeople plugins on your WordPress site.",
+  "source": "@site/docs/getting-started/installation.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/installation",
+  "permalink": "/docs/getting-started/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/getting-started/installation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Installation",
+    "description": "Learn how to install MagePeople plugins on your WordPress site.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/category/getting-started"
+  },
+  "next": {
+    "title": "License Activation",
+    "permalink": "/docs/getting-started/license-activation"
+  }
+}

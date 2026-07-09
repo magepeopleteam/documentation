@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/shortcodes",
+  "title": "Shortcodes",
+  "description": "eCab shortcodes reference for embedding taxi booking forms.",
+  "source": "@site/docs/plugins/ecab/shortcodes.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/shortcodes",
+  "permalink": "/docs/plugins/ecab/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "eCab shortcodes reference for embedding taxi booking forms.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/ecab/settings"
+  },
+  "next": {
+    "title": "Pro Features",
+    "permalink": "/docs/plugins/ecab/features"
+  }
+}

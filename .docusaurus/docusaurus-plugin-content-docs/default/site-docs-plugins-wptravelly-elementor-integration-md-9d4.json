@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/elementor-integration",
+  "title": "Elementor Integration",
+  "description": "Use WpTravelly with Elementor page builder.",
+  "source": "@site/docs/plugins/wptravelly/elementor-integration.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/elementor-integration",
+  "permalink": "/docs/plugins/wptravelly/elementor-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/elementor-integration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Elementor Integration",
+    "description": "Use WpTravelly with Elementor page builder.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wptravelly/shortcodes"
+  },
+  "next": {
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wptravelly/template-override"
+  }
+}

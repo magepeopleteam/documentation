@@ -1,0 +1,7 @@
+{
+  "label": "Min and Max Booking Limit",
+  "link": {
+    "type": "generated-index",
+    "description": "Set minimum and maximum booking day limits for rental items."
+  }
+}

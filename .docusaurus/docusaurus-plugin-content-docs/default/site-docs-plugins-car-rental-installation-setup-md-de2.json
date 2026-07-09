@@ -1,0 +1,31 @@
+{
+  "id": "plugins/car-rental/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure the Car Rental Manager plugin for WordPress.",
+  "source": "@site/docs/plugins/car-rental/installation-setup.md",
+  "sourceDirName": "plugins/car-rental",
+  "slug": "/plugins/car-rental/installation-setup",
+  "permalink": "/docs/plugins/car-rental/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure the Car Rental Manager plugin for WordPress.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Features",
+    "permalink": "/docs/plugins/car-rental/features"
+  },
+  "next": {
+    "title": "Pricing & Availability",
+    "permalink": "/docs/plugins/car-rental/pricing-availability"
+  }
+}

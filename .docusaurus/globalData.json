@@ -1,0 +1,823 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "getting-started/installation",
+          "docs": [
+            {
+              "id": "addons/ecab/distance-tier-pricing",
+              "path": "/docs/addons/ecab/distance-tier-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/ecab/peak-hour-pricing",
+              "path": "/docs/addons/ecab/peak-hour-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpbusticketly/qr-code",
+              "path": "/docs/addons/wpbusticketly/qr-code",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/book-events-from-dashboard",
+              "path": "/docs/addons/wpevently/book-events-from-dashboard",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/category-based-ticket-type",
+              "path": "/docs/addons/wpevently/category-based-ticket-type",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/email-reminder",
+              "path": "/docs/addons/wpevently/email-reminder",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/event-duplicator",
+              "path": "/docs/addons/wpevently/event-duplicator",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/event-max-min-quantity-limiting",
+              "path": "/docs/addons/wpevently/event-max-min-quantity-limiting",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/event-seat-plan",
+              "path": "/docs/addons/wpevently/event-seat-plan",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/group-ticket-qty",
+              "path": "/docs/addons/wpevently/group-ticket-qty",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/marketplace-frontend-submission",
+              "path": "/docs/addons/wpevently/marketplace-frontend-submission",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/membership-price",
+              "path": "/docs/addons/wpevently/membership-price",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/min-max-quantity",
+              "path": "/docs/addons/wpevently/min-max-quantity",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/review-and-rating",
+              "path": "/docs/addons/wpevently/review-and-rating",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/woocommerce-event-calendar",
+              "path": "/docs/addons/wpevently/woocommerce-event-calendar",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/woocommerce-event-coupon-code",
+              "path": "/docs/addons/wpevently/woocommerce-event-coupon-code",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/woocommerce-event-qr-code",
+              "path": "/docs/addons/wpevently/woocommerce-event-qr-code",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently/woocommerce-event-waitlist",
+              "path": "/docs/addons/wpevently/woocommerce-event-waitlist",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently/admin-backend-order",
+              "path": "/docs/addons/wprently/admin-backend-order",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently/min-max-booking-limit",
+              "path": "/docs/addons/wprently/min-max-booking-limit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently/multi-day-discount-pricing",
+              "path": "/docs/addons/wprently/multi-day-discount-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently/pricing-discount-over-x-days",
+              "path": "/docs/addons/wprently/pricing-discount-over-x-days",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently/seasonal-pricing-management",
+              "path": "/docs/addons/wprently/seasonal-pricing-management",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/backend-order",
+              "path": "/docs/addons/wptravelly/backend-order",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/buy-x-get-y-free",
+              "path": "/docs/addons/wptravelly/buy-x-get-y-free",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/early-bird-pricing",
+              "path": "/docs/addons/wptravelly/early-bird-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/group-bulk-pricing",
+              "path": "/docs/addons/wptravelly/group-bulk-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/group-ticket-quantity",
+              "path": "/docs/addons/wptravelly/group-ticket-quantity",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/max-min-booking",
+              "path": "/docs/addons/wptravelly/max-min-booking",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/qr-code",
+              "path": "/docs/addons/wptravelly/qr-code",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/seasonal-pricing",
+              "path": "/docs/addons/wptravelly/seasonal-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly/seat-plan",
+              "path": "/docs/addons/wptravelly/seat-plan",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/elementor-integration",
+              "path": "/docs/getting-started/elementor-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/email-configuration",
+              "path": "/docs/getting-started/email-configuration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/docs/getting-started/installation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/license-activation",
+              "path": "/docs/getting-started/license-activation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/troubleshooting",
+              "path": "/docs/getting-started/troubleshooting",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/woocommerce-setup",
+              "path": "/docs/getting-started/woocommerce-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/changelog",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/faq",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/features",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/overview",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/settings",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/advanced-discount-coupon-store-credit/shortcodes",
+              "path": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/changelog",
+              "path": "/docs/plugins/car-rental/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/faq",
+              "path": "/docs/plugins/car-rental/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/features",
+              "path": "/docs/plugins/car-rental/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/installation-setup",
+              "path": "/docs/plugins/car-rental/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/overview",
+              "path": "/docs/plugins/car-rental/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/pricing-availability",
+              "path": "/docs/plugins/car-rental/pricing-availability",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/settings",
+              "path": "/docs/plugins/car-rental/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/shortcodes",
+              "path": "/docs/plugins/car-rental/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/car-rental/vehicle-management",
+              "path": "/docs/plugins/car-rental/vehicle-management",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/addons/distance-tier-pricing/overview",
+              "path": "/docs/plugins/ecab/addons/distance-tier-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/addons/peak-hour-pricing/overview",
+              "path": "/docs/plugins/ecab/addons/peak-hour-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/changelog",
+              "path": "/docs/plugins/ecab/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/faq",
+              "path": "/docs/plugins/ecab/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/features",
+              "path": "/docs/plugins/ecab/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/installation-setup",
+              "path": "/docs/plugins/ecab/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/overview",
+              "path": "/docs/plugins/ecab/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/settings",
+              "path": "/docs/plugins/ecab/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/ecab/shortcodes",
+              "path": "/docs/plugins/ecab/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/changelog",
+              "path": "/docs/plugins/wpbookingly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/faq",
+              "path": "/docs/plugins/wpbookingly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/features",
+              "path": "/docs/plugins/wpbookingly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/installation-setup",
+              "path": "/docs/plugins/wpbookingly/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/overview",
+              "path": "/docs/plugins/wpbookingly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/payment-integration",
+              "path": "/docs/plugins/wpbookingly/payment-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/service-management",
+              "path": "/docs/plugins/wpbookingly/service-management",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/settings",
+              "path": "/docs/plugins/wpbookingly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/shortcodes",
+              "path": "/docs/plugins/wpbookingly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbookingly/staff-scheduling",
+              "path": "/docs/plugins/wpbookingly/staff-scheduling",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+              "path": "/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/available-addons",
+              "path": "/docs/plugins/wpbusticketly/available-addons",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/changelog",
+              "path": "/docs/plugins/wpbusticketly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/faq",
+              "path": "/docs/plugins/wpbusticketly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/features",
+              "path": "/docs/plugins/wpbusticketly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/installation-setup",
+              "path": "/docs/plugins/wpbusticketly/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/overview",
+              "path": "/docs/plugins/wpbusticketly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/rest-api",
+              "path": "/docs/plugins/wpbusticketly/rest-api",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/settings",
+              "path": "/docs/plugins/wpbusticketly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpbusticketly/shortcodes",
+              "path": "/docs/plugins/wpbusticketly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/changelog",
+              "path": "/docs/plugins/wpdeposity/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/faq",
+              "path": "/docs/plugins/wpdeposity/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/features",
+              "path": "/docs/plugins/wpdeposity/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/overview",
+              "path": "/docs/plugins/wpdeposity/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/settings",
+              "path": "/docs/plugins/wpdeposity/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpdeposity/shortcodes",
+              "path": "/docs/plugins/wpdeposity/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/changelog",
+              "path": "/docs/plugins/wpevently/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/developer-hooks",
+              "path": "/docs/plugins/wpevently/developer-hooks",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/elementor-integration",
+              "path": "/docs/plugins/wpevently/elementor-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/faq",
+              "path": "/docs/plugins/wpevently/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/features",
+              "path": "/docs/plugins/wpevently/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/installation-setup",
+              "path": "/docs/plugins/wpevently/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/overview",
+              "path": "/docs/plugins/wpevently/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/rest-api",
+              "path": "/docs/plugins/wpevently/rest-api",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/settings",
+              "path": "/docs/plugins/wpevently/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/shortcodes",
+              "path": "/docs/plugins/wpevently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/template-override",
+              "path": "/docs/plugins/wpevently/template-override",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wpevently/video-tutorials",
+              "path": "/docs/plugins/wpevently/video-tutorials",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/admin-backend-order/overview",
+              "path": "/docs/plugins/wprently/addons/admin-backend-order/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/min-max-booking-limit/overview",
+              "path": "/docs/plugins/wprently/addons/min-max-booking-limit/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/multi-day-discount-pricing/overview",
+              "path": "/docs/plugins/wprently/addons/multi-day-discount-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/pricing-discount-over-x-days/overview",
+              "path": "/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/addons/seasonal-pricing-management/overview",
+              "path": "/docs/plugins/wprently/addons/seasonal-pricing-management/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/available-addons",
+              "path": "/docs/plugins/wprently/available-addons",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/changelog",
+              "path": "/docs/plugins/wprently/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/faq",
+              "path": "/docs/plugins/wprently/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/features",
+              "path": "/docs/plugins/wprently/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/general-guidelines",
+              "path": "/docs/plugins/wprently/general-guidelines",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/global-settings",
+              "path": "/docs/plugins/wprently/global-settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/installation-setup",
+              "path": "/docs/plugins/wprently/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/overview",
+              "path": "/docs/plugins/wprently/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/settings",
+              "path": "/docs/plugins/wprently/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/shortcodes",
+              "path": "/docs/plugins/wprently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/backend-order/overview",
+              "path": "/docs/plugins/wptravelly/addons/backend-order/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/buy-x-get-y-free/overview",
+              "path": "/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/early-bird-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/early-bird-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/group-bulk-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/group-bulk-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/group-ticket-quantity/overview",
+              "path": "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/max-min-booking/overview",
+              "path": "/docs/plugins/wptravelly/addons/max-min-booking/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/qr-code/overview",
+              "path": "/docs/plugins/wptravelly/addons/qr-code/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/seasonal-pricing/overview",
+              "path": "/docs/plugins/wptravelly/addons/seasonal-pricing/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/addons/seat-plan/overview",
+              "path": "/docs/plugins/wptravelly/addons/seat-plan/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/changelog",
+              "path": "/docs/plugins/wptravelly/changelog",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/elementor-integration",
+              "path": "/docs/plugins/wptravelly/elementor-integration",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/faq",
+              "path": "/docs/plugins/wptravelly/faq",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/features",
+              "path": "/docs/plugins/wptravelly/features",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/installation-setup",
+              "path": "/docs/plugins/wptravelly/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/overview",
+              "path": "/docs/plugins/wptravelly/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/settings",
+              "path": "/docs/plugins/wptravelly/settings",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/shortcodes",
+              "path": "/docs/plugins/wptravelly/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wptravelly/template-override",
+              "path": "/docs/plugins/wptravelly/template-override",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/plugins",
+              "path": "/docs/category/plugins",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpevently",
+              "path": "/docs/category/wpevently",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/ecab",
+              "path": "/docs/category/ecab",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons",
+              "path": "/docs/category/addons",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wptravelly",
+              "path": "/docs/category/wptravelly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-1",
+              "path": "/docs/category/addons-1",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpbookingly",
+              "path": "/docs/category/wpbookingly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpbusticketly",
+              "path": "/docs/category/wpbusticketly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-2",
+              "path": "/docs/category/addons-2",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wprently",
+              "path": "/docs/category/wprently",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-3",
+              "path": "/docs/category/addons-3",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/admin-backend-order",
+              "path": "/docs/category/admin-backend-order",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/min-and-max-booking-limit",
+              "path": "/docs/category/min-and-max-booking-limit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/multi-day-discount-pricing",
+              "path": "/docs/category/multi-day-discount-pricing",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/pricing-discount-over-x-days",
+              "path": "/docs/category/pricing-discount-over-x-days",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/seasonal-pricing-management",
+              "path": "/docs/category/seasonal-pricing-management",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/car-rental",
+              "path": "/docs/category/car-rental",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/advanced-discount-coupon-and-store-credit",
+              "path": "/docs/category/advanced-discount-coupon-and-store-credit",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/wpdeposity",
+              "path": "/docs/category/wpdeposity",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "/category/addons-4",
+              "path": "/docs/category/addons-4",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpevently",
+              "path": "/docs/addons/wpevently",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wptravelly",
+              "path": "/docs/addons/wptravelly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/ecab",
+              "path": "/docs/addons/ecab",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wpbusticketly",
+              "path": "/docs/addons/wpbusticketly",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "addons/wprently",
+              "path": "/docs/addons/wprently",
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docsSidebar": {
+              "link": {
+                "path": "/docs/category/getting-started",
+                "label": "Getting Started"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

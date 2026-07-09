@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPEvently.",
+  "source": "@site/docs/plugins/wpevently/changelog.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/changelog",
+  "permalink": "/docs/plugins/wpevently/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPEvently.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Elementor Integration",
+    "permalink": "/docs/plugins/wpevently/elementor-integration"
+  },
+  "next": {
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wpevently/template-override"
+  }
+}

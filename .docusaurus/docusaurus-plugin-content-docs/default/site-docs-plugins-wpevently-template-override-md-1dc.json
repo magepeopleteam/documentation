@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpevently/template-override",
+  "title": "Template Override",
+  "description": "Override default plugin templates in your theme to customize the look and feel of event pages, ticket designs, and social sharing.",
+  "source": "@site/docs/plugins/wpevently/template-override.md",
+  "sourceDirName": "plugins/wpevently",
+  "slug": "/plugins/wpevently/template-override",
+  "permalink": "/docs/plugins/wpevently/template-override",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/template-override.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Template Override",
+    "description": "Override default plugin templates in your theme to customize the look and feel of event pages, ticket designs, and social sharing.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wpevently/changelog"
+  },
+  "next": {
+    "title": "REST API",
+    "permalink": "/docs/plugins/wpevently/rest-api"
+  }
+}

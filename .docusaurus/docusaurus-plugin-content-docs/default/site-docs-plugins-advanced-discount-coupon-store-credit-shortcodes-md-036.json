@@ -1,0 +1,31 @@
+{
+  "id": "plugins/advanced-discount-coupon-store-credit/shortcodes",
+  "title": "Shortcodes",
+  "description": "Advanced Discount Coupon shortcodes reference.",
+  "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/shortcodes.md",
+  "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
+  "slug": "/plugins/advanced-discount-coupon-store-credit/shortcodes",
+  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "Advanced Discount Coupon shortcodes reference.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/settings"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/faq"
+  }
+}

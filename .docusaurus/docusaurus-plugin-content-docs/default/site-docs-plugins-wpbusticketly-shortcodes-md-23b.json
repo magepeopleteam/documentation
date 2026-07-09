@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/shortcodes",
+  "title": "Shortcodes",
+  "description": "WpBusTicketly shortcodes reference for embedding bus booking forms.",
+  "source": "@site/docs/plugins/wpbusticketly/shortcodes.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/shortcodes",
+  "permalink": "/docs/plugins/wpbusticketly/shortcodes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/shortcodes.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Shortcodes",
+    "description": "WpBusTicketly shortcodes reference for embedding bus booking forms.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Bus Manager Settings",
+    "permalink": "/docs/plugins/wpbusticketly/settings"
+  },
+  "next": {
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wpbusticketly/available-addons"
+  }
+}

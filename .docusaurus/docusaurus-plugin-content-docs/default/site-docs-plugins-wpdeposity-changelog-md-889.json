@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpdeposity/changelog",
+  "title": "Changelog",
+  "description": "Version history and release notes for WPDeposity.",
+  "source": "@site/docs/plugins/wpdeposity/changelog.md",
+  "sourceDirName": "plugins/wpdeposity",
+  "slug": "/plugins/wpdeposity/changelog",
+  "permalink": "/docs/plugins/wpdeposity/changelog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpdeposity/changelog.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Changelog",
+    "description": "Version history and release notes for WPDeposity.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wpdeposity/faq"
+  },
+  "next": {
+    "title": "Addons",
+    "permalink": "/docs/category/addons-4"
+  }
+}

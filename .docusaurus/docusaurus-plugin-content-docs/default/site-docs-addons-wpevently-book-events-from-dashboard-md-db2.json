@@ -1,0 +1,31 @@
+{
+  "id": "addons/wpevently/book-events-from-dashboard",
+  "title": "Book Events from Dashboard",
+  "description": "Allow admins to book events on behalf of customers directly from the WordPress dashboard.",
+  "source": "@site/docs/addons/wpevently/book-events-from-dashboard.md",
+  "sourceDirName": "addons/wpevently",
+  "slug": "/addons/wpevently/book-events-from-dashboard",
+  "permalink": "/docs/addons/wpevently/book-events-from-dashboard",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/book-events-from-dashboard.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Book Events from Dashboard",
+    "description": "Allow admins to book events on behalf of customers directly from the WordPress dashboard.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WpEvently",
+    "permalink": "/docs/addons/wpevently"
+  },
+  "next": {
+    "title": "Category Based Ticket Type",
+    "permalink": "/docs/addons/wpevently/category-based-ticket-type"
+  }
+}

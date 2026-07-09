@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/faq",
+  "title": "FAQ",
+  "description": "Frequently asked questions about WpRently — Booking and Rental Manager.",
+  "source": "@site/docs/plugins/wprently/faq.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/faq",
+  "permalink": "/docs/plugins/wprently/faq",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/faq.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "FAQ",
+    "description": "Frequently asked questions about WpRently — Booking and Rental Manager.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/docs/plugins/wprently/changelog"
+  },
+  "next": {
+    "title": "General Guidelines",
+    "permalink": "/docs/plugins/wprently/general-guidelines"
+  }
+}

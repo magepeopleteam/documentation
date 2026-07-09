@@ -1,0 +1,31 @@
+{
+  "id": "videos/plugin-tutorials",
+  "title": "Plugin Tutorials",
+  "description": "Video tutorials for specific MagePeople plugins.",
+  "source": "@site/docs/videos/plugin-tutorials.md",
+  "sourceDirName": "videos",
+  "slug": "/videos/plugin-tutorials",
+  "permalink": "/docs/videos/plugin-tutorials",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/videos/plugin-tutorials.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Plugin Tutorials",
+    "description": "Video tutorials for specific MagePeople plugins.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Getting Started Videos",
+    "permalink": "/docs/videos/getting-started"
+  },
+  "next": {
+    "title": "Developer Videos",
+    "permalink": "/docs/videos/developer-videos"
+  }
+}

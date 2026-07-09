@@ -1,0 +1,9 @@
+{
+  "label": "WpTravelly",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "slug": "addons/wptravelly",
+    "description": "Addons for the WpTravelly tour booking plugin."
+  }
+}

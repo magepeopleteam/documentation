@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/addons/qr-code/overview",
+  "title": "QR Code",
+  "description": "Validate tickets with QR codes using the QR Code addon.",
+  "source": "@site/docs/plugins/wptravelly/addons/qr-code/overview.md",
+  "sourceDirName": "plugins/wptravelly/addons/qr-code",
+  "slug": "/plugins/wptravelly/addons/qr-code/overview",
+  "permalink": "/docs/plugins/wptravelly/addons/qr-code/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/addons/qr-code/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "QR Code",
+    "description": "Validate tickets with QR codes using the QR Code addon.",
+    "sidebar_position": 1
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Max-Min Booking",
+    "permalink": "/docs/plugins/wptravelly/addons/max-min-booking/overview"
+  },
+  "next": {
+    "title": "Seasonal Pricing",
+    "permalink": "/docs/plugins/wptravelly/addons/seasonal-pricing/overview"
+  }
+}

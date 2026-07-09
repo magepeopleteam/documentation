@@ -1,0 +1,31 @@
+{
+  "id": "getting-started/woocommerce-setup",
+  "title": "WooCommerce Setup",
+  "description": "Configure WooCommerce for use with MagePeople booking plugins.",
+  "source": "@site/docs/getting-started/woocommerce-setup.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/woocommerce-setup",
+  "permalink": "/docs/getting-started/woocommerce-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/getting-started/woocommerce-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "WooCommerce Setup",
+    "description": "Configure WooCommerce for use with MagePeople booking plugins.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "License Activation",
+    "permalink": "/docs/getting-started/license-activation"
+  },
+  "next": {
+    "title": "Elementor Integration",
+    "permalink": "/docs/getting-started/elementor-integration"
+  }
+}

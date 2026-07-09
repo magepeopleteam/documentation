@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wptravelly/settings",
+  "title": "Settings",
+  "description": "Configure WPTravelly settings.",
+  "source": "@site/docs/plugins/wptravelly/settings.md",
+  "sourceDirName": "plugins/wptravelly",
+  "slug": "/plugins/wptravelly/settings",
+  "permalink": "/docs/plugins/wptravelly/settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Settings",
+    "description": "Configure WPTravelly settings.",
+    "sidebar_position": 3
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/wptravelly/installation-setup"
+  },
+  "next": {
+    "title": "Shortcodes",
+    "permalink": "/docs/plugins/wptravelly/shortcodes"
+  }
+}

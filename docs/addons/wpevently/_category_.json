@@ -1,0 +1,9 @@
+{
+  "label": "WpEvently",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "addons/wpevently",
+    "description": "Addons for the WpEvently event booking plugin."
+  }
+}

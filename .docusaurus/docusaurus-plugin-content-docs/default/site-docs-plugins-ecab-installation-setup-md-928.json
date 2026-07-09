@@ -1,0 +1,31 @@
+{
+  "id": "plugins/ecab/installation-setup",
+  "title": "Installation & Setup",
+  "description": "Install and configure the eCab Taxi Booking Manager plugin for WordPress.",
+  "source": "@site/docs/plugins/ecab/installation-setup.md",
+  "sourceDirName": "plugins/ecab",
+  "slug": "/plugins/ecab/installation-setup",
+  "permalink": "/docs/plugins/ecab/installation-setup",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/installation-setup.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783494863000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Installation & Setup",
+    "description": "Install and configure the eCab Taxi Booking Manager plugin for WordPress.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/ecab/overview"
+  },
+  "next": {
+    "title": "Settings",
+    "permalink": "/docs/plugins/ecab/settings"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "getting-started/elementor-integration",
+  "title": "Elementor Integration",
+  "description": "Use MagePeople widgets with the Elementor page builder.",
+  "source": "@site/docs/getting-started/elementor-integration.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/elementor-integration",
+  "permalink": "/docs/getting-started/elementor-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/getting-started/elementor-integration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Elementor Integration",
+    "description": "Use MagePeople widgets with the Elementor page builder.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "WooCommerce Setup",
+    "permalink": "/docs/getting-started/woocommerce-setup"
+  },
+  "next": {
+    "title": "Email Configuration",
+    "permalink": "/docs/getting-started/email-configuration"
+  }
+}

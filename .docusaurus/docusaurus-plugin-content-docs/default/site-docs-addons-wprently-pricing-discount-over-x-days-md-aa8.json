@@ -1,0 +1,31 @@
+{
+  "id": "addons/wprently/pricing-discount-over-x-days",
+  "title": "Pricing Discount Over x Days",
+  "description": "Automatically apply tiered discounts as the rental duration increases.",
+  "source": "@site/docs/addons/wprently/pricing-discount-over-x-days.md",
+  "sourceDirName": "addons/wprently",
+  "slug": "/addons/wprently/pricing-discount-over-x-days",
+  "permalink": "/docs/addons/wprently/pricing-discount-over-x-days",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/pricing-discount-over-x-days.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783502187000,
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Pricing Discount Over x Days",
+    "description": "Automatically apply tiered discounts as the rental duration increases.",
+    "sidebar_position": 4
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Multi-Day Discount Pricing",
+    "permalink": "/docs/addons/wprently/multi-day-discount-pricing"
+  },
+  "next": {
+    "title": "Seasonal Pricing Management",
+    "permalink": "/docs/addons/wprently/seasonal-pricing-management"
+  }
+}

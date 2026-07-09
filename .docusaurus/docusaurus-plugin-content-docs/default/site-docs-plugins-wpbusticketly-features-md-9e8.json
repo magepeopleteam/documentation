@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wpbusticketly/features",
+  "title": "Features",
+  "description": "Comprehensive feature list for WPBusTicketly.",
+  "source": "@site/docs/plugins/wpbusticketly/features.md",
+  "sourceDirName": "plugins/wpbusticketly",
+  "slug": "/plugins/wpbusticketly/features",
+  "permalink": "/docs/plugins/wpbusticketly/features",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/features.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Shahadat",
+  "lastUpdatedAt": 1783493779000,
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "title": "Features",
+    "description": "Comprehensive feature list for WPBusTicketly.",
+    "sidebar_position": 2
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/plugins/wpbusticketly/overview"
+  },
+  "next": {
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/wpbusticketly/installation-setup"
+  }
+}
