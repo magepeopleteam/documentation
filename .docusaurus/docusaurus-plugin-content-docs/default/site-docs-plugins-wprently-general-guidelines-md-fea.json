@@ -21,11 +21,11 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wprently/faq"
+    "title": "Available Addons",
+    "permalink": "/docs/plugins/wprently/available-addons"
   },
   "next": {
-    "title": "Car Rental",
-    "permalink": "/docs/category/car-rental"
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wprently/faq"
   }
 }

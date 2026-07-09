@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "Shahadat",
-  "lastUpdatedAt": 1783494863000,
+  "lastUpdatedAt": 1783576687000,
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Available Addons",
@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wpbusticketly/shortcodes"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpbusticketly/faq"
+    "title": "REST API",
+    "permalink": "/docs/plugins/wpbusticketly/rest-api"
   }
 }

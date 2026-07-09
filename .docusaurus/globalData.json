@@ -186,11 +186,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/advanced-discount-coupon-store-credit/features",
-              "path": "/docs/plugins/advanced-discount-coupon-store-credit/features",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/advanced-discount-coupon-store-credit/installation-setup",
               "path": "/docs/plugins/advanced-discount-coupon-store-credit/installation-setup",
               "sidebar": "docsSidebar"
@@ -213,11 +208,6 @@
             {
               "id": "plugins/car-rental/faq",
               "path": "/docs/plugins/car-rental/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/car-rental/features",
-              "path": "/docs/plugins/car-rental/features",
               "sidebar": "docsSidebar"
             },
             {
@@ -256,11 +246,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/ecab/features",
-              "path": "/docs/plugins/ecab/features",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/ecab/installation-setup",
               "path": "/docs/plugins/ecab/installation-setup",
               "sidebar": "docsSidebar"
@@ -283,11 +268,6 @@
             {
               "id": "plugins/wpbookingly/faq",
               "path": "/docs/plugins/wpbookingly/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpbookingly/features",
-              "path": "/docs/plugins/wpbookingly/features",
               "sidebar": "docsSidebar"
             },
             {
@@ -336,11 +316,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpbusticketly/features",
-              "path": "/docs/plugins/wpbusticketly/features",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wpbusticketly/installation-setup",
               "path": "/docs/plugins/wpbusticketly/installation-setup",
               "sidebar": "docsSidebar"
@@ -368,11 +343,6 @@
             {
               "id": "plugins/wpdepositly/faq",
               "path": "/docs/plugins/wpdepositly/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wpdepositly/features",
-              "path": "/docs/plugins/wpdepositly/features",
               "sidebar": "docsSidebar"
             },
             {
@@ -411,11 +381,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpevently/features",
-              "path": "/docs/plugins/wpevently/features",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wpevently/installation-setup",
               "path": "/docs/plugins/wpevently/installation-setup",
               "sidebar": "docsSidebar"
@@ -446,11 +411,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wpevently/video-tutorials",
-              "path": "/docs/plugins/wpevently/video-tutorials",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wprently/available-addons",
               "path": "/docs/plugins/wprently/available-addons",
               "sidebar": "docsSidebar"
@@ -458,11 +418,6 @@
             {
               "id": "plugins/wprently/faq",
               "path": "/docs/plugins/wprently/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wprently/features",
-              "path": "/docs/plugins/wprently/features",
               "sidebar": "docsSidebar"
             },
             {
@@ -503,11 +458,6 @@
             {
               "id": "plugins/wptravelly/faq",
               "path": "/docs/plugins/wptravelly/faq",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "plugins/wptravelly/features",
-              "path": "/docs/plugins/wptravelly/features",
               "sidebar": "docsSidebar"
             },
             {

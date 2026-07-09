@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "Shahadat",
   "lastUpdatedAt": 1783494863000,
-  "sidebarPosition": 6,
+  "sidebarPosition": 8,
   "frontMatter": {
     "title": "FAQ",
     "description": "Frequently asked questions about the WpBusTicketly bus booking plugin.",
-    "sidebar_position": 6
+    "sidebar_position": 8
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Available Addons",
-    "permalink": "/docs/plugins/wpbusticketly/available-addons"
-  },
-  "next": {
     "title": "REST API",
     "permalink": "/docs/plugins/wpbusticketly/rest-api"
+  },
+  "next": {
+    "title": "WpRently",
+    "permalink": "/docs/category/wprently"
   }
 }

@@ -25,7 +25,7 @@
     "permalink": "/docs/plugins/wpevently/template-override"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/docs/plugins/wpevently/faq"
+    "title": "Hooks",
+    "permalink": "/docs/plugins/wpevently/developer-hooks"
   }
 }

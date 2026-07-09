@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "Shahadat",
-  "lastUpdatedAt": 1783502187000,
+  "lastUpdatedAt": 1783576687000,
   "sidebarPosition": 1,
   "frontMatter": {
     "title": "Overview",
@@ -25,7 +25,7 @@
     "permalink": "/docs/category/wpevently"
   },
   "next": {
-    "title": "Features",
-    "permalink": "/docs/plugins/wpevently/features"
+    "title": "Installation & Setup",
+    "permalink": "/docs/plugins/wpevently/installation-setup"
   }
 }
