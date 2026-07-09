@@ -64,6 +64,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
           server-dir: ${{ secrets.FTP_DIRECTORY }}
+          dangerous-clean-slate: true
           exclude: |
             **/.DS_Store
             **/Thumbs.db

@@ -39,6 +39,27 @@ const config = {
         searchBarPosition: 'right',
       },
     ],
+    function disableContentHash() {
+      return {
+        name: 'disable-content-hash',
+        configureWebpack(config, isServer) {
+          if (isServer) return;
+          const miniCss = config.plugins.find(
+            p => p.constructor.name === 'MiniCssExtractPlugin'
+          );
+          if (miniCss) {
+            miniCss.options.filename = 'static/css/[name].css';
+            miniCss.options.chunkFilename = 'static/css/[name].css';
+          }
+          return {
+            output: {
+              filename: 'static/js/[name].js',
+              chunkFilename: 'static/js/[name].js',
+            },
+          };
+        },
+      };
+    },
   ],
 
   presets: [
