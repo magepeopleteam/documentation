@@ -2,7 +2,7 @@
 # Deploy Documentation to cPanel via FTP
 # =============================================================================
 # Trigger:  GitHub Release published
-# Action:   Uploads all static files to public_html/docs/ on cPanel
+# Action:   Builds Docusaurus site and uploads output to public_html/docs/
 # =============================================================================
 
 name: Deploy to cPanel
@@ -26,35 +26,35 @@ jobs:
           ref: ${{ github.event.release.tag_name }}
 
       # ------------------------------------------------------------------
-      # 2. Verify the project structure looks correct
+      # 2. Install dependencies and build Docusaurus
       # ------------------------------------------------------------------
-      - name: Validate project structure
-        run: |
-          echo "=== Validating project structure ==="
-          if [ ! -f index.html ]; then
-            echo "::error::index.html not found — is this the documentation root?"
-            exit 1
-          fi
-          echo "  ✓ index.html found"
-          if [ ! -d plugins ]; then
-            echo "::error::plugins/ directory not found"
-            exit 1
-          fi
-          echo "  ✓ plugins/ directory found"
-          if [ ! -f style.css ]; then
-            echo "::error::style.css not found"
-            exit 1
-          fi
-          echo "  ✓ style.css found"
-          echo "=== Validation passed ==="
-          echo ""
-          echo "--- Top-level contents ---"
-          ls -la
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus site
+        run: npm run build
 
       # ------------------------------------------------------------------
-      # 3. Deploy via FTP using SamKirkland's FTP Deploy Action
-      #    Only changed files are transferred; unrelated remote files are
-      #    left untouched (no --dangerous-clean-slash).
+      # 3. Verify the build output exists
+      # ------------------------------------------------------------------
+      - name: Validate build output
+        run: |
+          echo "=== Validating build output ==="
+          if [ ! -f build/index.html ]; then
+            echo "::error::build/index.html not found"
+            exit 1
+          fi
+          echo "  ✓ build/index.html found"
+          echo "=== Validation passed ==="
+
+      # ------------------------------------------------------------------
+      # 4. Deploy via FTP using SamKirkland's FTP Deploy Action
       # ------------------------------------------------------------------
       - name: Upload files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -62,15 +62,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ${{ secrets.FTP_DIRECTORY }}  # e.g. public_html/
+          local-dir: build/
+          server-dir: ${{ secrets.FTP_DIRECTORY }}
           exclude: |
-            **/.git/**
-            **/.gitignore
-            **/.github/**
-            **/.opencode/**
-            **/node_modules/**
             **/.DS_Store
             **/Thumbs.db
-            **/*.md
-            **/LICENSE
