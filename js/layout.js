@@ -728,9 +728,11 @@ function renderDocsSidebarCouponly(activePage, hideBackLink) {
 }
 
 function DeposityDocsSidebar({ activePage, hideBackLink }) {
+  // DEPRECATED: This file references old static HTML paths.
+  // The site now uses Docusaurus at /docs/plugins/wpdepositly/
   var [sidebarOpen, setSidebarOpen] = React.useState(false);
   var root = getSiteRoot();
-  var base = root + '/plugins/wpdeposity/';
+  var base = root + '/plugins/wpdepositly/';
   var links = [
     { href: base + 'index.html#installation-setup', label: 'Installation & Setup' },
     { href: base + 'index.html#shortcode-guidelines', label: 'Shortcode Guidelines' },
