@@ -60,42 +60,6 @@
   color: #94a3b8;
 }
 
-.stats {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.15rem;
-}
-
-.statValue {
-  font-size: 1.5rem;
-  font-weight: 800;
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  color: #2563eb;
-}
-
-[data-theme='dark'] .statValue {
-  color: #60a5fa;
-}
-
-.statLabel {
-  font-size: 0.8rem;
-  color: #9a9183;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-[data-theme='dark'] .statLabel {
-  color: #64748b;
-}
-
 .section {
   padding: 3rem 0;
   background: #f7f4ee;
@@ -111,159 +75,319 @@
   padding: 0 2rem;
 }
 
-/* List-style plugin table */
-.pluginList {
+/* Summary inline */
+.summaryInline {
   display: flex;
-  flex-direction: column;
-  border: 1px solid #e2dccc;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-[data-theme='dark'] .pluginList {
-  border-color: #334155;
-}
-
-.listHeader {
-  display: grid;
-  grid-template-columns: 48px 1fr 100px 200px;
+  align-items: center;
+  justify-content: center;
   gap: 0;
-  padding: 0.6rem 1rem;
-  background: #efeade;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.summaryItem {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   color: #6b6356;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-[data-theme='dark'] .listHeader {
-  background: #1e293b;
-  color: #94a3b8;
-}
-
-.listRow {
-  display: grid;
-  grid-template-columns: 48px 1fr 100px 200px;
-  gap: 0;
-  padding: 0.75rem 1rem;
-  align-items: center;
-  border-top: 1px solid #e2dccc;
-  background: #fffdf8;
-  transition: background 0.15s;
-}
-
-[data-theme='dark'] .listRow {
-  background: #1e293b;
-  border-color: #334155;
-}
-
-.listRow:hover {
-  background: #f8f6f0;
-}
-
-[data-theme='dark'] .listRow:hover {
-  background: #263348;
-}
-
-.colIcon {
-  display: flex;
-  align-items: center;
-}
-
-.colPlugin {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  min-width: 0;
-}
-
-.colAddons {
-  display: flex;
-  align-items: center;
-}
-
-.colActions {
-  display: flex;
-  gap: 0.4rem;
-  justify-content: flex-end;
-}
-
-.pluginIcon {
-  width: 36px;
-  height: 36px;
-  border-radius: 4px;
-  display: block;
-}
-
-.pluginName {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #211c12;
-  text-decoration: none;
-  line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  padding: 0 1.2rem;
   white-space: nowrap;
 }
 
-.pluginName:hover {
+.summaryItem strong {
+  font-size: 1.5rem;
   color: #2563eb;
-  text-decoration: underline;
+  font-weight: 800;
 }
 
-[data-theme='dark'] .pluginName {
-  color: #f1f5f9;
-}
-
-[data-theme='dark'] .pluginName:hover {
-  color: #60a5fa;
-}
-
-.pluginSub {
-  font-size: 0.8rem;
-  color: #9a9183;
-  line-height: 1.3;
-}
-
-[data-theme='dark'] .pluginSub {
-  color: #64748b;
-}
-
-.pluginVersion {
-  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 0.75rem;
-  color: #6b6356;
-  background: #efeade;
-  display: inline-block;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  width: fit-content;
-}
-
-[data-theme='dark'] .pluginVersion {
+[data-theme='dark'] .summaryItem {
   color: #94a3b8;
+}
+
+.summarySep {
+  width: 1px;
+  height: 1.2rem;
+  background: #e2dccc;
+}
+
+[data-theme='dark'] .summarySep {
   background: #334155;
 }
 
-.addonCount {
+/* Board (plugin list) */
+.board {
+  border: 1px solid #e2dccc;
+  background: #fffdf8;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .board {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.boardHead {
+  display: grid;
+  grid-template-columns: 70px 1fr 110px 90px 105px;
+  column-gap: 8px;
+  padding: 10px 20px;
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 0.78rem;
-  color: #0d8f7e;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #9a9183;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2dccc;
 }
 
-[data-theme='dark'] .addonCount {
-  color: #2dd4bf;
+[data-theme='dark'] .boardHead {
+  color: #64748b;
+  border-color: #334155;
 }
 
+.boardHead span:nth-child(3) {
+  text-align: center;
+}
+
+.boardHead span:last-child {
+  text-align: right;
+}
+
+.boardRow {
+  display: grid;
+  grid-template-columns: 70px 1fr 110px 90px 105px;
+  align-items: center;
+  column-gap: 8px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2dccc;
+  color: #211c12;
+  transition: background 0.15s ease;
+}
+
+.boardRow:last-child {
+  border-bottom: none;
+}
+
+.boardRow:hover {
+  background: #efeade;
+}
+
+[data-theme='dark'] .boardRow {
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+[data-theme='dark'] .boardRow:hover {
+  background: #263348;
+}
+
+.boardCode {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boardIcon {
+  width: 56px;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.boardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.boardDest {
+  font-weight: 600;
+  font-size: 14.5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.boardDest:hover {
+  text-decoration: underline;
+}
+
+.boardSub {
+  font-weight: 400;
+  font-size: 12px;
+  color: #9a9183;
+  margin-top: 2px;
+}
+
+[data-theme='dark'] .boardSub {
+  color: #64748b;
+}
+
+.boardVersion {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+[data-theme='dark'] .boardVersion {
+  color: #94a3b8;
+}
+
+.freeBadge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid #e2dccc;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  line-height: 1.4;
+  color: #6b6356;
+  margin-left: 6px;
+}
+
+[data-theme='dark'] .freeBadge {
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.proBadge {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #16a34a;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  vertical-align: middle;
+  margin-left: 3px;
+  line-height: 1.4;
+}
+
+.boardActions {
+  display: contents;
+}
+
+.countWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.countLink {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #f7f4ee;
+  color: #6b6356;
+  border: 1px solid #e2dccc;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.countLink:hover {
+  background: rgba(181, 102, 10, 0.14);
+  border-color: #b5660a;
+  color: #b5660a;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .countLink {
+  background: #0f172a;
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .countLink:hover {
+  background: rgba(251, 191, 36, 0.14);
+  border-color: #fbbf24;
+  color: #fbbf24;
+}
+
+.btnGroup {
+  display: contents;
+}
+
+.buyBtn {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 6px;
+  background: transparent;
+  color: #6b6356;
+  border: 1px solid #e2dccc;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  justify-self: center;
+  grid-column: 4;
+}
+
+.buyBtn:hover {
+  background: #efeade;
+  color: #211c12;
+  border-color: #9a9183;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .buyBtn {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .buyBtn:hover {
+  background: #1e293b;
+  color: #f1f5f9;
+  border-color: #64748b;
+}
+
+.goBtn {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  padding: 7px 14px;
+  justify-self: end;
+  grid-column: 5;
+}
+
+.goBtn:hover {
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .goBtn {
+  background: #3b82f6;
+}
+
+[data-theme='dark'] .goBtn:hover {
+  background: #2563eb;
+}
+
+/* Buy/Read buttons (reused in addon sections) */
 .buyButton {
   display: inline-flex;
   align-items: center;
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 0.72rem;
+  font-size: 12px;
   font-weight: 600;
   color: #6b6356;
-  padding: 0.35rem 0.7rem;
+  padding: 7px 14px;
   border: 1px solid #e2dccc;
   border-radius: 6px;
   text-decoration: none;
@@ -291,11 +415,11 @@
   display: inline-flex;
   align-items: center;
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-  font-size: 0.72rem;
+  font-size: 12px;
   font-weight: 600;
   color: #fff;
   background: #2563eb;
-  padding: 0.35rem 0.7rem;
+  padding: 7px 14px;
   border: 1px solid #2563eb;
   border-radius: 6px;
   text-decoration: none;
@@ -304,9 +428,384 @@
 }
 
 .readButton:hover {
-  background: var(--ifm-color-primary-dark);
+  background: #1d4ed8;
   color: #fff;
   text-decoration: none;
+}
+
+[data-theme='dark'] .readButton {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+
+[data-theme='dark'] .readButton:hover {
+  background: #2563eb;
+}
+
+/* Addon sections (ticket style) */
+.addonSection {
+  scroll-margin-top: 84px;
+  margin-top: 56px;
+}
+
+.ticket {
+  border: 1px solid #e2dccc;
+  background: #fffdf8;
+  border-radius: 2px;
+}
+
+[data-theme='dark'] .ticket {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.ticketHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 26px 22px;
+  flex-wrap: wrap;
+}
+
+.ticketId {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 13px;
+  color: #2563eb;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.ticketHead h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #211c12;
+}
+
+[data-theme='dark'] .ticketHead h2 {
+  color: #f1f5f9;
+}
+
+.ticketSubTitle {
+  font-weight: 400;
+}
+
+.ticketHead p {
+  margin: 0;
+  color: #6b6356;
+  font-size: 16px;
+  max-width: 520px;
+}
+
+[data-theme='dark'] .ticketHead p {
+  color: #94a3b8;
+}
+
+.ticketMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.ticketAddonCount {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #9a9183;
+  text-transform: uppercase;
+}
+
+.ticketAddonCountValue {
+  color: #211c12;
+  font-size: 16px;
+  display: block;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+[data-theme='dark'] .ticketAddonCountValue {
+  color: #f1f5f9;
+}
+
+.toggleAll {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  background: transparent;
+  border: 1px solid #e2dccc;
+  padding: 6px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.toggleAll:hover {
+  color: #b5660a;
+  border-color: #8c4e08;
+}
+
+[data-theme='dark'] .toggleAll {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .toggleAll:hover {
+  color: #f59e0b;
+  border-color: #d97706;
+}
+
+.perforation {
+  position: relative;
+  height: 1px;
+  background: repeating-linear-gradient(to right, #e2dccc 0 8px, transparent 8px 16px);
+  margin: 0;
+}
+
+[data-theme='dark'] .perforation {
+  background: repeating-linear-gradient(to right, #334155 0 8px, transparent 8px 16px);
+}
+
+.perforation::before,
+.perforation::after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f7f4ee;
+  border: 1px solid #e2dccc;
+}
+
+[data-theme='dark'] .perforation::before,
+[data-theme='dark'] .perforation::after {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.perforation::before {
+  left: -9px;
+}
+
+.perforation::after {
+  right: -9px;
+}
+
+/* Addon list */
+.addonList {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+}
+
+.addonItem {
+  border-bottom: 1px solid #e2dccc;
+}
+
+.addonItem:last-child {
+  border-bottom: none;
+}
+
+[data-theme='dark'] .addonItem {
+  border-color: #334155;
+}
+
+.addonListHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 26px;
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #9a9183;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e2dccc;
+  background: #fffdf8;
+  user-select: none;
+}
+
+[data-theme='dark'] .addonListHead {
+  color: #64748b;
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.addonListHeadCode {
+  flex: 0 0 40px;
+}
+
+.addonListHeadName {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+
+.headGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  width: 310px;
+  margin-left: auto;
+}
+
+.headTypeLabel {
+  font-weight: 600;
+}
+
+/* Addon row */
+.addonRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 26px;
+  background: transparent;
+  border: none;
+  color: #211c12;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.addonRow:hover {
+  background: #efeade;
+}
+
+[data-theme='dark'] .addonRow {
+  color: #f1f5f9;
+}
+
+[data-theme='dark'] .addonRow:hover {
+  background: #263348;
+}
+
+.addonCode {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+  color: #9a9183;
+  flex: 0 0 40px;
+}
+
+[data-theme='dark'] .addonCode {
+  color: #64748b;
+}
+
+.addonNameWrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.addonNameLink {
+  font-weight: 600;
+  font-size: 14.5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.addonNameLink:hover {
+  text-decoration: underline;
+}
+
+.addonBadge {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.15);
+  padding: 2px 9px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+[data-theme='dark'] .addonBadge {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
+}
+
+.addonVersion {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  color: #6b6356;
+  letter-spacing: 0.04em;
+  display: table;
+  margin-top: 4px;
+}
+
+[data-theme='dark'] .addonVersion {
+  color: #94a3b8;
+}
+
+.addonTag {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #b5660a;
+  background: rgba(181, 102, 10, 0.12);
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 0 0 100px;
+  text-align: center;
+  white-space: nowrap;
+  align-self: center;
+}
+
+[data-theme='dark'] .addonTag {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+}
+
+.addonActions {
+  display: inline-flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.chevron {
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #9a9183;
+  border-bottom: 2px solid #9a9183;
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease;
+}
+
+.chevronExpanded {
+  transform: rotate(45deg);
+}
+
+[data-theme='dark'] .chevron {
+  border-color: #64748b;
+}
+
+.addonPanel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.addonPanelOpen {
+  max-height: 300px;
+}
+
+.addonPanelInner {
+  padding: 0 26px 18px 106px;
+  color: #6b6356;
+  font-size: 15px;
+  max-width: 640px;
+}
+
+[data-theme='dark'] .addonPanelInner {
+  color: #94a3b8;
 }
 
 @media (max-width: 768px) {
@@ -322,34 +821,170 @@
     gap: 1.5rem;
   }
 
-  .listHeader {
+  .boardHead {
     display: none;
   }
 
-  .listRow {
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: auto auto;
-    gap: 0.5rem;
-    padding: 0.75rem;
+  .boardRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      'logo name'
+      '.    acts';
+    align-items: center;
+    gap: 6px 10px;
+    padding: 16px;
   }
 
-  .colIcon {
-    grid-row: 1 / 3;
+  .boardCode {
+    grid-area: logo;
   }
 
-  .colPlugin {
-    grid-column: 2;
-    grid-row: 1;
+  .boardCode .boardIcon {
+    width: 56px;
   }
 
-  .colAddons {
-    grid-column: 2;
-    grid-row: 2;
+  .boardInfo {
+    grid-area: name;
+    min-width: 0;
   }
 
-  .colActions {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    justify-content: flex-start;
+  .boardActions {
+    grid-area: acts;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-items: center;
+  }
+
+  .countWrap {
+    white-space: nowrap;
+  }
+
+  .btnGroup {
+    display: inline-flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+    margin-left: auto;
+  }
+
+  .buyBtn,
+  .goBtn {
+    font-size: 11px;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+
+  .summaryInline {
+    gap: 0;
+  }
+
+  .summaryItem {
+    font-size: 0.75rem;
+    padding: 0 0.8rem;
+  }
+
+  .summaryItem strong {
+    font-size: 1.3rem;
+  }
+
+  .ticketHead {
+    padding: 20px 18px 18px;
+    gap: 16px;
+  }
+
+  .ticketHead h2 {
+    font-size: 20px;
+  }
+
+  .ticketHead p {
+    font-size: 15px;
+  }
+
+  .addonListHead {
+    display: none;
+  }
+
+  .addonRow {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      'code name tag'
+      'code btns chev';
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 7px;
+    padding: 12px 14px;
+  }
+
+  .addonCode {
+    grid-area: code;
+    align-self: start;
+    padding-top: 2px;
+    flex: none;
+  }
+
+  .addonNameWrap {
+    grid-area: name;
+    min-width: 0;
+  }
+
+  .addonNameLink {
+    font-size: 14.5px;
+  }
+
+  .addonActions {
+    grid-area: btns;
+    justify-self: start;
+    align-self: center;
+    margin-left: 0;
+  }
+
+  .addonActions .buyButton,
+  .addonActions .readButton {
+    font-size: 11.5px;
+    padding: 6px 8px;
+    white-space: nowrap;
+  }
+
+  .addonTag {
+    grid-area: tag;
+    justify-self: start;
+    align-self: center;
+    flex: none;
+  }
+
+  .chevron {
+    grid-area: chev;
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+    transform: rotate(45deg);
+  }
+
+  .chevronExpanded {
+    transform: rotate(-135deg);
+  }
+
+  .addonPanelInner {
+    padding: 0 14px 14px;
+  }
+
+  .ticketMeta {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .ticketAddonCount {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+
+  .ticketAddonCountValue {
+    display: inline;
+    font-size: 14px;
   }
 }
