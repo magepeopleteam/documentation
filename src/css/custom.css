@@ -74,6 +74,8 @@
   .navbar__items:first-child {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
   }
 
   .navbar__items--right {
@@ -91,6 +93,12 @@
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  /* Ensure search flows after Addons link in center */
+  [class*="navbarSearchContainer"] {
+    display: flex;
+    align-items: center;
   }
 }
 

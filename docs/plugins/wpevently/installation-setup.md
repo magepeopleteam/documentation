@@ -34,10 +34,3 @@ You have three options to install WooCommerce Event Manager.
 
 <video src="/video/plugins/wpevently/ftp.webm" controls width="100%" class="doc-video"></video>
 
-## Pro Version Installation
-
-Download the plugin zip from your account after purchasing, then:
-
-1. Go to **Plugins → Add New**, click **Upload Plugin**, choose the zip, and click **Install Now**.
-2. Activate the plugin from the installation or **Plugins** page.
-3. Install and activate the **PDF Support** plugin for generating PDF tickets.

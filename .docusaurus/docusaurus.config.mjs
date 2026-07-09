@@ -59,6 +59,16 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "plugins": [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        "hashed": true,
+        "docsRouteBasePath": "docs",
+        "searchBarPosition": "right"
+      }
+    ]
+  ],
   "presets": [
     [
       "classic",
@@ -438,7 +448,6 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],
