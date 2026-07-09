@@ -1,0 +1,13 @@
+diff --git a/node_modules/@docusaurus/utils/lib/vcs/gitUtils.js b/node_modules/@docusaurus/utils/lib/vcs/gitUtils.js
+index f094096..aafe5d0 100644
+--- a/node_modules/@docusaurus/utils/lib/vcs/gitUtils.js
++++ b/node_modules/@docusaurus/utils/lib/vcs/gitUtils.js
+@@ -278,7 +278,7 @@ async function getGitRepositoryFilesInfo(cwd) {
+         // The git command we want to run
+         'log',
+         // Format each history entry as t:<seconds since epoch>
+-        '--format=t:%ct,a:%an',
++        '--format=t:%ct,a:%aN',
+         // In each entry include the name and status for each modified file
+         '--name-status',
+         // For creation info, should we use --follow --find-renames=100% ???
