@@ -62,7 +62,7 @@ Integrate the Bus Ticket Booking plugin with external applications using availab
 Extend the Bus Ticket Booking plugin with powerful addons for QR codes and the Pro version with advanced features.
 
 - [Bus Booking with Seat Reservation Pro](/docs/plugins/wpbusticketly/available-addons)
-- [QR Code Addon](/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview)
+- [QR Code Addon](/docs/addons/wpbusticketly/qr-code)
 - Enable PDF ticketing and custom emailing
 - Access advanced reporting and passenger management
 

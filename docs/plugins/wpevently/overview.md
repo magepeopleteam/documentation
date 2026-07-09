@@ -13,7 +13,7 @@ WPEvently (formerly WooCommerce Event Manager) is a comprehensive event manageme
 Install the WooCommerce Event Manager plugin via automatic install, zip upload, or FTP, then activate your license to get started.
 
 - [Plugin Installation](/docs/plugins/wpevently/installation-setup) — Install via WordPress admin, zip file, or FTP
-- [Pro Version](/docs/plugins/wpevently/installation-setup#pro-version-installation) — Install the Pro version and activate your license
+- [Pro Version](/docs/getting-started/installation#pro-version-installation) — Install the Pro version and activate your license
 - Ensure PHP 7.4+ and WordPress 5.8+ for compatibility
 - Configure permalinks to use the Post name setting
 
