@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'e44'),
+    component: ComponentCreator('/docs', 'ddc'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '402'),
+        component: ComponentCreator('/docs', 'f61'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '326'),
+            component: ComponentCreator('/docs', '7e8'),
             routes: [
               {
                 path: '/docs/addons/ecab',
@@ -411,7 +411,7 @@ export default [
               },
               {
                 path: '/docs/plugins/ecab/overview',
-                component: ComponentCreator('/docs/plugins/ecab/overview', '7f5'),
+                component: ComponentCreator('/docs/plugins/ecab/overview', 'b98'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -483,7 +483,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpbusticketly/faq',
-                component: ComponentCreator('/docs/plugins/wpbusticketly/faq', '7fe'),
+                component: ComponentCreator('/docs/plugins/wpbusticketly/faq', 'dfd'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -549,7 +549,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpevently/developer-hooks',
-                component: ComponentCreator('/docs/plugins/wpevently/developer-hooks', 'a43'),
+                component: ComponentCreator('/docs/plugins/wpevently/developer-hooks', 'e7b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -561,7 +561,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wpevently/faq',
-                component: ComponentCreator('/docs/plugins/wpevently/faq', 'b7c'),
+                component: ComponentCreator('/docs/plugins/wpevently/faq', 'e07'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -609,7 +609,7 @@ export default [
               },
               {
                 path: '/docs/plugins/wprently/faq',
-                component: ComponentCreator('/docs/plugins/wprently/faq', '83d'),
+                component: ComponentCreator('/docs/plugins/wprently/faq', '65c'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
