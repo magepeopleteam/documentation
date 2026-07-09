@@ -48,17 +48,17 @@
       "plugin": "plugin---search-138-688"
     }
   },
-  "/docs-314": {
+  "/docs-379": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-713": {
+  "/docs-a7e": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-e15": {
+  "/docs-c13": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/addons/ecab-1fc": {
@@ -213,26 +213,6 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-addonsf-61-0b6"
   },
-  "/docs/category/addons-1-22e": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-addons-1-eef-e48"
-  },
-  "/docs/category/addons-2-e6f": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-addons-24-a-7-a56"
-  },
-  "/docs/category/addons-3-d45": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-addons-3471-643"
-  },
-  "/docs/category/addons-4-e0f": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-addons-456-e-a6c"
-  },
-  "/docs/category/admin-backend-order-573": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-admin-backend-ordere-69-948"
-  },
   "/docs/category/advanced-discount-coupon-and-store-credit-590": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-advanced-discount-coupon-and-store-credit-352-867"
@@ -249,25 +229,9 @@
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-getting-startedc-26-887"
   },
-  "/docs/category/min-and-max-booking-limit-653": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-min-and-max-booking-limit-4-f-6-3f3"
-  },
-  "/docs/category/multi-day-discount-pricing-044": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-multi-day-discount-pricing-0-a-9-acd"
-  },
   "/docs/category/plugins-586": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-plugins-821-ff7"
-  },
-  "/docs/category/pricing-discount-over-x-days-7a0": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-pricing-discount-over-x-days-467-ef1"
-  },
-  "/docs/category/seasonal-pricing-management-0d2": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-seasonal-pricing-management-6-e-4-a8d"
   },
   "/docs/category/wpbookingly-114": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -357,14 +321,6 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-car-rental-vehicle-managementda-2-a30"
   },
-  "/docs/plugins/ecab/addons/distance-tier-pricing/overview-f16": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-ecab-addons-distance-tier-pricing-overview-325-1ab"
-  },
-  "/docs/plugins/ecab/addons/peak-hour-pricing/overview-b63": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-ecab-addons-peak-hour-pricing-overview-4-c-8-a2a"
-  },
   "/docs/plugins/ecab/faq-bce": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-ecab-faq-954-fa1"
@@ -424,10 +380,6 @@
   "/docs/plugins/wpbookingly/staff-scheduling-3ee": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wpbookingly-staff-scheduling-6-fc-9c9"
-  },
-  "/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview-b07": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wpbusticketly-addons-woocommerce-bus-qr-code-overview-0-a-3-89b"
   },
   "/docs/plugins/wpbusticketly/available-addons-165": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -529,26 +481,6 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wpevently-video-tutorials-6-a-1-460"
   },
-  "/docs/plugins/wprently/addons/admin-backend-order/overview-296": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wprently-addons-admin-backend-order-overview-3-b-2-50c"
-  },
-  "/docs/plugins/wprently/addons/min-max-booking-limit/overview-e00": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wprently-addons-min-max-booking-limit-overviewd-4-a-4b9"
-  },
-  "/docs/plugins/wprently/addons/multi-day-discount-pricing/overview-2fa": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wprently-addons-multi-day-discount-pricing-overview-4-f-8-ccb"
-  },
-  "/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview-445": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wprently-addons-pricing-discount-over-x-days-overviewfd-7-a90"
-  },
-  "/docs/plugins/wprently/addons/seasonal-pricing-management/overview-67e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wprently-addons-seasonal-pricing-management-overview-194-9b8"
-  },
   "/docs/plugins/wprently/available-addons-44d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wprently-available-addons-475-f7f"
@@ -584,42 +516,6 @@
   "/docs/plugins/wprently/shortcodes-edc": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-plugins-wprently-shortcodes-4-c-9-391"
-  },
-  "/docs/plugins/wptravelly/addons/backend-order/overview-63c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-backend-order-overviewe-97-cc0"
-  },
-  "/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview-0b4": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-buy-x-get-y-free-overviewe-80-dbf"
-  },
-  "/docs/plugins/wptravelly/addons/early-bird-pricing/overview-51e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-early-bird-pricing-overviewe-12-685"
-  },
-  "/docs/plugins/wptravelly/addons/group-bulk-pricing/overview-979": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-group-bulk-pricing-overviewc-5-b-524"
-  },
-  "/docs/plugins/wptravelly/addons/group-ticket-quantity/overview-b67": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-group-ticket-quantity-overviewd-1-c-140"
-  },
-  "/docs/plugins/wptravelly/addons/max-min-booking/overview-96b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-max-min-booking-overviewf-51-32f"
-  },
-  "/docs/plugins/wptravelly/addons/qr-code/overview-91f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-qr-code-overview-986-bf4"
-  },
-  "/docs/plugins/wptravelly/addons/seasonal-pricing/overview-61f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-seasonal-pricing-overviewc-70-c94"
-  },
-  "/docs/plugins/wptravelly/addons/seat-plan/overview-c09": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-plugins-wptravelly-addons-seat-plan-overview-176-82f"
   },
   "/docs/plugins/wptravelly/elementor-integration-f1f": {
     "__comp": "__comp---theme-doc-item-178-a40",

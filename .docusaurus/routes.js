@@ -44,15 +44,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '314'),
+    component: ComponentCreator('/docs', '379'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '713'),
+        component: ComponentCreator('/docs', 'a7e'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'e15'),
+            component: ComponentCreator('/docs', 'c13'),
             routes: [
               {
                 path: '/docs/addons/ecab',
@@ -283,36 +283,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/category/addons-1',
-                component: ComponentCreator('/docs/category/addons-1', '22e'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/addons-2',
-                component: ComponentCreator('/docs/category/addons-2', 'e6f'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/addons-3',
-                component: ComponentCreator('/docs/category/addons-3', 'd45'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/addons-4',
-                component: ComponentCreator('/docs/category/addons-4', 'e0f'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/admin-backend-order',
-                component: ComponentCreator('/docs/category/admin-backend-order', '573'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/category/advanced-discount-coupon-and-store-credit',
                 component: ComponentCreator('/docs/category/advanced-discount-coupon-and-store-credit', '590'),
                 exact: true,
@@ -337,32 +307,8 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/category/min-and-max-booking-limit',
-                component: ComponentCreator('/docs/category/min-and-max-booking-limit', '653'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/multi-day-discount-pricing',
-                component: ComponentCreator('/docs/category/multi-day-discount-pricing', '044'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/category/plugins',
                 component: ComponentCreator('/docs/category/plugins', '586'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/pricing-discount-over-x-days',
-                component: ComponentCreator('/docs/category/pricing-discount-over-x-days', '7a0'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/category/seasonal-pricing-management',
-                component: ComponentCreator('/docs/category/seasonal-pricing-management', '0d2'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -499,18 +445,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/ecab/addons/distance-tier-pricing/overview',
-                component: ComponentCreator('/docs/plugins/ecab/addons/distance-tier-pricing/overview', 'f16'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/ecab/addons/peak-hour-pricing/overview',
-                component: ComponentCreator('/docs/plugins/ecab/addons/peak-hour-pricing/overview', 'b63'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/ecab/faq',
                 component: ComponentCreator('/docs/plugins/ecab/faq', 'bce'),
                 exact: true,
@@ -597,12 +531,6 @@ export default [
               {
                 path: '/docs/plugins/wpbookingly/staff-scheduling',
                 component: ComponentCreator('/docs/plugins/wpbookingly/staff-scheduling', '3ee'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview',
-                component: ComponentCreator('/docs/plugins/wpbusticketly/addons/woocommerce-bus-qr-code/overview', 'b07'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -757,36 +685,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/plugins/wprently/addons/admin-backend-order/overview',
-                component: ComponentCreator('/docs/plugins/wprently/addons/admin-backend-order/overview', '296'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wprently/addons/min-max-booking-limit/overview',
-                component: ComponentCreator('/docs/plugins/wprently/addons/min-max-booking-limit/overview', 'e00'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wprently/addons/multi-day-discount-pricing/overview',
-                component: ComponentCreator('/docs/plugins/wprently/addons/multi-day-discount-pricing/overview', '2fa'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview',
-                component: ComponentCreator('/docs/plugins/wprently/addons/pricing-discount-over-x-days/overview', '445'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wprently/addons/seasonal-pricing-management/overview',
-                component: ComponentCreator('/docs/plugins/wprently/addons/seasonal-pricing-management/overview', '67e'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/plugins/wprently/available-addons',
                 component: ComponentCreator('/docs/plugins/wprently/available-addons', '44d'),
                 exact: true,
@@ -837,60 +735,6 @@ export default [
               {
                 path: '/docs/plugins/wprently/shortcodes',
                 component: ComponentCreator('/docs/plugins/wprently/shortcodes', 'edc'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/backend-order/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/backend-order/overview', '63c'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/buy-x-get-y-free/overview', '0b4'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/early-bird-pricing/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/early-bird-pricing/overview', '51e'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/group-bulk-pricing/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/group-bulk-pricing/overview', '979'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/group-ticket-quantity/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/group-ticket-quantity/overview', 'b67'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/max-min-booking/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/max-min-booking/overview', '96b'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/qr-code/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/qr-code/overview', '91f'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/seasonal-pricing/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/seasonal-pricing/overview', '61f'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/plugins/wptravelly/addons/seat-plan/overview',
-                component: ComponentCreator('/docs/plugins/wptravelly/addons/seat-plan/overview', 'c09'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
