@@ -36,6 +36,9 @@
       "type": "package",
       "name": "@easyops-cn/docusaurus-search-local",
       "version": "0.55.2"
+    },
+    "disable-content-hash": {
+      "type": "local"
     }
   }
 }

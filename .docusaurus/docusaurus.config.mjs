@@ -67,7 +67,8 @@ export default {
         "docsRouteBasePath": "docs",
         "searchBarPosition": "right"
       }
-    ]
+    ],
+    null
   ],
   "presets": [
     [
