@@ -171,16 +171,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "getting-started/elementor-integration",
-              "path": "/docs/getting-started/elementor-integration",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "getting-started/email-configuration",
-              "path": "/docs/getting-started/email-configuration",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "getting-started/installation",
               "path": "/docs/getting-started/installation",
               "sidebar": "docsSidebar"
@@ -188,11 +178,6 @@
             {
               "id": "getting-started/license-activation",
               "path": "/docs/getting-started/license-activation",
-              "sidebar": "docsSidebar"
-            },
-            {
-              "id": "getting-started/troubleshooting",
-              "path": "/docs/getting-started/troubleshooting",
               "sidebar": "docsSidebar"
             },
             {

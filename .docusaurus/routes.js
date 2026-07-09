@@ -4,15 +4,15 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '232'),
+    component: ComponentCreator('/docs', '388'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'bfe'),
+        component: ComponentCreator('/docs', 'ff7'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'e12'),
+            component: ComponentCreator('/docs', 'e30'),
             routes: [
               {
                 path: '/docs/addons/ecab',
@@ -363,18 +363,6 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
-                path: '/docs/getting-started/elementor-integration',
-                component: ComponentCreator('/docs/getting-started/elementor-integration', 'de9'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/getting-started/email-configuration',
-                component: ComponentCreator('/docs/getting-started/email-configuration', '41c'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
                 path: '/docs/getting-started/installation',
                 component: ComponentCreator('/docs/getting-started/installation', 'd43'),
                 exact: true,
@@ -383,12 +371,6 @@ export default [
               {
                 path: '/docs/getting-started/license-activation',
                 component: ComponentCreator('/docs/getting-started/license-activation', '2c8'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/docs/getting-started/troubleshooting',
-                component: ComponentCreator('/docs/getting-started/troubleshooting', 'eca'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

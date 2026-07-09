@@ -1,15 +1,15 @@
 {
-  "/docs-232": {
+  "/docs-388": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-bfe": {
+  "/docs-ff7": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-e12": {
+  "/docs-e30": {
     "__comp": "a94703ab"
   },
   "/docs/addons/ecab-1fc": {
@@ -244,14 +244,6 @@
     "__comp": "14eb3368",
     "__props": "c4ef5fb3"
   },
-  "/docs/getting-started/elementor-integration-de9": {
-    "__comp": "17896441",
-    "content": "d71b555e"
-  },
-  "/docs/getting-started/email-configuration-41c": {
-    "__comp": "17896441",
-    "content": "4e9d0f17"
-  },
   "/docs/getting-started/installation-d43": {
     "__comp": "17896441",
     "content": "54f44165"
@@ -259,10 +251,6 @@
   "/docs/getting-started/license-activation-2c8": {
     "__comp": "17896441",
     "content": "c55b45a3"
-  },
-  "/docs/getting-started/troubleshooting-eca": {
-    "__comp": "17896441",
-    "content": "ffb8877b"
   },
   "/docs/getting-started/woocommerce-setup-dc6": {
     "__comp": "17896441",
