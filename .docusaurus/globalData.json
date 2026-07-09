@@ -181,11 +181,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "getting-started/woocommerce-setup",
-              "path": "/docs/getting-started/woocommerce-setup",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/advanced-discount-coupon-store-credit/changelog",
               "path": "/docs/plugins/advanced-discount-coupon-store-credit/changelog",
               "sidebar": "docsSidebar"

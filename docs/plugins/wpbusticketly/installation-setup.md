@@ -43,7 +43,7 @@ After installing the Pro version, you must activate your license to receive auto
 - Ensure your site URL matches the registered domain
 - Check that the license key has no extra spaces or characters
 - Verify your server can make outbound HTTPS connections
-- Contact MagePeople support if activation persists in failing
+- [Contact MagePeople support](https://support.mage-people.com/portal/en/newticket) if activation persists in failing
 - Deactivate and reactivate the license if switching domains
 
 ## Required Plugins

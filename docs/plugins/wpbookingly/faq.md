@@ -184,4 +184,4 @@ sidebar_position: 7
 - Always back up your site before updating
 - Update addons at the same time as the core plugin
 - Clear WordPress and browser caches after updating
-- Contact MagePeople support if issues persist
+- [Contact MagePeople support](https://support.mage-people.com/portal/en/newticket) if issues persist

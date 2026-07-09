@@ -91,7 +91,7 @@ Quick answers to the most common questions about installing, configuring, and tr
 - Deactivate and reactivate WpTravelly
 - Ensure your license key is still valid and re-entered
 - Check the PHP version meets the minimum requirement
-- Contact MagePeople support with your system status report
+- [Contact MagePeople support](https://support.mage-people.com/portal/en/newticket) with your system status report
 
 ### Tour page layout is broken
 
@@ -104,7 +104,7 @@ Quick answers to the most common questions about installing, configuring, and tr
 ### How do I get support?
 
 - Free users: post on the WordPress.org plugin support forum
-- Pro users: open a ticket via your MagePeople account dashboard
+- Pro users: [open a ticket via your MagePeople account dashboard](https://support.mage-people.com/portal/en/newticket)
 - Include your WordPress system status and plugin version
 - Check the MagePeople documentation site for guides first
 

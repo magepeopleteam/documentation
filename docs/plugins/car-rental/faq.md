@@ -78,4 +78,4 @@ Cancellation options depend on your settings. You can allow or disallow customer
 
 ### Where can I get support if I have issues?
 
-Free version support is available on the WordPress.org plugin forum. Pro version customers receive priority support via the MagePeople ticket system.
+Free version support is available on the WordPress.org plugin forum. Pro version customers receive priority support via the [MagePeople ticket system](https://support.mage-people.com/portal/en/newticket).
