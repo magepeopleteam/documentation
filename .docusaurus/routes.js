@@ -9,15 +9,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'ddc'),
+    component: ComponentCreator('/docs', 'ac8'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'f61'),
+        component: ComponentCreator('/docs', '25a'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '7e8'),
+            component: ComponentCreator('/docs', '5e8'),
             routes: [
               {
                 path: '/docs/addons/ecab',
@@ -608,6 +608,12 @@ export default [
                 sidebar: "docsSidebar"
               },
               {
+                path: '/docs/plugins/wprently/developer-hooks',
+                component: ComponentCreator('/docs/plugins/wprently/developer-hooks', 'e0c'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
                 path: '/docs/plugins/wprently/faq',
                 component: ComponentCreator('/docs/plugins/wprently/faq', '65c'),
                 exact: true,
@@ -646,6 +652,12 @@ export default [
               {
                 path: '/docs/plugins/wprently/shortcodes',
                 component: ComponentCreator('/docs/plugins/wprently/shortcodes', '392'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/docs/plugins/wprently/template-override',
+                component: ComponentCreator('/docs/plugins/wprently/template-override', 'e98'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/developer-hooks",
+  "title": "Developer Hooks",
+  "description": "Extend WpRently using available action hooks and filters to customise output and behaviour.",
+  "source": "@site/docs/plugins/wprently/developer-hooks.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/developer-hooks",
+  "permalink": "/docs/plugins/wprently/developer-hooks",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/developer-hooks.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "title": "Developer Hooks",
+    "description": "Extend WpRently using available action hooks and filters to customise output and behaviour.",
+    "sidebar_position": 10
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Template Override",
+    "permalink": "/docs/plugins/wprently/template-override"
+  },
+  "next": {
+    "title": "FAQ",
+    "permalink": "/docs/plugins/wprently/faq"
+  }
+}

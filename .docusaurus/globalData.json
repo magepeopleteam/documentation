@@ -416,6 +416,11 @@
               "sidebar": "docsSidebar"
             },
             {
+              "id": "plugins/wprently/developer-hooks",
+              "path": "/docs/plugins/wprently/developer-hooks",
+              "sidebar": "docsSidebar"
+            },
+            {
               "id": "plugins/wprently/faq",
               "path": "/docs/plugins/wprently/faq",
               "sidebar": "docsSidebar"
@@ -448,6 +453,11 @@
             {
               "id": "plugins/wprently/shortcodes",
               "path": "/docs/plugins/wprently/shortcodes",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/template-override",
+              "path": "/docs/plugins/wprently/template-override",
               "sidebar": "docsSidebar"
             },
             {

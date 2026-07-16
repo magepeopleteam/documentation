@@ -5,17 +5,17 @@
       "plugin": "138e0e15"
     }
   },
-  "/docs-ddc": {
+  "/docs-ac8": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/docs-f61": {
+  "/docs-25a": {
     "__comp": "a7bd4aaa",
     "__props": "0058b4c6"
   },
-  "/docs-7e8": {
+  "/docs-5e8": {
     "__comp": "a94703ab"
   },
   "/docs/addons/ecab-1fc": {
@@ -410,6 +410,10 @@
     "__comp": "17896441",
     "content": "47569161"
   },
+  "/docs/plugins/wprently/developer-hooks-e0c": {
+    "__comp": "17896441",
+    "content": "cc49d837"
+  },
   "/docs/plugins/wprently/faq-65c": {
     "__comp": "17896441",
     "content": "15d39d5a"
@@ -437,6 +441,10 @@
   "/docs/plugins/wprently/shortcodes-392": {
     "__comp": "17896441",
     "content": "4c9b1bff"
+  },
+  "/docs/plugins/wprently/template-override-e98": {
+    "__comp": "17896441",
+    "content": "815f0c46"
   },
   "/docs/plugins/wptravelly/elementor-integration-e92": {
     "__comp": "17896441",
