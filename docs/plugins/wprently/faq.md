@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Frequently asked questions about WpRently — Booking and Rental Manager.
-sidebar_position: 8
+sidebar_position: 11
 ---
 
 # FAQ
