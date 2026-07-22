@@ -1,7 +1,7 @@
 ---
 title: Shortcodes
 description: WpRently shortcode guidelines and reference.
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # Shortcode Guidelines
@@ -19,19 +19,22 @@ The primary shortcode for displaying rental items. Renders a grid or list of ren
 | `style` | `grid`, `list` | `grid` | Display layout style |
 | `show` | Integer | `-1` | Number of items to display per page (`-1` shows all) |
 | `order` | `ASC`, `DESC` | `DESC` | Sort order |
-| `orderby` | `date`, `title`, `price`, `rand`, `menu_order` | `date` | Field to sort by |
-| `type` | `bike`, `car`, `resort`, `equipment`, `dress`, `others` | (empty) | Filter by rental type |
-| `meta_key` | String | (empty) | Custom meta key for advanced filtering |
+| `orderby` | `date`, `title`, `price`, `rand`, `menu_order` | (empty) | Field to sort by |
+| `type` | `bike_car_sd`, `bike_car_md`, `resort`, `equipment`, `dress`, `appointment` | (empty) | Filter by rental type (`bike_car_sd`/`bike_car_md` cover both bike and car items, for single-day and multi-day pricing respectively) |
+| `location` | String | (empty) | Filter by rental location |
+| `category` | String | (empty) | Filter by category (falls back to `cat_ids` if empty) |
 | `cat_ids` | String | (empty) | Comma-separated category IDs to filter by (e.g. `cat_ids='2,6'`) |
-| `columns` | `1` – `6` | `3` | Number of grid columns (grid style only) |
+| `meta_key` | String | (empty) | Custom meta key for advanced filtering |
+| `columns` | `1` – `6` | (empty) | Number of grid columns (grid style only) |
 | `pagination` | `yes`, `no` | `yes` | Show pagination |
-| `left-filter` | `yes`, `no` | `no` | Enable left sidebar filters |
-| `left-title-filter` | `on`, `off` | `off` | Show title search in left filter |
-| `left-price-filter` | `on`, `off` | `off` | Show price range filter in left filter |
-| `left-location-filter` | `on`, `off` | `off` | Show location filter in left filter |
-| `left-category-filter` | `on`, `off` | `off` | Show category filter in left filter |
-| `left-type-filter` | `on`, `off` | `off` | Show type filter in left filter |
-| `left-feature-filter` | `on`, `off` | `off` | Show feature filter in left filter |
+| `hide-price` | `yes`, `no` | `no` | Hide the price from the item card |
+| `left-filter` | `yes`, `no` | (empty) | Enable left sidebar filters |
+| `left-title-filter` | `on`, `off` | `on` | Show title search in left filter |
+| `left-price-filter` | `on`, `off` | `on` | Show price range filter in left filter |
+| `left-location-filter` | `on`, `off` | `on` | Show location filter in left filter |
+| `left-category-filter` | `on`, `off` | `on` | Show category filter in left filter |
+| `left-type-filter` | `on`, `off` | `on` | Show type filter in left filter |
+| `left-feature-filter` | `on`, `off` | `on` | Show feature filter in left filter |
 
 ### Grid with Pagination & Filters
 
@@ -61,18 +64,6 @@ Displays search results from the `[rbfw_search]` form. Place this on the `search
 
 `[search-result]`
 
-## Rent Cart
-
-Displays a mini rental cart for the quick checkout flow. Shows selected items, dates, and total cost. Works with the plugin's standalone checkout mode.
-
-`[rent-cart]`
-
-## Rent Checkout
-
-Renders the standalone rental checkout form. Collects customer details, rental dates, and payment info. Only applicable when using the plugin's built-in checkout.
-
-`[rent-checkout]`
-
 ## Usage Examples
 
 ### Basic Grid
@@ -83,16 +74,16 @@ Renders the standalone rental checkout form. Collects customer details, rental d
 
 ### Filtered by Type
 
-- `[rent-list type='bike']` — only bike rentals
-- `[rent-list type='car' order='ASC' orderby='title']` — cars sorted alphabetically
+- `[rent-list type='bike_car_sd']` — only single-day bike/car rentals
+- `[rent-list type='bike_car_md' order='ASC' orderby='title']` — multi-day bike/car rentals sorted alphabetically
 - `[rent-list type='equipment' show='8' pagination='no']` — equipment without pagination
-- `[rent-list type='others']` — other rental types
+- `[rent-list type='resort']` — resort bookings
 
 ### Filtered by Category
 
 - `[rent-list cat_ids='2,6']` — items in categories 2 and 6
 - `[rent-list cat_ids='15']` — items in category ID 15
-- `[rent-list cat_ids='12' type='bike']` — combined category and type filters
+- `[rent-list cat_ids='12' type='bike_car_sd']` — combined category and type filters
 
 ### With Left Filters
 

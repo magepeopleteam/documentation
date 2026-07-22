@@ -1,7 +1,7 @@
 ---
 title: Developer Hooks
 description: Extend WpRently using available action hooks and filters to customise output and behaviour.
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 # Developer Hooks
@@ -90,6 +90,13 @@ Action hooks for the RBFW edit metabox tabs.
 
 - `rbfw_meta_box_tab_name` — Renders tab menu items in the RBFW edit metabox.
 - `rbfw_meta_box_tab_content` — Renders tab content panels in the RBFW edit metabox.
+- `rbfw_tax_meta_boxs` — Fires to render the WooCommerce tax settings metabox on the rent item edit screen.
+
+## License Page Hooks
+
+Action hook on the admin License settings page.
+
+- `rbfw_license_page_addon_list` — Fires inside the addon license table body, used to list each installed addon's license row.
 
 ## Pricing Table Hooks
 
@@ -147,6 +154,13 @@ Filter hooks that fire before data is saved to the database.
 - `rbfw_extra_service_arr_save` — Filters the extra service data array before saving to post meta.
 - `rbfw_pickup_arr_save` — Filters the pickup location data array before saving.
 - `rbfw_dropoff_arr_save` — Filters the drop-off location data array before saving.
+
+## Muffin Template Hooks
+
+Action hooks on the single rental page when the Muffin template is selected (Advanced → Template setting) and the review system is enabled.
+
+- `rbfw_muff_review_tab` — Renders the review tab heading in the Muffin template. Passes `$post_id`.
+- `rbfw_muff_review_content` — Renders the review tab content in the Muffin template. Passes `$post_id`.
 
 ## Related Products and FAQ Hooks
 

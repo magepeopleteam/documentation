@@ -17,10 +17,10 @@ Apply different rental prices based on seasons, dates, or time ranges. Helps adj
 
 ## Usage
 
-1. Go to the WpRently settings page and locate the Seasonal Pricing Management section.
-2. Define season periods (e.g., Summer: June–August, Peak: Dec 20–Jan 5).
-3. Set custom pricing rules for each season (percentage increase or fixed price).
-4. When a customer's rental dates fall within a defined season, the seasonal price is automatically applied at checkout.
+1. After activation, open a rental item and locate the **Seasonal Price Configuration** panel.
+2. Click **Add Seasonal Pricing** and set a **Start Date** and **End Date** for the season.
+3. Set the rate for each enabled pricing type (Hourly, Daily, Weekly, and/or Monthly) for that season.
+4. Update the rental item — when a customer's rental dates fall within a defined season, the seasonal rate is automatically applied at checkout.
 
 ## Purchase
 

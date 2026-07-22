@@ -49,30 +49,16 @@ A complete walkthrough of the plugin — from creating your first rental item to
 - Manage bookings, inventory, time slots, and coupons from the dashboard
 - Configure global settings, styling, checkout, PDF/email settings, and payments
 
-## Global Settings
-
-Customize the plugin globally with translation support and other site-wide configuration options.
-
-- [How to translate the plugin](/plugins/wprently/global-settings)
-- Use Loco Translate or WPML for translations
-- Change labels and slugs in general settings
-- Multi-language support for rental listings
-
-### Global Configuration
-
-- Set global rental terms and conditions
-- Configure default booking duration
-- Manage off-day and holiday settings
-- Set advance booking cutoff dates
-
 ## Available Addons
 
-Extend the plugin with premium addons for discounts, minimum/maximum booking days, and seasonal pricing.
+Extend the plugin with premium addons for booking limits, seasonal pricing, multi-day discounts, and backend orders.
 
-- [Discount Over X Days (PRO)](/plugins/wprently/available-addons)
-- [Seasonal Pricing (PRO)](/plugins/wprently/available-addons)
-- [Min-Max Booking Day](/plugins/wprently/available-addons)
-- Offer tiered discounts based on rental duration
+- [Full Available Addons list](/plugins/wprently/available-addons)
+- [Min and Max Booking Limit](/addons/wprently/min-max-booking-limit)
+- [Seasonal Pricing Management](/addons/wprently/seasonal-pricing-management)
+- [Multi-Day Discount Pricing](/addons/wprently/multi-day-discount-pricing)
+- [Pricing Discount Over x Days](/addons/wprently/pricing-discount-over-x-days)
+- [Admin Backend Order](/addons/wprently/admin-backend-order)
 
 ### Pro Version
 

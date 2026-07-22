@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784693507000,
-  "sidebarPosition": 8,
+  "sidebarPosition": 6,
   "frontMatter": {
     "title": "Developer Hooks",
     "description": "Extend WpRently using available action hooks and filters to customise output and behaviour.",
-    "sidebar_position": 8
+    "sidebar_position": 6
   },
   "sidebar": "docsSidebar",
   "previous": {

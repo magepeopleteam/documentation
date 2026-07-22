@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Frequently asked questions about WpRently — Booking and Rental Manager.
-sidebar_position: 10
+sidebar_position: 8
 ---
 
 # FAQ
@@ -30,9 +30,9 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 
 ### Can I customize the booking form and fields?
 
-- Yes, create custom registration forms under the Registration Form settings
+- Yes, build custom registration forms with the drag-and-drop Booking Form builder
 - Add, remove, or reorder fields for each rental item
-- Field types include text, dropdown, checkbox, date, and file upload
+- Field types include Text Field, Text Area, Date Field, Number, Checkbox Group, Radio Group, and Select
 
 ### Does WpRently support discount coupons or promo codes?
 
@@ -65,8 +65,9 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 
 ### Does WpRently support hourly, daily, and weekly rentals?
 
-- Yes, configure the pricing model per product: Per Day, Per Hour, Per Day + Per Hour, or Flat Rate
-- Mix different pricing models across your rental catalogue
+- Yes, the Single Day mode supports hourly and daily bookings with a time picker
+- Multiple Day mode supports daily, weekly, and monthly rates with automatic threshold-based pricing
+- Mix different pricing modes across your rental catalogue
 
 ### Can customers book rentals for specific dates?
 
@@ -93,11 +94,11 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - Set items per page with `show='12'`
 - Full parameter reference is in the [Shortcode Guidelines](/plugins/wprently/shortcodes)
 
-### How do I show only car rentals?
+### How do I show only bike or car rentals?
 
-- Use `[rent-list type='car']` to display only car rental items
-- Combine with other parameters: `[rent-list type='car' style='list' show='10']`
-- Available type values: `bike`, `car`, `resort`, `equipment`, `dress`, `others`
+- Use `[rent-list type='bike_car_sd']` for single-day bike/car rentals, or `[rent-list type='bike_car_md']` for multi-day
+- Combine with other parameters: `[rent-list type='bike_car_sd' style='list' show='10']`
+- Available type values: `bike_car_sd`, `bike_car_md`, `resort`, `equipment`, `dress`, `appointment`
 
 ### How do I add a search form?
 
@@ -121,29 +122,27 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - The price is based on the selected pricing model (per day, per hour, etc.)
 - Customers pick pickup and return dates on the product page
 - The plugin multiplies the rate by the number of days/hours
-- Addons can apply discounts, seasonal pricing, and late fees
+- Addons can apply multi-day discounts and seasonal pricing
 - Tax is added based on your WooCommerce tax settings
 
 ### Can I require a deposit?
 
-- Yes, enable deposits under WpRently → Settings → Pricing
-- Choose percentage-based or fixed-amount deposit
-- The deposit is charged at checkout; the balance can be collected on pickup
-- For refundable damage deposits, install the Damage Deposit Handler addon
+- Yes, enable Security Deposit under the rental item's Advanced tab
+- Choose a fixed amount or percentage as a refundable deposit
+- The deposit is charged separately at checkout and refunded upon return
 
 ### How do I set up seasonal pricing?
 
-- Install the Seasonal Pricing addon (included in the Pro bundle)
+- Install the [Seasonal Pricing Management](/addons/wprently/seasonal-pricing-management) addon
 - Define price rules by date range (e.g., summer: +20%, holidays: +50%)
 - Rules can be applied globally or per product
 - Seasonal prices override the base rate for the specified periods
 
 ### Can I offer discounts for long rentals?
 
-- Yes, use the "Discount Over X Days" feature (available in Pro)
-- Set tiered discounts: 3–5 days = 10% off, 6–10 days = 20% off, etc.
+- Yes, use the [Multi-Day Discount Pricing](/addons/wprently/multi-day-discount-pricing) or [Pricing Discount Over x Days](/addons/wprently/pricing-discount-over-x-days) addon
+- Set tiered discounts based on the number of rental days
 - Discounts are applied automatically at checkout based on the rental duration
-- Compatible with all pricing models and seasonal pricing
 
 ## Availability & Bookings
 
@@ -153,27 +152,6 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - Block dates per product from the product edit screen's Availability tab
 - Off-days prevent any bookings on those dates
 - Manually block dates for maintenance or private events
-
-### Can I sync with Google Calendar?
-
-- Yes, install the Availability Calendar Sync addon
-- Connect your Google or Outlook calendar from the addon settings
-- Bookings are mirrored in both directions in near-real-time
-- Prevents double-bookings when you also list on external platforms
-
-### What happens if an item is returned late?
-
-- With the Late Return Fees addon, a penalty is calculated automatically
-- Configure hourly or daily late fees with a grace period
-- Customers receive email reminders before and after the return time
-- Late fees are added to the order total or invoiced separately
-
-### How do I manage delivery zones?
-
-- Install the Delivery Zone Mapper addon
-- Draw delivery zones on a Google Map from the addon settings
-- Set per-zone pricing (flat rate or per km)
-- Customers see delivery fees calculated at checkout based on their address
 
 ## Troubleshooting
 
@@ -198,7 +176,6 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - Check that the order status is "Confirmed" or "Active" — pending orders do not block dates
 - Verify the product's availability calendar settings are correct
 - Check for date/timezone mismatches between the site and customer selections
-- If using the Calendar Sync addon, check the sync log for errors
 - Clear any caching plugins that might be serving stale calendar data
 
 ### Payment not processing
@@ -234,4 +211,3 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - Visit the Magepeople YouTube channel for walkthrough videos
 - Video topics include: installation, configuration, shortcode setup, and addon usage
 - Subscribe to get notified of new tutorial releases
-- Each addon documentation page also links to relevant video guides

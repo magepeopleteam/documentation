@@ -17,10 +17,10 @@ Offer special discounts for multi-day rentals. Encourages longer bookings and he
 
 ## Usage
 
-1. Navigate to the WpRently settings panel and locate the Multi-Day Discount Pricing section.
-2. Define day ranges (e.g., 3–5 days, 6–10 days).
-3. Set a percentage or fixed discount for each range.
-4. When a customer selects a rental duration that falls within a defined multi-day range, the discount is automatically applied during checkout.
+1. After activation, open a rental item and locate the **Additional Day Price Configuration** panel.
+2. Click **Add New Multi Day Saver** to define a day range.
+3. Set the **From Day** and **To Day** for the range, then set the **Daily Rate** (or **Hourly Rate** for hourly pricing) that applies within it.
+4. Update the rental item — when a customer selects a duration that falls within a defined range, the configured rate is automatically applied.
 
 ## Purchase
 

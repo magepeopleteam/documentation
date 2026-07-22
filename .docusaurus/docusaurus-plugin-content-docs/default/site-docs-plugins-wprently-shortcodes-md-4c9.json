@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784693507000,
-  "sidebarPosition": 4,
+  "sidebarPosition": 3,
   "frontMatter": {
     "title": "Shortcodes",
     "description": "WpRently shortcode guidelines and reference.",
-    "sidebar_position": 4
+    "sidebar_position": 3
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Settings",
-    "permalink": "/plugins/wprently/settings"
+    "title": "Installation & Setup",
+    "permalink": "/plugins/wprently/installation-setup"
   },
   "next": {
-    "title": "Global Settings",
-    "permalink": "/plugins/wprently/global-settings"
+    "title": "Learning",
+    "permalink": "/plugins/wprently/learning"
   }
 }

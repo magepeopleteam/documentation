@@ -20,11 +20,12 @@ Set minimum-day and maximum-day booking limits to your rental system. Control ho
 ## Usage
 
 1. After activation, open any rental item from the All Rental Items list.
-2. Scroll down to the **Minimum — Maximum day of booking** section.
-3. Set the **Minimum day of booking** (e.g., 3 days minimum).
-4. Set the **Maximum days of booking** (e.g., 5 days maximum).
-5. Click **Update** — the front-end will automatically enforce these limits.
-6. When a customer tries to book outside these limits, the system displays an error message and prevents the booking.
+2. Locate the **Minimum and Maximum Day Rent Configuration** panel.
+3. Set the **Minimum Booking Duration** (e.g., 1 day minimum).
+4. Set the **Maximum Booking Duration** (e.g., 30 days maximum).
+5. Optionally enable **date-wise Min/Max** to vary the limits by specific dates.
+6. Click **Update** — the front-end will automatically enforce these limits.
+7. When a customer tries to book outside these limits, the system displays an error message and prevents the booking.
 
 ## Purchase
 

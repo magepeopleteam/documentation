@@ -1,7 +1,7 @@
 ---
 title: Learning
 description: A complete walkthrough of WpRently - from creating your first rental item to configuring pricing, bookings, payments, and site-wide settings.
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 ## Rent Item

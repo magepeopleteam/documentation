@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784693507000,
-  "sidebarPosition": 10,
+  "sidebarPosition": 8,
   "frontMatter": {
     "title": "FAQ",
     "description": "Frequently asked questions about WpRently — Booking and Rental Manager.",
-    "sidebar_position": 10
+    "sidebar_position": 8
   },
   "sidebar": "docsSidebar",
   "previous": {

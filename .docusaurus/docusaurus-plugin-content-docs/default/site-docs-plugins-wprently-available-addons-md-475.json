@@ -1,7 +1,7 @@
 {
   "id": "plugins/wprently/available-addons",
   "title": "Available Addons",
-  "description": "Extend WpRently with premium addons for deposits, calendar sync, delivery, late fees, and more.",
+  "description": "Extend WpRently with premium addons for booking limits, seasonal pricing, discounts, and backend orders.",
   "source": "@site/docs/plugins/wprently/available-addons.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/available-addons",
@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784693507000,
-  "sidebarPosition": 9,
+  "sidebarPosition": 7,
   "frontMatter": {
     "title": "Available Addons",
-    "description": "Extend WpRently with premium addons for deposits, calendar sync, delivery, late fees, and more.",
-    "sidebar_position": 9
+    "description": "Extend WpRently with premium addons for booking limits, seasonal pricing, discounts, and backend orders.",
+    "sidebar_position": 7
   },
   "sidebar": "docsSidebar",
   "previous": {

@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784693507000,
-  "sidebarPosition": 7,
+  "sidebarPosition": 5,
   "frontMatter": {
     "title": "Template Override",
     "description": "Customize WpRently templates via theme overrides and create your own rental templates.",
-    "sidebar_position": 7
+    "sidebar_position": 5
   },
   "sidebar": "docsSidebar",
   "previous": {
