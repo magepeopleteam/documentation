@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784175440000,
-  "sidebarPosition": 10,
+  "sidebarPosition": 8,
   "frontMatter": {
     "title": "Developer Hooks",
     "description": "Extend WpRently using available action hooks and filters to customise output and behaviour.",
-    "sidebar_position": 10
+    "sidebar_position": 8
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -25,7 +25,7 @@
     "permalink": "/plugins/wprently/template-override"
   },
   "next": {
-    "title": "FAQ",
-    "permalink": "/plugins/wprently/faq"
+    "title": "Available Addons",
+    "permalink": "/plugins/wprently/available-addons"
   }
 }

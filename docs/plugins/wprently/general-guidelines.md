@@ -1,7 +1,7 @@
 ---
 title: General Guidelines
 description: Best practices for managing rental inventory, bookings, and configuration in WpRently.
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 # General Guidelines

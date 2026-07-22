@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1783494863000,
-  "sidebarPosition": 3,
+  "sidebarPosition": 4,
   "frontMatter": {
     "title": "Shortcodes",
     "description": "WpRently shortcode guidelines and reference.",
-    "sidebar_position": 3
+    "sidebar_position": 4
   },
   "sidebar": "docsSidebar",
   "previous": {

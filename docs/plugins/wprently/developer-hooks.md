@@ -1,7 +1,7 @@
 ---
 title: Developer Hooks
 description: Extend WpRently using available action hooks and filters to customise output and behaviour.
-sidebar_position: 10
+sidebar_position: 8
 ---
 
 # Developer Hooks

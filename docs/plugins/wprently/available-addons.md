@@ -1,7 +1,7 @@
 ---
 title: Available Addons
 description: Extend WpRently with premium addons for deposits, calendar sync, delivery, late fees, and more.
-sidebar_position: 5
+sidebar_position: 9
 ---
 
 # Available Addons

@@ -1,7 +1,7 @@
 ---
 title: Template Override
 description: Customize WpRently templates via theme overrides and create your own rental templates.
-sidebar_position: 9
+sidebar_position: 7
 ---
 
 # Template Override

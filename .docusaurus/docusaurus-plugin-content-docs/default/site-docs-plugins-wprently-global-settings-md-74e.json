@@ -13,11 +13,11 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1783494863000,
-  "sidebarPosition": 4,
+  "sidebarPosition": 5,
   "frontMatter": {
     "title": "Global Settings",
     "description": "Configure WpRently global settings — general, translation, style, payment, and more.",
-    "sidebar_position": 4
+    "sidebar_position": 5
   },
   "sidebar": "docsSidebar",
   "previous": {
@@ -25,7 +25,7 @@
     "permalink": "/plugins/wprently/shortcodes"
   },
   "next": {
-    "title": "Available Addons",
-    "permalink": "/plugins/wprently/available-addons"
+    "title": "General Guidelines",
+    "permalink": "/plugins/wprently/general-guidelines"
   }
 }

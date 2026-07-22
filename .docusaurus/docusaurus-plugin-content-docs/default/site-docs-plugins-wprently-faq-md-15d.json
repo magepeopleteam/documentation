@@ -13,16 +13,16 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1784687709000,
-  "sidebarPosition": 11,
+  "sidebarPosition": 10,
   "frontMatter": {
     "title": "FAQ",
     "description": "Frequently asked questions about WpRently — Booking and Rental Manager.",
-    "sidebar_position": 11
+    "sidebar_position": 10
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Developer Hooks",
-    "permalink": "/plugins/wprently/developer-hooks"
+    "title": "Available Addons",
+    "permalink": "/plugins/wprently/available-addons"
   },
   "next": {
     "title": "Car Rental",

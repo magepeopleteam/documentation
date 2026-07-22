@@ -13,19 +13,19 @@
   "version": "current",
   "lastUpdatedBy": "MagePeople",
   "lastUpdatedAt": 1783494863000,
-  "sidebarPosition": 5,
+  "sidebarPosition": 9,
   "frontMatter": {
     "title": "Available Addons",
     "description": "Extend WpRently with premium addons for deposits, calendar sync, delivery, late fees, and more.",
-    "sidebar_position": 5
+    "sidebar_position": 9
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "Global Settings",
-    "permalink": "/plugins/wprently/global-settings"
+    "title": "Developer Hooks",
+    "permalink": "/plugins/wprently/developer-hooks"
   },
   "next": {
-    "title": "General Guidelines",
-    "permalink": "/plugins/wprently/general-guidelines"
+    "title": "FAQ",
+    "permalink": "/plugins/wprently/faq"
   }
 }

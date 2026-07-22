@@ -1,7 +1,7 @@
 ---
 title: Shortcodes
 description: WpRently shortcode guidelines and reference.
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Shortcode Guidelines

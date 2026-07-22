@@ -1,7 +1,7 @@
 ---
 title: Global Settings
 description: Configure WpRently global settings — general, translation, style, payment, and more.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Global Settings
