@@ -426,11 +426,6 @@
               "sidebar": "docsSidebar"
             },
             {
-              "id": "plugins/wprently/general-guidelines",
-              "path": "/plugins/wprently/general-guidelines",
-              "sidebar": "docsSidebar"
-            },
-            {
               "id": "plugins/wprently/global-settings",
               "path": "/plugins/wprently/global-settings",
               "sidebar": "docsSidebar"
@@ -438,6 +433,11 @@
             {
               "id": "plugins/wprently/installation-setup",
               "path": "/plugins/wprently/installation-setup",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "plugins/wprently/learning",
+              "path": "/plugins/wprently/learning",
               "sidebar": "docsSidebar"
             },
             {

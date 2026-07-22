@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "MagePeople",
-  "lastUpdatedAt": 1784687709000,
+  "lastUpdatedAt": 1784693507000,
   "sidebarPosition": 7,
   "frontMatter": {
     "title": "Template Override",
@@ -21,8 +21,8 @@
   },
   "sidebar": "docsSidebar",
   "previous": {
-    "title": "General Guidelines",
-    "permalink": "/plugins/wprently/general-guidelines"
+    "title": "Learning",
+    "permalink": "/plugins/wprently/learning"
   },
   "next": {
     "title": "Developer Hooks",

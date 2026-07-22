@@ -40,21 +40,14 @@ Display rent items in grid or list styles anywhere on your site using dedicated 
 - Filter by category: `[rent-list category='ID']`
 - Control items shown: `[rent-list show='6']`
 
-## General Guidelines
+## Learning
 
-Set up rent item search forms, display rent lists, and manage your rental inventory across different item types.
+A complete walkthrough of the plugin — from creating your first rental item to configuring pricing, bookings, payments, and site-wide settings.
 
-- [Rent Item Search Form](/plugins/wprently/general-guidelines)
-- [Rent List Shortcode](/plugins/wprently/shortcodes)
-- Display items by type: bike, car, resort, equipment, dress
-- Manage inventory and availability calendars
-
-### Item Management
-
-- Add rental items with images and descriptions
-- Set pricing per day or per hour
-- Configure seasonal pricing with addons
-- Manage bookings and order statuses
+- [Full Learning guide](/plugins/wprently/learning)
+- Create and configure Rent Items across all pricing modes (Single Day, Multiple Day, Resort, Appointment, and more)
+- Manage bookings, inventory, time slots, and coupons from the dashboard
+- Configure global settings, styling, checkout, PDF/email settings, and payments
 
 ## Global Settings
 

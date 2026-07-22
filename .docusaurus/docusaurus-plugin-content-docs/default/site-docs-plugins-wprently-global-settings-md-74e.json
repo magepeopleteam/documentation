@@ -12,7 +12,7 @@
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "MagePeople",
-  "lastUpdatedAt": 1783494863000,
+  "lastUpdatedAt": 1784693507000,
   "sidebarPosition": 5,
   "frontMatter": {
     "title": "Global Settings",
@@ -25,7 +25,7 @@
     "permalink": "/plugins/wprently/shortcodes"
   },
   "next": {
-    "title": "General Guidelines",
-    "permalink": "/plugins/wprently/general-guidelines"
+    "title": "Learning",
+    "permalink": "/plugins/wprently/learning"
   }
 }

@@ -1,0 +1,31 @@
+{
+  "id": "plugins/wprently/learning",
+  "title": "Learning",
+  "description": "A complete walkthrough of WpRently - from creating your first rental item to configuring pricing, bookings, payments, and site-wide settings.",
+  "source": "@site/docs/plugins/wprently/learning.md",
+  "sourceDirName": "plugins/wprently",
+  "slug": "/plugins/wprently/learning",
+  "permalink": "/plugins/wprently/learning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/learning.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": null,
+  "lastUpdatedAt": null,
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "title": "Learning",
+    "description": "A complete walkthrough of WpRently - from creating your first rental item to configuring pricing, bookings, payments, and site-wide settings.",
+    "sidebar_position": 6
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Global Settings",
+    "permalink": "/plugins/wprently/global-settings"
+  },
+  "next": {
+    "title": "Template Override",
+    "permalink": "/plugins/wprently/template-override"
+  }
+}

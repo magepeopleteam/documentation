@@ -14,15 +14,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '6b7'),
+    component: ComponentCreator('/', '5ed'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '015'),
+        component: ComponentCreator('/', 'f58'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'f25'),
+            component: ComponentCreator('/', '064'),
             routes: [
               {
                 path: '/addons/ecab',
@@ -608,37 +608,37 @@ export default [
               },
               {
                 path: '/plugins/wprently/available-addons',
-                component: ComponentCreator('/plugins/wprently/available-addons', '9b3'),
+                component: ComponentCreator('/plugins/wprently/available-addons', '020'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/developer-hooks',
-                component: ComponentCreator('/plugins/wprently/developer-hooks', 'f51'),
+                component: ComponentCreator('/plugins/wprently/developer-hooks', '6b6'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/faq',
-                component: ComponentCreator('/plugins/wprently/faq', 'b38'),
-                exact: true,
-                sidebar: "docsSidebar"
-              },
-              {
-                path: '/plugins/wprently/general-guidelines',
-                component: ComponentCreator('/plugins/wprently/general-guidelines', '09e'),
+                component: ComponentCreator('/plugins/wprently/faq', '155'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/global-settings',
-                component: ComponentCreator('/plugins/wprently/global-settings', 'bdf'),
+                component: ComponentCreator('/plugins/wprently/global-settings', 'c2a'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/installation-setup',
                 component: ComponentCreator('/plugins/wprently/installation-setup', '6e9'),
+                exact: true,
+                sidebar: "docsSidebar"
+              },
+              {
+                path: '/plugins/wprently/learning',
+                component: ComponentCreator('/plugins/wprently/learning', 'a50'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -656,13 +656,13 @@ export default [
               },
               {
                 path: '/plugins/wprently/shortcodes',
-                component: ComponentCreator('/plugins/wprently/shortcodes', '0ed'),
+                component: ComponentCreator('/plugins/wprently/shortcodes', 'f7c'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/template-override',
-                component: ComponentCreator('/plugins/wprently/template-override', '160'),
+                component: ComponentCreator('/plugins/wprently/template-override', '8e9'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

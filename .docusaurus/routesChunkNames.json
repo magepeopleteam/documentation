@@ -12,17 +12,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/-6b7": {
+  "/-5ed": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/-015": {
+  "/-f58": {
     "__comp": "a7bd4aaa",
     "__props": "22dd74f7"
   },
-  "/-f25": {
+  "/-064": {
     "__comp": "a94703ab"
   },
   "/addons/ecab-8cb": {
@@ -413,29 +413,29 @@
     "__comp": "17896441",
     "content": "1dc5bfa8"
   },
-  "/plugins/wprently/available-addons-9b3": {
+  "/plugins/wprently/available-addons-020": {
     "__comp": "17896441",
     "content": "47569161"
   },
-  "/plugins/wprently/developer-hooks-f51": {
+  "/plugins/wprently/developer-hooks-6b6": {
     "__comp": "17896441",
     "content": "cc49d837"
   },
-  "/plugins/wprently/faq-b38": {
+  "/plugins/wprently/faq-155": {
     "__comp": "17896441",
     "content": "15d39d5a"
   },
-  "/plugins/wprently/general-guidelines-09e": {
-    "__comp": "17896441",
-    "content": "feaaabbf"
-  },
-  "/plugins/wprently/global-settings-bdf": {
+  "/plugins/wprently/global-settings-c2a": {
     "__comp": "17896441",
     "content": "74e8cd5c"
   },
   "/plugins/wprently/installation-setup-6e9": {
     "__comp": "17896441",
     "content": "1834fa96"
+  },
+  "/plugins/wprently/learning-a50": {
+    "__comp": "17896441",
+    "content": "89ecb467"
   },
   "/plugins/wprently/overview-5ec": {
     "__comp": "17896441",
@@ -445,11 +445,11 @@
     "__comp": "17896441",
     "content": "6dd103a5"
   },
-  "/plugins/wprently/shortcodes-0ed": {
+  "/plugins/wprently/shortcodes-f7c": {
     "__comp": "17896441",
     "content": "4c9b1bff"
   },
-  "/plugins/wprently/template-override-160": {
+  "/plugins/wprently/template-override-8e9": {
     "__comp": "17896441",
     "content": "815f0c46"
   },
