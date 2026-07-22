@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/membership-price.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/membership-price",
-  "permalink": "/docs/addons/wpevently/membership-price",
+  "permalink": "/addons/wpevently/membership-price",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/membership-price.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Marketplace / Frontend Submission",
-    "permalink": "/docs/addons/wpevently/marketplace-frontend-submission"
+    "permalink": "/addons/wpevently/marketplace-frontend-submission"
   },
   "next": {
     "title": "Event Seat Plan",
-    "permalink": "/docs/addons/wpevently/event-seat-plan"
+    "permalink": "/addons/wpevently/event-seat-plan"
   }
 }

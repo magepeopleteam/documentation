@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/shortcodes.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/shortcodes",
-  "permalink": "/docs/plugins/wpbusticketly/shortcodes",
+  "permalink": "/plugins/wpbusticketly/shortcodes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/shortcodes.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Bus Manager Settings",
-    "permalink": "/docs/plugins/wpbusticketly/settings"
+    "permalink": "/plugins/wpbusticketly/settings"
   },
   "next": {
     "title": "Available Addons",
-    "permalink": "/docs/plugins/wpbusticketly/available-addons"
+    "permalink": "/plugins/wpbusticketly/available-addons"
   }
 }

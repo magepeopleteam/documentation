@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/overview.md",
   "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
   "slug": "/plugins/advanced-discount-coupon-store-credit/overview",
-  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/overview",
+  "permalink": "/plugins/advanced-discount-coupon-store-credit/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/overview.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Advanced Discount Coupon and Store Credit",
-    "permalink": "/docs/category/advanced-discount-coupon-and-store-credit"
+    "permalink": "/category/advanced-discount-coupon-and-store-credit"
   },
   "next": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/installation-setup"
+    "permalink": "/plugins/advanced-discount-coupon-store-credit/installation-setup"
   }
 }

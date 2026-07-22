@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/woocommerce-event-coupon-code.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/woocommerce-event-coupon-code",
-  "permalink": "/docs/addons/wpevently/woocommerce-event-coupon-code",
+  "permalink": "/addons/wpevently/woocommerce-event-coupon-code",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-coupon-code.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WooCommerce Event Calendar",
-    "permalink": "/docs/addons/wpevently/woocommerce-event-calendar"
+    "permalink": "/addons/wpevently/woocommerce-event-calendar"
   },
   "next": {
     "title": "WooCommerce Event QR Code",
-    "permalink": "/docs/addons/wpevently/woocommerce-event-qr-code"
+    "permalink": "/addons/wpevently/woocommerce-event-qr-code"
   }
 }

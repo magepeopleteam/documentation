@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/faq.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/faq",
-  "permalink": "/docs/plugins/wpevently/faq",
+  "permalink": "/plugins/wpevently/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Hooks",
-    "permalink": "/docs/plugins/wpevently/developer-hooks"
+    "permalink": "/plugins/wpevently/developer-hooks"
   },
   "next": {
     "title": "eCab",
-    "permalink": "/docs/category/ecab"
+    "permalink": "/category/ecab"
   }
 }

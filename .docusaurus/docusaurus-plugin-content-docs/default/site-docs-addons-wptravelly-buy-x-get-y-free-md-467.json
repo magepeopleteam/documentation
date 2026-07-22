@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/buy-x-get-y-free.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/buy-x-get-y-free",
-  "permalink": "/docs/addons/wptravelly/buy-x-get-y-free",
+  "permalink": "/addons/wptravelly/buy-x-get-y-free",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/buy-x-get-y-free.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Backend Order",
-    "permalink": "/docs/addons/wptravelly/backend-order"
+    "permalink": "/addons/wptravelly/backend-order"
   },
   "next": {
     "title": "Early Bird Pricing",
-    "permalink": "/docs/addons/wptravelly/early-bird-pricing"
+    "permalink": "/addons/wptravelly/early-bird-pricing"
   }
 }

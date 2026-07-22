@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/event-max-min-quantity-limiting.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/event-max-min-quantity-limiting",
-  "permalink": "/docs/addons/wpevently/event-max-min-quantity-limiting",
+  "permalink": "/addons/wpevently/event-max-min-quantity-limiting",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/event-max-min-quantity-limiting.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Event Duplicator",
-    "permalink": "/docs/addons/wpevently/event-duplicator"
+    "permalink": "/addons/wpevently/event-duplicator"
   },
   "next": {
     "title": "Min/Max Quantity",
-    "permalink": "/docs/addons/wpevently/min-max-quantity"
+    "permalink": "/addons/wpevently/min-max-quantity"
   }
 }

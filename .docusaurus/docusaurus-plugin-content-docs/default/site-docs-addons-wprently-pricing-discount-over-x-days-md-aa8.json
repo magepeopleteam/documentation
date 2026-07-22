@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wprently/pricing-discount-over-x-days.md",
   "sourceDirName": "addons/wprently",
   "slug": "/addons/wprently/pricing-discount-over-x-days",
-  "permalink": "/docs/addons/wprently/pricing-discount-over-x-days",
+  "permalink": "/addons/wprently/pricing-discount-over-x-days",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/pricing-discount-over-x-days.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Multi-Day Discount Pricing",
-    "permalink": "/docs/addons/wprently/multi-day-discount-pricing"
+    "permalink": "/addons/wprently/multi-day-discount-pricing"
   },
   "next": {
     "title": "Seasonal Pricing Management",
-    "permalink": "/docs/addons/wprently/seasonal-pricing-management"
+    "permalink": "/addons/wprently/seasonal-pricing-management"
   }
 }

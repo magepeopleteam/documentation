@@ -20,7 +20,7 @@ WpBusTicketly can be extended with a range of addons that add advanced functiona
 
 ### QR Code Addon
 
-- [QR Code Addon Documentation](/docs/addons/wpbusticketly/qr-code)
+- [QR Code Addon Documentation](/addons/wpbusticketly/qr-code)
 - Automatically generates a unique QR code for each booked ticket
 - QR codes are embedded in PDF tickets and confirmation emails
 - Passengers can present QR codes for contactless boarding

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/ecab/faq.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/faq",
-  "permalink": "/docs/plugins/ecab/faq",
+  "permalink": "/plugins/ecab/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/ecab/shortcodes"
+    "permalink": "/plugins/ecab/shortcodes"
   },
   "next": {
     "title": "WpTravelly",
-    "permalink": "/docs/category/wptravelly"
+    "permalink": "/category/wptravelly"
   }
 }

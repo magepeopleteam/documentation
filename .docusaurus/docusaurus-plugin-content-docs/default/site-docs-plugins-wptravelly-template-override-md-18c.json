@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/template-override.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/template-override",
-  "permalink": "/docs/plugins/wptravelly/template-override",
+  "permalink": "/plugins/wptravelly/template-override",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/template-override.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Elementor Integration",
-    "permalink": "/docs/plugins/wptravelly/elementor-integration"
+    "permalink": "/plugins/wptravelly/elementor-integration"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/wptravelly/faq"
+    "permalink": "/plugins/wptravelly/faq"
   }
 }

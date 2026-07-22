@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpdepositly/overview.md",
   "sourceDirName": "plugins/wpdepositly",
   "slug": "/plugins/wpdepositly/overview",
-  "permalink": "/docs/plugins/wpdepositly/overview",
+  "permalink": "/plugins/wpdepositly/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpdepositly/overview.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpDepositly",
-    "permalink": "/docs/category/wpdepositly"
+    "permalink": "/category/wpdepositly"
   },
   "next": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wpdepositly/installation-setup"
+    "permalink": "/plugins/wpdepositly/installation-setup"
   }
 }

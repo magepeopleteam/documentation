@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/overview.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/overview",
-  "permalink": "/docs/plugins/wpbusticketly/overview",
+  "permalink": "/plugins/wpbusticketly/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/overview.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpBusTicketly",
-    "permalink": "/docs/category/wpbusticketly"
+    "permalink": "/category/wpbusticketly"
   },
   "next": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wpbusticketly/installation-setup"
+    "permalink": "/plugins/wpbusticketly/installation-setup"
   }
 }

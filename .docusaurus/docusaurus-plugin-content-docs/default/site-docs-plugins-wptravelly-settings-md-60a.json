@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/settings.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/settings",
-  "permalink": "/docs/plugins/wptravelly/settings",
+  "permalink": "/plugins/wptravelly/settings",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/settings.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wptravelly/installation-setup"
+    "permalink": "/plugins/wptravelly/installation-setup"
   },
   "next": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wptravelly/shortcodes"
+    "permalink": "/plugins/wptravelly/shortcodes"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/elementor-integration.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/elementor-integration",
-  "permalink": "/docs/plugins/wpevently/elementor-integration",
+  "permalink": "/plugins/wpevently/elementor-integration",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/elementor-integration.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpevently/shortcodes"
+    "permalink": "/plugins/wpevently/shortcodes"
   },
   "next": {
     "title": "Template Override",
-    "permalink": "/docs/plugins/wpevently/template-override"
+    "permalink": "/plugins/wpevently/template-override"
   }
 }

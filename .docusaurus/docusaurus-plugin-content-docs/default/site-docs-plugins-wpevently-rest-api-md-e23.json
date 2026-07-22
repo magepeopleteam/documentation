@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/rest-api.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/rest-api",
-  "permalink": "/docs/plugins/wpevently/rest-api",
+  "permalink": "/plugins/wpevently/rest-api",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/rest-api.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Template Override",
-    "permalink": "/docs/plugins/wpevently/template-override"
+    "permalink": "/plugins/wpevently/template-override"
   },
   "next": {
     "title": "Hooks",
-    "permalink": "/docs/plugins/wpevently/developer-hooks"
+    "permalink": "/plugins/wpevently/developer-hooks"
   }
 }

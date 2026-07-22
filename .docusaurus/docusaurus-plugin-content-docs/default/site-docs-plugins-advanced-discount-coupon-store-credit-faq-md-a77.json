@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/faq.md",
   "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
   "slug": "/plugins/advanced-discount-coupon-store-credit/faq",
-  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/faq",
+  "permalink": "/plugins/advanced-discount-coupon-store-credit/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes"
+    "permalink": "/plugins/advanced-discount-coupon-store-credit/shortcodes"
   },
   "next": {
     "title": "WpDepositly",
-    "permalink": "/docs/category/wpdepositly"
+    "permalink": "/category/wpdepositly"
   }
 }

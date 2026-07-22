@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/group-bulk-pricing.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/group-bulk-pricing",
-  "permalink": "/docs/addons/wptravelly/group-bulk-pricing",
+  "permalink": "/addons/wptravelly/group-bulk-pricing",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/group-bulk-pricing.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Early Bird Pricing",
-    "permalink": "/docs/addons/wptravelly/early-bird-pricing"
+    "permalink": "/addons/wptravelly/early-bird-pricing"
   },
   "next": {
     "title": "Group Ticket Quantity",
-    "permalink": "/docs/addons/wptravelly/group-ticket-quantity"
+    "permalink": "/addons/wptravelly/group-ticket-quantity"
   }
 }

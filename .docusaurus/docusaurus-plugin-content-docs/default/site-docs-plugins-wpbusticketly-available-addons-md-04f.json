@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/available-addons.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/available-addons",
-  "permalink": "/docs/plugins/wpbusticketly/available-addons",
+  "permalink": "/plugins/wpbusticketly/available-addons",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/available-addons.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpbusticketly/shortcodes"
+    "permalink": "/plugins/wpbusticketly/shortcodes"
   },
   "next": {
     "title": "REST API",
-    "permalink": "/docs/plugins/wpbusticketly/rest-api"
+    "permalink": "/plugins/wpbusticketly/rest-api"
   }
 }

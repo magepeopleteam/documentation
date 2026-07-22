@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/min-max-quantity.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/min-max-quantity",
-  "permalink": "/docs/addons/wpevently/min-max-quantity",
+  "permalink": "/addons/wpevently/min-max-quantity",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/min-max-quantity.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Event Max-Min Quantity Limiting",
-    "permalink": "/docs/addons/wpevently/event-max-min-quantity-limiting"
+    "permalink": "/addons/wpevently/event-max-min-quantity-limiting"
   },
   "next": {
     "title": "Group Ticket Qty",
-    "permalink": "/docs/addons/wpevently/group-ticket-qty"
+    "permalink": "/addons/wpevently/group-ticket-qty"
   }
 }

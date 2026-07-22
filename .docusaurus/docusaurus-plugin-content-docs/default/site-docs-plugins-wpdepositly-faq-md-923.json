@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpdepositly/faq.md",
   "sourceDirName": "plugins/wpdepositly",
   "slug": "/plugins/wpdepositly/faq",
-  "permalink": "/docs/plugins/wpdepositly/faq",
+  "permalink": "/plugins/wpdepositly/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpdepositly/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpdepositly/shortcodes"
+    "permalink": "/plugins/wpdepositly/shortcodes"
   },
   "next": {
     "title": "Addons",
-    "permalink": "/docs/category/addons"
+    "permalink": "/category/addons"
   }
 }

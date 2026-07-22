@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/shortcodes.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/shortcodes",
-  "permalink": "/docs/plugins/wpevently/shortcodes",
+  "permalink": "/plugins/wpevently/shortcodes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/shortcodes.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wpevently/settings"
+    "permalink": "/plugins/wpevently/settings"
   },
   "next": {
     "title": "Elementor Integration",
-    "permalink": "/docs/plugins/wpevently/elementor-integration"
+    "permalink": "/plugins/wpevently/elementor-integration"
   }
 }

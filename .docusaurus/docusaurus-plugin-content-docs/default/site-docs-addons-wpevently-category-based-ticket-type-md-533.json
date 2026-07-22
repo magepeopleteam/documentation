@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/category-based-ticket-type.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/category-based-ticket-type",
-  "permalink": "/docs/addons/wpevently/category-based-ticket-type",
+  "permalink": "/addons/wpevently/category-based-ticket-type",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/category-based-ticket-type.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Book Events from Dashboard",
-    "permalink": "/docs/addons/wpevently/book-events-from-dashboard"
+    "permalink": "/addons/wpevently/book-events-from-dashboard"
   },
   "next": {
     "title": "Email Reminder",
-    "permalink": "/docs/addons/wpevently/email-reminder"
+    "permalink": "/addons/wpevently/email-reminder"
   }
 }

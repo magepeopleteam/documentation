@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/woocommerce-event-calendar.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/woocommerce-event-calendar",
-  "permalink": "/docs/addons/wpevently/woocommerce-event-calendar",
+  "permalink": "/addons/wpevently/woocommerce-event-calendar",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/woocommerce-event-calendar.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Review and Rating",
-    "permalink": "/docs/addons/wpevently/review-and-rating"
+    "permalink": "/addons/wpevently/review-and-rating"
   },
   "next": {
     "title": "WooCommerce Event Coupon Code",
-    "permalink": "/docs/addons/wpevently/woocommerce-event-coupon-code"
+    "permalink": "/addons/wpevently/woocommerce-event-coupon-code"
   }
 }

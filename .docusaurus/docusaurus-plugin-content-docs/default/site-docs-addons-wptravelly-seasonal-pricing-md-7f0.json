@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/seasonal-pricing.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/seasonal-pricing",
-  "permalink": "/docs/addons/wptravelly/seasonal-pricing",
+  "permalink": "/addons/wptravelly/seasonal-pricing",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/seasonal-pricing.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "QR Code Addon",
-    "permalink": "/docs/addons/wptravelly/qr-code"
+    "permalink": "/addons/wptravelly/qr-code"
   },
   "next": {
     "title": "Seat Plan",
-    "permalink": "/docs/addons/wptravelly/seat-plan"
+    "permalink": "/addons/wptravelly/seat-plan"
   }
 }

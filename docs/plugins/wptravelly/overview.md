@@ -14,7 +14,7 @@ Install the WooCommerce Tour & Travel Booking Manager plugin via WordPress admin
 
 ### Plugin Installation
 
-- [Install the Tour & Travel Booking Manager plugin](/docs/plugins/wptravelly/installation-setup)
+- [Install the Tour & Travel Booking Manager plugin](/plugins/wptravelly/installation-setup)
 - Install via WordPress admin search for "Travel Booking Manager"
 - Upload the zip file from MagePeople after purchasing Pro
 - Ensure WooCommerce is installed and active
@@ -32,17 +32,17 @@ Display tours in various styles including list, grid, modern, blossom, orchid, l
 
 ### Tour Display Shortcodes
 
-- [Tour List Shortcode](/docs/plugins/wptravelly/shortcodes)
-- [Modern List View Shortcode](/docs/plugins/wptravelly/shortcodes)
-- [Flora Grid View Shortcode](/docs/plugins/wptravelly/shortcodes)
-- [Tour List with Top Filter](/docs/plugins/wptravelly/shortcodes)
+- [Tour List Shortcode](/plugins/wptravelly/shortcodes)
+- [Modern List View Shortcode](/plugins/wptravelly/shortcodes)
+- [Flora Grid View Shortcode](/plugins/wptravelly/shortcodes)
+- [Tour List with Top Filter](/plugins/wptravelly/shortcodes)
 
 ### Specialized Display Options
 
-- [Popular Tour List](/docs/plugins/wptravelly/shortcodes)
-- [Trending Tour List](/docs/plugins/wptravelly/shortcodes)
-- [Top Attractions Shortcode](/docs/plugins/wptravelly/shortcodes)
-- [Travel Location Display](/docs/plugins/wptravelly/shortcodes)
+- [Popular Tour List](/plugins/wptravelly/shortcodes)
+- [Trending Tour List](/plugins/wptravelly/shortcodes)
+- [Top Attractions Shortcode](/plugins/wptravelly/shortcodes)
+- [Travel Location Display](/plugins/wptravelly/shortcodes)
 
 ## Template Override
 
@@ -50,7 +50,7 @@ Customize the look and feel of your tour pages by overriding default templates i
 
 ### Template Customization
 
-- [Override & create your own tour template](/docs/plugins/wptravelly/template-override)
+- [Override & create your own tour template](/plugins/wptravelly/template-override)
 - Copy template files from plugin to your theme directory
 - Maintain template structure while modifying HTML/PHP
 - Test template changes in a staging environment

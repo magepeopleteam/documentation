@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wprently/admin-backend-order.md",
   "sourceDirName": "addons/wprently",
   "slug": "/addons/wprently/admin-backend-order",
-  "permalink": "/docs/addons/wprently/admin-backend-order",
+  "permalink": "/addons/wprently/admin-backend-order",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/admin-backend-order.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpRently",
-    "permalink": "/docs/addons/wprently"
+    "permalink": "/addons/wprently"
   },
   "next": {
     "title": "Min and Max Booking Limit",
-    "permalink": "/docs/addons/wprently/min-max-booking-limit"
+    "permalink": "/addons/wprently/min-max-booking-limit"
   }
 }

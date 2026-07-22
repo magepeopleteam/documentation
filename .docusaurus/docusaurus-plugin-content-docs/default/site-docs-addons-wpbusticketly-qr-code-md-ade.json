@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpbusticketly/qr-code.md",
   "sourceDirName": "addons/wpbusticketly",
   "slug": "/addons/wpbusticketly/qr-code",
-  "permalink": "/docs/addons/wpbusticketly/qr-code",
+  "permalink": "/addons/wpbusticketly/qr-code",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpbusticketly/qr-code.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpBusTicketly",
-    "permalink": "/docs/addons/wpbusticketly"
+    "permalink": "/addons/wpbusticketly"
   },
   "next": {
     "title": "WpRently",
-    "permalink": "/docs/addons/wprently"
+    "permalink": "/addons/wprently"
   }
 }

@@ -5,14 +5,14 @@
   "source": "@site/docs/plugins/wprently/faq.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/faq",
-  "permalink": "/docs/plugins/wprently/faq",
+  "permalink": "/plugins/wprently/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/faq.md",
   "tags": [],
   "version": "current",
   "lastUpdatedBy": "MagePeople",
-  "lastUpdatedAt": 1783579257000,
+  "lastUpdatedAt": 1784175440000,
   "sidebarPosition": 11,
   "frontMatter": {
     "title": "FAQ",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Developer Hooks",
-    "permalink": "/docs/plugins/wprently/developer-hooks"
+    "permalink": "/plugins/wprently/developer-hooks"
   },
   "next": {
     "title": "Car Rental",
-    "permalink": "/docs/category/car-rental"
+    "permalink": "/category/car-rental"
   }
 }

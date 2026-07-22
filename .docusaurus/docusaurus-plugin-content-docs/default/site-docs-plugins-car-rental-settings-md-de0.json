@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/car-rental/settings.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/settings",
-  "permalink": "/docs/plugins/car-rental/settings",
+  "permalink": "/plugins/car-rental/settings",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/settings.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Pricing & Availability",
-    "permalink": "/docs/plugins/car-rental/pricing-availability"
+    "permalink": "/plugins/car-rental/pricing-availability"
   },
   "next": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/car-rental/shortcodes"
+    "permalink": "/plugins/car-rental/shortcodes"
   }
 }

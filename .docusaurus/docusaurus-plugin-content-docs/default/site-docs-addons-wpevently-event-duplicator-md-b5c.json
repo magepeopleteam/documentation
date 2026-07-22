@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/event-duplicator.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/event-duplicator",
-  "permalink": "/docs/addons/wpevently/event-duplicator",
+  "permalink": "/addons/wpevently/event-duplicator",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/event-duplicator.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Email Reminder",
-    "permalink": "/docs/addons/wpevently/email-reminder"
+    "permalink": "/addons/wpevently/email-reminder"
   },
   "next": {
     "title": "Event Max-Min Quantity Limiting",
-    "permalink": "/docs/addons/wpevently/event-max-min-quantity-limiting"
+    "permalink": "/addons/wpevently/event-max-min-quantity-limiting"
   }
 }

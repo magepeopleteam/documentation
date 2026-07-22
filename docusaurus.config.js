@@ -35,7 +35,7 @@ const config = {
       '@easyops-cn/docusaurus-search-local',
       {
         hashed: true,
-        docsRouteBasePath: 'docs',
+        docsRouteBasePath: '/',
         searchBarPosition: 'right',
       },
     ],
@@ -69,7 +69,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: 'docs',
+          routeBasePath: '/',
           editUrl: 'https://github.com/magepeopleteam/documentation/tree/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -102,17 +102,17 @@ const config = {
         },
         items: [
           {
-            to: '/docs/getting-started/installation',
+            to: '/getting-started/installation',
             position: 'left',
             label: 'Getting Started',
           },
           {
-            to: '/docs/category/plugins',
+            to: '/category/plugins',
             label: 'Plugins',
             position: 'left',
           },
           {
-            to: '/docs/category/addons',
+            to: '/category/addons',
             label: 'Addons',
             position: 'left',
           },
@@ -142,26 +142,26 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/getting-started/installation',
+                to: '/getting-started/installation',
               },
               {
                 label: 'Plugins',
-                to: '/docs/plugins/wpevently/overview',
+                to: '/plugins/wpevently/overview',
               },
               {
                 label: 'Addons',
-                to: '/docs/category/addons',
+                to: '/category/addons',
               },
             ],
           },
           {
             title: 'Plugins',
             items: [
-              {label: 'WPEvently', to: '/docs/plugins/wpevently/overview'},
-              {label: 'eCab', to: '/docs/plugins/ecab/overview'},
-              {label: 'WPTravelly', to: '/docs/plugins/wptravelly/overview'},
-              {label: 'WPBookingly', to: '/docs/plugins/wpbookingly/overview'},
-              {label: 'WPRently', to: '/docs/plugins/wprently/overview'},
+              {label: 'WPEvently', to: '/plugins/wpevently/overview'},
+              {label: 'eCab', to: '/plugins/ecab/overview'},
+              {label: 'WPTravelly', to: '/plugins/wptravelly/overview'},
+              {label: 'WPBookingly', to: '/plugins/wpbookingly/overview'},
+              {label: 'WPRently', to: '/plugins/wprently/overview'},
             ],
           },
           {

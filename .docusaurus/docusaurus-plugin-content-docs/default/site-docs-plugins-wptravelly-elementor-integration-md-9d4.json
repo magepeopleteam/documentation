@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/elementor-integration.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/elementor-integration",
-  "permalink": "/docs/plugins/wptravelly/elementor-integration",
+  "permalink": "/plugins/wptravelly/elementor-integration",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/elementor-integration.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wptravelly/shortcodes"
+    "permalink": "/plugins/wptravelly/shortcodes"
   },
   "next": {
     "title": "Template Override",
-    "permalink": "/docs/plugins/wptravelly/template-override"
+    "permalink": "/plugins/wptravelly/template-override"
   }
 }

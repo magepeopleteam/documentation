@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/faq.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/faq",
-  "permalink": "/docs/plugins/wpbusticketly/faq",
+  "permalink": "/plugins/wpbusticketly/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "REST API",
-    "permalink": "/docs/plugins/wpbusticketly/rest-api"
+    "permalink": "/plugins/wpbusticketly/rest-api"
   },
   "next": {
     "title": "WpRently",
-    "permalink": "/docs/category/wprently"
+    "permalink": "/category/wprently"
   }
 }

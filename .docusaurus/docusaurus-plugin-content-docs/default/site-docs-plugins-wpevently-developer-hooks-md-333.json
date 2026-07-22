@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/developer-hooks.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/developer-hooks",
-  "permalink": "/docs/plugins/wpevently/developer-hooks",
+  "permalink": "/plugins/wpevently/developer-hooks",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/developer-hooks.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "REST API",
-    "permalink": "/docs/plugins/wpevently/rest-api"
+    "permalink": "/plugins/wpevently/rest-api"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/wpevently/faq"
+    "permalink": "/plugins/wpevently/faq"
   }
 }

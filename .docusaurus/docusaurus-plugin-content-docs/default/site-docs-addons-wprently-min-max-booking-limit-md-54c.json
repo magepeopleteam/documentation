@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wprently/min-max-booking-limit.md",
   "sourceDirName": "addons/wprently",
   "slug": "/addons/wprently/min-max-booking-limit",
-  "permalink": "/docs/addons/wprently/min-max-booking-limit",
+  "permalink": "/addons/wprently/min-max-booking-limit",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wprently/min-max-booking-limit.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Admin Backend Order",
-    "permalink": "/docs/addons/wprently/admin-backend-order"
+    "permalink": "/addons/wprently/admin-backend-order"
   },
   "next": {
     "title": "Multi-Day Discount Pricing",
-    "permalink": "/docs/addons/wprently/multi-day-discount-pricing"
+    "permalink": "/addons/wprently/multi-day-discount-pricing"
   }
 }

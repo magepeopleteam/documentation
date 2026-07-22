@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/book-events-from-dashboard.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/book-events-from-dashboard",
-  "permalink": "/docs/addons/wpevently/book-events-from-dashboard",
+  "permalink": "/addons/wpevently/book-events-from-dashboard",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/book-events-from-dashboard.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpEvently",
-    "permalink": "/docs/addons/wpevently"
+    "permalink": "/addons/wpevently"
   },
   "next": {
     "title": "Category Based Ticket Type",
-    "permalink": "/docs/addons/wpevently/category-based-ticket-type"
+    "permalink": "/addons/wpevently/category-based-ticket-type"
   }
 }

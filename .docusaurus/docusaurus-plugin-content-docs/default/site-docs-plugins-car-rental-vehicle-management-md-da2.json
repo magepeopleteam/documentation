@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/car-rental/vehicle-management.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/vehicle-management",
-  "permalink": "/docs/plugins/car-rental/vehicle-management",
+  "permalink": "/plugins/car-rental/vehicle-management",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/vehicle-management.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/car-rental/shortcodes"
+    "permalink": "/plugins/car-rental/shortcodes"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/car-rental/faq"
+    "permalink": "/plugins/car-rental/faq"
   }
 }

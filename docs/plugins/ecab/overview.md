@@ -12,8 +12,8 @@ eCab is a comprehensive taxi booking plugin for WordPress that allows you to man
 
 Install the eCab Taxi Booking Manager plugin via WordPress admin, zip upload, or FTP, then configure your transportation services.
 
-- [Plugin Installation](/docs/plugins/ecab/installation-setup)
-- [Initial Configuration](/docs/plugins/ecab/installation-setup)
+- [Plugin Installation](/plugins/ecab/installation-setup)
+- [Initial Configuration](/plugins/ecab/installation-setup)
 - Ensure WooCommerce is installed and active
 - Configure permalinks to use the Post name setting
 - Set up Google Maps API key for distance-based pricing
@@ -23,7 +23,7 @@ Install the eCab Taxi Booking Manager plugin via WordPress admin, zip upload, or
 
 Display transport booking forms anywhere on your site with dedicated shortcodes for different price-based models.
 
-- [Transport Booking Shortcode](/docs/plugins/ecab/shortcodes)
+- [Transport Booking Shortcode](/plugins/ecab/shortcodes)
 - Shortcodes differ based on the price-based model selected
 - Embed booking forms on any page or post
 - Use shortcode parameters for layout customization
@@ -32,10 +32,10 @@ Display transport booking forms anywhere on your site with dedicated shortcodes 
 
 Configure Google Maps, pricing models, passenger filters, distance units, and waiting service settings for your taxi booking system.
 
-- [Google Maps & Location Settings](/docs/plugins/ecab/settings)
-- [Passenger & Baggage Filters](/docs/plugins/ecab/settings)
-- [Waiting Service Settings](/docs/plugins/ecab/settings)
-- [Extra Features & Service Settings](/docs/plugins/ecab/settings)
+- [Google Maps & Location Settings](/plugins/ecab/settings)
+- [Passenger & Baggage Filters](/plugins/ecab/settings)
+- [Waiting Service Settings](/plugins/ecab/settings)
+- [Extra Features & Service Settings](/plugins/ecab/settings)
 
 ## General Guidelines
 
@@ -60,8 +60,8 @@ Unlock advanced capabilities with the Pro version including driver management, i
 
 Quick answers to common questions about installing, configuring, and troubleshooting the eCab Taxi Booking Manager plugin.
 
-- [Installation Guide](/docs/plugins/ecab/faq)
-- [Pricing Models](/docs/plugins/ecab/faq)
-- [Google Maps API Key](/docs/plugins/ecab/faq)
-- [Driver Management](/docs/plugins/ecab/faq)
-- [Translation Support](/docs/plugins/ecab/faq)
+- [Installation Guide](/plugins/ecab/faq)
+- [Pricing Models](/plugins/ecab/faq)
+- [Google Maps API Key](/plugins/ecab/faq)
+- [Driver Management](/plugins/ecab/faq)
+- [Translation Support](/plugins/ecab/faq)

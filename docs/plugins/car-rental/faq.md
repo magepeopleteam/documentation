@@ -10,7 +10,7 @@ sidebar_position: 6
 
 ### How do I install the Car Rental Manager plugin?
 
-Install via WordPress admin by going to Plugins > Add New and searching for "Car Rental Manager". Alternatively, upload the Pro ZIP from your MagePeople account. See the [Installation & Setup](/docs/plugins/car-rental/installation-setup) page for detailed steps.
+Install via WordPress admin by going to Plugins > Add New and searching for "Car Rental Manager". Alternatively, upload the Pro ZIP from your MagePeople account. See the [Installation & Setup](/plugins/car-rental/installation-setup) page for detailed steps.
 
 ### Does the plugin work without WooCommerce?
 
@@ -18,17 +18,17 @@ Yes. Car Rental Manager works in standalone mode with its own PayPal or Stripe i
 
 ### How do I display the booking form on a page?
 
-Use the shortcode `[mpcrbm_booking form='inline' progressbar='no']` on any page or post. You can choose from inline, horizontal, or vertical form layouts. Refer to the [Shortcode Guidelines](/docs/plugins/car-rental/shortcodes) for all available parameters.
+Use the shortcode `[mpcrbm_booking form='inline' progressbar='no']` on any page or post. You can choose from inline, horizontal, or vertical form layouts. Refer to the [Shortcode Guidelines](/plugins/car-rental/shortcodes) for all available parameters.
 
 ### How do I add vehicles to my fleet?
 
-Go to Car Rental > Vehicles > Add New. Fill in the name, description, images, category, features, and pricing. Publish to make the vehicle visible on the front end. See [Vehicle Management](/docs/plugins/car-rental/vehicle-management) for full details.
+Go to Car Rental > Vehicles > Add New. Fill in the name, description, images, category, features, and pricing. Publish to make the vehicle visible on the front end. See [Vehicle Management](/plugins/car-rental/vehicle-management) for full details.
 
 ## Pricing & Payments
 
 ### Can I set different prices for different seasons?
 
-Yes. Use the Seasonal Pricing feature under Car Rental > Pricing > Seasonal Rates. Define date ranges with custom prices that override regular rates automatically. Learn more on the [Pricing & Availability](/docs/plugins/car-rental/pricing-availability) page.
+Yes. Use the Seasonal Pricing feature under Car Rental > Pricing > Seasonal Rates. Define date ranges with custom prices that override regular rates automatically. Learn more on the [Pricing & Availability](/plugins/car-rental/pricing-availability) page.
 
 ### How do I offer discounts for long-term rentals?
 

@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/backend-order.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/backend-order",
-  "permalink": "/docs/addons/wptravelly/backend-order",
+  "permalink": "/addons/wptravelly/backend-order",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/backend-order.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpTravelly",
-    "permalink": "/docs/addons/wptravelly"
+    "permalink": "/addons/wptravelly"
   },
   "next": {
     "title": "Buy X Get Y Free",
-    "permalink": "/docs/addons/wptravelly/buy-x-get-y-free"
+    "permalink": "/addons/wptravelly/buy-x-get-y-free"
   }
 }

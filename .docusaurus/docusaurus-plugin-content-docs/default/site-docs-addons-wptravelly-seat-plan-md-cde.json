@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/seat-plan.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/seat-plan",
-  "permalink": "/docs/addons/wptravelly/seat-plan",
+  "permalink": "/addons/wptravelly/seat-plan",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/seat-plan.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Seasonal Pricing",
-    "permalink": "/docs/addons/wptravelly/seasonal-pricing"
+    "permalink": "/addons/wptravelly/seasonal-pricing"
   },
   "next": {
     "title": "eCab",
-    "permalink": "/docs/addons/ecab"
+    "permalink": "/addons/ecab"
   }
 }

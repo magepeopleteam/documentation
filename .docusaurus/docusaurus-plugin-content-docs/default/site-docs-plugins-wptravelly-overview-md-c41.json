@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/overview.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/overview",
-  "permalink": "/docs/plugins/wptravelly/overview",
+  "permalink": "/plugins/wptravelly/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/overview.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "WpTravelly",
-    "permalink": "/docs/category/wptravelly"
+    "permalink": "/category/wptravelly"
   },
   "next": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wptravelly/installation-setup"
+    "permalink": "/plugins/wptravelly/installation-setup"
   }
 }

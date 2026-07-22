@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/group-ticket-quantity.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/group-ticket-quantity",
-  "permalink": "/docs/addons/wptravelly/group-ticket-quantity",
+  "permalink": "/addons/wptravelly/group-ticket-quantity",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/group-ticket-quantity.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Group & Bulk Pricing",
-    "permalink": "/docs/addons/wptravelly/group-bulk-pricing"
+    "permalink": "/addons/wptravelly/group-bulk-pricing"
   },
   "next": {
     "title": "Max-Min Booking",
-    "permalink": "/docs/addons/wptravelly/max-min-booking"
+    "permalink": "/addons/wptravelly/max-min-booking"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/shortcodes.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/shortcodes",
-  "permalink": "/docs/plugins/wptravelly/shortcodes",
+  "permalink": "/plugins/wptravelly/shortcodes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/shortcodes.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wptravelly/settings"
+    "permalink": "/plugins/wptravelly/settings"
   },
   "next": {
     "title": "Elementor Integration",
-    "permalink": "/docs/plugins/wptravelly/elementor-integration"
+    "permalink": "/plugins/wptravelly/elementor-integration"
   }
 }

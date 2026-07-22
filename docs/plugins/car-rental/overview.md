@@ -12,7 +12,7 @@ Car Rental Manager is a comprehensive car rental plugin for WordPress that allow
 
 Install the Car Rental Manager plugin via WordPress admin, zip upload, or FTP, then use the setup wizard to configure your car rental system.
 
-- [Plugin Installation](/docs/plugins/car-rental/installation-setup)
+- [Plugin Installation](/plugins/car-rental/installation-setup)
 - WooCommerce integration for secure payment processing
 - Works with or without WooCommerce (own PayPal/Stripe)
 - Run the guided setup wizard upon activation
@@ -22,8 +22,8 @@ Install the Car Rental Manager plugin via WordPress admin, zip upload, or FTP, t
 
 Display car rental booking forms and vehicle listings on any page using dedicated shortcodes with configurable parameters.
 
-- [Booking Form Shortcodes](/docs/plugins/car-rental/shortcodes)
-- [Vehicle Listing Shortcodes](/docs/plugins/car-rental/shortcodes)
+- [Booking Form Shortcodes](/plugins/car-rental/shortcodes)
+- [Vehicle Listing Shortcodes](/plugins/car-rental/shortcodes)
 - Choose from inline, horizontal, or vertical form styles
 - Enable or disable the booking progress bar
 
@@ -31,8 +31,8 @@ Display car rental booking forms and vehicle listings on any page using dedicate
 
 Add, edit, and manage your car rental fleet with vehicle profiles, images, descriptions, features, and specifications.
 
-- [Adding Vehicles](/docs/plugins/car-rental/vehicle-management)
-- [Vehicle Features](/docs/plugins/car-rental/vehicle-management)
+- [Adding Vehicles](/plugins/car-rental/vehicle-management)
+- [Vehicle Features](/plugins/car-rental/vehicle-management)
 - Define car features: AC, GPS, transmission type
 - Set passenger capacity and luggage space
 - Add extra services: insurance, child seat, GPS
@@ -41,8 +41,8 @@ Add, edit, and manage your car rental fleet with vehicle profiles, images, descr
 
 Configure pricing models, availability calendars, seasonal rates, and off-day settings for your car rental fleet.
 
-- [Pricing Models](/docs/plugins/car-rental/pricing-availability)
-- [Availability Management](/docs/plugins/car-rental/pricing-availability)
+- [Pricing Models](/plugins/car-rental/pricing-availability)
+- [Availability Management](/plugins/car-rental/pricing-availability)
 - Set daily or hourly rental rates
 - Configure seasonal pricing with addons
 - Discount over X days for long-term rentals
@@ -61,8 +61,8 @@ Customize the plugin, translate labels, manage FAQ, and configure global setting
 
 Quick answers to common questions about installing, configuring, and using the Car Rental Manager plugin.
 
-- [Installation Guide](/docs/plugins/car-rental/faq)
-- [Vehicle Management](/docs/plugins/car-rental/faq)
-- [Pricing & Payments](/docs/plugins/car-rental/faq)
-- [Availability & Calendars](/docs/plugins/car-rental/faq)
-- [Translation & Customisation](/docs/plugins/car-rental/faq)
+- [Installation Guide](/plugins/car-rental/faq)
+- [Vehicle Management](/plugins/car-rental/faq)
+- [Pricing & Payments](/plugins/car-rental/faq)
+- [Availability & Calendars](/plugins/car-rental/faq)
+- [Translation & Customisation](/plugins/car-rental/faq)

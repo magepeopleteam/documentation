@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/car-rental/overview.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/overview",
-  "permalink": "/docs/plugins/car-rental/overview",
+  "permalink": "/plugins/car-rental/overview",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/overview.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Car Rental",
-    "permalink": "/docs/category/car-rental"
+    "permalink": "/category/car-rental"
   },
   "next": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/car-rental/installation-setup"
+    "permalink": "/plugins/car-rental/installation-setup"
   }
 }

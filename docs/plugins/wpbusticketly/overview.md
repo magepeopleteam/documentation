@@ -12,8 +12,8 @@ WpBusTicketly is a comprehensive bus ticket booking plugin for WordPress that al
 
 Install the Bus Ticket Booking with Seat Reservation plugin via WordPress admin, zip upload, or FTP, then activate your Pro license.
 
-- [Plugin Installation](/docs/plugins/wpbusticketly/installation-setup)
-- [Install WpBusTicketly PRO and activate license](/docs/plugins/wpbusticketly/installation-setup)
+- [Plugin Installation](/plugins/wpbusticketly/installation-setup)
+- [Install WpBusTicketly PRO and activate license](/plugins/wpbusticketly/installation-setup)
 - Ensure WooCommerce and MagePeople PDF Support are installed
 - Configure permalinks to use the Post name setting
 - Complete the guided setup wizard for core bus settings
@@ -22,9 +22,9 @@ Install the Bus Ticket Booking with Seat Reservation plugin via WordPress admin,
 
 Display bus search forms, bus lists, and ticket views anywhere on your site using dedicated shortcodes.
 
-- [Bus Search Form Shortcode](/docs/plugins/wpbusticketly/shortcodes)
-- [Bus Lists Shortcode](/docs/plugins/wpbusticketly/shortcodes)
-- [View Ticket Shortcode](/docs/plugins/wpbusticketly/shortcodes)
+- [Bus Search Form Shortcode](/plugins/wpbusticketly/shortcodes)
+- [Bus Lists Shortcode](/plugins/wpbusticketly/shortcodes)
+- [View Ticket Shortcode](/plugins/wpbusticketly/shortcodes)
 - Use shortcode parameters for style, order, and pagination
 
 ## General Guidelines
@@ -43,17 +43,17 @@ Learn how to add buses, manage routes, set up pricing, handle taxes, and configu
 
 Configure global settings, customize seat panels, translate the plugin, adjust PDF settings, and manage checkout fields.
 
-- [Global settings](/docs/plugins/wpbusticketly/settings)
-- [Bus settings](/docs/plugins/wpbusticketly/settings)
-- [Customize seat panel settings](/docs/plugins/wpbusticketly/settings)
-- [PDF ticket settings](/docs/plugins/wpbusticketly/settings)
+- [Global settings](/plugins/wpbusticketly/settings)
+- [Bus settings](/plugins/wpbusticketly/settings)
+- [Customize seat panel settings](/plugins/wpbusticketly/settings)
+- [PDF ticket settings](/plugins/wpbusticketly/settings)
 
 ## REST API
 
 Integrate the Bus Ticket Booking plugin with external applications using available REST API endpoints for bus and passenger data.
 
-- [Get bus list through API](/docs/plugins/wpbusticketly/rest-api)
-- [Get passenger list details through API](/docs/plugins/wpbusticketly/rest-api)
+- [Get bus list through API](/plugins/wpbusticketly/rest-api)
+- [Get passenger list details through API](/plugins/wpbusticketly/rest-api)
 - Authenticate requests using WordPress credentials
 - Retrieve booking data for external integrations
 
@@ -61,8 +61,8 @@ Integrate the Bus Ticket Booking plugin with external applications using availab
 
 Extend the Bus Ticket Booking plugin with powerful addons for QR codes and the Pro version with advanced features.
 
-- [Bus Booking with Seat Reservation Pro](/docs/plugins/wpbusticketly/available-addons)
-- [QR Code Addon](/docs/addons/wpbusticketly/qr-code)
+- [Bus Booking with Seat Reservation Pro](/plugins/wpbusticketly/available-addons)
+- [QR Code Addon](/addons/wpbusticketly/qr-code)
 - Enable PDF ticketing and custom emailing
 - Access advanced reporting and passenger management
 
@@ -70,8 +70,8 @@ Extend the Bus Ticket Booking plugin with powerful addons for QR codes and the P
 
 Quick answers to common questions about installing, configuring, and troubleshooting the Bus Ticket Booking plugin.
 
-- [Installation Guide](/docs/plugins/wpbusticketly/faq)
-- [Search & Booking Issues](/docs/plugins/wpbusticketly/faq)
-- [Pricing & Checkout Problems](/docs/plugins/wpbusticketly/faq)
-- [Passenger Management](/docs/plugins/wpbusticketly/faq)
-- [Translation & Customisation](/docs/plugins/wpbusticketly/faq)
+- [Installation Guide](/plugins/wpbusticketly/faq)
+- [Search & Booking Issues](/plugins/wpbusticketly/faq)
+- [Pricing & Checkout Problems](/plugins/wpbusticketly/faq)
+- [Passenger Management](/plugins/wpbusticketly/faq)
+- [Translation & Customisation](/plugins/wpbusticketly/faq)

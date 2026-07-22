@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wprently/installation-setup.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/installation-setup",
-  "permalink": "/docs/plugins/wprently/installation-setup",
+  "permalink": "/plugins/wprently/installation-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/installation-setup.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/docs/plugins/wprently/overview"
+    "permalink": "/plugins/wprently/overview"
   },
   "next": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wprently/settings"
+    "permalink": "/plugins/wprently/settings"
   }
 }

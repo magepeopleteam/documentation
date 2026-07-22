@@ -5,7 +5,7 @@
   "source": "@site/docs/getting-started/license-activation.md",
   "sourceDirName": "getting-started",
   "slug": "/getting-started/license-activation",
-  "permalink": "/docs/getting-started/license-activation",
+  "permalink": "/getting-started/license-activation",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/getting-started/license-activation.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Installation",
-    "permalink": "/docs/getting-started/installation"
+    "permalink": "/getting-started/installation"
   },
   "next": {
     "title": "Plugins",
-    "permalink": "/docs/category/plugins"
+    "permalink": "/category/plugins"
   }
 }

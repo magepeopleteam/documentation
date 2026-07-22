@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/ecab/peak-hour-pricing.md",
   "sourceDirName": "addons/ecab",
   "slug": "/addons/ecab/peak-hour-pricing",
-  "permalink": "/docs/addons/ecab/peak-hour-pricing",
+  "permalink": "/addons/ecab/peak-hour-pricing",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/ecab/peak-hour-pricing.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Distance Tier Pricing",
-    "permalink": "/docs/addons/ecab/distance-tier-pricing"
+    "permalink": "/addons/ecab/distance-tier-pricing"
   },
   "next": {
     "title": "WpBusTicketly",
-    "permalink": "/docs/addons/wpbusticketly"
+    "permalink": "/addons/wpbusticketly"
   }
 }

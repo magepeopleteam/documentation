@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbookingly/faq.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/faq",
-  "permalink": "/docs/plugins/wpbookingly/faq",
+  "permalink": "/plugins/wpbookingly/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Payment Integration",
-    "permalink": "/docs/plugins/wpbookingly/payment-integration"
+    "permalink": "/plugins/wpbookingly/payment-integration"
   },
   "next": {
     "title": "WpBusTicketly",
-    "permalink": "/docs/category/wpbusticketly"
+    "permalink": "/category/wpbusticketly"
   }
 }

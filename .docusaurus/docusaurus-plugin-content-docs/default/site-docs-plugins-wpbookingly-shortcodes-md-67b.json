@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbookingly/shortcodes.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/shortcodes",
-  "permalink": "/docs/plugins/wpbookingly/shortcodes",
+  "permalink": "/plugins/wpbookingly/shortcodes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/shortcodes.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wpbookingly/settings"
+    "permalink": "/plugins/wpbookingly/settings"
   },
   "next": {
     "title": "Staff & Scheduling",
-    "permalink": "/docs/plugins/wpbookingly/staff-scheduling"
+    "permalink": "/plugins/wpbookingly/staff-scheduling"
   }
 }

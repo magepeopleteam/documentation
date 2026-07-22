@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/settings.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/settings",
-  "permalink": "/docs/plugins/wpbusticketly/settings",
+  "permalink": "/plugins/wpbusticketly/settings",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/settings.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wpbusticketly/installation-setup"
+    "permalink": "/plugins/wpbusticketly/installation-setup"
   },
   "next": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpbusticketly/shortcodes"
+    "permalink": "/plugins/wpbusticketly/shortcodes"
   }
 }

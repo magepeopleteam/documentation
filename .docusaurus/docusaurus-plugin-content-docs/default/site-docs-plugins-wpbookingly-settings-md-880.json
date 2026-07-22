@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbookingly/settings.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/settings",
-  "permalink": "/docs/plugins/wpbookingly/settings",
+  "permalink": "/plugins/wpbookingly/settings",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/settings.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Service Management",
-    "permalink": "/docs/plugins/wpbookingly/service-management"
+    "permalink": "/plugins/wpbookingly/service-management"
   },
   "next": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/wpbookingly/shortcodes"
+    "permalink": "/plugins/wpbookingly/shortcodes"
   }
 }

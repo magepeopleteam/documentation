@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpevently/installation-setup.md",
   "sourceDirName": "plugins/wpevently",
   "slug": "/plugins/wpevently/installation-setup",
-  "permalink": "/docs/plugins/wpevently/installation-setup",
+  "permalink": "/plugins/wpevently/installation-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpevently/installation-setup.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/docs/plugins/wpevently/overview"
+    "permalink": "/plugins/wpevently/overview"
   },
   "next": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wpevently/settings"
+    "permalink": "/plugins/wpevently/settings"
   }
 }

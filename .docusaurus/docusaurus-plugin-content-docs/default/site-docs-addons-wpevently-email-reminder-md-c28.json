@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/email-reminder.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/email-reminder",
-  "permalink": "/docs/addons/wpevently/email-reminder",
+  "permalink": "/addons/wpevently/email-reminder",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/email-reminder.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Category Based Ticket Type",
-    "permalink": "/docs/addons/wpevently/category-based-ticket-type"
+    "permalink": "/addons/wpevently/category-based-ticket-type"
   },
   "next": {
     "title": "Event Duplicator",
-    "permalink": "/docs/addons/wpevently/event-duplicator"
+    "permalink": "/addons/wpevently/event-duplicator"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wprently/shortcodes.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/shortcodes",
-  "permalink": "/docs/plugins/wprently/shortcodes",
+  "permalink": "/plugins/wprently/shortcodes",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/shortcodes.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wprently/settings"
+    "permalink": "/plugins/wprently/settings"
   },
   "next": {
     "title": "Global Settings",
-    "permalink": "/docs/plugins/wprently/global-settings"
+    "permalink": "/plugins/wprently/global-settings"
   }
 }

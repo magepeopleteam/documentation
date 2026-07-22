@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/max-min-booking.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/max-min-booking",
-  "permalink": "/docs/addons/wptravelly/max-min-booking",
+  "permalink": "/addons/wptravelly/max-min-booking",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/max-min-booking.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Group Ticket Quantity",
-    "permalink": "/docs/addons/wptravelly/group-ticket-quantity"
+    "permalink": "/addons/wptravelly/group-ticket-quantity"
   },
   "next": {
     "title": "QR Code Addon",
-    "permalink": "/docs/addons/wptravelly/qr-code"
+    "permalink": "/addons/wptravelly/qr-code"
   }
 }

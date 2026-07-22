@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/review-and-rating.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/review-and-rating",
-  "permalink": "/docs/addons/wpevently/review-and-rating",
+  "permalink": "/addons/wpevently/review-and-rating",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/review-and-rating.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Event Seat Plan",
-    "permalink": "/docs/addons/wpevently/event-seat-plan"
+    "permalink": "/addons/wpevently/event-seat-plan"
   },
   "next": {
     "title": "WooCommerce Event Calendar",
-    "permalink": "/docs/addons/wpevently/woocommerce-event-calendar"
+    "permalink": "/addons/wpevently/woocommerce-event-calendar"
   }
 }

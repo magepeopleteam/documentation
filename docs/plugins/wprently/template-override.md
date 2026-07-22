@@ -47,4 +47,4 @@ Edit the file that matches the rental type you want to customise. This gives you
 
 In addition to template overrides, WpRently provides a wide range of hooks and filters. Use them to further customise output and styling without modifying any core plugin files.
 
-See the [Developer Hooks](/docs/plugins/wprently/developer-hooks) article for a full reference of available actions and filters.
+See the [Developer Hooks](/plugins/wprently/developer-hooks) article for a full reference of available actions and filters.

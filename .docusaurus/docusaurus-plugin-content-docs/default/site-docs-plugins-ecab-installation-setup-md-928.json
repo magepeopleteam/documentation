@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/ecab/installation-setup.md",
   "sourceDirName": "plugins/ecab",
   "slug": "/plugins/ecab/installation-setup",
-  "permalink": "/docs/plugins/ecab/installation-setup",
+  "permalink": "/plugins/ecab/installation-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/ecab/installation-setup.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/docs/plugins/ecab/overview"
+    "permalink": "/plugins/ecab/overview"
   },
   "next": {
     "title": "Settings",
-    "permalink": "/docs/plugins/ecab/settings"
+    "permalink": "/plugins/ecab/settings"
   }
 }

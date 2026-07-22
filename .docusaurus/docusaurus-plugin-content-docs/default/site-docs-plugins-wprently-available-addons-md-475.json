@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wprently/available-addons.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/available-addons",
-  "permalink": "/docs/plugins/wprently/available-addons",
+  "permalink": "/plugins/wprently/available-addons",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/available-addons.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Global Settings",
-    "permalink": "/docs/plugins/wprently/global-settings"
+    "permalink": "/plugins/wprently/global-settings"
   },
   "next": {
     "title": "General Guidelines",
-    "permalink": "/docs/plugins/wprently/general-guidelines"
+    "permalink": "/plugins/wprently/general-guidelines"
   }
 }

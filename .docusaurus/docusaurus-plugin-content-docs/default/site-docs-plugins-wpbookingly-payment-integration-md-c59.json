@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbookingly/payment-integration.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/payment-integration",
-  "permalink": "/docs/plugins/wpbookingly/payment-integration",
+  "permalink": "/plugins/wpbookingly/payment-integration",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/payment-integration.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Staff & Scheduling",
-    "permalink": "/docs/plugins/wpbookingly/staff-scheduling"
+    "permalink": "/plugins/wpbookingly/staff-scheduling"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/wpbookingly/faq"
+    "permalink": "/plugins/wpbookingly/faq"
   }
 }

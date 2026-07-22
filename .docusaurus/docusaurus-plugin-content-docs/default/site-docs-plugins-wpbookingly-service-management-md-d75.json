@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbookingly/service-management.md",
   "sourceDirName": "plugins/wpbookingly",
   "slug": "/plugins/wpbookingly/service-management",
-  "permalink": "/docs/plugins/wpbookingly/service-management",
+  "permalink": "/plugins/wpbookingly/service-management",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbookingly/service-management.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/wpbookingly/installation-setup"
+    "permalink": "/plugins/wpbookingly/installation-setup"
   },
   "next": {
     "title": "Settings",
-    "permalink": "/docs/plugins/wpbookingly/settings"
+    "permalink": "/plugins/wpbookingly/settings"
   }
 }

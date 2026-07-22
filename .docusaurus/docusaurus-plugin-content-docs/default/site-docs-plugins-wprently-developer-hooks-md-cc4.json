@@ -5,14 +5,14 @@
   "source": "@site/docs/plugins/wprently/developer-hooks.md",
   "sourceDirName": "plugins/wprently",
   "slug": "/plugins/wprently/developer-hooks",
-  "permalink": "/docs/plugins/wprently/developer-hooks",
+  "permalink": "/plugins/wprently/developer-hooks",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wprently/developer-hooks.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedBy": null,
-  "lastUpdatedAt": null,
+  "lastUpdatedBy": "MagePeople",
+  "lastUpdatedAt": 1784175440000,
   "sidebarPosition": 10,
   "frontMatter": {
     "title": "Developer Hooks",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Template Override",
-    "permalink": "/docs/plugins/wprently/template-override"
+    "permalink": "/plugins/wprently/template-override"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/wprently/faq"
+    "permalink": "/plugins/wprently/faq"
   }
 }

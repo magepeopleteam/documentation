@@ -12,8 +12,8 @@ WpRently (Booking and Rental Manager for WooCommerce) lets you rent out bikes, c
 
 Install the plugin via WordPress admin, zip upload, or FTP to start renting items.
 
-- [Install the free Rent and Booking Manager plugin](/docs/plugins/wprently/installation-setup)
-- [Install the Pro version and activate license](/docs/plugins/wprently/installation-setup)
+- [Install the free Rent and Booking Manager plugin](/plugins/wprently/installation-setup)
+- [Install the Pro version and activate license](/plugins/wprently/installation-setup)
 - WooCommerce is required as a dependency
 - Works with or without WooCommerce (own PayPal/Stripe)
 
@@ -28,7 +28,7 @@ Install the plugin via WordPress admin, zip upload, or FTP to start renting item
 
 Display rent items in grid or list styles anywhere on your site using dedicated shortcodes with multiple parameters.
 
-- [Rent List Shortcode](/docs/plugins/wprently/shortcodes)
+- [Rent List Shortcode](/plugins/wprently/shortcodes)
 - `[rent-list]` with style, show, order, type parameters
 - `[rent-list type='bike_car_sd']` for single-day rentals
 - `[rent-add-to-cart id='1']` for single item purchase
@@ -44,8 +44,8 @@ Display rent items in grid or list styles anywhere on your site using dedicated 
 
 Set up rent item search forms, display rent lists, and manage your rental inventory across different item types.
 
-- [Rent Item Search Form](/docs/plugins/wprently/general-guidelines)
-- [Rent List Shortcode](/docs/plugins/wprently/shortcodes)
+- [Rent Item Search Form](/plugins/wprently/general-guidelines)
+- [Rent List Shortcode](/plugins/wprently/shortcodes)
 - Display items by type: bike, car, resort, equipment, dress
 - Manage inventory and availability calendars
 
@@ -60,7 +60,7 @@ Set up rent item search forms, display rent lists, and manage your rental invent
 
 Customize the plugin globally with translation support and other site-wide configuration options.
 
-- [How to translate the plugin](/docs/plugins/wprently/global-settings)
+- [How to translate the plugin](/plugins/wprently/global-settings)
 - Use Loco Translate or WPML for translations
 - Change labels and slugs in general settings
 - Multi-language support for rental listings
@@ -76,14 +76,14 @@ Customize the plugin globally with translation support and other site-wide confi
 
 Extend the plugin with premium addons for discounts, minimum/maximum booking days, and seasonal pricing.
 
-- [Discount Over X Days (PRO)](/docs/plugins/wprently/available-addons)
-- [Seasonal Pricing (PRO)](/docs/plugins/wprently/available-addons)
-- [Min-Max Booking Day](/docs/plugins/wprently/available-addons)
+- [Discount Over X Days (PRO)](/plugins/wprently/available-addons)
+- [Seasonal Pricing (PRO)](/plugins/wprently/available-addons)
+- [Min-Max Booking Day](/plugins/wprently/available-addons)
 - Offer tiered discounts based on rental duration
 
 ### Pro Version
 
-- [Booking and Rental Manager Pro](/docs/plugins/wprently/available-addons)
+- [Booking and Rental Manager Pro](/plugins/wprently/available-addons)
 - Advanced reporting and analytics
 - Custom email templates
 - Priority support and updates

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/rest-api.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/rest-api",
-  "permalink": "/docs/plugins/wpbusticketly/rest-api",
+  "permalink": "/plugins/wpbusticketly/rest-api",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/rest-api.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Available Addons",
-    "permalink": "/docs/plugins/wpbusticketly/available-addons"
+    "permalink": "/plugins/wpbusticketly/available-addons"
   },
   "next": {
     "title": "FAQ",
-    "permalink": "/docs/plugins/wpbusticketly/faq"
+    "permalink": "/plugins/wpbusticketly/faq"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/car-rental/faq.md",
   "sourceDirName": "plugins/car-rental",
   "slug": "/plugins/car-rental/faq",
-  "permalink": "/docs/plugins/car-rental/faq",
+  "permalink": "/plugins/car-rental/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/car-rental/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Vehicle Management",
-    "permalink": "/docs/plugins/car-rental/vehicle-management"
+    "permalink": "/plugins/car-rental/vehicle-management"
   },
   "next": {
     "title": "Advanced Discount Coupon and Store Credit",
-    "permalink": "/docs/category/advanced-discount-coupon-and-store-credit"
+    "permalink": "/category/advanced-discount-coupon-and-store-credit"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wptravelly/qr-code.md",
   "sourceDirName": "addons/wptravelly",
   "slug": "/addons/wptravelly/qr-code",
-  "permalink": "/docs/addons/wptravelly/qr-code",
+  "permalink": "/addons/wptravelly/qr-code",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wptravelly/qr-code.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Max-Min Booking",
-    "permalink": "/docs/addons/wptravelly/max-min-booking"
+    "permalink": "/addons/wptravelly/max-min-booking"
   },
   "next": {
     "title": "Seasonal Pricing",
-    "permalink": "/docs/addons/wptravelly/seasonal-pricing"
+    "permalink": "/addons/wptravelly/seasonal-pricing"
   }
 }

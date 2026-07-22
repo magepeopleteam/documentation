@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wpbusticketly/installation-setup.md",
   "sourceDirName": "plugins/wpbusticketly",
   "slug": "/plugins/wpbusticketly/installation-setup",
-  "permalink": "/docs/plugins/wpbusticketly/installation-setup",
+  "permalink": "/plugins/wpbusticketly/installation-setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wpbusticketly/installation-setup.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/docs/plugins/wpbusticketly/overview"
+    "permalink": "/plugins/wpbusticketly/overview"
   },
   "next": {
     "title": "Bus Manager Settings",
-    "permalink": "/docs/plugins/wpbusticketly/settings"
+    "permalink": "/plugins/wpbusticketly/settings"
   }
 }

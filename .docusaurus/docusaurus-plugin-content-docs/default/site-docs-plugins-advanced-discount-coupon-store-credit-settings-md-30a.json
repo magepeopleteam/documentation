@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/advanced-discount-coupon-store-credit/settings.md",
   "sourceDirName": "plugins/advanced-discount-coupon-store-credit",
   "slug": "/plugins/advanced-discount-coupon-store-credit/settings",
-  "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/settings",
+  "permalink": "/plugins/advanced-discount-coupon-store-credit/settings",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/advanced-discount-coupon-store-credit/settings.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Installation & Setup",
-    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/installation-setup"
+    "permalink": "/plugins/advanced-discount-coupon-store-credit/installation-setup"
   },
   "next": {
     "title": "Shortcodes",
-    "permalink": "/docs/plugins/advanced-discount-coupon-store-credit/shortcodes"
+    "permalink": "/plugins/advanced-discount-coupon-store-credit/shortcodes"
   }
 }

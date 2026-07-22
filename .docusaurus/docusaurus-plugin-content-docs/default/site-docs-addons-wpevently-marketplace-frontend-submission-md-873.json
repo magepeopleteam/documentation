@@ -5,7 +5,7 @@
   "source": "@site/docs/addons/wpevently/marketplace-frontend-submission.md",
   "sourceDirName": "addons/wpevently",
   "slug": "/addons/wpevently/marketplace-frontend-submission",
-  "permalink": "/docs/addons/wpevently/marketplace-frontend-submission",
+  "permalink": "/addons/wpevently/marketplace-frontend-submission",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/addons/wpevently/marketplace-frontend-submission.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Group Ticket Qty",
-    "permalink": "/docs/addons/wpevently/group-ticket-qty"
+    "permalink": "/addons/wpevently/group-ticket-qty"
   },
   "next": {
     "title": "Membership Price",
-    "permalink": "/docs/addons/wpevently/membership-price"
+    "permalink": "/addons/wpevently/membership-price"
   }
 }

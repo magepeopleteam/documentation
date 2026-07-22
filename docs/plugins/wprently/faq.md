@@ -91,7 +91,7 @@ Quick answers to common questions about installing, configuring, and troubleshoo
 - Use `[rent-list style='grid']` on any page or post
 - Control the number of columns with `columns='4'`
 - Set items per page with `show='12'`
-- Full parameter reference is in the [Shortcode Guidelines](/docs/plugins/wprently/shortcodes)
+- Full parameter reference is in the [Shortcode Guidelines](/plugins/wprently/shortcodes)
 
 ### How do I show only car rentals?
 

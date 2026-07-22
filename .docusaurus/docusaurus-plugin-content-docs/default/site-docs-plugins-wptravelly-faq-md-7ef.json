@@ -5,7 +5,7 @@
   "source": "@site/docs/plugins/wptravelly/faq.md",
   "sourceDirName": "plugins/wptravelly",
   "slug": "/plugins/wptravelly/faq",
-  "permalink": "/docs/plugins/wptravelly/faq",
+  "permalink": "/plugins/wptravelly/faq",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/magepeopleteam/documentation/tree/main/docs/plugins/wptravelly/faq.md",
@@ -22,10 +22,10 @@
   "sidebar": "docsSidebar",
   "previous": {
     "title": "Template Override",
-    "permalink": "/docs/plugins/wptravelly/template-override"
+    "permalink": "/plugins/wptravelly/template-override"
   },
   "next": {
     "title": "WpBookingly",
-    "permalink": "/docs/category/wpbookingly"
+    "permalink": "/category/wpbookingly"
   }
 }
