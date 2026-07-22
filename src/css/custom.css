@@ -102,6 +102,18 @@
   }
 }
 
+/* The search plugin hides its own clear ("x") button whenever the input
+   isn't focused (max-width: 576px). Clicking the button blurs the input
+   first, which removes the "focused" class and hides the button via
+   display:none before the click event can finish landing on it - so the
+   click silently does nothing. Keep it visible regardless of focus so the
+   click actually registers. */
+@media (max-width: 576px) {
+  [class*="searchBarContainer"] [class*="searchClearButton"] {
+    display: inline-block !important;
+  }
+}
+
 .navbar__brand img {
   height: 38px;
 }
