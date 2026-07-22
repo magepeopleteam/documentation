@@ -14,15 +14,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '446'),
+    component: ComponentCreator('/', '3f5'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '8f5'),
+        component: ComponentCreator('/', 'd3e'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '0a3'),
+            component: ComponentCreator('/', 'a28'),
             routes: [
               {
                 path: '/addons/ecab',
@@ -164,13 +164,13 @@ export default [
               },
               {
                 path: '/addons/wprently/min-max-booking-limit',
-                component: ComponentCreator('/addons/wprently/min-max-booking-limit', '643'),
+                component: ComponentCreator('/addons/wprently/min-max-booking-limit', '11c'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/addons/wprently/multi-day-discount-pricing',
-                component: ComponentCreator('/addons/wprently/multi-day-discount-pricing', 'f09'),
+                component: ComponentCreator('/addons/wprently/multi-day-discount-pricing', '9bf'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -182,7 +182,7 @@ export default [
               },
               {
                 path: '/addons/wprently/seasonal-pricing-management',
-                component: ComponentCreator('/addons/wprently/seasonal-pricing-management', '647'),
+                component: ComponentCreator('/addons/wprently/seasonal-pricing-management', '1c0'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -608,19 +608,19 @@ export default [
               },
               {
                 path: '/plugins/wprently/available-addons',
-                component: ComponentCreator('/plugins/wprently/available-addons', '020'),
+                component: ComponentCreator('/plugins/wprently/available-addons', '079'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/developer-hooks',
-                component: ComponentCreator('/plugins/wprently/developer-hooks', '6b6'),
+                component: ComponentCreator('/plugins/wprently/developer-hooks', '14e'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/faq',
-                component: ComponentCreator('/plugins/wprently/faq', '155'),
+                component: ComponentCreator('/plugins/wprently/faq', '90d'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -632,25 +632,25 @@ export default [
               },
               {
                 path: '/plugins/wprently/learning',
-                component: ComponentCreator('/plugins/wprently/learning', 'eb5'),
+                component: ComponentCreator('/plugins/wprently/learning', '67c'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/overview',
-                component: ComponentCreator('/plugins/wprently/overview', '6e8'),
+                component: ComponentCreator('/plugins/wprently/overview', '910'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/shortcodes',
-                component: ComponentCreator('/plugins/wprently/shortcodes', 'f7c'),
+                component: ComponentCreator('/plugins/wprently/shortcodes', '504'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/template-override',
-                component: ComponentCreator('/plugins/wprently/template-override', '8e9'),
+                component: ComponentCreator('/plugins/wprently/template-override', 'dcd'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

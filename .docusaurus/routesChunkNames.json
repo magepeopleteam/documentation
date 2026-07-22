@@ -12,17 +12,17 @@
     },
     "config": "5e9f5e1a"
   },
-  "/-446": {
+  "/-3f5": {
     "__comp": "5e95c892",
     "__context": {
       "plugin": "aba21aa0"
     }
   },
-  "/-8f5": {
+  "/-d3e": {
     "__comp": "a7bd4aaa",
     "__props": "22dd74f7"
   },
-  "/-0a3": {
+  "/-a28": {
     "__comp": "a94703ab"
   },
   "/addons/ecab-8cb": {
@@ -117,11 +117,11 @@
     "__comp": "17896441",
     "content": "ab4b5cce"
   },
-  "/addons/wprently/min-max-booking-limit-643": {
+  "/addons/wprently/min-max-booking-limit-11c": {
     "__comp": "17896441",
     "content": "54c6176c"
   },
-  "/addons/wprently/multi-day-discount-pricing-f09": {
+  "/addons/wprently/multi-day-discount-pricing-9bf": {
     "__comp": "17896441",
     "content": "5cdaf85a"
   },
@@ -129,7 +129,7 @@
     "__comp": "17896441",
     "content": "aa8c3ac6"
   },
-  "/addons/wprently/seasonal-pricing-management-647": {
+  "/addons/wprently/seasonal-pricing-management-1c0": {
     "__comp": "17896441",
     "content": "eb3feb45"
   },
@@ -413,15 +413,15 @@
     "__comp": "17896441",
     "content": "1dc5bfa8"
   },
-  "/plugins/wprently/available-addons-020": {
+  "/plugins/wprently/available-addons-079": {
     "__comp": "17896441",
     "content": "47569161"
   },
-  "/plugins/wprently/developer-hooks-6b6": {
+  "/plugins/wprently/developer-hooks-14e": {
     "__comp": "17896441",
     "content": "cc49d837"
   },
-  "/plugins/wprently/faq-155": {
+  "/plugins/wprently/faq-90d": {
     "__comp": "17896441",
     "content": "15d39d5a"
   },
@@ -429,19 +429,19 @@
     "__comp": "17896441",
     "content": "1834fa96"
   },
-  "/plugins/wprently/learning-eb5": {
+  "/plugins/wprently/learning-67c": {
     "__comp": "17896441",
     "content": "89ecb467"
   },
-  "/plugins/wprently/overview-6e8": {
+  "/plugins/wprently/overview-910": {
     "__comp": "17896441",
     "content": "cfedd548"
   },
-  "/plugins/wprently/shortcodes-f7c": {
+  "/plugins/wprently/shortcodes-504": {
     "__comp": "17896441",
     "content": "4c9b1bff"
   },
-  "/plugins/wprently/template-override-8e9": {
+  "/plugins/wprently/template-override-dcd": {
     "__comp": "17896441",
     "content": "815f0c46"
   },
