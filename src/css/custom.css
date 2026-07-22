@@ -157,6 +157,60 @@
   background: #1e293b;
 }
 
+/* Compact category card grid (Plugins/Addons index pages) */
+[class*="docCardListItem"] {
+  --ifm-spacing-horizontal: 0.5rem;
+  margin-bottom: 0.5rem !important;
+  align-self: flex-start;
+}
+
+/* Docusaurus stretches every card to the height of the tallest card in its
+   row (Infima's default row/col align-items: stretch). Once titles can
+   wrap to 2-3 lines that leaves big uneven empty gaps in the shorter
+   cards. Let each card size to its own content instead. */
+[class*="docCardListItem"] > a {
+  height: auto !important;
+}
+
+@media (width >= 997px) {
+  [class*="docCardListItem"].col--6 {
+    --ifm-col-width: calc(4 / 12 * 100%);
+  }
+}
+
+.theme-doc-card-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.55rem;
+}
+
+.theme-doc-card-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-doc-card-heading {
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+/* Compact grid narrows the column, so let longer plugin names wrap to a
+   second line instead of Infima's default text--truncate ellipsis. */
+.theme-doc-card-title {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: initial;
+  line-height: 1.25;
+}
+
+.theme-doc-card-description {
+  font-size: 0.8rem;
+}
+
 /* Sidebar */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--ifm-table-border-color);
@@ -251,6 +305,13 @@ pre {
 .markdown h1 {
   font-size: 2rem;
   font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Category index page title (e.g. "Plugins", "Addons") - Docusaurus sets
+   this to 3rem by default, noticeably bigger than regular doc h1s. */
+[class*="generatedIndexPage"] > header h1 {
+  font-size: 2rem;
   letter-spacing: -0.02em;
 }
 
