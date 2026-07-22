@@ -434,6 +434,10 @@
   color: #fff;
 }
 
+.main {
+  padding-bottom: 4rem;
+}
+
 /* Addon sections (ticket style) */
 .addonSection {
   scroll-margin-top: 84px;

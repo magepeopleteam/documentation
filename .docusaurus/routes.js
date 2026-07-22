@@ -14,15 +14,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'ba5'),
+    component: ComponentCreator('/', '6b7'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', 'da0'),
+        component: ComponentCreator('/', '015'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', '575'),
+            component: ComponentCreator('/', 'f25'),
             routes: [
               {
                 path: '/addons/ecab',
@@ -338,7 +338,7 @@ export default [
               },
               {
                 path: '/plugins/advanced-discount-coupon-store-credit/installation-setup',
-                component: ComponentCreator('/plugins/advanced-discount-coupon-store-credit/installation-setup', '9c5'),
+                component: ComponentCreator('/plugins/advanced-discount-coupon-store-credit/installation-setup', 'd16'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -362,19 +362,19 @@ export default [
               },
               {
                 path: '/plugins/car-rental/faq',
-                component: ComponentCreator('/plugins/car-rental/faq', '008'),
+                component: ComponentCreator('/plugins/car-rental/faq', '0cf'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/car-rental/installation-setup',
-                component: ComponentCreator('/plugins/car-rental/installation-setup', 'd86'),
+                component: ComponentCreator('/plugins/car-rental/installation-setup', 'efd'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/car-rental/overview',
-                component: ComponentCreator('/plugins/car-rental/overview', 'c4b'),
+                component: ComponentCreator('/plugins/car-rental/overview', '266'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -410,13 +410,13 @@ export default [
               },
               {
                 path: '/plugins/ecab/installation-setup',
-                component: ComponentCreator('/plugins/ecab/installation-setup', '8f9'),
+                component: ComponentCreator('/plugins/ecab/installation-setup', 'a48'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/ecab/overview',
-                component: ComponentCreator('/plugins/ecab/overview', '09d'),
+                component: ComponentCreator('/plugins/ecab/overview', '33d'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -440,7 +440,7 @@ export default [
               },
               {
                 path: '/plugins/wpbookingly/installation-setup',
-                component: ComponentCreator('/plugins/wpbookingly/installation-setup', 'c4f'),
+                component: ComponentCreator('/plugins/wpbookingly/installation-setup', '61f'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -482,7 +482,7 @@ export default [
               },
               {
                 path: '/plugins/wpbusticketly/available-addons',
-                component: ComponentCreator('/plugins/wpbusticketly/available-addons', '4dc'),
+                component: ComponentCreator('/plugins/wpbusticketly/available-addons', '948'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -494,13 +494,13 @@ export default [
               },
               {
                 path: '/plugins/wpbusticketly/installation-setup',
-                component: ComponentCreator('/plugins/wpbusticketly/installation-setup', 'ddb'),
+                component: ComponentCreator('/plugins/wpbusticketly/installation-setup', '710'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wpbusticketly/overview',
-                component: ComponentCreator('/plugins/wpbusticketly/overview', '1b5'),
+                component: ComponentCreator('/plugins/wpbusticketly/overview', '697'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -530,7 +530,7 @@ export default [
               },
               {
                 path: '/plugins/wpdepositly/installation-setup',
-                component: ComponentCreator('/plugins/wpdepositly/installation-setup', '2c8'),
+                component: ComponentCreator('/plugins/wpdepositly/installation-setup', '474'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -572,13 +572,13 @@ export default [
               },
               {
                 path: '/plugins/wpevently/installation-setup',
-                component: ComponentCreator('/plugins/wpevently/installation-setup', '6cf'),
+                component: ComponentCreator('/plugins/wpevently/installation-setup', 'd26'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wpevently/overview',
-                component: ComponentCreator('/plugins/wpevently/overview', 'ed2'),
+                component: ComponentCreator('/plugins/wpevently/overview', '89e'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -620,7 +620,7 @@ export default [
               },
               {
                 path: '/plugins/wprently/faq',
-                component: ComponentCreator('/plugins/wprently/faq', '741'),
+                component: ComponentCreator('/plugins/wprently/faq', 'b38'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -638,13 +638,13 @@ export default [
               },
               {
                 path: '/plugins/wprently/installation-setup',
-                component: ComponentCreator('/plugins/wprently/installation-setup', 'b97'),
+                component: ComponentCreator('/plugins/wprently/installation-setup', '6e9'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wprently/overview',
-                component: ComponentCreator('/plugins/wprently/overview', 'a3e'),
+                component: ComponentCreator('/plugins/wprently/overview', '5ec'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -662,7 +662,7 @@ export default [
               },
               {
                 path: '/plugins/wprently/template-override',
-                component: ComponentCreator('/plugins/wprently/template-override', '037'),
+                component: ComponentCreator('/plugins/wprently/template-override', '160'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
@@ -680,13 +680,13 @@ export default [
               },
               {
                 path: '/plugins/wptravelly/installation-setup',
-                component: ComponentCreator('/plugins/wptravelly/installation-setup', 'b8e'),
+                component: ComponentCreator('/plugins/wptravelly/installation-setup', '27b'),
                 exact: true,
                 sidebar: "docsSidebar"
               },
               {
                 path: '/plugins/wptravelly/overview',
-                component: ComponentCreator('/plugins/wptravelly/overview', '89f'),
+                component: ComponentCreator('/plugins/wptravelly/overview', '269'),
                 exact: true,
                 sidebar: "docsSidebar"
               },

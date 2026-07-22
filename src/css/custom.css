@@ -290,11 +290,18 @@ code {
 
 /* Collapse/expand sidebar button - small, rounded, half-outside at menu top */
 @media (width >= 997px) {
-  [class*="sidebarViewport"],
-  [class*="sidebar_njMd"],
+  /* Keep Docusaurus's own clip-path on docSidebarContainer so the sidebar's
+     nav content stays clipped while its width animates during collapse/expand
+     (otherwise the nav text overflows over the main content mid-transition).
+     Only widen the clip region on the right so the half-outside toggle
+     button isn't clipped along with it. */
   [class*="docSidebarContainer"] {
+    clip-path: inset(0 -20px 0 0);
+  }
+
+  [class*="sidebarViewport"],
+  [class*="sidebar_njMd"] {
     overflow: visible;
-    clip-path: none;
   }
 
   [class*="sidebar_njMd"] {

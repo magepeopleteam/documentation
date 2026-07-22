@@ -237,7 +237,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className={styles.main}>
 
         <section className={styles.section}>
           <div className={styles.container}>
